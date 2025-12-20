@@ -1,0 +1,54 @@
+================================================================================
+RAPPORT D'ANALYSE DES CHANGEMENTS CRITIQUES RGPD
+================================================================================
+
+Type de stockage: SESSIONSTORAGE
+Total de changements analysés: 48
+
+1. DISTRIBUTION DES RISQUES RGPD
+--------------------------------------------------------------------------------
+   Critical     :    0 items (  0.0%)
+   High         :    5 items ( 10.4%)
+   Medium       :    9 items ( 18.8%)
+   Low          :   34 items ( 70.8%)
+
+2. CHANGEMENTS PAR CATÉGORIE PII
+--------------------------------------------------------------------------------
+   UNCATEGORIZED                                 :   26 changements
+   SUSPICIOUS_VALUES                             :   11 changements
+   ID_SOLUTIONS_AND_EXCHANGES                    :    4 changements
+   IDENTITY_TRACKING                             :    3 changements
+   CUSTOMER_INTERACTION                          :    1 changements
+   NAVIGATION_HISTORY                            :    1 changements
+   SECURITY_AND_BOT_MITIGATION                   :    1 changements
+   USER_PREFERENCES_EXTENDED                     :    1 changements
+
+3. TYPES DE DONNÉES SENSIBLES MODIFIÉES
+--------------------------------------------------------------------------------
+   IDs/Tokens longs               :   21 items
+   Timestamps Unix                :   16 items
+   UUIDs                          :    6 items
+   Dates ISO                      :    3 items
+   User IDs                       :    3 items
+
+4. TOP 5 ITEMS CRITIQUES
+--------------------------------------------------------------------------------
+Clé                                                | Catégorie PII                  | Score | Niveau
+--------------------------------------------------------------------------------
+___nrbic                                           | SUSPICIOUS_VALUES              |     5 | High
+___nrbic                                           | SUSPICIOUS_VALUES              |     5 | High
+___nrbic                                           | SUSPICIOUS_VALUES              |     5 | High
+___nrbic                                           | SUSPICIOUS_VALUES              |     5 | High
+mcssids                                            | UNCATEGORIZED                  |     5 | High
+
+5. RECOMMANDATIONS RGPD
+--------------------------------------------------------------------------------
+     ÉLEVÉ: 5 items à risque élevé
+      → Audit RGPD prioritaire
+      → Vérifier les durées de conservation
+
+     Timestamps fréquents dans les changements
+      → Tracking temporel = profilage potentiel
+      → Vérifier la finalité du traitement
+
+================================================================================

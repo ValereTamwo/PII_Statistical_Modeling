@@ -1,0 +1,694 @@
+{
+  "storage_type": "sessionstorage",
+  "total_items": 308,
+  "direct_pii_count": 0,
+  "other_count": 308,
+  "pii_distribution": {
+    "APP_STATE_STORAGE": 6,
+    "CONSENT_AND_PRIVACY": 2,
+    "CUSTOMER_INTERACTION": 4,
+    "DEVICE_ENV": 2,
+    "DIRECT_PII::gender": 5,
+    "IDENTITY_TRACKING": 11,
+    "ID_SOLUTIONS_AND_EXCHANGES": 21,
+    "NAVIGATION_HISTORY": 2,
+    "SECURITY_AND_BOT_MITIGATION": 3,
+    "SUSPICIOUS_VALUES": 54,
+    "UNCATEGORIZED": 173,
+    "USER_PREFERENCES": 1,
+    "USER_PREFERENCES_EXTENDED": 24
+  },
+  "pii_by_category": {
+    "APP_STATE_STORAGE": {
+      "APP_STATE_STORAGE": 6
+    },
+    "CONSENT_AND_PRIVACY": {
+      "CONSENT_AND_PRIVACY": 2
+    },
+    "CUSTOMER_INTERACTION": {
+      "CUSTOMER_INTERACTION": 4
+    },
+    "DEVICE_ENV": {
+      "DEVICE_ENV": 2
+    },
+    "DIRECT_PII::gender": {
+      "DIRECT_PII::gender": 5
+    },
+    "IDENTITY_TRACKING": {
+      "IDENTITY_TRACKING": 11
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "ID_SOLUTIONS_AND_EXCHANGES": 21
+    },
+    "NAVIGATION_HISTORY": {
+      "NAVIGATION_HISTORY": 2
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "SECURITY_AND_BOT_MITIGATION": 3
+    },
+    "SUSPICIOUS_VALUES": {
+      "SUSPICIOUS_VALUES": 54
+    },
+    "UNCATEGORIZED": {
+      "UNCATEGORIZED": 173
+    },
+    "USER_PREFERENCES": {
+      "USER_PREFERENCES": 1
+    },
+    "USER_PREFERENCES_EXTENDED": {
+      "USER_PREFERENCES_EXTENDED": 24
+    }
+  },
+  "persistence_distribution": {
+    "Session": 308
+  },
+  "persistence_by_pii": {
+    "APP_STATE_STORAGE": {
+      "Session": 6
+    },
+    "CONSENT_AND_PRIVACY": {
+      "Session": 2
+    },
+    "CUSTOMER_INTERACTION": {
+      "Session": 4
+    },
+    "DEVICE_ENV": {
+      "Session": 2
+    },
+    "DIRECT_PII::gender": {
+      "Session": 5
+    },
+    "IDENTITY_TRACKING": {
+      "Session": 11
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "Session": 21
+    },
+    "NAVIGATION_HISTORY": {
+      "Session": 2
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "Session": 3
+    },
+    "SUSPICIOUS_VALUES": {
+      "Session": 54
+    },
+    "UNCATEGORIZED": {
+      "Session": 173
+    },
+    "USER_PREFERENCES": {
+      "Session": 1
+    },
+    "USER_PREFERENCES_EXTENDED": {
+      "Session": 24
+    }
+  },
+  "size_by_pii": {
+    "APP_STATE_STORAGE": {
+      "total": 161,
+      "average": 26.833333333333332,
+      "count": 6
+    },
+    "CONSENT_AND_PRIVACY": {
+      "total": 102,
+      "average": 51.0,
+      "count": 2
+    },
+    "CUSTOMER_INTERACTION": {
+      "total": 28,
+      "average": 7.0,
+      "count": 4
+    },
+    "DEVICE_ENV": {
+      "total": 191,
+      "average": 95.5,
+      "count": 2
+    },
+    "DIRECT_PII::gender": {
+      "total": 168730,
+      "average": 33746.0,
+      "count": 5
+    },
+    "IDENTITY_TRACKING": {
+      "total": 3318,
+      "average": 301.6363636363636,
+      "count": 11
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "total": 542063,
+      "average": 25812.52380952381,
+      "count": 21
+    },
+    "NAVIGATION_HISTORY": {
+      "total": 87,
+      "average": 43.5,
+      "count": 2
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "total": 233,
+      "average": 77.66666666666667,
+      "count": 3
+    },
+    "SUSPICIOUS_VALUES": {
+      "total": 1264750,
+      "average": 23421.296296296296,
+      "count": 54
+    },
+    "UNCATEGORIZED": {
+      "total": 35852,
+      "average": 207.23699421965318,
+      "count": 173
+    },
+    "USER_PREFERENCES": {
+      "total": 3815,
+      "average": 3815.0,
+      "count": 1
+    },
+    "USER_PREFERENCES_EXTENDED": {
+      "total": 945,
+      "average": 39.375,
+      "count": 24
+    }
+  },
+  "content_hierarchy": {
+    "json_structured": {
+      "APP_STATE_STORAGE": 5,
+      "CONSENT_AND_PRIVACY": 2,
+      "DIRECT_PII::gender": 4,
+      "IDENTITY_TRACKING": 11,
+      "ID_SOLUTIONS_AND_EXCHANGES": 11,
+      "NAVIGATION_HISTORY": 1,
+      "SECURITY_AND_BOT_MITIGATION": 1,
+      "SUSPICIOUS_VALUES": 26,
+      "UNCATEGORIZED": 59,
+      "USER_PREFERENCES": 1,
+      "USER_PREFERENCES_EXTENDED": 14
+    },
+    "complex_string": {
+      "APP_STATE_STORAGE": 1,
+      "DEVICE_ENV": 2,
+      "DIRECT_PII::gender": 1,
+      "ID_SOLUTIONS_AND_EXCHANGES": 6,
+      "NAVIGATION_HISTORY": 1,
+      "SECURITY_AND_BOT_MITIGATION": 1,
+      "SUSPICIOUS_VALUES": 1,
+      "UNCATEGORIZED": 28
+    },
+    "number": {
+      "CUSTOMER_INTERACTION": 4,
+      "UNCATEGORIZED": 29
+    },
+    "short_text": {
+      "ID_SOLUTIONS_AND_EXCHANGES": 4,
+      "UNCATEGORIZED": 9
+    },
+    "token_id": {
+      "SECURITY_AND_BOT_MITIGATION": 1,
+      "SUSPICIOUS_VALUES": 8
+    },
+    "uuid": {
+      "SUSPICIOUS_VALUES": 19
+    },
+    "boolean": {
+      "UNCATEGORIZED": 22
+    },
+    "language_code": {
+      "UNCATEGORIZED": 1
+    },
+    "empty": {
+      "UNCATEGORIZED": 25,
+      "USER_PREFERENCES_EXTENDED": 10
+    }
+  },
+  "content_types": {
+    "json_structured": 135,
+    "complex_string": 41,
+    "number": 33,
+    "short_text": 13,
+    "token_id": 9,
+    "uuid": 19,
+    "boolean": 22,
+    "language_code": 1,
+    "empty": 35
+  },
+  "vendor_counts": {
+    "Unknown": 308
+  },
+  "category_vendor_flows": [
+    [
+      "APP_STATE_STORAGE",
+      "Unknown",
+      6
+    ],
+    [
+      "CONSENT_AND_PRIVACY",
+      "Unknown",
+      2
+    ],
+    [
+      "CUSTOMER_INTERACTION",
+      "Unknown",
+      4
+    ],
+    [
+      "DEVICE_ENV",
+      "Unknown",
+      2
+    ],
+    [
+      "DIRECT_PII::gender",
+      "Unknown",
+      5
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "Unknown",
+      11
+    ],
+    [
+      "ID_SOLUTIONS_AND_EXCHANGES",
+      "Unknown",
+      21
+    ],
+    [
+      "NAVIGATION_HISTORY",
+      "Unknown",
+      2
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "Unknown",
+      3
+    ],
+    [
+      "SUSPICIOUS_VALUES",
+      "Unknown",
+      54
+    ],
+    [
+      "UNCATEGORIZED",
+      "Unknown",
+      173
+    ],
+    [
+      "USER_PREFERENCES",
+      "Unknown",
+      1
+    ],
+    [
+      "USER_PREFERENCES_EXTENDED",
+      "Unknown",
+      24
+    ]
+  ],
+  "entropy_by_pii": {
+    "APP_STATE_STORAGE": [
+      1.0,
+      3.920331391668873,
+      1.0,
+      1.0,
+      3.920331391668873,
+      4.62975844747482
+    ],
+    "CONSENT_AND_PRIVACY": [
+      4.220678282808599,
+      4.220678282808599
+    ],
+    "CUSTOMER_INTERACTION": [
+      2.7773627950641693,
+      0.0,
+      2.873140679513133,
+      0.0
+    ],
+    "DEVICE_ENV": [
+      4.251574237385882,
+      4.151400749996931
+    ],
+    "DIRECT_PII::gender": [
+      5.8276660934308735,
+      5.968342815446454,
+      4.511657234158922,
+      4.0933405928928694,
+      6.0240137008289585
+    ],
+    "IDENTITY_TRACKING": [
+      4.797879474855861,
+      4.780804217236389,
+      4.816839544993091,
+      4.785803896927127,
+      4.785803896927127,
+      4.785803896927127,
+      4.428050295504721,
+      4.785803896927127,
+      4.785803896927127,
+      4.835771898335791,
+      4.785803896927127
+    ],
+    "ID_SOLUTIONS_AND_EXCHANGES": [
+      2.5,
+      3.8767302815911964,
+      3.9306055125529387,
+      4.7876185709252255,
+      4.962849749061277,
+      6.082598052468704,
+      4.962849749061277,
+      3.0,
+      4.877276835980171,
+      6.082598052468704,
+      3.9647919909925404,
+      2.4056390622295662,
+      5.22931303429723,
+      4.035377549098369,
+      2.75,
+      5.232410238890895,
+      3.826874881864637,
+      5.210750155921448,
+      4.954172881220318,
+      4.962849749061279,
+      4.845130497105115
+    ],
+    "NAVIGATION_HISTORY": [
+      4.261857119048342,
+      3.9232314287976204
+    ],
+    "SECURITY_AND_BOT_MITIGATION": [
+      4.6147319433796765,
+      3.8369589098021653,
+      4.320982616074134
+    ],
+    "SUSPICIOUS_VALUES": [
+      4.93465018464436,
+      3.638830127032208,
+      3.638830127032208,
+      3.7390979179887855,
+      4.979626796425453,
+      5.0281935515113565,
+      4.680506062057133,
+      4.960836736431653,
+      4.6895944744501,
+      3.7261981000246145,
+      4.976410913153762,
+      5.829682114417238,
+      3.905764584655452,
+      4.988580555857098,
+      5.021503887138146,
+      5.276262589899542,
+      4.77638509789485,
+      5.450093596447382,
+      5.410025130726666,
+      4.9683497609498675,
+      5.521862613116965,
+      4.70115512354115,
+      3.995906598484245,
+      5.559830150513929,
+      5.485495052579131,
+      6.016483222416164,
+      5.426021032323437,
+      5.608444824068003,
+      3.7080030435786817,
+      3.3735073774685036,
+      4.934438373576135,
+      3.7635585991342375,
+      3.659799224314526,
+      3.739097917988786,
+      3.739097917988786,
+      4.790698236454647,
+      3.6524474880231264,
+      4.999467547289601,
+      5.400838702360377,
+      3.6314783907408077,
+      3.787301737252941,
+      6.113223619380228,
+      5.029047862569431,
+      4.921035596935935,
+      5.308285874850647,
+      4.838192296171326,
+      5.341647433676457,
+      5.341647433676457,
+      4.813703862363946,
+      3.4721634603655414,
+      4.585117575104646,
+      3.8711781263822154,
+      3.8502090290998967,
+      3.8502090290998967
+    ],
+    "UNCATEGORIZED": [
+      3.0565647621309537,
+      1.0,
+      3.9684539577019207,
+      4.076553584181406,
+      4.152490650406135,
+      4.591927313095644,
+      2.0,
+      2.815922063835166,
+      1.0,
+      0.0,
+      4.630471400470344,
+      4.658362422609792,
+      4.73702115979066,
+      4.7628187815544685,
+      4.09306920777189,
+      1.0,
+      1.0,
+      2.9735572622751856,
+      4.777908900157639,
+      0.0,
+      5.078299943768718,
+      1.0,
+      4.822927900120056,
+      2.321928094887362,
+      4.55172003576541,
+      0.8112781244591328,
+      4.608553222864728,
+      2.1280852788913944,
+      2.8731406795131336,
+      3.238901256602631,
+      2.0,
+      2.8731406795131336,
+      3.1820058147602133,
+      2.66122625626979,
+      2.5654483718208256,
+      2.6612262562697895,
+      2.0,
+      2.7192945256669794,
+      2.6031579868726,
+      2.7192945256669794,
+      2.1280852788913944,
+      4.678204337707546,
+      4.595769780949468,
+      2.6235166412180155,
+      2.2516291673878226,
+      0.0,
+      4.593231613188746,
+      4.71479489683249,
+      2.0,
+      3.202819531114783,
+      5.094431136343028,
+      5.299492988860637,
+      4.479466666101477,
+      3.9222981554392433,
+      4.703927901168573,
+      3.0850551027564768,
+      5.580307181529945,
+      2.0,
+      1.0,
+      5.5646561493755735,
+      1.5,
+      3.1810760119146075,
+      5.121999075221531,
+      4.568722723871583,
+      2.321928094887362,
+      2.5073801024236357,
+      2.449311833026446,
+      4.09306920777189,
+      3.0269868333592873,
+      0.0,
+      3.085055102756477,
+      3.5068905956085183,
+      4.743670753157966,
+      5.159978841064696,
+      1.0,
+      3.4056390622295662,
+      3.4056390622295662,
+      5.239401470035984,
+      2.9735572622751856,
+      1.0,
+      4.790467340447548,
+      0.0,
+      0.0,
+      4.186005397215404,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      3.767993392560786,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      2.0,
+      0.0,
+      3.323422611614549,
+      3.974889944284924,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      4.75301858581779,
+      2.321928094887362,
+      3.8848588918890474,
+      2.8150724101159437,
+      0.0,
+      3.9450411816405184,
+      4.846016315207572,
+      4.16829583405449,
+      2.9312089489103235,
+      2.2516291673878226,
+      2.5,
+      2.0,
+      2.0,
+      0.0,
+      0.0,
+      0.0,
+      5.103798938138931,
+      3.2402239289418517,
+      1.0,
+      4.40640706360084,
+      4.350969045608525,
+      3.577819531114783,
+      0.0,
+      2.321928094887362,
+      2.1556390622295662,
+      0.0,
+      2.321928094887362,
+      3.2402239289418517,
+      4.526354482664449,
+      1.0,
+      4.578255189897925,
+      4.1478182057277895,
+      4.619139474168821,
+      3.869331261111518,
+      3.1820058147602133,
+      2.321928094887362,
+      2.321928094887362,
+      4.088779347361362,
+      2.584962500721156,
+      2.0,
+      2.0,
+      2.0,
+      3.5219280948873624,
+      0.9182958340544896,
+      3.189898095464287,
+      1.0,
+      3.3371753411230776,
+      3.392747410448785,
+      0.0,
+      3.9273495967179026,
+      0.0,
+      1.0,
+      2.321928094887362,
+      3.1820058147602133,
+      1.0,
+      4.600113595777676,
+      4.09306920777189,
+      0.0,
+      2.353533948577482,
+      4.11757739240896,
+      2.6535442970305683,
+      4.187158558405723,
+      4.53395629860289
+    ],
+    "USER_PREFERENCES": [
+      4.935944576095336
+    ],
+    "USER_PREFERENCES_EXTENDED": [
+      4.239203099010332,
+      4.181175385010511,
+      0.0,
+      0.0,
+      4.239203099010332,
+      4.138502179294739,
+      4.333902547726587,
+      4.239203099010332,
+      0.0,
+      0.0,
+      4.239203099010332,
+      3.640223928941852,
+      4.239203099010332,
+      4.472321731245031,
+      0.0,
+      0.0,
+      4.239203099010332,
+      4.239203099010332,
+      0.0,
+      0.0,
+      4.163320189106001,
+      4.239203099010332,
+      0.0,
+      0.0
+    ]
+  },
+  "risk_levels": {
+    "Low Risk": 156,
+    "Medium Risk": 143,
+    "High Risk": 9
+  },
+  "risk_by_pii": {
+    "APP_STATE_STORAGE": {
+      "Low Risk": 5,
+      "Medium Risk": 1
+    },
+    "CONSENT_AND_PRIVACY": {
+      "Medium Risk": 2
+    },
+    "CUSTOMER_INTERACTION": {
+      "Low Risk": 4
+    },
+    "DEVICE_ENV": {
+      "Medium Risk": 2
+    },
+    "DIRECT_PII::gender": {
+      "Medium Risk": 5
+    },
+    "IDENTITY_TRACKING": {
+      "Medium Risk": 11
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "Low Risk": 8,
+      "Medium Risk": 13
+    },
+    "NAVIGATION_HISTORY": {
+      "Medium Risk": 1,
+      "Low Risk": 1
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "Medium Risk": 1,
+      "Low Risk": 1,
+      "High Risk": 1
+    },
+    "SUSPICIOUS_VALUES": {
+      "Medium Risk": 46,
+      "High Risk": 8
+    },
+    "UNCATEGORIZED": {
+      "Low Risk": 126,
+      "Medium Risk": 47
+    },
+    "USER_PREFERENCES": {
+      "Medium Risk": 1
+    },
+    "USER_PREFERENCES_EXTENDED": {
+      "Medium Risk": 13,
+      "Low Risk": 11
+    }
+  }
+}

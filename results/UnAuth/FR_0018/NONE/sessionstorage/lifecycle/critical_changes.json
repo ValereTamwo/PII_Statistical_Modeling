@@ -1,0 +1,178 @@
+{
+  "storage_type": "sessionstorage",
+  "total_changes": 48,
+  "pii_category_changes": {
+    "CUSTOMER_INTERACTION": 1,
+    "IDENTITY_TRACKING": 3,
+    "UNCATEGORIZED": 26,
+    "ID_SOLUTIONS_AND_EXCHANGES": 4,
+    "NAVIGATION_HISTORY": 1,
+    "SECURITY_AND_BOT_MITIGATION": 1,
+    "SUSPICIOUS_VALUES": 11,
+    "USER_PREFERENCES_EXTENDED": 1
+  },
+  "sensitive_type_counts": {
+    "timestamp": 16,
+    "iso_datetime": 3,
+    "long_id_token": 21,
+    "user_id": 3,
+    "uuid": 6
+  },
+  "risk_distribution": {
+    "Low": 34,
+    "Medium": 9,
+    "High": 5
+  },
+  "critical_items": [
+    {
+      "key": "___nrbic",
+      "pii_category": "SUSPICIOUS_VALUES",
+      "original_sensitive_types": [
+        "timestamp",
+        "uuid",
+        "long_id_token"
+      ],
+      "modified_sensitive_types": [
+        "timestamp",
+        "uuid",
+        "long_id_token"
+      ],
+      "all_sensitive_types": [
+        "uuid",
+        "timestamp",
+        "long_id_token"
+      ],
+      "size_change": -50,
+      "entropy_change": -0.016724288272869536,
+      "has_timestamp": true,
+      "has_uuid": true,
+      "has_long_id": true,
+      "has_email": false,
+      "has_session_id": false,
+      "has_user_id": false,
+      "has_ip": false,
+      "risk_score": 5,
+      "risk_level": "High"
+    },
+    {
+      "key": "___nrbic",
+      "pii_category": "SUSPICIOUS_VALUES",
+      "original_sensitive_types": [
+        "timestamp",
+        "uuid",
+        "long_id_token"
+      ],
+      "modified_sensitive_types": [
+        "timestamp",
+        "uuid",
+        "long_id_token"
+      ],
+      "all_sensitive_types": [
+        "uuid",
+        "timestamp",
+        "long_id_token"
+      ],
+      "size_change": -27,
+      "entropy_change": -0.01957307986371326,
+      "has_timestamp": true,
+      "has_uuid": true,
+      "has_long_id": true,
+      "has_email": false,
+      "has_session_id": false,
+      "has_user_id": false,
+      "has_ip": false,
+      "risk_score": 5,
+      "risk_level": "High"
+    },
+    {
+      "key": "___nrbic",
+      "pii_category": "SUSPICIOUS_VALUES",
+      "original_sensitive_types": [
+        "timestamp",
+        "uuid",
+        "long_id_token"
+      ],
+      "modified_sensitive_types": [
+        "timestamp",
+        "uuid",
+        "long_id_token"
+      ],
+      "all_sensitive_types": [
+        "uuid",
+        "timestamp",
+        "long_id_token"
+      ],
+      "size_change": -22,
+      "entropy_change": -0.08182995797166459,
+      "has_timestamp": true,
+      "has_uuid": true,
+      "has_long_id": true,
+      "has_email": false,
+      "has_session_id": false,
+      "has_user_id": false,
+      "has_ip": false,
+      "risk_score": 5,
+      "risk_level": "High"
+    },
+    {
+      "key": "___nrbic",
+      "pii_category": "SUSPICIOUS_VALUES",
+      "original_sensitive_types": [
+        "timestamp",
+        "uuid",
+        "long_id_token"
+      ],
+      "modified_sensitive_types": [
+        "timestamp",
+        "uuid",
+        "long_id_token"
+      ],
+      "all_sensitive_types": [
+        "uuid",
+        "timestamp",
+        "long_id_token"
+      ],
+      "size_change": -22,
+      "entropy_change": -0.001684097511716054,
+      "has_timestamp": true,
+      "has_uuid": true,
+      "has_long_id": true,
+      "has_email": false,
+      "has_session_id": false,
+      "has_user_id": false,
+      "has_ip": false,
+      "risk_score": 5,
+      "risk_level": "High"
+    },
+    {
+      "key": "mcssids",
+      "pii_category": "UNCATEGORIZED",
+      "original_sensitive_types": [
+        "timestamp",
+        "long_id_token",
+        "user_id"
+      ],
+      "modified_sensitive_types": [
+        "timestamp",
+        "long_id_token",
+        "user_id"
+      ],
+      "all_sensitive_types": [
+        "user_id",
+        "timestamp",
+        "long_id_token"
+      ],
+      "size_change": -22,
+      "entropy_change": 0.4007860394151779,
+      "has_timestamp": true,
+      "has_uuid": false,
+      "has_long_id": true,
+      "has_email": false,
+      "has_session_id": false,
+      "has_user_id": true,
+      "has_ip": false,
+      "risk_score": 5,
+      "risk_level": "High"
+    }
+  ]
+}

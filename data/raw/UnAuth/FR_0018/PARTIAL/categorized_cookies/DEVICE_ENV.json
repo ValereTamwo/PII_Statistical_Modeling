@@ -1,0 +1,116 @@
+[
+  {
+    "name": "login",
+    "value": "CustomerId=3274&LanguageId=4",
+    "domain": ".itslearning.com",
+    "path": "/",
+    "expires": 1796392475.199109,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "None",
+    "action": "added",
+    "source_file": "233.json",
+    "matches": [
+      {
+        "category": "DEVICE_ENV",
+        "subcategory": "language",
+        "match_type": "value",
+        "pattern": "(navigator_language|lang|locale)",
+        "matched_content": "CustomerId=3274&LanguageId=4",
+        "decoded": false,
+        "decoded_value": null
+      }
+    ],
+    "primary_category": "DEVICE_ENV"
+  },
+  {
+    "name": "LanguageID",
+    "value": "4",
+    "domain": "aandeslag.itslearning.com",
+    "path": "/",
+    "expires": 1796392475.199092,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "None",
+    "action": "added",
+    "source_file": "233.json",
+    "matches": [
+      {
+        "category": "DEVICE_ENV",
+        "subcategory": "language",
+        "match_type": "name",
+        "pattern": "(navigator_language|lang|locale)",
+        "matched_content": "LanguageID",
+        "decoded": false,
+        "decoded_value": null
+      }
+    ],
+    "primary_category": "DEVICE_ENV"
+  },
+  {
+    "name": "localeInfo",
+    "value": "fr-FR",
+    "domain": "auth.yves-rocher.fr",
+    "path": "/",
+    "expires": 1764950317.76622,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "Lax",
+    "action": "added",
+    "source_file": "330.json",
+    "matches": [
+      {
+        "category": "DEVICE_ENV",
+        "subcategory": "language",
+        "match_type": "name",
+        "pattern": "(navigator_language|lang|locale)",
+        "matched_content": "localeInfo",
+        "decoded": false,
+        "decoded_value": null
+      },
+      {
+        "category": "USER_PREFERENCES",
+        "subcategory": "language",
+        "match_type": "name",
+        "pattern": "(lang_preference|locale|preferred_language)",
+        "matched_content": "localeInfo",
+        "decoded": false,
+        "decoded_value": null
+      }
+    ],
+    "primary_category": "DEVICE_ENV"
+  },
+  {
+    "name": "lmd_consent",
+    "value": "%7B%22userId%22%3A%22714d5004-4be9-4e46-8db8-8f2f92f67e06%22%2C%22timestamp%22%3A%221764851943.410987654%22%2C%22version%22%3A2%2C%22cmpId%22%3A371%2C%22displayMode%22%3A%22cookiewall%22%2C%22purposes%22%3A%7B%22analytics%22%3Atrue%2C%22ads%22%3Atrue%2C%22personalization%22%3Atrue%2C%22mediaPlatforms%22%3Atrue%2C%22social%22%3Atrue%7D%2C%22optoutAnalytics%22%3Afalse%7D",
+    "domain": ".nouvelobs.com",
+    "path": "/",
+    "expires": 1796387943.432257,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "Lax",
+    "action": "added",
+    "source_file": "162.json",
+    "matches": [
+      {
+        "category": "DEVICE_ENV",
+        "subcategory": "os_browser",
+        "match_type": "value",
+        "pattern": "(userAgent|platform|navigator_os|navigator_browser)",
+        "matched_content": "%7B%22userId%22%3A%22714d5004-4be9-4e46-8db8-8f2f92f67e06%22%2C%22timestamp%22%3A%221764851943.410987654%22%2C%22version%22%3A2%2C%22cmpId%22%3A371%2C%22displayMode%22%3A%22cookiewall%22%2C%22purposes...",
+        "decoded": false,
+        "decoded_value": null
+      },
+      {
+        "category": "CONSENT_AND_PRIVACY",
+        "subcategory": "consent_management",
+        "match_type": "name",
+        "pattern": "(consent|CONSENTMGR|opt_out|opt-out|optout)",
+        "matched_content": "lmd_consent",
+        "decoded": false,
+        "decoded_value": null
+      }
+    ],
+    "primary_category": "DEVICE_ENV"
+  }
+]

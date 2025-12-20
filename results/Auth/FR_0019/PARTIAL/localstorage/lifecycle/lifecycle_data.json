@@ -1,0 +1,222 @@
+{
+  "storage_type": "localstorage",
+  "metrics": {
+    "total_items": 397,
+    "items_modified": 128,
+    "items_deleted": 0,
+    "entropy_increases": 85,
+    "entropy_decreases": 55,
+    "size_increases": 37,
+    "size_decreases": 28,
+    "pii_transitions": {
+      "ID_SOLUTIONS_AND_EXCHANGES → SUSPICIOUS_VALUES": 1,
+      "SUSPICIOUS_VALUES → UNCATEGORIZED": 1,
+      "SUSPICIOUS_VALUES → ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "UNCATEGORIZED → DIRECT_PII::gender": 1,
+      "UNCATEGORIZED → NAVIGATION_HISTORY": 1
+    },
+    "volatility_distribution": {
+      "stable": 269,
+      "moderate": 83,
+      "high": 45
+    },
+    "change_frequency": {
+      "avg_gap": 58.610263522884885,
+      "min_gap": 1,
+      "max_gap": 428
+    },
+    "frequent_changes": [
+      {
+        "key": "simpleStorage",
+        "avg_gap": 8.0,
+        "num_modifications": 1,
+        "pii_category": "SUSPICIOUS_VALUES"
+      },
+      {
+        "key": "topicsLastReferenceTime",
+        "avg_gap": 9.346938775510203,
+        "num_modifications": 31,
+        "pii_category": "UNCATEGORIZED"
+      },
+      {
+        "key": "hct",
+        "avg_gap": 10.0,
+        "num_modifications": 1,
+        "pii_category": "SUSPICIOUS_VALUES"
+      },
+      {
+        "key": "didomi_token",
+        "avg_gap": 13.727272727272727,
+        "num_modifications": 19,
+        "pii_category": "SUSPICIOUS_VALUES"
+      },
+      {
+        "key": "_uetsid_exp",
+        "avg_gap": 16.357142857142858,
+        "num_modifications": 18,
+        "pii_category": "IDENTITY_TRACKING"
+      },
+      {
+        "key": "_uetvid_exp",
+        "avg_gap": 16.357142857142858,
+        "num_modifications": 18,
+        "pii_category": "IDENTITY_TRACKING"
+      },
+      {
+        "key": "_gcl_ls",
+        "avg_gap": 19.318181818181817,
+        "num_modifications": 1,
+        "pii_category": "IDENTITY_TRACKING"
+      },
+      {
+        "key": "lastExternalReferrerTime",
+        "avg_gap": 24.285714285714285,
+        "num_modifications": 3,
+        "pii_category": "NAVIGATION_HISTORY"
+      },
+      {
+        "key": "cto_bundle",
+        "avg_gap": 25.470588235294116,
+        "num_modifications": 6,
+        "pii_category": "ID_SOLUTIONS_AND_EXCHANGES"
+      },
+      {
+        "key": "lastExternalReferrer",
+        "avg_gap": 26.666666666666668,
+        "num_modifications": 1,
+        "pii_category": "NAVIGATION_HISTORY"
+      },
+      {
+        "key": "sas_consent_rejected",
+        "avg_gap": 29.5,
+        "num_modifications": 1,
+        "pii_category": "CONSENT_AND_PRIVACY"
+      },
+      {
+        "key": "sas_euconsent_v2",
+        "avg_gap": 29.5,
+        "num_modifications": 1,
+        "pii_category": "CONSENT_AND_PRIVACY"
+      },
+      {
+        "key": "sas_addtl_euconsent_v2",
+        "avg_gap": 29.5,
+        "num_modifications": 1,
+        "pii_category": "CONSENT_AND_PRIVACY"
+      },
+      {
+        "key": "ABTastyData",
+        "avg_gap": 29.866666666666667,
+        "num_modifications": 11,
+        "pii_category": "USER_PREFERENCES_EXTENDED"
+      },
+      {
+        "key": "page_name_at_page_precedente",
+        "avg_gap": 30.0,
+        "num_modifications": 2,
+        "pii_category": "UNCATEGORIZED"
+      },
+      {
+        "key": "kameleoonLegalConsent",
+        "avg_gap": 30.333333333333332,
+        "num_modifications": 7,
+        "pii_category": "ID_SOLUTIONS_AND_EXCHANGES"
+      },
+      {
+        "key": "eng_mt",
+        "avg_gap": 31.307692307692307,
+        "num_modifications": 9,
+        "pii_category": "UNCATEGORIZED"
+      },
+      {
+        "key": "brs_streaming_start",
+        "avg_gap": 33.5,
+        "num_modifications": 3,
+        "pii_category": "UNCATEGORIZED"
+      },
+      {
+        "key": "didomi_portal",
+        "avg_gap": 33.5,
+        "num_modifications": 3,
+        "pii_category": "SUSPICIOUS_VALUES"
+      },
+      {
+        "key": "brs_streaming",
+        "avg_gap": 33.5,
+        "num_modifications": 3,
+        "pii_category": "DIRECT_PII"
+      }
+    ],
+    "url_modifications": {
+      "www.zooplus.fr": 26,
+      "www.ledauphine.com": 26,
+      "ouvrir-un-compte-en-ligne.sg.fr": 23,
+      "www.republicain-lorrain.fr": 22,
+      "www.dna.fr": 18,
+      "www.numerama.com": 17,
+      "www.banquepopulaire.fr": 16,
+      "www.sarenza.com": 14,
+      "www.marianne.net": 13,
+      "www.boursorama.com": 11
+    },
+    "pii_modification_patterns": {
+      "UNCATEGORIZED": {
+        "count": 186,
+        "avg_gap": 56.63084112149533
+      },
+      "DIRECT_PII::address": {
+        "count": 1,
+        "avg_gap": 78.66666666666667
+      },
+      "SUSPICIOUS_VALUES": {
+        "count": 55,
+        "avg_gap": 67.0377358490566
+      },
+      "ID_SOLUTIONS_AND_EXCHANGES": {
+        "count": 38,
+        "avg_gap": 52.621212121212125
+      },
+      "UX_AND_PERFORMANCE_ANALYTICS": {
+        "count": 15,
+        "avg_gap": 110.26086956521739
+      },
+      "NAVIGATION_HISTORY": {
+        "count": 15,
+        "avg_gap": 28.512820512820515
+      },
+      "IDENTITY_TRACKING": {
+        "count": 46,
+        "avg_gap": 35.65909090909091
+      },
+      "CONSENT_AND_PRIVACY": {
+        "count": 9,
+        "avg_gap": 64.0909090909091
+      },
+      "DIRECT_PII::gender": {
+        "count": 5,
+        "avg_gap": 117.5
+      },
+      "BEHAVIORAL_DATA": {
+        "count": 2,
+        "avg_gap": 74.8
+      },
+      "DIRECT_PII": {
+        "count": 4,
+        "avg_gap": 33.5
+      },
+      "APP_STATE_STORAGE": {
+        "count": 3,
+        "avg_gap": 34.0
+      },
+      "USER_PREFERENCES": {
+        "count": 1,
+        "avg_gap": 215.0
+      },
+      "USER_PREFERENCES_EXTENDED": {
+        "count": 11,
+        "avg_gap": 29.866666666666667
+      }
+    }
+  },
+  "num_timelines": 397
+}

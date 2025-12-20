@@ -1,0 +1,277 @@
+{
+  "storage_type": "localstorage",
+  "total_changes": 301,
+  "pii_category_changes": {
+    "BEHAVIORAL_DATA": 2,
+    "CONSENT_AND_PRIVACY": 8,
+    "DIRECT_PII::address": 1,
+    "DIRECT_PII::gender": 2,
+    "IDENTITY_TRACKING": 43,
+    "ID_SOLUTIONS_AND_EXCHANGES": 37,
+    "NAVIGATION_HISTORY": 9,
+    "SUSPICIOUS_VALUES": 36,
+    "UNCATEGORIZED": 136,
+    "USER_PREFERENCES": 1,
+    "USER_PREFERENCES_EXTENDED": 11,
+    "UX_AND_PERFORMANCE_ANALYTICS": 15
+  },
+  "sensitive_type_counts": {
+    "long_id_token": 136,
+    "session_id": 12,
+    "timestamp": 152,
+    "ip_address": 3,
+    "user_id": 3,
+    "iso_datetime": 15,
+    "uuid": 15
+  },
+  "risk_distribution": {
+    "Low": 233,
+    "Medium": 60,
+    "High": 8
+  },
+  "critical_items": [
+    {
+      "key": "permutive-app",
+      "pii_category": "SUSPICIOUS_VALUES",
+      "original_sensitive_types": [
+        "uuid",
+        "long_id_token"
+      ],
+      "modified_sensitive_types": [
+        "iso_datetime",
+        "uuid",
+        "long_id_token",
+        "ip_address",
+        "user_id"
+      ],
+      "all_sensitive_types": [
+        "ip_address",
+        "user_id",
+        "long_id_token",
+        "iso_datetime",
+        "uuid"
+      ],
+      "size_change": 6099,
+      "entropy_change": 0.2837684715181119,
+      "has_timestamp": true,
+      "has_uuid": true,
+      "has_long_id": true,
+      "has_email": false,
+      "has_session_id": false,
+      "has_user_id": true,
+      "has_ip": true,
+      "risk_score": 6,
+      "risk_level": "High"
+    },
+    {
+      "key": "intercom.intercom-state-derkpl7b",
+      "pii_category": "IDENTITY_TRACKING",
+      "original_sensitive_types": [
+        "timestamp",
+        "long_id_token",
+        "user_id"
+      ],
+      "modified_sensitive_types": [
+        "timestamp",
+        "long_id_token",
+        "user_id"
+      ],
+      "all_sensitive_types": [
+        "user_id",
+        "timestamp",
+        "long_id_token"
+      ],
+      "size_change": -97,
+      "entropy_change": 0.019653730552123605,
+      "has_timestamp": true,
+      "has_uuid": false,
+      "has_long_id": true,
+      "has_email": false,
+      "has_session_id": false,
+      "has_user_id": true,
+      "has_ip": false,
+      "risk_score": 5,
+      "risk_level": "High"
+    },
+    {
+      "key": "adagio",
+      "pii_category": "SUSPICIOUS_VALUES",
+      "original_sensitive_types": [
+        "timestamp",
+        "uuid",
+        "long_id_token"
+      ],
+      "modified_sensitive_types": [
+        "timestamp",
+        "uuid",
+        "long_id_token"
+      ],
+      "all_sensitive_types": [
+        "uuid",
+        "timestamp",
+        "long_id_token"
+      ],
+      "size_change": -3,
+      "entropy_change": 0.04975749006533814,
+      "has_timestamp": true,
+      "has_uuid": true,
+      "has_long_id": true,
+      "has_email": false,
+      "has_session_id": false,
+      "has_user_id": false,
+      "has_ip": false,
+      "risk_score": 5,
+      "risk_level": "High"
+    },
+    {
+      "key": "adagio",
+      "pii_category": "SUSPICIOUS_VALUES",
+      "original_sensitive_types": [
+        "timestamp",
+        "uuid",
+        "long_id_token"
+      ],
+      "modified_sensitive_types": [
+        "timestamp",
+        "uuid",
+        "long_id_token"
+      ],
+      "all_sensitive_types": [
+        "uuid",
+        "timestamp",
+        "long_id_token"
+      ],
+      "size_change": 1,
+      "entropy_change": 0.051849617180423024,
+      "has_timestamp": true,
+      "has_uuid": true,
+      "has_long_id": true,
+      "has_email": false,
+      "has_session_id": false,
+      "has_user_id": false,
+      "has_ip": false,
+      "risk_score": 5,
+      "risk_level": "High"
+    },
+    {
+      "key": "ivi_ids",
+      "pii_category": "SUSPICIOUS_VALUES",
+      "original_sensitive_types": [
+        "timestamp",
+        "uuid",
+        "long_id_token"
+      ],
+      "modified_sensitive_types": [
+        "timestamp",
+        "uuid",
+        "long_id_token"
+      ],
+      "all_sensitive_types": [
+        "uuid",
+        "timestamp",
+        "long_id_token"
+      ],
+      "size_change": 0,
+      "entropy_change": -0.02516110805230376,
+      "has_timestamp": true,
+      "has_uuid": true,
+      "has_long_id": true,
+      "has_email": false,
+      "has_session_id": false,
+      "has_user_id": false,
+      "has_ip": false,
+      "risk_score": 5,
+      "risk_level": "High"
+    },
+    {
+      "key": "ivi_ids",
+      "pii_category": "SUSPICIOUS_VALUES",
+      "original_sensitive_types": [
+        "timestamp",
+        "uuid",
+        "long_id_token"
+      ],
+      "modified_sensitive_types": [
+        "timestamp",
+        "uuid",
+        "long_id_token"
+      ],
+      "all_sensitive_types": [
+        "uuid",
+        "timestamp",
+        "long_id_token"
+      ],
+      "size_change": 0,
+      "entropy_change": -0.07468850726574328,
+      "has_timestamp": true,
+      "has_uuid": true,
+      "has_long_id": true,
+      "has_email": false,
+      "has_session_id": false,
+      "has_user_id": false,
+      "has_ip": false,
+      "risk_score": 5,
+      "risk_level": "High"
+    },
+    {
+      "key": "tealium_va_socgen_fr-prod-sg",
+      "pii_category": "SUSPICIOUS_VALUES",
+      "original_sensitive_types": [
+        "timestamp",
+        "uuid",
+        "long_id_token"
+      ],
+      "modified_sensitive_types": [
+        "timestamp",
+        "uuid",
+        "long_id_token"
+      ],
+      "all_sensitive_types": [
+        "uuid",
+        "timestamp",
+        "long_id_token"
+      ],
+      "size_change": 360,
+      "entropy_change": 0.0621708981036333,
+      "has_timestamp": true,
+      "has_uuid": true,
+      "has_long_id": true,
+      "has_email": false,
+      "has_session_id": false,
+      "has_user_id": false,
+      "has_ip": false,
+      "risk_score": 5,
+      "risk_level": "High"
+    },
+    {
+      "key": "permutive-session",
+      "pii_category": "SUSPICIOUS_VALUES",
+      "original_sensitive_types": [
+        "iso_datetime",
+        "uuid",
+        "long_id_token"
+      ],
+      "modified_sensitive_types": [
+        "iso_datetime",
+        "uuid",
+        "long_id_token"
+      ],
+      "all_sensitive_types": [
+        "iso_datetime",
+        "uuid",
+        "long_id_token"
+      ],
+      "size_change": 0,
+      "entropy_change": 0.01426011320561571,
+      "has_timestamp": true,
+      "has_uuid": true,
+      "has_long_id": true,
+      "has_email": false,
+      "has_session_id": false,
+      "has_user_id": false,
+      "has_ip": false,
+      "risk_score": 5,
+      "risk_level": "High"
+    }
+  ]
+}

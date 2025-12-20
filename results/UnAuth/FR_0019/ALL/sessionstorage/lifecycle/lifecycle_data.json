@@ -1,0 +1,128 @@
+{
+  "storage_type": "sessionstorage",
+  "metrics": {
+    "total_items": 178,
+    "items_modified": 42,
+    "items_deleted": 0,
+    "entropy_increases": 28,
+    "entropy_decreases": 17,
+    "size_increases": 16,
+    "size_decreases": 12,
+    "pii_transitions": {
+      "IDENTITY_TRACKING → USER_PREFERENCES_EXTENDED": 1
+    },
+    "volatility_distribution": {
+      "stable": 136,
+      "high": 11,
+      "moderate": 31
+    },
+    "change_frequency": {
+      "avg_gap": 83.99078341013825,
+      "min_gap": 1,
+      "max_gap": 324
+    },
+    "frequent_changes": [
+      {
+        "key": "com.grafana.faro.session",
+        "avg_gap": 8.0,
+        "num_modifications": 2,
+        "pii_category": "UNCATEGORIZED"
+      },
+      {
+        "key": "wbn_evt_count|58ca470e-c01f-421f-8e41-552efcdf5ef2",
+        "avg_gap": 12.0,
+        "num_modifications": 2,
+        "pii_category": "UNCATEGORIZED"
+      },
+      {
+        "key": "idSurveillanceCurrentPage",
+        "avg_gap": 30.0,
+        "num_modifications": 2,
+        "pii_category": "UNCATEGORIZED"
+      },
+      {
+        "key": "pmc-page-num",
+        "avg_gap": 35.0,
+        "num_modifications": 2,
+        "pii_category": "UNCATEGORIZED"
+      },
+      {
+        "key": "___nrbic",
+        "avg_gap": 37.333333333333336,
+        "num_modifications": 4,
+        "pii_category": "SUSPICIOUS_VALUES"
+      },
+      {
+        "key": "wisepops-pageview_id",
+        "avg_gap": 40.5,
+        "num_modifications": 1,
+        "pii_category": "CUSTOMER_INTERACTION"
+      },
+      {
+        "key": "arTimestamps",
+        "avg_gap": 41.90909090909091,
+        "num_modifications": 4,
+        "pii_category": "UNCATEGORIZED"
+      },
+      {
+        "key": "arLastUrl",
+        "avg_gap": 41.90909090909091,
+        "num_modifications": 2,
+        "pii_category": "UNCATEGORIZED"
+      },
+      {
+        "key": "__rtbh.lid",
+        "avg_gap": 45.0,
+        "num_modifications": 2,
+        "pii_category": "ID_SOLUTIONS_AND_EXCHANGES"
+      }
+    ],
+    "url_modifications": {
+      "www.zooplus.fr": 12,
+      "www.bouyguestelecom.fr": 8,
+      "www.4murs.com": 6,
+      "www.willemsefrance.fr": 5,
+      "www.cetelem.fr": 4,
+      "www.laprovence.com": 4,
+      "www.cofidis.fr": 4,
+      "booknode.com": 3,
+      "www.cmb.fr": 3,
+      "www.maty.com": 3
+    },
+    "pii_modification_patterns": {
+      "UNCATEGORIZED": {
+        "count": 60,
+        "avg_gap": 82.18666666666667
+      },
+      "IDENTITY_TRACKING": {
+        "count": 2,
+        "avg_gap": 90.0
+      },
+      "NAVIGATION_HISTORY": {
+        "count": 3,
+        "avg_gap": 152.0
+      },
+      "SECURITY_AND_BOT_MITIGATION": {
+        "count": 1,
+        "avg_gap": 288.0
+      },
+      "SUSPICIOUS_VALUES": {
+        "count": 13,
+        "avg_gap": 61.16
+      },
+      "CUSTOMER_INTERACTION": {
+        "count": 1,
+        "avg_gap": 40.5
+      },
+      "ID_SOLUTIONS_AND_EXCHANGES": {
+        "count": 6,
+        "avg_gap": 59.285714285714285
+      },
+      "USER_PREFERENCES_EXTENDED": {
+        "count": 1,
+        "avg_gap": 120.0
+      }
+    }
+  },
+  "num_timelines": 178
+}

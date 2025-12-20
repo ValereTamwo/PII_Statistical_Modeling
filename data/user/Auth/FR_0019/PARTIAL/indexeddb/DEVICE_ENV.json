@@ -1,0 +1,198 @@
+[
+  {
+    "field_path": "https_www.youtube.com_0.indexeddb.leveldb[5].value.options.headers.X-YouTube-Device",
+    "name": "X-YouTube-Device",
+    "value": "cbr=Chrome&cbrver=140.0.0.0&ceng=WebKit&cengver=537.36&cos=X11&cplatform=DESKTOP",
+    "source_file": "https_www.youtube.com_0.indexeddb.leveldb.json",
+    "type": "indexedDB",
+    "full_path": "https_www.youtube.com_0.indexeddb.leveldb[5].value.options.headers.X-YouTube-Device",
+    "matches": [
+      {
+        "category": "DEVICE_ENV",
+        "subcategory": "os_browser",
+        "match_type": "value",
+        "pattern": "(userAgent|platform|navigator_os|navigator_browser)",
+        "matched_content": "cbr=Chrome&cbrver=140.0.0.0&ceng=WebKit&cengver=537.36&cos=X11&cplatform=DESKTOP",
+        "decoded": false,
+        "decoded_value": null
+      },
+      {
+        "category": "DEVICE_ENV",
+        "subcategory": "youtube_device",
+        "match_type": "name",
+        "pattern": "(X-YouTube-Device|X-YouTube-Page-Label)",
+        "matched_content": "X-YouTube-Device",
+        "decoded": false,
+        "decoded_value": null
+      }
+    ],
+    "primary_category": "DEVICE_ENV"
+  },
+  {
+    "field_path": "https_www.youtube.com_0.indexeddb.leveldb[5].value.options.headers.X-YouTube-Page-Label",
+    "name": "X-YouTube-Page-Label",
+    "value": "youtube.player.web_20251112_21_RC00",
+    "source_file": "https_www.youtube.com_0.indexeddb.leveldb.json",
+    "type": "indexedDB",
+    "full_path": "https_www.youtube.com_0.indexeddb.leveldb[5].value.options.headers.X-YouTube-Page-Label",
+    "matches": [
+      {
+        "category": "DEVICE_ENV",
+        "subcategory": "youtube_device",
+        "match_type": "name",
+        "pattern": "(X-YouTube-Device|X-YouTube-Page-Label)",
+        "matched_content": "X-YouTube-Page-Label",
+        "decoded": false,
+        "decoded_value": null
+      },
+      {
+        "category": "SUSPICIOUS_VALUES",
+        "subcategory": "jwt_token",
+        "match_type": "value",
+        "pattern": "^[A-Za-z0-9-_]+\\.[A-Za-z0-9-_]+\\.[A-Za-z0-9-_]+$",
+        "matched_content": "youtube.player.web_20251112_21_RC00",
+        "decoded": false,
+        "decoded_value": null
+      }
+    ],
+    "primary_category": "DEVICE_ENV"
+  },
+  {
+    "field_path": "https_www.youtube.com_0.indexeddb.leveldb[5].value.options.postParams.context.client.userAgent",
+    "name": "userAgent",
+    "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+    "source_file": "https_www.youtube.com_0.indexeddb.leveldb.json",
+    "type": "indexedDB",
+    "full_path": "https_www.youtube.com_0.indexeddb.leveldb[5].value.options.postParams.context.client.userAgent",
+    "matches": [
+      {
+        "category": "DEVICE_ENV",
+        "subcategory": "os_browser",
+        "match_type": "name",
+        "pattern": "(userAgent|platform|navigator_os|navigator_browser)",
+        "matched_content": "userAgent",
+        "decoded": false,
+        "decoded_value": null
+      }
+    ],
+    "primary_category": "DEVICE_ENV"
+  },
+  {
+    "field_path": "https_www.youtube.com_0.indexeddb.leveldb[5].value.options.postParams.context.client.platform",
+    "name": "platform",
+    "value": "DESKTOP",
+    "source_file": "https_www.youtube.com_0.indexeddb.leveldb.json",
+    "type": "indexedDB",
+    "full_path": "https_www.youtube.com_0.indexeddb.leveldb[5].value.options.postParams.context.client.platform",
+    "matches": [
+      {
+        "category": "DEVICE_ENV",
+        "subcategory": "os_browser",
+        "match_type": "name",
+        "pattern": "(userAgent|platform|navigator_os|navigator_browser)",
+        "matched_content": "platform",
+        "decoded": false,
+        "decoded_value": null
+      }
+    ],
+    "primary_category": "DEVICE_ENV"
+  },
+  {
+    "field_path": "https_www.youtube.com_0.indexeddb.leveldb[6].value.options.headers.X-YouTube-Device",
+    "name": "X-YouTube-Device",
+    "value": "cbr=Chrome&cbrver=140.0.0.0&ceng=WebKit&cengver=537.36&cos=X11&cplatform=DESKTOP",
+    "source_file": "https_www.youtube.com_0.indexeddb.leveldb.json",
+    "type": "indexedDB",
+    "full_path": "https_www.youtube.com_0.indexeddb.leveldb[6].value.options.headers.X-YouTube-Device",
+    "matches": [
+      {
+        "category": "DEVICE_ENV",
+        "subcategory": "os_browser",
+        "match_type": "value",
+        "pattern": "(userAgent|platform|navigator_os|navigator_browser)",
+        "matched_content": "cbr=Chrome&cbrver=140.0.0.0&ceng=WebKit&cengver=537.36&cos=X11&cplatform=DESKTOP",
+        "decoded": false,
+        "decoded_value": null
+      },
+      {
+        "category": "DEVICE_ENV",
+        "subcategory": "youtube_device",
+        "match_type": "name",
+        "pattern": "(X-YouTube-Device|X-YouTube-Page-Label)",
+        "matched_content": "X-YouTube-Device",
+        "decoded": false,
+        "decoded_value": null
+      }
+    ],
+    "primary_category": "DEVICE_ENV"
+  },
+  {
+    "field_path": "https_www.youtube.com_0.indexeddb.leveldb[6].value.options.headers.X-YouTube-Page-Label",
+    "name": "X-YouTube-Page-Label",
+    "value": "youtube.player.web_20251112_21_RC00",
+    "source_file": "https_www.youtube.com_0.indexeddb.leveldb.json",
+    "type": "indexedDB",
+    "full_path": "https_www.youtube.com_0.indexeddb.leveldb[6].value.options.headers.X-YouTube-Page-Label",
+    "matches": [
+      {
+        "category": "DEVICE_ENV",
+        "subcategory": "youtube_device",
+        "match_type": "name",
+        "pattern": "(X-YouTube-Device|X-YouTube-Page-Label)",
+        "matched_content": "X-YouTube-Page-Label",
+        "decoded": false,
+        "decoded_value": null
+      },
+      {
+        "category": "SUSPICIOUS_VALUES",
+        "subcategory": "jwt_token",
+        "match_type": "value",
+        "pattern": "^[A-Za-z0-9-_]+\\.[A-Za-z0-9-_]+\\.[A-Za-z0-9-_]+$",
+        "matched_content": "youtube.player.web_20251112_21_RC00",
+        "decoded": false,
+        "decoded_value": null
+      }
+    ],
+    "primary_category": "DEVICE_ENV"
+  },
+  {
+    "field_path": "https_www.youtube.com_0.indexeddb.leveldb[6].value.options.postParams.context.client.userAgent",
+    "name": "userAgent",
+    "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+    "source_file": "https_www.youtube.com_0.indexeddb.leveldb.json",
+    "type": "indexedDB",
+    "full_path": "https_www.youtube.com_0.indexeddb.leveldb[6].value.options.postParams.context.client.userAgent",
+    "matches": [
+      {
+        "category": "DEVICE_ENV",
+        "subcategory": "os_browser",
+        "match_type": "name",
+        "pattern": "(userAgent|platform|navigator_os|navigator_browser)",
+        "matched_content": "userAgent",
+        "decoded": false,
+        "decoded_value": null
+      }
+    ],
+    "primary_category": "DEVICE_ENV"
+  },
+  {
+    "field_path": "https_www.youtube.com_0.indexeddb.leveldb[6].value.options.postParams.context.client.platform",
+    "name": "platform",
+    "value": "DESKTOP",
+    "source_file": "https_www.youtube.com_0.indexeddb.leveldb.json",
+    "type": "indexedDB",
+    "full_path": "https_www.youtube.com_0.indexeddb.leveldb[6].value.options.postParams.context.client.platform",
+    "matches": [
+      {
+        "category": "DEVICE_ENV",
+        "subcategory": "os_browser",
+        "match_type": "name",
+        "pattern": "(userAgent|platform|navigator_os|navigator_browser)",
+        "matched_content": "platform",
+        "decoded": false,
+        "decoded_value": null
+      }
+    ],
+    "primary_category": "DEVICE_ENV"
+  }
+]

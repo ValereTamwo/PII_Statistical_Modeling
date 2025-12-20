@@ -1,0 +1,63 @@
+================================================================================
+RAPPORT D'ANALYSE DES CHANGEMENTS CRITIQUES RGPD
+================================================================================
+
+Type de stockage: LOCALSTORAGE
+Total de changements analysés: 301
+
+1. DISTRIBUTION DES RISQUES RGPD
+--------------------------------------------------------------------------------
+   Critical     :    0 items (  0.0%)
+   High         :    8 items (  2.7%)
+   Medium       :   60 items ( 19.9%)
+   Low          :  233 items ( 77.4%)
+
+2. CHANGEMENTS PAR CATÉGORIE PII
+--------------------------------------------------------------------------------
+   UNCATEGORIZED                                 :  136 changements
+   IDENTITY_TRACKING                             :   43 changements
+   ID_SOLUTIONS_AND_EXCHANGES                    :   37 changements
+   SUSPICIOUS_VALUES                             :   36 changements
+   UX_AND_PERFORMANCE_ANALYTICS                  :   15 changements
+   USER_PREFERENCES_EXTENDED                     :   11 changements
+   NAVIGATION_HISTORY                            :    9 changements
+   CONSENT_AND_PRIVACY                           :    8 changements
+   BEHAVIORAL_DATA                               :    2 changements
+   DIRECT_PII::gender                            :    2 changements
+   DIRECT_PII::address                           :    1 changements
+   USER_PREFERENCES                              :    1 changements
+
+3. TYPES DE DONNÉES SENSIBLES MODIFIÉES
+--------------------------------------------------------------------------------
+   Timestamps Unix                :  152 items
+   IDs/Tokens longs               :  136 items
+   Dates ISO                      :   15 items
+   UUIDs                          :   15 items
+   Session IDs                    :   12 items
+   Adresses IP                    :    3 items
+   User IDs                       :    3 items
+
+4. TOP 8 ITEMS CRITIQUES
+--------------------------------------------------------------------------------
+Clé                                                | Catégorie PII                  | Score | Niveau
+--------------------------------------------------------------------------------
+permutive-app                                      | SUSPICIOUS_VALUES              |     6 | High
+intercom.intercom-state-derkpl7b                   | IDENTITY_TRACKING              |     5 | High
+adagio                                             | SUSPICIOUS_VALUES              |     5 | High
+adagio                                             | SUSPICIOUS_VALUES              |     5 | High
+ivi_ids                                            | SUSPICIOUS_VALUES              |     5 | High
+ivi_ids                                            | SUSPICIOUS_VALUES              |     5 | High
+tealium_va_socgen_fr-prod-sg                       | SUSPICIOUS_VALUES              |     5 | High
+permutive-session                                  | SUSPICIOUS_VALUES              |     5 | High
+
+5. RECOMMANDATIONS RGPD
+--------------------------------------------------------------------------------
+     ÉLEVÉ: 8 items à risque élevé
+      → Audit RGPD prioritaire
+      → Vérifier les durées de conservation
+
+     Timestamps fréquents dans les changements
+      → Tracking temporel = profilage potentiel
+      → Vérifier la finalité du traitement
+
+================================================================================
