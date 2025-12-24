@@ -17,6 +17,13 @@ from pathlib import Path
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from regex import TRACKING_PATTERNS_COMPLETE
 
+# Mapping user_id vers index dans DIRECT_PII
+USER_ID_TO_INDEX = {
+    'FR_0017': 0,
+    'FR_0018': 1,
+    'FR_0019': 2
+}
+
 
 def try_decode_value(value):
     """
@@ -232,6 +239,15 @@ def recursive_decode_and_reclassify(cookie, matches, patterns, source_type):
     return other_matches
 
 
+def get_patterns_for_user(user_id):
+    """Retourne les patterns avec le bon DIRECT_PII pour l'utilisateur"""
+    patterns = dict(TRACKING_PATTERNS_COMPLETE)
+    user_index = USER_ID_TO_INDEX.get(user_id, 0)
+    if isinstance(TRACKING_PATTERNS_COMPLETE['DIRECT_PII'], list):
+        patterns['DIRECT_PII'] = TRACKING_PATTERNS_COMPLETE['DIRECT_PII'][user_index]
+    return patterns
+
+
 def categorize_cookie(cookie, patterns, source_type='added'):
     """Catégorise un cookie selon les patterns définis"""
     matches = []
@@ -369,6 +385,9 @@ def main():
     policies = ('ALL', 'PARTIAL', 'NONE')
 
     for user in users:
+        # Obtenir les patterns spécifiques à cet utilisateur
+        user_patterns = get_patterns_for_user(user)
+        
         for auth_status in auth_statuses:
             for policy in policies:
                 input_dir = base_dir / 'preprocessing' / auth_status / user / policy / 'cookies'
@@ -387,7 +406,7 @@ def main():
                     ('modified', input_dir / 'modified_cookies.json', output_modified_dir)
                 ]
                 
-                print("=== Classification des cookies avec décodage ===\n")
+                print(f"=== Classification des cookies pour {user} avec décodage ===\n")
                 
                 for source_type, filepath, output_dir in files_to_process:
                     if not filepath.exists():
@@ -397,7 +416,7 @@ def main():
                     print(f"Traitement de {filepath.name} ({source_type})...")
                     
                     # Dictionnaire pour stocker les résultats par catégorie
-                    categorized_data = {cat: [] for cat in TRACKING_PATTERNS_COMPLETE.keys()}
+                    categorized_data = {cat: [] for cat in user_patterns.keys()}
                     categorized_data['UNCATEGORIZED'] = []
                     
                     cookies = load_cookies(filepath)
@@ -405,10 +424,10 @@ def main():
                     processed_cookies = 0
                     
                     for cookie in cookies:
-                        matches = categorize_cookie(cookie, TRACKING_PATTERNS_COMPLETE, source_type)
+                        matches = categorize_cookie(cookie, user_patterns, source_type)
                         
                         # Décodage récursif et re-classification des SUSPICIOUS_VALUES
-                        matches = recursive_decode_and_reclassify(cookie, matches, TRACKING_PATTERNS_COMPLETE, source_type)
+                        matches = recursive_decode_and_reclassify(cookie, matches, user_patterns, source_type)
                         
                         # Ajouter les métriques pour les cookies modifiés
                         if source_type == 'modified':

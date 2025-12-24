@@ -1,6 +1,10 @@
 TRACKING_PATTERNS_COMPLETE = {
     
-    'DIRECT_PII': {
+    # DIRECT_PII est maintenant une LISTE de patterns, un par utilisateur
+    # Index 0 = FR_0417, Index 1 = FR_0418, Index 2 = FR_0419
+    'DIRECT_PII': [
+        # ===== USER FR_0417 =====
+        {
         # Email patterns - exact and partial
         'email_exact': r'chris\.martin\.gdpr\+FR_0417@gmail\.com',
         'email_encoded': r'chris(?:%2E|\.)martin(?:%2E|\.)gdpr(?:%2B|\+)FR_0417(?:%40|@)gmail(?:%2E|\.)com',
@@ -67,6 +71,23 @@ TRACKING_PATTERNS_COMPLETE = {
         'religion': r'\bMusulman\b',
         'marital_status': r'\bCélibataire\b',
     },
+    
+    # ===== USER FR_0418 =====
+    {
+        # TODO:  remplir les patterns spécifiques pour FR_0418
+        # Pour l'instant, copie de FR_0417
+        'email_exact': r'chris\.martin\.gdpr\+FR_0417@gmail\.com',
+        'user_id': r'\bFR_0418\b',
+    },
+    
+    # ===== USER FR_0419 =====
+    {
+        # TODO:  remplire les patterns spécifiques pour FR_0419
+        # Pour l'instant, copie de FR_0417
+        'email_exact': r'chris\.martin\.gdpr\+FR_0417@gmail\.com',
+        'user_id': r'\bFR_0419\b',
+    }
+],
 
 
     'ID_SOLUTIONS_AND_EXCHANGES': {

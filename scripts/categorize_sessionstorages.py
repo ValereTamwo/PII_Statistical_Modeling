@@ -21,10 +21,26 @@ from typing import Dict, List, Any, Optional
 sys.path.insert(0, str(Path(__file__).parent))
 from regex import TRACKING_PATTERNS_COMPLETE
 
+# Mapping user_id vers index dans DIRECT_PII
+USER_ID_TO_INDEX = {
+    'FR_0017': 0,
+    'FR_0018': 1,
+    'FR_0019': 2
+}
 
-def apply_regex_to_text(text: str) -> Optional[str]:
+
+def get_patterns_for_user(user_id):
+    """Retourne les patterns avec le bon DIRECT_PII pour l'utilisateur"""
+    patterns = dict(TRACKING_PATTERNS_COMPLETE)
+    user_index = USER_ID_TO_INDEX.get(user_id, 0)
+    if isinstance(TRACKING_PATTERNS_COMPLETE['DIRECT_PII'], list):
+        patterns['DIRECT_PII'] = TRACKING_PATTERNS_COMPLETE['DIRECT_PII'][user_index]
+    return patterns
+
+
+def apply_regex_to_text(text: str, patterns: Dict) -> Optional[str]:
     """
-    Applique les regex de regex.py sur un texte.
+    Applique les regex sur un texte.
     
     Returns:
         Category name (avec sous-catégorie si DIRECT_PII) ou None
@@ -32,7 +48,7 @@ def apply_regex_to_text(text: str) -> Optional[str]:
     if not text or not isinstance(text, str):
         return None
     
-    for category, patterns_dict in TRACKING_PATTERNS_COMPLETE.items():
+    for category, patterns_dict in patterns.items():
         for pattern_name, pattern in patterns_dict.items():
             try:
                 if re.search(pattern, text, re.IGNORECASE):
@@ -92,7 +108,7 @@ def extract_all_text_from_json(obj: Any, texts: List[str], depth: int = 0, max_d
         texts.append(str(obj))
 
 
-def categorize_localstorage_item(item: Dict) -> Dict:
+def categorize_localstorage_item(item: Dict, patterns: Dict) -> Dict:
     """
     Catégorise un item localStorage en utilisant UNIQUEMENT les regex existantes.
     
@@ -135,12 +151,12 @@ def categorize_localstorage_item(item: Dict) -> Dict:
     
     # 3. Appliquer regex sur tous les textes extraits
     for text in all_texts:
-        cat = apply_regex_to_text(text)
+        cat = apply_regex_to_text(text, patterns)
         if cat:
             categories_found.append(cat)
     
     # 4. Appliquer regex sur la clé
-    cat = apply_regex_to_text(key)
+    cat = apply_regex_to_text(key, patterns)
     if cat:
         categories_found.append(cat)
     
@@ -178,7 +194,7 @@ def categorize_localstorage_item(item: Dict) -> Dict:
     }
 
 
-def categorize_all_sessionStorage(input_file: Path, output_dir: Path):
+def categorize_all_sessionStorage(input_file: Path, output_dir: Path,patterns: Dict):
     """
     Catégorise tous les items localStorage.
     """
@@ -204,7 +220,7 @@ def categorize_all_sessionStorage(input_file: Path, output_dir: Path):
     }
     
     for item in items:
-        result = categorize_localstorage_item(item)
+        result = categorize_localstorage_item(item, patterns)
         
         # Statistiques
         if result['is_json']:
@@ -273,6 +289,9 @@ def main():
     policies = ('ALL', 'PARTIAL', 'NONE')
 
     for user in users:
+        # Obtenir les patterns spécifiques à cet utilisateur
+        user_patterns = get_patterns_for_user(user)
+        
         for auth_status in auth_statuses:
             for policy in policies:
                 input_dir = base_dir / 'preprocessing' / auth_status / user / policy / 'sessionstorage'
@@ -294,7 +313,7 @@ def main():
                 
                 for source_type, input_file, output_dir in files_to_process:
                     if input_file.exists():
-                        categorize_all_sessionStorage(input_file, output_dir)
+                        categorize_all_sessionStorage(input_file, output_dir,user_patterns)
                     else:
                         print(f"\nFichier non trouvé: {input_file}")
 

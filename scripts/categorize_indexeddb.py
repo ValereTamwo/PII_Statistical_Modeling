@@ -5,10 +5,18 @@ import re
 import shutil
 from regex import TRACKING_PATTERNS_COMPLETE
 
+# Mapping user_id vers index dans DIRECT_PII
+USER_ID_TO_INDEX = {
+    'FR_0017': 0,
+    'FR_0018': 1,
+    'FR_0019': 2
+}
+
 from categorize_cookies import (
     try_decode_value,
     categorize_cookie,
-    recursive_decode_and_reclassify
+    recursive_decode_and_reclassify,
+    get_patterns_for_user
 )
 def extract_all_fields_recursive(data, parent_key='', separator='.'):
     """
@@ -42,7 +50,7 @@ def extract_all_fields_recursive(data, parent_key='', separator='.'):
     return fields
 
 
-def categorize_indexeddb_for_config(input_dir: Path, output_dir: Path):
+def categorize_indexeddb_for_config(input_dir: Path, output_dir: Path, patterns: dict):
     """
     Catégorise les fichiers IndexedDB pour une configuration donnée.
     Parse récursivement toute la structure JSON.
@@ -56,7 +64,7 @@ def categorize_indexeddb_for_config(input_dir: Path, output_dir: Path):
     
     categorized = {}
     total_items = 0
-    for category in TRACKING_PATTERNS_COMPLETE.keys():
+    for category in patterns.keys():
         categorized[category] = []
     categorized['UNCATEGORIZED'] = []
 
@@ -86,7 +94,7 @@ def categorize_indexeddb_for_config(input_dir: Path, output_dir: Path):
                     # Catégoriser avec la logique complète (décodage automatique)
                     matches = categorize_cookie(
                         indexeddb_item,
-                        TRACKING_PATTERNS_COMPLETE,
+                        patterns,
                         source_type='added'
                     )
                     
@@ -94,7 +102,7 @@ def categorize_indexeddb_for_config(input_dir: Path, output_dir: Path):
                     matches = recursive_decode_and_reclassify(
                         indexeddb_item,
                         matches,
-                        TRACKING_PATTERNS_COMPLETE,
+                        patterns,
                         source_type='added'
                     )
                     
@@ -158,6 +166,8 @@ def main ():
     for auth in auth_statuses:
         
         for user in users:
+            # Obtenir les patterns spécifiques à cet utilisateur
+            user_patterns = get_patterns_for_user(user)
             
             for policy in policies:
                 config_dir = raw_dir / auth / user / policy
@@ -168,7 +178,7 @@ def main ():
                 # Dossier de sortie
                 input_dir = base_dir / 'preprocessing' / auth / user / policy / 'indexeddb'
                 output_dir = base_dir / 'user' / auth / user / policy / 'indexeddb'
-                categorize_indexeddb_for_config(input_dir, output_dir)
+                categorize_indexeddb_for_config(input_dir, output_dir, user_patterns)
 
 
 if __name__ == '__main__':

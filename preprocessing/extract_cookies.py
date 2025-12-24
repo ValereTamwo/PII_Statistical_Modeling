@@ -50,7 +50,9 @@ def main():
     for user in users:
         for auth_status in auth_statuses:
             for policy in policies:
-                input_dir = base_dir / 'raw' / auth_status / user / policy / 'storage_state' / 'NotAUTH' / policy.lower()
+                # Chemin dynamique : NotAUTH si UnAuth, sinon Auth
+                storage_state_folder = 'NotAUTH' if auth_status == 'UnAuth' else 'Auth'
+                input_dir = base_dir / 'raw' / auth_status / user / policy / 'storage_state' / storage_state_folder / policy.lower()
                 if not input_dir.exists():
                     print(f"Le dossier {input_dir} n'existe pas, passage à la configuration suivante.")
                     continue
