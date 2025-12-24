@@ -1,0 +1,93 @@
+{
+  "total_items": 3303,
+  "direct_pii_count": 0,
+  "other_count": 3303,
+  "risk_levels": {
+    "High Risk": 207,
+    "Medium Risk": 3042,
+    "Critical Risk": 54
+  },
+  "risk_by_pii": {
+    "APP_STATE_STORAGE": {
+      "High Risk": 18
+    },
+    "BEHAVIORAL_DATA": {
+      "Medium Risk": 612,
+      "High Risk": 9,
+      "Critical Risk": 18
+    },
+    "DEVICE_ENV": {
+      "High Risk": 54,
+      "Medium Risk": 18
+    },
+    "IDENTITY_TRACKING": {
+      "Medium Risk": 45,
+      "High Risk": 18
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "Medium Risk": 63
+    },
+    "NAVIGATION_HISTORY": {
+      "High Risk": 18
+    },
+    "SUSPICIOUS_VALUES": {
+      "High Risk": 18
+    },
+    "UNCATEGORIZED": {
+      "Medium Risk": 2304,
+      "High Risk": 72,
+      "Critical Risk": 36
+    }
+  },
+  "content_hierarchy": {
+    "token_id": {
+      "APP_STATE_STORAGE": 18,
+      "BEHAVIORAL_DATA": 27,
+      "UNCATEGORIZED": 63
+    },
+    "short_text": {
+      "BEHAVIORAL_DATA": 486,
+      "DEVICE_ENV": 18,
+      "IDENTITY_TRACKING": 18,
+      "UNCATEGORIZED": 765
+    },
+    "language_code": {
+      "BEHAVIORAL_DATA": 126,
+      "IDENTITY_TRACKING": 18,
+      "UNCATEGORIZED": 27
+    },
+    "complex_string": {
+      "DEVICE_ENV": 54,
+      "IDENTITY_TRACKING": 27,
+      "NAVIGATION_HISTORY": 18,
+      "SUSPICIOUS_VALUES": 18,
+      "UNCATEGORIZED": 675
+    },
+    "number": {
+      "ID_SOLUTIONS_AND_EXCHANGES": 63,
+      "UNCATEGORIZED": 666
+    },
+    "boolean": {
+      "UNCATEGORIZED": 180
+    },
+    "ip_address": {
+      "UNCATEGORIZED": 18
+    },
+    "empty": {
+      "UNCATEGORIZED": 18
+    }
+  },
+  "content_types": {
+    "token_id": 108,
+    "short_text": 1287,
+    "language_code": 171,
+    "complex_string": 792,
+    "number": 729,
+    "boolean": 180,
+    "ip_address": 18,
+    "empty": 18
+  },
+  "vendor_counts": {
+    "indexeddb.leveldb": 3303
+  }
+}

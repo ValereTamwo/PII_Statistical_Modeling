@@ -60,8 +60,10 @@ def load_all_storage_items(input_dir: Path, storage_type: str) -> Tuple[List[Dic
     return direct_pii_items, other_items
 
 
-def create_unified_pii_type(item: Dict) -> str:
+def create_unified_pii_type(item: Dict) -> str: 
+
     """
+    Super Important: 
     Crée un type de PII unifié pour un item de stockage.
     
     - Si DIRECT_PII : retourne la sous-catégorie (email, gender, etc.)
@@ -82,6 +84,7 @@ def create_unified_pii_type(item: Dict) -> str:
 
 def calculate_storage_size(item: Dict) -> int:
     """
+    // tres important car permet d'estimer la quantité de données stockées par rapport a la taille par defaut du cookie
     Calcule la taille approximative d'un item de stockage en bytes.
     """
     value = item.get('value', '')

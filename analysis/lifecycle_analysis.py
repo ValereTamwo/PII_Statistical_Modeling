@@ -277,130 +277,166 @@ def analyze_lifecycle(added_dir: Path, modified_dir: Path) -> Dict:
 
 def main():
     """Script principal"""
-    base_dir = Path(__file__).parent.parent
-    added_dir = base_dir / 'categorized_cookies' / 'added'
-    modified_dir = base_dir / 'categorized_cookies' / 'modified'
-    output_dir = base_dir / 'analysis' / 'results' / 'lifecycle'
+    # base_dir = Path(__file__).parent.parent
     
-    # Analyser
-    results = analyze_lifecycle(added_dir, modified_dir)
+    # added_dir = base_dir / 'categorized_cookies' / 'added'
+    # modified_dir = base_dir / 'categorized_cookies' / 'modified'
+    # output_dir = base_dir / 'analysis' / 'results' / 'lifecycle'
+
+    # ---------------------------------------------------------------------------------
+
+    output_base = Path(__file__).resolve().parent.parent / 'results' 
+
+
+
+    base_dir = Path(__file__).resolve().parent.parent / 'data'
+    output_base = Path(__file__).resolve().parent.parent / 'results' 
+
+    if not base_dir.exists():
+        print(f"Dossier {base_dir} non trouvé")
+        return
+    users  = ('FR_0017', 'FR_0018', 'FR_0019')
+    auth_statuses = ('Auth', 'UnAuth')
     
-    # Sauvegarder les résultats
-    output_dir.mkdir(parents=True, exist_ok=True)
-    output_path = output_dir / 'lifecycle_data.json'
+    policies = ('ALL', 'PARTIAL', 'NONE')
+
+    for user in users:
+        for auth_status in auth_statuses:
+            for policy in policies:
+
+                # input_dir = base_dir / 'user' / auth_status / user / policy / 'cookies'/ 'added'
+                added_dir = base_dir / 'user' / auth_status / user / policy / 'cookies'/ 'added'
+                modified_dir = base_dir / 'user' / auth_status / user / policy / 'cookies'/ 'modified'
+
+                output_dir = output_base / auth_status / user / policy / 'cookies'/ 'lifecycle'
+
+                if not added_dir.exists() and not modified_dir.exists():
+                    print(f"Le dossier {added_dir} n'existe pas, passage à la configuration suivante.")
+                    continue
+                # output_added_dir = base_dir / 'user' / auth_status / user / policy / 'cookies'/ 'added'
+                # output_modified_dir = base_dir / 'user' / auth_status / user / policy / 'cookies'/ 'modified'
+                
+                output_dir.mkdir(parents=True, exist_ok=True)
     
-    # Convertir pour JSON (exclure les timelines complètes, trop volumineuses)
-    serializable_results = {
-        'metrics': {
-            **results['metrics'],
-            'pii_transitions': {f"{k[0]} → {k[1]}": v for k, v in results['metrics']['pii_transitions'].items()}
-        },
-        'num_timelines': len(results['timelines']),
-        'top_modified_keys': [t['key'] for t in results['top_modified'][:20]]
-    }
-    
-    with open(output_path, 'w', encoding='utf-8') as f:
-        json.dump(serializable_results, f, indent=2, ensure_ascii=False)
-    
-    print(f"\n Résultats sauvegardés : {output_path}")
-    
-    # Sauvegarder les timelines complètes (fichier séparé)
-    print("\n Sauvegarde des timelines complètes...")
-    timelines_output = output_dir / 'consolidated' / 'timelines_complete.json'
-    timelines_output.parent.mkdir(parents=True, exist_ok=True)
-    
-    # Convertir les timelines pour JSON
-    timelines_serializable = {}
-    for key, timeline in results['timelines'].items():
-        timelines_serializable[key] = {
-            'key': timeline['key'],
-            'num_modifications': timeline['num_modifications'],
-            'events': timeline['events'],
-            'duration_evolution': timeline['duration_evolution'],
-            'entropy_evolution': timeline['entropy_evolution'],
-            'pii_categories': timeline['pii_categories']
-        }
-    
-    with open(timelines_output, 'w', encoding='utf-8') as f:
-        json.dump(timelines_serializable, f, indent=2, ensure_ascii=False)
-    
-    print(f"    {len(timelines_serializable)} timelines complètes sauvegardées")
-    print(f"   → {timelines_output}")
-    print(f"   → Taille: {timelines_output.stat().st_size / 1024 / 1024:.1f} MB")
-    
-    # Afficher résumé
-    print("\n" + "=" * 70)
-    print(" RÉSUMÉ")
-    print("=" * 70)
-    print(f"\nCookies totaux: {results['metrics']['total_cookies']:,}")
-    print(f"Cookies modifiés: {results['metrics']['cookies_modified']:,} ({results['metrics']['cookies_modified']/results['metrics']['total_cookies']*100:.1f}%)")
-    
-    print(f"\n Évolution Durée:")
-    print(f"   Augmentation: {results['metrics']['duration_increases']:,}")
-    print(f"   Diminution: {results['metrics']['duration_decreases']:,}")
-    
-    print(f"\n Évolution Entropie:")
-    print(f"   Augmentation: {results['metrics']['entropy_increases']:,}")
-    print(f"   Diminution: {results['metrics']['entropy_decreases']:,}")
-    
-    print(f"\n Volatilité:")
-    for level, count in results['metrics']['volatility_distribution'].items():
-        print(f"   {level.capitalize()}: {count:,}")
-    
-    print("\n" + "=" * 70)
-    print(" Analyse de cycle de vie terminée!")
-    print("=" * 70)
-    
-    # Générer les visualisations
-    print("\n Génération des visualisations...")
-    graphs_dir = output_dir / 'graphs'
-    graphs_dir.mkdir(parents=True, exist_ok=True)
-    
-    try:
-        print("  → Graphique 29: Lifecycle Sankey...")
-        lviz.plot_lifecycle_sankey(
-            results['timelines'],
-            graphs_dir / '29_lifecycle_sankey.png',
-            top_n=10  # Ultra-réduit pour clarté maximale
-        )
-        print("   Graphique 29 généré")
-        
-        print("  → Graphique 30: Duration Evolution...")
-        lviz.plot_duration_evolution(
-            results['timelines'],
-            graphs_dir / '30_duration_evolution.png',
-            top_n=15  # Limiter pour lisibilité
-        )
-        print("   Graphique 30 généré")
-        
-        print("  → Graphique 31: Entropy Evolution...")
-        lviz.plot_entropy_evolution(
-            results['timelines'],
-            graphs_dir / '31_entropy_evolution.png',
-            top_n=15  # Limiter pour lisibilité
-        )
-        print("   Graphique 31 généré")
-        
-        print("  → Graphique 32: PII Transition Matrix...")
-        lviz.plot_pii_transition_matrix(
-            results['timelines'],
-            graphs_dir / '32_pii_transition_matrix.png'
-        )
-        print("   Graphique 32 généré")
-        
-        print("  → Graphique 33: Activity Heatmap...")
-        lviz.plot_activity_heatmap(
-            results['timelines'],
-            graphs_dir / '33_activity_heatmap.png',
-            top_n=30  # Limiter pour lisibilité
-        )
-        print("   Graphique 33 généré")
-        
-        print(f"\n 5 graphiques générés dans {graphs_dir}")
-    except Exception as e:
-        print(f"\n Erreur lors de la génération des graphiques: {e}")
-        import traceback
-        traceback.print_exc()
+                # Analyser
+                results = analyze_lifecycle(added_dir, modified_dir)
+                
+                # Sauvegarder les résultats
+                output_dir.mkdir(parents=True, exist_ok=True)
+                output_path = output_dir / 'lifecycle_data.json'
+                
+                # Convertir pour JSON (exclure les timelines complètes, trop volumineuses)
+                serializable_results = {
+                    'metrics': {
+                        **results['metrics'],
+                        'pii_transitions': {f"{k[0]} → {k[1]}": v for k, v in results['metrics']['pii_transitions'].items()}
+                    },
+                    'num_timelines': len(results['timelines']),
+                    'top_modified_keys': [t['key'] for t in results['top_modified'][:20]]
+                }
+                
+                with open(output_path, 'w', encoding='utf-8') as f:
+                    json.dump(serializable_results, f, indent=2, ensure_ascii=False)
+                
+                print(f"\n Résultats sauvegardés : {output_path}")
+                
+                # Sauvegarder les timelines complètes (fichier séparé)
+                print("\n Sauvegarde des timelines complètes...")
+                timelines_output = output_dir / 'consolidated' / 'timelines_complete.json'
+                timelines_output.parent.mkdir(parents=True, exist_ok=True)
+                
+                # Convertir les timelines pour JSON
+                timelines_serializable = {}
+                for key, timeline in results['timelines'].items():
+                    timelines_serializable[key] = {
+                        'key': timeline['key'],
+                        'num_modifications': timeline['num_modifications'],
+                        'events': timeline['events'],
+                        'duration_evolution': timeline['duration_evolution'],
+                        'entropy_evolution': timeline['entropy_evolution'],
+                        'pii_categories': timeline['pii_categories']
+                    }
+                
+                with open(timelines_output, 'w', encoding='utf-8') as f:
+                    json.dump(timelines_serializable, f, indent=2, ensure_ascii=False)
+                
+                print(f"    {len(timelines_serializable)} timelines complètes sauvegardées")
+                print(f"   → {timelines_output}")
+                print(f"   → Taille: {timelines_output.stat().st_size / 1024 / 1024:.1f} MB")
+                
+                # Afficher résumé
+                print("\n" + "=" * 70)
+                print(" RÉSUMÉ")
+                print("=" * 70)
+                print(f"\nCookies totaux: {results['metrics']['total_cookies']:,}")
+                print(f"Cookies modifiés: {results['metrics']['cookies_modified']:,} ({results['metrics']['cookies_modified']/results['metrics']['total_cookies']*100:.1f}%)")
+                
+                print(f"\n Évolution Durée:")
+                print(f"   Augmentation: {results['metrics']['duration_increases']:,}")
+                print(f"   Diminution: {results['metrics']['duration_decreases']:,}")
+                
+                print(f"\n Évolution Entropie:")
+                print(f"   Augmentation: {results['metrics']['entropy_increases']:,}")
+                print(f"   Diminution: {results['metrics']['entropy_decreases']:,}")
+                
+                print(f"\n Volatilité:")
+                for level, count in results['metrics']['volatility_distribution'].items():
+                    print(f"   {level.capitalize()}: {count:,}")
+                
+                print("\n" + "=" * 70)
+                print(" Analyse de cycle de vie terminée!")
+                print("=" * 70)
+                
+                # Générer les visualisations
+                print("\n Génération des visualisations...")
+                graphs_dir = output_dir / 'graphs'
+                graphs_dir.mkdir(parents=True, exist_ok=True)
+                
+                try:
+                    print("  → Graphique 29: Lifecycle Sankey...")
+                    lviz.plot_lifecycle_sankey(
+                        results['timelines'],
+                        graphs_dir / '29_lifecycle_sankey.png',
+                        top_n=10  # Ultra-réduit pour clarté maximale
+                    )
+                    print("   Graphique 29 généré")
+                    
+                    print("  → Graphique 30: Duration Evolution...")
+                    lviz.plot_duration_evolution(
+                        results['timelines'],
+                        graphs_dir / '30_duration_evolution.png',
+                        top_n=15  # Limiter pour lisibilité
+                    )
+                    print("   Graphique 30 généré")
+                    
+                    print("  → Graphique 31: Entropy Evolution...")
+                    lviz.plot_entropy_evolution(
+                        results['timelines'],
+                        graphs_dir / '31_entropy_evolution.png',
+                        top_n=15  # Limiter pour lisibilité
+                    )
+                    print("   Graphique 31 généré")
+                    
+                    print("  → Graphique 32: PII Transition Matrix...")
+                    lviz.plot_pii_transition_matrix(
+                        results['timelines'],
+                        graphs_dir / '32_pii_transition_matrix.png'
+                    )
+                    print("   Graphique 32 généré")
+                    
+                    print("  → Graphique 33: Activity Heatmap...")
+                    lviz.plot_activity_heatmap(
+                        results['timelines'],
+                        graphs_dir / '33_activity_heatmap.png',
+                        top_n=30  # Limiter pour lisibilité
+                    )
+                    print("   Graphique 33 généré")
+                    
+                    print(f"\n 5 graphiques générés dans {graphs_dir}")
+                except Exception as e:
+                    print(f"\n Erreur lors de la génération des graphiques: {e}")
+                    import traceback
+                    traceback.print_exc()
 
 
 if __name__ == '__main__':
