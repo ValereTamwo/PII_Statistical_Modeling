@@ -1,0 +1,926 @@
+{
+    "metadata": {
+        "initial url": "https://www.boursier.com",
+        "final_url": "https://www.boursier.com/bourse",
+        "timestamp": "2025-12-04T18:51:53.598648"
+    },
+    "cookies": {
+        "added": {
+            "dsp_94|.user-sync.fwmrm.net|/": {
+                "name": "dsp_94",
+                "value": "879277",
+                "domain": ".user-sync.fwmrm.net",
+                "path": "/",
+                "expires": 1770054615.649966,
+                "httpOnly": false,
+                "secure": true,
+                "sameSite": "None"
+            },
+            "atidvisitor|.boursier.com|/": {
+                "name": "atidvisitor",
+                "value": "%7B%22name%22%3A%22atidvisitor%22%2C%22val%22%3A%7B%22at%22%3A%22%22%2C%22vrn%22%3A%22-517141-%22%7D%2C%22options%22%3A%7B%22path%22%3A%22%2F%22%2C%22session%22%3A15724800%2C%22end%22%3A15724800%7D%7D",
+                "domain": ".boursier.com",
+                "path": "/",
+                "expires": 1780595504.319235,
+                "httpOnly": false,
+                "secure": false,
+                "sameSite": "Lax"
+            },
+            "uids|.prebid-server.pbstck.com|/": {
+                "name": "uids",
+                "value": "eyJ0ZW1wVUlEcyI6eyJhZGYiOnsidWlkIjoiNTM4NTc1NjY5MTY1NzAxNDk5MiIsImV4cGlyZXMiOiIyMDI1LTEyLTE4VDE3OjUxOjI1Ljc2ODk5OTgwNloifSwiYWRueHMiOnsidWlkIjoiNjk5MDAwODE1NTk4MDA3MzAyNSIsImV4cGlyZXMiOiIyMDI1LTEyLTE4VDE3OjQ4OjM5LjI2NDM1MDU4NloifSwicnViaWNvbiI6eyJ1aWQiOiJNSVI4N01NUS1DLUdPOEEiLCJleHBpcmVzIjoiMjAyNS0xMi0xOFQxNzo0ODozOS44MjY5ODIxMzJaIn19fQ==",
+                "domain": ".prebid-server.pbstck.com",
+                "path": "/",
+                "expires": 1772646685.792044,
+                "httpOnly": false,
+                "secure": true,
+                "sameSite": "None"
+            },
+            "avcid-sma-uid|.richaudience.com|/": {
+                "name": "avcid-sma-uid",
+                "value": "7553774454192386445",
+                "domain": ".richaudience.com",
+                "path": "/",
+                "expires": 1772646708.855096,
+                "httpOnly": true,
+                "secure": true,
+                "sameSite": "None"
+            },
+            "avcid-apn-uid|.richaudience.com|/": {
+                "name": "avcid-apn-uid",
+                "value": "6990008155980073025",
+                "domain": ".richaudience.com",
+                "path": "/",
+                "expires": 1772646670.637655,
+                "httpOnly": true,
+                "secure": true,
+                "sameSite": "None"
+            },
+            "pxid|.df0a70cd-f13c-42dc-ab8c-659257cbb30a.prmutv.co|/": {
+                "name": "pxid",
+                "value": "41023f19-d746-4d68-b0f8-34d218440834",
+                "domain": ".df0a70cd-f13c-42dc-ab8c-659257cbb30a.prmutv.co",
+                "path": "/",
+                "expires": 1772646517.54857,
+                "httpOnly": true,
+                "secure": true,
+                "sameSite": "None"
+            },
+            "pubsyncexp|.ads.pubmatic.com|/": {
+                "name": "pubsyncexp",
+                "value": "1764892267185",
+                "domain": ".ads.pubmatic.com",
+                "path": "/",
+                "expires": 1764957067,
+                "httpOnly": false,
+                "secure": true,
+                "sameSite": "None"
+            },
+            "__eoi|.boursier.com|/": {
+                "name": "__eoi",
+                "value": "ID=9a55a2ca506f2005:T=1764870519:RT=1764870519:S=AA-Afjaa5IWC5oDe_49TKZkPJQcZ",
+                "domain": ".boursier.com",
+                "path": "/",
+                "expires": 1780422519,
+                "httpOnly": false,
+                "secure": true,
+                "sameSite": "None"
+            },
+            "__gads|.boursier.com|/": {
+                "name": "__gads",
+                "value": "ID=ac6ff0606308cba0:T=1764870519:RT=1764870519:S=ALNI_MYOer1XQ-5TlMqdp65azB2OxxrUhQ",
+                "domain": ".boursier.com",
+                "path": "/",
+                "expires": 1798566519,
+                "httpOnly": false,
+                "secure": true,
+                "sameSite": "None"
+            },
+            "flashtalkingad1|.flashtalking.com|/": {
+                "name": "flashtalkingad1",
+                "value": "\"GUID=6547E794C0D91B\"",
+                "domain": ".flashtalking.com",
+                "path": "/",
+                "expires": 1799034522.036639,
+                "httpOnly": false,
+                "secure": true,
+                "sameSite": "None"
+            },
+            "euconsent-v2|.boursier.com|/": {
+                "name": "euconsent-v2",
+                "value": "CQb6BYAQb6BYAAHABBENCHFsAP_gAAAAAAAAJCBB9G5XDWFhODJVaZoEYAQVxVBp4sAgBgCAEwAASBMAYIwCFGAiIAyAICAIAAAAIEQAIAAEAAAAAAAAAIABACDMAEAAIAACICAACAEAAgAICAAJEgAgAAAAAEBEAlQAgBAAQJoAwNAAAgAgAUAAAAABAAAAAAAAAAAAQAAAAAAAQAAAAAAAIAAAAAAEAAAIEABAwSACAwQAYlABgACC8xSADAAEF5h0AGAAILzEIAMAAQXmCQAYAAgvMWgAwABBeYAA.f_wAAAAAAAAA",
+                "domain": ".boursier.com",
+                "path": "/",
+                "expires": 1780678116,
+                "httpOnly": false,
+                "secure": true,
+                "sameSite": "Lax"
+            },
+            "GCLB|cdn-graph.boursier.com|/": {
+                "name": "GCLB",
+                "value": "\"002527c0b144a26b\"",
+                "domain": "cdn-graph.boursier.com",
+                "path": "/",
+                "expires": 1764872291.273742,
+                "httpOnly": true,
+                "secure": false,
+                "sameSite": "Lax"
+            },
+            "permutive-id|.boursier.com|/": {
+                "name": "permutive-id",
+                "value": "802b947a-96cf-4c64-847e-1d49d1f615f7",
+                "domain": ".boursier.com",
+                "path": "/",
+                "expires": 1780591904,
+                "httpOnly": false,
+                "secure": true,
+                "sameSite": "None"
+            },
+            "grvt_id_third|.agrvt.com|/": {
+                "name": "grvt_id_third",
+                "value": "3582285213316590338",
+                "domain": ".agrvt.com",
+                "path": "/",
+                "expires": 1796406704.683698,
+                "httpOnly": true,
+                "secure": true,
+                "sameSite": "None"
+            },
+            "_gcl_au|.boursier.com|/": {
+                "name": "_gcl_au",
+                "value": "1.1.1343880064.1764870517",
+                "domain": ".boursier.com",
+                "path": "/",
+                "expires": 1772646517,
+                "httpOnly": false,
+                "secure": false,
+                "sameSite": "Lax"
+            },
+            "custom_data|.bidswitch.net|/": {
+                "name": "custom_data",
+                "value": "e7isGF9ta0RCbU8lMkY3UU0yUnlpT1VLc0NWeHdSdXNTTG15MzI3WjAlMkYxVGV4WmQlMkZBJTNE",
+                "domain": ".bidswitch.net",
+                "path": "/",
+                "expires": 1764871008.756456,
+                "httpOnly": false,
+                "secure": true,
+                "sameSite": "None"
+            },
+            "__gpi|.boursier.com|/": {
+                "name": "__gpi",
+                "value": "UID=00001297150b6eb8:T=1764870519:RT=1764870519:S=ALNI_Mbr2F2AYepEnj3umrYQCOTh9sFnAQ",
+                "domain": ".boursier.com",
+                "path": "/",
+                "expires": 1798566519,
+                "httpOnly": false,
+                "secure": true,
+                "sameSite": "None"
+            }
+        },
+        "removed": {
+            "consent|.bidswitch.net|/": {
+                "name": "consent",
+                "value": "CQb6BYAQb6BYAAHABBENCHFsAP_gAAAAAAAAKsEB7C_cRSFicSZn4PsgSQxewUhCoMAhBAIJASwBiAIAJJwH1mAiIAjAgKAKABIAICRAAQBlCADABAAAAIABITCEIEAQARAAIqBAAAARQgIACAxBGQAAGAAQgNJUAgEAkAMECBqoQFhAAQAgigAQIAAlAICFAAAAAAAgQAAAIAAAAmwQEgAAcAIAEACAAFEMEAAAoAkCAAABEAAQAAAAQBAAAAAAAAAgAQAIgAQAAADBIAMAAQXmHQAYAAgvMQgAwABBeYlABgACC8xSADAAEF5i0AGAAILzAAAA.f_wAAAAAAAAA",
+                "domain": ".bidswitch.net",
+                "path": "/",
+                "expires": 1764870667.019809,
+                "httpOnly": false,
+                "secure": true,
+                "sameSite": "None"
+            },
+            "csd|.bidswitch.net|/": {
+                "name": "csd",
+                "value": "smartadserver_352",
+                "domain": ".bidswitch.net",
+                "path": "/",
+                "expires": 1764870667.019939,
+                "httpOnly": false,
+                "secure": true,
+                "sameSite": "None"
+            },
+            "ry_ry-m4tm2tfr_so_realytics|.matmut.fr|/": {
+                "name": "ry_ry-m4tm2tfr_so_realytics",
+                "value": "eyJpZCI6InJ5XzkxODNDNTRFLTIyN0ItNDE3RC1BQzVCLTcwQjQyNkJCOEUxRiIsImNpZCI6bnVsbCwib3JpZ2luIjp0cnVlLCJyZWYiOm51bGwsImNvbnQiOm51bGwsIm5zIjp0cnVlLCJzYyI6ImtvIiwic3AiOm51bGx9",
+                "domain": ".matmut.fr",
+                "path": "/",
+                "expires": 1764870698,
+                "httpOnly": false,
+                "secure": false,
+                "sameSite": "Lax"
+            },
+            "pi|.pubmatic.com|/": {
+                "name": "pi",
+                "value": "158355:3",
+                "domain": ".pubmatic.com",
+                "path": "/",
+                "expires": 1764956767.179228,
+                "httpOnly": false,
+                "secure": true,
+                "sameSite": "None"
+            }
+        },
+        "modified": {
+            "uuid2|.adnxs.com|/": {
+                "from": {
+                    "name": "uuid2",
+                    "value": "6990008155980073025",
+                    "domain": ".adnxs.com",
+                    "path": "/",
+                    "expires": 1772646386.363724,
+                    "httpOnly": true,
+                    "secure": true,
+                    "sameSite": "None"
+                },
+                "to": {
+                    "name": "uuid2",
+                    "value": "6990008155980073025",
+                    "domain": ".adnxs.com",
+                    "path": "/",
+                    "expires": 1772646704.491495,
+                    "httpOnly": true,
+                    "secure": true,
+                    "sameSite": "None"
+                }
+            },
+            "didomi_token|.boursier.com|/": {
+                "from": {
+                    "name": "didomi_token",
+                    "value": "eyJ1c2VyX2lkIjoiMTlhZWExNjUtMGMyNy02OGMwLWIwNzAtYWMwYWEwYTZkMDdjIiwiY3JlYXRlZCI6IjIwMjUtMTItMDRUMTU6NTg6NDIuMzcwWiIsInVwZGF0ZWQiOiIyMDI1LTEyLTA0VDE1OjU4OjQyLjM3MFoiLCJ2ZXJzaW9uIjpudWxsfQ==",
+                    "domain": ".boursier.com",
+                    "path": "/",
+                    "expires": 1780671522,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "Lax"
+                },
+                "to": {
+                    "name": "didomi_token",
+                    "value": "eyJ1c2VyX2lkIjoiMTlhZWExNjUtMGMyNy02OGMwLWIwNzAtYWMwYWEwYTZkMDdjIiwiY3JlYXRlZCI6IjIwMjUtMTItMDRUMTU6NTg6NDIuMzcwWiIsInVwZGF0ZWQiOiIyMDI1LTEyLTA0VDE3OjQ4OjM2LjIyOVoiLCJ2ZXJzaW9uIjoyLCJwdXJwb3NlcyI6eyJlbmFibGVkIjpbImdlb2xvY2F0aW9uX2RhdGEiLCJkZXZpY2VfY2hhcmFjdGVyaXN0aWNzIiwibGVscF9vZmZsaW5lX2NvbWJpbmUiLCJsZWxwX2xpbmtfZGV2aWNlcyJdfSwidmVuZG9ycyI6eyJlbmFibGVkIjpbImdvb2dsZSIsInR3aXR0ZXIiLCJjOmxpbmtlZGluIiwiYzpuZXctcmVsaWMiLCJjOmxpbmtlZGluLW1hcmtldGluZy1zb2x1dGlvbnMiLCJjOnB1cmNoIiwiYzp5b3V0dWJlIiwiYzp0cmliYWwtZnVzaW9uIiwiYzpkaWRvbWkiLCJjOmJpbmctYWRzIiwiYzpoYXZhc21lZGktQkFHN3BKRGUiLCJjOmlnbml0aW9uby1MVkFNWmRuaiIsImM6YXdzLWNsb3VkZnJvbnQiLCJjOmFidGFzdHkyLWl6akpSTUVpIiwiYzpnb29nbGVhbmEtNFRYbkppZ1IiLCJjOm1heHBvaW50LWludGVyYWN0aXZlIiwiYzpncmVlbmhvdXNlLVFLYkdCa3M0IiwiYzpleGVsYXRlIiwiYzphZHZlcnRpc2luZ2NvbSIsImM6b3duZXJpcSIsImM6dHJ1c3RlLWNvbnNlbnQiLCJjOmNoYXJ0YmVhdCIsImM6bmV0YWZmaWxpYXRpb24iLCJjOnZpZGVvbG9neSIsImM6YW5hbGlnaHRzLTdteUVIM2VrIiwiYzpwb29vbC1pWEptaENWYSIsImM6YXRpbnRlcm5lLWd6eks5akJFIiwiYzpiYXRjaC1IOGZlUVhHNiIsImM6YWRvdG1vYiIsImM6Ym91cnNpZXItZG1wIiwiYzptaWNyb3NvZnQiLCJjOmZyYWN0aW9uYWwtbjJqWURGUE4iXX0sImFjIjoiRFFPQldBRVlBTElBWFFBMkFCNkFFcUFNUUFtNEJRd0R6UUh1QWU4QkRnQ1BnSHFnUWJBaU9CRWtDV29FX0FLS2dWZkFzT0Jha0RFUUdLd001Z2RPQTZzQjJFRDFRSUdBUm1nanFCTzlDZ2NLQ0FVSGdvdEJUcUN3NEZtb0wyZ1liQTBELkFBQUEifQ==",
+                    "domain": ".boursier.com",
+                    "path": "/",
+                    "expires": 1780678116,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "Lax"
+                }
+            },
+            "audit|.rubiconproject.com|/": {
+                "from": {
+                    "name": "audit",
+                    "value": "1|SDziDG3X/Ej/fNPn8kFtM+r8YNFFXNjycQw1SwbTAwKjcDTpdlA4hBjqqmstlWN7+2muaBsNjXCh9qrcruww3q8sk+JhB7ax4HEYI5ehIrU7d5F3RmXVmfLzHO6/ioNq5zNhBwEtCCrzhLzjDCByP9T4UR2AJ4Pv7KbSynYjnLv2FR09t9vDzK7Vt+qkOlH1JzK6Ai9YTOIVB7dn+ZehOl0KAd0aZcv4owcy+T8GUvSfsq13gxDtqYIxX4iPvmnFug0XpjT6hhC6JUeK2ZJMCvjrsuuXJ/3au4OnQ70msrr0sF/fl1Zz0GGviLSba6giRGr+j9Bj3W4oXAAb4CE9hk6+LuqYLxVQLl2GRdgvQvY2FLs3idQpYMA8OJxw1a3WCs/VbXcuOcxqABTkGM+DqLl67qcTN6pB/b791w856cOAIiKlVuHayx+mgEsBaaKbxZgYMv16UDZuJAeEy/aMEx8ZFq+1OJXpFLlZZAMDSjBxp8A6J5iYXQnsVflIbhegkT3hIBWrTms2pZGE4bKCcqhYVE9Z3ehYgKF1Jg0gF7wwDNbI4Wq0hJTsgl12YoCjX1vKT1ONdRY=",
+                    "domain": ".rubiconproject.com",
+                    "path": "/",
+                    "expires": 1796406367.098806,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                },
+                "to": {
+                    "name": "audit",
+                    "value": "1|SDziDG3X/Ej/fNPn8kFtM+r8YNFFXNjycQw1SwbTAwIg1UrxfmH55RjqqmstlWN7+2muaBsNjXCh9qrcruww3q8sk+JhB7ax4HEYI5ehIrU7d5F3RmXVmfLzHO6/ioNq5zNhBwEtCCrzhLzjDCByP9T4UR2AJ4PvZ3ZghTusrv2WXa6aBJnzLrEiUu0rBVGMcc+LLgmotzebr3/snAw0songNxKP48MFelhudYdcUMz7fEeZnwEPEXvpRt2C/vdnYNtqiTwKsSGU7IJddmKAo9GvKGHlgltDW/tn62ZrFnVYh1ehIyQMkReLLn7IiB/IMYg7trIKDhpruMGzl/S6z1HQlFO1avco2SLnrRLOj/uwOmT17zhwFZTsgl12YoCjPtmlNO3KNwo+2aU07co3Cs8BWaWh9FsNPaW8Y1oiR6lJcQLJE+UhA4DecXwzqJLIEcl7chF4Y1z5UeyFEvAPS4uNnqEeLAcd1YTegR674i68BGBuqQFc1h59AA59nAnHCXPIm0nyYcCU7IJddmKAo19byk9TjXUW",
+                    "domain": ".rubiconproject.com",
+                    "path": "/",
+                    "expires": 1796406519.702888,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                }
+            },
+            "_uid|.fwmrm.net|/": {
+                "from": {
+                    "name": "_uid",
+                    "value": "uml1d8e_7581746063173112445",
+                    "domain": ".fwmrm.net",
+                    "path": "/",
+                    "expires": 1780409658.220038,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                },
+                "to": {
+                    "name": "_uid",
+                    "value": "uml1d8e_7581746063173112445",
+                    "domain": ".fwmrm.net",
+                    "path": "/",
+                    "expires": 1780422615.65019,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                }
+            },
+            "khaos|.rubiconproject.com|/": {
+                "from": {
+                    "name": "khaos",
+                    "value": "MIR87MMQ-C-GO8A",
+                    "domain": ".rubiconproject.com",
+                    "path": "/",
+                    "expires": 1796406367.098767,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                },
+                "to": {
+                    "name": "khaos",
+                    "value": "MIR87MMQ-C-GO8A",
+                    "domain": ".rubiconproject.com",
+                    "path": "/",
+                    "expires": 1796406519.702755,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                }
+            },
+            "receive-cookie-deprecation|.3lift.com|/": {
+                "from": {
+                    "name": "receive-cookie-deprecation",
+                    "value": "1",
+                    "domain": ".3lift.com",
+                    "path": "/",
+                    "expires": 1772642164.624845,
+                    "httpOnly": true,
+                    "secure": true,
+                    "sameSite": "None",
+                    "partitionKey": "https://republicain-lorrain.fr",
+                    "_crHasCrossSiteAncestor": true
+                },
+                "to": {
+                    "name": "receive-cookie-deprecation",
+                    "value": "1",
+                    "domain": ".3lift.com",
+                    "path": "/",
+                    "expires": 1772646684.352542,
+                    "httpOnly": true,
+                    "secure": true,
+                    "sameSite": "None",
+                    "partitionKey": "https://boursier.com",
+                    "_crHasCrossSiteAncestor": true
+                }
+            },
+            "3pi|.id5-sync.com|/": {
+                "from": {
+                    "name": "3pi",
+                    "value": "464#1764862564769#-893968695#3b116d12-c912-4fab-b4fb-10320191c819-tuct102ad808|2#1764866119367#-1556450683|966#1764866119235#509594393|441#1764840078026#-693151864#e_e3a8d97f-3696-407b-9a1d-e6e83a3dc856|122#1764867997346#-2080103486|170#1764867997482#1715805168",
+                    "domain": ".id5-sync.com",
+                    "path": "/",
+                    "expires": 1772643997.516395,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                },
+                "to": {
+                    "name": "3pi",
+                    "value": "464#1764862564769#-893968695#3b116d12-c912-4fab-b4fb-10320191c819-tuct102ad808|2#1764866119367#-1556450683|966#1764866119235#509594393|441#1764870670441#-1164606005#e_0ac4a9aa-f56c-41d5-8dcb-f1399ddccca6|122#1764867997346#-2080103486|170#1764867997482#1715805168",
+                    "domain": ".id5-sync.com",
+                    "path": "/",
+                    "expires": 1772646670.457465,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                }
+            },
+            "uids|.4dex.io|/": {
+                "from": {
+                    "name": "uids",
+                    "value": "eyJzeW5jcyI6eyJhZHQiOiIyMDI1LTEyLTA0VDE1OjI2OjA3LjQxMzcxMTc3OVoiLCJhcHBuZXh1cyI6IjIwMjUtMTItMDRUMTY6MzU6MTYuNDAzMTg1ODk4WiIsImNvbm5lY3RhZCI6IjIwMjUtMTItMDRUMTU6MjY6MDcuNDEzNjk1NzM5WiIsImVwbGFubmluZyI6IjIwMjUtMTItMDRUMTU6MjY6MDMuOTQyNDQ2MjgyWiIsImZyZWV3aGVlbHR2IjoiMjAyNS0xMi0wNFQxNjozNToxNi40MDMxNjE3NThaIiwiaW1wcm92ZWRpZ2l0YWwiOiIyMDI1LTEyLTA0VDE1OjI2OjA3LjQxMzcyNjQ3OVoiLCJtYWRvcGkiOiIyMDI1LTEyLTA0VDE1OjI2OjAzLjk0MTcxNjQ2MloiLCJvbmV0YWciOiIyMDI1LTEyLTA0VDE1OjI2OjA3LjQxMzY1NzA4OVoiLCJvcGVueCI6IjIwMjUtMTItMDRUMTY6MzU6MTYuNDAzMTY3MDc4WiIsIm9wZW54cGJzIjoiMjAyNS0xMi0wNFQxNjozNToxNi40MDMxODQ5MjhaIiwicHVibWF0aWMiOiIyMDI1LTEyLTA0VDE1OjAxOjM0Ljg0MTQ2OTIyOFoiLCJydGJob3VzZSI6IjIwMjUtMTItMDRUMTU6MjY6MDMuOTQyNTQ2MzYyWiIsInJ1Ymljb24iOiIyMDI1LTEyLTA0VDE1OjAxOjM0Ljg0MTUxMDQwOFoiLCJzbWFydCI6IjIwMjUtMTItMDRUMTU6MDE6MzQuODQxMzg2Njg4WiIsInNvdnJuIjoiMjAyNS0xMi0wNFQxNTowMTozNC44NDE0NDIwODhaIiwidHJpcGxlbGlmdCI6IjIwMjUtMTItMDRUMTU6MjY6MDMuOTQyMjMzMzYyWiJ9LCJ1aWRzIjp7ImFkYWdpbyI6eyJleHBpcmVzIjoiMjAyNi0wMi0wMlQwOToyMToxMS43Njg5OTA0MjlaIiwidWlkIjoiMmEwYTcwYzQtMDFhMC00MWE2LTljYWYtZThmODc4MjUwMTMyIn19LCJiZGF5IjoiMjAyNS0xMi0wNFQwOToyMToxMS43Njg5ODc4MDlaIn0=",
+                    "domain": ".4dex.io",
+                    "path": "/",
+                    "expires": 1770054386.428612,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                },
+                "to": {
+                    "name": "uids",
+                    "value": "eyJzeW5jcyI6eyJhZHQiOiIyMDI1LTEyLTA0VDE1OjI2OjA3LjQxMzcxMTc3OVoiLCJhcHBuZXh1cyI6IjIwMjUtMTItMDRUMTY6MzU6MTYuNDAzMTg1ODk4WiIsImNvbm5lY3RhZCI6IjIwMjUtMTItMDRUMTU6MjY6MDcuNDEzNjk1NzM5WiIsImVwbGFubmluZyI6IjIwMjUtMTItMDRUMTU6MjY6MDMuOTQyNDQ2MjgyWiIsImZyZWV3aGVlbHR2IjoiMjAyNS0xMi0wNFQxNjozNToxNi40MDMxNjE3NThaIiwiaW1wcm92ZWRpZ2l0YWwiOiIyMDI1LTEyLTA0VDE1OjI2OjA3LjQxMzcyNjQ3OVoiLCJtYWRvcGkiOiIyMDI1LTEyLTA0VDE1OjI2OjAzLjk0MTcxNjQ2MloiLCJvbmV0YWciOiIyMDI1LTEyLTA0VDE1OjI2OjA3LjQxMzY1NzA4OVoiLCJvcGVueCI6IjIwMjUtMTItMDRUMTY6MzU6MTYuNDAzMTY3MDc4WiIsIm9wZW54cGJzIjoiMjAyNS0xMi0wNFQxNjozNToxNi40MDMxODQ5MjhaIiwicHVibWF0aWMiOiIyMDI1LTEyLTA0VDE1OjAxOjM0Ljg0MTQ2OTIyOFoiLCJydGJob3VzZSI6IjIwMjUtMTItMDRUMTU6MjY6MDMuOTQyNTQ2MzYyWiIsInJ1Ymljb24iOiIyMDI1LTEyLTA0VDE1OjAxOjM0Ljg0MTUxMDQwOFoiLCJzbWFydCI6IjIwMjUtMTItMDRUMTU6MDE6MzQuODQxMzg2Njg4WiIsInNvdnJuIjoiMjAyNS0xMi0wNFQxNTowMTozNC44NDE0NDIwODhaIiwidHJpcGxlbGlmdCI6IjIwMjUtMTItMDRUMTU6MjY6MDMuOTQyMjMzMzYyWiJ9LCJ1aWRzIjp7ImFkYWdpbyI6eyJleHBpcmVzIjoiMjAyNi0wMi0wMlQwOToyMToxMS43Njg5OTA0MjlaIiwidWlkIjoiMmEwYTcwYzQtMDFhMC00MWE2LTljYWYtZThmODc4MjUwMTMyIn19LCJiZGF5IjoiMjAyNS0xMi0wNFQwOToyMToxMS43Njg5ODc4MDlaIn0=",
+                    "domain": ".4dex.io",
+                    "path": "/",
+                    "expires": 1770054684.416912,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                }
+            },
+            "tluidp|.3lift.com|/": {
+                "from": {
+                    "name": "tluidp",
+                    "value": "4262365215215484879277",
+                    "domain": ".3lift.com",
+                    "path": "/",
+                    "expires": 1772644018.419739,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None",
+                    "partitionKey": "https://dealabs.com",
+                    "_crHasCrossSiteAncestor": true
+                },
+                "to": {
+                    "name": "tluidp",
+                    "value": "4262365215215484879277",
+                    "domain": ".3lift.com",
+                    "path": "/",
+                    "expires": 1772646708.592579,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None",
+                    "partitionKey": "https://boursier.com",
+                    "_crHasCrossSiteAncestor": true
+                }
+            },
+            "receive-cookie-deprecation|.rubiconproject.com|/": {
+                "from": {
+                    "name": "receive-cookie-deprecation",
+                    "value": "1",
+                    "domain": ".rubiconproject.com",
+                    "path": "/",
+                    "expires": 1772646367.098833,
+                    "httpOnly": true,
+                    "secure": true,
+                    "sameSite": "None",
+                    "partitionKey": "https://ouest-france.fr",
+                    "_crHasCrossSiteAncestor": true
+                },
+                "to": {
+                    "name": "receive-cookie-deprecation",
+                    "value": "1",
+                    "domain": ".rubiconproject.com",
+                    "path": "/",
+                    "expires": 1772646519.702947,
+                    "httpOnly": true,
+                    "secure": true,
+                    "sameSite": "None",
+                    "partitionKey": "https://boursier.com",
+                    "_crHasCrossSiteAncestor": true
+                }
+            },
+            "KADUSERCOOKIE|.pubmatic.com|/": {
+                "from": {
+                    "name": "KADUSERCOOKIE",
+                    "value": "12B545FD-3B9E-4175-92FA-36A8C85CDBF4",
+                    "domain": ".pubmatic.com",
+                    "path": "/",
+                    "expires": 1796406367.179394,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                },
+                "to": {
+                    "name": "KADUSERCOOKIE",
+                    "value": "12B545FD-3B9E-4175-92FA-36A8C85CDBF4",
+                    "domain": ".pubmatic.com",
+                    "path": "/",
+                    "expires": 1796406667.178999,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                }
+            },
+            "chkChromeAb67Sec|.pubmatic.com|/": {
+                "from": {
+                    "name": "chkChromeAb67Sec",
+                    "value": "14",
+                    "domain": ".pubmatic.com",
+                    "path": "/",
+                    "expires": 1772646367.179446,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                },
+                "to": {
+                    "name": "chkChromeAb67Sec",
+                    "value": "15",
+                    "domain": ".pubmatic.com",
+                    "path": "/",
+                    "expires": 1772646667.179076,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                }
+            },
+            "ansid|www.boursier.com|/": {
+                "from": {
+                    "name": "ansid",
+                    "value": "nn5viqawv5sztr2lagtigglx",
+                    "domain": "www.boursier.com",
+                    "path": "/",
+                    "expires": -1,
+                    "httpOnly": true,
+                    "secure": true,
+                    "sameSite": "Lax"
+                },
+                "to": {
+                    "name": "ansid",
+                    "value": "gut4fhpi51ivv1bpwz3gqf4v",
+                    "domain": "www.boursier.com",
+                    "path": "/",
+                    "expires": -1,
+                    "httpOnly": true,
+                    "secure": true,
+                    "sameSite": "Lax"
+                }
+            },
+            "khaos_p|.rubiconproject.com|/": {
+                "from": {
+                    "name": "khaos_p",
+                    "value": "MIR87MMQ-C-GO8A",
+                    "domain": ".rubiconproject.com",
+                    "path": "/",
+                    "expires": 1796406367.09879,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None",
+                    "partitionKey": "https://ouest-france.fr",
+                    "_crHasCrossSiteAncestor": true
+                },
+                "to": {
+                    "name": "khaos_p",
+                    "value": "MIR87MMQ-C-GO8A",
+                    "domain": ".rubiconproject.com",
+                    "path": "/",
+                    "expires": 1796406519.702847,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None",
+                    "partitionKey": "https://boursier.com",
+                    "_crHasCrossSiteAncestor": true
+                }
+            },
+            "receive-cookie-deprecation|.smartadserver.com|/": {
+                "from": {
+                    "name": "receive-cookie-deprecation",
+                    "value": "1",
+                    "domain": ".smartadserver.com",
+                    "path": "/",
+                    "expires": 1780418164.685277,
+                    "httpOnly": true,
+                    "secure": true,
+                    "sameSite": "None",
+                    "partitionKey": "https://republicain-lorrain.fr",
+                    "_crHasCrossSiteAncestor": true
+                },
+                "to": {
+                    "name": "receive-cookie-deprecation",
+                    "value": "1",
+                    "domain": ".smartadserver.com",
+                    "path": "/",
+                    "expires": 1780422684.368984,
+                    "httpOnly": true,
+                    "secure": true,
+                    "sameSite": "None",
+                    "partitionKey": "https://boursier.com",
+                    "_crHasCrossSiteAncestor": true
+                }
+            },
+            "tluid|.3lift.com|/": {
+                "from": {
+                    "name": "tluid",
+                    "value": "4262365215215484879277",
+                    "domain": ".3lift.com",
+                    "path": "/",
+                    "expires": 1772646367.112525,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                },
+                "to": {
+                    "name": "tluid",
+                    "value": "4262365215215484879277",
+                    "domain": ".3lift.com",
+                    "path": "/",
+                    "expires": 1772646708.593395,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                }
+            },
+            "cto_bundle|.criteo.com|/openrtb_2_5/pbjs/auction": {
+                "from": {
+                    "name": "cto_bundle",
+                    "value": "c9WA8V9PZXJNcmdzQlc5OUZkYzlSZHRnMjRTTW1YOSUyRmJVSjFhdTduZXRqN2RkS2J5ZFlLQjRiSWpRc2ZQRjRyVG83TWdkZE9FQXNXM1JmNlgyemYyQktKU2hyRVN5OTAwMjZjdDFlamxvNThrUXR2emZxWHJoNGtRdFI5Rk8lMkZmdjVuR3JjdGpvZkhEb2p6MjhUVkRCdW5JVzl3JTNEJTNE",
+                    "domain": ".criteo.com",
+                    "path": "/openrtb_2_5/pbjs/auction",
+                    "expires": 1798566386.429052,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None",
+                    "partitionKey": "https://ouest-france.fr",
+                    "_crHasCrossSiteAncestor": true
+                },
+                "to": {
+                    "name": "cto_bundle",
+                    "value": "9lgP1V8xR3ZybVFnZGkzQ1RabmU1VTduTDYyWXNIZ25kN2lvNyUyRlhmc09KRXJMJTJGMEpjaUNzUHZ6N0lyQWN2dW9Mcm1DaW10REVpWjFKbjNpYmZ6Q1RibTlLT2lhNyUyRnBLUjY2dFdxJTJGeEVwNUJKSGFxa2xyS3A3VHVoMFR1aklWdU8xbGpLOUxCZ2RtbGNua1ZQR1pzWGJGTWJrdyUzRCUzRA",
+                    "domain": ".criteo.com",
+                    "path": "/openrtb_2_5/pbjs/auction",
+                    "expires": 1798566519.335747,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None",
+                    "partitionKey": "https://boursier.com",
+                    "_crHasCrossSiteAncestor": true
+                }
+            },
+            "uids|pbs-front.mediasquare.fr|/": {
+                "from": {
+                    "name": "uids",
+                    "value": "eyJ0ZW1wVUlEcyI6eyJhZG54cyI6eyJ1aWQiOiI2OTkwMDA4MTU1OTgwMDczMDI1IiwiZXhwaXJlcyI6IjIwMjUtMTItMThUMTc6MTM6MDMuOTYyNjY3NjcrMDE6MDAifSwicHVibWF0aWMiOnsidWlkIjoiMTJCNTQ1RkQtM0I5RS00MTc1LTkyRkEtMzZBOEM4NUNEQkY0IiwiZXhwaXJlcyI6IjIwMjUtMTItMThUMTU6NDA6NTYuNjQzMzkzODg4KzAxOjAwIn0sInJ1Ymljb24iOnsidWlkIjoiTUlSODdNTVEtQy1HTzhBIiwiZXhwaXJlcyI6IjIwMjUtMTItMThUMTU6NDA6NTQuNzI2NDcyMzMxKzAxOjAwIn19LCJiZGF5IjoiMjAyNS0xMi0wNFQxNTo0MDo1NC43MjY0NzIxOTUrMDE6MDAifQ==",
+                    "domain": "pbs-front.mediasquare.fr",
+                    "path": "/",
+                    "expires": 1772635254.988037,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                },
+                "to": {
+                    "name": "uids",
+                    "value": "eyJ0ZW1wVUlEcyI6eyJhZGYiOnsidWlkIjoiNTM4NTc1NjY5MTY1NzAxNDk5MiIsImV4cGlyZXMiOiIyMDI1LTEyLTE4VDE4OjQ5OjQ0LjU2NjE5NDc3NSswMTowMCJ9LCJhZG54cyI6eyJ1aWQiOiI2OTkwMDA4MTU1OTgwMDczMDI1IiwiZXhwaXJlcyI6IjIwMjUtMTItMThUMTc6MTM6MDMuOTYyNjY3NjcrMDE6MDAifSwicHVibWF0aWMiOnsidWlkIjoiMTJCNTQ1RkQtM0I5RS00MTc1LTkyRkEtMzZBOEM4NUNEQkY0IiwiZXhwaXJlcyI6IjIwMjUtMTItMThUMTU6NDA6NTYuNjQzMzkzODg4KzAxOjAwIn0sInJ1Ymljb24iOnsidWlkIjoiTUlSODdNTVEtQy1HTzhBIiwiZXhwaXJlcyI6IjIwMjUtMTItMThUMTU6NDA6NTQuNzI2NDcyMzMxKzAxOjAwIn19LCJiZGF5IjoiMjAyNS0xMi0wNFQxNTo0MDo1NC43MjY0NzIxOTUrMDE6MDAifQ==",
+                    "domain": "pbs-front.mediasquare.fr",
+                    "path": "/",
+                    "expires": 1772635254.592572,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                }
+            },
+            "CMPRO|.casalemedia.com|/": {
+                "from": {
+                    "name": "CMPRO",
+                    "value": "2139",
+                    "domain": ".casalemedia.com",
+                    "path": "/",
+                    "expires": 1772646367.087759,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                },
+                "to": {
+                    "name": "CMPRO",
+                    "value": "2139",
+                    "domain": ".casalemedia.com",
+                    "path": "/",
+                    "expires": 1772646708.610196,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                }
+            },
+            "atauthority|.boursier.com|/": {
+                "from": {
+                    "name": "atauthority",
+                    "value": "%7B%22name%22%3A%22atauthority%22%2C%22val%22%3A%7B%22authority_name%22%3A%22cnil%22%2C%22visitor_mode%22%3A%22exempt%22%7D%2C%22options%22%3A%7B%22end%22%3A%222027-01-05T17%3A47%3A16.793Z%22%2C%22path%22%3A%22%2F%22%7D%7D",
+                    "domain": ".boursier.com",
+                    "path": "/",
+                    "expires": 1799171236,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                },
+                "to": {
+                    "name": "atauthority",
+                    "value": "%7B%22name%22%3A%22atauthority%22%2C%22val%22%3A%7B%22authority_name%22%3A%22default%22%2C%22visitor_mode%22%3A%22optin%22%7D%2C%22options%22%3A%7B%22end%22%3A%222027-01-05T17%3A48%3A54.234Z%22%2C%22path%22%3A%22%2F%22%7D%7D",
+                    "domain": ".boursier.com",
+                    "path": "/",
+                    "expires": 1799171334,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                }
+            },
+            "audit_p|.rubiconproject.com|/": {
+                "from": {
+                    "name": "audit_p",
+                    "value": "1|SDziDG3X/Ej/fNPn8kFtM+r8YNFFXNjycQw1SwbTAwKjcDTpdlA4hBjqqmstlWN7+2muaBsNjXCh9qrcruww3q8sk+JhB7ax4HEYI5ehIrU7d5F3RmXVmfLzHO6/ioNq5zNhBwEtCCrzhLzjDCByP9T4UR2AJ4Pv7KbSynYjnLv2FR09t9vDzK7Vt+qkOlH1JzK6Ai9YTOIVB7dn+ZehOl0KAd0aZcv4owcy+T8GUvSfsq13gxDtqYIxX4iPvmnFug0XpjT6hhC6JUeK2ZJMCvjrsuuXJ/3au4OnQ70msrr0sF/fl1Zz0GGviLSba6giRGr+j9Bj3W4oXAAb4CE9hk6+LuqYLxVQLl2GRdgvQvY2FLs3idQpYMA8OJxw1a3WCs/VbXcuOcxqABTkGM+DqLl67qcTN6pB/b791w856cOAIiKlVuHayx+mgEsBaaKbxZgYMv16UDZuJAeEy/aMEx8ZFq+1OJXpFLlZZAMDSjBxp8A6J5iYXQnsVflIbhegkT3hIBWrTms2pZGE4bKCcqhYVE9Z3ehYgKF1Jg0gF7wwDNbI4Wq0hJTsgl12YoCjX1vKT1ONdRY=",
+                    "domain": ".rubiconproject.com",
+                    "path": "/",
+                    "expires": 1796406367.098658,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None",
+                    "partitionKey": "https://ouest-france.fr",
+                    "_crHasCrossSiteAncestor": true
+                },
+                "to": {
+                    "name": "audit_p",
+                    "value": "1|SDziDG3X/Ej/fNPn8kFtM+r8YNFFXNjycQw1SwbTAwIg1UrxfmH55RjqqmstlWN7+2muaBsNjXCh9qrcruww3q8sk+JhB7ax4HEYI5ehIrU7d5F3RmXVmfLzHO6/ioNq5zNhBwEtCCrzhLzjDCByP9T4UR2AJ4PvZ3ZghTusrv2WXa6aBJnzLrEiUu0rBVGMcc+LLgmotzebr3/snAw0songNxKP48MFelhudYdcUMz7fEeZnwEPEXvpRt2C/vdnYNtqiTwKsSGU7IJddmKAo9GvKGHlgltDW/tn62ZrFnVYh1ehIyQMkReLLn7IiB/IMYg7trIKDhpruMGzl/S6z1HQlFO1avco2SLnrRLOj/uwOmT17zhwFZTsgl12YoCjPtmlNO3KNwo+2aU07co3Cs8BWaWh9FsNPaW8Y1oiR6lJcQLJE+UhA4DecXwzqJLIEcl7chF4Y1z5UeyFEvAPS4uNnqEeLAcd1YTegR674i68BGBuqQFc1h59AA59nAnHCXPIm0nyYcCU7IJddmKAo19byk9TjXUW",
+                    "domain": ".rubiconproject.com",
+                    "path": "/",
+                    "expires": 1796406519.70252,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None",
+                    "partitionKey": "https://boursier.com",
+                    "_crHasCrossSiteAncestor": true
+                }
+            },
+            "bm_sv|.boursier.com|/": {
+                "from": {
+                    "name": "bm_sv",
+                    "value": "08E605D405AD16CA54148111B3C5E739~YAAQ9GZ7XGDt0KyaAQAAm7V56h6ghfniQvuMQQD7kDaprwrv9xK0hP6EKKTcdwzo1L6WDli2VY6a/ulsA90QM9Lr5KapE1Wo4aqNBv+BULs4jdJay81j6AlbmM0XkxvXUWa6QnWq+YyTYwWsatOMfyDP7SM8w+DNf4aXWcvVvSAluSNetUJbZX9FIzvARngRE2gbslg3Wch/vvkHHL2JPJsKWVvM9KR4fn8R0NAjC9zLo1hxPYb3MKo2B7g7e/qONvcK~1",
+                    "domain": ".boursier.com",
+                    "path": "/",
+                    "expires": 1764871122.283977,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "Lax"
+                },
+                "to": {
+                    "name": "bm_sv",
+                    "value": "08E605D405AD16CA54148111B3C5E739~YAAQ7mZ7XArdBquaAQAAg+h96h6zvgs4lyqVy25T0vueo9+VeeZfazeDaJJKgQdb3VEO1YopcBlJR4/BxR3MCS2aEA1BTEupr/Sba25TtDSB+KeqEALSnMvDYieQe0MBi+tu5/q2RVcCApuxsR/ERtoR25nSzCm1i61WwzrjSb9YJg+U+TptEz3isMm9UdWDKaxarIHpOcA+2hOkfwJN16iff6BBrM6JbujLAuSSuWfw0yu8Q2jUPLOI5g4K3Qt1Z+wqIw==~1",
+                    "domain": ".boursier.com",
+                    "path": "/",
+                    "expires": 1764871122.463434,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "Lax"
+                }
+            },
+            "CMID|.casalemedia.com|/": {
+                "from": {
+                    "name": "CMID",
+                    "value": "aTFS.7mqPKoALy4.Ap5rXAAA",
+                    "domain": ".casalemedia.com",
+                    "path": "/",
+                    "expires": 1796406367.087695,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                },
+                "to": {
+                    "name": "CMID",
+                    "value": "aTFS.7mqPKoALy4.Ap5rXAAA",
+                    "domain": ".casalemedia.com",
+                    "path": "/",
+                    "expires": 1796406708.610141,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                }
+            },
+            "id5|.id5-sync.com|/": {
+                "from": {
+                    "name": "id5",
+                    "value": "b6812c97-e8ee-7bbc-b66b-ad1cefe926c1#1764840077120#6",
+                    "domain": ".id5-sync.com",
+                    "path": "/",
+                    "expires": 1772643997.373506,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                },
+                "to": {
+                    "name": "id5",
+                    "value": "b6812c97-e8ee-7bbc-b66b-ad1cefe926c1#1764840077120#8",
+                    "domain": ".id5-sync.com",
+                    "path": "/",
+                    "expires": 1772646670.457321,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                }
+            },
+            "uid|.adform.net|/": {
+                "from": {
+                    "name": "uid",
+                    "value": "5385756691657014992",
+                    "domain": ".adform.net",
+                    "path": "/",
+                    "expires": 1770051993.559935,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                },
+                "to": {
+                    "name": "uid",
+                    "value": "5385756691657014992",
+                    "domain": ".adform.net",
+                    "path": "/",
+                    "expires": 1770054685.665473,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                }
+            },
+            "XANDR_PANID|.adnxs.com|/": {
+                "from": {
+                    "name": "XANDR_PANID",
+                    "value": "oDb3TX_kNdzF3nJxyZOZOk0WTDr_QhQKAityrdODXMGmHJ1-idO_n8sjTIQHm1NPnvJZhL9gGEgXKytqJTpaDbXenBb2B7NA4DMpDNizv6k.",
+                    "domain": ".adnxs.com",
+                    "path": "/",
+                    "expires": 1772646386.363666,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None",
+                    "partitionKey": "https://ouest-france.fr",
+                    "_crHasCrossSiteAncestor": true
+                },
+                "to": {
+                    "name": "XANDR_PANID",
+                    "value": "0WPQ-HP-VyrRWhGuH9OcDmX-i0mND5HpBsBN9tVzci3c238XJCMaeN90gjmtrq8UJG3jGvHc2AzCAfevOXNW0MSRf9Na9YojskhXfk4gk-U.",
+                    "domain": ".adnxs.com",
+                    "path": "/",
+                    "expires": 1772646704.491422,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None",
+                    "partitionKey": "https://boursier.com",
+                    "_crHasCrossSiteAncestor": true
+                }
+            },
+            "sync|.3lift.com|/sync": {
+                "from": {
+                    "name": "sync",
+                    "value": "CgoIgAIQ6q28zq4zCgoIwQIQje6D0K4zCgoIwgIQj9zR0q4zCgoIwwIQj9zR0q4zCgoIhwIQvou_y64zCgoIxwIQm_LZz64zCgoIyAIQ5uuN0a4zCgoIyQIQj9zR0q4zCgkICxDB7ebRrjMKCgiMAhCUmsLLrjMKCgiOARDB7ebRrjMKCQgOEI_c0dKuMwoKCJACEMHt5tGuMwoKCJECEMHt5tGuMwoKCJICEMHt5tGuMwoKCJMCEI_c0dKuMwoKCJQCEOqtvM6uMwoKCJUCEMHt5tGuMwoKCNYBEI_c0dKuMwoKCJYCEI_c0dKuMwoJCBsQ6q28zq4zCgoInQIQ6q28zq4zCgoI3gEQ6q28zq4zCgkIXxDnmNnPrjMKCQgfEMHt5tGuMwoKCN8BENOh09KuMwoKCKEBEOqtvM6uMwoKCOIBENL84M-uMwoKCOMBEMHt5tGuMwoJCCQQj9zR0q4zCgoI5gEQn-Kgya4zCgoIrAIQ6q28zq4zCgoIrQIQ6q28zq4zCgoItAIQ6q28zq4zCgoItQIQj9zR0q4zCgoItwIQ6q28zq4zCgoIuAIQj9zR0q4zCgkIOhDtzbDFrjMKCgi6AhD2zuLTrjMKCgi7AhDsxYXPrjMKCgj7ARDB7ebRrjMKCgj_ARDB7ebRrjM=",
+                    "domain": ".3lift.com",
+                    "path": "/sync",
+                    "expires": 1767462367.112422,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                },
+                "to": {
+                    "name": "sync",
+                    "value": "CgoIgAIQ6q28zq4zCgoIwQIQje6D0K4zCgoIwgIQj9zR0q4zCgoIwwIQj9zR0q4zCgoIxgIQ3eDx064zCgoIhwIQvou_y64zCgoIxwIQm_LZz64zCgoIyAIQ5uuN0a4zCgoIyQIQj9zR0q4zCgkICxDB7ebRrjMKCgiMAhCUmsLLrjMKCgiOARDB7ebRrjMKCQgOEI_c0dKuMwoKCJACEMHt5tGuMwoKCJECEMHt5tGuMwoKCJICEMHt5tGuMwoKCJMCEI_c0dKuMwoKCJQCEOqtvM6uMwoKCJUCEMHt5tGuMwoKCNYBEI_c0dKuMwoKCJYCEI_c0dKuMwoJCBsQ6q28zq4zCgoInQIQ6q28zq4zCgoI3gEQ6q28zq4zCgkIXxDnmNnPrjMKCQgfEMHt5tGuMwoKCN8BENOh09KuMwoKCKEBEOqtvM6uMwoKCOIBENL84M-uMwoKCKICEPzw79OuMwoKCOMBEMHt5tGuMwoJCCQQj9zR0q4zCgoI5gEQn-Kgya4zCgoIqQIQ89_y064zCgoIrAIQ6q28zq4zCgoIrQIQ6q28zq4zCgoIrgIQhJH1064zCgoItAIQ6q28zq4zCgoItQIQj9zR0q4zCgoItwIQ6q28zq4zCgoIuAIQj9zR0q4zCgkIOhDtzbDFrjMKCgi6AhD2zuLTrjMKCgi7AhDsxYXPrjMKCgj7ARDB7ebRrjMKCgj_ARDB7ebRrjM=",
+                    "domain": ".3lift.com",
+                    "path": "/sync",
+                    "expires": 1767462670.489084,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                }
+            },
+            "receive-cookie-deprecation|.casalemedia.com|/": {
+                "from": {
+                    "name": "receive-cookie-deprecation",
+                    "value": "1",
+                    "domain": ".casalemedia.com",
+                    "path": "/",
+                    "expires": 1796395320.70045,
+                    "httpOnly": true,
+                    "secure": true,
+                    "sameSite": "None",
+                    "partitionKey": "https://francebleu.fr",
+                    "_crHasCrossSiteAncestor": true
+                },
+                "to": {
+                    "name": "receive-cookie-deprecation",
+                    "value": "1",
+                    "domain": ".casalemedia.com",
+                    "path": "/",
+                    "expires": 1796406684.381519,
+                    "httpOnly": true,
+                    "secure": true,
+                    "sameSite": "None",
+                    "partitionKey": "https://boursier.com",
+                    "_crHasCrossSiteAncestor": true
+                }
+            }
+        }
+    },
+    "localStorage": {
+        "added": {
+            "_GESPSK-permutive-secure-signal": "[\"permutive-secure-signal\",null,1764870518771,null,null,null,null,null,null,[100]]",
+            "permutive-id": "802b947a-96cf-4c64-847e-1d49d1f615f7",
+            "_pdfps": "[\"109869\",\"128074\",\"132206\",\"141742\",\"147016\",\"165571\",\"165572\",\"165580\",\"165581\",\"165593\",\"177598\",\"180156\",\"98554\"]",
+            "_pbstck_session_09c3c070": "eyJpZCI6IjY3NTk5OTA4LWI2M2ItNDkwYy1iMmE1LWZlYThhMTVmMDc2MCIsImxhc3RVcGRhdGVUaW1lTXMiOjE3NjQ4NzA2MjgyNTEsInBhZ2VDb3VudCI6MiwibGFzdFVybFZpc2l0ZWQiOiJodHRwczovL3d3dy5ib3Vyc2llci5jb20vYm91cnNlIiwidXRtU291cmNlIjpudWxsLCJ1dG1DYW1wYWlnbiI6bnVsbCwidXRtQ29udGVudCI6bnVsbCwidXRtVGVybSI6bnVsbCwidXRtTWVkaXVtIjpudWxsfQ==",
+            "ix_features": "{\"expiry\":1764874284384,\"features\":{\"pbjs_allow_all_eids\":{\"activated\":true},\"pbjs_enable_multiformat\":{\"activated\":true}}}",
+            "_pcrprs": "[]",
+            "permutive-prebid-rtd": "{\"acBidders\":[]}",
+            "pubcid_exp": "Fri, 04 Dec 2026 17:48:37 GMT",
+            "id5id_cached_consent_data": "7577085892632488",
+            "id5id_privacy_exp": "Sat, 03 Jan 2026 17:48:38 GMT",
+            "permutive-data-misc": "{\"identities\":{\"pxid\":{\"value\":\"41023f19-d746-4d68-b0f8-34d218440834\",\"expiry\":1764957104484},\"appnexus\":{\"value\":\"6990008155980073025\",\"expiry\":1764957104484},\"userID\":{}},\"metricsEnabled\":true,\"addon:ddp\":1764870517272}",
+            "id5id_extensions": "{\"data\":{\"lbCDN\":\"%%LB_CDN%%\",\"bounce\":{\"setCookie\":false}},\"expireAt\":1764899318746}",
+            "permutive-session": "{\"session_id\":\"15197dc4-29f5-48f9-a57e-db0201628c8c\",\"last_updated\":\"2025-12-04T17:51:44.482Z\",\"hasChanged\":false}",
+            "_gcl_ls": "{\"schema\":\"gcl\",\"version\":1,\"gcl_ctr\":{\"value\":{\"value\":0,\"timeouts\":0,\"creationTimeMs\":1764870516626},\"expires\":1772646516626}}",
+            "id5id_v2_signature": "{\"data\":{\"signature\":\"ID5_AsYcHNxcmFs-XNAViO7YfHaHc5V9AfaQ2-Vel30ZN1pTN1cuLwEt6chlhtjnFl4ElLqfkPfCLRPBBIfKyQOYVUdgCoj7yNmadZrvA8hal-1FqM-TVz-BBLwEH_MwdtgIhwf5LyvlJPPBIFVLRTqZG5CTz2NEBAuUeyPMrQbD3GM0HG19TDU\"},\"expireAt\":1766166518798}",
+            "adagio": "{\"_navigation\":{\"totalPages\":4,\"totalSessions\":1},\"session\":{\"_firstPageviewId\":\"29cfadac-e6d0-482c-9cfd-099376df8729\",\"_currentPagetype\":null,\"_previousPagetype\":null,\"_bidsSmplg\":0.1,\"pages\":4,\"rnd\":0.5410719344105336,\"id\":\"67b81752-7253-48cf-b6b8-457412e435a4\",\"new\":false,\"vwSmplg\":0.1,\"vwSmplgNxt\":0.1,\"expiry\":1764872443638,\"lastActivityTime\":1764870643638,\"initiator\":\"adgjs\"}}",
+            "permutive-data-queries": "{\"event-source-id\":\"48256e5c-e917-42f0-a540-8c06c7e48a5d\"}",
+            "id5id": "%7B%22signature%22%3A%22ID5_AsYcHNxcmFs-XNAViO7YfHaHc5V9AfaQ2-Vel30ZN1pTN1cuLwEt6chlhtjnFl4ElLqfkPfCLRPBBIfKyQOYVUdgCoj7yNmadZrvA8hal-1FqM-TVz-BBLwEH_MwdtgIhwf5LyvlJPPBIFVLRTqZG5CTz2NEBAuUeyPMrQbD3GM0HG19TDU%22%2C%22created_at%22%3A%222025-12-04T09%3A21%3A17.12Z%22%2C%22id5_consent%22%3Atrue%2C%22original_uid%22%3A%22ID5*LBMNYLwb8yJHDISmElaPkQPc0jKMNsV0AvpFj2FGZj___2kxyXZaAAEBCmkxUo0AaseClxBUrpZZIJU8DLdoBWrIxTJ1B7a6WoPSBNts0GxqzA1iy6ohIt5Lptg814Yuas3dbz5E1Q_Bjp6cAwR74WrPjR9XO5N29HpE4ykHdmZq0186ntmeAp0I7uxlr6CyatRSr2kINOu3HwQ8RGvq3mrV6EfSsM8lhSGl4I0Hrrpq1svJQlySm1od7Ex67i5eatc6RQEBwnMFhFyZ0mAK9GyavwmzpLnnCnukF5ORqKNq3eJHvZ5uoPKNi40jVTlqauXGsTwYB0K5F-ENrA1_smqozDiuYC8X7UKbRZfyU35qqb19gmjs_00eEq_pZ8Bhaqr-xkXAnFtjp5Gin8FVV2rqxAzlMenrvDPcKIcyNdJqq0dxtUpEi3lHPhPrrJH8autpCZrPzJyTkbmUFD3RCGr0WLd3SzZO5Eap0Y-FPp5qttjd6a9FmxgceZ7wRQ9javZx9t8ZkVXyXDdFbueiymq3AGE_CnTraKMXIl5BoNhqup0UmxMcW3bvvox-CdCkavpExBuv-3-rzMoiiydbo2q_mZdj1XhuX0ZSI9ShxWQ%22%2C%22universal_uid%22%3A%22ID5*k28pKNVsAHJPEvj3zIeeG7KXDxpcK9K_4jdzd6QlaPz__2kxyXZaAAEBCmkxUo0AascvdSPW5IrziGjPwK8EYWrIYqKRTF_CNXAd0v9qj1FqzNa--7pPFvkrA_MM2mNias3VfYp7y99ChJTIobTQmWrPOMVEFe7vpMvlopTGxKtq0xZa9nZ1rPa3MH_l_01IatSM2yEh6xY_gjCtURTM5WrVy-bwfnlj8Fl-XkWIxuhq1t_XFxOStMsvwoMVD8axatf20M259O3NcshcpYkMNWyaB3Y9nTp56WWs7QBMZ-lq3cka1vHUYla6pNogTZwTauWXnWHvUlP1nwnb3Kn0tmqo8kLc_CyTG50mUQW-CFJqqcL5bf2h9tbC1NWklWnyaqqDuqPNb-UMRKSjZNLxnWrqxNubPiv2w3GTKk5GrCxqqybowfY9lQq4X8NZ1wdlauv-CxMkIRJ6exb36Ti65mr0t5EkSUOCmF63jwOIMGRqtnF4FI6FlR72g163E8rbavbcqUky-5M08Jknj8S53Wq3-XrsdkXkkA3YoqgyJJZqulC8w6K9ynqVZnHg8_cOavpnsynYDMc0vofDtnlCnGq_cqIjKBu_EOcCmpFyXJ0%22%2C%22link_type%22%3A2%2C%22cascade_needed%22%3Atrue%2C%22privacy%22%3A%7B%22jurisdiction%22%3A%22gdpr%22%2C%22id5_consent%22%3Atrue%7D%2C%22ext%22%3A%7B%22linkType%22%3A2%2C%22pba%22%3A%228i%2F7vb%2FuvD0%2BJKKmj%2FUSMUoPpGpxIBJ9pAWsQJZhDBxyVoDTxya%2BDnwYQvezXBhNg9ArA7xEon2C2cgzY1Xyaw%3D%3D%22%7D%2C%22cache_control%22%3A%7B%22max_age_sec%22%3A7200%7D%2C%22ids%22%3A%7B%22id5id%22%3A%7B%22eid%22%3A%7B%22source%22%3A%22id5-sync.com%22%2C%22uids%22%3A%5B%7B%22id%22%3A%22ID5*k28pKNVsAHJPEvj3zIeeG7KXDxpcK9K_4jdzd6QlaPz__2kxyXZaAAEBCmkxUo0AascvdSPW5IrziGjPwK8EYWrIYqKRTF_CNXAd0v9qj1FqzNa--7pPFvkrA_MM2mNias3VfYp7y99ChJTIobTQmWrPOMVEFe7vpMvlopTGxKtq0xZa9nZ1rPa3MH_l_01IatSM2yEh6xY_gjCtURTM5WrVy-bwfnlj8Fl-XkWIxuhq1t_XFxOStMsvwoMVD8axatf20M259O3NcshcpYkMNWyaB3Y9nTp56WWs7QBMZ-lq3cka1vHUYla6pNogTZwTauWXnWHvUlP1nwnb3Kn0tmqo8kLc_CyTG50mUQW-CFJqqcL5bf2h9tbC1NWklWnyaqqDuqPNb-UMRKSjZNLxnWrqxNubPiv2w3GTKk5GrCxqqybowfY9lQq4X8NZ1wdlauv-CxMkIRJ6exb36Ti65mr0t5EkSUOCmF63jwOIMGRqtnF4FI6FlR72g163E8rbavbcqUky-5M08Jknj8S53Wq3-XrsdkXkkA3YoqgyJJZqulC8w6K9ynqVZnHg8_cOavpnsynYDMc0vofDtnlCnGq_cqIjKBu_EOcCmpFyXJ0%22%2C%22atype%22%3A1%2C%22ext%22%3A%7B%22linkType%22%3A2%2C%22pba%22%3A%228i%2F7vb%2FuvD0%2BJKKmj%2FUSMUoPpGpxIBJ9pAWsQJZhDBxyVoDTxya%2BDnwYQvezXBhNg9ArA7xEon2C2cgzY1Xyaw%3D%3D%22%7D%7D%5D%7D%7D%7D%2C%22tags%22%3A%7B%22id%22%3A%22y%22%7D%7D",
+            "pubcid": "3420654e-91a1-4d98-93e7-d4235b9398ef",
+            "euconsent-v2": "CQb6BYAQb6BYAAHABBENCHFsAP_gAAAAAAAAJCBB9G5XDWFhODJVaZoEYAQVxVBp4sAgBgCAEwAASBMAYIwCFGAiIAyAICAIAAAAIEQAIAAEAAAAAAAAAIABACDMAEAAIAACICAACAEAAgAICAAJEgAgAAAAAEBEAlQAgBAAQJoAwNAAAgAgAUAAAAABAAAAAAAAAAAAQAAAAAAAQAAAAAAAIAAAAAAEAAAIEABAwSACAwQAYlABgACC8xSADAAEF5h0AGAAILzEIAMAAQXmCQAYAAgvMWgAwABBeYAA.f_wAAAAAAAAA",
+            "permutive-app": "{\"privacySandboxTopics\":{\"topics\":{},\"sessionId\":\"15197dc4-29f5-48f9-a57e-db0201628c8c\"},\"eventPublication\":{\"eventUpload\":[]},\"core\":{\"activations\":{\"dfp\":[],\"dfp_contextual\":[\"dmih\",\"djws\",\"dmid\",\"dldc\",\"dmil\",\"djwv\",\"dmig\",\"dldd\",\"dmin\",\"dmif\",\"dmii\",\"dlfe\",\"dmik\",\"dmim\",\"dmio\",\"dmij\",\"dmie\"]},\"cohorts\":{\"all\":[\"109869\",\"128074\",\"132206\",\"141742\",\"147016\",\"162659\",\"165571\",\"165572\",\"165580\",\"165581\",\"165593\",\"172483\",\"177598\",\"180156\",\"98554\",\"dmih\",\"djws\",\"dmid\",\"dldc\",\"dmil\",\"djwv\",\"dmig\",\"dldd\",\"dmin\",\"dmif\",\"dmii\",\"dlfe\",\"dmik\",\"dmim\",\"dmio\",\"dmij\",\"dmie\",\"cur\"],\"ql\":[109869,128074,132206,141742,147016,162659,165571,165572,165580,165581,165593,172483,177598,180156,98554],\"qlCustom\":[109869,128074,132206,141742,147016,162659,165571,165572,165580,165581,165593,172483,177598,180156,98554],\"qlStandard\":[]},\"stateMigrated\":true},\"metricContext\":{\"session_count\":{\"scope\":\"802b947a-96cf-4c64-847e-1d49d1f615f7\",\"lastValue\":\"15197dc4-29f5-48f9-a57e-db0201628c8c\",\"count\":1},\"session_init_count\":{\"scope\":\"802b947a-96cf-4c64-847e-1d49d1f615f7,15197dc4-29f5-48f9-a57e-db0201628c8c\",\"lastValue\":\"0.6129259566156191\",\"count\":12},\"session_view_count\":{\"scope\":\"802b947a-96cf-4c64-847e-1d49d1f615f7,15197dc4-29f5-48f9-a57e-db0201628c8c\",\"lastValue\":\"05bca333-907d-4c11-bb8e-83798cdb29cb\",\"count\":12}},\"sdkql\":{\"twitterPixel\":[]},\"strategicPartnerships\":{},\"mediaAndEntertainment\":{},\"advertisers\":{}}",
+            "id5id_exp": "Thu, 11 Dec 2025 17:48:38 GMT",
+            "id5id_v2_224869031545184": "{\"data\":{\"response\":{\"signature\":\"ID5_AsYcHNxcmFs-XNAViO7YfHaHc5V9AfaQ2-Vel30ZN1pTN1cuLwEt6chlhtjnFl4ElLqfkPfCLRPBBIfKyQOYVUdgCoj7yNmadZrvA8hal-1FqM-TVz-BBLwEH_MwdtgIhwf5LyvlJPPBIFVLRTqZG5CTz2NEBAuUeyPMrQbD3GM0HG19TDU\",\"created_at\":\"2025-12-04T09:21:17.12Z\",\"id5_consent\":true,\"original_uid\":\"ID5*LBMNYLwb8yJHDISmElaPkQPc0jKMNsV0AvpFj2FGZj___2kxyXZaAAEBCmkxUo0AaseClxBUrpZZIJU8DLdoBWrIxTJ1B7a6WoPSBNts0GxqzA1iy6ohIt5Lptg814Yuas3dbz5E1Q_Bjp6cAwR74WrPjR9XO5N29HpE4ykHdmZq0186ntmeAp0I7uxlr6CyatRSr2kINOu3HwQ8RGvq3mrV6EfSsM8lhSGl4I0Hrrpq1svJQlySm1od7Ex67i5eatc6RQEBwnMFhFyZ0mAK9GyavwmzpLnnCnukF5ORqKNq3eJHvZ5uoPKNi40jVTlqauXGsTwYB0K5F-ENrA1_smqozDiuYC8X7UKbRZfyU35qqb19gmjs_00eEq_pZ8Bhaqr-xkXAnFtjp5Gin8FVV2rqxAzlMenrvDPcKIcyNdJqq0dxtUpEi3lHPhPrrJH8autpCZrPzJyTkbmUFD3RCGr0WLd3SzZO5Eap0Y-FPp5qttjd6a9FmxgceZ7wRQ9javZx9t8ZkVXyXDdFbueiymq3AGE_CnTraKMXIl5BoNhqup0UmxMcW3bvvox-CdCkavpExBuv-3-rzMoiiydbo2q_mZdj1XhuX0ZSI9ShxWQ\",\"universal_uid\":\"ID5*k28pKNVsAHJPEvj3zIeeG7KXDxpcK9K_4jdzd6QlaPz__2kxyXZaAAEBCmkxUo0AascvdSPW5IrziGjPwK8EYWrIYqKRTF_CNXAd0v9qj1FqzNa--7pPFvkrA_MM2mNias3VfYp7y99ChJTIobTQmWrPOMVEFe7vpMvlopTGxKtq0xZa9nZ1rPa3MH_l_01IatSM2yEh6xY_gjCtURTM5WrVy-bwfnlj8Fl-XkWIxuhq1t_XFxOStMsvwoMVD8axatf20M259O3NcshcpYkMNWyaB3Y9nTp56WWs7QBMZ-lq3cka1vHUYla6pNogTZwTauWXnWHvUlP1nwnb3Kn0tmqo8kLc_CyTG50mUQW-CFJqqcL5bf2h9tbC1NWklWnyaqqDuqPNb-UMRKSjZNLxnWrqxNubPiv2w3GTKk5GrCxqqybowfY9lQq4X8NZ1wdlauv-CxMkIRJ6exb36Ti65mr0t5EkSUOCmF63jwOIMGRqtnF4FI6FlR72g163E8rbavbcqUky-5M08Jknj8S53Wq3-XrsdkXkkA3YoqgyJJZqulC8w6K9ynqVZnHg8_cOavpnsynYDMc0vofDtnlCnGq_cqIjKBu_EOcCmpFyXJ0\",\"link_type\":2,\"cascade_needed\":true,\"privacy\":{\"jurisdiction\":\"gdpr\",\"id5_consent\":true},\"ext\":{\"linkType\":2,\"pba\":\"8i/7vb/uvD0+JKKmj/USMUoPpGpxIBJ9pAWsQJZhDBxyVoDTxya+DnwYQvezXBhNg9ArA7xEon2C2cgzY1Xyaw==\"},\"cache_control\":{\"max_age_sec\":7200},\"ids\":{\"id5id\":{\"eid\":{\"source\":\"id5-sync.com\",\"uids\":[{\"id\":\"ID5*k28pKNVsAHJPEvj3zIeeG7KXDxpcK9K_4jdzd6QlaPz__2kxyXZaAAEBCmkxUo0AascvdSPW5IrziGjPwK8EYWrIYqKRTF_CNXAd0v9qj1FqzNa--7pPFvkrA_MM2mNias3VfYp7y99ChJTIobTQmWrPOMVEFe7vpMvlopTGxKtq0xZa9nZ1rPa3MH_l_01IatSM2yEh6xY_gjCtURTM5WrVy-bwfnlj8Fl-XkWIxuhq1t_XFxOStMsvwoMVD8axatf20M259O3NcshcpYkMNWyaB3Y9nTp56WWs7QBMZ-lq3cka1vHUYla6pNogTZwTauWXnWHvUlP1nwnb3Kn0tmqo8kLc_CyTG50mUQW-CFJqqcL5bf2h9tbC1NWklWnyaqqDuqPNb-UMRKSjZNLxnWrqxNubPiv2w3GTKk5GrCxqqybowfY9lQq4X8NZ1wdlauv-CxMkIRJ6exb36Ti65mr0t5EkSUOCmF63jwOIMGRqtnF4FI6FlR72g163E8rbavbcqUky-5M08Jknj8S53Wq3-XrsdkXkkA3YoqgyJJZqulC8w6K9ynqVZnHg8_cOavpnsynYDMc0vofDtnlCnGq_cqIjKBu_EOcCmpFyXJ0\",\"atype\":1,\"ext\":{\"linkType\":2,\"pba\":\"8i/7vb/uvD0+JKKmj/USMUoPpGpxIBJ9pAWsQJZhDBxyVoDTxya+DnwYQvezXBhNg9ArA7xEon2C2cgzY1Xyaw==\"}}]}}},\"tags\":{\"id\":\"y\"}},\"responseTimestamp\":1764870518797,\"consents\":{\"gdpr\":true,\"gdpr_consent\":\"CQb6BYAQb6BYAAHABBENCHFsAP_gAAAAAAAAJCBB9G5XDWFhODJVaZoEYAQVxVBp4sAgBgCAEwAASBMAYIwCFGAiIAyAICAIAAAAIEQAIAAEAAAAAAAAAIABACDMAEAAIAACICAACAEAAgAICAAJEgAgAAAAAEBEAlQAgBAAQJoAwNAAAgAgAUAAAAABAAAAAAAAAAAAQAAAAAAAQAAAAAAAIAAAAAAEAAAIEABAwSACAwQAYlABgACC8xSADAAEF5h0AGAAILzEIAMAAQXmCQAYAAgvMWgAwABBeYAA.f_wAAAAAAAAA\"}},\"expireAt\":1766166518799}",
+            "pubcid_cst": "Viz9LIwsRA==",
+            "id5id_cached_consent_data_exp": "Sat, 03 Jan 2026 17:48:38 GMT",
+            "id5id_cst": "Viz9LIwsRA==",
+            "permutive-consent": "{\"opt_in\":true,\"token\":\"permutive-consent\"}",
+            "id5id_privacy": "{\"jurisdiction\":\"gdpr\",\"id5_consent\":true}",
+            "_psegs": "[109869,128074,132206,141742,147016,162659,165571,165572,165580,165581,165593,172483,177598,180156,98554]",
+            "_pssps": "{\"ssps\":[\"pubmatic\",\"appnexus\",\"ix\",\"openx\"],\"cohorts\":[\"cur\"]}"
+        },
+        "removed": {},
+        "modified": {
+            "didomi_token": {
+                "from": "eyJ1c2VyX2lkIjoiMTlhZWExNjUtMGMyNy02OGMwLWIwNzAtYWMwYWEwYTZkMDdjIiwiY3JlYXRlZCI6IjIwMjUtMTItMDRUMTU6NTg6NDIuMzcwWiIsInVwZGF0ZWQiOiIyMDI1LTEyLTA0VDE1OjU4OjQyLjM3MFoiLCJ2ZXJzaW9uIjpudWxsfQ==",
+                "to": "eyJ1c2VyX2lkIjoiMTlhZWExNjUtMGMyNy02OGMwLWIwNzAtYWMwYWEwYTZkMDdjIiwiY3JlYXRlZCI6IjIwMjUtMTItMDRUMTU6NTg6NDIuMzcwWiIsInVwZGF0ZWQiOiIyMDI1LTEyLTA0VDE3OjQ4OjM2LjIyOVoiLCJ2ZXJzaW9uIjoyLCJwdXJwb3NlcyI6eyJlbmFibGVkIjpbImdlb2xvY2F0aW9uX2RhdGEiLCJkZXZpY2VfY2hhcmFjdGVyaXN0aWNzIiwibGVscF9vZmZsaW5lX2NvbWJpbmUiLCJsZWxwX2xpbmtfZGV2aWNlcyJdfSwidmVuZG9ycyI6eyJlbmFibGVkIjpbImdvb2dsZSIsInR3aXR0ZXIiLCJjOmxpbmtlZGluIiwiYzpuZXctcmVsaWMiLCJjOmxpbmtlZGluLW1hcmtldGluZy1zb2x1dGlvbnMiLCJjOnB1cmNoIiwiYzp5b3V0dWJlIiwiYzp0cmliYWwtZnVzaW9uIiwiYzpkaWRvbWkiLCJjOmJpbmctYWRzIiwiYzpoYXZhc21lZGktQkFHN3BKRGUiLCJjOmlnbml0aW9uby1MVkFNWmRuaiIsImM6YXdzLWNsb3VkZnJvbnQiLCJjOmFidGFzdHkyLWl6akpSTUVpIiwiYzpnb29nbGVhbmEtNFRYbkppZ1IiLCJjOm1heHBvaW50LWludGVyYWN0aXZlIiwiYzpncmVlbmhvdXNlLVFLYkdCa3M0IiwiYzpleGVsYXRlIiwiYzphZHZlcnRpc2luZ2NvbSIsImM6b3duZXJpcSIsImM6dHJ1c3RlLWNvbnNlbnQiLCJjOmNoYXJ0YmVhdCIsImM6bmV0YWZmaWxpYXRpb24iLCJjOnZpZGVvbG9neSIsImM6YW5hbGlnaHRzLTdteUVIM2VrIiwiYzpwb29vbC1pWEptaENWYSIsImM6YXRpbnRlcm5lLWd6eks5akJFIiwiYzpiYXRjaC1IOGZlUVhHNiIsImM6YWRvdG1vYiIsImM6Ym91cnNpZXItZG1wIiwiYzptaWNyb3NvZnQiLCJjOmZyYWN0aW9uYWwtbjJqWURGUE4iXX0sImFjIjoiRFFPQldBRVlBTElBWFFBMkFCNkFFcUFNUUFtNEJRd0R6UUh1QWU4QkRnQ1BnSHFnUWJBaU9CRWtDV29FX0FLS2dWZkFzT0Jha0RFUUdLd001Z2RPQTZzQjJFRDFRSUdBUm1nanFCTzlDZ2NLQ0FVSGdvdEJUcUN3NEZtb0wyZ1liQTBELkFBQUEifQ=="
+            }
+        }
+    },
+    "sessionStorage": {
+        "added": {
+            "__permutiveConfigQueryParams": "{}",
+            "com.batch.sessionId": "001fe23d-36ec-41cc-855b-bf4b6261e7b8"
+        },
+        "removed": {},
+        "modified": {}
+    }
+}

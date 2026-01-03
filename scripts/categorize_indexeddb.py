@@ -73,8 +73,16 @@ def categorize_indexeddb_for_config(input_dir: Path, output_dir: Path, patterns:
             try:
                 data = json.load(f)
                 
+    
+                if isinstance(data, dict) and "site" in data and "data" in data:
+                    # Nouveau format (real_raw): extraire depuis le champ "data"
+                    data_to_process = data["data"]
+                else:
+                    # Ancien format (raw): utiliser directement
+                    data_to_process = data
+                
                 # Extraire TOUS les champs récursivement
-                all_fields = extract_all_fields_recursive(data)
+                all_fields = extract_all_fields_recursive(data_to_process)
                 
                 print(f"   {json_file.name}: {len(all_fields)} champs extraits")
                 
