@@ -193,30 +193,20 @@ def analyze_storage_consolidated(direct_pii_items: List[Dict], other_items: List
         vendor_counts[vendor] += 1
         category_vendor_flows.append((pii_type, vendor, 1))
         
-        # Calcul du risque RGPD
-        risk_score = 0
+        # Calcul du risque RGPD UNIFIÉ
+        from analysis.unified_risk_metrics import calculate_unified_risk_score
         
-        # Haute entropie = identifiant unique potentiel
-        if entropy > 4.0:
-            risk_score += 1
+        # Calculer le score de risque unifié
+        risk_result = calculate_unified_risk_score(item, storage_type)
         
-        # Persistance = données conservées longtemps
-        if persistence == 'Persistent':
-            risk_score += 1
+        # Stocker les résultats détaillés dans l'item
+        item['_unified_risk'] = risk_result
         
-        # Type de données sensible
-        if data_type in ['uuid', 'uuid_compact', 'token_id', 'email']:
-            risk_score += 1
+        # Extraire catégorie et score
+        risk_level = risk_result['risk_category']
+        total_score = risk_result['total_score']
         
-        if risk_score >= 3:
-            risk_level = 'Critical Risk'
-        elif risk_score == 2:
-            risk_level = 'High Risk'
-        elif risk_score == 1:
-            risk_level = 'Medium Risk'
-        else:
-            risk_level = 'Low Risk'
-        
+        # Agréger les statistiques
         risk_levels[risk_level] += 1
         risk_by_pii[pii_type][risk_level] += 1
     
@@ -266,7 +256,7 @@ def main():
     output_base = Path(__file__).resolve().parent.parent.parent / 'results'
     
     if not base_dir.exists():
-        print(f" Dossier {base_dir} non trouvé")
+        print(f"❌ Dossier {base_dir} non trouvé")
         return
     
     users = ('FR_0017', 'FR_0018', 'FR_0019')
@@ -278,60 +268,67 @@ def main():
         for auth_status in auth_statuses:
             for policy in policies:
                 for storage_type in storage_types:
-                    input_dir = base_dir / 'user' / auth_status / user / policy / storage_type
-                    output_dir = output_base / auth_status / user / policy / storage_type
+                    storage_base_dir = base_dir / 'user' / auth_status / user / policy / storage_type
                     
-                    if not input_dir.exists():
-                        print(f"  {input_dir} n'existe pas, passage à la configuration suivante.")
+                    if not storage_base_dir.exists():
                         continue
                     
-                    output_dir.mkdir(parents=True, exist_ok=True)
-                    
-                    # Charger tous les items
-                    print(f"\n{'='*70}")
-                    print(f" Configuration: {user} / {auth_status} / {policy} / {storage_type}")
-                    print(f"{'='*70}")
-                    
-                    # Déterminer le répertoire source
-                    # Pour localStorage/sessionStorage: chercher dans 'added'
-                    # Pour indexeddb: fichiers directement dans le dossier
-                    added_dir = input_dir / 'added'
-                    if added_dir.exists() and any(added_dir.glob('*.json')):
-                        source_dir = added_dir
-                        print(f" Utilisation du dossier: {source_dir}")
-                    elif any(input_dir.glob('*.json')):
-                        source_dir = input_dir
-                        print(f" Utilisation du dossier: {source_dir}")
-                    else:
-                        print(f"  Aucun fichier JSON trouvé, passage à la configuration suivante.")
-                        continue
-                    
-                    direct_pii_items, other_items = load_all_storage_items(source_dir, storage_type)
-                    
-                    if len(direct_pii_items) == 0 and len(other_items) == 0:
-                        print(f"  Aucun item trouvé, passage à la configuration suivante.")
-                        continue
-                    
-                    # Analyser
-                    analysis_results = analyze_storage_consolidated(
-                        direct_pii_items, other_items, storage_type
-                    )
-                    
-                    # Sauvegarder les résultats
-                    output_path = output_dir / 'consolidated' / 'analysis.json'
-                    output_path.parent.mkdir(parents=True, exist_ok=True)
-                    
-                    with open(output_path, 'w', encoding='utf-8') as f:
-                        json.dump(analysis_results, f, indent=2, ensure_ascii=False)
-                    
-                    print(f"Résultats sauvegardés : {output_path}")
-                    
-                    # Générer les visualisations
-                    sviz.generate_all_visualizations(analysis_results, output_dir, storage_type)
+                    # Traiter added, modified, removed
+                    for lifecycle in ['added', 'modified', 'removed']:
+                        input_dir = storage_base_dir / lifecycle
+                        
+                        # Mapper 'removed' vers 'deleted' pour la sortie
+                        output_lifecycle = 'deleted' if lifecycle == 'removed' else lifecycle
+                        output_dir = output_base / auth_status / user / policy / storage_type / output_lifecycle
+                        
+                        # Vérifier si le dossier lifecycle existe
+                        if not input_dir.exists():
+                            # Pour indexeddb, pas de sous-dossiers lifecycle
+                            if lifecycle == 'added' and storage_type == 'indexeddb' and storage_base_dir.exists():
+                                input_dir = storage_base_dir
+                            else:
+                                continue
+                        
+                        # Vérifier s'il y a des fichiers JSON
+                        if not any(input_dir.glob('*.json')):
+                            continue
+                        
+                        output_dir.mkdir(parents=True, exist_ok=True)
+                        
+                        # Charger tous les items
+                        print(f"\n{'='*70}")
+                        print(f"📊 Configuration: {user} / {auth_status} / {policy} / {storage_type} / {lifecycle}")
+                        print(f"{'='*70}")
+                        
+                        direct_pii_items, other_items = load_all_storage_items(input_dir, storage_type)
+                        
+                        if len(direct_pii_items) == 0 and len(other_items) == 0:
+                            print(f"  Aucun item trouvé, passage.")
+                            continue
+                        
+                        # Analyser
+                        analysis_results = analyze_storage_consolidated(
+                            direct_pii_items, other_items, storage_type
+                        )
+                        
+                        # Sauvegarder les résultats
+                        output_path = output_dir / 'consolidated' / 'analysis.json'
+                        output_path.parent.mkdir(parents=True, exist_ok=True)
+                        
+                        with open(output_path, 'w', encoding='utf-8') as f:
+                            json.dump(analysis_results, f, indent=2, ensure_ascii=False)
+                        
+                        print(f"✓ Résultats sauvegardés : {output_path}")
+                        
+                        # Générer les visualisations
+                        sviz.generate_all_visualizations(analysis_results, output_dir, storage_type)
+                        
+                        print(f"\n✓ Analyse {lifecycle} terminée!")
     
     print("\n" + "=" * 70)
-    print(" Analyse consolidée des stockages terminée avec succès!")
+    print("✅ Analyse consolidée des stockages terminée avec succès!")
     print("=" * 70)
+
 
 
 if __name__ == '__main__':

@@ -308,7 +308,8 @@ def main():
                 # Fichiers à traiter
                 files_to_process = [
                     ('added', input_dir / 'added_sessionstorage.json', output_base_dir / 'added'),
-                    ('modified', input_dir / 'modified_sessionstorage.json', output_base_dir / 'modified')
+                    ('modified', input_dir / 'modified_sessionstorage.json', output_base_dir / 'modified'),
+                    ('removed', input_dir / 'removed_sessionstorage.json', output_base_dir / 'removed')
                 ]
                 
                 for source_type, input_file, output_dir in files_to_process:

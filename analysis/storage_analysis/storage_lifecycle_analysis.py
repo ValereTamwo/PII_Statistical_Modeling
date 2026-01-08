@@ -203,17 +203,25 @@ def analyze_storage_lifecycle(base_dir: Path, storage_type: str) -> Dict:
     # Définir les répertoires (s'ils existent)
     added_dir = base_dir / 'added'
     modified_dir = base_dir / 'modified'
+    removed_dir = base_dir / 'removed'
     deleted_dir = base_dir / 'deleted'
     
     # Charger les items
-    print("\n Chargement des items...")
+    print("\n📊 Chargement des items...")
     added_by_key = load_storage_by_key(added_dir, storage_type) if added_dir.exists() else {}
     modified_by_key = load_storage_by_key(modified_dir, storage_type) if modified_dir.exists() else {}
-    deleted_by_key = load_storage_by_key(deleted_dir, storage_type) if deleted_dir.exists() else {}
+    
+    # Chercher removed d'abord, puis deleted (compatibilité)
+    if removed_dir.exists():
+        deleted_by_key = load_storage_by_key(removed_dir, storage_type)
+    elif deleted_dir.exists():
+        deleted_by_key = load_storage_by_key(deleted_dir, storage_type)
+    else:
+        deleted_by_key = {}
     
     print(f"   Added: {len(added_by_key)} clés uniques")
     print(f"   Modified: {len(modified_by_key)} clés uniques")
-    print(f"   Deleted: {len(deleted_by_key)} clés uniques")
+    print(f"   Removed/Deleted: {len(deleted_by_key)} clés uniques")
     
     # Identifier tous les items
     all_keys = set(added_by_key.keys()) | set(modified_by_key.keys()) | set(deleted_by_key.keys())

@@ -208,81 +208,25 @@ def extract_vendor_from_domain(domain: str) -> str:
     """
     Extrait le vendor (entreprise) à partir d'un domaine.
     
+    Utilise la base de données étendue de vendor_database.py (50+ vendors).
+    
     Args:
         domain: Domaine du cookie (ex: '.doubleclick.net')
         
     Returns:
         Nom du vendor (ex: 'Google')
     """
-    # Nettoyer le domaine
-    clean_domain = domain.lower().lstrip('.')
-    
-    # Base de données des vendors principaux
-    vendor_mapping = {
-        # Google
-        'google.com': 'Google',
-        'google.fr': 'Google',
-        'doubleclick.net': 'Google',
-        'googlesyndication.com': 'Google',
-        'googleadservices.com': 'Google',
-        'youtube.com': 'Google',
-        'gstatic.com': 'Google',
-        'googleapis.com': 'Google',
-        
-        # Facebook/Meta
-        'facebook.com': 'Meta/Facebook',
-        'facebook.net': 'Meta/Facebook',
-        'fbcdn.net': 'Meta/Facebook',
-        'instagram.com': 'Meta/Facebook',
-        
-        # Amazon
-        'amazon.com': 'Amazon',
-        'amazon.fr': 'Amazon',
-        'amazonaws.com': 'Amazon',
-        
-        # Microsoft
-        'microsoft.com': 'Microsoft',
-        'live.com': 'Microsoft',
-        'bing.com': 'Microsoft',
-        'msn.com': 'Microsoft',
-        
-        # Advertising/Tracking
-        'criteo.com': 'Criteo',
-        'criteo.net': 'Criteo',
-        'taboola.com': 'Taboola',
-        'outbrain.com': 'Outbrain',
-        'pubmatic.com': 'PubMatic',
-        'rubiconproject.com': 'Rubicon',
-        'adform.net': 'Adform',
-        'smartadserver.com': 'Smart AdServer',
-        
-        # Analytics
-        'hotjar.com': 'Hotjar',
-        'mixpanel.com': 'Mixpanel',
-        'segment.com': 'Segment',
-        'amplitude.com': 'Amplitude',
-        
-        # CDN/Infrastructure
-        'cloudflare.com': 'Cloudflare',
-        'akamai.net': 'Akamai',
-        'fastly.net': 'Fastly',
-    }
-    
-    # Recherche exacte
-    if clean_domain in vendor_mapping:
-        return vendor_mapping[clean_domain]
-    
-    # Recherche par sous-domaine
-    for vendor_domain, vendor_name in vendor_mapping.items():
-        if clean_domain.endswith(vendor_domain):
-            return vendor_name
-    
-    # Si pas trouvé, retourner le domaine principal
-    parts = clean_domain.split('.')
-    if len(parts) >= 2:
-        return f"{parts[-2]}.{parts[-1]}"
-    
-    return clean_domain
+    # Importer depuis vendor_database
+    try:
+        from vendor_database import extract_vendor_from_domain as extract_vendor_extended
+        return extract_vendor_extended(domain)
+    except ImportError:
+        # Fallback si vendor_database n'est pas disponible
+        clean_domain = domain.lower().lstrip('.')
+        parts = clean_domain.split('.')
+        if len(parts) >= 2:
+            return f"{parts[-2]}.{parts[-1]}"
+        return clean_domain
 
 
 def classify_entropy_level(entropy: float) -> str:

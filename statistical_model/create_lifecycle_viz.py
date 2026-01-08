@@ -38,7 +38,7 @@ def create_lifecycle_visualization(agg_path: str, output_path: str):
     lifecycle_pii = {'added': {}, 'modified': {}, 'deleted': {}}
     lifecycle_totals = {'added': 0, 'modified': 0, 'deleted': 0}
     
-    for state in ['added', 'modified']:  # deleted might not have analysis.json
+    for state in ['added', 'modified', 'removed']:  # Process all lifecycle states
         analysis_path = os.path.join(sample_path, state, 'consolidated', 'analysis.json')
         
         if os.path.exists(analysis_path):

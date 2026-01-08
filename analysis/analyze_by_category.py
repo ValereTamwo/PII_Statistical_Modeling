@@ -16,13 +16,29 @@ from pii_detector import extract_keywords
 import visualizations as viz
 
 
-def calculate_lifetime_category(expires: float) -> str:
-    """Calcule la catégorie de durée de vie d'un cookie"""
+def calculate_lifetime_category(expires: float, collection_timestamp: float = None) -> str:
+    """Calcule la catégorie de durée de vie d'un cookie basée sur le temps restant
+    
+    Args:
+        expires: Timestamp d'expiration du cookie
+        collection_timestamp: Timestamp de collecte du cookie (optionnel, utilise le temps actuel si non fourni)
+    
+    Returns:
+        Catégorie de durée de vie
+    """
     if expires == -1 or expires <= 0:
         return 'Session'
     
-    now = datetime.now().timestamp()
-    duration_seconds = expires - now
+    # Utiliser le timestamp de collecte si fourni, sinon utiliser le temps actuel
+    reference_time = collection_timestamp if collection_timestamp else datetime.now().timestamp()
+    
+    # Calculer la durée restante entre le moment de collecte et l'expiration
+    duration_seconds = expires - reference_time
+    
+    # Si la durée est négative (cookie déjà expiré au moment de la collecte), considérer comme Session
+    if duration_seconds <= 0:
+        return 'Session'
+    
     duration_months = duration_seconds / (30 * 24 * 3600)
     
     if duration_months < 6:
@@ -114,8 +130,21 @@ def analyze_category(cookies: List[Dict], category_name: str) -> Dict:
         is_tp = is_third_party(cookie.get('domain', ''), cookie.get('initial_url', ''))
         tp_status = 'Third-Party' if is_tp else 'First-Party'
         
-        # Durée de vie
-        lifetime_cat = calculate_lifetime_category(cookie.get('expires', -1))
+        # Durée de vie (utiliser le timestamp de collecte si disponible)
+        collection_timestamp = cookie.get('timestamp')
+        # Convertir le timestamp si c'est une chaîne
+        if isinstance(collection_timestamp, str):
+            try:
+                # Essayer de parser comme ISO format
+                collection_timestamp = datetime.fromisoformat(collection_timestamp.replace('Z', '+00:00')).timestamp()
+            except:
+                try:
+                    # Essayer comme timestamp numérique en chaîne
+                    collection_timestamp = float(collection_timestamp)
+                except:
+                    collection_timestamp = None
+        
+        lifetime_cat = calculate_lifetime_category(cookie.get('expires', -1), collection_timestamp)
         lifetime_dist[lifetime_cat] += 1
         lifetime_by_subcat[subcategory][lifetime_cat] += 1
         
@@ -159,8 +188,9 @@ def analyze_category(cookies: List[Dict], category_name: str) -> Dict:
         # Critère 1: Durée > 1 an (365 jours)
         expires = cookie.get('expires', -1)
         if expires > 0:
-            now = datetime.now().timestamp()
-            duration_days = (expires - now) / (24 * 3600)
+            # Utiliser le timestamp de collecte si disponible
+            reference_time = collection_timestamp if collection_timestamp else datetime.now().timestamp()
+            duration_days = (expires - reference_time) / (24 * 3600)
             if duration_days > 365:
                 risk_score += 1
         

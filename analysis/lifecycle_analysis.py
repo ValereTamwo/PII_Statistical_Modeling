@@ -60,7 +60,7 @@ def load_cookies_by_key(input_dir: Path) -> Dict[str, List[Dict]]:
     return cookies_by_key
 
 
-def build_cookie_timeline(cookie_key: str, added_cookies: List[Dict], modified_cookies: List[Dict]) -> Dict:
+def build_cookie_timeline(cookie_key: str, added_cookies: List[Dict], modified_cookies: List[Dict], removed_cookies: List[Dict] = None) -> Dict:
     """
     Construit la timeline complète d'un cookie.
     
@@ -151,6 +151,40 @@ def build_cookie_timeline(cookie_key: str, added_cookies: List[Dict], modified_c
             'changed_fields': changed_fields
         })
     
+    # Événements removed
+    if removed_cookies:
+        for cookie in removed_cookies:
+            task_id = int(cookie.get('task_id', 0))
+            
+            # Pour removed, on peut avoir des métriques limitées
+            expires = cookie.get('expires', -1)
+            if expires > 0:
+                now = datetime.now().timestamp()
+                duration = (expires - now) / (24 * 3600)
+            else:
+                duration = 0
+            
+            value = cookie.get('value', '')
+            entropy = pm.calculate_entropy(value)
+            
+            # Créer pii_category
+            category = cookie.get('_category', 'unknown')
+            subcategory = cookie.get('matched_subcategory', '')
+            
+            if subcategory:
+                pii_category = f"{category}::{subcategory}"
+            else:
+                pii_category = category
+            
+            events.append({
+                'task_id': task_id,
+                'type': 'removed',
+                'duration': duration,
+                'entropy': entropy,
+                'pii_category': pii_category,
+                'changed_fields': []
+            })
+    
     # Trier par task_id
     events.sort(key=lambda x: x['task_id'])
     
@@ -165,11 +199,12 @@ def build_cookie_timeline(cookie_key: str, added_cookies: List[Dict], modified_c
         'duration_evolution': duration_evolution,
         'entropy_evolution': entropy_evolution,
         'pii_categories': pii_categories,
-        'num_modifications': len([e for e in events if e['type'] == 'modified'])
+        'num_modifications': len([e for e in events if e['type'] == 'modified']),
+        'num_removals': len([e for e in events if e['type'] == 'removed'])
     }
 
 
-def analyze_lifecycle(added_dir: Path, modified_dir: Path) -> Dict:
+def analyze_lifecycle(added_dir: Path, modified_dir: Path, removed_dir: Path = None) -> Dict:
     """
     Analyse complète du cycle de vie des cookies.
     """
@@ -177,15 +212,17 @@ def analyze_lifecycle(added_dir: Path, modified_dir: Path) -> Dict:
     print("=" * 70)
     
     # Charger les cookies
-    print("\n Chargement des cookies...")
+    print("\n📊 Chargement des cookies...")
     added_by_key = load_cookies_by_key(added_dir)
     modified_by_key = load_cookies_by_key(modified_dir)
+    removed_by_key = load_cookies_by_key(removed_dir) if removed_dir and removed_dir.exists() else {}
     
     print(f"   Added: {len(added_by_key)} clés uniques")
     print(f"   Modified: {len(modified_by_key)} clés uniques")
+    print(f"   Removed: {len(removed_by_key)} clés uniques")
     
     # Identifier les cookies avec cycle de vie complet
-    all_keys = set(added_by_key.keys()) | set(modified_by_key.keys())
+    all_keys = set(added_by_key.keys()) | set(modified_by_key.keys()) | set(removed_by_key.keys())
     cookies_with_modifications = set(added_by_key.keys()) & set(modified_by_key.keys())
     
     print(f"   Total: {len(all_keys)} cookies uniques")
@@ -198,9 +235,10 @@ def analyze_lifecycle(added_dir: Path, modified_dir: Path) -> Dict:
     for key in all_keys:
         added = added_by_key.get(key, [])
         modified = modified_by_key.get(key, [])
+        removed = removed_by_key.get(key, [])
         
-        if added or modified:
-            timeline = build_cookie_timeline(key, added, modified)
+        if added or modified or removed:
+            timeline = build_cookie_timeline(key, added, modified, removed)
             timelines[key] = timeline
     
     print(f"   {len(timelines)} timelines construites")
@@ -211,6 +249,7 @@ def analyze_lifecycle(added_dir: Path, modified_dir: Path) -> Dict:
     # Métriques globales
     total_cookies = len(timelines)
     cookies_modified = len([t for t in timelines.values() if t['num_modifications'] > 0])
+    cookies_removed = len([t for t in timelines.values() if t.get('num_removals', 0) > 0])
     
     # Évolution durée
     duration_increases = 0
@@ -264,6 +303,7 @@ def analyze_lifecycle(added_dir: Path, modified_dir: Path) -> Dict:
         'metrics': {
             'total_cookies': total_cookies,
             'cookies_modified': cookies_modified,
+            'cookies_removed': cookies_removed,
             'duration_increases': duration_increases,
             'duration_decreases': duration_decreases,
             'entropy_increases': entropy_increases,
@@ -307,6 +347,7 @@ def main():
                 # input_dir = base_dir / 'user' / auth_status / user / policy / 'cookies'/ 'added'
                 added_dir = base_dir / 'user' / auth_status / user / policy / 'cookies'/ 'added'
                 modified_dir = base_dir / 'user' / auth_status / user / policy / 'cookies'/ 'modified'
+                removed_dir = base_dir / 'user' / auth_status / user / policy / 'cookies'/ 'removed'
 
                 output_dir = output_base / auth_status / user / policy / 'cookies'/ 'lifecycle'
 
@@ -319,7 +360,7 @@ def main():
                 output_dir.mkdir(parents=True, exist_ok=True)
     
                 # Analyser
-                results = analyze_lifecycle(added_dir, modified_dir)
+                results = analyze_lifecycle(added_dir, modified_dir, removed_dir)
                 
                 # Sauvegarder les résultats
                 output_dir.mkdir(parents=True, exist_ok=True)

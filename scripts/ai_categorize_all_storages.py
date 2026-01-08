@@ -70,7 +70,7 @@ def discover_uncategorized_files(base_path: Path) -> List[Tuple[str, str, str, s
                             ))
                     else:
                         # Pour cookies, localstorage, sessionstorage
-                        for lifecycle in ['added', 'modified']:
+                        for lifecycle in ['added', 'modified', 'removed']:
                             lifecycle_dir = storage_dir / lifecycle
                             if not lifecycle_dir.exists():
                                 continue
