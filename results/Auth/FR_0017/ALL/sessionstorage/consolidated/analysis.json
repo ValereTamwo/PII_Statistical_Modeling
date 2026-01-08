@@ -1,8 +1,8 @@
 {
   "storage_type": "sessionstorage",
-  "total_items": 308,
+  "total_items": 313,
   "direct_pii_count": 0,
-  "other_count": 308,
+  "other_count": 313,
   "pii_distribution": {
     "APP_STATE_STORAGE": 6,
     "CONSENT_AND_PRIVACY": 2,
@@ -11,7 +11,7 @@
     "DIRECT_PII::gender": 5,
     "IDENTITY_TRACKING": 11,
     "ID_SOLUTIONS_AND_EXCHANGES": 21,
-    "NAVIGATION_HISTORY": 2,
+    "NAVIGATION_HISTORY": 7,
     "SECURITY_AND_BOT_MITIGATION": 3,
     "SUSPICIOUS_VALUES": 54,
     "UNCATEGORIZED": 173,
@@ -41,7 +41,7 @@
       "ID_SOLUTIONS_AND_EXCHANGES": 21
     },
     "NAVIGATION_HISTORY": {
-      "NAVIGATION_HISTORY": 2
+      "NAVIGATION_HISTORY": 7
     },
     "SECURITY_AND_BOT_MITIGATION": {
       "SECURITY_AND_BOT_MITIGATION": 3
@@ -60,7 +60,7 @@
     }
   },
   "persistence_distribution": {
-    "Session": 308
+    "Session": 313
   },
   "persistence_by_pii": {
     "APP_STATE_STORAGE": {
@@ -85,7 +85,7 @@
       "Session": 21
     },
     "NAVIGATION_HISTORY": {
-      "Session": 2
+      "Session": 7
     },
     "SECURITY_AND_BOT_MITIGATION": {
       "Session": 3
@@ -140,9 +140,9 @@
       "count": 21
     },
     "NAVIGATION_HISTORY": {
-      "total": 87,
-      "average": 43.5,
-      "count": 2
+      "total": 241,
+      "average": 34.42857142857143,
+      "count": 7
     },
     "SECURITY_AND_BOT_MITIGATION": {
       "total": 233,
@@ -177,7 +177,7 @@
       "DIRECT_PII::gender": 4,
       "IDENTITY_TRACKING": 11,
       "ID_SOLUTIONS_AND_EXCHANGES": 11,
-      "NAVIGATION_HISTORY": 1,
+      "NAVIGATION_HISTORY": 4,
       "SECURITY_AND_BOT_MITIGATION": 1,
       "SUSPICIOUS_VALUES": 26,
       "UNCATEGORIZED": 59,
@@ -189,7 +189,7 @@
       "DEVICE_ENV": 2,
       "DIRECT_PII::gender": 1,
       "ID_SOLUTIONS_AND_EXCHANGES": 6,
-      "NAVIGATION_HISTORY": 1,
+      "NAVIGATION_HISTORY": 3,
       "SECURITY_AND_BOT_MITIGATION": 1,
       "SUSPICIOUS_VALUES": 1,
       "UNCATEGORIZED": 28
@@ -221,8 +221,8 @@
     }
   },
   "content_types": {
-    "json_structured": 135,
-    "complex_string": 41,
+    "json_structured": 138,
+    "complex_string": 43,
     "number": 33,
     "short_text": 13,
     "token_id": 9,
@@ -232,7 +232,7 @@
     "empty": 35
   },
   "vendor_counts": {
-    "Unknown": 308
+    "Unknown": 313
   },
   "category_vendor_flows": [
     [
@@ -273,7 +273,7 @@
     [
       "NAVIGATION_HISTORY",
       "Unknown",
-      2
+      7
     ],
     [
       "SECURITY_AND_BOT_MITIGATION",
@@ -369,7 +369,12 @@
     ],
     "NAVIGATION_HISTORY": [
       4.261857119048342,
-      3.9232314287976204
+      3.9232314287976204,
+      3.0565647621309537,
+      1.0,
+      3.9684539577019207,
+      4.076553584181406,
+      4.152490650406135
     ],
     "SECURITY_AND_BOT_MITIGATION": [
       4.6147319433796765,
@@ -638,17 +643,15 @@
     ]
   },
   "risk_levels": {
-    "Low Risk": 156,
-    "Medium Risk": 143,
-    "High Risk": 9
+    "Low Risk": 193,
+    "Medium Risk": 120
   },
   "risk_by_pii": {
     "APP_STATE_STORAGE": {
-      "Low Risk": 5,
-      "Medium Risk": 1
+      "Low Risk": 6
     },
     "CONSENT_AND_PRIVACY": {
-      "Medium Risk": 2
+      "Low Risk": 2
     },
     "CUSTOMER_INTERACTION": {
       "Low Risk": 4
@@ -657,38 +660,31 @@
       "Medium Risk": 2
     },
     "DIRECT_PII::gender": {
-      "Medium Risk": 5
+      "Low Risk": 5
     },
     "IDENTITY_TRACKING": {
       "Medium Risk": 11
     },
     "ID_SOLUTIONS_AND_EXCHANGES": {
-      "Low Risk": 8,
-      "Medium Risk": 13
+      "Medium Risk": 21
     },
     "NAVIGATION_HISTORY": {
-      "Medium Risk": 1,
-      "Low Risk": 1
+      "Medium Risk": 7
     },
     "SECURITY_AND_BOT_MITIGATION": {
-      "Medium Risk": 1,
-      "Low Risk": 1,
-      "High Risk": 1
+      "Low Risk": 3
     },
     "SUSPICIOUS_VALUES": {
-      "Medium Risk": 46,
-      "High Risk": 8
+      "Medium Risk": 54
     },
     "UNCATEGORIZED": {
-      "Low Risk": 126,
-      "Medium Risk": 47
+      "Low Risk": 173
     },
     "USER_PREFERENCES": {
       "Medium Risk": 1
     },
     "USER_PREFERENCES_EXTENDED": {
-      "Medium Risk": 13,
-      "Low Risk": 11
+      "Medium Risk": 24
     }
   }
 }

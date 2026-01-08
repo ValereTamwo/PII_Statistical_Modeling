@@ -131,8 +131,21 @@ def analyze_consolidated(direct_pii_cookies: List[Dict], other_cookies: List[Dic
         
         # === ANALYSE TECHNIQUE (16 graphiques) ===
         
-        # Durée de vie
-        lifetime_cat = calculate_lifetime_category(cookie.get('expires', -1))
+        # Durée de vie (utiliser le timestamp de collecte si disponible)
+        collection_timestamp = cookie.get('timestamp')
+        # Convertir le timestamp si c'est une chaîne
+        if isinstance(collection_timestamp, str):
+            try:
+                # Essayer de parser comme ISO format
+                collection_timestamp = datetime.fromisoformat(collection_timestamp.replace('Z', '+00:00')).timestamp()
+            except:
+                try:
+                    # Essayer comme timestamp numérique en chaîne
+                    collection_timestamp = float(collection_timestamp)
+                except:
+                    collection_timestamp = None
+        
+        lifetime_cat = calculate_lifetime_category(cookie.get('expires', -1), collection_timestamp)
         lifetime_dist[lifetime_cat] += 1
         lifetime_by_pii[pii_type][lifetime_cat] += 1
         
@@ -171,30 +184,22 @@ def analyze_consolidated(direct_pii_cookies: List[Dict], other_cookies: List[Dic
         thirdparty_httponly[(tp_status, http_only)] += 1
         thirdparty_secure[(tp_status, secure)] += 1
         
-        # Risque RGPD
-        expires = cookie.get('expires', -1)
-        if expires > 0:
-            now = datetime.now().timestamp()
-            duration_days = (expires - now) / (24 * 3600)
-        else:
-            duration_days = 0
+        # Risque RGPD UNIFIÉ
+        from unified_risk_metrics import calculate_unified_risk_score
         
-        risk_score = 0
-        if duration_days > 365:
-            risk_score += 1
-        if not http_only:
-            risk_score += 1
-        if is_tp:
-            risk_score += 1
+        # Préparer l'item (ajouter _category si manquant)
+        cookie_item = cookie.copy()
+        if '_category' not in cookie_item:
+            cookie_item['_category'] = cookie.get('category', 'UNCATEGORIZED')
         
-        if risk_score == 3:
-            risk_level = 'Critical Risk'
-        elif risk_score == 2:
-            risk_level = 'High Risk'
-        elif risk_score == 1:
-            risk_level = 'Medium Risk'
-        else:
-            risk_level = 'Low Risk'
+        # Calculer le score de risque unifié
+        risk_result = calculate_unified_risk_score(cookie_item, 'cookies')
+        
+        # Stocker les résultats détaillés
+        cookie['_unified_risk'] = risk_result
+        
+        # Extraire catégorie de risque
+        risk_level = risk_result['risk_category']
         
         risk_levels[risk_level] += 1
         risk_by_pii[pii_type][risk_level] += 1
@@ -216,6 +221,29 @@ def analyze_consolidated(direct_pii_cookies: List[Dict], other_cookies: List[Dic
         category_vendor_flows.append((pii_type, vendor, 1))
         
         entropy = privacy_analysis['entropy']
+
+        # Calculer duration_days à partir du champ 'expires' si disponible (supporte timestamp et ISO/str)
+        expires_val = cookie.get('expires', None)
+        if isinstance(expires_val, (int, float)):
+            try:
+                duration_days = max(int((datetime.fromtimestamp(expires_val) - datetime.now()).total_seconds() / 86400), 0)
+            except Exception:
+                duration_days = -1
+        elif isinstance(expires_val, str):
+            try:
+                # Essayer ISO format first
+                exp_dt = datetime.fromisoformat(expires_val)
+                duration_days = max(int((exp_dt - datetime.now()).total_seconds() / 86400), 0)
+            except Exception:
+                try:
+                    # Essayer une chaîne numérique représentant un timestamp
+                    exp_ts = int(expires_val)
+                    duration_days = max(int((datetime.fromtimestamp(exp_ts) - datetime.now()).total_seconds() / 86400), 0)
+                except Exception:
+                    duration_days = -1
+        else:
+            duration_days = -1
+
         entropy_lifetime_data.append((entropy, duration_days, data_type))
         entropy_by_pii[pii_type].append(entropy)
         
@@ -413,10 +441,6 @@ def generate_all_visualizations(analysis_results: Dict, output_dir: Path):
 
 def main():
     """Script principal"""
-    base_dir = Path(__file__).parent.parent
-    input_dir = base_dir / 'categorized_cookies' / 'added'
-    output_dir = base_dir / 'analysis' / 'results' / 'added' / 'by_category'
-    # ---------------------------------------------------------------------------------
     base_dir = Path(__file__).resolve().parent.parent / 'data'
     output_base = Path(__file__).resolve().parent.parent / 'results' 
 
@@ -431,41 +455,48 @@ def main():
     for user in users:
         for auth_status in auth_statuses:
             for policy in policies:
-                input_dir = base_dir / 'user' / auth_status / user / policy / 'cookies'/ 'added'
-                output_dir = output_base / auth_status / user / policy / 'cookies'/ 'added'
+                # Traiter added, modified, removed
+                for lifecycle in ['added', 'modified', 'removed']:
+                    input_dir = base_dir / 'user' / auth_status / user / policy / 'cookies' / lifecycle
+                    
+                    # Mapper 'removed' vers 'deleted' pour la sortie
+                    output_lifecycle = 'deleted' if lifecycle == 'removed' else lifecycle
+                    output_dir = output_base / auth_status / user / policy / 'cookies' / output_lifecycle
 
-                if not input_dir.exists():
-                    print(f"Le dossier {input_dir} n'existe pas, passage à la configuration suivante.")
-                    continue
-                # output_added_dir = base_dir / 'user' / auth_status / user / policy / 'cookies'/ 'added'
-                # output_modified_dir = base_dir / 'user' / auth_status / user / policy / 'cookies'/ 'modified'
-                
-                output_dir.mkdir(parents=True, exist_ok=True)
-                # output_modified_dir.mkdir(parents=True, exist_ok=True)
-    
-                # Charger tous les cookies
-                print("\n Chargement des cookies...")
-                direct_pii_cookies, other_cookies = load_all_cookies(input_dir)
-                
-                analysis_results = analyze_consolidated(direct_pii_cookies, other_cookies)
-                
-                output_path = output_dir / 'consolidated' / 'analysis.json'
-                output_path.parent.mkdir(parents=True, exist_ok=True)
-                
-                serializable_results = {k: v for k, v in analysis_results.items() 
-                                    if k not in ['entropy_lifetime_data']}
-                
-                with open(output_path, 'w', encoding='utf-8') as f:
-                    json.dump(serializable_results, f, indent=2, ensure_ascii=False)
-                
-                print(f" Résultats sauvegardés : {output_path}")
-                
-                # Générer les visualisations
-                generate_all_visualizations(analysis_results, output_dir)
-                
-                print("\n" + "=" * 70)
-                print(" Analyse consolidée terminée avec succès!")
-                print("=" * 70)
+                    if not input_dir.exists():
+                        print(f"Le dossier {input_dir} n'existe pas, passage à la configuration suivante.")
+                        continue
+                    
+                    output_dir.mkdir(parents=True, exist_ok=True)
+        
+                    # Charger tous les cookies
+                    print(f"\n📊 Chargement des cookies {lifecycle}...")
+                    direct_pii_cookies, other_cookies = load_all_cookies(input_dir)
+                    
+                    if len(direct_pii_cookies) == 0 and len(other_cookies) == 0:
+                        print(f"  Aucun cookie trouvé pour {lifecycle}, passage.")
+                        continue
+                    
+                    analysis_results = analyze_consolidated(direct_pii_cookies, other_cookies)
+                    
+                    output_path = output_dir / 'consolidated' / 'analysis.json'
+                    output_path.parent.mkdir(parents=True, exist_ok=True)
+                    
+                    serializable_results = {k: v for k, v in analysis_results.items() 
+                                        if k not in ['entropy_lifetime_data']}
+                    
+                    with open(output_path, 'w', encoding='utf-8') as f:
+                        json.dump(serializable_results, f, indent=2, ensure_ascii=False)
+                    
+                    print(f"✓ Résultats sauvegardés : {output_path}")
+                    
+                    # Générer les visualisations
+                    generate_all_visualizations(analysis_results, output_dir)
+                    
+                    print(f"\n{'='*70}")
+                    print(f"✓ Analyse consolidée {lifecycle} terminée avec succès!")
+                    print(f"{'='*70}")
+
 
 
 if __name__ == '__main__':

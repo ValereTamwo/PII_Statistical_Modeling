@@ -158,14 +158,15 @@ TRACKING_PATTERNS_COMPLETE = {
         'viewport_tracking': r'(innerWidth|innerHeight|devicePixelRatio|screenWidth|screenHeight)',
         'touch_tracking': r'(touch_start|touch_end|touch_move|gesture)',
         'google_telemetry': r'(latencyAction|visualElement|tickName|clientActionNonce|serializedEventId)',
+        'usage_telemetry': r'(eventTimeMs|lastActivityMs|latencyActionTicked|latencyActionBaselined|latencyActionInfo|idbTransactionEnded|objectStoreNames)'
 
     },
 
     'IDENTITY_TRACKING': {
         'generic_ids': r'(visitor_id|device_id|client_id|browser_id|uuid|guid|[_-]uid[_-]?|^uid$|session_id|user_hash)',
         'fingerprint_keys': r'(fingerprint|canvas_hash|device_fingerprint|fpjs|browser_signature)',
-        'google_stack': r'(^_ga$|_ga_|_gid|_gat|__utma|__utmb|__utmz|gclid|dclid|_gac_|_gcl_|gtm_|^__gads$|^__gpi$)',
-        'meta_stack': r'(_fbp|_fbc|fbclid|act_|c_user|^xs$|^fr$|datr)',
+        'googl_stack': r'(^_ga$|_ga_|_gid|_gat|__utma|__utmb|__utmz|gclid|dclid|_gac_|_gcl_|gtm_|^__gads$|^__gpi$)',
+        'meta_setack': r'(_fbp|_fbc|fbclid|act_|c_user|^xs$|^fr$|datr)',
         'microsoft_stack': r'(MUID|MUIDB|_uetsid|_uetvid|li_fat_id|bcookie|lidc|bscookie)',
         'amazon_stack': r'(session-id|ubid-acbfr|x-wl-uid|ad-id|ad-privacy)',
         'tiktok_stack': r'(_ttp|_tt_enable|_tt_session|tt_pixel)',
@@ -185,7 +186,7 @@ TRACKING_PATTERNS_COMPLETE = {
         'snapchat_pixel': r'(_scid|_scid_r)',
         'shopify_analytics': r'(_shopify_analytics)',
         'pinterest_extended': r'(_pin_unauth|_pinterest_)',
-        'google_idb': r'(X-Goog-Visitor-Id|X-YouTube-Visitor-Data|userIdentifier)',
+        'google_idb': r'(X-Goog-Visitor-Id|X-YouTube-Client-.*|X-YouTube-Ad-Signals|X-YouTube-Page-CL|userIdentifier|actualName|publicName)',
 
     },
 
@@ -219,6 +220,8 @@ TRACKING_PATTERNS_COMPLETE = {
         'time_zone': r'(timezone|timeZoneOffset|Intl_DateTimeFormat)',
         'plugins_mime': r'(navigator_plugins|mimeTypes|plugin_data)',
         'touch_support': r'(maxTouchPoints|ontouchstart|touchEvent)',
+        'browser_info':r'(browserName|browserVersion|osName|connectionType|hl|gl|clientName|clientVersion|X-YouTube-Utc-Offset|X-YouTube-Time-Zone)'
+
     },
 
     'FINGERPRINTING_ADVANCED': {
@@ -306,6 +309,7 @@ TRACKING_PATTERNS_COMPLETE = {
 'INFRASTRUCTURE': {
     'load_balancer': r'(SERVERID|SRVNAME|AWSALB|AWSALBCORS)',
     'cdn': r'(FDLBFIRSTEVENTS)',
+    'idb_structure_keys':r'(__type__|ObjectStoreDataValue|IDBKeyPath|blob_size|blob_offset|database_id|blob_number|BlobJournalEntry)'
 },
 
 'CUSTOMER_INTERACTION': {

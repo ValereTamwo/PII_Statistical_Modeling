@@ -1,13 +1,13 @@
 {
   "storage_type": "indexeddb",
-  "total_items": 367,
+  "total_items": 372,
   "direct_pii_count": 0,
-  "other_count": 367,
+  "other_count": 372,
   "pii_distribution": {
-    "APP_STATE_STORAGE": 2,
+    "APP_STATE_STORAGE": 5,
     "BEHAVIORAL_DATA": 71,
     "DEVICE_ENV": 8,
-    "IDENTITY_TRACKING": 7,
+    "IDENTITY_TRACKING": 9,
     "ID_SOLUTIONS_AND_EXCHANGES": 7,
     "NAVIGATION_HISTORY": 2,
     "SUSPICIOUS_VALUES": 2,
@@ -15,7 +15,7 @@
   },
   "pii_by_category": {
     "APP_STATE_STORAGE": {
-      "APP_STATE_STORAGE": 2
+      "APP_STATE_STORAGE": 5
     },
     "BEHAVIORAL_DATA": {
       "BEHAVIORAL_DATA": 71
@@ -24,7 +24,7 @@
       "DEVICE_ENV": 8
     },
     "IDENTITY_TRACKING": {
-      "IDENTITY_TRACKING": 7
+      "IDENTITY_TRACKING": 9
     },
     "ID_SOLUTIONS_AND_EXCHANGES": {
       "ID_SOLUTIONS_AND_EXCHANGES": 7
@@ -40,11 +40,11 @@
     }
   },
   "persistence_distribution": {
-    "Persistent": 367
+    "Persistent": 372
   },
   "persistence_by_pii": {
     "APP_STATE_STORAGE": {
-      "Persistent": 2
+      "Persistent": 5
     },
     "BEHAVIORAL_DATA": {
       "Persistent": 71
@@ -53,7 +53,7 @@
       "Persistent": 8
     },
     "IDENTITY_TRACKING": {
-      "Persistent": 7
+      "Persistent": 9
     },
     "ID_SOLUTIONS_AND_EXCHANGES": {
       "Persistent": 7
@@ -70,9 +70,9 @@
   },
   "size_by_pii": {
     "APP_STATE_STORAGE": {
-      "total": 60,
-      "average": 30.0,
-      "count": 2
+      "total": 100,
+      "average": 20.0,
+      "count": 5
     },
     "BEHAVIORAL_DATA": {
       "total": 1795,
@@ -85,9 +85,9 @@
       "count": 8
     },
     "IDENTITY_TRACKING": {
-      "total": 235,
-      "average": 33.57142857142857,
-      "count": 7
+      "total": 268,
+      "average": 29.77777777777778,
+      "count": 9
     },
     "ID_SOLUTIONS_AND_EXCHANGES": {
       "total": 108,
@@ -116,30 +116,33 @@
       "BEHAVIORAL_DATA": 3,
       "UNCATEGORIZED": 7
     },
-    "short_text": {
-      "BEHAVIORAL_DATA": 54,
-      "DEVICE_ENV": 2,
-      "IDENTITY_TRACKING": 2,
-      "UNCATEGORIZED": 85
+    "number": {
+      "APP_STATE_STORAGE": 1,
+      "ID_SOLUTIONS_AND_EXCHANGES": 7,
+      "UNCATEGORIZED": 74
     },
-    "language_code": {
-      "BEHAVIORAL_DATA": 14,
-      "IDENTITY_TRACKING": 2,
-      "UNCATEGORIZED": 3
+    "boolean": {
+      "APP_STATE_STORAGE": 1,
+      "UNCATEGORIZED": 20
     },
     "complex_string": {
+      "APP_STATE_STORAGE": 1,
       "DEVICE_ENV": 6,
       "IDENTITY_TRACKING": 3,
       "NAVIGATION_HISTORY": 2,
       "SUSPICIOUS_VALUES": 2,
       "UNCATEGORIZED": 75
     },
-    "number": {
-      "ID_SOLUTIONS_AND_EXCHANGES": 7,
-      "UNCATEGORIZED": 74
+    "short_text": {
+      "BEHAVIORAL_DATA": 54,
+      "DEVICE_ENV": 2,
+      "IDENTITY_TRACKING": 4,
+      "UNCATEGORIZED": 85
     },
-    "boolean": {
-      "UNCATEGORIZED": 20
+    "language_code": {
+      "BEHAVIORAL_DATA": 14,
+      "IDENTITY_TRACKING": 2,
+      "UNCATEGORIZED": 3
     },
     "ip_address": {
       "UNCATEGORIZED": 2
@@ -150,22 +153,22 @@
   },
   "content_types": {
     "token_id": 12,
-    "short_text": 143,
+    "number": 82,
+    "boolean": 21,
+    "complex_string": 89,
+    "short_text": 145,
     "language_code": 19,
-    "complex_string": 88,
-    "number": 81,
-    "boolean": 20,
     "ip_address": 2,
     "empty": 2
   },
   "vendor_counts": {
-    "indexeddb.leveldb": 367
+    "indexeddb.leveldb": 372
   },
   "category_vendor_flows": [
     [
       "APP_STATE_STORAGE",
       "indexeddb.leveldb",
-      2
+      5
     ],
     [
       "BEHAVIORAL_DATA",
@@ -180,7 +183,7 @@
     [
       "IDENTITY_TRACKING",
       "indexeddb.leveldb",
-      7
+      9
     ],
     [
       "ID_SOLUTIONS_AND_EXCHANGES",
@@ -206,7 +209,10 @@
   "entropy_by_pii": {
     "APP_STATE_STORAGE": [
       3.648431836203202,
-      3.648431836203202
+      3.648431836203202,
+      0.0,
+      0.0,
+      3.6086949695628423
     ],
     "BEHAVIORAL_DATA": [
       2.7321588913645702,
@@ -298,7 +304,9 @@
       1.0,
       5.130875438448058,
       1.0,
-      1.0
+      1.0,
+      3.321928094887362,
+      2.8464393446710154
     ],
     "ID_SOLUTIONS_AND_EXCHANGES": [
       1.0,
@@ -589,40 +597,33 @@
     ]
   },
   "risk_levels": {
-    "High Risk": 23,
-    "Medium Risk": 338,
-    "Critical Risk": 6
+    "Medium Risk": 354,
+    "High Risk": 18
   },
   "risk_by_pii": {
     "APP_STATE_STORAGE": {
-      "High Risk": 2
+      "Medium Risk": 5
     },
     "BEHAVIORAL_DATA": {
-      "Medium Risk": 68,
-      "High Risk": 1,
-      "Critical Risk": 2
+      "Medium Risk": 71
     },
     "DEVICE_ENV": {
-      "High Risk": 6,
-      "Medium Risk": 2
+      "Medium Risk": 8
     },
     "IDENTITY_TRACKING": {
-      "Medium Risk": 5,
-      "High Risk": 2
+      "High Risk": 9
     },
     "ID_SOLUTIONS_AND_EXCHANGES": {
-      "Medium Risk": 7
+      "High Risk": 7
     },
     "NAVIGATION_HISTORY": {
       "High Risk": 2
     },
     "SUSPICIOUS_VALUES": {
-      "High Risk": 2
+      "Medium Risk": 2
     },
     "UNCATEGORIZED": {
-      "Medium Risk": 256,
-      "High Risk": 8,
-      "Critical Risk": 4
+      "Medium Risk": 268
     }
   }
 }

@@ -20,7 +20,7 @@ def create_pii_vendor_sankey(agg_path: str, output_path: str):
     for auth in ['Auth', 'UnAuth']:
         for user in ['FR_0017', 'FR_0018', 'FR_0019']:
             for policy in ['ALL', 'PARTIAL', 'NONE']:
-                for lifecycle in ['added', 'modified']:
+                for lifecycle in ['added', 'modified', 'removed']:
                     analysis_path = os.path.join(results_base, auth, user, policy, 
                                                 'cookies', lifecycle, 'consolidated', 'analysis.json')
                     

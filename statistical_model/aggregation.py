@@ -37,7 +37,7 @@ def load_analysis_files(base_path: str) -> List[Dict[str, Any]]:
                     # Determine lifecycle type based on storage
                     if storage == 'cookies':
                         # Cookies: load added, modified, deleted separately
-                        for lifecycle in ['added', 'modified', 'deleted']:
+                        for lifecycle in ['added', 'modified', 'removed', 'deleted']:
                             analysis_json = os.path.join(storage_path, lifecycle, 'consolidated', 'analysis.json')
                             if os.path.exists(analysis_json):
                                 try:

@@ -64,6 +64,28 @@ def extract_modified_sessionstorage(data, task_id):
     return entries
 
 
+def extract_removed_sessionstorage(data, task_id):
+    """Extrait les entrées sessionStorage supprimées d'un fichier JSON"""
+    entries = []
+    
+    removed = data.get('sessionStorage', {}).get('removed', {})
+    metadata = data.get('metadata', {})
+    
+    for key, value in removed.items():
+        entry_info = {
+            'task_id': task_id,
+            'key': key,
+            'value': value,
+            'value_length': len(str(value)),
+            'initial_url': metadata.get('initial url', ''),
+            'final_url': metadata.get('final_url', ''),
+            'timestamp': metadata.get('timestamp', '')
+        }
+        entries.append(entry_info)
+    
+    return entries
+
+
 def main():
     base_dir = Path(__file__).resolve().parent.parent / 'data'
     if not base_dir.exists():
@@ -88,6 +110,7 @@ def main():
     
                 all_added_entries = []
                 all_modified_entries = []
+                all_removed_entries = []
                 
                 # Parcourir tous les fichiers JSON
                 json_files = sorted(input_dir.glob('*.json'), key=lambda x: int(x.stem))
@@ -109,6 +132,10 @@ def main():
                         # Extraire les entrées modifiées
                         modified = extract_modified_sessionstorage(data, task_id)
                         all_modified_entries.extend(modified)
+                        
+                        # Extraire les entrées supprimées
+                        removed = extract_removed_sessionstorage(data, task_id)
+                        all_removed_entries.extend(removed)
                         
                     except Exception as e:
                         print(f"⚠ Erreur lors du traitement de {json_file.name}: {e}")
@@ -135,6 +162,15 @@ def main():
                     print(f" {len(all_modified_entries)} entrées sessionStorage modifiées → {output_file}")
                 else:
                     print(" Aucune entrée sessionStorage modifiée")
+                
+                if all_removed_entries:
+                    output_file = output_dir / 'removed_sessionstorage.json'
+                    with open(output_file, 'w', encoding='utf-8') as f:
+                        json.dump(all_removed_entries, f, ensure_ascii=False, indent=2)
+                    
+                    print(f" {len(all_removed_entries)} entrées sessionStorage supprimées → {output_file}")
+                else:
+                    print(" Aucune entrée sessionStorage supprimée")
                 
                 print("\n=== Extraction terminée ===")
 

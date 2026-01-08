@@ -67,6 +67,7 @@ def main():
                 # Listes pour stocker les cookies
                 added_cookies = []
                 modified_cookies = []
+                removed_cookies = []
                 
                 print("=== Extraction des cookies ===\n")
                 
@@ -161,6 +162,27 @@ def main():
                                 'timestamp': timestamp
                             }
                             modified_cookies.append(modified_info)
+                        
+                        # Traiter les cookies supprimés
+                        removed = cookies_data.get('removed', {})
+                        for cookie_key, cookie in removed.items():
+                            cookie_info = {
+                                'task_id': task_id,
+                                'cookie_key': cookie_key,
+                                'name': cookie.get('name', ''),
+                                'value': cookie.get('value', ''),
+                                'domain': cookie.get('domain', ''),
+                                'path': cookie.get('path', ''),
+                                'expires': cookie.get('expires', -1),
+                                'expires_human': format_timestamp(cookie.get('expires', -1)),
+                                'httpOnly': cookie.get('httpOnly', False),
+                                'secure': cookie.get('secure', False),
+                                'sameSite': cookie.get('sameSite', None),
+                                'initial_url': initial_url,
+                                'final_url': final_url,
+                                'timestamp': timestamp
+                            }
+                            removed_cookies.append(cookie_info)
                     
                     except Exception as e:
                         print(f"  ⚠ Erreur lors du traitement de {filepath.name}: {e}")
@@ -186,6 +208,14 @@ def main():
                         json.dump(modified_cookies, f, ensure_ascii=False, indent=2)
                     
                     print(f"✓ {len(modified_cookies)} cookies modifiés → {output_file}")
+                
+                # Cookies supprimés
+                if removed_cookies:
+                    output_file = output_dir / 'removed_cookies.json'
+                    with open(output_file, 'w', encoding='utf-8') as f:
+                        json.dump(removed_cookies, f, ensure_ascii=False, indent=2)
+                    
+                    print(f"✓ {len(removed_cookies)} cookies supprimés → {output_file}")
                 
                 print("\n=== Extraction terminée ===")
 
