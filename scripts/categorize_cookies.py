@@ -19,9 +19,9 @@ from regex import TRACKING_PATTERNS_COMPLETE
 
 # Mapping user_id vers index dans DIRECT_PII
 USER_ID_TO_INDEX = {
-    'FR_0017': 0,
-    'FR_0018': 1,
-    'FR_0019': 2
+    'FR_0417': 0,
+    'FR_0446': 1,
+    'FR_0458': 2
 }
 
 
@@ -379,7 +379,7 @@ USER_ID_TO_INDEX = {
 #     if not base_dir.exists():
 #         print(f"Dossier {base_dir} non trouvé")
 #         return
-#     users  = ('FR_0017', 'FR_0018', 'FR_0019')
+#     users  = ('FR_0417', 'FR_0446', 'FR_0458')
 #     auth_statuses = ('Auth', 'UnAuth')
     
 #     policies = ('ALL', 'PARTIAL', 'NONE')
@@ -518,7 +518,7 @@ from pathlib import Path
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from regex import TRACKING_PATTERNS_COMPLETE
 
-USER_ID_TO_INDEX = {'FR_0017': 0, 'FR_0018': 1, 'FR_0019': 2}
+USER_ID_TO_INDEX = {'FR_0417': 0, 'FR_0446': 1, 'FR_0458': 2}
 
 def try_decode_value(value):
     """Tente de décoder une valeur (URL, Base64, JSON, Hex)."""
@@ -550,7 +550,7 @@ def get_patterns_for_user(user_id):
     if isinstance(TRACKING_PATTERNS_COMPLETE['DIRECT_PII'], list):
         patterns['DIRECT_PII'] = TRACKING_PATTERNS_COMPLETE['DIRECT_PII'][user_index]
     return patterns
-USER_ID_TO_INDEX = {'FR_0017': 0, 'FR_0018': 1, 'FR_0019': 2}
+USER_ID_TO_INDEX = {'FR_0417': 0, 'FR_0446': 1, 'FR_0458': 2}
 
 
 
@@ -605,7 +605,7 @@ def calculate_modified_metrics(cookie):
 
 def main():
     base_dir = Path(__file__).resolve().parent.parent / 'data'
-    users = ('FR_0017', 'FR_0018', 'FR_0019')
+    users = ('FR_0417', 'FR_0446', 'FR_0458')
     auth_statuses = ('Auth', 'UnAuth')
     policies = ('ALL', 'PARTIAL', 'NONE')
 

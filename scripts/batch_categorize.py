@@ -235,7 +235,7 @@ def process_all_configurations():
         print("   Exécutez d'abord: python scripts/replicate_data_structure.py")
         return
     
-    users = ['FR_0017', 'FR_0018', 'FR_0019']
+    users = ['FR_0417', 'FR_0446', 'FR_0458']
     auth_statuses = ['Auth', 'UnAuth']
     policies = ['ALL', 'PARTIAL', 'NONE']
     

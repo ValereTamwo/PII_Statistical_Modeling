@@ -88,7 +88,7 @@ def discover_uncategorized_files(base_path: Path) -> List[Tuple[str, str, str, s
 # Mapping user_id vers index dans DIRECT_PII
 USER_ID_TO_INDEX = {
     'FR_0417': 0,
-    'FR_0018': 1,
+    'FR_0446': 1,
     'FR_0419': 2
 }
 

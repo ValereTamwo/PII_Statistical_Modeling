@@ -2,9 +2,9 @@ TRACKING_PATTERNS_COMPLETE = {
     
     # DIRECT_PII est maintenant une LISTE de patterns, un par utilisateur
     # Index 0 = FR_0417, Index 1 = FR_0418, Index 2 = FR_0419
-    'DIRECT_PII': [
-        # ===== USER FR_0417 =====
-        {
+'DIRECT_PII': [
+    # ===== USER FR_0417 =====
+    {
         # Email patterns - exact and partial
         'email_exact': r'chris\.martin\.gdpr\+FR_0417@gmail\.com',
         'email_encoded': r'chris(?:%2E|\.)martin(?:%2E|\.)gdpr(?:%2B|\+)FR_0417(?:%40|@)gmail(?:%2E|\.)com',
@@ -27,7 +27,7 @@ TRACKING_PATTERNS_COMPLETE = {
         
         # Address patterns - full and components
         'address_full': r'688,?\s*avenue\s+Thérèse\s+Robin',
-        'address_number': r'\b688\b',
+        # 'address_number': r'\b688\b',
         'address_street': r'avenue\s+Thérèse\s+Robin',
         'address_encoded': r'688(?:%2C|,)?\s*avenue(?:%20|\s)Thérèse(?:%20|\s)Robin',
         
@@ -46,16 +46,13 @@ TRACKING_PATTERNS_COMPLETE = {
         'user_id_partial': r'FR_04[0-9]{2}|FR_041[0-9]',
         
         # Password (for leak detection)
-        'password': r'Password@2025_RGPD_Audit!',
-        'password_encoded': r'Password(?:%40|@)2025_RGPD_Audit(?:%21|!)',
+        'password': r'S3cur3!P@ssw0rd_2025#Complex',
+        'password_encoded': r'S3cur3(?:%21|!)P(?:%40|@)ssw0rd_2025(?:%23|#)Complex',
         
         # Blood type
-        'blood_type': r'\bAB-\b',
+        # 'blood_type': r'\bAB-\b',
         
-        # Combined patterns (often appear together)
-        'name_and_city': r'Chris\s+Martin.*Roubaix|Roubaix.*Chris\s+Martin',
-        'email_and_phone': r'chris\.martin.*656898637|656898637.*chris\.martin',
-                # Gender
+        # Gender
         'gender': r'\bFemme\b|\bFemale\b',
         
         # Location patterns
@@ -63,32 +60,171 @@ TRACKING_PATTERNS_COMPLETE = {
         'region': r'\bHauts-de-France\b',
         
         # Socio-economic markers
-        'income_range': r'0-12000|12000',
+        'income_range': r'0-12000',
         'housing': r'\bHLM\b',
         'employment': r'non\s+déclarés?',
         
         # Demographics
         'religion': r'\bMusulman\b',
         'marital_status': r'\bCélibataire\b',
+        
+        # Combined patterns (often appear together)
+        'name_and_city': r'Chris\s+Martin.*Roubaix|Roubaix.*Chris\s+Martin',
+        'email_and_phone': r'chris\.martin.*656898637|656898637.*chris\.martin',
     },
     
-    # ===== USER FR_0418 =====
+    # ===== USER FR_0446 =====
     {
-        # TODO:  remplir les patterns spécifiques pour FR_0418
-        # Pour l'instant, copie de FR_0417
-        'email_exact': r'chris\.martin\.gdpr\+FR_0417@gmail\.com',
-        'user_id': r'\bFR_0418\b',
+        # Email patterns - exact and partial
+        'email_exact': r'chris\.martin\.gdpr\+FR_0446@gmail\.com',
+        'email_encoded': r'chris(?:%2E|\.)martin(?:%2E|\.)gdpr(?:%2B|\+)FR_0446(?:%40|@)gmail(?:%2E|\.)com',
+        'email_username': r'chris(?:%2E|\.)martin(?:%2E|\.)gdpr',
+        'email_pattern': r'chris(?:%2E|\.)martin|FR_0446',
+        
+        # Phone patterns - various formats and encoded
+        'phone_full': r'\+33\s?606124448',
+        'phone_national': r'0606124448',
+        'phone_short': r'606124448',
+        'phone_encoded': r'(?:%2B|\\u002B)?33\s?606124448',
+        'phone_partial': r'6061244[0-9]{2}|60612444[0-9]',
+        'phone_spaced': r'(?:\+33|0)\s?6\s?06\s?12\s?44\s?48',
+        
+        # Name patterns - full and partial
+        'full_name': r'Chris\s+Martin',
+        'first_name': r'\bChris\b',
+        'last_name': r'\bMartin\b',
+        'name_encoded': r'Chris(?:%20|\s)Martin',
+        
+        # Address patterns - full and components
+        'address_full': r'75,?\s*chemin\s+Margaux\s+Lombard',
+        # 'address_number': r'\b75\b',
+        'address_street': r'chemin\s+Margaux\s+Lombard',
+        'address_encoded': r'75(?:%2C|,)?\s*chemin(?:%20|\s)Margaux(?:%20|\s)Lombard',
+        
+        # City
+        'city': r'\bParis\s+16(?:ème|e)\b',
+        'city_encoded': r'Paris(?:%20|\s)16(?:ème|e)?',
+        'arrondissement': r'\b75016\b',
+        
+        # Birth date - multiple formats
+        'birth_date_slash': r'14/05/1975',
+        'birth_date_iso': r'1975-05-14',
+        'birth_date_dot': r'14\.05\.1975',
+        'birth_date_full': r'14[/\-\.]05[/\-\.]1975',
+        
+        # User ID
+        'user_id': r'\bFR_0446\b',
+        'user_id_partial': r'FR_04[0-9]{2}|FR_044[0-9]',
+        
+        # Password (for leak detection)
+        'password': r'S3cur3!P@ssw0rd_2025#Complex',
+        'password_encoded': r'S3cur3(?:%21|!)P(?:%40|@)ssw0rd_2025(?:%23|#)Complex',
+        
+        # Blood type
+        # 'blood_type': r'\bA\+\b',
+        
+        # Gender
+        'gender': r'\bHomme\b|\bMale\b',
+        
+        # Location patterns
+        'postal_code_area': r'\b750\d{2}\b',  # Paris
+        'region': r'\bÎle-de-France\b',
+        
+        # Socio-economic markers
+        'income_range': r'70000-120000|70000|120000',
+        'profession': r'\bAvocat\b',
+        'employment': r'\bLibéral\b',
+        
+        # Demographics
+        'religion': r'\bLaïc\b|\bLaïque\b',
+        'marital_status': r'\bMarié\b',
+        'children': r'2\s+enfants?',
+        
+        # Lifestyle
+        'loisirs': r'\bGolf\b|\bVoyages?\b',
+        
+        # Combined patterns
+        'name_and_city': r'Chris\s+Martin.*Paris|Paris.*Chris\s+Martin',
+        'email_and_phone': r'chris\.martin.*606124448|606124448.*chris\.martin',
+        'profession_and_city': r'Avocat.*Paris\s+16|Paris\s+16.*Avocat',
     },
     
-    # ===== USER FR_0419 =====
+    # ===== USER FR_0458 =====
     {
-        # TODO:  remplire les patterns spécifiques pour FR_0419
-        # Pour l'instant, copie de FR_0417
-        'email_exact': r'chris\.martin\.gdpr\+FR_0417@gmail\.com',
-        'user_id': r'\bFR_0419\b',
+        # Email patterns - exact and partial
+        'email_exact': r'chris\.martin\.gdpr\+FR_0458@gmail\.com',
+        'email_encoded': r'chris(?:%2E|\.)martin(?:%2E|\.)gdpr(?:%2B|\+)FR_0458(?:%40|@)gmail(?:%2E|\.)com',
+        'email_username': r'chris(?:%2E|\.)martin(?:%2E|\.)gdpr',
+        'email_pattern': r'chris(?:%2E|\.)martin|FR_0458',
+        
+        # Phone patterns - various formats and encoded
+        'phone_full': r'\+33\s?653277579',
+        'phone_national': r'0653277579',
+        'phone_short': r'653277579',
+        'phone_encoded': r'(?:%2B|\\u002B)?33\s?653277579',
+        'phone_partial': r'6532775[0-9]{2}|65327757[0-9]',
+        'phone_spaced': r'(?:\+33|0)\s?6\s?53\s?27\s?75\s?79',
+        
+        # Name patterns - full and partial
+        'full_name': r'Chris\s+Martin',
+        'first_name': r'\bChris\b',
+        'last_name': r'\bMartin\b',
+        'name_encoded': r'Chris(?:%20|\s)Martin',
+        
+        # Address patterns - full and components
+        'address_full': r'74,?\s*boulevard\s+Lenoir',
+        # 'address_number': r'\b74\b',
+        'address_street': r'boulevard\s+Lenoir',
+        'address_encoded': r'74(?:%2C|,)?\s*boulevard(?:%20|\s)Lenoir',
+        
+        # City
+        'city': r'\bThibault\b',
+        'city_encoded': r'Thibault',
+        
+        # Birth date - multiple formats
+        'birth_date_slash': r'24/01/1966',
+        'birth_date_iso': r'1966-01-24',
+        'birth_date_dot': r'24\.01\.1966',
+        'birth_date_full': r'24[/\-\.]01[/\-\.]1966',
+        
+        # User ID
+        'user_id': r'\bFR_0458\b',
+        'user_id_partial': r'FR_04[0-9]{2}|FR_045[0-9]',
+        
+        # Password (for leak detection)
+        'password': r'S3cur3!P@ssw0rd_2025#Complex',
+        'password_encoded': r'S3cur3(?:%21|!)P(?:%40|@)ssw0rd_2025(?:%23|#)Complex',
+        
+        # Blood type
+        # 'blood_type': r'\bA\+\b',
+        
+        # Gender
+        'gender': r'\bFemme\b|\bFemale\b',
+        
+        # Socio-economic markers
+        'income_range': r'15000-30000|15000|30000',
+        'employment': r'\bTemps\s+partiel\b',
+        'situation': r'\bAidant\b',
+        
+        # Health-related (sensitive)
+        'health_marker': r'\bcancer\b',
+        'dependent': r'\bpère\b.*charge|parent.*charge',
+        
+        # Demographics
+        'religion': r'\bCatholique\b',
+        'marital_status': r'\bMarié\b',
+        'household': r'parent\s+à\s+charge',
+        
+        # Lifestyle
+        'loisirs': r'\bÉglise\b',
+        'constraints': r'\bBurnout\b',
+        
+        # Combined patterns
+        'name_and_city': r'Chris\s+Martin.*Thibault|Thibault.*Chris\s+Martin',
+        'email_and_phone': r'chris\.martin.*653277579|653277579.*chris\.martin',
+        'aidant_context': r'aidant.*père|père.*cancer',
     }
 ],
-
 
     'ID_SOLUTIONS_AND_EXCHANGES': {
         'first_id': r'(firstid|firstid_consent)',
@@ -309,7 +445,7 @@ TRACKING_PATTERNS_COMPLETE = {
 'INFRASTRUCTURE': {
     'load_balancer': r'(SERVERID|SRVNAME|AWSALB|AWSALBCORS)',
     'cdn': r'(FDLBFIRSTEVENTS)',
-    'idb_structure_keys':r'(__type__|ObjectStoreDataValue|IDBKeyPath|blob_size|blob_offset|database_id|blob_number|BlobJournalEntry)'
+    'idb_structure_key':r'(__type__|ObjectStoreDataValue|IDBKeyPath|blob_size|blob_offset|database_id|blob_number|BlobJournalEntry)'
 },
 
 'CUSTOMER_INTERACTION': {

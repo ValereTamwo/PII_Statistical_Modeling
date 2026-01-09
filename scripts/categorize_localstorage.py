@@ -16,7 +16,7 @@ from typing import Dict, List, Any, Optional, Tuple
 sys.path.insert(0, str(Path(__file__).parent))
 from regex import TRACKING_PATTERNS_COMPLETE
 
-USER_ID_TO_INDEX = {'FR_0017': 0, 'FR_0018': 1, 'FR_0019': 2}
+USER_ID_TO_INDEX = {'FR_0417': 0, 'FR_0446': 1, 'FR_0458': 2}
 
 def get_patterns_for_user(user_id):
     patterns = dict(TRACKING_PATTERNS_COMPLETE)
@@ -121,7 +121,7 @@ def process_storage_file(input_file: Path, output_dir: Path, patterns: Dict):
 
 def main():
     base_dir = Path(__file__).resolve().parent.parent / 'data'
-    users = ('FR_0017', 'FR_0018', 'FR_0019')
+    users = ('FR_0417', 'FR_0446', 'FR_0458')
     auth_statuses = ('Auth', 'UnAuth')
     policies = ('ALL', 'PARTIAL', 'NONE')
     storage_types = ('localstorage', 'sessionstorage')

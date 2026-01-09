@@ -242,7 +242,7 @@ def categorize_all_with_ai(input_file: Path, output_dir: Path, api_key: str, max
     
     # Charger contexte
     base_dir = Path(__file__).parent.parent
-    user_info_path = base_dir / 'FR_0017' / 'storage_state' / 'user_info.json'
+    user_info_path = base_dir / 'FR_0417' / 'storage_state' / 'user_info.json'
     user_profile = load_user_profile(user_info_path)
     categories = get_pii_categories_list()
     

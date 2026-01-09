@@ -138,7 +138,7 @@ def categorize_indexeddb_for_config(input_dir, output_dir, patterns):
 
 def main():
     base_dir = Path(__file__).resolve().parent.parent / 'data'
-    users = ('FR_0017', 'FR_0018', 'FR_0019')
+    users = ('FR_0417', 'FR_0446', 'FR_0458')
     auth_statuses = ('Auth', 'UnAuth')
     policies = ('ALL', 'PARTIAL', 'NONE')
 

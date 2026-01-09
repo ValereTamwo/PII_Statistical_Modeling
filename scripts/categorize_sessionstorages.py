@@ -23,9 +23,9 @@ from regex import TRACKING_PATTERNS_COMPLETE
 
 # Mapping user_id vers index dans DIRECT_PII
 USER_ID_TO_INDEX = {
-    'FR_0017': 0,
-    'FR_0018': 1,
-    'FR_0019': 2
+    'FR_0417': 0,
+    'FR_0446': 1,
+    'FR_0458': 2
 }
 
 
@@ -283,7 +283,7 @@ def main():
     if not base_dir.exists():
         print(f"Dossier {base_dir} non trouvé")
         return
-    users  = ('FR_0017', 'FR_0018', 'FR_0019')
+    users  = ('FR_0417', 'FR_0446', 'FR_0458')
     auth_statuses = ('Auth', 'UnAuth')
     
     policies = ('ALL', 'PARTIAL', 'NONE')
