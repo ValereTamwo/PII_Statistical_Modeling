@@ -1,0 +1,2649 @@
+{
+  "site": "https_www.planet.fr_0.indexeddb.leveldb",
+  "profile": "FR_0458",
+  "auth_type": "auth",
+  "records_count": 89,
+  "data": [
+    {
+      "__type__": "IDBKeyPath",
+      "offset": 3,
+      "type": 0,
+      "value": null
+    },
+    {
+      "__type__": "IDBKeyPath",
+      "offset": 3,
+      "type": 0,
+      "value": null
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 2,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "webKey": "e8668317808c60380f741c1cf28854043f459c3eee473432ae15b332e88357ab"
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 3,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "serializedConfig": {
+          "data": {
+            "supportLevels": {
+              "optIn": {
+                "accessToken": true,
+                "internalEvents": true,
+                "customEvents": true
+              },
+              "optOut": {
+                "accessToken": false,
+                "internalEvents": false,
+                "customEvents": false
+              }
+            },
+            "options": {
+              "defaults": {
+                "applicationName": "Planet.fr",
+                "notificationDefaultUrl": "https://www.planet.fr/",
+                "customDomain": "https://www.planet.fr/",
+                "notificationIcon": "https://cdn.by.wonderpush.com/upload/01ii21te1u6pgg02/74f3c3c69526b1118ff3acedd0e764b7c2821ed9/v1/small",
+                "allowedSubscriptionDomains": {
+                  "__type__": "JSArray",
+                  "values": [],
+                  "properties": {}
+                },
+                "subscriptionNative": {
+                  "triggers": {
+                    "snooze": 86400000,
+                    "delay": 60000
+                  },
+                  "message": "Recevez nos actualités en temps réel - Aucun email requis",
+                  "positiveButton": "✅ Autoriser",
+                  "negativeButton": "Plus tard",
+                  "noDialog": false
+                },
+                "subscriptionDialog": {},
+                "subscriptionBlurb": {
+                  "message": "Recevez toutes nos actualités en temps réel (aucun email requis)",
+                  "querySelector": ".wonderpush-register,#wonderpush-register",
+                  "insertBefore": true,
+                  "multiple": false,
+                  "noIcon": false,
+                  "urlFilters": {
+                    "blackList": {
+                      "__type__": "JSArray",
+                      "values": [
+                        "/user/login",
+                        "/user/register",
+                        "/user/password"
+                      ],
+                      "properties": {}
+                    }
+                  }
+                },
+                "plugins": {
+                  "geojs": {},
+                  "ecommerce": {
+                    "__type__": "Null"
+                  },
+                  "tag-auto": {
+                    "blacklist": {
+                      "__type__": "JSArray",
+                      "values": [],
+                      "properties": {}
+                    },
+                    "whitelist": {
+                      "__type__": "JSArray",
+                      "values": [],
+                      "properties": {}
+                    },
+                    "numTopics": 3,
+                    "minViews": 2,
+                    "topicList": {
+                      "__type__": "JSArray",
+                      "values": [
+                        "people",
+                        "retraite",
+                        "faits-divers",
+                        "habitat-senior"
+                      ],
+                      "properties": {}
+                    }
+                  },
+                  "sponsored-notifications": {
+                    "__type__": "Null"
+                  }
+                },
+                "serviceWorkerUrl": "modules/custom/npm_asset_insert/js/wonderpush-worker-loader.min.js?webKey=${webKey}",
+                "frameUrl": "modules/custom/npm_asset_insert/js/wonderpush.min.html",
+                "manifestUrl": "https://cdn.by.wonderpush.com/sdk/1.1.33.14/wonderpush-manifest.json",
+                "applicationServerKey": "BHx9AkR4aqTllWWz4bzvvCKaEIBDPwZXiznKFKeBTsVa7WErdu1_TOaEsbuYPFg0RWrZponvQ0JPmSBuQfGtzEU"
+              },
+              "override": {}
+            },
+            "pluginsRegistry": {
+              "tag-switch": {
+                "shortVersions": {
+                  "1": "1.1.5",
+                  "1.0": "1.0.1",
+                  "latest": "1.1.5",
+                  "1.1": "1.1.5"
+                }
+              },
+              "optin-automatic": {
+                "shortVersions": {
+                  "1": "1.0.7",
+                  "1.0": "1.0.7",
+                  "latest": "1.0.7"
+                }
+              },
+              "optin-dialog": {
+                "shortVersions": {
+                  "1": "1.3.15",
+                  "1.3": "1.3.15",
+                  "1.2": "1.2.0",
+                  "1.1": "1.1.2",
+                  "1.0": "1.0.0",
+                  "latest": "1.3.15"
+                }
+              },
+              "optin-switch": {
+                "shortVersions": {
+                  "1": "1.0.5",
+                  "1.0": "1.0.5",
+                  "latest": "1.0.5"
+                }
+              },
+              "optin-bell": {
+                "shortVersions": {
+                  "1": "1.1.3",
+                  "1.0": "1.0.15",
+                  "latest": "1.1.3",
+                  "1.1": "1.1.3"
+                }
+              },
+              "shopify": {
+                "shortVersions": {
+                  "1": "1.1.3",
+                  "1.0": "1.0.0",
+                  "latest": "1.1.3",
+                  "1.1": "1.1.3"
+                }
+              },
+              "geojs": {
+                "shortVersions": {
+                  "1": "1.0.2",
+                  "1.0": "1.0.2",
+                  "latest": "1.0.2"
+                }
+              },
+              "ecommerce": {
+                "shortVersions": {
+                  "1": "1.0.15",
+                  "1.0": "1.0.15",
+                  "latest": "1.0.15"
+                }
+              },
+              "tag-auto": {
+                "shortVersions": {
+                  "1": "1.0.7",
+                  "1.0": "1.0.7",
+                  "latest": "1.0.7"
+                }
+              },
+              "sponsored-notifications": {
+                "shortVersions": {
+                  "1": "1.1.3",
+                  "1.0": "1.0.11",
+                  "latest": "1.1.3",
+                  "1.1": "1.1.3"
+                }
+              },
+              "debug-permission": {
+                "shortVersions": {
+                  "1": "1.2.0",
+                  "1.0": "1.0.0",
+                  "latest": "1.2.0",
+                  "1.1": "1.1.0",
+                  "1.2": "1.2.0"
+                }
+              },
+              "optin-blurb": {
+                "shortVersions": {
+                  "1": "1.0.1",
+                  "1.0": "1.0.1",
+                  "latest": "1.0.1"
+                }
+              }
+            },
+            "inAppConfig": {
+              "campaigns": {
+                "__type__": "JSArray",
+                "values": [],
+                "properties": {}
+              }
+            },
+            "automaticActions": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "version": 1757420749229.0
+          },
+          "version": "1757420749229",
+          "fetchDate": 1767129886430.0,
+          "maxAge": 0,
+          "minAge": 0
+        }
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 4,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "serializedConfig": {
+          "data": {
+            "supportLevels": {
+              "optIn": {
+                "accessToken": true,
+                "internalEvents": true,
+                "customEvents": true
+              },
+              "optOut": {
+                "accessToken": false,
+                "internalEvents": false,
+                "customEvents": false
+              }
+            },
+            "options": {
+              "defaults": {
+                "applicationName": "Planet.fr",
+                "notificationDefaultUrl": "https://www.planet.fr/",
+                "customDomain": "https://www.planet.fr/",
+                "notificationIcon": "https://cdn.by.wonderpush.com/upload/01ii21te1u6pgg02/74f3c3c69526b1118ff3acedd0e764b7c2821ed9/v1/small",
+                "allowedSubscriptionDomains": {
+                  "__type__": "JSArray",
+                  "values": [],
+                  "properties": {}
+                },
+                "subscriptionNative": {
+                  "triggers": {
+                    "snooze": 86400000,
+                    "delay": 60000
+                  },
+                  "message": "Recevez nos actualités en temps réel - Aucun email requis",
+                  "positiveButton": "✅ Autoriser",
+                  "negativeButton": "Plus tard",
+                  "noDialog": false
+                },
+                "subscriptionDialog": {},
+                "subscriptionBlurb": {
+                  "message": "Recevez toutes nos actualités en temps réel (aucun email requis)",
+                  "querySelector": ".wonderpush-register,#wonderpush-register",
+                  "insertBefore": true,
+                  "multiple": false,
+                  "noIcon": false,
+                  "urlFilters": {
+                    "blackList": {
+                      "__type__": "JSArray",
+                      "values": [
+                        {
+                          "__type__": "Undefined"
+                        },
+                        {
+                          "__type__": "Undefined"
+                        },
+                        {
+                          "__type__": "Undefined"
+                        }
+                      ],
+                      "properties": {
+                        "0": "/user/login",
+                        "1": "/user/register",
+                        "2": "/user/password"
+                      }
+                    }
+                  }
+                },
+                "plugins": {
+                  "geojs": {},
+                  "ecommerce": {
+                    "__type__": "Null"
+                  },
+                  "tag-auto": {
+                    "blacklist": {
+                      "__type__": "JSArray",
+                      "values": [],
+                      "properties": {}
+                    },
+                    "whitelist": {
+                      "__type__": "JSArray",
+                      "values": [],
+                      "properties": {}
+                    },
+                    "numTopics": 3,
+                    "minViews": 2,
+                    "topicList": {
+                      "__type__": "JSArray",
+                      "values": [
+                        {
+                          "__type__": "Undefined"
+                        },
+                        {
+                          "__type__": "Undefined"
+                        },
+                        {
+                          "__type__": "Undefined"
+                        },
+                        {
+                          "__type__": "Undefined"
+                        }
+                      ],
+                      "properties": {
+                        "0": "people",
+                        "1": "retraite",
+                        "2": "faits-divers",
+                        "3": "habitat-senior"
+                      }
+                    }
+                  },
+                  "sponsored-notifications": {
+                    "__type__": "Null"
+                  }
+                },
+                "serviceWorkerUrl": "modules/custom/npm_asset_insert/js/wonderpush-worker-loader.min.js?webKey=${webKey}",
+                "frameUrl": "modules/custom/npm_asset_insert/js/wonderpush.min.html",
+                "manifestUrl": "https://cdn.by.wonderpush.com/sdk/1.1.33.14/wonderpush-manifest.json",
+                "applicationServerKey": "BHx9AkR4aqTllWWz4bzvvCKaEIBDPwZXiznKFKeBTsVa7WErdu1_TOaEsbuYPFg0RWrZponvQ0JPmSBuQfGtzEU"
+              },
+              "override": {}
+            },
+            "pluginsRegistry": {
+              "tag-switch": {
+                "shortVersions": {
+                  "1": "1.1.5",
+                  "1.0": "1.0.1",
+                  "latest": "1.1.5",
+                  "1.1": "1.1.5"
+                }
+              },
+              "optin-automatic": {
+                "shortVersions": {
+                  "1": "1.0.7",
+                  "1.0": "1.0.7",
+                  "latest": "1.0.7"
+                }
+              },
+              "optin-dialog": {
+                "shortVersions": {
+                  "1": "1.3.15",
+                  "1.3": "1.3.15",
+                  "1.2": "1.2.0",
+                  "1.1": "1.1.2",
+                  "1.0": "1.0.0",
+                  "latest": "1.3.15"
+                }
+              },
+              "optin-switch": {
+                "shortVersions": {
+                  "1": "1.0.5",
+                  "1.0": "1.0.5",
+                  "latest": "1.0.5"
+                }
+              },
+              "optin-bell": {
+                "shortVersions": {
+                  "1": "1.1.3",
+                  "1.0": "1.0.15",
+                  "latest": "1.1.3",
+                  "1.1": "1.1.3"
+                }
+              },
+              "shopify": {
+                "shortVersions": {
+                  "1": "1.1.3",
+                  "1.0": "1.0.0",
+                  "latest": "1.1.3",
+                  "1.1": "1.1.3"
+                }
+              },
+              "geojs": {
+                "shortVersions": {
+                  "1": "1.0.2",
+                  "1.0": "1.0.2",
+                  "latest": "1.0.2"
+                }
+              },
+              "ecommerce": {
+                "shortVersions": {
+                  "1": "1.0.15",
+                  "1.0": "1.0.15",
+                  "latest": "1.0.15"
+                }
+              },
+              "tag-auto": {
+                "shortVersions": {
+                  "1": "1.0.7",
+                  "1.0": "1.0.7",
+                  "latest": "1.0.7"
+                }
+              },
+              "sponsored-notifications": {
+                "shortVersions": {
+                  "1": "1.1.3",
+                  "1.0": "1.0.11",
+                  "latest": "1.1.3",
+                  "1.1": "1.1.3"
+                }
+              },
+              "debug-permission": {
+                "shortVersions": {
+                  "1": "1.2.0",
+                  "1.0": "1.0.0",
+                  "latest": "1.2.0",
+                  "1.1": "1.1.0",
+                  "1.2": "1.2.0"
+                }
+              },
+              "optin-blurb": {
+                "shortVersions": {
+                  "1": "1.0.1",
+                  "1.0": "1.0.1",
+                  "latest": "1.0.1"
+                }
+              }
+            },
+            "inAppConfig": {
+              "campaigns": {
+                "__type__": "JSArray",
+                "values": [],
+                "properties": {}
+              }
+            },
+            "automaticActions": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "version": 1757420749229.0
+          },
+          "version": "1757420749229",
+          "fetchDate": 1767129886430.0,
+          "maxAge": 0,
+          "minAge": 0
+        },
+        "highestVersion": "1757420749229"
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 5,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": 1
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 6,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": "1.1.41.2"
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 7,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": 1
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 8,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "version": 3,
+        "initialPermissionState": "prompt",
+        "statsByState": {
+          "prompt": {
+            "count": 1,
+            "hadSession": false,
+            "sinceDate": 1767129886449.0,
+            "lastDate": 1767129886449.0
+          }
+        },
+        "permissionState": "prompt"
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 9,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "permission": "default",
+        "date": 1767129886451.0,
+        "checkVersion": 5,
+        "sdkVersion": "1.1.41.2",
+        "browserName": "Chrome",
+        "browserVersion": "140.0.0.0",
+        "browserVersionMajor": 140,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+        "isSecureContext": true,
+        "framed": false,
+        "origin": "https://www.planet.fr",
+        "runMode": "website"
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 10,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": 1767129886452.0
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 11,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "actionDate": 1767129886452.0,
+        "reporting": {
+          "attributionReason": "recentNotificationOpened"
+        }
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 12,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": 1767129886452.0
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 13,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "fromDate": 1767129886453.0,
+        "untilDate": 1767130186453.0,
+        "elapsedTime": 300000.0
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 14,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": 1767129886452.0
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 15,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "fromDate": 1767129886453.0,
+        "elapsedTime": 300000,
+        "untilDate": 1767130186453.0
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 16,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": 1
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 17,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": 1
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 18,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "window": {
+          "__type__": "JSArray",
+          "values": [],
+          "properties": {}
+        },
+        "serviceWorker": {
+          "__type__": "JSArray",
+          "values": [],
+          "properties": {}
+        }
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 19,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "__type__": "JSArray",
+        "values": [
+          {
+            "actionDate": 1767129886452.0,
+            "reporting": {
+              "attributionReason": "recentNotificationOpened"
+            },
+            "presence": {
+              "fromDate": 1767129886453.0,
+              "elapsedTime": 300000,
+              "untilDate": 1767130186453.0
+            },
+            "type": "@VISIT",
+            "collapsing": "last",
+            "occurrences": {
+              "allTime": 1,
+              "last1days": 1,
+              "last3days": 1,
+              "last7days": 1,
+              "last15days": 1,
+              "last30days": 1,
+              "last60days": 1,
+              "last90days": 1
+            }
+          },
+          {
+            "actionDate": 1767129886452.0,
+            "reporting": {
+              "attributionReason": "recentNotificationOpened"
+            },
+            "presence": {
+              "fromDate": 1767129886453.0,
+              "elapsedTime": 300000,
+              "untilDate": 1767130186453.0
+            },
+            "type": "@VISIT",
+            "occurrences": {
+              "allTime": 1,
+              "last1days": 1,
+              "last3days": 1,
+              "last7days": 1,
+              "last15days": 1,
+              "last30days": 1,
+              "last60days": 1,
+              "last90days": 1
+            }
+          }
+        ],
+        "properties": {}
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 20,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": "e115765f-7977-4d94-9d0f-83f398ae4132-19b71262ef8"
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 21,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "lastFetchDate": 1767129886521.0
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 22,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "": {
+          "_syncStateVersion": 1,
+          "sdkState": {},
+          "serverState": {},
+          "putAccumulator": {},
+          "inflightDiff": {},
+          "inflightPutAccumulator": {},
+          "scheduledPatchCall": true,
+          "inflightPatchCallDeadline": 0
+        }
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 23,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "": {
+          "_syncStateVersion": 1,
+          "sdkState": {},
+          "serverState": {},
+          "putAccumulator": {},
+          "inflightDiff": {},
+          "inflightPutAccumulator": {},
+          "scheduledPatchCall": true,
+          "inflightPatchCallDeadline": 0
+        }
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 24,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "": {
+          "_syncStateVersion": 1,
+          "sdkState": {},
+          "serverState": {},
+          "putAccumulator": {},
+          "inflightDiff": {},
+          "inflightPutAccumulator": {},
+          "scheduledPatchCall": true,
+          "inflightPatchCallDeadline": 0
+        }
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 25,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "": {
+          "_syncStateVersion": 1,
+          "sdkState": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            }
+          },
+          "serverState": {},
+          "putAccumulator": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            }
+          },
+          "inflightDiff": {},
+          "inflightPutAccumulator": {},
+          "scheduledPatchCall": true,
+          "inflightPatchCallDeadline": 0
+        }
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 26,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "serializedConfig": {
+          "data": {
+            "supportLevels": {
+              "optIn": {
+                "accessToken": true,
+                "internalEvents": true,
+                "customEvents": true
+              },
+              "optOut": {
+                "accessToken": false,
+                "internalEvents": false,
+                "customEvents": false
+              }
+            },
+            "options": {
+              "defaults": {
+                "applicationName": "Planet.fr",
+                "notificationDefaultUrl": "https://www.planet.fr/",
+                "customDomain": "https://www.planet.fr/",
+                "notificationIcon": "https://cdn.by.wonderpush.com/upload/01ii21te1u6pgg02/74f3c3c69526b1118ff3acedd0e764b7c2821ed9/v1/small",
+                "allowedSubscriptionDomains": {
+                  "__type__": "JSArray",
+                  "values": [],
+                  "properties": {}
+                },
+                "subscriptionNative": {
+                  "triggers": {
+                    "snooze": 86400000,
+                    "delay": 60000
+                  },
+                  "message": "Recevez nos actualités en temps réel - Aucun email requis",
+                  "positiveButton": "✅ Autoriser",
+                  "negativeButton": "Plus tard",
+                  "noDialog": false
+                },
+                "subscriptionDialog": {},
+                "subscriptionBlurb": {
+                  "message": "Recevez toutes nos actualités en temps réel (aucun email requis)",
+                  "querySelector": ".wonderpush-register,#wonderpush-register",
+                  "insertBefore": true,
+                  "multiple": false,
+                  "noIcon": false,
+                  "urlFilters": {
+                    "blackList": {
+                      "__type__": "JSArray",
+                      "values": [
+                        {
+                          "__type__": "Undefined"
+                        },
+                        {
+                          "__type__": "Undefined"
+                        },
+                        {
+                          "__type__": "Undefined"
+                        }
+                      ],
+                      "properties": {
+                        "0": "/user/login",
+                        "1": "/user/register",
+                        "2": "/user/password"
+                      }
+                    }
+                  }
+                },
+                "plugins": {
+                  "geojs": {},
+                  "ecommerce": {
+                    "__type__": "Null"
+                  },
+                  "tag-auto": {
+                    "blacklist": {
+                      "__type__": "JSArray",
+                      "values": [],
+                      "properties": {}
+                    },
+                    "whitelist": {
+                      "__type__": "JSArray",
+                      "values": [],
+                      "properties": {}
+                    },
+                    "numTopics": 3,
+                    "minViews": 2,
+                    "topicList": {
+                      "__type__": "JSArray",
+                      "values": [
+                        {
+                          "__type__": "Undefined"
+                        },
+                        {
+                          "__type__": "Undefined"
+                        },
+                        {
+                          "__type__": "Undefined"
+                        },
+                        {
+                          "__type__": "Undefined"
+                        }
+                      ],
+                      "properties": {
+                        "0": "people",
+                        "1": "retraite",
+                        "2": "faits-divers",
+                        "3": "habitat-senior"
+                      }
+                    }
+                  },
+                  "sponsored-notifications": {
+                    "__type__": "Null"
+                  }
+                },
+                "serviceWorkerUrl": "modules/custom/npm_asset_insert/js/wonderpush-worker-loader.min.js?webKey=${webKey}",
+                "frameUrl": "modules/custom/npm_asset_insert/js/wonderpush.min.html",
+                "manifestUrl": "https://cdn.by.wonderpush.com/sdk/1.1.33.14/wonderpush-manifest.json",
+                "applicationServerKey": "BHx9AkR4aqTllWWz4bzvvCKaEIBDPwZXiznKFKeBTsVa7WErdu1_TOaEsbuYPFg0RWrZponvQ0JPmSBuQfGtzEU"
+              },
+              "override": {}
+            },
+            "pluginsRegistry": {
+              "tag-switch": {
+                "shortVersions": {
+                  "1": "1.1.5",
+                  "1.0": "1.0.1",
+                  "latest": "1.1.5",
+                  "1.1": "1.1.5"
+                }
+              },
+              "optin-automatic": {
+                "shortVersions": {
+                  "1": "1.0.7",
+                  "1.0": "1.0.7",
+                  "latest": "1.0.7"
+                }
+              },
+              "optin-dialog": {
+                "shortVersions": {
+                  "1": "1.3.15",
+                  "1.3": "1.3.15",
+                  "1.2": "1.2.0",
+                  "1.1": "1.1.2",
+                  "1.0": "1.0.0",
+                  "latest": "1.3.15"
+                }
+              },
+              "optin-switch": {
+                "shortVersions": {
+                  "1": "1.0.5",
+                  "1.0": "1.0.5",
+                  "latest": "1.0.5"
+                }
+              },
+              "optin-bell": {
+                "shortVersions": {
+                  "1": "1.1.3",
+                  "1.0": "1.0.15",
+                  "latest": "1.1.3",
+                  "1.1": "1.1.3"
+                }
+              },
+              "shopify": {
+                "shortVersions": {
+                  "1": "1.1.3",
+                  "1.0": "1.0.0",
+                  "latest": "1.1.3",
+                  "1.1": "1.1.3"
+                }
+              },
+              "geojs": {
+                "shortVersions": {
+                  "1": "1.0.2",
+                  "1.0": "1.0.2",
+                  "latest": "1.0.2"
+                }
+              },
+              "ecommerce": {
+                "shortVersions": {
+                  "1": "1.0.15",
+                  "1.0": "1.0.15",
+                  "latest": "1.0.15"
+                }
+              },
+              "tag-auto": {
+                "shortVersions": {
+                  "1": "1.0.7",
+                  "1.0": "1.0.7",
+                  "latest": "1.0.7"
+                }
+              },
+              "sponsored-notifications": {
+                "shortVersions": {
+                  "1": "1.1.3",
+                  "1.0": "1.0.11",
+                  "latest": "1.1.3",
+                  "1.1": "1.1.3"
+                }
+              },
+              "debug-permission": {
+                "shortVersions": {
+                  "1": "1.2.0",
+                  "1.0": "1.0.0",
+                  "latest": "1.2.0",
+                  "1.1": "1.1.0",
+                  "1.2": "1.2.0"
+                }
+              },
+              "optin-blurb": {
+                "shortVersions": {
+                  "1": "1.0.1",
+                  "1.0": "1.0.1",
+                  "latest": "1.0.1"
+                }
+              }
+            },
+            "inAppConfig": {
+              "campaigns": {
+                "__type__": "JSArray",
+                "values": [],
+                "properties": {}
+              }
+            },
+            "automaticActions": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "version": 1757420749229.0
+          },
+          "version": "1757420749229",
+          "fetchDate": 1767129886430.0,
+          "maxAge": 0,
+          "minAge": 0
+        },
+        "highestVersion": "1757420749229"
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 27,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "serializedConfig": {
+          "data": {
+            "supportLevels": {
+              "optIn": {
+                "accessToken": true,
+                "internalEvents": true,
+                "customEvents": true
+              },
+              "optOut": {
+                "accessToken": false,
+                "internalEvents": false,
+                "customEvents": false
+              }
+            },
+            "options": {
+              "defaults": {
+                "applicationName": "Planet.fr",
+                "notificationDefaultUrl": "https://www.planet.fr/",
+                "customDomain": "https://www.planet.fr/",
+                "notificationIcon": "https://cdn.by.wonderpush.com/upload/01ii21te1u6pgg02/74f3c3c69526b1118ff3acedd0e764b7c2821ed9/v1/small",
+                "allowedSubscriptionDomains": {
+                  "__type__": "JSArray",
+                  "values": [],
+                  "properties": {}
+                },
+                "subscriptionNative": {
+                  "triggers": {
+                    "snooze": 86400000,
+                    "delay": 60000
+                  },
+                  "message": "Recevez nos actualités en temps réel - Aucun email requis",
+                  "positiveButton": "✅ Autoriser",
+                  "negativeButton": "Plus tard",
+                  "noDialog": false
+                },
+                "subscriptionDialog": {},
+                "subscriptionBlurb": {
+                  "message": "Recevez toutes nos actualités en temps réel (aucun email requis)",
+                  "querySelector": ".wonderpush-register,#wonderpush-register",
+                  "insertBefore": true,
+                  "multiple": false,
+                  "noIcon": false,
+                  "urlFilters": {
+                    "blackList": {
+                      "__type__": "JSArray",
+                      "values": [
+                        {
+                          "__type__": "Undefined"
+                        },
+                        {
+                          "__type__": "Undefined"
+                        },
+                        {
+                          "__type__": "Undefined"
+                        }
+                      ],
+                      "properties": {
+                        "0": "/user/login",
+                        "1": "/user/register",
+                        "2": "/user/password"
+                      }
+                    }
+                  }
+                },
+                "plugins": {
+                  "geojs": {},
+                  "ecommerce": {
+                    "__type__": "Null"
+                  },
+                  "tag-auto": {
+                    "blacklist": {
+                      "__type__": "JSArray",
+                      "values": [],
+                      "properties": {}
+                    },
+                    "whitelist": {
+                      "__type__": "JSArray",
+                      "values": [],
+                      "properties": {}
+                    },
+                    "numTopics": 3,
+                    "minViews": 2,
+                    "topicList": {
+                      "__type__": "JSArray",
+                      "values": [
+                        {
+                          "__type__": "Undefined"
+                        },
+                        {
+                          "__type__": "Undefined"
+                        },
+                        {
+                          "__type__": "Undefined"
+                        },
+                        {
+                          "__type__": "Undefined"
+                        }
+                      ],
+                      "properties": {
+                        "0": "people",
+                        "1": "retraite",
+                        "2": "faits-divers",
+                        "3": "habitat-senior"
+                      }
+                    }
+                  },
+                  "sponsored-notifications": {
+                    "__type__": "Null"
+                  }
+                },
+                "serviceWorkerUrl": "modules/custom/npm_asset_insert/js/wonderpush-worker-loader.min.js?webKey=${webKey}",
+                "frameUrl": "modules/custom/npm_asset_insert/js/wonderpush.min.html",
+                "manifestUrl": "https://cdn.by.wonderpush.com/sdk/1.1.33.14/wonderpush-manifest.json",
+                "applicationServerKey": "BHx9AkR4aqTllWWz4bzvvCKaEIBDPwZXiznKFKeBTsVa7WErdu1_TOaEsbuYPFg0RWrZponvQ0JPmSBuQfGtzEU"
+              },
+              "override": {}
+            },
+            "pluginsRegistry": {
+              "tag-switch": {
+                "shortVersions": {
+                  "1": "1.1.5",
+                  "1.0": "1.0.1",
+                  "latest": "1.1.5",
+                  "1.1": "1.1.5"
+                }
+              },
+              "optin-automatic": {
+                "shortVersions": {
+                  "1": "1.0.7",
+                  "1.0": "1.0.7",
+                  "latest": "1.0.7"
+                }
+              },
+              "optin-dialog": {
+                "shortVersions": {
+                  "1": "1.3.15",
+                  "1.3": "1.3.15",
+                  "1.2": "1.2.0",
+                  "1.1": "1.1.2",
+                  "1.0": "1.0.0",
+                  "latest": "1.3.15"
+                }
+              },
+              "optin-switch": {
+                "shortVersions": {
+                  "1": "1.0.5",
+                  "1.0": "1.0.5",
+                  "latest": "1.0.5"
+                }
+              },
+              "optin-bell": {
+                "shortVersions": {
+                  "1": "1.1.3",
+                  "1.0": "1.0.15",
+                  "latest": "1.1.3",
+                  "1.1": "1.1.3"
+                }
+              },
+              "shopify": {
+                "shortVersions": {
+                  "1": "1.1.3",
+                  "1.0": "1.0.0",
+                  "latest": "1.1.3",
+                  "1.1": "1.1.3"
+                }
+              },
+              "geojs": {
+                "shortVersions": {
+                  "1": "1.0.2",
+                  "1.0": "1.0.2",
+                  "latest": "1.0.2"
+                }
+              },
+              "ecommerce": {
+                "shortVersions": {
+                  "1": "1.0.15",
+                  "1.0": "1.0.15",
+                  "latest": "1.0.15"
+                }
+              },
+              "tag-auto": {
+                "shortVersions": {
+                  "1": "1.0.7",
+                  "1.0": "1.0.7",
+                  "latest": "1.0.7"
+                }
+              },
+              "sponsored-notifications": {
+                "shortVersions": {
+                  "1": "1.1.3",
+                  "1.0": "1.0.11",
+                  "latest": "1.1.3",
+                  "1.1": "1.1.3"
+                }
+              },
+              "debug-permission": {
+                "shortVersions": {
+                  "1": "1.2.0",
+                  "1.0": "1.0.0",
+                  "latest": "1.2.0",
+                  "1.1": "1.1.0",
+                  "1.2": "1.2.0"
+                }
+              },
+              "optin-blurb": {
+                "shortVersions": {
+                  "1": "1.0.1",
+                  "1.0": "1.0.1",
+                  "latest": "1.0.1"
+                }
+              }
+            },
+            "inAppConfig": {
+              "campaigns": {
+                "__type__": "JSArray",
+                "values": [],
+                "properties": {}
+              }
+            },
+            "automaticActions": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "version": 1757420749229.0
+          },
+          "version": "1757420749229",
+          "fetchDate": 1767129886700.0,
+          "maxAge": 0,
+          "minAge": 0
+        },
+        "highestVersion": "1757420749229"
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 28,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "lastFetchDate": 1767129886521.0,
+        "geoLocation": {
+          "city": "Paris",
+          "timezone": "Europe/Paris",
+          "organization": "AS213541 WS Telecom Inc",
+          "ip": "158.46.138.103",
+          "asn": 213541,
+          "area_code": "0",
+          "organization_name": "WS Telecom Inc",
+          "country_code": "FR",
+          "country_code3": "FRA",
+          "continent_code": "EU",
+          "country": "France",
+          "region": "Île-de-France",
+          "latitude": "48.8558",
+          "longitude": "2.3494",
+          "accuracy": 20
+        }
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 29,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "": {
+          "_syncStateVersion": 1,
+          "sdkState": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            }
+          },
+          "serverState": {},
+          "putAccumulator": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            }
+          },
+          "inflightDiff": {},
+          "inflightPutAccumulator": {},
+          "scheduledPatchCall": true,
+          "inflightPatchCallDeadline": 0
+        }
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 30,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "": {
+          "_syncStateVersion": 1,
+          "sdkState": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "string_city": "Paris",
+            "string_country": "France",
+            "string_country_code3": "FRA",
+            "string_country_code": "FR",
+            "string_region": "Île-de-France"
+          },
+          "serverState": {},
+          "putAccumulator": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "string_city": "Paris",
+            "string_country": "France",
+            "string_country_code3": "FRA",
+            "string_country_code": "FR",
+            "string_region": "Île-de-France"
+          },
+          "inflightDiff": {},
+          "inflightPutAccumulator": {},
+          "scheduledPatchCall": true,
+          "inflightPatchCallDeadline": 0
+        }
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 31,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "": {
+          "_syncStateVersion": 1,
+          "sdkState": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "string_city": "Paris",
+            "string_country": "France",
+            "string_country_code3": "FRA",
+            "string_country_code": "FR",
+            "string_region": "Île-de-France"
+          },
+          "serverState": {},
+          "putAccumulator": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "string_city": "Paris",
+            "string_country": "France",
+            "string_country_code3": "FRA",
+            "string_country_code": "FR",
+            "string_region": "Île-de-France"
+          },
+          "inflightDiff": {},
+          "inflightPutAccumulator": {},
+          "scheduledPatchCall": true,
+          "inflightPatchCallDeadline": 0
+        }
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 32,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": 1767129923570.0
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 33,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": 1767129923571.0
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 34,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "webKey": "e8668317808c60380f741c1cf28854043f459c3eee473432ae15b332e88357ab"
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 35,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": 2
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 36,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": "1.1.41.2"
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 37,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": 2
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 38,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "version": 3,
+        "initialPermissionState": "prompt",
+        "statsByState": {
+          "prompt": {
+            "count": 1,
+            "hadSession": false,
+            "sinceDate": 1767129886449.0,
+            "lastDate": 1767129929104.0
+          }
+        },
+        "permissionState": "prompt"
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 39,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "permission": "default",
+        "date": 1767129929119.0,
+        "checkVersion": 5,
+        "sdkVersion": "1.1.41.2",
+        "browserName": "Chrome",
+        "browserVersion": "140.0.0.0",
+        "browserVersionMajor": 140,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+        "isSecureContext": true,
+        "framed": false,
+        "origin": "https://www.planet.fr",
+        "runMode": "website"
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 40,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": 1767129929146.0
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 41,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "window": {
+          "__type__": "JSArray",
+          "values": [],
+          "properties": {}
+        },
+        "serviceWorker": {
+          "__type__": "JSArray",
+          "values": [],
+          "properties": {}
+        }
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 42,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "": {
+          "_syncStateVersion": 1,
+          "sdkState": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "string_city": "Paris",
+            "string_country": "France",
+            "string_country_code3": "FRA",
+            "string_country_code": "FR",
+            "string_region": "Île-de-France"
+          },
+          "serverState": {},
+          "putAccumulator": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "string_city": "Paris",
+            "string_country": "France",
+            "string_country_code3": "FRA",
+            "string_country_code": "FR",
+            "string_region": "Île-de-France"
+          },
+          "inflightDiff": {},
+          "inflightPutAccumulator": {},
+          "scheduledPatchCall": true,
+          "inflightPatchCallDeadline": 0
+        }
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 43,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "": {
+          "_syncStateVersion": 1,
+          "sdkState": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "string_city": "Paris",
+            "string_country": "France",
+            "string_country_code3": "FRA",
+            "string_country_code": "FR",
+            "string_region": "Île-de-France"
+          },
+          "serverState": {},
+          "putAccumulator": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "string_city": "Paris",
+            "string_country": "France",
+            "string_country_code3": "FRA",
+            "string_country_code": "FR",
+            "string_region": "Île-de-France"
+          },
+          "inflightDiff": {},
+          "inflightPutAccumulator": {},
+          "scheduledPatchCall": true,
+          "inflightPatchCallDeadline": 0
+        }
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 44,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "": {
+          "_syncStateVersion": 1,
+          "sdkState": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "string_city": "Paris",
+            "string_country": "France",
+            "string_country_code3": "FRA",
+            "string_country_code": "FR",
+            "string_region": "Île-de-France"
+          },
+          "serverState": {},
+          "putAccumulator": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "string_city": "Paris",
+            "string_country": "France",
+            "string_country_code3": "FRA",
+            "string_country_code": "FR",
+            "string_region": "Île-de-France"
+          },
+          "inflightDiff": {},
+          "inflightPutAccumulator": {},
+          "scheduledPatchCall": true,
+          "inflightPatchCallDeadline": 0
+        }
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 45,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "": {
+          "_syncStateVersion": 1,
+          "sdkState": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "string_city": "Paris",
+            "string_country": "France",
+            "string_country_code3": "FRA",
+            "string_country_code": "FR",
+            "string_region": "Île-de-France"
+          },
+          "serverState": {},
+          "putAccumulator": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "string_city": "Paris",
+            "string_country": "France",
+            "string_country_code3": "FRA",
+            "string_country_code": "FR",
+            "string_region": "Île-de-France"
+          },
+          "inflightDiff": {},
+          "inflightPutAccumulator": {},
+          "scheduledPatchCall": true,
+          "inflightPatchCallDeadline": 0
+        }
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 46,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "": {
+          "_syncStateVersion": 1,
+          "sdkState": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "string_city": "Paris",
+            "string_country": "France",
+            "string_country_code3": "FRA",
+            "string_country_code": "FR",
+            "string_region": "Île-de-France"
+          },
+          "serverState": {},
+          "putAccumulator": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "string_city": "Paris",
+            "string_country": "France",
+            "string_country_code3": "FRA",
+            "string_country_code": "FR",
+            "string_region": "Île-de-France"
+          },
+          "inflightDiff": {},
+          "inflightPutAccumulator": {},
+          "scheduledPatchCall": true,
+          "inflightPatchCallDeadline": 0
+        }
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 47,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "": {
+          "_syncStateVersion": 1,
+          "sdkState": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "string_city": "Paris",
+            "string_country": "France",
+            "string_country_code3": "FRA",
+            "string_country_code": "FR",
+            "string_region": "Île-de-France"
+          },
+          "serverState": {},
+          "putAccumulator": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "string_city": "Paris",
+            "string_country": "France",
+            "string_country_code3": "FRA",
+            "string_country_code": "FR",
+            "string_region": "Île-de-France"
+          },
+          "inflightDiff": {},
+          "inflightPutAccumulator": {},
+          "scheduledPatchCall": true,
+          "inflightPatchCallDeadline": 0
+        }
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 48,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "": {
+          "_syncStateVersion": 1,
+          "sdkState": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "string_city": "Paris",
+            "string_country": "France",
+            "string_country_code3": "FRA",
+            "string_country_code": "FR",
+            "string_region": "Île-de-France"
+          },
+          "serverState": {},
+          "putAccumulator": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "string_city": "Paris",
+            "string_country": "France",
+            "string_country_code3": "FRA",
+            "string_country_code": "FR",
+            "string_region": "Île-de-France"
+          },
+          "inflightDiff": {},
+          "inflightPutAccumulator": {},
+          "scheduledPatchCall": true,
+          "inflightPatchCallDeadline": 0
+        }
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 49,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": 1767129947562.0
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 50,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "webKey": "e8668317808c60380f741c1cf28854043f459c3eee473432ae15b332e88357ab"
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 51,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": 3
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 52,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": "1.1.41.2"
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 53,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": 3
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 54,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "version": 3,
+        "initialPermissionState": "prompt",
+        "statsByState": {
+          "prompt": {
+            "count": 1,
+            "hadSession": false,
+            "sinceDate": 1767129886449.0,
+            "lastDate": 1767147286545.0
+          }
+        },
+        "permissionState": "prompt"
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 55,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "permission": "default",
+        "date": 1767147286554.0,
+        "checkVersion": 5,
+        "sdkVersion": "1.1.41.2",
+        "browserName": "Chrome",
+        "browserVersion": "140.0.0.0",
+        "browserVersionMajor": 140,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+        "isSecureContext": true,
+        "framed": false,
+        "origin": "https://www.planet.fr",
+        "runMode": "website"
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 56,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": 1767129947562.0
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 57,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": 1767147286562.0
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 58,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "actionDate": 1767147286562.0,
+        "reporting": {
+          "attributionReason": "recentNotificationOpened"
+        }
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 59,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": 1767147286562.0
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 60,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "fromDate": 1767147286570.0,
+        "untilDate": 1767147586570.0,
+        "elapsedTime": 300000.0
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 61,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": 1767147286562.0
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 62,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "fromDate": 1767147286572.0,
+        "elapsedTime": 300000,
+        "untilDate": 1767147586572.0
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 63,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": 2
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 64,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": 1
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 65,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "": {
+          "_syncStateVersion": 1,
+          "sdkState": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "string_city": "Paris",
+            "string_country": "France",
+            "string_country_code3": "FRA",
+            "string_country_code": "FR",
+            "string_region": "Île-de-France"
+          },
+          "serverState": {},
+          "putAccumulator": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "string_city": "Paris",
+            "string_country": "France",
+            "string_country_code3": "FRA",
+            "string_country_code": "FR",
+            "string_region": "Île-de-France"
+          },
+          "inflightDiff": {},
+          "inflightPutAccumulator": {},
+          "scheduledPatchCall": true,
+          "inflightPatchCallDeadline": 0
+        }
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 66,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "window": {
+          "__type__": "JSArray",
+          "values": [],
+          "properties": {}
+        },
+        "serviceWorker": {
+          "__type__": "JSArray",
+          "values": [],
+          "properties": {}
+        }
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 67,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "__type__": "JSArray",
+        "values": [
+          {
+            "actionDate": 1767147286562.0,
+            "reporting": {
+              "attributionReason": "recentNotificationOpened"
+            },
+            "presence": {
+              "fromDate": 1767147286572.0,
+              "elapsedTime": 300000,
+              "untilDate": 1767147586572.0
+            },
+            "type": "@VISIT",
+            "collapsing": "last",
+            "occurrences": {
+              "allTime": 2,
+              "last1days": 2,
+              "last3days": 2,
+              "last7days": 2,
+              "last15days": 2,
+              "last30days": 2,
+              "last60days": 2,
+              "last90days": 2
+            }
+          },
+          {
+            "actionDate": 1767129886452.0,
+            "reporting": {
+              "attributionReason": "recentNotificationOpened"
+            },
+            "presence": {
+              "fromDate": 1767129886453.0,
+              "elapsedTime": 300000,
+              "untilDate": 1767130186453.0
+            },
+            "type": "@VISIT",
+            "occurrences": {
+              "allTime": 1,
+              "last1days": 1,
+              "last3days": 1,
+              "last7days": 1,
+              "last15days": 1,
+              "last30days": 1,
+              "last60days": 1,
+              "last90days": 1
+            }
+          },
+          {
+            "actionDate": 1767147286562.0,
+            "reporting": {
+              "attributionReason": "recentNotificationOpened"
+            },
+            "presence": {
+              "fromDate": 1767147286572.0,
+              "elapsedTime": 300000,
+              "untilDate": 1767147586572.0
+            },
+            "type": "@VISIT",
+            "occurrences": {
+              "allTime": 2,
+              "last1days": 2,
+              "last3days": 2,
+              "last7days": 2,
+              "last15days": 2,
+              "last30days": 2,
+              "last60days": 2,
+              "last90days": 2
+            }
+          }
+        ],
+        "properties": {}
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 68,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "lastFetchDate": 1767147286677.0,
+        "geoLocation": {
+          "city": "Paris",
+          "timezone": "Europe/Paris",
+          "organization": "AS213541 WS Telecom Inc",
+          "ip": "158.46.138.103",
+          "asn": 213541,
+          "area_code": "0",
+          "organization_name": "WS Telecom Inc",
+          "country_code": "FR",
+          "country_code3": "FRA",
+          "continent_code": "EU",
+          "country": "France",
+          "region": "Île-de-France",
+          "latitude": "48.8558",
+          "longitude": "2.3494",
+          "accuracy": 20
+        }
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 69,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "": {
+          "_syncStateVersion": 1,
+          "sdkState": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "string_city": "Paris",
+            "string_country": "France",
+            "string_country_code3": "FRA",
+            "string_country_code": "FR",
+            "string_region": "Île-de-France"
+          },
+          "serverState": {},
+          "putAccumulator": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "string_city": "Paris",
+            "string_country": "France",
+            "string_country_code3": "FRA",
+            "string_country_code": "FR",
+            "string_region": "Île-de-France"
+          },
+          "inflightDiff": {},
+          "inflightPutAccumulator": {},
+          "scheduledPatchCall": true,
+          "inflightPatchCallDeadline": 0
+        }
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 70,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "": {
+          "_syncStateVersion": 1,
+          "sdkState": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "string_city": "Paris",
+            "string_country": "France",
+            "string_country_code3": "FRA",
+            "string_country_code": "FR",
+            "string_region": "Île-de-France"
+          },
+          "serverState": {},
+          "putAccumulator": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "string_city": "Paris",
+            "string_country": "France",
+            "string_country_code3": "FRA",
+            "string_country_code": "FR",
+            "string_region": "Île-de-France"
+          },
+          "inflightDiff": {},
+          "inflightPutAccumulator": {},
+          "scheduledPatchCall": true,
+          "inflightPatchCallDeadline": 0
+        }
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 71,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "": {
+          "_syncStateVersion": 1,
+          "sdkState": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "string_city": "Paris",
+            "string_country": "France",
+            "string_country_code3": "FRA",
+            "string_country_code": "FR",
+            "string_region": "Île-de-France"
+          },
+          "serverState": {},
+          "putAccumulator": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "string_city": "Paris",
+            "string_country": "France",
+            "string_country_code3": "FRA",
+            "string_country_code": "FR",
+            "string_region": "Île-de-France"
+          },
+          "inflightDiff": {},
+          "inflightPutAccumulator": {},
+          "scheduledPatchCall": true,
+          "inflightPatchCallDeadline": 0
+        }
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 72,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "": {
+          "_syncStateVersion": 1,
+          "sdkState": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "string_city": "Paris",
+            "string_country": "France",
+            "string_country_code3": "FRA",
+            "string_country_code": "FR",
+            "string_region": "Île-de-France"
+          },
+          "serverState": {},
+          "putAccumulator": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "string_city": "Paris",
+            "string_country": "France",
+            "string_country_code3": "FRA",
+            "string_country_code": "FR",
+            "string_region": "Île-de-France"
+          },
+          "inflightDiff": {},
+          "inflightPutAccumulator": {},
+          "scheduledPatchCall": true,
+          "inflightPatchCallDeadline": 0
+        }
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 73,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": 1767147303497.0
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 74,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "webKey": "e8668317808c60380f741c1cf28854043f459c3eee473432ae15b332e88357ab"
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 75,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": 4
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 76,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": "1.1.41.2"
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 77,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": 2
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 78,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "version": 3,
+        "initialPermissionState": "prompt",
+        "statsByState": {
+          "prompt": {
+            "count": 1,
+            "hadSession": false,
+            "sinceDate": 1767129886449.0,
+            "lastDate": 1767147305590.0
+          }
+        },
+        "permissionState": "prompt"
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 79,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "permission": "default",
+        "date": 1767147305596.0,
+        "checkVersion": 5,
+        "sdkVersion": "1.1.41.2",
+        "browserName": "Chrome",
+        "browserVersion": "140.0.0.0",
+        "browserVersionMajor": 140,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+        "isSecureContext": true,
+        "framed": false,
+        "origin": "https://www.planet.fr",
+        "runMode": "website"
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 80,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": 1767147305603.0
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 81,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "": {
+          "_syncStateVersion": 1,
+          "sdkState": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "string_city": "Paris",
+            "string_country": "France",
+            "string_country_code3": "FRA",
+            "string_country_code": "FR",
+            "string_region": "Île-de-France"
+          },
+          "serverState": {},
+          "putAccumulator": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "string_city": "Paris",
+            "string_country": "France",
+            "string_country_code3": "FRA",
+            "string_country_code": "FR",
+            "string_region": "Île-de-France"
+          },
+          "inflightDiff": {},
+          "inflightPutAccumulator": {},
+          "scheduledPatchCall": true,
+          "inflightPatchCallDeadline": 0
+        }
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 82,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "window": {
+          "__type__": "JSArray",
+          "values": [],
+          "properties": {}
+        },
+        "serviceWorker": {
+          "__type__": "JSArray",
+          "values": [],
+          "properties": {}
+        }
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 83,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "": {
+          "_syncStateVersion": 1,
+          "sdkState": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "string_city": "Paris",
+            "string_country": "France",
+            "string_country_code3": "FRA",
+            "string_country_code": "FR",
+            "string_region": "Île-de-France"
+          },
+          "serverState": {},
+          "putAccumulator": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "string_city": "Paris",
+            "string_country": "France",
+            "string_country_code3": "FRA",
+            "string_country_code": "FR",
+            "string_region": "Île-de-France"
+          },
+          "inflightDiff": {},
+          "inflightPutAccumulator": {},
+          "scheduledPatchCall": true,
+          "inflightPatchCallDeadline": 0
+        }
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 84,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "": {
+          "_syncStateVersion": 1,
+          "sdkState": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "string_city": "Paris",
+            "string_country": "France",
+            "string_country_code3": "FRA",
+            "string_country_code": "FR",
+            "string_region": "Île-de-France"
+          },
+          "serverState": {},
+          "putAccumulator": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "string_city": "Paris",
+            "string_country": "France",
+            "string_country_code3": "FRA",
+            "string_country_code": "FR",
+            "string_region": "Île-de-France"
+          },
+          "inflightDiff": {},
+          "inflightPutAccumulator": {},
+          "scheduledPatchCall": true,
+          "inflightPatchCallDeadline": 0
+        }
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 85,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "": {
+          "_syncStateVersion": 1,
+          "sdkState": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "string_city": "Paris",
+            "string_country": "France",
+            "string_country_code3": "FRA",
+            "string_country_code": "FR",
+            "string_region": "Île-de-France"
+          },
+          "serverState": {},
+          "putAccumulator": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "string_city": "Paris",
+            "string_country": "France",
+            "string_country_code3": "FRA",
+            "string_country_code": "FR",
+            "string_region": "Île-de-France"
+          },
+          "inflightDiff": {},
+          "inflightPutAccumulator": {},
+          "scheduledPatchCall": true,
+          "inflightPatchCallDeadline": 0
+        }
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 86,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "": {
+          "_syncStateVersion": 1,
+          "sdkState": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "string_city": "Paris",
+            "string_country": "France",
+            "string_country_code3": "FRA",
+            "string_country_code": "FR",
+            "string_region": "Île-de-France"
+          },
+          "serverState": {},
+          "putAccumulator": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "string_city": "Paris",
+            "string_country": "France",
+            "string_country_code3": "FRA",
+            "string_country_code": "FR",
+            "string_region": "Île-de-France"
+          },
+          "inflightDiff": {},
+          "inflightPutAccumulator": {},
+          "scheduledPatchCall": true,
+          "inflightPatchCallDeadline": 0
+        }
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 87,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "": {
+          "_syncStateVersion": 1,
+          "sdkState": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "string_city": "Paris",
+            "string_country": "France",
+            "string_country_code3": "FRA",
+            "string_country_code": "FR",
+            "string_region": "Île-de-France"
+          },
+          "serverState": {},
+          "putAccumulator": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "string_city": "Paris",
+            "string_country": "France",
+            "string_country_code3": "FRA",
+            "string_country_code": "FR",
+            "string_region": "Île-de-France"
+          },
+          "inflightDiff": {},
+          "inflightPutAccumulator": {},
+          "scheduledPatchCall": true,
+          "inflightPatchCallDeadline": 0
+        }
+      }
+    },
+    {
+      "__type__": "ObjectStoreDataValue",
+      "version": 88,
+      "blob_size": null,
+      "blob_offset": null,
+      "value": {
+        "": {
+          "_syncStateVersion": 1,
+          "sdkState": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "string_city": "Paris",
+            "string_country": "France",
+            "string_country_code3": "FRA",
+            "string_country_code": "FR",
+            "string_region": "Île-de-France"
+          },
+          "serverState": {},
+          "putAccumulator": {
+            "tags": {
+              "__type__": "JSArray",
+              "values": [],
+              "properties": {}
+            },
+            "string_city": "Paris",
+            "string_country": "France",
+            "string_country_code3": "FRA",
+            "string_country_code": "FR",
+            "string_region": "Île-de-France"
+          },
+          "inflightDiff": {},
+          "inflightPutAccumulator": {},
+          "scheduledPatchCall": true,
+          "inflightPatchCallDeadline": 0
+        }
+      }
+    }
+  ]
+}

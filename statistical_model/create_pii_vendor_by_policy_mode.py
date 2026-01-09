@@ -22,7 +22,7 @@ def create_pii_vendor_by_policy_mode(agg_path: str, output_path: str):
             key = f"{policy}_{auth}"
             flows_by_config[key] = defaultdict(int)
             
-            for user in ['FR_0017', 'FR_0018', 'FR_0019']:
+            for user in ['FR_0417', 'FR_0446', 'FR_0458']:
                 for lifecycle in ['added', 'modified', 'removed']:
                     analysis_path = os.path.join(results_base, auth, user, policy, 
                                                 'cookies', lifecycle, 'consolidated', 'analysis.json')

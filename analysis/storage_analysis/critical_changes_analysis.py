@@ -341,7 +341,7 @@ def main():
     base_dir = Path(__file__).resolve().parent.parent.parent / 'data'
     output_base = Path(__file__).resolve().parent.parent.parent / 'results'
     
-    users = ('FR_0017', 'FR_0018','FR_0019')  # Commencer avec FR_0017
+    users = ('FR_0417', 'FR_0446','FR_0458')  # Commencer avec FR_0417
     auth_statuses = ('Auth','UnAuth')
     policies = ('ALL','NONE','PARTIAL')
     storage_types = ('localstorage', 'sessionstorage')

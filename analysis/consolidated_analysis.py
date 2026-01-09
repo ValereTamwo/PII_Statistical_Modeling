@@ -447,7 +447,7 @@ def main():
     if not base_dir.exists():
         print(f"Dossier {base_dir} non trouvé")
         return
-    users  = ('FR_0017', 'FR_0018', 'FR_0019')
+    users  = ('FR_0417', 'FR_0446', 'FR_0458')
     auth_statuses = ('Auth', 'UnAuth')
     
     policies = ('ALL', 'PARTIAL', 'NONE')

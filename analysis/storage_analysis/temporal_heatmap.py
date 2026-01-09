@@ -235,7 +235,7 @@ if __name__ == '__main__':
     import json
     from pathlib import Path
     
-    lifecycle_file = Path('/home/franck/Documents/PII_Statistical_Modeling/results/Auth/FR_0017/ALL/localstorage/lifecycle/lifecycle_data.json')
+    lifecycle_file = Path('/home/franck/Documents/PII_Statistical_Modeling/results/Auth/FR_0417/ALL/localstorage/lifecycle/lifecycle_data.json')
     
     if lifecycle_file.exists():
         print("Chargement des données de test...")

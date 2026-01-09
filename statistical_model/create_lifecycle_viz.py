@@ -33,7 +33,7 @@ def create_lifecycle_visualization(agg_path: str, output_path: str):
     results_base = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(agg_path))), 'results')
     
     # Collect data from one representative user-policy-mode combination
-    sample_path = os.path.join(results_base, 'Auth', 'FR_0017', 'ALL', 'cookies')
+    sample_path = os.path.join(results_base, 'Auth', 'FR_0417', 'ALL', 'cookies')
     
     lifecycle_pii = {'added': {}, 'modified': {}, 'deleted': {}}
     lifecycle_totals = {'added': 0, 'modified': 0, 'deleted': 0}

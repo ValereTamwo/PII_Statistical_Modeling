@@ -42,7 +42,7 @@ def main():
     if not base_dir.exists():
         print(f"Dossier {base_dir} non trouvé")
         return
-    users  = ('FR_0017', 'FR_0018', 'FR_0019')
+    users  = ('FR_0417', 'FR_0446', 'FR_0458')
     auth_statuses = ('Auth', 'UnAuth')
     
     policies = ('ALL', 'PARTIAL', 'NONE')
@@ -60,7 +60,7 @@ def main():
                 output_dir.mkdir(parents=True, exist_ok=True)
 
 
-                # input_dir = base_dir / 'FR_0017' / 'storage_state' / 'NotAUTH' / 'all'
+                # input_dir = base_dir / 'FR_0417' / 'storage_state' / 'NotAUTH' / 'all'
                 # output_dir = base_dir / 'preprocessing' / 'cookies'
                 # output_dir.mkdir(parents=True, exist_ok=True)
 

@@ -1,0 +1,643 @@
+{
+    "metadata": {
+        "initial url": "https://www.lexpress.fr",
+        "final_url": "https://accounts.google.com/v3/signin/accountchooser?client_id=874177295119-aq4cnljr74gdvco9v0v873odttlec1sk.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fsso.qiota.com%2Fapi%2Fv1%2Flogin%2Fgoogle%2F62a5dc455ae75&response_type=code&scope=openid+email+profile&state=3709184ac1184829cd77f42d3c433ac1&dsh=S2063751545%3A1767153177387936&o2v=2&service=lso&flowName=GeneralOAuthFlow&opparams=%253F&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hANJANXbDSQG0f9vr65RMAlF_GqDQWtbDdHjUA6hP9lGMxYrGi9SuPbZR4U8XxGY99PPmhACwiEo1oimuuufMiyrVRzNdoDV0r1p2uCViXQth_2vXb4lyxp2wCEqVLNRuI7i5NmiPaUYehxh74HtpeAsuODgNHc-00ct5sU3jBCcqJjZYhG56z_J19uoofXLi4ofv-rUzM4fiOXr6Z4JUILlsl-NuyvfY9n4H--C4z2XoMx1C4kD-oMmzEqqM0jMgfYM9LFrdsDktqRIO4RrwRPXVUGMFAZfMMF9ie9FYpOIjRvrRDnqYGk7S8Dtk7zJSJWO3pt_yehoqSrNB23Ktl3Oa2GXf3wqbGig8cUxlyywCUnJql22tNg5OXhl8JU1Bft_mh_iEiZ5hvbI8R-R6o4XnHC2f5NZQtZqWrgZv6PBJ6fe19xMq-VOCbVvjWR8wgL47mluCD03eNI4WDq9snPWDIJA6g%26flowName%3DGeneralOAuthFlow%26as%3DS2063751545%253A1767153177387936%26client_id%3D874177295119-aq4cnljr74gdvco9v0v873odttlec1sk.apps.googleusercontent.com%26requestPath%3D%252Fsignin%252Foauth%252Fconsent%23&app_domain=https%3A%2F%2Fsso.qiota.com",
+        "timestamp": "2025-12-31T04:53:17.675759"
+    },
+    "cookies": {
+        "added": {
+            "sso_uri_referer|.lexpress.fr|/": {
+                "name": "sso_uri_referer",
+                "value": "https://www.lexpress.fr/",
+                "domain": ".lexpress.fr",
+                "path": "/",
+                "expires": -1,
+                "httpOnly": false,
+                "secure": false,
+                "sameSite": "Lax"
+            },
+            "SERVERID|connexion.lexpress.fr|/": {
+                "name": "SERVERID",
+                "value": "sso05",
+                "domain": "connexion.lexpress.fr",
+                "path": "/",
+                "expires": -1,
+                "httpOnly": false,
+                "secure": false,
+                "sameSite": "Lax"
+            },
+            "request_method|abonnement.lexpress.fr|/": {
+                "name": "request_method",
+                "value": "GET",
+                "domain": "abonnement.lexpress.fr",
+                "path": "/",
+                "expires": -1,
+                "httpOnly": false,
+                "secure": true,
+                "sameSite": "None",
+                "partitionKey": "https://lexpress.fr",
+                "_crHasCrossSiteAncestor": false
+            },
+            "SRVNAME|www.qiota.com|/": {
+                "name": "SRVNAME",
+                "value": "web06",
+                "domain": "www.qiota.com",
+                "path": "/",
+                "expires": -1,
+                "httpOnly": true,
+                "secure": true,
+                "sameSite": "None",
+                "partitionKey": "https://lexpress.fr",
+                "_crHasCrossSiteAncestor": true
+            },
+            "overrides_tarif|abonnement.lexpress.fr|/": {
+                "name": "overrides_tarif",
+                "value": "1\u20ac le premier mois",
+                "domain": "abonnement.lexpress.fr",
+                "path": "/",
+                "expires": -1,
+                "httpOnly": false,
+                "secure": false,
+                "sameSite": "Lax"
+            },
+            "last_article|.lexpress.fr|/": {
+                "name": "last_article",
+                "value": "https://www.lexpress.fr/",
+                "domain": ".lexpress.fr",
+                "path": "/",
+                "expires": -1,
+                "httpOnly": false,
+                "secure": false,
+                "sameSite": "Lax"
+            },
+            "SERVERID|sso.qiota.com|/": {
+                "name": "SERVERID",
+                "value": "sso04",
+                "domain": "sso.qiota.com",
+                "path": "/",
+                "expires": -1,
+                "httpOnly": false,
+                "secure": false,
+                "sameSite": "Lax"
+            },
+            "q_lp|.lexpress.fr|/": {
+                "name": "q_lp",
+                "value": "1",
+                "domain": ".lexpress.fr",
+                "path": "/",
+                "expires": 1767325938,
+                "httpOnly": false,
+                "secure": false,
+                "sameSite": "Lax"
+            },
+            "SERVERID|sso.lexpress.fr|/": {
+                "name": "SERVERID",
+                "value": "sso05",
+                "domain": "sso.lexpress.fr",
+                "path": "/",
+                "expires": -1,
+                "httpOnly": false,
+                "secure": false,
+                "sameSite": "Lax"
+            },
+            "PHPSESSID|sso.qiota.com|/": {
+                "name": "PHPSESSID",
+                "value": "bq9dors40h40qd11ii9uikh99g",
+                "domain": "sso.qiota.com",
+                "path": "/",
+                "expires": -1,
+                "httpOnly": true,
+                "secure": true,
+                "sameSite": "None"
+            },
+            "SRVNAME|abonnement.lexpress.fr|/": {
+                "name": "SRVNAME",
+                "value": "web06",
+                "domain": "abonnement.lexpress.fr",
+                "path": "/",
+                "expires": -1,
+                "httpOnly": true,
+                "secure": true,
+                "sameSite": "None",
+                "partitionKey": "https://lexpress.fr",
+                "_crHasCrossSiteAncestor": false
+            },
+            "_qiota_session|abonnement.lexpress.fr|/": {
+                "name": "_qiota_session",
+                "value": "976131db0b01e2e9ed951a9f19617087",
+                "domain": "abonnement.lexpress.fr",
+                "path": "/",
+                "expires": 1767174762.943558,
+                "httpOnly": true,
+                "secure": true,
+                "sameSite": "None",
+                "partitionKey": "https://lexpress.fr",
+                "_crHasCrossSiteAncestor": false
+            }
+        },
+        "removed": {},
+        "modified": {
+            "q_tunnel|.lexpress.fr|/": {
+                "from": {
+                    "name": "q_tunnel",
+                    "value": "1",
+                    "domain": ".lexpress.fr",
+                    "path": "/",
+                    "expires": 1767316059,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                },
+                "to": {
+                    "name": "q_tunnel",
+                    "value": "1",
+                    "domain": ".lexpress.fr",
+                    "path": "/",
+                    "expires": 1767325961,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                }
+            },
+            "ad-privacy|.amazon-adsystem.com|/": {
+                "from": {
+                    "name": "ad-privacy",
+                    "value": "0",
+                    "domain": ".amazon-adsystem.com",
+                    "path": "/",
+                    "expires": 1801712619.210528,
+                    "httpOnly": true,
+                    "secure": true,
+                    "sameSite": "None"
+                },
+                "to": {
+                    "name": "ad-privacy",
+                    "value": "0",
+                    "domain": ".amazon-adsystem.com",
+                    "path": "/",
+                    "expires": 1801713162.14508,
+                    "httpOnly": true,
+                    "secure": true,
+                    "sameSite": "None"
+                }
+            },
+            "AMP_14b0a5383a|.lexpress.fr|/": {
+                "from": {
+                    "name": "AMP_14b0a5383a",
+                    "value": "JTdCJTIyZGV2aWNlSWQlMjIlM0ElMjIzYzY3ZmM4My02MzViLTQxM2EtOTY0OS1hMmQ0NGY4YzFiMWElMjIlMkMlMjJ1c2VySWQlMjIlM0FudWxsJTJDJTIyc2Vzc2lvbklkJTIyJTNBMTc2NzE1MzEyMzcyNCUyQyUyMm9wdE91dCUyMiUzQWZhbHNlJTJDJTIybGFzdEV2ZW50VGltZSUyMiUzQTE3NjcxNTMxMjM4MDElMkMlMjJsYXN0RXZlbnRJZCUyMiUzQTEzJTJDJTIycGFnZUNvdW50ZXIlMjIlM0EwJTdE",
+                    "domain": ".lexpress.fr",
+                    "path": "/",
+                    "expires": 1798689123,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                },
+                "to": {
+                    "name": "AMP_14b0a5383a",
+                    "value": "JTdCJTIyZGV2aWNlSWQlMjIlM0ElMjIzYzY3ZmM4My02MzViLTQxM2EtOTY0OS1hMmQ0NGY4YzFiMWElMjIlMkMlMjJzZXNzaW9uSWQlMjIlM0ExNzY3MTUzMTIzNzI0JTJDJTIyb3B0T3V0JTIyJTNBZmFsc2UlMkMlMjJsYXN0RXZlbnRUaW1lJTIyJTNBMTc2NzE1MzE3Njk5NiUyQyUyMmxhc3RFdmVudElkJTIyJTNBMjAlMkMlMjJwYWdlQ291bnRlciUyMiUzQTAlN0Q=",
+                    "domain": ".lexpress.fr",
+                    "path": "/",
+                    "expires": 1798689176,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                }
+            },
+            "_pprv|.lexpress.fr|/": {
+                "from": {
+                    "name": "_pprv",
+                    "value": "eyJjb25zZW50Ijp7IjAiOnsibW9kZSI6Im9wdC1pbiJ9LCIxIjp7Im1vZGUiOiJvcHQtb3V0In0sIjIiOnsibW9kZSI6Im9wdC1pbiJ9LCIzIjp7Im1vZGUiOiJvcHQtb3V0In0sIjQiOnsibW9kZSI6Im9wdC1pbiJ9LCI1Ijp7Im1vZGUiOiJvcHQtaW4ifSwiNiI6eyJtb2RlIjoib3B0LWluIn0sIjciOnsibW9kZSI6Im9wdC1pbiJ9fSwicHVycG9zZXMiOm51bGwsIl90IjoibXpodzl0cXZ8bWp0aGNjZXYifQ%3D%3D",
+                    "domain": ".lexpress.fr",
+                    "path": "/",
+                    "expires": 1801281123,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "Lax"
+                },
+                "to": {
+                    "name": "_pprv",
+                    "value": "eyJjb25zZW50Ijp7IjAiOnsibW9kZSI6Im9wdC1pbiJ9LCIxIjp7Im1vZGUiOiJvcHQtb3V0In0sIjIiOnsibW9kZSI6Im9wdC1pbiJ9LCIzIjp7Im1vZGUiOiJvcHQtb3V0In0sIjQiOnsibW9kZSI6Im9wdC1pbiJ9LCI1Ijp7Im1vZGUiOiJvcHQtaW4ifSwiNiI6eyJtb2RlIjoib3B0LWluIn0sIjciOnsibW9kZSI6Im9wdC1pbiJ9fSwicHVycG9zZXMiOm51bGx9",
+                    "domain": ".lexpress.fr",
+                    "path": "/",
+                    "expires": 1801281162,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "Lax"
+                }
+            },
+            "_fbp|.lexpress.fr|/": {
+                "from": {
+                    "name": "_fbp",
+                    "value": "fb.1.1767130124974.927495672239571581",
+                    "domain": ".lexpress.fr",
+                    "path": "/",
+                    "expires": 1774929124,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                },
+                "to": {
+                    "name": "_fbp",
+                    "value": "fb.1.1767130124974.927495672239571581",
+                    "domain": ".lexpress.fr",
+                    "path": "/",
+                    "expires": 1774929176,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                }
+            },
+            "offer_type|abonnement.lexpress.fr|/": {
+                "from": {
+                    "name": "offer_type",
+                    "value": "TCdFeHByZXNzJTIwZGlnaXRhbCUyMDElMjAlRTIlODIlQUMlMjBwb3VyJTIwMSUyMG1vaXMlMjBwdWlzJTIwMTIlMkM5OSUyMCVFMiU4MiVBQyUyMHBhciUyMG1vaXM=",
+                    "domain": "abonnement.lexpress.fr",
+                    "path": "/",
+                    "expires": 1769735259,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                },
+                "to": {
+                    "name": "offer_type",
+                    "value": "TCdFeHByZXNzJTIwZGlnaXRhbCUyMDElMjAlRTIlODIlQUMlMjBwb3VyJTIwMSUyMG1vaXMlMjBwdWlzJTIwMTIlMkM5OSUyMCVFMiU4MiVBQyUyMHBhciUyMG1vaXM=",
+                    "domain": "abonnement.lexpress.fr",
+                    "path": "/",
+                    "expires": 1769745161,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                }
+            },
+            "g_state|.lexpress.fr|/": {
+                "from": {
+                    "name": "g_state",
+                    "value": "{\"i_l\":0,\"i_ll\":1767153125020,\"i_b\":\"opkSHZ3ElBYB41GIXkiCouhwCr3nWIklXOmKl4SbQTA\",\"i_e\":{\"enable_itp_optimization\":0}}",
+                    "domain": ".lexpress.fr",
+                    "path": "/",
+                    "expires": 1782705125,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                },
+                "to": {
+                    "name": "g_state",
+                    "value": "{\"i_l\":0,\"i_ll\":1767153139192,\"i_b\":\"opkSHZ3ElBYB41GIXkiCouhwCr3nWIklXOmKl4SbQTA\",\"i_e\":{\"enable_itp_optimization\":0}}",
+                    "domain": ".lexpress.fr",
+                    "path": "/",
+                    "expires": 1782705139,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                }
+            },
+            "__Secure-1PSIDCC|.google.com|/": {
+                "from": {
+                    "name": "__Secure-1PSIDCC",
+                    "value": "AKEyXzXC_Wv7dCPxsLQtphWBnT3flgOioJGTVzRkFCOXu8rbz4PgKLBZ_5nelk11PgYgyW9kFtI",
+                    "domain": ".google.com",
+                    "path": "/",
+                    "expires": 1798689122.63665,
+                    "httpOnly": true,
+                    "secure": true,
+                    "sameSite": "Lax"
+                },
+                "to": {
+                    "name": "__Secure-1PSIDCC",
+                    "value": "AKEyXzWLQqja0REPkHXJgjIoBgaDlZ8Qe8gHulWLq-Af__Rv14PSH707MyRDSeHi8lXcrYDGAXI",
+                    "domain": ".google.com",
+                    "path": "/",
+                    "expires": 1798689177.63638,
+                    "httpOnly": true,
+                    "secure": true,
+                    "sameSite": "Lax"
+                }
+            },
+            "SRVNAME|static.qiota.com|/": {
+                "from": {
+                    "name": "SRVNAME",
+                    "value": "web05",
+                    "domain": "static.qiota.com",
+                    "path": "/",
+                    "expires": -1,
+                    "httpOnly": true,
+                    "secure": true,
+                    "sameSite": "None",
+                    "partitionKey": "https://lexpress.fr",
+                    "_crHasCrossSiteAncestor": true
+                },
+                "to": {
+                    "name": "SRVNAME",
+                    "value": "web06",
+                    "domain": "static.qiota.com",
+                    "path": "/",
+                    "expires": -1,
+                    "httpOnly": true,
+                    "secure": true,
+                    "sameSite": "None",
+                    "partitionKey": "https://lexpress.fr",
+                    "_crHasCrossSiteAncestor": true
+                }
+            },
+            "_pctx|.lexpress.fr|/": {
+                "from": {
+                    "name": "_pctx",
+                    "value": "%7Bu%7DN4IgrgzgpgThIC4B2YA2qA05owMoBcBDfSREQpAeyRCwgEt8oBJAEzIFYAODgdgGYOAJgAMAFhEBOAGwdpARi69J-WiAD6%2BMgFsAXgAsA7pPwBHXQB9tAK3z6Axvai6QAXyA",
+                    "domain": ".lexpress.fr",
+                    "path": "/",
+                    "expires": 1801281123,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "Lax"
+                },
+                "to": {
+                    "name": "_pctx",
+                    "value": "%7Bu%7DN4IgrgzgpgThIC4B2YA2qA05owMoBcBDfSREQpAeyRCwgEt8oBJAEzIFYAODgdgGYOAJgAMAFhEBOAGwdpARi69J-EAF8gA",
+                    "domain": ".lexpress.fr",
+                    "path": "/",
+                    "expires": 1801281162,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "Lax"
+                }
+            },
+            "_uetsid|.lexpress.fr|/": {
+                "from": {
+                    "name": "_uetsid",
+                    "value": "85469960e5c611f0a77a25b939d6e39d",
+                    "domain": ".lexpress.fr",
+                    "path": "/",
+                    "expires": 1767229659,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                },
+                "to": {
+                    "name": "_uetsid",
+                    "value": "85469960e5c611f0a77a25b939d6e39d",
+                    "domain": ".lexpress.fr",
+                    "path": "/",
+                    "expires": 1767239563,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                }
+            },
+            "__Secure-3PSIDCC|.google.com|/": {
+                "from": {
+                    "name": "__Secure-3PSIDCC",
+                    "value": "AKEyXzX2f7tyTDtCMOwxISzhCTCTci9rHtaVJ01euE-SfyZqwJN0Nxl3M-iBIpI7bLnsDiERng",
+                    "domain": ".google.com",
+                    "path": "/",
+                    "expires": 1798689123.641732,
+                    "httpOnly": true,
+                    "secure": true,
+                    "sameSite": "None"
+                },
+                "to": {
+                    "name": "__Secure-3PSIDCC",
+                    "value": "AKEyXzX7ojjZI0vLtVPjQcM3F98KFMY4eZBwHJuVAOJ2x7v0U4PrmuALI1SivzDYePsVvuuOsg",
+                    "domain": ".google.com",
+                    "path": "/",
+                    "expires": 1798689177.636418,
+                    "httpOnly": true,
+                    "secure": true,
+                    "sameSite": "None"
+                }
+            },
+            "SIDCC|.google.com|/": {
+                "from": {
+                    "name": "SIDCC",
+                    "value": "AKEyXzVP6tG_IGL-EPPEJ430KljNx_hlp8qpwbm7P4agt0vKaPlhI8RoFrcitfmyCrDJ2TBFtg",
+                    "domain": ".google.com",
+                    "path": "/",
+                    "expires": 1798689122.636613,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                },
+                "to": {
+                    "name": "SIDCC",
+                    "value": "AKEyXzVs4esLMQ2nKT4h3xi50gxJIK9xhZXi8NlFR_j7KSmvrt9HYM-S6dSGcoFwSVT2_rE2Wg",
+                    "domain": ".google.com",
+                    "path": "/",
+                    "expires": 1798689177.636334,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                }
+            },
+            "offer_code|abonnement.lexpress.fr|/": {
+                "from": {
+                    "name": "offer_code",
+                    "value": "EXW-30-DL-100-P-1299",
+                    "domain": "abonnement.lexpress.fr",
+                    "path": "/",
+                    "expires": 1769735259,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                },
+                "to": {
+                    "name": "offer_code",
+                    "value": "EXW-30-DL-100-P-1299",
+                    "domain": "abonnement.lexpress.fr",
+                    "path": "/",
+                    "expires": 1769745161,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                }
+            },
+            "__adblocker|www.lexpress.fr|/": {
+                "from": {
+                    "name": "__adblocker",
+                    "value": "false",
+                    "domain": "www.lexpress.fr",
+                    "path": "/",
+                    "expires": 1767153423,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                },
+                "to": {
+                    "name": "__adblocker",
+                    "value": "false",
+                    "domain": "www.lexpress.fr",
+                    "path": "/",
+                    "expires": 1767153438,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                }
+            },
+            "ad-id|.amazon-adsystem.com|/": {
+                "from": {
+                    "name": "ad-id",
+                    "value": "A2PSor5iOUdftOdEFT3wCDU",
+                    "domain": ".amazon-adsystem.com",
+                    "path": "/",
+                    "expires": 1782877419.210444,
+                    "httpOnly": true,
+                    "secure": true,
+                    "sameSite": "None"
+                },
+                "to": {
+                    "name": "ad-id",
+                    "value": "A2PSor5iOUdftOdEFT3wCDU",
+                    "domain": ".amazon-adsystem.com",
+                    "path": "/",
+                    "expires": 1782877962.144971,
+                    "httpOnly": true,
+                    "secure": true,
+                    "sameSite": "None"
+                }
+            },
+            "offer_duration|abonnement.lexpress.fr|/": {
+                "from": {
+                    "name": "offer_duration",
+                    "value": "Mensuel",
+                    "domain": "abonnement.lexpress.fr",
+                    "path": "/",
+                    "expires": 1769735259,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                },
+                "to": {
+                    "name": "offer_duration",
+                    "value": "Mensuel",
+                    "domain": "abonnement.lexpress.fr",
+                    "path": "/",
+                    "expires": 1769745161,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                }
+            },
+            "offer_circulation_type|abonnement.lexpress.fr|/": {
+                "from": {
+                    "name": "offer_circulation_type",
+                    "value": "digital",
+                    "domain": "abonnement.lexpress.fr",
+                    "path": "/",
+                    "expires": 1769735259,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                },
+                "to": {
+                    "name": "offer_circulation_type",
+                    "value": "digital",
+                    "domain": "abonnement.lexpress.fr",
+                    "path": "/",
+                    "expires": 1769745161,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                }
+            },
+            "_pcid|.lexpress.fr|/": {
+                "from": {
+                    "name": "_pcid",
+                    "value": "%7B%22browserId%22%3A%22mjt3n4lznwvif3qw%22%2C%22_t%22%3A%22mzhw9tqw%7Cmjthccew%22%7D",
+                    "domain": ".lexpress.fr",
+                    "path": "/",
+                    "expires": 1801281123,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "Lax"
+                },
+                "to": {
+                    "name": "_pcid",
+                    "value": "%7B%22browserId%22%3A%22mjt3n4lznwvif3qw%22%7D",
+                    "domain": ".lexpress.fr",
+                    "path": "/",
+                    "expires": 1801281162,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "Lax"
+                }
+            },
+            "_uetvid|.lexpress.fr|/": {
+                "from": {
+                    "name": "_uetvid",
+                    "value": "85468ba0e5c611f0a65f3b3b7ca2d015",
+                    "domain": ".lexpress.fr",
+                    "path": "/",
+                    "expires": 1800839259,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                },
+                "to": {
+                    "name": "_uetvid",
+                    "value": "85468ba0e5c611f0a65f3b3b7ca2d015",
+                    "domain": ".lexpress.fr",
+                    "path": "/",
+                    "expires": 1800849163,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                }
+            }
+        }
+    },
+    "localStorage": {
+        "added": {
+            "nextRotationAttemptTs": "1767011676454"
+        },
+        "removed": {
+            "_pubcid_exp": "Thu, 31 Dec 2026 01:07:12 GMT",
+            "AMP_unsent_14b0a5383a": "[]",
+            "utiqEligibility": "{\"isEligible\":false,\"eligibilityCheckTime\":1767153124433,\"retryEligibilityCheckTime\":1767153244433}",
+            "loglevel": "WARN",
+            "_uetsid_exp": "Thu, 01 Jan 2026 01:07:11 GMT",
+            "id5id_v2_signature": "{\"data\":{\"signature\":\"ID5_AsQQ8sLY1wvL1KSDIyo95-HlpWfPY4ihg1X8I8-gCh7_mzVtKDMP1kKF51bxukyQFeYDGbF2uo0ClxKNW5oY3XO-GgMR2omPKgB8uJb3smbBCFxR-8Y7RjmVlq3a6z_vw4Ojjw_J0i4vzp95VXG9-vbogrVflPh71cOG-UaxXoKFvwXfyA0\"},\"expireAt\":1768439233443}",
+            "aps:3279:idVendors/enabled": "[\"liveintent\",\"pair\",\"amx\",\"33across\",\"merkle\",\"publink\",\"quantcast\",\"idPlus\",\"intimateMerger\",\"ddb_key_638\",\"fabrick\",\"criteo\",\"yahoo\",\"uid\",\"liveRamp\",\"id5\",\"unifiedid\",\"pubcommon\",\"audigent\",\"lightPublisherAudiences\",\"fTrack\",\"lotame\"]",
+            "id5id_v2_4540987617882694": "{\"data\":{\"response\":{\"signature\":\"ID5_AsQQ8sLY1wvL1KSDIyo95-HlpWfPY4ihg1X8I8-gCh7_mzVtKDMP1kKF51bxukyQFeYDGbF2uo0ClxKNW5oY3XO-GgMR2omPKgB8uJb3smbBCFxR-8Y7RjmVlq3a6z_vw4Ojjw_J0i4vzp95VXG9-vbogrVflPh71cOG-UaxXoKFvwXfyA0\",\"created_at\":\"2025-12-30T20:47:13.891Z\",\"id5_consent\":true,\"original_uid\":\"ID5*UhS6xs_Ie7o88jDWJ3AkYGHncjRrDIj1_Yz4VzeCAqj__2lUd0FaAAEBCmlUOlEAdYMG78AJS7ITDSgLXf3cLHXFcVdVxkUtZURwqm1-3SJ1h05Bpv4MD_2P5Mv_yiWPdYgblJE_hk3VaL0tBiN85nXLBzevgqYL2iszesjFVSF1zLhhcuvmN-RiqzaxI2D9dZAwARAlB6POYXlE1m-RwHWRClEBoT0f13_U0EKvG_t1lCX4OKyKQpH6iEBF22VsdZiXofn_DQCp11hsoCwOGnWZ8XeizcDRgH7C5GFywEl1m5XqvujqQRYC6js4XZkHdZw_scFAdqDM_oNrJTESXHWdGce6lPW-99Zqsb7vpsF1ntnRGy9jEgQl8AKa9YffdaB3TAVZ6ca-p1W7XwMEw3WhJkqvLuzVOpX4MhnZdxV1pVvxO013y3rVdR2h4WRedabrCeuqmsaUPs9ffPdCZnWnjIOkJnYnDut3k7nDkkR1qKqIJTPh8wnd3UKfPutRdazgyZE831pLtrsIvogAoXdw8KJoi3c99KBZTonUhtN1claVINvOsKKlAPVc4MWcdbbTgtaAsPJC9TBvu3t8AHV4TZc2X9QxIrOHyhbOUCB1eX4EDcR--OknXK_1EnjrdXon53jHTYFdw4bsQ_d13HV7Mq3WxT4fU5uSsq9KKUx1u0q4yiuj06urH87CnLgEdbym-aqZFwXoicGVe1qugw\",\"universal_uid\":\"ID5*7yu5glZ5pCt2nW5TsEYK3KA57um6cuNv54M93qKcHmX__2lUd0FaAAEBCmlUOlEAdYMxkv2ejt_r5LofwGzomnXF77Vzxj43IFD2vTWhnl51h8HkRZM2wvb_xMVaXwNAdYhftmtM9WGaXjJpl9yMEXXLgwb7HHCadIDDNBuEKot1zJ_6EwV7zlnXX2SYZgKmdZC-U8xuZsdfkPSzaJPCrXWR6NDI_iBl7kYJa8xKFKJ1lJhlKLI4yKR33FS2LJIGdZjv8C6Cvk-M7XgezKCnBHWZ8SDYYHqTmnY3Jmbn6g91m29mQbl6Kuyt3KJqMcbvdZwM-0USS_A0jEjZqX0GuXWdaPEOvIZJvSF6NXkId811nnH3hR3XR1SXrfqqVRtKdaBfH0kz3mriQKnKuUlw6XWhfGFsFYzYBtEVx0w1vFh1pXcEl5XCekJ0JjczuW8cdaYHvlnpaMyJ8q1Bp8qacnWnwKVIiWrz0eBm0NEDIZV1qFXlFmHoulwj_Bt9LpKtdazsKXmn2cPxUe08hD7vBHdwcw_0ZCupe-MAw8KosRB1ckKdR8-otO88X0wB8wbQdbaydh_mjRsch1jT84Gdc3V4W6GZh87RQHPDXt1EYHF1eZceNI4iModDh_r2z8RZdXp-nZSCT_NxXxwGBE-Dt3V723-0M1evV5iKR4jGfT11u0Yy414FlFXYm2y_I1gEdbxj7V0xULcUq4M2KYcvtw\",\"link_type\":2,\"cascade_needed\":true,\"privacy\":{\"jurisdiction\":\"gdpr\",\"id5_consent\":true},\"ext\":{\"linkType\":2,\"pba\":\"i+S8PrhsLkamA6FBqE0P2NApcHLtpfqF6KfmfD03qsaRL8LEqJZ2yMssjNTUh1+xeDr2Mq5LtvC49lgDvYyVsg==\"},\"cache_control\":{\"max_age_sec\":7200},\"ids\":{\"id5id\":{\"eid\":{\"source\":\"id5-sync.com\",\"uids\":[{\"id\":\"ID5*7yu5glZ5pCt2nW5TsEYK3KA57um6cuNv54M93qKcHmX__2lUd0FaAAEBCmlUOlEAdYMxkv2ejt_r5LofwGzomnXF77Vzxj43IFD2vTWhnl51h8HkRZM2wvb_xMVaXwNAdYhftmtM9WGaXjJpl9yMEXXLgwb7HHCadIDDNBuEKot1zJ_6EwV7zlnXX2SYZgKmdZC-U8xuZsdfkPSzaJPCrXWR6NDI_iBl7kYJa8xKFKJ1lJhlKLI4yKR33FS2LJIGdZjv8C6Cvk-M7XgezKCnBHWZ8SDYYHqTmnY3Jmbn6g91m29mQbl6Kuyt3KJqMcbvdZwM-0USS_A0jEjZqX0GuXWdaPEOvIZJvSF6NXkId811nnH3hR3XR1SXrfqqVRtKdaBfH0kz3mriQKnKuUlw6XWhfGFsFYzYBtEVx0w1vFh1pXcEl5XCekJ0JjczuW8cdaYHvlnpaMyJ8q1Bp8qacnWnwKVIiWrz0eBm0NEDIZV1qFXlFmHoulwj_Bt9LpKtdazsKXmn2cPxUe08hD7vBHdwcw_0ZCupe-MAw8KosRB1ckKdR8-otO88X0wB8wbQdbaydh_mjRsch1jT84Gdc3V4W6GZh87RQHPDXt1EYHF1eZceNI4iModDh_r2z8RZdXp-nZSCT_NxXxwGBE-Dt3V723-0M1evV5iKR4jGfT11u0Yy414FlFXYm2y_I1gEdbxj7V0xULcUq4M2KYcvtw\",\"atype\":1,\"ext\":{\"linkType\":2,\"pba\":\"i+S8PrhsLkamA6FBqE0P2NApcHLtpfqF6KfmfD03qsaRL8LEqJZ2yMssjNTUh1+xeDr2Mq5LtvC49lgDvYyVsg==\"}}]}}},\"tags\":{\"id\":\"y\"}},\"responseTimestamp\":1767143233440,\"consents\":{\"gdpr\":true,\"gdpr_consent\":\"CQdPtwAQdPtwAAHABBENCLFsAP_gAEPgAAqILotB9G_fbSFj4DJ3YfskeYRP11hg4sAhBgYBEyABxBPQIIwEwmAwFATAIiAKGBAAKFRAIQBlCABERACAIIgAISDMIECQABAAIiBECAMRAgBACBRJkwhAGAAYgEBUEhQAmAoEQBrMQNwgAoACAWARBAAhAJCRAQcAACMgYAAAAAAAQkAAgAAAAAAAAAAQABAcAABBAAECAAAAAAAQAAAAAAACBEAAAICgAAAAAAAQAAAABAAAAAAAAAAgAAIKLAAkGhUQQFkQABAIGEECABQVhAAQIAgAAQBAgAARBAQIAwAUGAwAAAAAAAIAAAAAAAAAAABAAhEAAAAAIAAIBAIAAAAAAAAACBAAAABQgAAAAAIgQhAAAABAABEABAAgAgAABAAQFAAAAAgAAAAAIAAAICQAAAAAAAgAAAAAAAAgkAAgAAAAAAAAAAAAAAIEABBAAAAAAAAAAAQAAAAAAAABEAQAAAAA.f_wACHwAAAAA\"}},\"expireAt\":1768439233444}",
+            "iiq": "{\"pcid\":\"b55afa1b-8d7d-4659-9b0c-b306ce847d55\",\"pcidDate\":1767130125169}",
+            "__tp-gaAccount": "disabled",
+            "lastExternalReferrerTime": "1767153124493",
+            "lastExternalReferrer": "empty",
+            "_iiq_fdata": "{\"pcid\":\"b55afa1b-8d7d-4659-9b0c-b306ce847d55\",\"pcidDate\":1767130125169}",
+            "_uetvid_exp": "Mon, 25 Jan 2027 01:07:11 GMT",
+            "topicsLastReferenceTime": "1767153124509",
+            "_iiq_sync_456059511": "1767143231542",
+            "id5id": "%7B%22created_at%22%3A%222025-12-30T20%3A47%3A13.891Z%22%2C%22id5_consent%22%3Atrue%2C%22original_uid%22%3A%22ID5*AkZR-ZNbFWzcMNgME0eneHPXplvodyDe6CUYnyA4h8X__2lUd0BaAAEBCmlUOlEAdYOcjf5jw8tRKneBe0UpiXXF81Itp4hBYi6oAbH-sQV1h5SYJFlfUEXgsvKD6vHldYgdZfiMxqFikrB4J_mnSnXLIypAUW_gqv64K1n3WpF1zGB17OEULvbv0xJoVOGHdZA3m6AUVAs2XLHTfNtuQnWR5tEShaT-sYJsHPX1f6F1lGEShtxrelllxrSIBmKJdZi68BGUZ7B1yXgXMLY833WZCc_yqnDa92YiosUxWfJ1m23PUJdSI0Cj-BsYom4udZyCWoAdlfdpSAJUc0E7jHWdWuGwEpPrrO7JYVwJZvx1nnyvlu0UTnEhPWr0HQ4ydaBOGL1yJnMVBz62qJTSsXWhcxVEbuV8WQQzXpWbFD11pQNU5EtBAeMDPtow7u9OdaZDPhl3S_CAxnGwJXshB3Wn9tvo5QpMHupM96AEI8Z1qAm2hxih6BoZDG8Iu-dTdayTQVdWFnhJLaFhuMun7XdwM25ZsuqTh9INkMjKadR1cqF7ahUSJfxLPiFLYSd3dbZGLQp11tve88Tzr0uVyXV4kKD5scUXy1S3Q8vOVld1eZdEcWSY0Xd_giAKNsmNdXq-OUFnWr_ZYUY2bQlOcHV7Nm67NwvWZ0dDIFX7eD91u81L_cKYWUgMP74_zKpNdbxwef6r0-yhPfI5BjjDPw%22%2C%22universal_uid%22%3A%22ID5*j0Ck_jYSuVcW9nMv0C0XoMBS85XaGf4Th-ggosL3Axn__2lUd0BaAAEBCmlUOlEAdYP0C-D7Uzt1ukf9wchkuXXFvDffGqWi2-40LSfoJ4Z1hx3LvtBqwOtA4Q58Cz0tdYgKafV2qosJWHOUS4epF3XLBWqiLQa7c6-cXJ-IA_d1zASQpHiUBvCSpqR_2IIGdZAkn95AwURnPY09wwPay3WRPGquZyP9580VZiQJckl1lNNcHSyq0ZjaH1GG6-5PdZg-uDdxKXOBlT5udSz-onWZ0D_ncJSG-9-V32d0z3h1m7Sf0MSGwdMVdk3DZxwRdZw8YAVKsvzA7HyBuKblEnWdcL5KSn3L65T6V4f3Wh11nhjA3-6BoZOkMhekehcudaB_WtYRYciJBSLvRIZhXXWhz3PBFnDB2XFjJVSHljN1pQ8dYVpaK30nhRsweDgLdaY8XAUoV0uMDfGqdesRl3WnCwT0k13BO7wfDO99qUN1qCiUrtEnPM8XQ-W3m1PkdawCnVKIKiiAGrGVn1VY63dwRHeRZbOIx0C0ZWP5HGt1cnYDFtqJoJ_H1Jab8kFFdbaBmTJk2pClYaIz3KqE03V486Vf3UVavjMFP2JXNqd1eQ7k71oTa8v9dbWI9-wNdXrGobgYy5zX_-Kmp7P6m3V7S73G1urRUiHJL4UAQj91u2U3AXufpJn0rOwAasxOdbxyNZyvoeR3Nc8Fu9uiWw%22%2C%22link_type%22%3A2%2C%22cascade_needed%22%3Atrue%2C%22privacy%22%3A%7B%22jurisdiction%22%3A%22gdpr%22%2C%22id5_consent%22%3Atrue%7D%2C%22ext%22%3A%7B%22linkType%22%3A2%2C%22pba%22%3A%22i%2BS8PrhsLkamA6FBqE0P2KQFw15a%2B%2BpvsIWayVUwvX%2BC%2F0xz1Z5dMc959Hf4d6T5xEAtMOOYSbGCEF1pCjKIvA%3D%3D%22%7D%2C%22ids%22%3A%7B%22id5id%22%3A%7B%22eid%22%3A%7B%22source%22%3A%22id5-sync.com%22%2C%22uids%22%3A%5B%7B%22id%22%3A%22ID5*j0Ck_jYSuVcW9nMv0C0XoMBS85XaGf4Th-ggosL3Axn__2lUd0BaAAEBCmlUOlEAdYP0C-D7Uzt1ukf9wchkuXXFvDffGqWi2-40LSfoJ4Z1hx3LvtBqwOtA4Q58Cz0tdYgKafV2qosJWHOUS4epF3XLBWqiLQa7c6-cXJ-IA_d1zASQpHiUBvCSpqR_2IIGdZAkn95AwURnPY09wwPay3WRPGquZyP9580VZiQJckl1lNNcHSyq0ZjaH1GG6-5PdZg-uDdxKXOBlT5udSz-onWZ0D_ncJSG-9-V32d0z3h1m7Sf0MSGwdMVdk3DZxwRdZw8YAVKsvzA7HyBuKblEnWdcL5KSn3L65T6V4f3Wh11nhjA3-6BoZOkMhekehcudaB_WtYRYciJBSLvRIZhXXWhz3PBFnDB2XFjJVSHljN1pQ8dYVpaK30nhRsweDgLdaY8XAUoV0uMDfGqdesRl3WnCwT0k13BO7wfDO99qUN1qCiUrtEnPM8XQ-W3m1PkdawCnVKIKiiAGrGVn1VY63dwRHeRZbOIx0C0ZWP5HGt1cnYDFtqJoJ_H1Jab8kFFdbaBmTJk2pClYaIz3KqE03V486Vf3UVavjMFP2JXNqd1eQ7k71oTa8v9dbWI9-wNdXrGobgYy5zX_-Kmp7P6m3V7S73G1urRUiHJL4UAQj91u2U3AXufpJn0rOwAasxOdbxyNZyvoeR3Nc8Fu9uiWw%22%2C%22atype%22%3A1%2C%22ext%22%3A%7B%22linkType%22%3A2%2C%22pba%22%3A%22i%2BS8PrhsLkamA6FBqE0P2KQFw15a%2B%2BpvsIWayVUwvX%2BC%2F0xz1Z5dMc959Hf4d6T5xEAtMOOYSbGCEF1pCjKIvA%3D%3D%22%2C%22abTestingControlGroup%22%3Afalse%7D%7D%5D%7D%7D%7D%2C%22signature%22%3A%22ID5_Ag23N-oxwKXSyR7Gp0dIt2qLA8Z1JGLLxdE0AJlbyDWLQDGY6hV_QfBYRlDq5d-USHoxer8hnX2Yq6KsvHpcmCLBltl5cAVu8hqT6QUwq-tL_rUnEQwXt5yZAXJplD4oJGEz9DOnLO_ENGZTRcVQxN56_OuPFL5UAUHA5vGrgjK4N5GiorM%22%2C%22ab_testing%22%3A%7B%22result%22%3A%22normal%22%7D%2C%22cache_control%22%3A%7B%22max_age_sec%22%3A7200%7D%2C%22tags%22%3A%7B%22ab%22%3A%22n%22%2C%22id%22%3A%22y%22%7D%2C%22pbjs%22%3A%7B%22964%22%3A%7B%22signature%22%3A%22ID5_Ag23N-oxwKXSyR7Gp0dIt2qLA8Z1JGLLxdE0AJlbyDWLQDGY6hV_QfBYRlDq5d-USHoxer8hnX2Yq6KsvHpcmCLBltl5cAVu8hqT6QUwq-tL_rUnEQwXt5yZAXJplD4oJGEz9DOnLO_ENGZTRcVQxN56_OuPFL5UAUHA5vGrgjK4N5GiorM%22%2C%22created_at%22%3A%222025-12-30T20%3A47%3A13.891Z%22%2C%22id5_consent%22%3Atrue%2C%22original_uid%22%3A%22ID5*AkZR-ZNbFWzcMNgME0eneHPXplvodyDe6CUYnyA4h8X__2lUd0BaAAEBCmlUOlEAdYOcjf5jw8tRKneBe0UpiXXF81Itp4hBYi6oAbH-sQV1h5SYJFlfUEXgsvKD6vHldYgdZfiMxqFikrB4J_mnSnXLIypAUW_gqv64K1n3WpF1zGB17OEULvbv0xJoVOGHdZA3m6AUVAs2XLHTfNtuQnWR5tEShaT-sYJsHPX1f6F1lGEShtxrelllxrSIBmKJdZi68BGUZ7B1yXgXMLY833WZCc_yqnDa92YiosUxWfJ1m23PUJdSI0Cj-BsYom4udZyCWoAdlfdpSAJUc0E7jHWdWuGwEpPrrO7JYVwJZvx1nnyvlu0UTnEhPWr0HQ4ydaBOGL1yJnMVBz62qJTSsXWhcxVEbuV8WQQzXpWbFD11pQNU5EtBAeMDPtow7u9OdaZDPhl3S_CAxnGwJXshB3Wn9tvo5QpMHupM96AEI8Z1qAm2hxih6BoZDG8Iu-dTdayTQVdWFnhJLaFhuMun7XdwM25ZsuqTh9INkMjKadR1cqF7ahUSJfxLPiFLYSd3dbZGLQp11tve88Tzr0uVyXV4kKD5scUXy1S3Q8vOVld1eZdEcWSY0Xd_giAKNsmNdXq-OUFnWr_ZYUY2bQlOcHV7Nm67NwvWZ0dDIFX7eD91u81L_cKYWUgMP74_zKpNdbxwef6r0-yhPfI5BjjDPw%22%2C%22universal_uid%22%3A%22ID5*j0Ck_jYSuVcW9nMv0C0XoMBS85XaGf4Th-ggosL3Axn__2lUd0BaAAEBCmlUOlEAdYP0C-D7Uzt1ukf9wchkuXXFvDffGqWi2-40LSfoJ4Z1hx3LvtBqwOtA4Q58Cz0tdYgKafV2qosJWHOUS4epF3XLBWqiLQa7c6-cXJ-IA_d1zASQpHiUBvCSpqR_2IIGdZAkn95AwURnPY09wwPay3WRPGquZyP9580VZiQJckl1lNNcHSyq0ZjaH1GG6-5PdZg-uDdxKXOBlT5udSz-onWZ0D_ncJSG-9-V32d0z3h1m7Sf0MSGwdMVdk3DZxwRdZw8YAVKsvzA7HyBuKblEnWdcL5KSn3L65T6V4f3Wh11nhjA3-6BoZOkMhekehcudaB_WtYRYciJBSLvRIZhXXWhz3PBFnDB2XFjJVSHljN1pQ8dYVpaK30nhRsweDgLdaY8XAUoV0uMDfGqdesRl3WnCwT0k13BO7wfDO99qUN1qCiUrtEnPM8XQ-W3m1PkdawCnVKIKiiAGrGVn1VY63dwRHeRZbOIx0C0ZWP5HGt1cnYDFtqJoJ_H1Jab8kFFdbaBmTJk2pClYaIz3KqE03V486Vf3UVavjMFP2JXNqd1eQ7k71oTa8v9dbWI9-wNdXrGobgYy5zX_-Kmp7P6m3V7S73G1urRUiHJL4UAQj91u2U3AXufpJn0rOwAasxOdbxyNZyvoeR3Nc8Fu9uiWw%22%2C%22link_type%22%3A2%2C%22cascade_needed%22%3Atrue%2C%22privacy%22%3A%7B%22jurisdiction%22%3A%22gdpr%22%2C%22id5_consent%22%3Atrue%7D%2C%22ext%22%3A%7B%22linkType%22%3A2%2C%22pba%22%3A%22i%2BS8PrhsLkamA6FBqE0P2KQFw15a%2B%2BpvsIWayVUwvX%2BC%2F0xz1Z5dMc959Hf4d6T5xEAtMOOYSbGCEF1pCjKIvA%3D%3D%22%7D%2C%22ab_testing%22%3A%7B%22result%22%3A%22normal%22%7D%2C%22cache_control%22%3A%7B%22max_age_sec%22%3A7200%7D%2C%22ids%22%3A%7B%22id5id%22%3A%7B%22eid%22%3A%7B%22source%22%3A%22id5-sync.com%22%2C%22uids%22%3A%5B%7B%22id%22%3A%22ID5*j0Ck_jYSuVcW9nMv0C0XoMBS85XaGf4Th-ggosL3Axn__2lUd0BaAAEBCmlUOlEAdYP0C-D7Uzt1ukf9wchkuXXFvDffGqWi2-40LSfoJ4Z1hx3LvtBqwOtA4Q58Cz0tdYgKafV2qosJWHOUS4epF3XLBWqiLQa7c6-cXJ-IA_d1zASQpHiUBvCSpqR_2IIGdZAkn95AwURnPY09wwPay3WRPGquZyP9580VZiQJckl1lNNcHSyq0ZjaH1GG6-5PdZg-uDdxKXOBlT5udSz-onWZ0D_ncJSG-9-V32d0z3h1m7Sf0MSGwdMVdk3DZxwRdZw8YAVKsvzA7HyBuKblEnWdcL5KSn3L65T6V4f3Wh11nhjA3-6BoZOkMhekehcudaB_WtYRYciJBSLvRIZhXXWhz3PBFnDB2XFjJVSHljN1pQ8dYVpaK30nhRsweDgLdaY8XAUoV0uMDfGqdesRl3WnCwT0k13BO7wfDO99qUN1qCiUrtEnPM8XQ-W3m1PkdawCnVKIKiiAGrGVn1VY63dwRHeRZbOIx0C0ZWP5HGt1cnYDFtqJoJ_H1Jab8kFFdbaBmTJk2pClYaIz3KqE03V486Vf3UVavjMFP2JXNqd1eQ7k71oTa8v9dbWI9-wNdXrGobgYy5zX_-Kmp7P6m3V7S73G1urRUiHJL4UAQj91u2U3AXufpJn0rOwAasxOdbxyNZyvoeR3Nc8Fu9uiWw%22%2C%22atype%22%3A1%2C%22ext%22%3A%7B%22linkType%22%3A2%2C%22pba%22%3A%22i%2BS8PrhsLkamA6FBqE0P2KQFw15a%2B%2BpvsIWayVUwvX%2BC%2F0xz1Z5dMc959Hf4d6T5xEAtMOOYSbGCEF1pCjKIvA%3D%3D%22%2C%22abTestingControlGroup%22%3Afalse%7D%7D%5D%7D%7D%7D%2C%22tags%22%3A%7B%22ab%22%3A%22n%22%2C%22id%22%3A%22y%22%7D%7D%7D%7D",
+            "IH_LGCL_TS": "Tue, 06 Jan 2026 21:28:45 GMT",
+            "ig-joined": "1767143231693",
+            "id5id_last": "Wed, 31 Dec 2025 01:07:12 GMT",
+            "euconsent-v2": "CQdPtwAQdPtwAAHABBENCLFsAP_gAEPgAAqILotB9G_fbSFj4DJ3YfskeYRP11hg4sAhBgYBEyABxBPQIIwEwmAwFATAIiAKGBAAKFRAIQBlCABERACAIIgAISDMIECQABAAIiBECAMRAgBACBRJkwhAGAAYgEBUEhQAmAoEQBrMQNwgAoACAWARBAAhAJCRAQcAACMgYAAAAAAAQkAAgAAAAAAAAAAQABAcAABBAAECAAAAAAAQAAAAAAACBEAAAICgAAAAAAAQAAAABAAAAAAAAAAgAAIKLAAkGhUQQFkQABAIGEECABQVhAAQIAgAAQBAgAARBAQIAwAUGAwAAAAAAAIAAAAAAAAAAABAAhEAAAAAIAAIBAIAAAAAAAAACBAAAABQgAAAAAIgQhAAAABAABEABAAgAgAABAAQFAAAAAgAAAAAIAAAICQAAAAAAAgAAAAAAAAgkAAgAAAAAAAAAAAAAAIEABBAAAAAAAAAAAQAAAAAAAABEAQAAAAA.f_wACHwAAAAA",
+            "id5id_privacy": "{\"jurisdiction\":\"gdpr\",\"id5_consent\":true}",
+            "id5id_privacy_exp": "Fri, 30 Jan 2026 01:07:13 GMT",
+            "id5id_cst": "cAJY/A==",
+            "id5id_exp": "Wed, 07 Jan 2026 01:07:12 GMT",
+            "_ls_ttl": "{\"__tp-gaAccount\":\"mjuj331l\"}",
+            "_pubcid": "f734fa26-deeb-42bc-ba1c-60a928f0ebcc",
+            "id5id_cached_consent_data_exp": "Fri, 30 Jan 2026 01:07:12 GMT",
+            "_uetvid": "85468ba0e5c611f0a65f3b3b7ca2d015",
+            "id5id_extensions": "{\"data\":{\"lbCDN\":\"%%LB_CDN%%\",\"lb\":\"I0WwcKtJK+hU8/ts25mPkA==\",\"chunks\":1,\"ttl\":28800,\"groupChunks\":[\"1\",\"2\",\"5\",\"2\",\"0\",\"C\",\"6\",\"3\"],\"groupChunksVersion\":\"4\",\"bounce\":{\"setCookie\":false},\"lbs\":\"lLhQPFcJHp6tEaw7SlKeHnoBbJLn70UvwNVAMOSPIzo=\"},\"expireAt\":1767172033270}",
+            "_pbstck_session_8815d918": "eyJpZCI6IjUzZGY1NTliLTg0ZWYtNDVjZi1hMzcwLTk2MjlkZmY2NDUwYSIsImxhc3RVcGRhdGVUaW1lTXMiOjE3NjcxNDMyMzI2MjEsInBhZ2VDb3VudCI6MSwibGFzdFVybFZpc2l0ZWQiOiJodHRwczovL3d3dy5sZXhwcmVzcy5mci8iLCJ1dG1Tb3VyY2UiOm51bGwsInV0bUNhbXBhaWduIjpudWxsLCJ1dG1Db250ZW50IjpudWxsLCJ1dG1UZXJtIjpudWxsLCJ1dG1NZWRpdW0iOm51bGx9",
+            "_uetsid": "85469960e5c611f0a77a25b939d6e39d",
+            "ntv_tapi": "",
+            "id5id_cached_consent_data": "2237090993120570",
+            "_gcl_ls": "{\"schema\":\"gcl\",\"version\":1,\"gcl_ctr\":{\"value\":{\"value\":2,\"timeouts\":0,\"creationTimeMs\":1767143246680},\"expires\":1774919246680}}",
+            "apstagCxMEnabled": "1",
+            "ntv_eids_v2": "[{\"source\":\"id5-sync.com\",\"uids\":[{\"id\":\"0\",\"atype\":1,\"ext\":{\"linkType\":0,\"pba\":\"ZcnDfdQD6F/W+7zzl2qSL+S1C1N84+QW4/PhfWCdJv5npOs/TmRoVATh2Y23gZ/klTs5GQrVRYMC2mNPbRII0A==\"}}]},{\"source\":\"pubcid.org\",\"uids\":[{\"id\":\"f734fa26-deeb-42bc-ba1c-60a928f0ebcc\",\"atype\":1}]}]",
+            "aps:3279:sessionMarker/marker": "c203afb3-3b54-459f-aefd-0de0e8826918_2025-12-30T21:28:46.153Z",
+            "cto_bundle": "zPdppV9nbGFPVWJ0NUUlMkJiU2x5dUM3UDNuRUtYVWZhQ1Qwc0E1YVdDUzdsWSUyQjhUMTdMTnVRWVpsRXdzVkcwN2UzcVFxcDdRNmtSVVdCOCUyRmZqM0p0MmpaZjhsNmtsQzNPY05xR1lkUzlHb2lSSzZrWVdtekk4NThFQ21tbnJNJTJCQVNQZUNZOEZQOTEzU1QwR0JkMEI3bXJuM2tnQSUzRCUzRA",
+            "didomi_dcs": "CGbcSmh0jbcC7Qs648jRyIUHUqoBUHUqoegABIAAJDSCMqchliDYINiQAAQADwAAIABQRAgixCheGekNt4gwRBsCEeISAQqxCsiFgEMkQyoh0RDsCIQIhMRJojRRJYiZnFXaMzsc4Y7NR3TjvNHgaYvkyhpmdzN1mf1NICaos20JyrTwyoAbQNGjslHj6tk1bcrY5XJW_WuImMTb5E0yLXkW_KZeVZssYZgAzC1mGjNLGaW8205tvQAAuAAUZnY5wx2ajvNHgaZus20KAG1bJq24..."
+        },
+        "modified": {}
+    },
+    "sessionStorage": {
+        "added": {},
+        "removed": {
+            "start_session_date": "31/12/2025",
+            "lexpress_pagesAmount": "1",
+            "start_session_hour": "04:52"
+        },
+        "modified": {}
+    }
+}

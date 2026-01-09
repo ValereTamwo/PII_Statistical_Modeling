@@ -14,8 +14,8 @@ def extract_indexeddb_for_config(config_dir: Path, output_dir: Path):
     Extrait les fichiers IndexedDB pour une configuration
     
     Args:
-        config_dir: Dossier de configuration (ex: data/raw/Auth/FR_0017/ALL)
-        output_dir: Dossier de sortie (ex: FR_0017/indexedDB)
+        config_dir: Dossier de configuration (ex: data/raw/Auth/FR_0417/ALL)
+        output_dir: Dossier de sortie (ex: FR_0417/indexedDB)
     """
     
     # Dossier IndexedDB source
@@ -53,7 +53,7 @@ def extract_all_indexeddb():
         print(f" dossier {raw_dir} non trouvé")
         return
     
-    users = ['FR_0017', 'FR_0018', 'FR_0019']
+    users = ['FR_0417', 'FR_0446', 'FR_0458']
     auth_statuses = ['Auth', 'UnAuth']
     policies = ['ALL', 'PARTIAL', 'NONE']
     

@@ -18,7 +18,7 @@ def create_pii_vendor_sankey(agg_path: str, output_path: str):
     all_flows = defaultdict(int)
     
     for auth in ['Auth', 'UnAuth']:
-        for user in ['FR_0017', 'FR_0018', 'FR_0019']:
+        for user in ['FR_0417', 'FR_0446', 'FR_0458']:
             for policy in ['ALL', 'PARTIAL', 'NONE']:
                 for lifecycle in ['added', 'modified', 'removed']:
                     analysis_path = os.path.join(results_base, auth, user, policy, 

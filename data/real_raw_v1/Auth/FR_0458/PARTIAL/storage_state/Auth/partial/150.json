@@ -1,0 +1,921 @@
+{
+    "metadata": {
+        "initial url": "https://www.nouvelobs.com",
+        "final_url": "https://sec.nouvelobs.com/sfuser/register",
+        "timestamp": "2025-12-31T01:09:25.157670"
+    },
+    "cookies": {
+        "added": {
+            "us_privacy|.bidswitch.net|/": {
+                "name": "us_privacy",
+                "value": "1---",
+                "domain": ".bidswitch.net",
+                "path": "/",
+                "expires": 1767139942.921392,
+                "httpOnly": false,
+                "secure": true,
+                "sameSite": "None"
+            },
+            "lead_ads|.nouvelobs.com|/": {
+                "name": "lead_ads",
+                "value": "63bd1a17-4972-48b6-916f-f656d09bba5b",
+                "domain": ".nouvelobs.com",
+                "path": "/",
+                "expires": 1798675643.070523,
+                "httpOnly": false,
+                "secure": true,
+                "sameSite": "None"
+            },
+            "lead|.nouvelobs.com|/": {
+                "name": "lead",
+                "value": "63bd1a17-4972-48b6-916f-f656d09bba5b",
+                "domain": ".nouvelobs.com",
+                "path": "/",
+                "expires": 1798675643.070494,
+                "httpOnly": false,
+                "secure": true,
+                "sameSite": "None"
+            },
+            "csd|.bidswitch.net|/": {
+                "name": "csd",
+                "value": "outbrain_413",
+                "domain": ".bidswitch.net",
+                "path": "/",
+                "expires": 1767139942.921404,
+                "httpOnly": false,
+                "secure": true,
+                "sameSite": "None"
+            },
+            "_ttp|.tiktok.com|/": {
+                "name": "_ttp",
+                "value": "37aSMRi998EwfM6MJcHZJROjOwg",
+                "domain": ".tiktok.com",
+                "path": "/",
+                "expires": 1774915640.243049,
+                "httpOnly": false,
+                "secure": true,
+                "sameSite": "None"
+            },
+            "et0|.gmf.fr|/": {
+                "name": "et0",
+                "value": "NsT5PHLI53jJEEYvzGu_1nBrXn1ut5VLqNxUHQVZ6iPEm.9cYbR6EdFzg_CbwOHcdEr9xwMZFkBUn_PW.AyWOfmZ9Ggs9smyEKyfqFobqKr7Y5iAaFtK",
+                "domain": ".gmf.fr",
+                "path": "/",
+                "expires": 1801094842.947881,
+                "httpOnly": true,
+                "secure": true,
+                "sameSite": "None"
+            },
+            "_ttp|.nouvelobs.com|/": {
+                "name": "_ttp",
+                "value": "01KDRVP1H3NS2TC5JH6CNDG0WJ_.tt.1",
+                "domain": ".nouvelobs.com",
+                "path": "/",
+                "expires": 1774915640,
+                "httpOnly": false,
+                "secure": false,
+                "sameSite": "Lax"
+            },
+            "gdpr_pd|.bidswitch.net|/": {
+                "name": "gdpr_pd",
+                "value": "1",
+                "domain": ".bidswitch.net",
+                "path": "/",
+                "expires": 1767139942.921379,
+                "httpOnly": false,
+                "secure": true,
+                "sameSite": "None"
+            },
+            "uid_dm|.nouvelobs.com|/": {
+                "name": "uid_dm",
+                "value": "8596e8bd-25b6-bd07-238c-5dc6f069b59e",
+                "domain": ".nouvelobs.com",
+                "path": "/",
+                "expires": 1800835642.161378,
+                "httpOnly": false,
+                "secure": true,
+                "sameSite": "Lax"
+            },
+            "lmd_consent|.nouvelobs.com|/": {
+                "name": "lmd_consent",
+                "value": "%7B%22userId%22%3A%22de4ea802-848f-44e6-8ade-14321509521e%22%2C%22timestamp%22%3A%221767139639.576987654%22%2C%22version%22%3A2%2C%22cmpId%22%3A371%2C%22displayMode%22%3A%22cookiewall%22%2C%22purposes%22%3A%7B%22analytics%22%3Atrue%2C%22ads%22%3Atrue%2C%22personalization%22%3Atrue%2C%22mediaPlatforms%22%3Atrue%2C%22social%22%3Atrue%7D%2C%22optoutAnalytics%22%3Afalse%7D",
+                "domain": ".nouvelobs.com",
+                "path": "/",
+                "expires": 1798675639.596283,
+                "httpOnly": false,
+                "secure": true,
+                "sameSite": "Lax"
+            },
+            "_cb_svref|.nouvelobs.com|/": {
+                "name": "_cb_svref",
+                "value": "external",
+                "domain": ".nouvelobs.com",
+                "path": "/",
+                "expires": 1767141440,
+                "httpOnly": false,
+                "secure": true,
+                "sameSite": "Lax"
+            },
+            "consent|.bidswitch.net|/": {
+                "name": "consent",
+                "value": "CQdTAsAQdTAsAFzACBFRCJFsAP_gAAAAAAqII7NB7G_fSSFjcTZ3YPtkaYxfx1Bi4sAhBgIBgywBiBqQoIwWkmAqIAjAAqAKGBIAImRBIQBtGAjABAAAAIABISCEAECAARAAJqBAAEARAgFACAhJGQEAEAAQgEDUAhUAgAIEQFooQNxAAgAgLQAAIAAhAIAFAAAIACAAQAAAAAAAQmAAAAAAAAAAAAAAABAIEEdgARDQqIICwIAAgEDCCBAAoIwgAIEAQAAAAwQAABAwIUAYACDARAAAAAAAEAAAAAQAAgAAAgAQgAAAAAEAAEAAAAAAAAAAAABAgAAAAgQAAAAQEAIAAAAAAAAAiAAgAQAAAAAgAICgAAAAQFgAAAAAAAEAAAAAAAAAAAAAAAAAAASAAAAAAAAAAAAAAAAAECAMEgAwABBHYdABgACCOxCADAAEEdiUAGAAII7FIAMAAQR2LQAYAAgjsA",
+                "domain": ".bidswitch.net",
+                "path": "/",
+                "expires": 1767139942.921304,
+                "httpOnly": false,
+                "secure": true,
+                "sameSite": "None"
+            },
+            "obuid|.outbrain.com|/": {
+                "name": "obuid",
+                "value": "aa91338c-7d7a-48da-94ee-33b3b5dc1b13",
+                "domain": ".outbrain.com",
+                "path": "/",
+                "expires": 1774915641.970993,
+                "httpOnly": false,
+                "secure": true,
+                "sameSite": "None"
+            },
+            "_cb|.nouvelobs.com|/": {
+                "name": "_cb",
+                "value": "CdNZdKBtOqowBwsOco",
+                "domain": ".nouvelobs.com",
+                "path": "/",
+                "expires": 1801267640,
+                "httpOnly": false,
+                "secure": true,
+                "sameSite": "Lax"
+            },
+            "__cf_bm|.slgnt.eu|/": {
+                "name": "__cf_bm",
+                "value": "vg.6QiARSoUXHT75PsYeXBpj4hozKPVgaB.ILa2VMNY-1767139641-1.0.1.1-KkAM3VgedsMqbzE1hj25ON4mRVUR9GJqSHFCq4Lzb_k.SuO9mWV_Cj0iYKGpz9LlDnVO43C7t1Nkaj_nu.QvdR4pwmoWItikLca_yrfVPdA",
+                "domain": ".slgnt.eu",
+                "path": "/",
+                "expires": 1767141441.553649,
+                "httpOnly": true,
+                "secure": true,
+                "sameSite": "None"
+            },
+            "_gcl_au|.nouvelobs.com|/": {
+                "name": "_gcl_au",
+                "value": "1.1.1963470755.1767139640",
+                "domain": ".nouvelobs.com",
+                "path": "/",
+                "expires": 1774915640,
+                "httpOnly": false,
+                "secure": false,
+                "sameSite": "Lax"
+            },
+            "ttcsid|.nouvelobs.com|/": {
+                "name": "ttcsid",
+                "value": "1767139640879::TddOYnYEDjYlUOK9mix8.1.1767139661339.0",
+                "domain": ".nouvelobs.com",
+                "path": "/",
+                "expires": 1774915661,
+                "httpOnly": false,
+                "secure": false,
+                "sameSite": "Lax"
+            },
+            "euconsent-v2|.nouvelobs.com|/": {
+                "name": "euconsent-v2",
+                "value": "CQdTAsAQdTAsAFzACBFRCJFsAP_gAAAAAAqII7NB7G_fSSFjcTZ3YPtkaYxfx1Bi4sAhBgIBgywBiBqQoIwWkmAqIAjAAqAKGBIAImRBIQBtGAjABAAAAIABISCEAECAARAAJqBAAEARAgFACAhJGQEAEAAQgEDUAhUAgAIEQFooQNxAAgAgLQAAIAAhAIAFAAAIACAAQAAAAAAAQmAAAAAAAAAAAAAAABAIEEdgARDQqIICwIAAgEDCCBAAoIwgAIEAQAAAAwQAABAwIUAYACDARAAAAAAAEAAAAAQAAgAAAgAQgAAAAAEAAEAAAAAAAAAAAABAgAAAAgQAAAAQEAIAAAAAAAAAiAAgAQAAAAAgAICgAAAAQFgAAAAAAAEAAAAAAAAAAAAAAAAAAASAAAAAAAAAAAAAAAAAECAMEgAwABBHYdABgACCOxCADAAEEdiUAGAAII7FIAMAAQR2LQAYAAgjsA",
+                "domain": ".nouvelobs.com",
+                "path": "/",
+                "expires": 1798675639.59626,
+                "httpOnly": false,
+                "secure": true,
+                "sameSite": "Lax"
+            },
+            "zuid|.zemanta.com|/": {
+                "name": "zuid",
+                "value": "RoB-sWJWKntzrJIWcnCt",
+                "domain": ".zemanta.com",
+                "path": "/",
+                "expires": 1774915643.297953,
+                "httpOnly": false,
+                "secure": true,
+                "sameSite": "None"
+            },
+            "obuid|.zemanta.com|/": {
+                "name": "obuid",
+                "value": "H255kb5l9IpSij11PDRiWSLYgpr59xO-XhIjwZzKU2hsHok-ymGEiXv5-1JkjYyW",
+                "domain": ".zemanta.com",
+                "path": "/",
+                "expires": 1774915643.298064,
+                "httpOnly": false,
+                "secure": true,
+                "sameSite": "None"
+            },
+            "etuix|.gmf.fr|/": {
+                "name": "etuix",
+                "value": "3gT7MUGbxWUwrt0k0lYV.je0kC8u42Tcqye0UFV77ubm5CcZhSD5AA--",
+                "domain": ".gmf.fr",
+                "path": "/",
+                "expires": 1801094842.947825,
+                "httpOnly": true,
+                "secure": true,
+                "sameSite": "None"
+            },
+            "mako_uid|.eyeota.net|/": {
+                "name": "mako_uid",
+                "value": "19b71bb0dff-3cb20000010f5d9e",
+                "domain": ".eyeota.net",
+                "path": "/",
+                "expires": 1798675642.908426,
+                "httpOnly": true,
+                "secure": true,
+                "sameSite": "None"
+            },
+            "_chartbeat2|.nouvelobs.com|/": {
+                "name": "_chartbeat2",
+                "value": ".1767139640036.1767139640036.1.Du1UkHBOTwGiBb-XbGBqeScna8_Fk.1",
+                "domain": ".nouvelobs.com",
+                "path": "/",
+                "expires": 1801267640,
+                "httpOnly": false,
+                "secure": true,
+                "sameSite": "Lax"
+            },
+            "_tt_enable_cookie|.nouvelobs.com|/": {
+                "name": "_tt_enable_cookie",
+                "value": "1",
+                "domain": ".nouvelobs.com",
+                "path": "/",
+                "expires": 1774915640,
+                "httpOnly": false,
+                "secure": false,
+                "sameSite": "Lax"
+            },
+            "ttcsid_CG7FTNBC77UA9DC1LTEG|.nouvelobs.com|/": {
+                "name": "ttcsid_CG7FTNBC77UA9DC1LTEG",
+                "value": "1767139640878::f_OyUhlr5uL-fHn2YZLU.1.1767139661339.1",
+                "domain": ".nouvelobs.com",
+                "path": "/",
+                "expires": 1774915661,
+                "httpOnly": false,
+                "secure": false,
+                "sameSite": "Lax"
+            },
+            "user_session|.nouvelobs.com|/": {
+                "name": "user_session",
+                "value": "pjuic2m59ha1oh1nar7kn3o7bm",
+                "domain": ".nouvelobs.com",
+                "path": "/",
+                "expires": -1,
+                "httpOnly": false,
+                "secure": true,
+                "sameSite": "Lax"
+            },
+            "SERVERID|.eyeota.net|/": {
+                "name": "SERVERID",
+                "value": "23966~DM",
+                "domain": ".eyeota.net",
+                "path": "/",
+                "expires": 1767140243.05105,
+                "httpOnly": true,
+                "secure": true,
+                "sameSite": "None"
+            },
+            "dmvk|.dailymotion.com|/": {
+                "name": "dmvk",
+                "value": "6954693941c75",
+                "domain": ".dailymotion.com",
+                "path": "/",
+                "expires": -1,
+                "httpOnly": false,
+                "secure": true,
+                "sameSite": "None"
+            },
+            "et|.gmf.fr|/": {
+                "name": "et",
+                "value": "1",
+                "domain": ".gmf.fr",
+                "path": "/",
+                "expires": 1801094842.947893,
+                "httpOnly": true,
+                "secure": true,
+                "sameSite": "None"
+            },
+            "_fbp|.nouvelobs.com|/": {
+                "name": "_fbp",
+                "value": "fb.1.1767139640509.238608281256176079",
+                "domain": ".nouvelobs.com",
+                "path": "/",
+                "expires": 1774915661,
+                "httpOnly": false,
+                "secure": false,
+                "sameSite": "Lax"
+            },
+            "thirdparty|widgets.outbrain.com|/nanoWidget/externals/cookie": {
+                "name": "thirdparty",
+                "value": "yes",
+                "domain": "widgets.outbrain.com",
+                "path": "/nanoWidget/externals/cookie",
+                "expires": 1767143242.438008,
+                "httpOnly": false,
+                "secure": true,
+                "sameSite": "None"
+            }
+        },
+        "removed": {
+            "lmd_consent_tmp|.nouvelobs.com|/": {
+                "name": "lmd_consent_tmp",
+                "value": "de4ea802-848f-44e6-8ade-14321509521e",
+                "domain": ".nouvelobs.com",
+                "path": "/",
+                "expires": 1798675622.731982,
+                "httpOnly": true,
+                "secure": true,
+                "sameSite": "Lax"
+            },
+            "booknode_production_session_medianode|.booknode.com|/": {
+                "name": "booknode_production_session_medianode",
+                "value": "Sd1lVhHwGVk3z3Kk2RHglozTqewrFLbQENmmKkPv",
+                "domain": ".booknode.com",
+                "path": "/",
+                "expires": 1767139645.108762,
+                "httpOnly": true,
+                "secure": true,
+                "sameSite": "Lax"
+            }
+        },
+        "modified": {
+            "__Secure-3PSIDCC|.google.com|/": {
+                "from": {
+                    "name": "__Secure-3PSIDCC",
+                    "value": "AKEyXzUrtnrdgp5ElDxUqEc3mrC_-qyiwRD1kUKGozPeqHsdq-zslCCPPi1crQzuBkHNz37jPIw",
+                    "domain": ".google.com",
+                    "path": "/",
+                    "expires": 1798675622.373117,
+                    "httpOnly": true,
+                    "secure": true,
+                    "sameSite": "None"
+                },
+                "to": {
+                    "name": "__Secure-3PSIDCC",
+                    "value": "AKEyXzVauupBZs6AZnImTjf5kpE9Mmy5_-xoq9CaLCqVz4BRWtRyjzlV-cObzoIwPs3akgpJ4rI",
+                    "domain": ".google.com",
+                    "path": "/",
+                    "expires": 1798675642.50319,
+                    "httpOnly": true,
+                    "secure": true,
+                    "sameSite": "None"
+                }
+            },
+            "dpm|.dpm.demdex.net|/": {
+                "from": {
+                    "name": "dpm",
+                    "value": "07990228471221269000184333670095752890",
+                    "domain": ".dpm.demdex.net",
+                    "path": "/",
+                    "expires": 1782685919.284651,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                },
+                "to": {
+                    "name": "dpm",
+                    "value": "07990228471221269000184333670095752890",
+                    "domain": ".dpm.demdex.net",
+                    "path": "/",
+                    "expires": 1782691642.98691,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                }
+            },
+            "receive-cookie-deprecation|.smartadserver.com|/": {
+                "from": {
+                    "name": "receive-cookie-deprecation",
+                    "value": "1",
+                    "domain": ".smartadserver.com",
+                    "path": "/",
+                    "expires": 1782687741.279551,
+                    "httpOnly": true,
+                    "secure": true,
+                    "sameSite": "None",
+                    "partitionKey": "https://dealabs.com",
+                    "_crHasCrossSiteAncestor": true
+                },
+                "to": {
+                    "name": "receive-cookie-deprecation",
+                    "value": "1",
+                    "domain": ".smartadserver.com",
+                    "path": "/",
+                    "expires": 1782691643.26828,
+                    "httpOnly": true,
+                    "secure": true,
+                    "sameSite": "None",
+                    "partitionKey": "https://nouvelobs.com",
+                    "_crHasCrossSiteAncestor": true
+                }
+            },
+            "TDID|.adsrvr.org|/": {
+                "from": {
+                    "name": "TDID",
+                    "value": "96cfdf7f-0e9e-4fba-b134-562f041f7b3a",
+                    "domain": ".adsrvr.org",
+                    "path": "/",
+                    "expires": 1798670726.122758,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                },
+                "to": {
+                    "name": "TDID",
+                    "value": "96cfdf7f-0e9e-4fba-b134-562f041f7b3a",
+                    "domain": ".adsrvr.org",
+                    "path": "/",
+                    "expires": 1798675642.901531,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                }
+            },
+            "cto_bundle|.criteo.com|/": {
+                "from": {
+                    "name": "cto_bundle",
+                    "value": "Zhartl9DemVhVVl6ciUyQkRid2JjYkN4RlRwb0hVOE02ZUVWTUtBNEpLaVZTS3R1cHUyUWN5R3BualliTXFJYklEJTJGZmREcFZsTFBaTUswSjdHRVBmcmtrZzhjQjN0TzFjSVNhbnVqJTJCYk16WlA5bWJNeE9HcWM1emVKV2k1Zkp3MWxvWW9wTk1EdzduV1RRVjhkVVZYUDFjMHJ4ZnclM0QlM0Q",
+                    "domain": ".criteo.com",
+                    "path": "/",
+                    "expires": 1800835022.035861,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None",
+                    "partitionKey": "https://valeursactuelles.com",
+                    "_crHasCrossSiteAncestor": true
+                },
+                "to": {
+                    "name": "cto_bundle",
+                    "value": "rlLDsF9BZWdKeUp4VHBRVTgyU0hubm9BckslMkJoQk1iUloxa3p4Y0Y3TVd3aWUyRTBiQUtOenJnS2RNNGJMSHJFSHZiOFo2MGpWNCUyQmxTMDZNUmZLYktNOCUyRjlJWDFpejZFdFUzVU95UTJ5ZGVVY1E3NUZxbHVCa1p2Rnc2bzR2JTJCbGVhUnNzNFVBcUZDRlo4S0VZUzQ2R3VVM3pSQSUzRCUzRA",
+                    "domain": ".criteo.com",
+                    "path": "/",
+                    "expires": 1800835642.821714,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None",
+                    "partitionKey": "https://nouvelobs.com",
+                    "_crHasCrossSiteAncestor": true
+                }
+            },
+            "ad-privacy|.amazon-adsystem.com|/": {
+                "from": {
+                    "name": "ad-privacy",
+                    "value": "0",
+                    "domain": ".amazon-adsystem.com",
+                    "path": "/",
+                    "expires": 1801694725.810287,
+                    "httpOnly": true,
+                    "secure": true,
+                    "sameSite": "None"
+                },
+                "to": {
+                    "name": "ad-privacy",
+                    "value": "0",
+                    "domain": ".amazon-adsystem.com",
+                    "path": "/",
+                    "expires": 1801699643.002839,
+                    "httpOnly": true,
+                    "secure": true,
+                    "sameSite": "None"
+                }
+            },
+            "tluidp|.3lift.com|/": {
+                "from": {
+                    "name": "tluidp",
+                    "value": "83961317345742781964",
+                    "domain": ".3lift.com",
+                    "path": "/",
+                    "expires": 1774910726.577234,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None",
+                    "partitionKey": "https://actu.fr",
+                    "_crHasCrossSiteAncestor": true
+                },
+                "to": {
+                    "name": "tluidp",
+                    "value": "83961317345742781964",
+                    "domain": ".3lift.com",
+                    "path": "/",
+                    "expires": 1774915646.940345,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None",
+                    "partitionKey": "https://nouvelobs.com",
+                    "_crHasCrossSiteAncestor": true
+                }
+            },
+            "id5|.id5-sync.com|/": {
+                "from": {
+                    "name": "id5",
+                    "value": "c31094bd-aa87-7a08-98d7-3416ad33066f#1767129929341#14",
+                    "domain": ".id5-sync.com",
+                    "path": "/",
+                    "expires": 1774911698.543356,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                },
+                "to": {
+                    "name": "id5",
+                    "value": "c31094bd-aa87-7a08-98d7-3416ad33066f#1767129929341#15",
+                    "domain": ".id5-sync.com",
+                    "path": "/",
+                    "expires": 1774915646.977905,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                }
+            },
+            "pa_privacy|.nouvelobs.com|/": {
+                "from": {
+                    "name": "pa_privacy",
+                    "value": "%22exempt%22",
+                    "domain": ".nouvelobs.com",
+                    "path": "/",
+                    "expires": 1801267622,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "Lax"
+                },
+                "to": {
+                    "name": "pa_privacy",
+                    "value": "%22optin%22",
+                    "domain": ".nouvelobs.com",
+                    "path": "/",
+                    "expires": 1801267639,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "Lax"
+                }
+            },
+            "cto_bundle|.criteo.com|/openrtb_2_5/pbjs/auction": {
+                "from": {
+                    "name": "cto_bundle",
+                    "value": "LSaF9F83WDM2VXlXVmU0UlRWMkxmNndqVnFuWFIlMkJjJTJCUTNsYTNUMnVqZ3VOWkpJWWdEN3YlMkIzRXZVQkMlMkZaR2ZiVFRJeVRON3FVelZZYnRFWHN2Mm5FJTJCZnVCdHk5MVB6cXloTmRJN2c3ZVg3NmQlMkZxREdSd01yN29jbVF3ZWg2VXdNZUhBSlVkVUlhU0VRQUg1blV4TDUlMkI4Tk1zQSUzRCUzRA",
+                    "domain": ".criteo.com",
+                    "path": "/openrtb_2_5/pbjs/auction",
+                    "expires": 1800831740.286085,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None",
+                    "partitionKey": "https://dealabs.com",
+                    "_crHasCrossSiteAncestor": true
+                },
+                "to": {
+                    "name": "cto_bundle",
+                    "value": "YxD8k19BZWdKeUp4VHBRVTgyU0hubm9BckslMkJoQk1iUloxa3p4Y0Y3TVd3aWUyRTF0Wm02QTBKWEJKQjd3bmNWJTJGdSUyQjJ4Tzc5MGxubXhqQThlZjByNmpLZG9lV3dGRDJhVVJNTDYxVThhRUlYSUNGZmZSJTJCcSUyRm5TeGdtJTJGM1JYekhNNjNUUXdJSWJkayUyRjMwUlk1TVJ1N3FhRGlxZyUzRCUzRA",
+                    "domain": ".criteo.com",
+                    "path": "/openrtb_2_5/pbjs/auction",
+                    "expires": 1800835643.290123,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None",
+                    "partitionKey": "https://nouvelobs.com",
+                    "_crHasCrossSiteAncestor": true
+                }
+            },
+            "XANDR_PANID|.adnxs.com|/": {
+                "from": {
+                    "name": "XANDR_PANID",
+                    "value": "ouB-GvA8cgaljoSUZyjt7S83jQnMa9Nscb7eZxv-6RRdNjgdr1Orv0E4iDzxKo21nnmh1Rz5DGKKDrnrQW8x3yF4x5c0WsjygtAkCJ28MQs.",
+                    "domain": ".adnxs.com",
+                    "path": "/",
+                    "expires": 1774911740.121497,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None",
+                    "partitionKey": "https://dealabs.com",
+                    "_crHasCrossSiteAncestor": true
+                },
+                "to": {
+                    "name": "XANDR_PANID",
+                    "value": "PLDzgKTyaFHHJ7hZulo68VX5uNxqCCVG1w0jaKWbLwHJEeppopxBl3SCF10erHE7kAkh8rJppa52hRdpSQ4Q12_e3fCpaCziokUmcYC0qkM.",
+                    "domain": ".adnxs.com",
+                    "path": "/",
+                    "expires": 1774915646.528739,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None",
+                    "partitionKey": "https://nouvelobs.com",
+                    "_crHasCrossSiteAncestor": true
+                }
+            },
+            "ad-id|.amazon-adsystem.com|/": {
+                "from": {
+                    "name": "ad-id",
+                    "value": "A71dlRlJZEAgnaVWV5req_o",
+                    "domain": ".amazon-adsystem.com",
+                    "path": "/",
+                    "expires": 1782945925.810159,
+                    "httpOnly": true,
+                    "secure": true,
+                    "sameSite": "None"
+                },
+                "to": {
+                    "name": "ad-id",
+                    "value": "A71dlRlJZEAgnaVWV5req_o",
+                    "domain": ".amazon-adsystem.com",
+                    "path": "/",
+                    "expires": 1782864443.002752,
+                    "httpOnly": true,
+                    "secure": true,
+                    "sameSite": "None"
+                }
+            },
+            "receive-cookie-deprecation|.casalemedia.com|/": {
+                "from": {
+                    "name": "receive-cookie-deprecation",
+                    "value": "1",
+                    "domain": ".casalemedia.com",
+                    "path": "/",
+                    "expires": 1798671740.168719,
+                    "httpOnly": true,
+                    "secure": true,
+                    "sameSite": "None",
+                    "partitionKey": "https://dealabs.com",
+                    "_crHasCrossSiteAncestor": true
+                },
+                "to": {
+                    "name": "receive-cookie-deprecation",
+                    "value": "1",
+                    "domain": ".casalemedia.com",
+                    "path": "/",
+                    "expires": 1798675642.411286,
+                    "httpOnly": true,
+                    "secure": true,
+                    "sameSite": "None",
+                    "partitionKey": "https://nouvelobs.com",
+                    "_crHasCrossSiteAncestor": true
+                }
+            },
+            "TDCPM|.adsrvr.org|/": {
+                "from": {
+                    "name": "TDCPM",
+                    "value": "CAESFwoIcHVibWF0aWMSCwjsgK_l1_3jPhAFEhIKA2FhbRILCKjdvbelzdg-EAUYASABKAIyCwi6kZCw-__jPhAFOAFaBzhoOXUxMWhgAg..",
+                    "domain": ".adsrvr.org",
+                    "path": "/",
+                    "expires": 1798670726.123107,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                },
+                "to": {
+                    "name": "TDCPM",
+                    "value": "CAESFwoIcHVibWF0aWMSCwjsgK_l1_3jPhAFEhIKA2FhbRILCKjdvbelzdg-EAUYASABKAIyCwio3fzZ6YLkPhAFOAFaB2ljY282bTVgAg..",
+                    "domain": ".adsrvr.org",
+                    "path": "/",
+                    "expires": 1798675642.901606,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                }
+            },
+            "demdex|.demdex.net|/": {
+                "from": {
+                    "name": "demdex",
+                    "value": "07990228471221269000184333670095752890",
+                    "domain": ".demdex.net",
+                    "path": "/",
+                    "expires": 1782685919.284577,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                },
+                "to": {
+                    "name": "demdex",
+                    "value": "07990228471221269000184333670095752890",
+                    "domain": ".demdex.net",
+                    "path": "/",
+                    "expires": 1782691642.98683,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                }
+            },
+            "APC|.doubleclick.net|/": {
+                "from": {
+                    "name": "APC",
+                    "value": "AfxxVi67ch2-IKjjJ6gNbN38x52lMcBUTwOMgCFB2sPHxw9sOjU50Q",
+                    "domain": ".doubleclick.net",
+                    "path": "/",
+                    "expires": 1782686725.596008,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None",
+                    "partitionKey": "https://actu.fr",
+                    "_crHasCrossSiteAncestor": true
+                },
+                "to": {
+                    "name": "APC",
+                    "value": "AfxxVi5VXcGgqOfUg5Zjo2MtIYOOaY2hgIBKUwMhlT6bP9EPGz0CYw",
+                    "domain": ".doubleclick.net",
+                    "path": "/",
+                    "expires": 1782691642.821068,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None",
+                    "partitionKey": "https://nouvelobs.com",
+                    "_crHasCrossSiteAncestor": true
+                }
+            },
+            "pxrc|.rlcdn.com|/": {
+                "from": {
+                    "name": "pxrc",
+                    "value": "CMiG0coGEgUI6AcQABIGCLrqARAA",
+                    "domain": ".rlcdn.com",
+                    "path": "/",
+                    "expires": 1772313928.497221,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                },
+                "to": {
+                    "name": "pxrc",
+                    "value": "CMiG0coGEgUI6AcQABIGCLrqARAAEgcIwuoBEPJL",
+                    "domain": ".rlcdn.com",
+                    "path": "/",
+                    "expires": 1772323642.966862,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                }
+            },
+            "uuid2|.adnxs.com|/": {
+                "from": {
+                    "name": "uuid2",
+                    "value": "6508166967341808011",
+                    "domain": ".adnxs.com",
+                    "path": "/",
+                    "expires": 1774911740.121606,
+                    "httpOnly": true,
+                    "secure": true,
+                    "sameSite": "None"
+                },
+                "to": {
+                    "name": "uuid2",
+                    "value": "6508166967341808011",
+                    "domain": ".adnxs.com",
+                    "path": "/",
+                    "expires": 1774915646.528822,
+                    "httpOnly": true,
+                    "secure": true,
+                    "sameSite": "None"
+                }
+            },
+            "3pi|.id5-sync.com|/": {
+                "from": {
+                    "name": "3pi",
+                    "value": "224#1767135699665#748682263#4093631212452611496|2#1767133887400#1940075984|264#1767134726541#-800431176#96cfdf7f-0e9e-4fba-b134-562f041f7b3a|170#1767134725428#-27250136|203#1767135698850#-221056106#86d46b01-85d7-48b3-bb53-6704b3d4a571|1228#1767135700385#1741896347|846#1767133887015#1638488325|112#1767133888220#-1723154977#2F33069D8905372B|464#1767134724267#2083726742#b68d8f12-e08f-4c82-9745-b2eb4dcae048-tuct104db9fa|18#1767133950348#-827628559|693#1767133950004#-1887067927|441#1767129933215#-1076872505#e_20899509-df7f-4cfd-8d76-e29aeaaa0700|122#1767133949532#1268841044|826#1767135700077#-783108201#8b05adc1-399b-46a5-87f0-ea6d338437bf-6954485c-4652|124#1767133024968#975514143|1244#1767135699205#1741896347|1245#1767135699364#1741896347|1854#1767131194327#940890697",
+                    "domain": ".id5-sync.com",
+                    "path": "/",
+                    "expires": 1774911700.406995,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                },
+                "to": {
+                    "name": "3pi",
+                    "value": "224#1767135699665#748682263#4093631212452611496|2#1767133887400#1940075984|264#1767134726541#-800431176#96cfdf7f-0e9e-4fba-b134-562f041f7b3a|170#1767134725428#-27250136|203#1767135698850#-221056106#86d46b01-85d7-48b3-bb53-6704b3d4a571|1228#1767135700385#1741896347|846#1767133887015#1638488325|112#1767133888220#-1723154977#2F33069D8905372B|464#1767134724267#2083726742#b68d8f12-e08f-4c82-9745-b2eb4dcae048-tuct104db9fa|18#1767133950348#-827628559|693#1767133950004#-1887067927|441#1767139646953#-1076872505#e_20899509-df7f-4cfd-8d76-e29aeaaa0700|122#1767133949532#1268841044|826#1767135700077#-783108201#8b05adc1-399b-46a5-87f0-ea6d338437bf-6954485c-4652|124#1767133024968#975514143|1244#1767135699205#1741896347|1245#1767135699364#1741896347|1854#1767131194327#940890697",
+                    "domain": ".id5-sync.com",
+                    "path": "/",
+                    "expires": 1774915646.978088,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                }
+            },
+            "rlas3|.rlcdn.com|/": {
+                "from": {
+                    "name": "rlas3",
+                    "value": "APTtMYuNKOmOwlHge50XrV+T0+NDSktwLxQbYIt+uBE=",
+                    "domain": ".rlcdn.com",
+                    "path": "/",
+                    "expires": 1798665928.496613,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                },
+                "to": {
+                    "name": "rlas3",
+                    "value": "vGEjqyCtUTq4MDQWQEFkoV+T0+NDSktwLxQbYIt+uBE=",
+                    "domain": ".rlcdn.com",
+                    "path": "/",
+                    "expires": 1798675642.966774,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                }
+            },
+            "receive-cookie-deprecation|.3lift.com|/": {
+                "from": {
+                    "name": "receive-cookie-deprecation",
+                    "value": "1",
+                    "domain": ".3lift.com",
+                    "path": "/",
+                    "expires": 1774911740.123316,
+                    "httpOnly": true,
+                    "secure": true,
+                    "sameSite": "None",
+                    "partitionKey": "https://dealabs.com",
+                    "_crHasCrossSiteAncestor": true
+                },
+                "to": {
+                    "name": "receive-cookie-deprecation",
+                    "value": "1",
+                    "domain": ".3lift.com",
+                    "path": "/",
+                    "expires": 1774915642.172169,
+                    "httpOnly": true,
+                    "secure": true,
+                    "sameSite": "None",
+                    "partitionKey": "https://nouvelobs.com",
+                    "_crHasCrossSiteAncestor": true
+                }
+            },
+            "tluid|.3lift.com|/": {
+                "from": {
+                    "name": "tluid",
+                    "value": "83961317345742781964",
+                    "domain": ".3lift.com",
+                    "path": "/",
+                    "expires": 1774911740.123381,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                },
+                "to": {
+                    "name": "tluid",
+                    "value": "83961317345742781964",
+                    "domain": ".3lift.com",
+                    "path": "/",
+                    "expires": 1774915646.940592,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                }
+            },
+            "admtr|.admanmedia.com|/": {
+                "from": {
+                    "name": "admtr",
+                    "value": "db81a786-0880-4c88-8256-1150b67d7e95",
+                    "domain": ".admanmedia.com",
+                    "path": "/",
+                    "expires": 1767734595.398189,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                },
+                "to": {
+                    "name": "admtr",
+                    "value": "db81a786-0880-4c88-8256-1150b67d7e95",
+                    "domain": ".admanmedia.com",
+                    "path": "/",
+                    "expires": 1767741795.127346,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                }
+            },
+            "ac_r|.admanmedia.com|/": {
+                "from": {
+                    "name": "ac_r",
+                    "value": "CS418:1767737825351",
+                    "domain": ".admanmedia.com",
+                    "path": "/",
+                    "expires": 1767734595.39826,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                },
+                "to": {
+                    "name": "ac_r",
+                    "value": "CS159:1767744447064",
+                    "domain": ".admanmedia.com",
+                    "path": "/",
+                    "expires": 1767741795.127555,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                }
+            }
+        }
+    },
+    "localStorage": {
+        "added": {},
+        "removed": {
+            "www.nouvelobs.com_fa_Y2FjaGVfYWRibG9ja19jaXJjdW12ZW50X3Njb3Jl": "0",
+            "www.nouvelobs.com_fa_Y2FjaGVfaXNfYmxvY2tpbmdfYWRz": "false"
+        },
+        "modified": {}
+    },
+    "sessionStorage": {
+        "added": {},
+        "removed": {
+            "as_session_id": "86821e03-0498-4eca-b9fb-bfe2d1e8d5e5",
+            "ebx_webtag_": "{\"referrer\":\"\",\"utmSource\":null}"
+        },
+        "modified": {}
+    }
+}

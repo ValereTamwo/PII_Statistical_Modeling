@@ -23,7 +23,7 @@ def create_aggregated_lifecycle_heatmap(results_base: str, output_path: str):
     volatility_totals = defaultdict(int)
     
     for auth in ['Auth', 'UnAuth']:
-        for user in ['FR_0017', 'FR_0018', 'FR_0019']:
+        for user in ['FR_0417', 'FR_0446', 'FR_0458']:
             for policy in ['ALL', 'PARTIAL', 'NONE']:
                 lifecycle_path = os.path.join(results_base, auth, user, policy, 
                                              'cookies', 'lifecycle', 'lifecycle_data.json')
