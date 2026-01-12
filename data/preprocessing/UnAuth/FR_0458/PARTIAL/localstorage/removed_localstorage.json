@@ -1,0 +1,830 @@
+[
+  {
+    "task_id": "20",
+    "key": "423506066/core_template/1763381534:boost_union/core/modal",
+    "value": "\n\n\n<div class=\"modal moodle-has-zindex\" data-region=\"modal-container\" aria-hidden=\"true\" role=\"dialog\" aria-modal=\"true\" aria-labelledby=\"{{uniqid}}-modal-title\">\n    <div class=\"modal-dialog {{$classes}}{{classes}}{{/classes}}\" data-region=\"modal\" tabindex=\"0\">\n        <div class=\"modal-content\">\n            <div class=\"modal-header {{$headerclasses}}{{headerclasses}}{{/headerclasses}}\" data-region=\"header\">\n\n                {{$header}}\n                    <h5 id=\"{{uniqid}}-modal-title\" class=\"modal-title\" data-region=\"title\">{{$title}}{{title}}{{/title}}</h5>\n                {{/header}}\n                <button type=\"button\" class=\"btn-close\" data-action=\"hide\" aria-label=\"{{#cleanstr}}closebuttontitle{{/cleanstr}}\">\n                  <span aria-hidden=\"true\">&times;</span>\n                </button>\n            </div>\n            <div class=\"modal-body\" data-region=\"body\">\n                {{$body}}\n                    {{{body}}}\n                {{/body}}\n            </div>\n            <div class=\"modal-footer\" data-region=\"footer\">\n                {{$footer}}\n                    {{{footer}}}\n                {{/footer}}\n            </div>\n        </div>\n    </div>\n</div>\n",
+    "value_length": 1191,
+    "initial_url": "https://moodle.univ-lille.fr",
+    "final_url": "https://infotuto.univ-lille.fr/toutes-les-fiches?tx_kesearch_pi1%5Bpage%5D=1&tx_kesearch_pi1%5Bsword%5D=cancer&cHash=7579dac31b5a063ef4537291aa021959",
+    "timestamp": "2025-12-04T10:51:28.244904"
+  },
+  {
+    "task_id": "20",
+    "key": "423506066/core_template/1763381534:boost_union/core/pix_icon_fontawesome",
+    "value": "\n\n{{^unmappedIcon}}\n<i class=\"icon {{key}} fa-fw {{extraclasses}}\"{{#aria-hidden}} aria-hidden=\"true\"{{/aria-hidden}} {{#title}} title=\"{{title}}\"{{/title}}{{^aria-hidden}}{{#alt}} role=\"img\" aria-label=\"{{alt}}\"{{/alt}}{{/aria-hidden}}></i>\n{{/unmappedIcon}}\n{{#unmappedIcon}}\n\n<img class=\"icon {{extraclasses}}\" {{#attributes}}{{name}}=\"{{value}}\" {{/attributes}}/>\n{{/unmappedIcon}}\n",
+    "value_length": 386,
+    "initial_url": "https://moodle.univ-lille.fr",
+    "final_url": "https://infotuto.univ-lille.fr/toutes-les-fiches?tx_kesearch_pi1%5Bpage%5D=1&tx_kesearch_pi1%5Bsword%5D=cancer&cHash=7579dac31b5a063ef4537291aa021959",
+    "timestamp": "2025-12-04T10:51:28.244904"
+  },
+  {
+    "task_id": "20",
+    "key": "423506066/core_str/cancel/core/fr",
+    "value": "Annuler",
+    "value_length": 7,
+    "initial_url": "https://moodle.univ-lille.fr",
+    "final_url": "https://infotuto.univ-lille.fr/toutes-les-fiches?tx_kesearch_pi1%5Bpage%5D=1&tx_kesearch_pi1%5Bsword%5D=cancer&cHash=7579dac31b5a063ef4537291aa021959",
+    "timestamp": "2025-12-04T10:51:28.244904"
+  },
+  {
+    "task_id": "20",
+    "key": "423506066/media_videojs/fr",
+    "value": "{\n  \"Audio Player\": \"Lecteur audio\",\n  \"Video Player\": \"Lecteur vidéo\",\n  \"Play\": \"Lecture\",\n  \"Pause\": \"Pause\",\n  \"Replay\": \"Revoir\",\n  \"Current Time\": \"Temps actuel\",\n  \"Duration\": \"Durée\",\n  \"Remaining Time\": \"Temps restant\",\n  \"Stream Type\": \"Type de flux\",\n  \"LIVE\": \"EN DIRECT\",\n  \"Seek to live, currently behind live\": \"Rechercher le direct, actuellement après le direct\",\n  \"Seek to live, currently playing live\": \"Rechercher le direct, le direct actuellement en cours de lecture\",\n  \"Loaded\": \"Chargé\",\n  \"Progress\": \"Progression\",\n  \"Progress Bar\": \"Barre de progression\",\n  \"progress bar timing: currentTime={1} duration={2}\": \"{1} de {2}\",\n  \"Fullscreen\": \"Plein écran\",\n  \"Exit Fullscreen\": \"Fenêtré\",\n  \"Mute\": \"Mettre en sourdine\",\n  \"Unmute\": \"Activer le son\",\n  \"Playback Rate\": \"Vitesse de lecture\",\n  \"Subtitles\": \"Sous-titres\",\n  \"subtitles off\": \"Sous-titres désactivés\",\n  \"Captions\": \"Sous-titres transcrits\",\n  \"captions off\": \"Sous-titres transcrits désactivés\",\n  \"Chapters\": \"Chapitres\",\n  \"Descriptions\": \"Descriptions\",\n  \"descriptions off\": \"descriptions désactivées\",\n  \"Audio Track\": \"Piste audio\",\n  \"Volume Level\": \"Niveau de volume\",\n  \"You aborted the media playback\": \"Vous avez interrompu la lecture de la vidéo.\",\n  \"A network error caused the media download to fail part-way.\": \"Une erreur de réseau a interrompu le téléchargement de la vidéo.\",\n  \"The media could not be loaded, either because the server or network failed or because the format is not supported.\": \"Cette vidéo n'a pas pu être chargée, soit parce que le serveur ou le réseau a échoué ou parce que le format n'est pas reconnu.\",\n  \"The media playback was aborted due to a corruption problem or because the media used features your browser did not support.\": \"La lecture de la vidéo a été interrompue à cause d'un problème de corruption ou parce que la vidéo utilise des fonctionnalités non prises en charge par votre navigateur.\",\n  \"No compatible source was found for this media.\": \"Aucune source compatible n'a été trouvée pour cette vidéo.\",\n  \"The media is encrypted and we do not have the keys to decrypt it.\": \"Le média est chiffré et nous n'avons pas les clés pour le déchiffrer.\",\n  \"Play Video\": \"Lire la vidéo\",\n  \"Close\": \"Fermer\",\n  \"Close Modal Dialog\": \"Fermer la boîte de dialogue modale\",\n  \"Modal Window\": \"Fenêtre modale\",\n  \"This is a modal window\": \"Ceci est une fenêtre modale\",\n  \"This modal can be closed by pressing the Escape key or activating the close button.\": \"Ce modal peut être fermé en appuyant sur la touche Échap ou activer le bouton de fermeture.\",\n  \", opens captions settings dialog\": \", ouvrir les paramètres des sous-titres transcrits\",\n  \", opens subtitles settings dialog\": \", ouvrir les paramètres des sous-titres\",\n  \", opens descriptions settings dialog\": \", ouvrir les paramètres des descriptions\",\n  \", selected\": \", sélectionné\",\n  \"captions settings\": \"Paramètres des sous-titres transcrits\",\n  \"subtitles settings\": \"Paramètres des sous-titres\",\n  \"descriptions settings\": \"Paramètres des descriptions\",\n  \"Text\": \"Texte\",\n  \"White\": \"Blanc\",\n  \"Black\": \"Noir\",\n  \"Red\": \"Rouge\",\n  \"Green\": \"Vert\",\n  \"Blue\": \"Bleu\",\n  \"Yellow\": \"Jaune\",\n  \"Magenta\": \"Magenta\",\n  \"Cyan\": \"Cyan\",\n  \"Background\": \"Arrière-plan\",\n  \"Window\": \"Fenêtre\",\n  \"Transparent\": \"Transparent\",\n  \"Semi-Transparent\": \"Semi-transparent\",\n  \"Opaque\": \"Opaque\",\n  \"Font Size\": \"Taille des caractères\",\n  \"Text Edge Style\": \"Style des contours du texte\",\n  \"None\": \"Aucun\",\n  \"Raised\": \"Élevé\",\n  \"Depressed\": \"Enfoncé\",\n  \"Uniform\": \"Uniforme\",\n  \"Drop shadow\": \"Ombre portée\",\n  \"Font Family\": \"Famille de polices\",\n  \"Proportional Sans-Serif\": \"Polices à chasse variable sans empattement (Proportional Sans-Serif)\",\n  \"Monospace Sans-Serif\": \"Polices à chasse fixe sans empattement (Monospace Sans-Serif)\",\n  \"Proportional Serif\": \"Polices à chasse variable avec empattement (Proportional Serif)\",\n  \"Monospace Serif\": \"Polices à chasse fixe avec empattement (Monospace Serif)\",\n  \"Casual\": \"Manuscrite\",\n  \"Script\": \"Scripte\",\n  \"Small Caps\": \"Petites capitales\",\n  \"Reset\": \"Réinitialiser\",\n  \"restore all settings to the default values\": \"Restaurer tous les paramètres aux valeurs par défaut\",\n  \"Done\": \"Terminé\",\n  \"Caption Settings Dialog\": \"Boîte de dialogue des paramètres des sous-titres transcrits\",\n  \"Beginning of dialog window. Escape will cancel and close the window.\": \"Début de la fenêtre de dialogue. La touche d'échappement annulera et fermera la fenêtre.\",\n  \"End of dialog window.\": \"Fin de la fenêtre de dialogue.\",\n  \"Exit Picture-in-Picture\": \"Quitter le mode image dans l'image\",\n  \"Picture-in-Picture\": \"Image dans l'image\",\n  \"{1} is loading.\": \"{1} en cours de chargement.\",\n  \"No content\": \"Aucun contenu\",\n  \"Color\": \"Couleur\",\n  \"Opacity\": \"Opacité\",\n  \"Text Background\": \"Arrière-plan du texte\",\n  \"Caption Area Background\": \"Arrière-plan de la zone de sous-titre\",\n  \"Skip backward {1} seconds\": \"Reculer de {1} secondes\",\n  \"Skip forward {1} seconds\": \"Avancer de {1} secondes\"\n}\n",
+    "value_length": 5040,
+    "initial_url": "https://moodle.univ-lille.fr",
+    "final_url": "https://infotuto.univ-lille.fr/toutes-les-fiches?tx_kesearch_pi1%5Bpage%5D=1&tx_kesearch_pi1%5Bsword%5D=cancer&cHash=7579dac31b5a063ef4537291aa021959",
+    "timestamp": "2025-12-04T10:51:28.244904"
+  },
+  {
+    "task_id": "20",
+    "key": "423506066/core_str/closebuttontitle/core/fr",
+    "value": "Fermer",
+    "value_length": 6,
+    "initial_url": "https://moodle.univ-lille.fr",
+    "final_url": "https://infotuto.univ-lille.fr/toutes-les-fiches?tx_kesearch_pi1%5Bpage%5D=1&tx_kesearch_pi1%5Bsword%5D=cancer&cHash=7579dac31b5a063ef4537291aa021959",
+    "timestamp": "2025-12-04T10:51:28.244904"
+  },
+  {
+    "task_id": "20",
+    "key": "423506066/sUserLogintime",
+    "value": "0",
+    "value_length": 1,
+    "initial_url": "https://moodle.univ-lille.fr",
+    "final_url": "https://infotuto.univ-lille.fr/toutes-les-fiches?tx_kesearch_pi1%5Bpage%5D=1&tx_kesearch_pi1%5Bsword%5D=cancer&cHash=7579dac31b5a063ef4537291aa021959",
+    "timestamp": "2025-12-04T10:51:28.244904"
+  },
+  {
+    "task_id": "20",
+    "key": "423506066/core_str/showless/core_form/fr",
+    "value": "Afficher moins…",
+    "value_length": 15,
+    "initial_url": "https://moodle.univ-lille.fr",
+    "final_url": "https://infotuto.univ-lille.fr/toutes-les-fiches?tx_kesearch_pi1%5Bpage%5D=1&tx_kesearch_pi1%5Bsword%5D=cancer&cHash=7579dac31b5a063ef4537291aa021959",
+    "timestamp": "2025-12-04T10:51:28.244904"
+  },
+  {
+    "task_id": "20",
+    "key": "423506066/core_iconsystem/theme/boost_union/core/iconmap-fontawesome",
+    "value": "[[\"core/docs\",\"fa fa-circle-info\"],[\"core/book\",\"fa fa-book\"],[\"core/help\",\"fa fa-circle-question text-info\"],[\"core/req\",\"fa fa-circle-exclamation text-danger\"],[\"core/a/add_file\",\"fa fa-circle-plus\"],[\"core/a/create_folder\",\"fa fa-folder-plus\"],[\"core/a/download_all\",\"fa fa-download\"],[\"core/a/help\",\"fa fa-circle-question text-info\"],[\"core/a/logout\",\"fa fa-arrow-right-to-bracket\"],[\"core/a/refresh\",\"fa fa-arrows-rotate\"],[\"core/a/search\",\"fa fa-magnifying-glass\"],[\"core/a/setting\",\"fa fa-gear\"],[\"core/a/view_icon_active\",\"fa fa-border-all\"],[\"core/a/view_list_active\",\"fa fa-list\"],[\"core/a/view_tree_active\",\"fa fa-folder-tree\"],[\"core/b/bookmark-new\",\"fa-regular fa-bookmark\"],[\"core/b/document-edit\",\"fa fa-pen\"],[\"core/b/document-new\",\"fa fa-file-circle-plus\"],[\"core/b/document-properties\",\"fa fa-wrench\"],[\"core/b/edit-copy\",\"fa fa-pen\"],[\"core/b/edit-delete\",\"fa fa-trash-can\"],[\"core/e/abbr\",\"fa-regular fa-message\"],[\"core/e/absolute\",\"fa fa-crosshairs\"],[\"core/e/accessibility_checker\",\"fa fa-universal-access\"],[\"core/e/acronym\",\"fa-regular fa-comment\"],[\"core/e/advance_hr\",\"fa fa-arrows-left-right\"],[\"core/e/align_center\",\"fa fa-align-center\"],[\"core/e/align_left\",\"fa fa-align-left\"],[\"core/e/align_right\",\"fa fa-align-right\"],[\"core/e/anchor\",\"fa fa-anchor\"],[\"core/e/backward\",\"fa fa-arrow-left\"],[\"core/e/bold\",\"fa fa-bold\"],[\"core/e/bullet_list\",\"fa fa-list-ul\"],[\"core/e/cancel\",\"fa fa-xmark\"],[\"core/e/cancel_solid_circle\",\"fa fa-circle-xmark\"],[\"core/e/cell_props\",\"fa fa-info\"],[\"core/e/cite\",\"fa fa-quote-right\"],[\"core/e/cleanup_messy_code\",\"fa fa-delete-left\"],[\"core/e/clear_formatting\",\"fa fa-eraser\"],[\"core/e/copy\",\"fa-regular fa-clone\"],[\"core/e/cut\",\"fa fa-scissors\"],[\"core/e/decrease_indent\",\"fa fa-outdent\"],[\"core/e/delete_col\",\"fa fa-minus\"],[\"core/e/delete_row\",\"fa fa-minus\"],[\"core/e/delete\",\"fa fa-trash-can\"],[\"core/e/delete_table\",\"fa fa-trash-can\"],[\"core/e/document_properties\",\"fa fa-wrench\"],[\"core/e/emoticons\",\"fa-regular fa-face-smile\"],[\"core/e/find_replace\",\"fa fa-magnifying-glass-plus\"],[\"core/e/file-text\",\"fa-regular fa-file-text\"],[\"core/e/forward\",\"fa fa-arrow-right\"],[\"core/e/fullpage\",\"fa fa-maximize\"],[\"core/e/fullscreen\",\"fa-solid fa-expand\"],[\"core/e/help\",\"fa fa-circle-question\"],[\"core/e/increase_indent\",\"fa fa-indent\"],[\"core/e/insert_col_after\",\"fa fa-columns\"],[\"core/e/insert_col_before\",\"fa fa-columns\"],[\"core/e/insert_date\",\"fa-regular fa-calendar-plus\"],[\"core/e/insert_edit_image\",\"fa-regular fa-image\"],[\"core/e/insert_edit_link\",\"fa fa-link\"],[\"core/e/insert_edit_video\",\"fa-regular fa-file-video\"],[\"core/e/insert_file\",\"fa-regular fa-file\"],[\"core/e/insert_horizontal_ruler\",\"fa fa-ruler-horizontal\"],[\"core/e/insert_nonbreaking_space\",\"fa-regular fa-square\"],[\"core/e/insert_page_break\",\"fa fa-plus\"],[\"core/e/insert_row_after\",\"fa fa-plus\"],[\"core/e/insert_row_before\",\"fa fa-plus\"],[\"core/e/insert\",\"fa fa-plus\"],[\"core/e/insert_time\",\"fa-regular fa-clock\"],[\"core/e/italic\",\"fa fa-italic\"],[\"core/e/justify\",\"fa fa-align-justify\"],[\"core/e/layers_over\",\"fa fa-turn-up\"],[\"core/e/layers\",\"fa fa-layer-group\"],[\"core/e/layers_under\",\"fa fa-turn-down\"],[\"core/e/left_to_right\",\"fa fa-angles-right\"],[\"core/e/manage_files\",\"fa fa-laptop-file\"],[\"core/e/math\",\"fa fa-square-root-variable\"],[\"core/e/merge_cells\",\"fa fa-arrows-to-circle\"],[\"core/e/new_document\",\"fa fa-file-circle-plus\"],[\"core/e/numbered_list\",\"fa fa-list-ol\"],[\"core/e/page_break\",\"fa fa-arrows-left-right-to-line\"],[\"core/e/paste\",\"fa fa-paste\"],[\"core/e/paste_text\",\"fa fa-paste\"],[\"core/e/paste_word\",\"fa fa-paste\"],[\"core/e/prevent_autolink\",\"fa fa-exclamation\"],[\"core/e/preview\",\"fa fa-magnifying-glass-plus\"],[\"core/e/print\",\"fa fa-print\"],[\"core/e/question\",\"fa fa-question\"],[\"core/e/redo\",\"fa fa-arrow-rotate-right\"],[\"core/e/remove_link\",\"fa fa-link-slash\"],[\"core/e/remove_page_break\",\"fa fa-xmark\"],[\"core/e/resize\",\"fa fa-up-right-and-down-left-from-center\"],[\"core/e/restore_draft\",\"fa fa-trash-can-arrow-up\"],[\"core/e/restore_last_draft\",\"fa fa-clock-rotate-left\"],[\"core/e/right_to_left\",\"fa fa-angles-left\"],[\"core/e/row_props\",\"fa fa-info\"],[\"core/e/save\",\"fa-regular fa-floppy-disk\"],[\"core/e/screenreader_helper\",\"fa fa-ear-listen\"],[\"core/e/search\",\"fa fa-magnifying-glass\"],[\"core/e/select_all\",\"fa fa-square-check\"],[\"core/e/show_invisible_characters\",\"fa-solid fa-eye\"],[\"core/e/source_code\",\"fa fa-code\"],[\"core/e/special_character\",\"fa fa-pen-to-square\"],[\"core/e/spellcheck\",\"fa fa-spell-check\"],[\"core/e/split_cells\",\"fa fa-table-columns\"],[\"core/e/strikethrough\",\"fa fa-strikethrough\"],[\"core/e/styleparagraph\",\"fa fa-font\"],[\"core/e/subscript\",\"fa fa-subscript\"],[\"core/e/superscript\",\"fa fa-superscript\"],[\"core/e/table_props\",\"fa fa-table\"],[\"core/e/table\",\"fa fa-table\"],[\"core/e/template\",\"fa fa-file-invoice\"],[\"core/e/text_color_picker\",\"fa fa-eye-dropper\"],[\"core/e/text_color\",\"fa fa-paint-brush\"],[\"core/e/text_highlight_picker\",\"fa-solid fa-highlighter\"],[\"core/e/text_highlight\",\"fa-solid fa-highlighter\"],[\"core/e/tick\",\"fa fa-check\"],[\"core/e/toggle_blockquote\",\"fa fa-quote-left\"],[\"core/e/underline\",\"fa fa-underline\"],[\"core/e/undo\",\"fa fa-rotate-left\"],[\"core/e/visual_aid\",\"fa fa-universal-access\"],[\"core/e/visual_blocks\",\"fa fa-audio-description\"],[\"theme/fp/add_file\",\"fa fa-file-circle-plus\"],[\"theme/fp/alias\",\"fa fa-share\"],[\"theme/fp/alias_sm\",\"fa fa-share\"],[\"theme/fp/check\",\"fa fa-check\"],[\"theme/fp/create_folder\",\"fa fa-folder-plus\"],[\"theme/fp/cross\",\"fa fa-xmark\"],[\"theme/fp/download_all\",\"fa fa-download\"],[\"theme/fp/help\",\"fa fa-question-circle\"],[\"theme/fp/link\",\"fa fa-link\"],[\"theme/fp/link_sm\",\"fa fa-link\"],[\"theme/fp/logout\",\"fa fa-arrow-right-from-bracket\"],[\"theme/fp/path_folder\",\"fa fa-folder\"],[\"theme/fp/path_folder_rtl\",\"fa fa-folder\"],[\"theme/fp/refresh\",\"fa fa-arrows-rotate\"],[\"theme/fp/search\",\"fa fa-magnifying-glass\"],[\"theme/fp/setting\",\"fa fa-gear\"],[\"theme/fp/view_icon_active\",\"fa fa-border-all\"],[\"theme/fp/view_list_active\",\"fa fa-list\"],[\"theme/fp/view_tree_active\",\"fa fa-folder-tree\"],[\"core/i/activities\",\"fa fa-file-pen\"],[\"core/i/addblock\",\"fa-regular fa-square-plus\"],[\"core/i/assignroles\",\"fa fa-user-tag\"],[\"core/i/asterisk\",\"fa fa-asterisk\"],[\"core/i/backup\",\"fa fa-circle-arrow-down\"],[\"core/i/badge\",\"fa fa-award\"],[\"core/i/breadcrumbdivider\",\"fa fa-chevron-right\"],[\"core/i/bullhorn\",\"fa fa-bullhorn\"],[\"core/i/calc\",\"fa fa-calculator\"],[\"core/i/calendar\",\"fa-regular fa-calendar\"],[\"core/i/calendareventdescription\",\"fa fa-align-left\"],[\"core/i/calendareventtime\",\"fa-regular fa-clock\"],[\"core/i/categoryevent\",\"fa fa-shapes\"],[\"core/i/caution\",\"fa fa-warning text-warning\"],[\"core/i/chartbar\",\"fa fa-chart-bar\"],[\"core/i/checked\",\"fa fa-check\"],[\"core/i/checkedcircle\",\"fa fa-circle-check\"],[\"core/i/checkpermissions\",\"fa fa-user-lock\"],[\"core/i/circleinfo\",\"fa fa-circle-info\"],[\"core/i/cloudupload\",\"fa fa-cloud-upload\"],[\"core/i/cohort\",\"fa fa-users-line\"],[\"core/i/competencies\",\"fa fa-list-check\"],[\"core/i/completion_self\",\"fa fa-user-check\"],[\"core/i/contentbank\",\"fa fa-laptop-file\"],[\"core/i/course\",\"fa fa-graduation-cap\"],[\"core/i/courseevent\",\"fa fa-graduation-cap\"],[\"core/i/customfield\",\"fa fa-cog\"],[\"core/i/dashboard\",\"fa fa-gauge\"],[\"core/i/db\",\"fa fa-database\"],[\"core/i/delete\",\"fa fa-trash-can\"],[\"core/i/down\",\"fa fa-arrow-down\"],[\"core/i/dragdrop\",\"fa fa-arrows-up-down-left-right\"],[\"core/i/duration\",\"fa fa-hourglass\"],[\"core/i/edit\",\"fa fa-pen\"],[\"core/i/email\",\"fa fa-envelope\"],[\"core/i/emojicategoryactivities\",\"fa fa-futbol\"],[\"core/i/emojicategoryanimalsnature\",\"fa fa-leaf\"],[\"core/i/emojicategoryflags\",\"fa fa-flag\"],[\"core/i/emojicategoryfooddrink\",\"fa fa-pizza-slice\"],[\"core/i/emojicategoryobjects\",\"fa fa-hammer\"],[\"core/i/emojicategorypeoplebody\",\"fa fa-person\"],[\"core/i/emojicategoryrecent\",\"fa-regular fa-clock\"],[\"core/i/emojicategorysmileysemotion\",\"fa-regular fa-face-smile\"],[\"core/i/emojicategorysymbols\",\"fa fa-peace\"],[\"core/i/emojicategorytravelplaces\",\"fa fa-plane\"],[\"core/i/empty\",\"fa-regular fa-square\"],[\"core/i/enrolmentsuspended\",\"fa fa-user-xmark\"],[\"core/i/enrolusers\",\"fa fa-user-plus\"],[\"core/i/excluded\",\"fa fa-circle-minus\"],[\"core/i/expired\",\"fa fa-circle-exclamation text-warning\"],[\"core/i/export\",\"fa fa-download\"],[\"core/i/externallink\",\"fa fa-arrow-up-right-from-square\"],[\"core/i/file_export\",\"fa fa-download\"],[\"core/i/file_import\",\"fa fa-upload\"],[\"core/i/file_plus\",\"fa fa-file-circle-plus\"],[\"core/i/files\",\"fa fa-file\"],[\"core/i/filter\",\"fa fa-filter\"],[\"core/i/flagged\",\"fa fa-flag\"],[\"core/i/folder\",\"fa fa-folder\"],[\"core/i/grade_correct\",\"fa-regular fa-circle-check text-success\"],[\"core/i/grade_incorrect\",\"fa-regular fa-circle-xmark text-danger\"],[\"core/i/grade_partiallycorrect\",\"fa fa-circle-half-stroke text-warning\"],[\"core/i/grades\",\"fa fa-clipboard-check\"],[\"core/i/grading\",\"fa fa-wand-magic-sparkles\"],[\"core/i/gradingnotifications\",\"fa-regular fa-bell\"],[\"core/i/group\",\"fa fa-users\"],[\"core/i/groupevent\",\"fa fa-users\"],[\"core/i/hide\",\"fa-regular fa-eye\"],[\"core/i/hierarchylock\",\"fa fa-lock\"],[\"core/i/home\",\"fa fa-house\"],[\"core/i/import\",\"fa fa-upload\"],[\"core/i/incorrect\",\"fa fa-exclamation\"],[\"core/i/info\",\"fa fa-info\"],[\"core/i/invalid\",\"fa fa-xmark text-danger\"],[\"core/i/item\",\"fa fa-circle\"],[\"core/i/language\",\"fa fa-language\"],[\"core/i/link\",\"fa fa-link\"],[\"core/i/loading\",\"fa fa-spinner fa-spin\"],[\"core/i/loading_small\",\"fa fa-spinner fa-spin fa-sm\"],[\"core/i/location\",\"fa fa-location-dot\"],[\"core/i/lock\",\"fa fa-lock\"],[\"core/i/log\",\"fa fa-check-to-slot\"],[\"core/i/mahara_host\",\"fa fa-id-badge\"],[\"core/i/manual_item\",\"fa fa-pen-to-square\"],[\"core/i/marked\",\"fa-solid fa-highlighter\"],[\"core/i/marker\",\"fa fa-pen-clip\"],[\"core/i/mean\",\"fa fa-calculator\"],[\"core/i/menu\",\"fa fa-ellipsis-vertical\"],[\"core/i/menubars\",\"fa fa-bars\"],[\"core/i/messagecontentaudio\",\"fa fa-volume-high\"],[\"core/i/messagecontentimage\",\"fa fa-image\"],[\"core/i/messagecontentmultimediageneral\",\"fa fa-photo-film\"],[\"core/i/messagecontentvideo\",\"fa fa-film\"],[\"core/i/mnethost\",\"fa fa-square-arrow-up-right\"],[\"core/i/moodle_host\",\"fa fa-graduation-cap\"],[\"core/i/moremenu\",\"fa fa-ellipsis\"],[\"core/i/move_2d\",\"fa fa-arrows-up-down-left-right\"],[\"core/i/muted\",\"fa fa-microphone-slash\"],[\"core/i/navigationitem\",\"fa fa-fw\"],[\"core/i/ne_red_mark\",\"fa fa-xmark text-danger\"],[\"core/i/new\",\"fa fa-bolt\"],[\"core/i/news\",\"fa fa-newspaper\"],[\"core/i/next\",\"fa fa-chevron-right\"],[\"core/i/nosubcat\",\"fa fa-plus-square-o\"],[\"core/i/notifications\",\"fa fa-bell\"],[\"core/i/open\",\"fa fa-folder-open\"],[\"core/i/otherevent\",\"fa fa-circle-info\"],[\"core/i/outcomes\",\"fa fa-list-check\"],[\"core/i/overriden_grade\",\"fa fa-pen-to-square\"],[\"core/i/payment\",\"fa-solid fa-credit-card\"],[\"core/i/permissionlock\",\"fa fa-user-lock\"],[\"core/i/permissions\",\"fa fa-user-lock\"],[\"core/i/persona_sign_in_black\",\"fa fa-person\"],[\"core/i/portfolio\",\"fa fa-briefcase\"],[\"core/i/preview\",\"fa fa-magnifying-glass-plus\"],[\"core/i/previous\",\"fa fa-chevron-left\"],[\"core/i/privatefiles\",\"fa fa-file-circle-minus\"],[\"core/i/progressbar\",\"fa fa-spinner fa-spin\"],[\"core/i/publish\",\"fa fa-arrow-up-from-bracket\"],[\"core/i/questions\",\"fa fa-question\"],[\"core/i/reload\",\"fa fa-rotate-right\"],[\"core/i/report\",\"fa fa-chart-column\"],[\"core/i/repository\",\"fa fa-hard-drive\"],[\"core/i/restore\",\"fa fa-trash-can-arrow-up\"],[\"core/i/return\",\"fa fa-arrow-left\"],[\"core/i/risk_config\",\"fa fa-triangle-exclamation text-muted\"],[\"core/i/risk_dataloss\",\"fa fa-triangle-exclamation text-danger\"],[\"core/i/risk_managetrust\",\"fa fa-triangle-exclamation text-warning\"],[\"core/i/risk_personal\",\"fa fa-triangle-exclamation text-info\"],[\"core/i/risk_spam\",\"fa fa-triangle-exclamation text-primary\"],[\"core/i/risk_xss\",\"fa fa-triangle-exclamation text-danger\"],[\"core/i/role\",\"fa fa-user-tie\"],[\"core/i/rss\",\"fa fa-rss\"],[\"core/i/rsssitelogo\",\"fa fa-graduation-cap\"],[\"core/i/scales\",\"fa fa-scale-balanced\"],[\"core/i/scheduled\",\"fa-regular fa-calendar-check\"],[\"core/i/search\",\"fa fa-magnifying-glass\"],[\"core/i/section\",\"fa-regular fa-rectangle-list\"],[\"core/i/sendmessage\",\"fa-regular fa-paper-plane\"],[\"core/i/settings\",\"fa fa-gear\"],[\"core/i/share\",\"fa-regular fa-share-from-square\"],[\"core/i/show\",\"fa-regular fa-eye-slash\"],[\"core/i/siteevent\",\"fa-solid fa-globe\"],[\"core/i/star\",\"fa fa-star\"],[\"core/i/star-o\",\"fa-regular fa-star\"],[\"core/i/star-rating\",\"fa fa-star\"],[\"core/i/stats\",\"fa fa-chart-line\"],[\"core/i/switch\",\"fa fa-right-left\"],[\"core/i/switchrole\",\"fa fa-people-arrows\"],[\"core/i/trash\",\"fa fa-trash-can\"],[\"core/i/twoway\",\"fa fa-arrows-left-right\"],[\"core/i/unchecked\",\"fa-regular fa-square\"],[\"core/i/uncheckedcircle\",\"fa-regular fa-circle\"],[\"core/i/unflagged\",\"fa-regular fa-flag\"],[\"core/i/unlock\",\"fa fa-unlock\"],[\"core/i/up\",\"fa fa-arrow-up\"],[\"core/i/upload\",\"fa fa-upload\"],[\"core/i/user\",\"fa fa-user\"],[\"core/i/userevent\",\"fa fa-clipboard-user\"],[\"core/i/users\",\"fa fa-user-group\"],[\"core/i/valid\",\"fa fa-check text-success\"],[\"core/i/viewcategory\",\"fa fa-pager\"],[\"core/i/viewsection\",\"fa fa-pager\"],[\"core/i/warning\",\"fa fa-triangle-exclamation text-warning\"],[\"core/i/window_close\",\"fa fa-xmark\"],[\"core/i/withsubcat\",\"fa fa-network-wired\"],[\"core/m/USD\",\"fa fa-dollar-sign\"],[\"core/t/add\",\"fa fa-plus\"],[\"core/t/addcontact\",\"fa fa-address-card\"],[\"core/t/angles-down\",\"fa fa-angles-down\"],[\"core/t/angles-left\",\"fa fa-angles-left\"],[\"core/t/angles-right\",\"fa fa-angles-right\"],[\"core/t/angles-up\",\"fa fa-angles-up\"],[\"core/t/approve\",\"fa fa-thumbs-up\"],[\"core/t/assignroles\",\"fa fa-user-tag\"],[\"core/t/award\",\"fa fa-award\"],[\"core/t/backpack\",\"fa fa-suitcase-rolling\"],[\"core/t/backup\",\"fa fa-circle-arrow-down\"],[\"core/t/block\",\"fa fa-ban\"],[\"core/t/block_to_dock\",\"fa fa-chevron-left\"],[\"core/t/block_to_dock_rtl\",\"fa fa-chevron-right\"],[\"core/t/blocks_drawer\",\"fa fa-chevron-left\"],[\"core/t/blocks_drawer_rtl\",\"fa fa-chevron-right\"],[\"core/t/calc_off\",\"fa fa-calculator\"],[\"core/t/calc\",\"fa fa-calculator\"],[\"core/t/check\",\"fa fa-check\"],[\"core/t/clipboard\",\"fa fa-clipboard\"],[\"core/t/cohort\",\"fa fa-users-line\"],[\"core/t/collapsed_empty_rtl\",\"fa fa-chevron-left\"],[\"core/t/collapsed_empty\",\"fa fa-chevron-right\"],[\"core/t/collapsed_rtl\",\"fa fa-chevron-left\"],[\"core/t/collapsed\",\"fa fa-chevron-right\"],[\"core/t/collapsedcaret\",\"fa fa-caret-down\"],[\"core/t/collapsedchevron\",\"fa fa-chevron-right\"],[\"core/t/collapsedchevron_rtl\",\"fa fa-chevron-left\"],[\"core/t/collapsedchevron_up\",\"fa fa-chevron-up\"],[\"core/t/completion_complete\",\"fa fa-circle\"],[\"core/t/completion_fail\",\"fa fa-xmark\"],[\"core/t/completion_incomplete\",\"fa-regular fa-circle\"],[\"core/t/contextmenu\",\"fa fa-ellipsis-vertical\"],[\"core/t/copy\",\"fa-solid fa-clone\"],[\"core/t/delete\",\"fa fa-trash-can\"],[\"core/t/dock_to_block_rtl\",\"fa fa-chevron-left\"],[\"core/t/dock_to_block\",\"fa fa-chevron-right\"],[\"core/t/dockclose\",\"fa fa-xmark\"],[\"core/t/down\",\"fa fa-arrow-down\"],[\"core/t/download\",\"fa fa-download\"],[\"core/t/downlong\",\"fa fa-arrow-down-long\"],[\"core/t/dropdown\",\"fa fa-caret-down\"],[\"core/t/edit_menu\",\"fa fa-ellipsis-vertical\"],[\"core/t/edit\",\"fa fa-pen\"],[\"core/t/editinline\",\"fa fa-pen\"],[\"core/t/editstring\",\"fa fa-pen\"],[\"core/t/email\",\"fa-regular fa-envelope\"],[\"core/t/emailno\",\"fa fa-ban\"],[\"core/t/emptystar\",\"fa-regular fa-star\"],[\"core/t/enrolusers\",\"fa fa-user-plus\"],[\"core/t/expanded\",\"fa fa-chevron-down\"],[\"core/t/expandedchevron\",\"fa fa-chevron-down\"],[\"core/t/go\",\"fa fa-play\"],[\"core/t/grades\",\"fa fa-table-list\"],[\"core/t/groupn\",\"fa fa-user\"],[\"core/t/groups\",\"fa fa-circle-user\"],[\"core/t/groupv\",\"fa-regular fa-circle-user\"],[\"core/t/hide\",\"fa-regular fa-eye\"],[\"core/t/index_drawer\",\"fa fa-list\"],[\"core/t/left\",\"fa fa-arrow-left\"],[\"core/t/less\",\"fa fa-minus\"],[\"core/t/life-ring\",\"fa fa-life-ring\"],[\"core/t/lock\",\"fa fa-unlock\"],[\"core/t/locked\",\"fa fa-lock\"],[\"core/t/locktime\",\"fa fa-lock\"],[\"core/t/markasread\",\"fa fa-check\"],[\"core/t/message\",\"fa fa-message\"],[\"core/t/messages\",\"fa fa-comments\"],[\"core/t/messages-o\",\"fa-regular fa-comments\"],[\"core/t/more\",\"fa fa-caret-down\"],[\"core/t/move\",\"fa fa-arrows-up-down\"],[\"core/t/online\",\"fa fa-circle-check\"],[\"core/t/passwordunmask-edit\",\"fa fa-pen\"],[\"core/t/passwordunmask-reveal\",\"fa-solid fa-eye\"],[\"core/t/play\",\"fa fa-play\"],[\"core/t/portfolioadd\",\"fa fa-plus\"],[\"core/t/preferences\",\"fa fa-wrench\"],[\"core/t/preview\",\"fa fa-magnifying-glass-plus\"],[\"core/t/print\",\"fa fa-print\"],[\"core/t/reload\",\"fa fa-rotate-right\"],[\"core/t/removecontact\",\"fa fa-user-xmark\"],[\"core/t/reset\",\"fa fa-arrow-rotate-left\"],[\"core/t/restore\",\"fa fa-trash-can-arrow-up\"],[\"core/t/right\",\"fa fa-arrow-right\"],[\"core/t/sendmessage\",\"fa-regular fa-paper-plane\"],[\"core/t/show\",\"fa fa-eye-slash\"],[\"core/t/sort_asc\",\"fa fa-arrow-up-short-wide\"],[\"core/t/sort_by\",\"fa fa-arrow-down-wide-short\"],[\"core/t/sort_desc\",\"fa fa-arrow-down-short-wide\"],[\"core/t/sort\",\"fa fa-sort\"],[\"core/t/stealth\",\"fa fa-low-vision\"],[\"core/t/stop\",\"fa fa-stop\"],[\"core/t/switch_minus\",\"fa fa-minus\"],[\"core/t/switch_plus\",\"fa fa-plus\"],[\"core/t/switch_whole\",\"fa-regular fa-square\"],[\"core/t/tags\",\"fa fa-tags\"],[\"core/t/unblock\",\"fa fa-unlock-keyhole\"],[\"core/t/unlock\",\"fa fa-lock\"],[\"core/t/unlocked\",\"fa fa-lock-open\"],[\"core/t/up\",\"fa fa-arrow-up\"],[\"core/t/uplong\",\"fa fa-arrow-up-long\"],[\"core/t/user\",\"fa fa-user\"],[\"core/t/viewdetails\",\"fa fa-magnifying-glass-plus\"],[\"qtype_ddmarker/crosshairs\",\"fa fa-crosshairs\"],[\"qtype_ddmarker/grid\",\"fa fa-table-cells\"],[\"mod_bigbluebuttonbn/icon\",\"fa icon-bigbluebutton\"],[\"mod_book/add\",\"fa fa-plus\"],[\"mod_book/chapter\",\"fa fa-book-bookmark\"],[\"mod_data/field/checkbox\",\"fa-regular fa-square-check\"],[\"mod_data/field/date\",\"fa-regular fa-calendar\"],[\"mod_data/field/file\",\"fa-regular fa-file\"],[\"mod_data/field/latlong\",\"fa fa-earth-americas\"],[\"mod_data/field/menu\",\"fa fa-bars\"],[\"mod_data/field/multimenu\",\"fa fa-bars\"],[\"mod_data/field/number\",\"fa fa-hashtag\"],[\"mod_data/field/picture\",\"fa-regular fa-image\"],[\"mod_data/field/radiobutton\",\"fa-regular fa-circle-dot\"],[\"mod_data/field/text\",\"fa fa-i-cursor\"],[\"mod_data/field/textarea\",\"fa fa-font\"],[\"mod_data/field/url\",\"fa fa-link\"],[\"mod_feedback/notrequired\",\"fa fa-circle-question\"],[\"mod_feedback/required\",\"fa fa-circle-exclamation\"],[\"mod_forum/i/pinned\",\"fa fa-thumbtack\"],[\"mod_forum/t/selected\",\"fa fa-check\"],[\"mod_forum/t/star\",\"fa fa-star\"],[\"mod_forum/t/subscribed\",\"fa-regular fa-envelope\"],[\"mod_forum/t/unsubscribed\",\"fa-regular fa-envelope-open\"],[\"mod_glossary/asc\",\"fa fa-sort-down\"],[\"mod_glossary/desc\",\"fa fa-sort-up\"],[\"mod_glossary/export\",\"fa fa-arrow-turn-up\"],[\"mod_glossary/minus\",\"fa fa-minus\"],[\"mod_lesson/e/copy\",\"fa-solid fa-clone\"],[\"mod_lti/warning\",\"fa fa-exclamation text-warning\"],[\"mod_quiz/navflagged\",\"fa fa-flag\"],[\"mod_scorm/asset\",\"fa-regular fa-file-zipper\"],[\"mod_scorm/assetc\",\"fa-regular fa-file-zipper\"],[\"mod_scorm/browsed\",\"fa fa-book\"],[\"mod_scorm/completed\",\"fa-regular fa-square-check\"],[\"mod_scorm/failed\",\"fa fa-xmark\"],[\"mod_scorm/incomplete\",\"fa-regular fa-pen-to-square\"],[\"mod_scorm/minus\",\"fa fa-minus\"],[\"mod_scorm/notattempted\",\"fa-regular fa-square\"],[\"mod_scorm/passed\",\"fa fa-check\"],[\"mod_scorm/plus\",\"fa fa-plus\"],[\"mod_scorm/popdown\",\"fa-regular fa-rectangle-xmark\"],[\"mod_scorm/popup\",\"fa-regular fa-window-restore\"],[\"mod_scorm/suspend\",\"fa fa-pause\"],[\"mod_scorm/wait\",\"fa fa-spinner fa-spin\"],[\"mod_scormlite/review\",\"fa fa-search\"],[\"mod_subsection/subsection\",\"fa fa-rectangle-list\"],[\"mod_topaze/grades\",\"fa fa-table\"],[\"mod_wiki/attachment\",\"fa fa-paperclip\"],[\"mod_workshop/userplan/task-done\",\"fa fa-clipboard-check text-success\"],[\"mod_workshop/userplan/task-fail\",\"fa fa-xmark text-danger\"],[\"mod_workshop/userplan/task-info\",\"fa fa-circle-info text-info\"],[\"mod_workshop/userplan/task-todo\",\"fa-regular fa-clipboard\"],[\"mod_zoom/i/calendar\",\"fa fa-calendar\"],[\"customfield_date/checked\",\"fa-regular fa-calendar-check\"],[\"customfield_date/notchecked\",\"fa-regular fa-calendar\"],[\"enrol_guest/withoutpassword\",\"fa fa-lock-open\"],[\"enrol_guest/withpassword\",\"fa fa-lock\"],[\"enrol_lti/enrolinstancewarning\",\"fa fa-triangle-exclamation text-danger\"],[\"enrol_lti/managedeployments\",\"fa fa-users-gear\"],[\"enrol_lti/platformdetails\",\"fa fa-square-pen\"],[\"enrol_self/withkey\",\"fa fa-key\"],[\"enrol_self/withoutkey\",\"fa-solid fa-right-to-bracket\"],[\"block_accessreview/smile\",\"fa-regular fa-smile\"],[\"block_accessreview/frown\",\"fa-regular fa-face-frown\"],[\"block_accessreview/errorsfound\",\"fa fa-ban\"],[\"block_accessreview/f/find\",\"fa fa-magnifying-glass\"],[\"block_accessreview/f/form\",\"fa fa-list-check\"],[\"block_accessreview/f/image\",\"fa fa-image\"],[\"block_accessreview/f/layout\",\"fa fa-table-cells-large\"],[\"block_accessreview/f/link\",\"fa fa-link\"],[\"block_accessreview/f/media\",\"fa fa-photo-film\"],[\"block_accessreview/f/pdf\",\"fa-regular fa-file-pdf\"],[\"block_accessreview/f/table\",\"fa fa-table\"],[\"block_accessreview/f/text\",\"fa fa-font\"],[\"block_accessreview/f/video\",\"fa-regular fa-file-video\"],[\"block_accessreview/t/fail\",\"fa fa-xmark\"],[\"block_accessreview/t/pass\",\"fa fa-check\"],[\"format_flexsections/mergeup\",\"fa fa-level-up\"],[\"format_tiles/tileicon/address-book-o\",\"fa fa-address-book-o\"],[\"format_tiles/tileicon/asterisk\",\"fa fa-asterisk\"],[\"format_tiles/tileicon/balance-scale\",\"fa fa-balance-scale\"],[\"format_tiles/tileicon/bar-chart\",\"fa fa-bar-chart\"],[\"format_tiles/tileicon/bell-o\",\"fa fa-bell-o\"],[\"format_tiles/tileicon/binoculars\",\"fa fa-binoculars\"],[\"format_tiles/tileicon/bitcoin\",\"fa fa-bitcoin\"],[\"format_tiles/tileicon/book\",\"fa fa-book\"],[\"format_tiles/tileicon/bookmark-o\",\"fa fa-bookmark-o\"],[\"format_tiles/tileicon/briefcase\",\"fa fa-briefcase\"],[\"format_tiles/tileicon/building\",\"fa fa-building\"],[\"format_tiles/tileicon/bullhorn\",\"fa fa-bullhorn\"],[\"format_tiles/tileicon/bullseye\",\"fa fa-bullseye\"],[\"format_tiles/tileicon/calculator\",\"fa fa-calculator\"],[\"format_tiles/tileicon/calendar\",\"fa fa-calendar\"],[\"format_tiles/tileicon/calendar-check-o\",\"fa fa-calendar-check-o\"],[\"format_tiles/tileicon/check\",\"fa fa-check\"],[\"format_tiles/tileicon/child\",\"fa fa-child\"],[\"format_tiles/tileicon/clock-o\",\"fa fa-clock-o\"],[\"format_tiles/tileicon/clone\",\"fa fa-clone\"],[\"format_tiles/tileicon/cloud-download\",\"fa fa-cloud-download\"],[\"format_tiles/tileicon/cloud-upload\",\"fa fa-cloud-upload\"],[\"format_tiles/tileicon/comment-o\",\"fa fa-comment-o\"],[\"format_tiles/tileicon/comments-o\",\"fa fa-comments-o\"],[\"format_tiles/tileicon/compass\",\"fa fa-compass\"],[\"format_tiles/tileicon/diamond\",\"fa fa-diamond\"],[\"format_tiles/tileicon/dollar\",\"fa fa-dollar\"],[\"format_tiles/tileicon/euro\",\"fa fa-euro\"],[\"format_tiles/tileicon/exclamation-triangle\",\"fa fa-exclamation-triangle\"],[\"format_tiles/tileicon/feed\",\"fa fa-feed\"],[\"format_tiles/tileicon/file-text-o\",\"fa fa-file-text-o\"],[\"format_tiles/tileicon/film\",\"fa fa-film\"],[\"format_tiles/tileicon/flag-checkered\",\"fa fa-flag-checkered\"],[\"format_tiles/tileicon/flag-o\",\"fa fa-flag-o\"],[\"format_tiles/tileicon/flash\",\"fa fa-flash\"],[\"format_tiles/tileicon/flask\",\"fa fa-flask\"],[\"format_tiles/tileicon/frown-o\",\"fa fa-frown-o\"],[\"format_tiles/tileicon/gavel\",\"fa fa-gavel\"],[\"format_tiles/tileicon/gbp\",\"fa fa-gbp\"],[\"format_tiles/tileicon/globe\",\"fa fa-globe\"],[\"format_tiles/tileicon/handshake-o\",\"fa fa-handshake-o\"],[\"format_tiles/tileicon/headphones\",\"fa fa-headphones\"],[\"format_tiles/tileicon/heartbeat\",\"fa fa-heartbeat\"],[\"format_tiles/tileicon/history\",\"fa fa-history\"],[\"format_tiles/tileicon/home\",\"fa fa-home\"],[\"format_tiles/tileicon/id-card-o\",\"fa fa-id-card-o\"],[\"format_tiles/tileicon/info\",\"fa fa-info\"],[\"format_tiles/tileicon/key\",\"fa fa-key\"],[\"format_tiles/tileicon/laptop\",\"fa fa-laptop\"],[\"format_tiles/tileicon/life-buoy\",\"fa fa-life-buoy\"],[\"format_tiles/tileicon/lightbulb-o\",\"fa fa-lightbulb-o\"],[\"format_tiles/tileicon/line-chart\",\"fa fa-line-chart\"],[\"format_tiles/tileicon/list\",\"fa fa-list\"],[\"format_tiles/tileicon/list-ol\",\"fa fa-list-ol\"],[\"format_tiles/tileicon/location-arrow\",\"fa fa-location-arrow\"],[\"format_tiles/tileicon/map-marker\",\"fa fa-map-marker\"],[\"format_tiles/tileicon/map-o\",\"fa fa-map-o\"],[\"format_tiles/tileicon/map-signs\",\"fa fa-map-signs\"],[\"format_tiles/tileicon/microphone\",\"fa fa-microphone\"],[\"format_tiles/tileicon/mobile-phone\",\"fa fa-mobile-phone\"],[\"format_tiles/tileicon/mortar-board\",\"fa fa-mortar-board\"],[\"format_tiles/tileicon/music\",\"fa fa-music\"],[\"format_tiles/tileicon/newspaper-o\",\"fa fa-newspaper-o\"],[\"format_tiles/tileicon/pencil-square-o\",\"fa fa-pencil-square-o\"],[\"format_tiles/tileicon/pie-chart\",\"fa fa-pie-chart\"],[\"format_tiles/tileicon/podcast\",\"fa fa-podcast\"],[\"format_tiles/tileicon/puzzle-piece\",\"fa fa-puzzle-piece\"],[\"format_tiles/tileicon/question-circle\",\"fa fa-question-circle\"],[\"format_tiles/tileicon/random\",\"fa fa-random\"],[\"format_tiles/tileicon/refresh\",\"fa fa-refresh\"],[\"format_tiles/tileicon/road\",\"fa fa-road\"],[\"format_tiles/tileicon/search\",\"fa fa-search\"],[\"format_tiles/tileicon/sliders\",\"fa fa-sliders\"],[\"format_tiles/tileicon/smile-o\",\"fa fa-smile-o\"],[\"format_tiles/tileicon/star\",\"fa fa-star\"],[\"format_tiles/tileicon/star-half-o\",\"fa fa-star-half-o\"],[\"format_tiles/tileicon/star-o\",\"fa fa-star-o\"],[\"format_tiles/tileicon/tags\",\"fa fa-tags\"],[\"format_tiles/tileicon/tasks\",\"fa fa-tasks\"],[\"format_tiles/tileicon/television\",\"fa fa-television\"],[\"format_tiles/tileicon/thumbs-o-down\",\"fa fa-thumbs-o-down\"],[\"format_tiles/tileicon/thumbs-o-up\",\"fa fa-thumbs-o-up\"],[\"format_tiles/tileicon/trophy\",\"fa fa-trophy\"],[\"format_tiles/tileicon/umbrella\",\"fa fa-umbrella\"],[\"format_tiles/tileicon/university\",\"fa fa-university\"],[\"format_tiles/tileicon/user-o\",\"fa fa-user-o\"],[\"format_tiles/tileicon/users\",\"fa fa-users\"],[\"format_tiles/tileicon/volume-up\",\"fa fa-volume-up\"],[\"format_tiles/tileicon/wrench\",\"fa fa-wrench\"],[\"format_tiles/camera\",\"fa fa-camera\"],[\"format_tiles/check\",\"fa fa-check\"],[\"format_tiles/chevron-left\",\"fa fa-chevron-left\"],[\"format_tiles/chevron-right\",\"fa fa-chevron-right\"],[\"format_tiles/chevron-up\",\"fa fa-chevron-up\"],[\"format_tiles/clone\",\"fa fa-clone\"],[\"format_tiles/close\",\"fa fa-close\"],[\"format_tiles/cloud-download\",\"fa fa-cloud-download\"],[\"format_tiles/cloud-upload\",\"fa fa-cloud-upload\"],[\"format_tiles/completion-check\",\"fa fa-check\"],[\"format_tiles/completion-fail\",\"fa fa-times\"],[\"format_tiles/eye-slash\",\"fa fa-eye-slash\"],[\"format_tiles/filter\",\"fa fa-filter\"],[\"format_tiles/home\",\"fa fa-home\"],[\"format_tiles/image\",\"fa fa-image\"],[\"format_tiles/lock\",\"fa fa-lock\"],[\"format_tiles/pencil\",\"fa fa-pencil\"],[\"format_tiles/random\",\"fa fa-random\"],[\"format_tiles/sort\",\"fa fa-sort\"],[\"format_tiles/toggle-off\",\"fa fa-toggle-off\"],[\"format_tiles/toggle-on\",\"fa fa-toggle-on\"],[\"gradingform_guide/info\",\"fa fa-circle-info\"],[\"gradingform_guide/plus\",\"fa fa-circle-plus\"],[\"tool_brickfield/f/award\",\"fa fa-trophy\"],[\"tool_brickfield/f/done\",\"fa fa-check\"],[\"tool_brickfield/f/done2\",\"fa fa-check-double\"],[\"tool_brickfield/f/error\",\"fa fa-xmark\"],[\"tool_brickfield/f/find\",\"fa fa-magnifying-glass\"],[\"tool_brickfield/f/form\",\"fa fa-list-check\"],[\"tool_brickfield/f/image\",\"fa fa-image\"],[\"tool_brickfield/f/layout\",\"fa fa-table-cells-large\"],[\"tool_brickfield/f/link\",\"fa fa-link\"],[\"tool_brickfield/f/media\",\"fa fa-photo-film\"],[\"tool_brickfield/f/table\",\"fa fa-table\"],[\"tool_brickfield/f/text\",\"fa fa-font\"],[\"tool_brickfield/f/total\",\"fa fa-calculator\"],[\"tool_lp/url\",\"fa fa-arrow-up-right-from-square\"],[\"tool_policy/agreed\",\"fa fa-check text-success\"],[\"tool_policy/declined\",\"fa fa-xmark text-danger\"],[\"tool_policy/level\",\"fa fa-turn-up fa-rotate-90 text-muted\"],[\"tool_policy/partial\",\"fa fa-triangle-exclamation text-warning\"],[\"tool_policy/pending\",\"fa-regular fa-clock text-warning\"],[\"tool_recyclebin/trash\",\"fa fa-trash-can-arrow-up\"],[\"tool_usertours/i/tour-import\",\"fa fa-upload\"],[\"tool_usertours/i/tour-new\",\"fa fa-file-circle-plus\"],[\"tool_usertours/i/tour-shared\",\"fa fa-share-from-square\"],[\"tool_usertours/i/reload\",\"fa fa-arrow-rotate-right\"],[\"tool_usertours/t/export\",\"fa fa-download\"],[\"tool_usertours/t/filler\",\"fa fa-spacer\"],[\"theme_boost_union/info\",\"fa fa-info-circle\"],[\"atto_collapse/icon\",\"fa fa-chevron-down\"],[\"atto_recordrtc/i/audiortc\",\"fa fa-microphone\"],[\"atto_recordrtc/i/videortc\",\"fa fa-video\"]]",
+    "value_length": 28172,
+    "initial_url": "https://moodle.univ-lille.fr",
+    "final_url": "https://infotuto.univ-lille.fr/toutes-les-fiches?tx_kesearch_pi1%5Bpage%5D=1&tx_kesearch_pi1%5Bsword%5D=cancer&cHash=7579dac31b5a063ef4537291aa021959",
+    "timestamp": "2025-12-04T10:51:28.244904"
+  },
+  {
+    "task_id": "20",
+    "key": "423506066/core_template/1763381534:boost_union/core/loading",
+    "value": "\n\n<span class=\"loading-icon icon-no-margin\">{{#pix}} i/loading, core, {{#str}} loading {{/str}} {{/pix}}</span>\n",
+    "value_length": 112,
+    "initial_url": "https://moodle.univ-lille.fr",
+    "final_url": "https://infotuto.univ-lille.fr/toutes-les-fiches?tx_kesearch_pi1%5Bpage%5D=1&tx_kesearch_pi1%5Bsword%5D=cancer&cHash=7579dac31b5a063ef4537291aa021959",
+    "timestamp": "2025-12-04T10:51:28.244904"
+  },
+  {
+    "task_id": "20",
+    "key": "423506066/core_str/savechanges/core/fr",
+    "value": "Enregistrer",
+    "value_length": 11,
+    "initial_url": "https://moodle.univ-lille.fr",
+    "final_url": "https://infotuto.univ-lille.fr/toutes-les-fiches?tx_kesearch_pi1%5Bpage%5D=1&tx_kesearch_pi1%5Bsword%5D=cancer&cHash=7579dac31b5a063ef4537291aa021959",
+    "timestamp": "2025-12-04T10:51:28.244904"
+  },
+  {
+    "task_id": "20",
+    "key": "423506066/core_str/loading/core/fr",
+    "value": "Chargement",
+    "value_length": 10,
+    "initial_url": "https://moodle.univ-lille.fr",
+    "final_url": "https://infotuto.univ-lille.fr/toutes-les-fiches?tx_kesearch_pi1%5Bpage%5D=1&tx_kesearch_pi1%5Bsword%5D=cancer&cHash=7579dac31b5a063ef4537291aa021959",
+    "timestamp": "2025-12-04T10:51:28.244904"
+  },
+  {
+    "task_id": "20",
+    "key": "423506066/core_template/1763381534:boost_union/core/modal_backdrop",
+    "value": "\n\n<div class=\"modal-backdrop in hide\" aria-hidden=\"true\" data-region=\"modal-backdrop\"></div>\n",
+    "value_length": 93,
+    "initial_url": "https://moodle.univ-lille.fr",
+    "final_url": "https://infotuto.univ-lille.fr/toutes-les-fiches?tx_kesearch_pi1%5Bpage%5D=1&tx_kesearch_pi1%5Bsword%5D=cancer&cHash=7579dac31b5a063ef4537291aa021959",
+    "timestamp": "2025-12-04T10:51:28.244904"
+  },
+  {
+    "task_id": "20",
+    "key": "423506066/core_template/1763381534:boost_union/core/modal_cancel",
+    "value": "\n\n\n{{< core/modal }}\n    {{$footer}}\n        <button type=\"button\" class=\"btn btn-secondary\" data-action=\"cancel\">{{#str}} cancel {{/str}}</button>\n    {{/footer}}\n{{/ core/modal }}\n",
+    "value_length": 182,
+    "initial_url": "https://moodle.univ-lille.fr",
+    "final_url": "https://infotuto.univ-lille.fr/toutes-les-fiches?tx_kesearch_pi1%5Bpage%5D=1&tx_kesearch_pi1%5Bsword%5D=cancer&cHash=7579dac31b5a063ef4537291aa021959",
+    "timestamp": "2025-12-04T10:51:28.244904"
+  },
+  {
+    "task_id": "20",
+    "key": "423506066/core_str/showmore/core_form/fr",
+    "value": "Afficher plus…",
+    "value_length": 14,
+    "initial_url": "https://moodle.univ-lille.fr",
+    "final_url": "https://infotuto.univ-lille.fr/toutes-les-fiches?tx_kesearch_pi1%5Bpage%5D=1&tx_kesearch_pi1%5Bsword%5D=cancer&cHash=7579dac31b5a063ef4537291aa021959",
+    "timestamp": "2025-12-04T10:51:28.244904"
+  },
+  {
+    "task_id": "32",
+    "key": "tgt:tlm:0",
+    "value": "{\"execution\":809.6,\"parsing\":0,\"request\":{\"tls\":67.9,\"timeToFirstByte\":81.6,\"download\":0.7,\"responseSize\":389},\"telemetryServerToken\":\"kZ8/JTuvKyAVXXrxfcYga9oAtiP7ynDX9BzAvzRPq+Q=\",\"mode\":\"edge\",\"features\":{\"executePageLoad\":true,\"prefetchViewCount\":1,\"decisioningMethod\":\"server-side\"},\"requestId\":\"6319f07e88de4715b36fa7321e172620\",\"timestamp\":1764843234181}",
+    "value_length": 360,
+    "initial_url": "https://www.zooplus.fr",
+    "final_url": "https://www.zooplus.fr/shop/chiens/croquettes_chien?filters=phase_of_life_dog%3Dphase.dog.adult",
+    "timestamp": "2025-12-04T11:16:39.046081"
+  },
+  {
+    "task_id": "106",
+    "key": "kameleoonLegalConsent",
+    "value": "{\"value\":{\"AB_TESTING\":false,\"PERSONALIZATION\":false},\"expirationDate\":1796384905173}",
+    "value_length": 85,
+    "initial_url": "https://particuliers.sg.fr",
+    "final_url": "https://ouvrir-un-compte-en-ligne.sg.fr/RDV/s/",
+    "timestamp": "2025-12-04T12:50:04.867108"
+  },
+  {
+    "task_id": "106",
+    "key": "tc_history",
+    "value": "[{\"page_at\":\"accueil::generique::home\",\"page_url\":\"/\",\"page_hostname\":\"particuliers.sg.fr\",\"timestamp\":1764848905356}]",
+    "value_length": 118,
+    "initial_url": "https://particuliers.sg.fr",
+    "final_url": "https://ouvrir-un-compte-en-ligne.sg.fr/RDV/s/",
+    "timestamp": "2025-12-04T12:50:04.867108"
+  },
+  {
+    "task_id": "106",
+    "key": "etuix",
+    "value": "lmHY8El_c2qQ8cdHpNyPSp4BUFSAYv.9LteBi176aGBB5R_l6vy49g--",
+    "value_length": 56,
+    "initial_url": "https://particuliers.sg.fr",
+    "final_url": "https://ouvrir-un-compte-en-ligne.sg.fr/RDV/s/",
+    "timestamp": "2025-12-04T12:50:04.867108"
+  },
+  {
+    "task_id": "123",
+    "key": "www.nouvelobs.com_fa_Y2FjaGVfaXNfYmxvY2tpbmdfYWRz",
+    "value": "false",
+    "value_length": 5,
+    "initial_url": "https://www.nouvelobs.com",
+    "final_url": "https://abo.nouvelobs.com/",
+    "timestamp": "2025-12-04T13:07:24.687005"
+  },
+  {
+    "task_id": "123",
+    "key": "www.nouvelobs.com_fa_Y2FjaGVfaXNfYmxvY2tpbmdfYWNjZXB0YWJsZV9hZHM=",
+    "value": "true",
+    "value_length": 4,
+    "initial_url": "https://www.nouvelobs.com",
+    "final_url": "https://abo.nouvelobs.com/",
+    "timestamp": "2025-12-04T13:07:24.687005"
+  },
+  {
+    "task_id": "123",
+    "key": "www.nouvelobs.com_fa_bGFzdF9iZmFfYXQ=",
+    "value": "1764847405950",
+    "value_length": 13,
+    "initial_url": "https://www.nouvelobs.com",
+    "final_url": "https://abo.nouvelobs.com/",
+    "timestamp": "2025-12-04T13:07:24.687005"
+  },
+  {
+    "task_id": "123",
+    "key": "www.nouvelobs.com_fa_Y2FjaGVfYWRibG9ja19jaXJjdW12ZW50X3Njb3Jl",
+    "value": "0",
+    "value_length": 1,
+    "initial_url": "https://www.nouvelobs.com",
+    "final_url": "https://abo.nouvelobs.com/",
+    "timestamp": "2025-12-04T13:07:24.687005"
+  },
+  {
+    "task_id": "130",
+    "key": "poool-engage",
+    "value": "{\"pageViews\":{\"total\":1,\"2025/12/04\":1}}",
+    "value_length": 40,
+    "initial_url": "https://www.sudouest.fr",
+    "final_url": "https://abonnement.sudouest.fr/produits/thematiques",
+    "timestamp": "2025-12-04T13:17:56.600336"
+  },
+  {
+    "task_id": "130",
+    "key": "userinfo",
+    "value": "{\"activeSession\":false,\"date\":{\"small\":\"04/12/2025\",\"medium\":\"4 décembre 2025\",\"full\":\"Jeudi  4 décembre 2025\"},\"userData\":{\"id\":null,\"subscriberId\":null,\"pseudo\":null,\"title\":null,\"firstName\":null,\"lastName\":null,\"email\":null,\"emailStatus\":null,\"md5_email\":null,\"inseeCode\":null,\"postalCode\":null,\"city\":null,\"birthday\":null,\"status\":0,\"type\":null,\"nb_archive\":0,\"messagesContrats\":null,\"cb\":null,\"bounce_type\":\"NA\",\"bounce_date\":null,\"np6_id\":null,\"phone_number\":null},\"mailingsData\":{\"newsletter\":false,\"MaNewsletter\":false,\"newsletterEco\":false,\"MaNewsletterEco\":false,\"alertes\":false,\"MesAlertes\":false,\"MaNewsletterAgen\":false,\"MaNewsletterBayonne\":false,\"MaNewsletterBordeaux\":false,\"MaNewsletterFootball\":false,\"MaNewsletterLaRochelle\":false,\"MaNewsletterMontDeMarsan\":false,\"MaNewsletterPau\":false,\"MaNewsletterPerigueux\":false,\"MaNewsletterRugby\":false,\"MaNewsletterEditionSoir\":false,\"MaNewsletterLettreMensuelle\":false,\"MaNewsletterImmanquables\":false,\"MaNewsletterConcours\":false,\"MaNewsletterRun\":false,\"MaNewsletterArchives\":false,\"MaNewsletterIdees\":false,\"MonAlerteAboPremium\":false,\"MaNewsletterPolitiqueGenerale\":false,\"MaNewsletterPolitiqueGironde\":false,\"MaNewsletterGastronomie\":false,\"MaNewsletterSante\":false,\"MaNewsletterSOetVous\":false,\"MaNewsletterALaUne\":false,\"MaNewsletterInitiativesSolidaires\":false,\"MaNewsletterPlateauTele\":false,\"MaNewsletterSports\":false,\"MaNewsletterParentalite\":false,\"MaNewsletterBassinArcachon\":false,\"MaNewsletterParolesCitoyennes\":false,\"group\":false,\"offres_site\":false,\"partner\":false},\"avatarData\":{\"url\":null},\"subscriptionsData\":{\"isSubscriber\":false,\"isPremium\":false,\"benefits\":[]},\"urls\":{\"envbase\":\"prod\",\"inscription\":\"https://abonnement.sudouest.fr/gestion/\",\"front\":\"http://www.sudouest.fr\",\"profil\":\"https://profil.sudouest.fr\"},\"errorMessage\":null}",
+    "value_length": 1820,
+    "initial_url": "https://www.sudouest.fr",
+    "final_url": "https://abonnement.sudouest.fr/produits/thematiques",
+    "timestamp": "2025-12-04T13:17:56.600336"
+  },
+  {
+    "task_id": "130",
+    "key": "didomi_token",
+    "value": "eyJ1c2VyX2lkIjoiMTlhZTk0ODMtNmI5ZC02NjA3LWFiMzEtZDhjM2EzYzIwN2E5IiwiY3JlYXRlZCI6IjIwMjUtMTItMDRUMTI6MTM6MzUuMjg5WiIsInVwZGF0ZWQiOiIyMDI1LTEyLTA0VDEyOjEzOjM1LjI4OVoiLCJ2ZXJzaW9uIjpudWxsfQ==",
+    "value_length": 188,
+    "initial_url": "https://www.sudouest.fr",
+    "final_url": "https://abonnement.sudouest.fr/produits/thematiques",
+    "timestamp": "2025-12-04T13:17:56.600336"
+  },
+  {
+    "task_id": "137",
+    "key": "tgt:tlm:3",
+    "value": "{\"execution\":316.6,\"parsing\":0.1,\"request\":{\"tls\":57.2,\"timeToFirstByte\":74.5,\"download\":1.6,\"responseSize\":384},\"telemetryServerToken\":\"13OD8mmKQLOFlv9DVqEli1ew9sFTzhfyMuo0CXXS9z0=\",\"mode\":\"edge\",\"features\":{\"executePageLoad\":true,\"prefetchViewCount\":1,\"decisioningMethod\":\"server-side\"},\"requestId\":\"bf56e26b42e14a6bb403e3ff720bd79f\",\"timestamp\":1764851299771}",
+    "value_length": 362,
+    "initial_url": "https://www.zooplus.fr",
+    "final_url": "https://www.zooplus.fr/shop/chiens/croquettes_chien/croquettes_chien_purina_veterinary_diets",
+    "timestamp": "2025-12-04T13:29:42.863862"
+  },
+  {
+    "task_id": "192",
+    "key": "423506066/core_template/1763381534:boost_union/core/modal",
+    "value": "\n\n\n<div class=\"modal moodle-has-zindex\" data-region=\"modal-container\" aria-hidden=\"true\" role=\"dialog\" aria-modal=\"true\" aria-labelledby=\"{{uniqid}}-modal-title\">\n    <div class=\"modal-dialog {{$classes}}{{classes}}{{/classes}}\" data-region=\"modal\" tabindex=\"0\">\n        <div class=\"modal-content\">\n            <div class=\"modal-header {{$headerclasses}}{{headerclasses}}{{/headerclasses}}\" data-region=\"header\">\n\n                {{$header}}\n                    <h5 id=\"{{uniqid}}-modal-title\" class=\"modal-title\" data-region=\"title\">{{$title}}{{title}}{{/title}}</h5>\n                {{/header}}\n                <button type=\"button\" class=\"btn-close\" data-action=\"hide\" aria-label=\"{{#cleanstr}}closebuttontitle{{/cleanstr}}\">\n                  <span aria-hidden=\"true\">&times;</span>\n                </button>\n            </div>\n            <div class=\"modal-body\" data-region=\"body\">\n                {{$body}}\n                    {{{body}}}\n                {{/body}}\n            </div>\n            <div class=\"modal-footer\" data-region=\"footer\">\n                {{$footer}}\n                    {{{footer}}}\n                {{/footer}}\n            </div>\n        </div>\n    </div>\n</div>\n",
+    "value_length": 1191,
+    "initial_url": "https://moodle.univ-lille.fr",
+    "final_url": "https://infotuto.univ-lille.fr/fiche/parametrer-ses-preferences-pour-mieux-gerer-les-informations-moodle",
+    "timestamp": "2025-12-04T14:41:03.128174"
+  },
+  {
+    "task_id": "192",
+    "key": "423506066/core_template/1763381534:boost_union/core/pix_icon_fontawesome",
+    "value": "\n\n{{^unmappedIcon}}\n<i class=\"icon {{key}} fa-fw {{extraclasses}}\"{{#aria-hidden}} aria-hidden=\"true\"{{/aria-hidden}} {{#title}} title=\"{{title}}\"{{/title}}{{^aria-hidden}}{{#alt}} role=\"img\" aria-label=\"{{alt}}\"{{/alt}}{{/aria-hidden}}></i>\n{{/unmappedIcon}}\n{{#unmappedIcon}}\n\n<img class=\"icon {{extraclasses}}\" {{#attributes}}{{name}}=\"{{value}}\" {{/attributes}}/>\n{{/unmappedIcon}}\n",
+    "value_length": 386,
+    "initial_url": "https://moodle.univ-lille.fr",
+    "final_url": "https://infotuto.univ-lille.fr/fiche/parametrer-ses-preferences-pour-mieux-gerer-les-informations-moodle",
+    "timestamp": "2025-12-04T14:41:03.128174"
+  },
+  {
+    "task_id": "192",
+    "key": "423506066/core_str/cancel/core/fr",
+    "value": "Annuler",
+    "value_length": 7,
+    "initial_url": "https://moodle.univ-lille.fr",
+    "final_url": "https://infotuto.univ-lille.fr/fiche/parametrer-ses-preferences-pour-mieux-gerer-les-informations-moodle",
+    "timestamp": "2025-12-04T14:41:03.128174"
+  },
+  {
+    "task_id": "192",
+    "key": "423506066/core_str/closebuttontitle/core/fr",
+    "value": "Fermer",
+    "value_length": 6,
+    "initial_url": "https://moodle.univ-lille.fr",
+    "final_url": "https://infotuto.univ-lille.fr/fiche/parametrer-ses-preferences-pour-mieux-gerer-les-informations-moodle",
+    "timestamp": "2025-12-04T14:41:03.128174"
+  },
+  {
+    "task_id": "192",
+    "key": "423506066/sUserLogintime",
+    "value": "0",
+    "value_length": 1,
+    "initial_url": "https://moodle.univ-lille.fr",
+    "final_url": "https://infotuto.univ-lille.fr/fiche/parametrer-ses-preferences-pour-mieux-gerer-les-informations-moodle",
+    "timestamp": "2025-12-04T14:41:03.128174"
+  },
+  {
+    "task_id": "192",
+    "key": "423506066/core_str/showless/core_form/fr",
+    "value": "Afficher moins…",
+    "value_length": 15,
+    "initial_url": "https://moodle.univ-lille.fr",
+    "final_url": "https://infotuto.univ-lille.fr/fiche/parametrer-ses-preferences-pour-mieux-gerer-les-informations-moodle",
+    "timestamp": "2025-12-04T14:41:03.128174"
+  },
+  {
+    "task_id": "192",
+    "key": "423506066/core_iconsystem/theme/boost_union/core/iconmap-fontawesome",
+    "value": "[[\"core/docs\",\"fa fa-circle-info\"],[\"core/book\",\"fa fa-book\"],[\"core/help\",\"fa fa-circle-question text-info\"],[\"core/req\",\"fa fa-circle-exclamation text-danger\"],[\"core/a/add_file\",\"fa fa-circle-plus\"],[\"core/a/create_folder\",\"fa fa-folder-plus\"],[\"core/a/download_all\",\"fa fa-download\"],[\"core/a/help\",\"fa fa-circle-question text-info\"],[\"core/a/logout\",\"fa fa-arrow-right-to-bracket\"],[\"core/a/refresh\",\"fa fa-arrows-rotate\"],[\"core/a/search\",\"fa fa-magnifying-glass\"],[\"core/a/setting\",\"fa fa-gear\"],[\"core/a/view_icon_active\",\"fa fa-border-all\"],[\"core/a/view_list_active\",\"fa fa-list\"],[\"core/a/view_tree_active\",\"fa fa-folder-tree\"],[\"core/b/bookmark-new\",\"fa-regular fa-bookmark\"],[\"core/b/document-edit\",\"fa fa-pen\"],[\"core/b/document-new\",\"fa fa-file-circle-plus\"],[\"core/b/document-properties\",\"fa fa-wrench\"],[\"core/b/edit-copy\",\"fa fa-pen\"],[\"core/b/edit-delete\",\"fa fa-trash-can\"],[\"core/e/abbr\",\"fa-regular fa-message\"],[\"core/e/absolute\",\"fa fa-crosshairs\"],[\"core/e/accessibility_checker\",\"fa fa-universal-access\"],[\"core/e/acronym\",\"fa-regular fa-comment\"],[\"core/e/advance_hr\",\"fa fa-arrows-left-right\"],[\"core/e/align_center\",\"fa fa-align-center\"],[\"core/e/align_left\",\"fa fa-align-left\"],[\"core/e/align_right\",\"fa fa-align-right\"],[\"core/e/anchor\",\"fa fa-anchor\"],[\"core/e/backward\",\"fa fa-arrow-left\"],[\"core/e/bold\",\"fa fa-bold\"],[\"core/e/bullet_list\",\"fa fa-list-ul\"],[\"core/e/cancel\",\"fa fa-xmark\"],[\"core/e/cancel_solid_circle\",\"fa fa-circle-xmark\"],[\"core/e/cell_props\",\"fa fa-info\"],[\"core/e/cite\",\"fa fa-quote-right\"],[\"core/e/cleanup_messy_code\",\"fa fa-delete-left\"],[\"core/e/clear_formatting\",\"fa fa-eraser\"],[\"core/e/copy\",\"fa-regular fa-clone\"],[\"core/e/cut\",\"fa fa-scissors\"],[\"core/e/decrease_indent\",\"fa fa-outdent\"],[\"core/e/delete_col\",\"fa fa-minus\"],[\"core/e/delete_row\",\"fa fa-minus\"],[\"core/e/delete\",\"fa fa-trash-can\"],[\"core/e/delete_table\",\"fa fa-trash-can\"],[\"core/e/document_properties\",\"fa fa-wrench\"],[\"core/e/emoticons\",\"fa-regular fa-face-smile\"],[\"core/e/find_replace\",\"fa fa-magnifying-glass-plus\"],[\"core/e/file-text\",\"fa-regular fa-file-text\"],[\"core/e/forward\",\"fa fa-arrow-right\"],[\"core/e/fullpage\",\"fa fa-maximize\"],[\"core/e/fullscreen\",\"fa-solid fa-expand\"],[\"core/e/help\",\"fa fa-circle-question\"],[\"core/e/increase_indent\",\"fa fa-indent\"],[\"core/e/insert_col_after\",\"fa fa-columns\"],[\"core/e/insert_col_before\",\"fa fa-columns\"],[\"core/e/insert_date\",\"fa-regular fa-calendar-plus\"],[\"core/e/insert_edit_image\",\"fa-regular fa-image\"],[\"core/e/insert_edit_link\",\"fa fa-link\"],[\"core/e/insert_edit_video\",\"fa-regular fa-file-video\"],[\"core/e/insert_file\",\"fa-regular fa-file\"],[\"core/e/insert_horizontal_ruler\",\"fa fa-ruler-horizontal\"],[\"core/e/insert_nonbreaking_space\",\"fa-regular fa-square\"],[\"core/e/insert_page_break\",\"fa fa-plus\"],[\"core/e/insert_row_after\",\"fa fa-plus\"],[\"core/e/insert_row_before\",\"fa fa-plus\"],[\"core/e/insert\",\"fa fa-plus\"],[\"core/e/insert_time\",\"fa-regular fa-clock\"],[\"core/e/italic\",\"fa fa-italic\"],[\"core/e/justify\",\"fa fa-align-justify\"],[\"core/e/layers_over\",\"fa fa-turn-up\"],[\"core/e/layers\",\"fa fa-layer-group\"],[\"core/e/layers_under\",\"fa fa-turn-down\"],[\"core/e/left_to_right\",\"fa fa-angles-right\"],[\"core/e/manage_files\",\"fa fa-laptop-file\"],[\"core/e/math\",\"fa fa-square-root-variable\"],[\"core/e/merge_cells\",\"fa fa-arrows-to-circle\"],[\"core/e/new_document\",\"fa fa-file-circle-plus\"],[\"core/e/numbered_list\",\"fa fa-list-ol\"],[\"core/e/page_break\",\"fa fa-arrows-left-right-to-line\"],[\"core/e/paste\",\"fa fa-paste\"],[\"core/e/paste_text\",\"fa fa-paste\"],[\"core/e/paste_word\",\"fa fa-paste\"],[\"core/e/prevent_autolink\",\"fa fa-exclamation\"],[\"core/e/preview\",\"fa fa-magnifying-glass-plus\"],[\"core/e/print\",\"fa fa-print\"],[\"core/e/question\",\"fa fa-question\"],[\"core/e/redo\",\"fa fa-arrow-rotate-right\"],[\"core/e/remove_link\",\"fa fa-link-slash\"],[\"core/e/remove_page_break\",\"fa fa-xmark\"],[\"core/e/resize\",\"fa fa-up-right-and-down-left-from-center\"],[\"core/e/restore_draft\",\"fa fa-trash-can-arrow-up\"],[\"core/e/restore_last_draft\",\"fa fa-clock-rotate-left\"],[\"core/e/right_to_left\",\"fa fa-angles-left\"],[\"core/e/row_props\",\"fa fa-info\"],[\"core/e/save\",\"fa-regular fa-floppy-disk\"],[\"core/e/screenreader_helper\",\"fa fa-ear-listen\"],[\"core/e/search\",\"fa fa-magnifying-glass\"],[\"core/e/select_all\",\"fa fa-square-check\"],[\"core/e/show_invisible_characters\",\"fa-solid fa-eye\"],[\"core/e/source_code\",\"fa fa-code\"],[\"core/e/special_character\",\"fa fa-pen-to-square\"],[\"core/e/spellcheck\",\"fa fa-spell-check\"],[\"core/e/split_cells\",\"fa fa-table-columns\"],[\"core/e/strikethrough\",\"fa fa-strikethrough\"],[\"core/e/styleparagraph\",\"fa fa-font\"],[\"core/e/subscript\",\"fa fa-subscript\"],[\"core/e/superscript\",\"fa fa-superscript\"],[\"core/e/table_props\",\"fa fa-table\"],[\"core/e/table\",\"fa fa-table\"],[\"core/e/template\",\"fa fa-file-invoice\"],[\"core/e/text_color_picker\",\"fa fa-eye-dropper\"],[\"core/e/text_color\",\"fa fa-paint-brush\"],[\"core/e/text_highlight_picker\",\"fa-solid fa-highlighter\"],[\"core/e/text_highlight\",\"fa-solid fa-highlighter\"],[\"core/e/tick\",\"fa fa-check\"],[\"core/e/toggle_blockquote\",\"fa fa-quote-left\"],[\"core/e/underline\",\"fa fa-underline\"],[\"core/e/undo\",\"fa fa-rotate-left\"],[\"core/e/visual_aid\",\"fa fa-universal-access\"],[\"core/e/visual_blocks\",\"fa fa-audio-description\"],[\"theme/fp/add_file\",\"fa fa-file-circle-plus\"],[\"theme/fp/alias\",\"fa fa-share\"],[\"theme/fp/alias_sm\",\"fa fa-share\"],[\"theme/fp/check\",\"fa fa-check\"],[\"theme/fp/create_folder\",\"fa fa-folder-plus\"],[\"theme/fp/cross\",\"fa fa-xmark\"],[\"theme/fp/download_all\",\"fa fa-download\"],[\"theme/fp/help\",\"fa fa-question-circle\"],[\"theme/fp/link\",\"fa fa-link\"],[\"theme/fp/link_sm\",\"fa fa-link\"],[\"theme/fp/logout\",\"fa fa-arrow-right-from-bracket\"],[\"theme/fp/path_folder\",\"fa fa-folder\"],[\"theme/fp/path_folder_rtl\",\"fa fa-folder\"],[\"theme/fp/refresh\",\"fa fa-arrows-rotate\"],[\"theme/fp/search\",\"fa fa-magnifying-glass\"],[\"theme/fp/setting\",\"fa fa-gear\"],[\"theme/fp/view_icon_active\",\"fa fa-border-all\"],[\"theme/fp/view_list_active\",\"fa fa-list\"],[\"theme/fp/view_tree_active\",\"fa fa-folder-tree\"],[\"core/i/activities\",\"fa fa-file-pen\"],[\"core/i/addblock\",\"fa-regular fa-square-plus\"],[\"core/i/assignroles\",\"fa fa-user-tag\"],[\"core/i/asterisk\",\"fa fa-asterisk\"],[\"core/i/backup\",\"fa fa-circle-arrow-down\"],[\"core/i/badge\",\"fa fa-award\"],[\"core/i/breadcrumbdivider\",\"fa fa-chevron-right\"],[\"core/i/bullhorn\",\"fa fa-bullhorn\"],[\"core/i/calc\",\"fa fa-calculator\"],[\"core/i/calendar\",\"fa-regular fa-calendar\"],[\"core/i/calendareventdescription\",\"fa fa-align-left\"],[\"core/i/calendareventtime\",\"fa-regular fa-clock\"],[\"core/i/categoryevent\",\"fa fa-shapes\"],[\"core/i/caution\",\"fa fa-warning text-warning\"],[\"core/i/chartbar\",\"fa fa-chart-bar\"],[\"core/i/checked\",\"fa fa-check\"],[\"core/i/checkedcircle\",\"fa fa-circle-check\"],[\"core/i/checkpermissions\",\"fa fa-user-lock\"],[\"core/i/circleinfo\",\"fa fa-circle-info\"],[\"core/i/cloudupload\",\"fa fa-cloud-upload\"],[\"core/i/cohort\",\"fa fa-users-line\"],[\"core/i/competencies\",\"fa fa-list-check\"],[\"core/i/completion_self\",\"fa fa-user-check\"],[\"core/i/contentbank\",\"fa fa-laptop-file\"],[\"core/i/course\",\"fa fa-graduation-cap\"],[\"core/i/courseevent\",\"fa fa-graduation-cap\"],[\"core/i/customfield\",\"fa fa-cog\"],[\"core/i/dashboard\",\"fa fa-gauge\"],[\"core/i/db\",\"fa fa-database\"],[\"core/i/delete\",\"fa fa-trash-can\"],[\"core/i/down\",\"fa fa-arrow-down\"],[\"core/i/dragdrop\",\"fa fa-arrows-up-down-left-right\"],[\"core/i/duration\",\"fa fa-hourglass\"],[\"core/i/edit\",\"fa fa-pen\"],[\"core/i/email\",\"fa fa-envelope\"],[\"core/i/emojicategoryactivities\",\"fa fa-futbol\"],[\"core/i/emojicategoryanimalsnature\",\"fa fa-leaf\"],[\"core/i/emojicategoryflags\",\"fa fa-flag\"],[\"core/i/emojicategoryfooddrink\",\"fa fa-pizza-slice\"],[\"core/i/emojicategoryobjects\",\"fa fa-hammer\"],[\"core/i/emojicategorypeoplebody\",\"fa fa-person\"],[\"core/i/emojicategoryrecent\",\"fa-regular fa-clock\"],[\"core/i/emojicategorysmileysemotion\",\"fa-regular fa-face-smile\"],[\"core/i/emojicategorysymbols\",\"fa fa-peace\"],[\"core/i/emojicategorytravelplaces\",\"fa fa-plane\"],[\"core/i/empty\",\"fa-regular fa-square\"],[\"core/i/enrolmentsuspended\",\"fa fa-user-xmark\"],[\"core/i/enrolusers\",\"fa fa-user-plus\"],[\"core/i/excluded\",\"fa fa-circle-minus\"],[\"core/i/expired\",\"fa fa-circle-exclamation text-warning\"],[\"core/i/export\",\"fa fa-download\"],[\"core/i/externallink\",\"fa fa-arrow-up-right-from-square\"],[\"core/i/file_export\",\"fa fa-download\"],[\"core/i/file_import\",\"fa fa-upload\"],[\"core/i/file_plus\",\"fa fa-file-circle-plus\"],[\"core/i/files\",\"fa fa-file\"],[\"core/i/filter\",\"fa fa-filter\"],[\"core/i/flagged\",\"fa fa-flag\"],[\"core/i/folder\",\"fa fa-folder\"],[\"core/i/grade_correct\",\"fa-regular fa-circle-check text-success\"],[\"core/i/grade_incorrect\",\"fa-regular fa-circle-xmark text-danger\"],[\"core/i/grade_partiallycorrect\",\"fa fa-circle-half-stroke text-warning\"],[\"core/i/grades\",\"fa fa-clipboard-check\"],[\"core/i/grading\",\"fa fa-wand-magic-sparkles\"],[\"core/i/gradingnotifications\",\"fa-regular fa-bell\"],[\"core/i/group\",\"fa fa-users\"],[\"core/i/groupevent\",\"fa fa-users\"],[\"core/i/hide\",\"fa-regular fa-eye\"],[\"core/i/hierarchylock\",\"fa fa-lock\"],[\"core/i/home\",\"fa fa-house\"],[\"core/i/import\",\"fa fa-upload\"],[\"core/i/incorrect\",\"fa fa-exclamation\"],[\"core/i/info\",\"fa fa-info\"],[\"core/i/invalid\",\"fa fa-xmark text-danger\"],[\"core/i/item\",\"fa fa-circle\"],[\"core/i/language\",\"fa fa-language\"],[\"core/i/link\",\"fa fa-link\"],[\"core/i/loading\",\"fa fa-spinner fa-spin\"],[\"core/i/loading_small\",\"fa fa-spinner fa-spin fa-sm\"],[\"core/i/location\",\"fa fa-location-dot\"],[\"core/i/lock\",\"fa fa-lock\"],[\"core/i/log\",\"fa fa-check-to-slot\"],[\"core/i/mahara_host\",\"fa fa-id-badge\"],[\"core/i/manual_item\",\"fa fa-pen-to-square\"],[\"core/i/marked\",\"fa-solid fa-highlighter\"],[\"core/i/marker\",\"fa fa-pen-clip\"],[\"core/i/mean\",\"fa fa-calculator\"],[\"core/i/menu\",\"fa fa-ellipsis-vertical\"],[\"core/i/menubars\",\"fa fa-bars\"],[\"core/i/messagecontentaudio\",\"fa fa-volume-high\"],[\"core/i/messagecontentimage\",\"fa fa-image\"],[\"core/i/messagecontentmultimediageneral\",\"fa fa-photo-film\"],[\"core/i/messagecontentvideo\",\"fa fa-film\"],[\"core/i/mnethost\",\"fa fa-square-arrow-up-right\"],[\"core/i/moodle_host\",\"fa fa-graduation-cap\"],[\"core/i/moremenu\",\"fa fa-ellipsis\"],[\"core/i/move_2d\",\"fa fa-arrows-up-down-left-right\"],[\"core/i/muted\",\"fa fa-microphone-slash\"],[\"core/i/navigationitem\",\"fa fa-fw\"],[\"core/i/ne_red_mark\",\"fa fa-xmark text-danger\"],[\"core/i/new\",\"fa fa-bolt\"],[\"core/i/news\",\"fa fa-newspaper\"],[\"core/i/next\",\"fa fa-chevron-right\"],[\"core/i/nosubcat\",\"fa fa-plus-square-o\"],[\"core/i/notifications\",\"fa fa-bell\"],[\"core/i/open\",\"fa fa-folder-open\"],[\"core/i/otherevent\",\"fa fa-circle-info\"],[\"core/i/outcomes\",\"fa fa-list-check\"],[\"core/i/overriden_grade\",\"fa fa-pen-to-square\"],[\"core/i/payment\",\"fa-solid fa-credit-card\"],[\"core/i/permissionlock\",\"fa fa-user-lock\"],[\"core/i/permissions\",\"fa fa-user-lock\"],[\"core/i/persona_sign_in_black\",\"fa fa-person\"],[\"core/i/portfolio\",\"fa fa-briefcase\"],[\"core/i/preview\",\"fa fa-magnifying-glass-plus\"],[\"core/i/previous\",\"fa fa-chevron-left\"],[\"core/i/privatefiles\",\"fa fa-file-circle-minus\"],[\"core/i/progressbar\",\"fa fa-spinner fa-spin\"],[\"core/i/publish\",\"fa fa-arrow-up-from-bracket\"],[\"core/i/questions\",\"fa fa-question\"],[\"core/i/reload\",\"fa fa-rotate-right\"],[\"core/i/report\",\"fa fa-chart-column\"],[\"core/i/repository\",\"fa fa-hard-drive\"],[\"core/i/restore\",\"fa fa-trash-can-arrow-up\"],[\"core/i/return\",\"fa fa-arrow-left\"],[\"core/i/risk_config\",\"fa fa-triangle-exclamation text-muted\"],[\"core/i/risk_dataloss\",\"fa fa-triangle-exclamation text-danger\"],[\"core/i/risk_managetrust\",\"fa fa-triangle-exclamation text-warning\"],[\"core/i/risk_personal\",\"fa fa-triangle-exclamation text-info\"],[\"core/i/risk_spam\",\"fa fa-triangle-exclamation text-primary\"],[\"core/i/risk_xss\",\"fa fa-triangle-exclamation text-danger\"],[\"core/i/role\",\"fa fa-user-tie\"],[\"core/i/rss\",\"fa fa-rss\"],[\"core/i/rsssitelogo\",\"fa fa-graduation-cap\"],[\"core/i/scales\",\"fa fa-scale-balanced\"],[\"core/i/scheduled\",\"fa-regular fa-calendar-check\"],[\"core/i/search\",\"fa fa-magnifying-glass\"],[\"core/i/section\",\"fa-regular fa-rectangle-list\"],[\"core/i/sendmessage\",\"fa-regular fa-paper-plane\"],[\"core/i/settings\",\"fa fa-gear\"],[\"core/i/share\",\"fa-regular fa-share-from-square\"],[\"core/i/show\",\"fa-regular fa-eye-slash\"],[\"core/i/siteevent\",\"fa-solid fa-globe\"],[\"core/i/star\",\"fa fa-star\"],[\"core/i/star-o\",\"fa-regular fa-star\"],[\"core/i/star-rating\",\"fa fa-star\"],[\"core/i/stats\",\"fa fa-chart-line\"],[\"core/i/switch\",\"fa fa-right-left\"],[\"core/i/switchrole\",\"fa fa-people-arrows\"],[\"core/i/trash\",\"fa fa-trash-can\"],[\"core/i/twoway\",\"fa fa-arrows-left-right\"],[\"core/i/unchecked\",\"fa-regular fa-square\"],[\"core/i/uncheckedcircle\",\"fa-regular fa-circle\"],[\"core/i/unflagged\",\"fa-regular fa-flag\"],[\"core/i/unlock\",\"fa fa-unlock\"],[\"core/i/up\",\"fa fa-arrow-up\"],[\"core/i/upload\",\"fa fa-upload\"],[\"core/i/user\",\"fa fa-user\"],[\"core/i/userevent\",\"fa fa-clipboard-user\"],[\"core/i/users\",\"fa fa-user-group\"],[\"core/i/valid\",\"fa fa-check text-success\"],[\"core/i/viewcategory\",\"fa fa-pager\"],[\"core/i/viewsection\",\"fa fa-pager\"],[\"core/i/warning\",\"fa fa-triangle-exclamation text-warning\"],[\"core/i/window_close\",\"fa fa-xmark\"],[\"core/i/withsubcat\",\"fa fa-network-wired\"],[\"core/m/USD\",\"fa fa-dollar-sign\"],[\"core/t/add\",\"fa fa-plus\"],[\"core/t/addcontact\",\"fa fa-address-card\"],[\"core/t/angles-down\",\"fa fa-angles-down\"],[\"core/t/angles-left\",\"fa fa-angles-left\"],[\"core/t/angles-right\",\"fa fa-angles-right\"],[\"core/t/angles-up\",\"fa fa-angles-up\"],[\"core/t/approve\",\"fa fa-thumbs-up\"],[\"core/t/assignroles\",\"fa fa-user-tag\"],[\"core/t/award\",\"fa fa-award\"],[\"core/t/backpack\",\"fa fa-suitcase-rolling\"],[\"core/t/backup\",\"fa fa-circle-arrow-down\"],[\"core/t/block\",\"fa fa-ban\"],[\"core/t/block_to_dock\",\"fa fa-chevron-left\"],[\"core/t/block_to_dock_rtl\",\"fa fa-chevron-right\"],[\"core/t/blocks_drawer\",\"fa fa-chevron-left\"],[\"core/t/blocks_drawer_rtl\",\"fa fa-chevron-right\"],[\"core/t/calc_off\",\"fa fa-calculator\"],[\"core/t/calc\",\"fa fa-calculator\"],[\"core/t/check\",\"fa fa-check\"],[\"core/t/clipboard\",\"fa fa-clipboard\"],[\"core/t/cohort\",\"fa fa-users-line\"],[\"core/t/collapsed_empty_rtl\",\"fa fa-chevron-left\"],[\"core/t/collapsed_empty\",\"fa fa-chevron-right\"],[\"core/t/collapsed_rtl\",\"fa fa-chevron-left\"],[\"core/t/collapsed\",\"fa fa-chevron-right\"],[\"core/t/collapsedcaret\",\"fa fa-caret-down\"],[\"core/t/collapsedchevron\",\"fa fa-chevron-right\"],[\"core/t/collapsedchevron_rtl\",\"fa fa-chevron-left\"],[\"core/t/collapsedchevron_up\",\"fa fa-chevron-up\"],[\"core/t/completion_complete\",\"fa fa-circle\"],[\"core/t/completion_fail\",\"fa fa-xmark\"],[\"core/t/completion_incomplete\",\"fa-regular fa-circle\"],[\"core/t/contextmenu\",\"fa fa-ellipsis-vertical\"],[\"core/t/copy\",\"fa-solid fa-clone\"],[\"core/t/delete\",\"fa fa-trash-can\"],[\"core/t/dock_to_block_rtl\",\"fa fa-chevron-left\"],[\"core/t/dock_to_block\",\"fa fa-chevron-right\"],[\"core/t/dockclose\",\"fa fa-xmark\"],[\"core/t/down\",\"fa fa-arrow-down\"],[\"core/t/download\",\"fa fa-download\"],[\"core/t/downlong\",\"fa fa-arrow-down-long\"],[\"core/t/dropdown\",\"fa fa-caret-down\"],[\"core/t/edit_menu\",\"fa fa-ellipsis-vertical\"],[\"core/t/edit\",\"fa fa-pen\"],[\"core/t/editinline\",\"fa fa-pen\"],[\"core/t/editstring\",\"fa fa-pen\"],[\"core/t/email\",\"fa-regular fa-envelope\"],[\"core/t/emailno\",\"fa fa-ban\"],[\"core/t/emptystar\",\"fa-regular fa-star\"],[\"core/t/enrolusers\",\"fa fa-user-plus\"],[\"core/t/expanded\",\"fa fa-chevron-down\"],[\"core/t/expandedchevron\",\"fa fa-chevron-down\"],[\"core/t/go\",\"fa fa-play\"],[\"core/t/grades\",\"fa fa-table-list\"],[\"core/t/groupn\",\"fa fa-user\"],[\"core/t/groups\",\"fa fa-circle-user\"],[\"core/t/groupv\",\"fa-regular fa-circle-user\"],[\"core/t/hide\",\"fa-regular fa-eye\"],[\"core/t/index_drawer\",\"fa fa-list\"],[\"core/t/left\",\"fa fa-arrow-left\"],[\"core/t/less\",\"fa fa-minus\"],[\"core/t/life-ring\",\"fa fa-life-ring\"],[\"core/t/lock\",\"fa fa-unlock\"],[\"core/t/locked\",\"fa fa-lock\"],[\"core/t/locktime\",\"fa fa-lock\"],[\"core/t/markasread\",\"fa fa-check\"],[\"core/t/message\",\"fa fa-message\"],[\"core/t/messages\",\"fa fa-comments\"],[\"core/t/messages-o\",\"fa-regular fa-comments\"],[\"core/t/more\",\"fa fa-caret-down\"],[\"core/t/move\",\"fa fa-arrows-up-down\"],[\"core/t/online\",\"fa fa-circle-check\"],[\"core/t/passwordunmask-edit\",\"fa fa-pen\"],[\"core/t/passwordunmask-reveal\",\"fa-solid fa-eye\"],[\"core/t/play\",\"fa fa-play\"],[\"core/t/portfolioadd\",\"fa fa-plus\"],[\"core/t/preferences\",\"fa fa-wrench\"],[\"core/t/preview\",\"fa fa-magnifying-glass-plus\"],[\"core/t/print\",\"fa fa-print\"],[\"core/t/reload\",\"fa fa-rotate-right\"],[\"core/t/removecontact\",\"fa fa-user-xmark\"],[\"core/t/reset\",\"fa fa-arrow-rotate-left\"],[\"core/t/restore\",\"fa fa-trash-can-arrow-up\"],[\"core/t/right\",\"fa fa-arrow-right\"],[\"core/t/sendmessage\",\"fa-regular fa-paper-plane\"],[\"core/t/show\",\"fa fa-eye-slash\"],[\"core/t/sort_asc\",\"fa fa-arrow-up-short-wide\"],[\"core/t/sort_by\",\"fa fa-arrow-down-wide-short\"],[\"core/t/sort_desc\",\"fa fa-arrow-down-short-wide\"],[\"core/t/sort\",\"fa fa-sort\"],[\"core/t/stealth\",\"fa fa-low-vision\"],[\"core/t/stop\",\"fa fa-stop\"],[\"core/t/switch_minus\",\"fa fa-minus\"],[\"core/t/switch_plus\",\"fa fa-plus\"],[\"core/t/switch_whole\",\"fa-regular fa-square\"],[\"core/t/tags\",\"fa fa-tags\"],[\"core/t/unblock\",\"fa fa-unlock-keyhole\"],[\"core/t/unlock\",\"fa fa-lock\"],[\"core/t/unlocked\",\"fa fa-lock-open\"],[\"core/t/up\",\"fa fa-arrow-up\"],[\"core/t/uplong\",\"fa fa-arrow-up-long\"],[\"core/t/user\",\"fa fa-user\"],[\"core/t/viewdetails\",\"fa fa-magnifying-glass-plus\"],[\"qtype_ddmarker/crosshairs\",\"fa fa-crosshairs\"],[\"qtype_ddmarker/grid\",\"fa fa-table-cells\"],[\"mod_bigbluebuttonbn/icon\",\"fa icon-bigbluebutton\"],[\"mod_book/add\",\"fa fa-plus\"],[\"mod_book/chapter\",\"fa fa-book-bookmark\"],[\"mod_data/field/checkbox\",\"fa-regular fa-square-check\"],[\"mod_data/field/date\",\"fa-regular fa-calendar\"],[\"mod_data/field/file\",\"fa-regular fa-file\"],[\"mod_data/field/latlong\",\"fa fa-earth-americas\"],[\"mod_data/field/menu\",\"fa fa-bars\"],[\"mod_data/field/multimenu\",\"fa fa-bars\"],[\"mod_data/field/number\",\"fa fa-hashtag\"],[\"mod_data/field/picture\",\"fa-regular fa-image\"],[\"mod_data/field/radiobutton\",\"fa-regular fa-circle-dot\"],[\"mod_data/field/text\",\"fa fa-i-cursor\"],[\"mod_data/field/textarea\",\"fa fa-font\"],[\"mod_data/field/url\",\"fa fa-link\"],[\"mod_feedback/notrequired\",\"fa fa-circle-question\"],[\"mod_feedback/required\",\"fa fa-circle-exclamation\"],[\"mod_forum/i/pinned\",\"fa fa-thumbtack\"],[\"mod_forum/t/selected\",\"fa fa-check\"],[\"mod_forum/t/star\",\"fa fa-star\"],[\"mod_forum/t/subscribed\",\"fa-regular fa-envelope\"],[\"mod_forum/t/unsubscribed\",\"fa-regular fa-envelope-open\"],[\"mod_glossary/asc\",\"fa fa-sort-down\"],[\"mod_glossary/desc\",\"fa fa-sort-up\"],[\"mod_glossary/export\",\"fa fa-arrow-turn-up\"],[\"mod_glossary/minus\",\"fa fa-minus\"],[\"mod_lesson/e/copy\",\"fa-solid fa-clone\"],[\"mod_lti/warning\",\"fa fa-exclamation text-warning\"],[\"mod_quiz/navflagged\",\"fa fa-flag\"],[\"mod_scorm/asset\",\"fa-regular fa-file-zipper\"],[\"mod_scorm/assetc\",\"fa-regular fa-file-zipper\"],[\"mod_scorm/browsed\",\"fa fa-book\"],[\"mod_scorm/completed\",\"fa-regular fa-square-check\"],[\"mod_scorm/failed\",\"fa fa-xmark\"],[\"mod_scorm/incomplete\",\"fa-regular fa-pen-to-square\"],[\"mod_scorm/minus\",\"fa fa-minus\"],[\"mod_scorm/notattempted\",\"fa-regular fa-square\"],[\"mod_scorm/passed\",\"fa fa-check\"],[\"mod_scorm/plus\",\"fa fa-plus\"],[\"mod_scorm/popdown\",\"fa-regular fa-rectangle-xmark\"],[\"mod_scorm/popup\",\"fa-regular fa-window-restore\"],[\"mod_scorm/suspend\",\"fa fa-pause\"],[\"mod_scorm/wait\",\"fa fa-spinner fa-spin\"],[\"mod_scormlite/review\",\"fa fa-search\"],[\"mod_subsection/subsection\",\"fa fa-rectangle-list\"],[\"mod_topaze/grades\",\"fa fa-table\"],[\"mod_wiki/attachment\",\"fa fa-paperclip\"],[\"mod_workshop/userplan/task-done\",\"fa fa-clipboard-check text-success\"],[\"mod_workshop/userplan/task-fail\",\"fa fa-xmark text-danger\"],[\"mod_workshop/userplan/task-info\",\"fa fa-circle-info text-info\"],[\"mod_workshop/userplan/task-todo\",\"fa-regular fa-clipboard\"],[\"mod_zoom/i/calendar\",\"fa fa-calendar\"],[\"customfield_date/checked\",\"fa-regular fa-calendar-check\"],[\"customfield_date/notchecked\",\"fa-regular fa-calendar\"],[\"enrol_guest/withoutpassword\",\"fa fa-lock-open\"],[\"enrol_guest/withpassword\",\"fa fa-lock\"],[\"enrol_lti/enrolinstancewarning\",\"fa fa-triangle-exclamation text-danger\"],[\"enrol_lti/managedeployments\",\"fa fa-users-gear\"],[\"enrol_lti/platformdetails\",\"fa fa-square-pen\"],[\"enrol_self/withkey\",\"fa fa-key\"],[\"enrol_self/withoutkey\",\"fa-solid fa-right-to-bracket\"],[\"block_accessreview/smile\",\"fa-regular fa-smile\"],[\"block_accessreview/frown\",\"fa-regular fa-face-frown\"],[\"block_accessreview/errorsfound\",\"fa fa-ban\"],[\"block_accessreview/f/find\",\"fa fa-magnifying-glass\"],[\"block_accessreview/f/form\",\"fa fa-list-check\"],[\"block_accessreview/f/image\",\"fa fa-image\"],[\"block_accessreview/f/layout\",\"fa fa-table-cells-large\"],[\"block_accessreview/f/link\",\"fa fa-link\"],[\"block_accessreview/f/media\",\"fa fa-photo-film\"],[\"block_accessreview/f/pdf\",\"fa-regular fa-file-pdf\"],[\"block_accessreview/f/table\",\"fa fa-table\"],[\"block_accessreview/f/text\",\"fa fa-font\"],[\"block_accessreview/f/video\",\"fa-regular fa-file-video\"],[\"block_accessreview/t/fail\",\"fa fa-xmark\"],[\"block_accessreview/t/pass\",\"fa fa-check\"],[\"format_flexsections/mergeup\",\"fa fa-level-up\"],[\"format_tiles/tileicon/address-book-o\",\"fa fa-address-book-o\"],[\"format_tiles/tileicon/asterisk\",\"fa fa-asterisk\"],[\"format_tiles/tileicon/balance-scale\",\"fa fa-balance-scale\"],[\"format_tiles/tileicon/bar-chart\",\"fa fa-bar-chart\"],[\"format_tiles/tileicon/bell-o\",\"fa fa-bell-o\"],[\"format_tiles/tileicon/binoculars\",\"fa fa-binoculars\"],[\"format_tiles/tileicon/bitcoin\",\"fa fa-bitcoin\"],[\"format_tiles/tileicon/book\",\"fa fa-book\"],[\"format_tiles/tileicon/bookmark-o\",\"fa fa-bookmark-o\"],[\"format_tiles/tileicon/briefcase\",\"fa fa-briefcase\"],[\"format_tiles/tileicon/building\",\"fa fa-building\"],[\"format_tiles/tileicon/bullhorn\",\"fa fa-bullhorn\"],[\"format_tiles/tileicon/bullseye\",\"fa fa-bullseye\"],[\"format_tiles/tileicon/calculator\",\"fa fa-calculator\"],[\"format_tiles/tileicon/calendar\",\"fa fa-calendar\"],[\"format_tiles/tileicon/calendar-check-o\",\"fa fa-calendar-check-o\"],[\"format_tiles/tileicon/check\",\"fa fa-check\"],[\"format_tiles/tileicon/child\",\"fa fa-child\"],[\"format_tiles/tileicon/clock-o\",\"fa fa-clock-o\"],[\"format_tiles/tileicon/clone\",\"fa fa-clone\"],[\"format_tiles/tileicon/cloud-download\",\"fa fa-cloud-download\"],[\"format_tiles/tileicon/cloud-upload\",\"fa fa-cloud-upload\"],[\"format_tiles/tileicon/comment-o\",\"fa fa-comment-o\"],[\"format_tiles/tileicon/comments-o\",\"fa fa-comments-o\"],[\"format_tiles/tileicon/compass\",\"fa fa-compass\"],[\"format_tiles/tileicon/diamond\",\"fa fa-diamond\"],[\"format_tiles/tileicon/dollar\",\"fa fa-dollar\"],[\"format_tiles/tileicon/euro\",\"fa fa-euro\"],[\"format_tiles/tileicon/exclamation-triangle\",\"fa fa-exclamation-triangle\"],[\"format_tiles/tileicon/feed\",\"fa fa-feed\"],[\"format_tiles/tileicon/file-text-o\",\"fa fa-file-text-o\"],[\"format_tiles/tileicon/film\",\"fa fa-film\"],[\"format_tiles/tileicon/flag-checkered\",\"fa fa-flag-checkered\"],[\"format_tiles/tileicon/flag-o\",\"fa fa-flag-o\"],[\"format_tiles/tileicon/flash\",\"fa fa-flash\"],[\"format_tiles/tileicon/flask\",\"fa fa-flask\"],[\"format_tiles/tileicon/frown-o\",\"fa fa-frown-o\"],[\"format_tiles/tileicon/gavel\",\"fa fa-gavel\"],[\"format_tiles/tileicon/gbp\",\"fa fa-gbp\"],[\"format_tiles/tileicon/globe\",\"fa fa-globe\"],[\"format_tiles/tileicon/handshake-o\",\"fa fa-handshake-o\"],[\"format_tiles/tileicon/headphones\",\"fa fa-headphones\"],[\"format_tiles/tileicon/heartbeat\",\"fa fa-heartbeat\"],[\"format_tiles/tileicon/history\",\"fa fa-history\"],[\"format_tiles/tileicon/home\",\"fa fa-home\"],[\"format_tiles/tileicon/id-card-o\",\"fa fa-id-card-o\"],[\"format_tiles/tileicon/info\",\"fa fa-info\"],[\"format_tiles/tileicon/key\",\"fa fa-key\"],[\"format_tiles/tileicon/laptop\",\"fa fa-laptop\"],[\"format_tiles/tileicon/life-buoy\",\"fa fa-life-buoy\"],[\"format_tiles/tileicon/lightbulb-o\",\"fa fa-lightbulb-o\"],[\"format_tiles/tileicon/line-chart\",\"fa fa-line-chart\"],[\"format_tiles/tileicon/list\",\"fa fa-list\"],[\"format_tiles/tileicon/list-ol\",\"fa fa-list-ol\"],[\"format_tiles/tileicon/location-arrow\",\"fa fa-location-arrow\"],[\"format_tiles/tileicon/map-marker\",\"fa fa-map-marker\"],[\"format_tiles/tileicon/map-o\",\"fa fa-map-o\"],[\"format_tiles/tileicon/map-signs\",\"fa fa-map-signs\"],[\"format_tiles/tileicon/microphone\",\"fa fa-microphone\"],[\"format_tiles/tileicon/mobile-phone\",\"fa fa-mobile-phone\"],[\"format_tiles/tileicon/mortar-board\",\"fa fa-mortar-board\"],[\"format_tiles/tileicon/music\",\"fa fa-music\"],[\"format_tiles/tileicon/newspaper-o\",\"fa fa-newspaper-o\"],[\"format_tiles/tileicon/pencil-square-o\",\"fa fa-pencil-square-o\"],[\"format_tiles/tileicon/pie-chart\",\"fa fa-pie-chart\"],[\"format_tiles/tileicon/podcast\",\"fa fa-podcast\"],[\"format_tiles/tileicon/puzzle-piece\",\"fa fa-puzzle-piece\"],[\"format_tiles/tileicon/question-circle\",\"fa fa-question-circle\"],[\"format_tiles/tileicon/random\",\"fa fa-random\"],[\"format_tiles/tileicon/refresh\",\"fa fa-refresh\"],[\"format_tiles/tileicon/road\",\"fa fa-road\"],[\"format_tiles/tileicon/search\",\"fa fa-search\"],[\"format_tiles/tileicon/sliders\",\"fa fa-sliders\"],[\"format_tiles/tileicon/smile-o\",\"fa fa-smile-o\"],[\"format_tiles/tileicon/star\",\"fa fa-star\"],[\"format_tiles/tileicon/star-half-o\",\"fa fa-star-half-o\"],[\"format_tiles/tileicon/star-o\",\"fa fa-star-o\"],[\"format_tiles/tileicon/tags\",\"fa fa-tags\"],[\"format_tiles/tileicon/tasks\",\"fa fa-tasks\"],[\"format_tiles/tileicon/television\",\"fa fa-television\"],[\"format_tiles/tileicon/thumbs-o-down\",\"fa fa-thumbs-o-down\"],[\"format_tiles/tileicon/thumbs-o-up\",\"fa fa-thumbs-o-up\"],[\"format_tiles/tileicon/trophy\",\"fa fa-trophy\"],[\"format_tiles/tileicon/umbrella\",\"fa fa-umbrella\"],[\"format_tiles/tileicon/university\",\"fa fa-university\"],[\"format_tiles/tileicon/user-o\",\"fa fa-user-o\"],[\"format_tiles/tileicon/users\",\"fa fa-users\"],[\"format_tiles/tileicon/volume-up\",\"fa fa-volume-up\"],[\"format_tiles/tileicon/wrench\",\"fa fa-wrench\"],[\"format_tiles/camera\",\"fa fa-camera\"],[\"format_tiles/check\",\"fa fa-check\"],[\"format_tiles/chevron-left\",\"fa fa-chevron-left\"],[\"format_tiles/chevron-right\",\"fa fa-chevron-right\"],[\"format_tiles/chevron-up\",\"fa fa-chevron-up\"],[\"format_tiles/clone\",\"fa fa-clone\"],[\"format_tiles/close\",\"fa fa-close\"],[\"format_tiles/cloud-download\",\"fa fa-cloud-download\"],[\"format_tiles/cloud-upload\",\"fa fa-cloud-upload\"],[\"format_tiles/completion-check\",\"fa fa-check\"],[\"format_tiles/completion-fail\",\"fa fa-times\"],[\"format_tiles/eye-slash\",\"fa fa-eye-slash\"],[\"format_tiles/filter\",\"fa fa-filter\"],[\"format_tiles/home\",\"fa fa-home\"],[\"format_tiles/image\",\"fa fa-image\"],[\"format_tiles/lock\",\"fa fa-lock\"],[\"format_tiles/pencil\",\"fa fa-pencil\"],[\"format_tiles/random\",\"fa fa-random\"],[\"format_tiles/sort\",\"fa fa-sort\"],[\"format_tiles/toggle-off\",\"fa fa-toggle-off\"],[\"format_tiles/toggle-on\",\"fa fa-toggle-on\"],[\"gradingform_guide/info\",\"fa fa-circle-info\"],[\"gradingform_guide/plus\",\"fa fa-circle-plus\"],[\"tool_brickfield/f/award\",\"fa fa-trophy\"],[\"tool_brickfield/f/done\",\"fa fa-check\"],[\"tool_brickfield/f/done2\",\"fa fa-check-double\"],[\"tool_brickfield/f/error\",\"fa fa-xmark\"],[\"tool_brickfield/f/find\",\"fa fa-magnifying-glass\"],[\"tool_brickfield/f/form\",\"fa fa-list-check\"],[\"tool_brickfield/f/image\",\"fa fa-image\"],[\"tool_brickfield/f/layout\",\"fa fa-table-cells-large\"],[\"tool_brickfield/f/link\",\"fa fa-link\"],[\"tool_brickfield/f/media\",\"fa fa-photo-film\"],[\"tool_brickfield/f/table\",\"fa fa-table\"],[\"tool_brickfield/f/text\",\"fa fa-font\"],[\"tool_brickfield/f/total\",\"fa fa-calculator\"],[\"tool_lp/url\",\"fa fa-arrow-up-right-from-square\"],[\"tool_policy/agreed\",\"fa fa-check text-success\"],[\"tool_policy/declined\",\"fa fa-xmark text-danger\"],[\"tool_policy/level\",\"fa fa-turn-up fa-rotate-90 text-muted\"],[\"tool_policy/partial\",\"fa fa-triangle-exclamation text-warning\"],[\"tool_policy/pending\",\"fa-regular fa-clock text-warning\"],[\"tool_recyclebin/trash\",\"fa fa-trash-can-arrow-up\"],[\"tool_usertours/i/tour-import\",\"fa fa-upload\"],[\"tool_usertours/i/tour-new\",\"fa fa-file-circle-plus\"],[\"tool_usertours/i/tour-shared\",\"fa fa-share-from-square\"],[\"tool_usertours/i/reload\",\"fa fa-arrow-rotate-right\"],[\"tool_usertours/t/export\",\"fa fa-download\"],[\"tool_usertours/t/filler\",\"fa fa-spacer\"],[\"theme_boost_union/info\",\"fa fa-info-circle\"],[\"atto_collapse/icon\",\"fa fa-chevron-down\"],[\"atto_recordrtc/i/audiortc\",\"fa fa-microphone\"],[\"atto_recordrtc/i/videortc\",\"fa fa-video\"]]",
+    "value_length": 28172,
+    "initial_url": "https://moodle.univ-lille.fr",
+    "final_url": "https://infotuto.univ-lille.fr/fiche/parametrer-ses-preferences-pour-mieux-gerer-les-informations-moodle",
+    "timestamp": "2025-12-04T14:41:03.128174"
+  },
+  {
+    "task_id": "192",
+    "key": "423506066/core_template/1763381534:boost_union/core/loading",
+    "value": "\n\n<span class=\"loading-icon icon-no-margin\">{{#pix}} i/loading, core, {{#str}} loading {{/str}} {{/pix}}</span>\n",
+    "value_length": 112,
+    "initial_url": "https://moodle.univ-lille.fr",
+    "final_url": "https://infotuto.univ-lille.fr/fiche/parametrer-ses-preferences-pour-mieux-gerer-les-informations-moodle",
+    "timestamp": "2025-12-04T14:41:03.128174"
+  },
+  {
+    "task_id": "192",
+    "key": "423506066/core_str/savechanges/core/fr",
+    "value": "Enregistrer",
+    "value_length": 11,
+    "initial_url": "https://moodle.univ-lille.fr",
+    "final_url": "https://infotuto.univ-lille.fr/fiche/parametrer-ses-preferences-pour-mieux-gerer-les-informations-moodle",
+    "timestamp": "2025-12-04T14:41:03.128174"
+  },
+  {
+    "task_id": "192",
+    "key": "423506066/core_str/loading/core/fr",
+    "value": "Chargement",
+    "value_length": 10,
+    "initial_url": "https://moodle.univ-lille.fr",
+    "final_url": "https://infotuto.univ-lille.fr/fiche/parametrer-ses-preferences-pour-mieux-gerer-les-informations-moodle",
+    "timestamp": "2025-12-04T14:41:03.128174"
+  },
+  {
+    "task_id": "192",
+    "key": "423506066/core_template/1763381534:boost_union/core/modal_backdrop",
+    "value": "\n\n<div class=\"modal-backdrop in hide\" aria-hidden=\"true\" data-region=\"modal-backdrop\"></div>\n",
+    "value_length": 93,
+    "initial_url": "https://moodle.univ-lille.fr",
+    "final_url": "https://infotuto.univ-lille.fr/fiche/parametrer-ses-preferences-pour-mieux-gerer-les-informations-moodle",
+    "timestamp": "2025-12-04T14:41:03.128174"
+  },
+  {
+    "task_id": "192",
+    "key": "423506066/core_template/1763381534:boost_union/core/modal_cancel",
+    "value": "\n\n\n{{< core/modal }}\n    {{$footer}}\n        <button type=\"button\" class=\"btn btn-secondary\" data-action=\"cancel\">{{#str}} cancel {{/str}}</button>\n    {{/footer}}\n{{/ core/modal }}\n",
+    "value_length": 182,
+    "initial_url": "https://moodle.univ-lille.fr",
+    "final_url": "https://infotuto.univ-lille.fr/fiche/parametrer-ses-preferences-pour-mieux-gerer-les-informations-moodle",
+    "timestamp": "2025-12-04T14:41:03.128174"
+  },
+  {
+    "task_id": "192",
+    "key": "423506066/core_str/showmore/core_form/fr",
+    "value": "Afficher plus…",
+    "value_length": 14,
+    "initial_url": "https://moodle.univ-lille.fr",
+    "final_url": "https://infotuto.univ-lille.fr/fiche/parametrer-ses-preferences-pour-mieux-gerer-les-informations-moodle",
+    "timestamp": "2025-12-04T14:41:03.128174"
+  },
+  {
+    "task_id": "260",
+    "key": "mt_refdom_stat_1881418843",
+    "value": "1",
+    "value_length": 1,
+    "initial_url": "https://www.lavoixdunord.fr",
+    "final_url": "https://login.rossel.fr/register?login_challenge=4ad5e717257149fabedf2da452b766a7&product_id=fr_lavoixdunord&email=Y2hyaXMubWFydGluLmdkcHIrRlJfMDQ1OEBnbWFpbC5jb20",
+    "timestamp": "2025-12-04T15:54:17.266456"
+  },
+  {
+    "task_id": "260",
+    "key": "eng_mt",
+    "value": "{\"ver\":36,\"sessionStartTime\":1764841311627,\"scrollDepth\":100,\"sessionDepth\":[\"396642212\",\"630886535\",\"-552828708\",\"-864589300\",\"-1125255250\"],\"timeOnSite\":148382,\"crossSessionsData\":{\"sessionsHistory\":[1764841311627]},\"numOfTimesMetricsSent\":10}",
+    "value_length": 245,
+    "initial_url": "https://www.lavoixdunord.fr",
+    "final_url": "https://login.rossel.fr/register?login_challenge=4ad5e717257149fabedf2da452b766a7&product_id=fr_lavoixdunord&email=Y2hyaXMubWFydGluLmdkcHIrRlJfMDQ1OEBnbWFpbC5jb20",
+    "timestamp": "2025-12-04T15:54:17.266456"
+  },
+  {
+    "task_id": "260",
+    "key": "sas_consent_rejected",
+    "value": "1",
+    "value_length": 1,
+    "initial_url": "https://www.lavoixdunord.fr",
+    "final_url": "https://login.rossel.fr/register?login_challenge=4ad5e717257149fabedf2da452b766a7&product_id=fr_lavoixdunord&email=Y2hyaXMubWFydGluLmdkcHIrRlJfMDQ1OEBnbWFpbC5jb20",
+    "timestamp": "2025-12-04T15:54:17.266456"
+  },
+  {
+    "task_id": "260",
+    "key": "sas_addtl_euconsent_v2",
+    "value": "2~~dv.196.1031.494.1889.144.2501.2568.2577.1097.3119.2072.2253.1449.1678.1845.70.2677.1570.1712.311.587.486.415.149.122.495.323.93.108.981.2526.1205.1276.1415.2575.1878.2343.1651.2567.1929.2867.2918.2997.2961.2973.3078.3059.3154.3211.2177.574.3077.1051",
+    "value_length": 252,
+    "initial_url": "https://www.lavoixdunord.fr",
+    "final_url": "https://login.rossel.fr/register?login_challenge=4ad5e717257149fabedf2da452b766a7&product_id=fr_lavoixdunord&email=Y2hyaXMubWFydGluLmdkcHIrRlJfMDQ1OEBnbWFpbC5jb20",
+    "timestamp": "2025-12-04T15:54:17.266456"
+  },
+  {
+    "task_id": "260",
+    "key": "mt_source_stat_1881418843",
+    "value": "1",
+    "value_length": 1,
+    "initial_url": "https://www.lavoixdunord.fr",
+    "final_url": "https://login.rossel.fr/register?login_challenge=4ad5e717257149fabedf2da452b766a7&product_id=fr_lavoixdunord&email=Y2hyaXMubWFydGluLmdkcHIrRlJfMDQ1OEBnbWFpbC5jb20",
+    "timestamp": "2025-12-04T15:54:17.266456"
+  },
+  {
+    "task_id": "260",
+    "key": "euconsent-v2",
+    "value": "CQb6BYAQb6BYAAHABBENCHFkAAEAAAAAAAAAJNIAgAYBIVBgAQQhIEsAIAgYAAAAAAQAAAABgWQBCBAQAAAEAkAAAAQABCAKAAIAAGBBIAJkCABABQAAIAAAIABEAAAAARAAACAAAAABAEAICAACAQgAAAAIgEIAEAAAGQIAAAAAAEBAAAAAIAAAAAAAAAABAAEAACEAAAAAAAAAACAAAAAAAAAAAAAAAAAAAABAAAEDBIBQANQBlgDuAI4AZ8A6QCPQExAKaAYIAKSgAwABBeYpABgACC8w6ADAAEF5iEAGAAILzBIAMAAQXmAA.YCAAAAAAAAAA",
+    "value_length": 329,
+    "initial_url": "https://www.lavoixdunord.fr",
+    "final_url": "https://login.rossel.fr/register?login_challenge=4ad5e717257149fabedf2da452b766a7&product_id=fr_lavoixdunord&email=Y2hyaXMubWFydGluLmdkcHIrRlJfMDQ1OEBnbWFpbC5jb20",
+    "timestamp": "2025-12-04T15:54:17.266456"
+  },
+  {
+    "task_id": "260",
+    "key": "ayads-is_eea",
+    "value": "{\"value\":true,\"expire\":1765446113472}",
+    "value_length": 37,
+    "initial_url": "https://www.lavoixdunord.fr",
+    "final_url": "https://login.rossel.fr/register?login_challenge=4ad5e717257149fabedf2da452b766a7&product_id=fr_lavoixdunord&email=Y2hyaXMubWFydGluLmdkcHIrRlJfMDQ1OEBnbWFpbC5jb20",
+    "timestamp": "2025-12-04T15:54:17.266456"
+  },
+  {
+    "task_id": "260",
+    "key": "deviceId",
+    "value": "a509a0dd-bcd3-4d7b-9211-a34c08075580",
+    "value_length": 36,
+    "initial_url": "https://www.lavoixdunord.fr",
+    "final_url": "https://login.rossel.fr/register?login_challenge=4ad5e717257149fabedf2da452b766a7&product_id=fr_lavoixdunord&email=Y2hyaXMubWFydGluLmdkcHIrRlJfMDQ1OEBnbWFpbC5jb20",
+    "timestamp": "2025-12-04T15:54:17.266456"
+  },
+  {
+    "task_id": "260",
+    "key": "eqtv_cmpvalid",
+    "value": "1",
+    "value_length": 1,
+    "initial_url": "https://www.lavoixdunord.fr",
+    "final_url": "https://login.rossel.fr/register?login_challenge=4ad5e717257149fabedf2da452b766a7&product_id=fr_lavoixdunord&email=Y2hyaXMubWFydGluLmdkcHIrRlJfMDQ1OEBnbWFpbC5jb20",
+    "timestamp": "2025-12-04T15:54:17.266456"
+  },
+  {
+    "task_id": "260",
+    "key": "visited",
+    "value": "true",
+    "value_length": 4,
+    "initial_url": "https://www.lavoixdunord.fr",
+    "final_url": "https://login.rossel.fr/register?login_challenge=4ad5e717257149fabedf2da452b766a7&product_id=fr_lavoixdunord&email=Y2hyaXMubWFydGluLmdkcHIrRlJfMDQ1OEBnbWFpbC5jb20",
+    "timestamp": "2025-12-04T15:54:17.266456"
+  },
+  {
+    "task_id": "260",
+    "key": "utiqEligibility",
+    "value": "{\"isEligible\":false,\"eligibilityCheckTime\":1764859833974,\"retryEligibilityCheckTime\":1764859953974}",
+    "value_length": 99,
+    "initial_url": "https://www.lavoixdunord.fr",
+    "final_url": "https://login.rossel.fr/register?login_challenge=4ad5e717257149fabedf2da452b766a7&product_id=fr_lavoixdunord&email=Y2hyaXMubWFydGluLmdkcHIrRlJfMDQ1OEBnbWFpbC5jb20",
+    "timestamp": "2025-12-04T15:54:17.266456"
+  },
+  {
+    "task_id": "260",
+    "key": "sas_euconsent_v2",
+    "value": "CQb6BYAQb6BYAAHABBENCHFkAAEAAAAAAAAAJNIAgAYBIVBgAQQhIEsAIAgYAAAAAAQAAAABgWQBCBAQAAAEAkAAAAQABCAKAAIAAGBBIAJkCABABQAAIAAAIABEAAAAARAAACAAAAABAEAICAACAQgAAAAIgEIAEAAAGQIAAAAAAEBAAAAAIAAAAAAAAAABAAEAACEAAAAAAAAAACAAAAAAAAAAAAAAAAAAAABAAAEDBIBQANQBlgDuAI4AZ8A6QCPQExAKaAYIAKSgAwABBeYpABgACC8w6ADAAEF5iEAGAAILzBIAMAAQXmAA.YCAAAAAAAAAA",
+    "value_length": 329,
+    "initial_url": "https://www.lavoixdunord.fr",
+    "final_url": "https://login.rossel.fr/register?login_challenge=4ad5e717257149fabedf2da452b766a7&product_id=fr_lavoixdunord&email=Y2hyaXMubWFydGluLmdkcHIrRlJfMDQ1OEBnbWFpbC5jb20",
+    "timestamp": "2025-12-04T15:54:17.266456"
+  },
+  {
+    "task_id": "265",
+    "key": "eng_mt",
+    "value": "{\"ver\":36,\"sessionStartTime\":1764841929133,\"scrollDepth\":74,\"sessionDepth\":[\"1100607942\",\"1187798341\",\"1545339181\",\"1859263769\",\"2040382297\",\"-579102744\",\"-2038221515\"],\"timeOnSite\":229005,\"crossSessionsData\":{\"sessionsHistory\":[1764841929133]},\"numOfTimesMetricsSent\":10}",
+    "value_length": 272,
+    "initial_url": "https://www.courrier-picard.fr",
+    "final_url": "http://www.courrier-picard.fr/23175/sections/ma-sante",
+    "timestamp": "2025-12-04T15:59:50.479764"
+  },
+  {
+    "task_id": "265",
+    "key": "sas_consent_rejected",
+    "value": "1",
+    "value_length": 1,
+    "initial_url": "https://www.courrier-picard.fr",
+    "final_url": "http://www.courrier-picard.fr/23175/sections/ma-sante",
+    "timestamp": "2025-12-04T15:59:50.479764"
+  },
+  {
+    "task_id": "265",
+    "key": "sas_addtl_euconsent_v2",
+    "value": "2~~dv.196.1031.494.1889.144.2501.2568.2577.1097.3119.2072.2253.1449.1678.1845.70.2677.1570.1712.311.587.486.415.149.122.495.323.93.108.981.2526.1205.1276.1415.2575.1878.2343.2687.1651.2567.1929.1870.2867.2918.2997.2961.2973.3078.3059.3154.3211.2177.574.3077.1051",
+    "value_length": 262,
+    "initial_url": "https://www.courrier-picard.fr",
+    "final_url": "http://www.courrier-picard.fr/23175/sections/ma-sante",
+    "timestamp": "2025-12-04T15:59:50.479764"
+  },
+  {
+    "task_id": "265",
+    "key": "NRBA_SESSION",
+    "value": "{\"value\":\"1ee9f61dd49648cb\",\"inactiveAt\":1764855592546,\"expiresAt\":1764868164383,\"updatedAt\":1764853798459,\"sessionReplayMode\":0,\"sessionReplaySentFirstChunk\":false,\"sessionTraceMode\":0,\"traceHarvestStarted\":false,\"loggingMode\":0,\"serverTimeDiff\":null,\"custom\":{},\"numOfResets\":0,\"consent\":false}",
+    "value_length": 296,
+    "initial_url": "https://www.courrier-picard.fr",
+    "final_url": "http://www.courrier-picard.fr/23175/sections/ma-sante",
+    "timestamp": "2025-12-04T15:59:50.479764"
+  },
+  {
+    "task_id": "265",
+    "key": "euconsent-v2",
+    "value": "CQb6BYAQb6BYAAHABBENCHFkAAEAAAAAAAAAJNIAgAYBIVBgAQQhIEsAIAgYAAAAAAQAAAABgWQBCBAQAAAEAkAAAAQABCAKAAAAAGBBIAJkCABABQAAIAAAIABEAAAAARAAACAAAAAAAEAICAACAQgAAAAIgAIAEAAAGQIAAAAAAEBAAAAAIAAAAAAAAAABAAEAACEAAAAAAAAAACAAAAAAAAAAAAAAAAAAAABAAAEDBIBIANQBlgDuAI4AZ8A6QCPQFNAMEAFJQAYAAgvMUgAwABBeYdABgACC8xCADAAEF5gkAGAAILzA.YCAAAAAAAAAA",
+    "value_length": 325,
+    "initial_url": "https://www.courrier-picard.fr",
+    "final_url": "http://www.courrier-picard.fr/23175/sections/ma-sante",
+    "timestamp": "2025-12-04T15:59:50.479764"
+  },
+  {
+    "task_id": "265",
+    "key": "didomi_token",
+    "value": "eyJ1c2VyX2lkIjoiMTlhZThjNmItYTFkMC02ZDgzLWJkM2EtMjkyZjU1YWM0Y2EzIiwiY3JlYXRlZCI6IjIwMjUtMTItMDRUMDk6NTI6MDkuMjQ1WiIsInVwZGF0ZWQiOiIyMDI1LTEyLTA0VDA5OjUyOjE2LjIwMVoiLCJ2ZW5kb3JzIjp7ImVuYWJsZWQiOlsiYzpob3RqYXIiLCJjOlNKZXBiS2pHNyIsImM6Y3JhenktZWdnIiwiYzpzZWxsaWdlbnQiLCJjOmh0dHBzb25lcy1YUnhlSzlyQyIsImM6Z29vZ2xlYW5hLTRUWG5KaWdSIiwiYzpzYWxlY3ljbGUiLCJjOm15ZmVlbGJhY2siLCJjOmFkYnJhaW4iLCJjOm9uZXNpZ25hbC1YbWNuWjl3NiIsImM6YWlyc2hpcCIsImM6bWVkaWVnby0yV0wyS1JqVyIsImM6cXVhbGlmaW8tTEVjOWNlSFAiLCJjOndvb2NvbW1lci04Rm1uUTJuQSIsImM6c2Fvb3RpIiwiYzpxaW90YS1oVVlIS3d3MiIsImM6cGlhbm8iLCJjOnNtYXJ0bG9vayIsImM6ZnJvb21sZSJdLCJkaXNhYmxlZCI6WyJnb29nbGUiLCJjOnZpZGVvbG9neSIsImM6YW5hbGlnaHRzLTdteUVIM2VrIiwiYzphdGludGVybmUtY1dRS0hlSloiLCJjOmluc3RhZ3JhbSIsImM6dHdpdHRlciIsImM6dGlrdG9rIiwiYzpzbmFwY2hhdCIsImM6ZmFjZWJvb2siLCJjOmZyYWN0aW9uYWwtbjJqWURGUE4iXX0sInB1cnBvc2VzIjp7ImVuYWJsZWQiOlsiZGV2aWNlX2NoYXJhY3RlcmlzdGljcyJdLCJkaXNhYmxlZCI6WyJnZW9sb2NhdGlvbl9kYXRhIiwiZ2VvX2FkcyIsImdlb19tYXJrZXRpbmdfc3R1ZGllcyIsImF1ZGllbmNlbS14ZWRlVTJnUSIsInJlc2VhdXhzby1VTERhZE54bSJdfSwidmVyc2lvbiI6MiwiYWMiOiJBQUFBLkFBQUEifQ==",
+    "value_length": 1084,
+    "initial_url": "https://www.courrier-picard.fr",
+    "final_url": "http://www.courrier-picard.fr/23175/sections/ma-sante",
+    "timestamp": "2025-12-04T15:59:50.479764"
+  },
+  {
+    "task_id": "265",
+    "key": "deviceId",
+    "value": "ea684073-9fd8-4623-9065-cafcdff37641",
+    "value_length": 36,
+    "initial_url": "https://www.courrier-picard.fr",
+    "final_url": "http://www.courrier-picard.fr/23175/sections/ma-sante",
+    "timestamp": "2025-12-04T15:59:50.479764"
+  },
+  {
+    "task_id": "265",
+    "key": "visited",
+    "value": "true",
+    "value_length": 4,
+    "initial_url": "https://www.courrier-picard.fr",
+    "final_url": "http://www.courrier-picard.fr/23175/sections/ma-sante",
+    "timestamp": "2025-12-04T15:59:50.479764"
+  },
+  {
+    "task_id": "265",
+    "key": "sas_euconsent_v2",
+    "value": "CQb6BYAQb6BYAAHABBENCHFkAAEAAAAAAAAAJNIAgAYBIVBgAQQhIEsAIAgYAAAAAAQAAAABgWQBCBAQAAAEAkAAAAQABCAKAAAAAGBBIAJkCABABQAAIAAAIABEAAAAARAAACAAAAAAAEAICAACAQgAAAAIgAIAEAAAGQIAAAAAAEBAAAAAIAAAAAAAAAABAAEAACEAAAAAAAAAACAAAAAAAAAAAAAAAAAAAABAAAEDBIBIANQBlgDuAI4AZ8A6QCPQFNAMEAFJQAYAAgvMUgAwABBeYdABgACC8xCADAAEF5gkAGAAILzA.YCAAAAAAAAAA",
+    "value_length": 325,
+    "initial_url": "https://www.courrier-picard.fr",
+    "final_url": "http://www.courrier-picard.fr/23175/sections/ma-sante",
+    "timestamp": "2025-12-04T15:59:50.479764"
+  },
+  {
+    "task_id": "265",
+    "key": "mt_refdom_stat_243612273",
+    "value": "1",
+    "value_length": 1,
+    "initial_url": "https://www.courrier-picard.fr",
+    "final_url": "http://www.courrier-picard.fr/23175/sections/ma-sante",
+    "timestamp": "2025-12-04T15:59:50.479764"
+  },
+  {
+    "task_id": "265",
+    "key": "mt_source_stat_243612273",
+    "value": "1",
+    "value_length": 1,
+    "initial_url": "https://www.courrier-picard.fr",
+    "final_url": "http://www.courrier-picard.fr/23175/sections/ma-sante",
+    "timestamp": "2025-12-04T15:59:50.479764"
+  },
+  {
+    "task_id": "265",
+    "key": "ayads-is_eea",
+    "value": "{\"value\":true,\"expire\":1765446731413}",
+    "value_length": 37,
+    "initial_url": "https://www.courrier-picard.fr",
+    "final_url": "http://www.courrier-picard.fr/23175/sections/ma-sante",
+    "timestamp": "2025-12-04T15:59:50.479764"
+  },
+  {
+    "task_id": "265",
+    "key": "sbt_i",
+    "value": "7MDQwOTA3ZDEtNmFkZS00ZWI3LWExY2YtNWNhYWNmZThlMmIyOzZjI0ODU4MDEtNmRkNC00MWY5LWFlMWItMThmMmEwYzdjZmFjOzsA=",
+    "value_length": 104,
+    "initial_url": "https://www.courrier-picard.fr",
+    "final_url": "http://www.courrier-picard.fr/23175/sections/ma-sante",
+    "timestamp": "2025-12-04T15:59:50.479764"
+  },
+  {
+    "task_id": "265",
+    "key": "eqtv_cmpvalid",
+    "value": "1",
+    "value_length": 1,
+    "initial_url": "https://www.courrier-picard.fr",
+    "final_url": "http://www.courrier-picard.fr/23175/sections/ma-sante",
+    "timestamp": "2025-12-04T15:59:50.479764"
+  },
+  {
+    "task_id": "265",
+    "key": "utiqEligibility",
+    "value": "{\"isEligible\":false,\"eligibilityCheckTime\":1764853800216,\"retryEligibilityCheckTime\":1764853920216}",
+    "value_length": 99,
+    "initial_url": "https://www.courrier-picard.fr",
+    "final_url": "http://www.courrier-picard.fr/23175/sections/ma-sante",
+    "timestamp": "2025-12-04T15:59:50.479764"
+  },
+  {
+    "task_id": "270",
+    "key": "eng_mt",
+    "value": "{\"ver\":36,\"sessionStartTime\":1764856984713,\"scrollDepth\":37,\"sessionDepth\":[\"522932105\",\"-907253809\"],\"timeOnSite\":14040,\"crossSessionsData\":{\"sessionsHistory\":[1764856984713]},\"numOfTimesMetricsSent\":10}",
+    "value_length": 204,
+    "initial_url": "https://particuliers.sg.fr",
+    "final_url": "https://ouvrir-un-compte-en-ligne.sg.fr/EERAD/s/?idsource=organique&productId=103&cataId=Std",
+    "timestamp": "2025-12-04T16:03:08.835160"
+  },
+  {
+    "task_id": "270",
+    "key": "u_sclid_r",
+    "value": "M23g_a_ArLkmLlERET9tUS3xrH-VPzyt3Cd6l7AuPo5V1A62oqPFW39HwkWos_oAS0Oeqjo_34s",
+    "value_length": 75,
+    "initial_url": "https://particuliers.sg.fr",
+    "final_url": "https://ouvrir-un-compte-en-ligne.sg.fr/EERAD/s/?idsource=organique&productId=103&cataId=Std",
+    "timestamp": "2025-12-04T16:03:08.835160"
+  },
+  {
+    "task_id": "270",
+    "key": "_gcl_ls",
+    "value": "{\"schema\":\"gcl\",\"version\":1,\"gcl_ctr\":{\"value\":{\"value\":0,\"timeouts\":0,\"creationTimeMs\":1764848913562},\"expires\":1772624913562}}",
+    "value_length": 128,
+    "initial_url": "https://particuliers.sg.fr",
+    "final_url": "https://ouvrir-un-compte-en-ligne.sg.fr/EERAD/s/?idsource=organique&productId=103&cataId=Std",
+    "timestamp": "2025-12-04T16:03:08.835160"
+  },
+  {
+    "task_id": "270",
+    "key": "taboola global:user-id",
+    "value": "3b116d12-c912-4fab-b4fb-10320191c819-tuct102ad808",
+    "value_length": 49,
+    "initial_url": "https://particuliers.sg.fr",
+    "final_url": "https://ouvrir-un-compte-en-ligne.sg.fr/EERAD/s/?idsource=organique&productId=103&cataId=Std",
+    "timestamp": "2025-12-04T16:03:08.835160"
+  },
+  {
+    "task_id": "270",
+    "key": "topicsLastReferenceTime",
+    "value": "1764860526760",
+    "value_length": 13,
+    "initial_url": "https://particuliers.sg.fr",
+    "final_url": "https://ouvrir-un-compte-en-ligne.sg.fr/EERAD/s/?idsource=organique&productId=103&cataId=Std",
+    "timestamp": "2025-12-04T16:03:08.835160"
+  },
+  {
+    "task_id": "270",
+    "key": "_uetvid",
+    "value": "296afc20d10711f09cd7eb0396dfece1",
+    "value_length": 32,
+    "initial_url": "https://particuliers.sg.fr",
+    "final_url": "https://ouvrir-un-compte-en-ligne.sg.fr/EERAD/s/?idsource=organique&productId=103&cataId=Std",
+    "timestamp": "2025-12-04T16:03:08.835160"
+  },
+  {
+    "task_id": "270",
+    "key": "__rtbh.lid",
+    "value": "{\"eventType\":\"lid\",\"id\":\"0ByodAzFelHzvAVOdl3X\",\"expiryDate\":\"2026-12-04T15:02:06.530Z\"}",
+    "value_length": 87,
+    "initial_url": "https://particuliers.sg.fr",
+    "final_url": "https://ouvrir-un-compte-en-ligne.sg.fr/EERAD/s/?idsource=organique&productId=103&cataId=Std",
+    "timestamp": "2025-12-04T16:03:08.835160"
+  },
+  {
+    "task_id": "270",
+    "key": "_uetsid_exp",
+    "value": "Fri, 05 Dec 2025 15:02:06 GMT",
+    "value_length": 29,
+    "initial_url": "https://particuliers.sg.fr",
+    "final_url": "https://ouvrir-un-compte-en-ligne.sg.fr/EERAD/s/?idsource=organique&productId=103&cataId=Std",
+    "timestamp": "2025-12-04T16:03:08.835160"
+  },
+  {
+    "task_id": "270",
+    "key": "_uetsid",
+    "value": "296ad770d10711f0b64cb187cefcbd27",
+    "value_length": 32,
+    "initial_url": "https://particuliers.sg.fr",
+    "final_url": "https://ouvrir-un-compte-en-ligne.sg.fr/EERAD/s/?idsource=organique&productId=103&cataId=Std",
+    "timestamp": "2025-12-04T16:03:08.835160"
+  },
+  {
+    "task_id": "270",
+    "key": "lastExternalReferrer",
+    "value": "empty",
+    "value_length": 5,
+    "initial_url": "https://particuliers.sg.fr",
+    "final_url": "https://ouvrir-un-compte-en-ligne.sg.fr/EERAD/s/?idsource=organique&productId=103&cataId=Std",
+    "timestamp": "2025-12-04T16:03:08.835160"
+  },
+  {
+    "task_id": "270",
+    "key": "1653125:session-data",
+    "value": "v2_c2753dbb8a795d714be2ea2807ee23a5_3b116d12-c912-4fab-b4fb-10320191c819-tuct102ad808_1764856984_1764857029_CIi3jgYQhfNkGM3FtM2uMyACKAMwSjjE1whA7IsQSJ_y1wNQ____________AVgAYABot96z_aCM-5lVcAGAAQCIAQA",
+    "value_length": 199,
+    "initial_url": "https://particuliers.sg.fr",
+    "final_url": "https://ouvrir-un-compte-en-ligne.sg.fr/EERAD/s/?idsource=organique&productId=103&cataId=Std",
+    "timestamp": "2025-12-04T16:03:08.835160"
+  },
+  {
+    "task_id": "270",
+    "key": "_uetvid_exp",
+    "value": "Tue, 29 Dec 2026 15:02:06 GMT",
+    "value_length": 29,
+    "initial_url": "https://particuliers.sg.fr",
+    "final_url": "https://ouvrir-un-compte-en-ligne.sg.fr/EERAD/s/?idsource=organique&productId=103&cataId=Std",
+    "timestamp": "2025-12-04T16:03:08.835160"
+  },
+  {
+    "task_id": "270",
+    "key": "lastExternalReferrerTime",
+    "value": "1764860526746",
+    "value_length": 13,
+    "initial_url": "https://particuliers.sg.fr",
+    "final_url": "https://ouvrir-un-compte-en-ligne.sg.fr/EERAD/s/?idsource=organique&productId=103&cataId=Std",
+    "timestamp": "2025-12-04T16:03:08.835160"
+  },
+  {
+    "task_id": "270",
+    "key": "u_sclid",
+    "value": "I-3g_a_ArLkmLlERET9tUS3xrH-VPzytoK4-jlXUDraio8Vbf0fCRaiz-gBLQ56q",
+    "value_length": 64,
+    "initial_url": "https://particuliers.sg.fr",
+    "final_url": "https://ouvrir-un-compte-en-ligne.sg.fr/EERAD/s/?idsource=organique&productId=103&cataId=Std",
+    "timestamp": "2025-12-04T16:03:08.835160"
+  },
+  {
+    "task_id": "270",
+    "key": "etuix",
+    "value": "KNyeLDmmGy3oHtmZGy9_xyRM6zkE.4oEfL4TLkIqnitv0WfSz9Q9Yw--",
+    "value_length": 56,
+    "initial_url": "https://particuliers.sg.fr",
+    "final_url": "https://ouvrir-un-compte-en-ligne.sg.fr/EERAD/s/?idsource=organique&productId=103&cataId=Std",
+    "timestamp": "2025-12-04T16:03:08.835160"
+  },
+  {
+    "task_id": "280",
+    "key": "didomi_token",
+    "value": "eyJ1c2VyX2lkIjoiMTlhZThjZjktZmUwYy02MmI1LWIwMzUtNGNlZjkxMjQyNGY0IiwiY3JlYXRlZCI6IjIwMjUtMTItMDRUMTA6MDE6NTIuMzUyWiIsInVwZGF0ZWQiOiIyMDI1LTEyLTA0VDEwOjAxOjUyLjM1MloiLCJ2ZXJzaW9uIjpudWxsfQ==",
+    "value_length": 188,
+    "initial_url": "https://www.vidal.fr",
+    "final_url": "https://oauth2.vidal.fr/inscription.html?client_id=vidal_2017&redirect_uri=medicaments%2Fliste-a.html",
+    "timestamp": "2025-12-04T16:11:18.810285"
+  },
+  {
+    "task_id": "330",
+    "key": "notificationPopUpTime",
+    "value": "1764863819439",
+    "value_length": 13,
+    "initial_url": "https://www.yves-rocher.fr",
+    "final_url": "https://www.yves-rocher.fr/idees-cadeaux/c/60000?q=:relevance:mpProduct:true&currentPage=2",
+    "timestamp": "2025-12-04T16:58:36.410317"
+  },
+  {
+    "task_id": "339",
+    "key": "previousUrl",
+    "value": "\"/\"",
+    "value_length": 3,
+    "initial_url": "https://monespace.lcl.fr",
+    "final_url": "https://www.lcl.fr/proteger-moi-et-ma-famille",
+    "timestamp": "2025-12-04T17:06:37.461708"
+  },
+  {
+    "task_id": "352",
+    "key": "notificationPopUpTime",
+    "value": "1764864862837",
+    "value_length": 13,
+    "initial_url": "https://www.yves-rocher.fr",
+    "final_url": "https://www.yves-rocher.fr/magasins-instituts-de-beaute/paris-faubourg-st-antoine-3/S-FRYROC944",
+    "timestamp": "2025-12-04T17:16:02.139519"
+  },
+  {
+    "task_id": "363",
+    "key": "lastExternalReferrer",
+    "value": "empty",
+    "value_length": 5,
+    "initial_url": "https://professionnels.sg.fr",
+    "final_url": "https://entreprises.sg.fr/static/Professionnels/Medias/Documentation-et-Tarifs/CG_SBB-PRO-ENT-ASS-COT-2025.pdf",
+    "timestamp": "2025-12-04T17:35:10.720957"
+  },
+  {
+    "task_id": "363",
+    "key": "lastExternalReferrerTime",
+    "value": "1764865891174",
+    "value_length": 13,
+    "initial_url": "https://professionnels.sg.fr",
+    "final_url": "https://entreprises.sg.fr/static/Professionnels/Medias/Documentation-et-Tarifs/CG_SBB-PRO-ENT-ASS-COT-2025.pdf",
+    "timestamp": "2025-12-04T17:35:10.720957"
+  },
+  {
+    "task_id": "363",
+    "key": "etuix",
+    "value": "KNyeLDmmGy3oHtmZGy9_xyRM6zkE.4oEfL4TLkIqnitv0WfSz9Q9Yw--",
+    "value_length": 56,
+    "initial_url": "https://professionnels.sg.fr",
+    "final_url": "https://entreprises.sg.fr/static/Professionnels/Medias/Documentation-et-Tarifs/CG_SBB-PRO-ENT-ASS-COT-2025.pdf",
+    "timestamp": "2025-12-04T17:35:10.720957"
+  },
+  {
+    "task_id": "364",
+    "key": "_chartbeat5",
+    "value": "",
+    "value_length": 0,
+    "initial_url": "https://www.republicain-lorrain.fr",
+    "final_url": "https://www.republicain-lorrain.fr/recherche?q=cancer&x=12&x=1&y=12&y=1&page=3",
+    "timestamp": "2025-12-04T17:39:21.902672"
+  },
+  {
+    "task_id": "364",
+    "key": "_chartbeat5_expires",
+    "value": "1764850287725",
+    "value_length": 13,
+    "initial_url": "https://www.republicain-lorrain.fr",
+    "final_url": "https://www.republicain-lorrain.fr/recherche?q=cancer&x=12&x=1&y=12&y=1&page=3",
+    "timestamp": "2025-12-04T17:39:21.902672"
+  },
+  {
+    "task_id": "416",
+    "key": "GlobalValueProviders__MUTEX_X",
+    "value": "153918000006a615df934d918|1764867738197",
+    "value_length": 39,
+    "initial_url": "https://www.assistance.bouyguestelecom.fr",
+    "final_url": "https://www.bouyguestelecom.fr/telephones-mobiles/telephone-portable-apple/iphone-nouveaute",
+    "timestamp": "2025-12-04T18:05:10.567052"
+  },
+  {
+    "task_id": "448",
+    "key": "tgt:tlm:6",
+    "value": "{\"execution\":258.4,\"parsing\":0.1,\"request\":{\"tls\":39.1,\"timeToFirstByte\":64.2,\"download\":0.8,\"responseSize\":385},\"telemetryServerToken\":\"sWzAuPN0jRUiKvgomAHTp0SHmffQgp8tccUHmmUmLNs=\",\"mode\":\"edge\",\"features\":{\"executePageLoad\":true,\"prefetchViewCount\":1,\"decisioningMethod\":\"server-side\"},\"requestId\":\"b5d6900fa5b34a1886e1f3c49edf99dd\",\"timestamp\":1764868992299}",
+    "value_length": 362,
+    "initial_url": "https://www.zooplus.fr",
+    "final_url": "https://www.zooplus.fr/feedback/shop/chats/litiere_chat/litiere_cats_best_chat/litiere/15759",
+    "timestamp": "2025-12-04T18:24:58.608774"
+  }
+]

@@ -23,7 +23,7 @@ TRACKING_PATTERNS_COMPLETE = {
         'full_name': r'Chris\s+Martin',
         'first_name': r'\bChris\b',
         'last_name': r'\bMartin\b',
-        'name_encoded': r'Chris(?:%20|\s)Martin',
+         'name_encoded': r'Chris(?:%20|\s)Martin',
         
         # Address patterns - full and components
         'address_full': r'688,?\s*avenue\s+Thérèse\s+Robin',
@@ -42,8 +42,8 @@ TRACKING_PATTERNS_COMPLETE = {
         'birth_date_full': r'26[/\-\.]11[/\-\.]2005',
         
         # User ID
-        'user_id': r'\bFR_0417\b',
-        'user_id_partial': r'FR_04[0-9]{2}|FR_041[0-9]',
+        # 'user_id': r'\bFR_0417\b',
+        # 'user_id_partial': r'FR_04[0-9]{2}|FR_041[0-9]',
         
         # Password (for leak detection)
         'password': r'S3cur3!P@ssw0rd_2025#Complex',
@@ -60,17 +60,20 @@ TRACKING_PATTERNS_COMPLETE = {
         'region': r'\bHauts-de-France\b',
         
         # Socio-economic markers
-        'income_range': r'0-12000',
-        'housing': r'\bHLM\b',
-        'employment': r'non\s+déclarés?',
+        # 'income_range': r'0-12000',
+        # 'housing': r'\bHLM\b',
+        'employment_status': r'non\s+déclarés?',
         
         # Demographics
-        'religion': r'\bMusulman\b',
-        'marital_status': r'\bCélibataire\b',
+        # 'religion': r'\bMusulman\b',
+        # 'marital_status': r'\bCélibataire\b',
         
         # Combined patterns (often appear together)
         'name_and_city': r'Chris\s+Martin.*Roubaix|Roubaix.*Chris\s+Martin',
         'email_and_phone': r'chris\.martin.*656898637|656898637.*chris\.martin',
+
+        #ip_adress
+        'ip_address': r'\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b|\b(?:[A-F0-9]{1,4}:){7}[A-F0-9]{1,4}\b'
     },
     
     # ===== USER FR_0446 =====
@@ -113,8 +116,8 @@ TRACKING_PATTERNS_COMPLETE = {
         'birth_date_full': r'14[/\-\.]05[/\-\.]1975',
         
         # User ID
-        'user_id': r'\bFR_0446\b',
-        'user_id_partial': r'FR_04[0-9]{2}|FR_044[0-9]',
+        # 'user_id': r'\bFR_0446\b',
+        # 'user_id_partial': r'FR_04[0-9]{2}|FR_044[0-9]',
         
         # Password (for leak detection)
         'password': r'S3cur3!P@ssw0rd_2025#Complex',
@@ -131,22 +134,24 @@ TRACKING_PATTERNS_COMPLETE = {
         'region': r'\bÎle-de-France\b',
         
         # Socio-economic markers
-        'income_range': r'70000-120000|70000|120000',
-        'profession': r'\bAvocat\b',
-        'employment': r'\bLibéral\b',
+        # 'income_range': r'70000-120000|70000|120000',
+        # 'profession_maker': r'\bAvocat\b',
+        # 'employment_status': r'\bLibéral\b',
         
         # Demographics
-        'religion': r'\bLaïc\b|\bLaïque\b',
+        # 'religion': r'\bLaïc\b|\bLaïque\b',
         'marital_status': r'\bMarié\b',
         'children': r'2\s+enfants?',
         
         # Lifestyle
-        'loisirs': r'\bGolf\b|\bVoyages?\b',
+        # 'loisirs': r'\bGolf\b|\bVoyages?\b',
         
         # Combined patterns
         'name_and_city': r'Chris\s+Martin.*Paris|Paris.*Chris\s+Martin',
         'email_and_phone': r'chris\.martin.*606124448|606124448.*chris\.martin',
         'profession_and_city': r'Avocat.*Paris\s+16|Paris\s+16.*Avocat',
+        #ip_adress
+        'ip_address': r'\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b|\b(?:[A-F0-9]{1,4}:){7}[A-F0-9]{1,4}\b'
     },
     
     # ===== USER FR_0458 =====
@@ -188,8 +193,8 @@ TRACKING_PATTERNS_COMPLETE = {
         'birth_date_full': r'24[/\-\.]01[/\-\.]1966',
         
         # User ID
-        'user_id': r'\bFR_0458\b',
-        'user_id_partial': r'FR_04[0-9]{2}|FR_045[0-9]',
+        # 'user_id': r'\bFR_0458\b',
+        # 'user_id_partial': r'FR_04[0-9]{2}|FR_045[0-9]',
         
         # Password (for leak detection)
         'password': r'S3cur3!P@ssw0rd_2025#Complex',
@@ -202,27 +207,29 @@ TRACKING_PATTERNS_COMPLETE = {
         'gender': r'\bFemme\b|\bFemale\b',
         
         # Socio-economic markers
-        'income_range': r'15000-30000|15000|30000',
+        # 'income_range': r'15000-30000|15000|30000',
         'employment': r'\bTemps\s+partiel\b',
-        'situation': r'\bAidant\b',
+        # 'situation': r'\bAidant\b',
         
         # Health-related (sensitive)
         'health_marker': r'\bcancer\b',
-        'dependent': r'\bpère\b.*charge|parent.*charge',
+        # 'dependent': r'\bpère\b.*charge|parent.*charge',
         
         # Demographics
-        'religion': r'\bCatholique\b',
-        'marital_status': r'\bMarié\b',
+        # 'religion': r'\bCatholique\b',
+        # 'marital_status': r'\bMarié\b',
         'household': r'parent\s+à\s+charge',
         
         # Lifestyle
-        'loisirs': r'\bÉglise\b',
+        # 'loisirs': r'\bÉglise\b',
         'constraints': r'\bBurnout\b',
         
         # Combined patterns
         'name_and_city': r'Chris\s+Martin.*Thibault|Thibault.*Chris\s+Martin',
         'email_and_phone': r'chris\.martin.*653277579|653277579.*chris\.martin',
         'aidant_context': r'aidant.*père|père.*cancer',
+        #ip_adress
+        'ip_address': r'\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b|\b(?:[A-F0-9]{1,4}:){7}[A-F0-9]{1,4}\b'
     }
 ],
 
@@ -452,6 +459,56 @@ TRACKING_PATTERNS_COMPLETE = {
     'chat_support': r'(iadvize|intercom|zendesk|livechat|crisp|drift)',
     'marketing_overlays': r'(wisepops|batch|beamer|hellobar)',
     'feedback_tools': r'(usabilla|qualtrics|medallia)',
-}
+},
+# À ajouter dans regex.py après DIRECT_PII
 
+'DIRECT_PII_KEYS': {
+    # Email
+    'email_key': r'\b(email|mail|e-mail|e_mail|userEmail|user_email|emailAddress|email_address|correo|courriel)\b',
+    
+    # Phone
+    'phone_key': r'\b(phone|tel|telephone|mobile|cellphone|phoneNumber|phone_number|telefono|tel_number)\b',
+    
+    # Name
+    'first_name_key': r'\b(firstName|first_name|prenom|givenName|given_name|forename)\b',
+    'last_name_key': r'\b(lastName|last_name|nom|surname|familyName|family_name)\b',
+    'full_name_key': r'\b(fullName|full_name|displayName|display_name|username|user_name|userName)\b',
+    
+    # Address
+    'address_key': r'\b(address|street|streetAddress|street_address|adresse|rue)\b',
+    'city_key': r'\b(city|ville|town|locality)\b',
+    'postal_code_key': r'\b(zipCode|zip_code|postalCode|postal_code|postcode|cp|codePostal)\b',
+    'country_key': r'\b(country|pays|nation)\b',
+    
+    # Birth date
+    'birthdate_key': r'\b(birthDate|birth_date|birthDay|birth_day|dob|dateOfBirth|date_of_birth|birthday|dateNaissance|date_naissance)\b',
+    'birth_year_key': r'\b(birthYear|birth_year|yearOfBirth|year_of_birth|anneeNaissance)\b',
+    'birth_month_key': r'\b(birthMonth|birth_month|monthOfBirth|month_of_birth|moisNaissance)\b',
+    'birth_day_key': r'\b(birthDay|birth_day|dayOfBirth|day_of_birth|jourNaissance)\b',
+    
+    # User ID
+    'user_id_key': r'\b(userId|user_id|customerId|customer_id|accountId|account_id|memberId|member_id|clientId|client_id)\b',
+
+    # Password (intention de stocker - TRÈS sensible)
+    'password_key': r'\b(password|passwd|pwd|pass|userPassword|user_password|motDePasse|mot_de_passe)\b',
+    
+    # Gender
+    'gender_key': r'\b(gender|sex|sexe|genre|civilite)\b',
+    
+    # Payment info
+    'credit_card_key': r'\b(creditCard|credit_card|cardNumber|card_number|cardNum|carte|numeroCarte)\b',
+    'cvv_key': r'\b(cvv|cvc|securityCode|security_code|cryptogramme)\b',
+    
+    # SSN / National ID
+    'ssn_key': r'\b(ssn|social_security|socialSecurity|social_security_number|numeroSecu|secu)\b',
+    'national_id_key': r'\b(nationalId|national_id|taxId|tax_id|nin|nif|cni)\b',
+    
+    # Age
+    'age_key': r'\b(age|userAge|user_age)\b',
+    'timestamp_key': r'\b(timestamp|created_at|updated_at|last_visit|event_time|session_start)\b',
+    'birth_year_key': r'\b(birthYear|birth_year|birthDateYear|yearOfBirth|year_of_birth|anneeNaissance)\b',
+    'birth_month_key': r'\b(birthMonth|birth_month|birthDateMonth|monthOfBirth|month_of_birth|moisNaissance)\b',
+    'birth_day_key': r'\b(birthDay|birth_day|birthDateDay|dayOfBirth|day_of_birth|jourNaissance)\b',
+    
+}
 }
