@@ -47,7 +47,7 @@ Compiles results across all users for global research findings.
 ```bash
 python statistical_model/run_all.py
 ```
-*   **Results**: Global CSV tables in `results/summary_tables/` (ANOVA ready).
+*   **Results**: Global CSV tables in `results/summary_tables/`.
 
 #### Phase 4: GDPR Profile Reporting
 Generates high-level reproducible reports on PII density.
