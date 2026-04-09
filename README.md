@@ -54,7 +54,7 @@ Generates high-level reproducible reports on PII density.
 ```bash
 python analysis_gdpr_profiles/run_all.py
 ```
-*   **Results**: `reproducibility_report.md` and summary statistics.
+*   **Results**: `reproducibility_report.txt` and summary statistics.
 
 #### Phase 5: Risk Analysis (PxI Model)
 Calculates technical Exposure (Pi), Impact (Ii), and final Risk Scores (Ri).
