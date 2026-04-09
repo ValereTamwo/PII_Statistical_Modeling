@@ -1,0 +1,181 @@
+{
+  "storage_type": "sessionstorage",
+  "total_items": 12,
+  "direct_pii_count": 0,
+  "other_count": 12,
+  "pii_distribution": {
+    "BEHAVIORAL_DATA": 3,
+    "IDENTITY_TRACKING": 5,
+    "ID_SOLUTIONS_AND_EXCHANGES": 1,
+    "NAVIGATION_HISTORY": 2,
+    "TECHNICAL_PASSWORDS": 1
+  },
+  "pii_by_category": {
+    "BEHAVIORAL_DATA": {
+      "BEHAVIORAL_DATA": 3
+    },
+    "IDENTITY_TRACKING": {
+      "IDENTITY_TRACKING": 5
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "ID_SOLUTIONS_AND_EXCHANGES": 1
+    },
+    "NAVIGATION_HISTORY": {
+      "NAVIGATION_HISTORY": 2
+    },
+    "TECHNICAL_PASSWORDS": {
+      "TECHNICAL_PASSWORDS": 1
+    }
+  },
+  "persistence_distribution": {
+    "Session": 12
+  },
+  "persistence_by_pii": {
+    "BEHAVIORAL_DATA": {
+      "Session": 3
+    },
+    "IDENTITY_TRACKING": {
+      "Session": 5
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "Session": 1
+    },
+    "NAVIGATION_HISTORY": {
+      "Session": 2
+    },
+    "TECHNICAL_PASSWORDS": {
+      "Session": 1
+    }
+  },
+  "size_by_pii": {
+    "BEHAVIORAL_DATA": {
+      "total": 1021,
+      "average": 340.3333333333333,
+      "count": 3
+    },
+    "IDENTITY_TRACKING": {
+      "total": 1223,
+      "average": 244.6,
+      "count": 5
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "total": 1013,
+      "average": 1013.0,
+      "count": 1
+    },
+    "NAVIGATION_HISTORY": {
+      "total": 134,
+      "average": 67.0,
+      "count": 2
+    },
+    "TECHNICAL_PASSWORDS": {
+      "total": 148,
+      "average": 148.0,
+      "count": 1
+    }
+  },
+  "content_hierarchy": {
+    "boolean": {
+      "BEHAVIORAL_DATA": 2
+    },
+    "json_structured": {
+      "BEHAVIORAL_DATA": 1,
+      "IDENTITY_TRACKING": 5,
+      "ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "NAVIGATION_HISTORY": 2,
+      "TECHNICAL_PASSWORDS": 1
+    }
+  },
+  "content_types": {
+    "boolean": 2,
+    "json_structured": 10
+  },
+  "vendor_counts": {
+    "javseen.tv": 2,
+    "assurland.com": 3,
+    "sundayapp.io": 7
+  },
+  "category_vendor_flows": [
+    [
+      "BEHAVIORAL_DATA",
+      "javseen.tv",
+      2
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "assurland.com",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "sundayapp.io",
+      4
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "assurland.com",
+      1
+    ],
+    [
+      "ID_SOLUTIONS_AND_EXCHANGES",
+      "assurland.com",
+      1
+    ],
+    [
+      "NAVIGATION_HISTORY",
+      "sundayapp.io",
+      2
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "sundayapp.io",
+      1
+    ]
+  ],
+  "entropy_by_pii": {
+    "BEHAVIORAL_DATA": [
+      2.0,
+      2.0,
+      5.0872328545678895
+    ],
+    "IDENTITY_TRACKING": [
+      4.240962710641206,
+      4.713414705635522,
+      5.0872328545678895,
+      4.240962710641206,
+      4.713414705635522
+    ],
+    "ID_SOLUTIONS_AND_EXCHANGES": [
+      5.0872328545678895
+    ],
+    "NAVIGATION_HISTORY": [
+      4.713414705635522,
+      4.713414705635522
+    ],
+    "TECHNICAL_PASSWORDS": [
+      4.7661018004349325
+    ]
+  },
+  "risk_levels": {
+    "Medium Risk": 5,
+    "High Risk": 6,
+    "Low Risk": 1
+  },
+  "risk_by_pii": {
+    "BEHAVIORAL_DATA": {
+      "Medium Risk": 3
+    },
+    "IDENTITY_TRACKING": {
+      "High Risk": 5
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "High Risk": 1
+    },
+    "NAVIGATION_HISTORY": {
+      "Medium Risk": 2
+    },
+    "TECHNICAL_PASSWORDS": {
+      "Low Risk": 1
+    }
+  }
+}

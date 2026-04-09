@@ -1,0 +1,347 @@
+{
+  "total_items": 701,
+  "items_modified": 161,
+  "items_deleted": 136,
+  "pii_transitions": {
+    "IDENTITY_TRACKING \u2192 SESSION_MANAGEMENT": 28,
+    "BEHAVIORAL_DATA \u2192 IDENTITY_TRACKING": 12,
+    "BEHAVIORAL_DATA \u2192 USER_PREFERENCES": 8,
+    "APP_STATE_STORAGE \u2192 TECHNICAL_PASSWORDS": 8,
+    "IDENTITY_TRACKING \u2192 TECHNICAL_PASSWORDS": 7,
+    "BEHAVIORAL_DATA \u2192 NAVIGATION_HISTORY": 6,
+    "IDENTITY_TRACKING \u2192 UX_AND_PERFORMANCE_ANALYTICS": 6,
+    "DIRECT_PII_KEYS \u2192 LOCATION_AND_DEMOGRAPHICS": 5,
+    "DEVICE_ENV \u2192 IDENTITY_TRACKING": 5,
+    "DEVICE_ENV \u2192 USER_PREFERENCES": 5,
+    "DIRECT_PII_KEYS \u2192 IDENTITY_TRACKING": 5,
+    "APP_STATE_STORAGE \u2192 USER_PREFERENCES": 4,
+    "IDENTITY_TRACKING \u2192 ID_SOLUTIONS_AND_EXCHANGES": 4,
+    "DIRECT_PII \u2192 USER_PREFERENCES": 4,
+    "APP_STATE_STORAGE \u2192 UX_AND_PERFORMANCE_ANALYTICS": 4,
+    "APP_STATE_STORAGE \u2192 NAVIGATION_HISTORY": 4,
+    "BEHAVIORAL_DATA \u2192 SESSION_MANAGEMENT": 3,
+    "APP_STATE_STORAGE \u2192 DIRECT_PII_KEYS": 3,
+    "BEHAVIORAL_DATA \u2192 TECHNICAL_PASSWORDS": 3,
+    "BEHAVIORAL_DATA \u2192 SECURITY_AND_BOT_MITIGATION": 3,
+    "CONSENT_AND_PRIVACY \u2192 USER_PREFERENCES": 3,
+    "CONSENT_AND_PRIVACY \u2192 LOCATION_AND_DEMOGRAPHICS": 3,
+    "BEHAVIORAL_DATA \u2192 ID_SOLUTIONS_AND_EXCHANGES": 2,
+    "DEVICE_ENV \u2192 NAVIGATION_HISTORY": 2,
+    "LOCATION_AND_DEMOGRAPHICS \u2192 DIRECT_PII": 2,
+    "APP_STATE_STORAGE \u2192 DEVICE_ENV": 2,
+    "APP_STATE_STORAGE \u2192 SESSION_MANAGEMENT": 2,
+    "IDENTITY_TRACKING \u2192 NAVIGATION_HISTORY": 2,
+    "BEHAVIORAL_DATA \u2192 UX_AND_PERFORMANCE_ANALYTICS": 2,
+    "DIRECT_PII_KEYS \u2192 USER_PREFERENCES": 2,
+    "DIRECT_PII \u2192 TECHNICAL_PASSWORDS": 1,
+    "BEHAVIORAL_DATA \u2192 TELEMETRY_AND_ERRORS": 1,
+    "DEVICE_ENV \u2192 LOCATION_AND_DEMOGRAPHICS": 1,
+    "BEHAVIORAL_DATA \u2192 DIRECT_PII_KEYS": 1,
+    "APP_STATE_STORAGE \u2192 LOCATION_AND_DEMOGRAPHICS": 1,
+    "DIRECT_PII \u2192 LOCATION_AND_DEMOGRAPHICS": 1,
+    "BEHAVIORAL_DATA \u2192 LOCATION_AND_DEMOGRAPHICS": 1,
+    "DIRECT_PII \u2192 DIRECT_PII_KEYS": 1
+  },
+  "volatility_distribution": {
+    "stable": 427,
+    "moderate": 182,
+    "high": 92
+  },
+  "frequent_changes": [
+    {
+      "key": "hiko_socials",
+      "num_modifications": 28,
+      "pii_category": "USER_PREFERENCES",
+      "config": "Auth_FR_0458_PARTIAL"
+    },
+    {
+      "key": "GTM_CORE_PARAMETERS",
+      "num_modifications": 18,
+      "pii_category": "IDENTITY_TRACKING",
+      "config": "Auth_FR_0446_PARTIAL"
+    },
+    {
+      "key": "___nrbic",
+      "num_modifications": 15,
+      "pii_category": "SESSION_MANAGEMENT",
+      "config": "UnAuth_FR_0458_PARTIAL"
+    },
+    {
+      "key": "___nrbic",
+      "num_modifications": 14,
+      "pii_category": "SESSION_MANAGEMENT",
+      "config": "Auth_FR_0458_PARTIAL"
+    },
+    {
+      "key": "user",
+      "num_modifications": 13,
+      "pii_category": "LOCATION_AND_DEMOGRAPHICS",
+      "config": "Auth_FR_0458_PARTIAL"
+    },
+    {
+      "key": "AMP_URL_INFO",
+      "num_modifications": 9,
+      "pii_category": "NAVIGATION_HISTORY",
+      "config": "Auth_FR_0417_PARTIAL"
+    },
+    {
+      "key": "configC",
+      "num_modifications": 8,
+      "pii_category": "USER_PREFERENCES",
+      "config": "Auth_FR_0446_PARTIAL"
+    },
+    {
+      "key": "idz_pageId",
+      "num_modifications": 8,
+      "pii_category": "IDENTITY_TRACKING",
+      "config": "Auth_FR_0446_PARTIAL"
+    },
+    {
+      "key": "History.store",
+      "num_modifications": 7,
+      "pii_category": "IDENTITY_TRACKING",
+      "config": "UnAuth_FR_0458_PARTIAL"
+    },
+    {
+      "key": "u_scsid_r",
+      "num_modifications": 6,
+      "pii_category": "TECHNICAL_PASSWORDS",
+      "config": "Auth_FR_0458_PARTIAL"
+    },
+    {
+      "key": "klaviyoPagesVisitCountV2",
+      "num_modifications": 6,
+      "pii_category": "BEHAVIORAL_DATA",
+      "config": "Auth_FR_0458_PARTIAL"
+    },
+    {
+      "key": "History.store",
+      "num_modifications": 6,
+      "pii_category": "IDENTITY_TRACKING",
+      "config": "Auth_FR_0458_PARTIAL"
+    },
+    {
+      "key": "AMP_URL_INFO",
+      "num_modifications": 6,
+      "pii_category": "NAVIGATION_HISTORY",
+      "config": "UnAuth_FR_0446_PARTIAL"
+    },
+    {
+      "key": "ph_phc_fzblsKH9pmelO7ONCKinE44x869fRiukwYB3IVIZDzJ_posthog",
+      "num_modifications": 6,
+      "pii_category": "NAVIGATION_HISTORY",
+      "config": "UnAuth_FR_0446_PARTIAL"
+    },
+    {
+      "key": "ph_phc_U2E3emzjXUtnHvqHIcdjcUbbyu8FzyHtJp1OCFlbxfY_posthog",
+      "num_modifications": 6,
+      "pii_category": "NAVIGATION_HISTORY",
+      "config": "UnAuth_FR_0446_PARTIAL"
+    },
+    {
+      "key": "hulkBreadCrumb",
+      "num_modifications": 6,
+      "pii_category": "NAVIGATION_HISTORY",
+      "config": "UnAuth_FR_0446_PARTIAL"
+    },
+    {
+      "key": "klaviyoPagesVisitCountV2",
+      "num_modifications": 6,
+      "pii_category": "BEHAVIORAL_DATA",
+      "config": "UnAuth_FR_0458_PARTIAL"
+    },
+    {
+      "key": "pmTempStorage",
+      "num_modifications": 5,
+      "pii_category": "SESSION_MANAGEMENT",
+      "config": "Auth_FR_0417_PARTIAL"
+    },
+    {
+      "key": "___nrbi",
+      "num_modifications": 4,
+      "pii_category": "IDENTITY_TRACKING",
+      "config": "Auth_FR_0458_PARTIAL"
+    },
+    {
+      "key": "marfeel-sdk-store",
+      "num_modifications": 4,
+      "pii_category": "DEVICE_ENV",
+      "config": "Auth_FR_0458_PARTIAL"
+    },
+    {
+      "key": "oct8ne-checkdomain-result-fr-FR",
+      "num_modifications": 4,
+      "pii_category": "USER_PREFERENCES",
+      "config": "UnAuth_FR_0417_PARTIAL"
+    },
+    {
+      "key": "idz_pageId",
+      "num_modifications": 4,
+      "pii_category": "IDENTITY_TRACKING",
+      "config": "UnAuth_FR_0446_PARTIAL"
+    },
+    {
+      "key": "__rtbh.uid",
+      "num_modifications": 4,
+      "pii_category": "ID_SOLUTIONS_AND_EXCHANGES",
+      "config": "UnAuth_FR_0446_PARTIAL"
+    },
+    {
+      "key": "marfeel-sdk-store",
+      "num_modifications": 4,
+      "pii_category": "APP_STATE_STORAGE",
+      "config": "UnAuth_FR_0458_PARTIAL"
+    },
+    {
+      "key": "as_session_id",
+      "num_modifications": 3,
+      "pii_category": "SESSION_MANAGEMENT",
+      "config": "Auth_FR_0417_PARTIAL"
+    },
+    {
+      "key": "u_scsid_r",
+      "num_modifications": 3,
+      "pii_category": "TECHNICAL_PASSWORDS",
+      "config": "Auth_FR_0417_PARTIAL"
+    },
+    {
+      "key": "_cltk",
+      "num_modifications": 3,
+      "pii_category": "IDENTITY_TRACKING",
+      "config": "Auth_FR_0446_PARTIAL"
+    },
+    {
+      "key": "AMP_URL_INFO",
+      "num_modifications": 3,
+      "pii_category": "NAVIGATION_HISTORY",
+      "config": "UnAuth_FR_0417_PARTIAL"
+    },
+    {
+      "key": "u_scsid_r",
+      "num_modifications": 3,
+      "pii_category": "TECHNICAL_PASSWORDS",
+      "config": "UnAuth_FR_0458_PARTIAL"
+    },
+    {
+      "key": "imo:sessionID",
+      "num_modifications": 3,
+      "pii_category": "SESSION_MANAGEMENT",
+      "config": "UnAuth_FR_0458_PARTIAL"
+    },
+    {
+      "key": "previousUrl",
+      "num_modifications": 2,
+      "pii_category": "NAVIGATION_HISTORY",
+      "config": "Auth_FR_0417_PARTIAL"
+    },
+    {
+      "key": "ph_phc_fzblsKH9pmelO7ONCKinE44x869fRiukwYB3IVIZDzJ_posthog",
+      "num_modifications": 2,
+      "pii_category": "NAVIGATION_HISTORY",
+      "config": "Auth_FR_0446_PARTIAL"
+    },
+    {
+      "key": "wbn_evt_count|cbda3bdd-f61d-4211-902e-89bad0f4498e",
+      "num_modifications": 2,
+      "pii_category": "BEHAVIORAL_DATA",
+      "config": "Auth_FR_0458_PARTIAL"
+    },
+    {
+      "key": "tt_pixel_session_index",
+      "num_modifications": 2,
+      "pii_category": "IDENTITY_TRACKING",
+      "config": "Auth_FR_0458_PARTIAL"
+    },
+    {
+      "key": "ABT_IS_DATALAYER_CHECKED",
+      "num_modifications": 2,
+      "pii_category": "UX_AND_PERFORMANCE_ANALYTICS",
+      "config": "UnAuth_FR_0446_PARTIAL"
+    },
+    {
+      "key": "tt_pixel_session_index",
+      "num_modifications": 2,
+      "pii_category": "IDENTITY_TRACKING",
+      "config": "UnAuth_FR_0446_PARTIAL"
+    },
+    {
+      "key": "idSurveillanceCurrentPage",
+      "num_modifications": 2,
+      "pii_category": "BEHAVIORAL_DATA",
+      "config": "UnAuth_FR_0458_PARTIAL"
+    },
+    {
+      "key": "com.adobe.reactor.core.visitorTracking.trafficSource",
+      "num_modifications": 1,
+      "pii_category": "BEHAVIORAL_DATA",
+      "config": "Auth_FR_0458_PARTIAL"
+    },
+    {
+      "key": "com.adobe.reactor.core.visitorTracking.pagesViewed",
+      "num_modifications": 1,
+      "pii_category": "BEHAVIORAL_DATA",
+      "config": "Auth_FR_0458_PARTIAL"
+    },
+    {
+      "key": "prevPageType",
+      "num_modifications": 1,
+      "pii_category": "BEHAVIORAL_DATA",
+      "config": "Auth_FR_0458_PARTIAL"
+    },
+    {
+      "key": "com.adobe.reactor.core.visitorTracking.landingTime",
+      "num_modifications": 1,
+      "pii_category": "BEHAVIORAL_DATA",
+      "config": "Auth_FR_0458_PARTIAL"
+    },
+    {
+      "key": "com.adobe.reactor.core.visitorTracking.landingPage",
+      "num_modifications": 1,
+      "pii_category": "LOCATION_AND_DEMOGRAPHICS",
+      "config": "Auth_FR_0458_PARTIAL"
+    },
+    {
+      "key": "prevPageName",
+      "num_modifications": 1,
+      "pii_category": "BEHAVIORAL_DATA",
+      "config": "Auth_FR_0458_PARTIAL"
+    },
+    {
+      "key": "wisepops-pageview_id",
+      "num_modifications": 1,
+      "pii_category": "BEHAVIORAL_DATA",
+      "config": "Auth_FR_0458_PARTIAL"
+    },
+    {
+      "key": "_cltk",
+      "num_modifications": 1,
+      "pii_category": "IDENTITY_TRACKING",
+      "config": "UnAuth_FR_0446_PARTIAL"
+    },
+    {
+      "key": "ABT_ENOUGH_TIME_ELAPSED",
+      "num_modifications": 1,
+      "pii_category": "UX_AND_PERFORMANCE_ANALYTICS",
+      "config": "UnAuth_FR_0446_PARTIAL"
+    },
+    {
+      "key": "onesignal-pageview-count",
+      "num_modifications": 1,
+      "pii_category": "BEHAVIORAL_DATA",
+      "config": "UnAuth_FR_0446_PARTIAL"
+    },
+    {
+      "key": "sf_522_queuedInteractions",
+      "num_modifications": 1,
+      "pii_category": "BEHAVIORAL_DATA",
+      "config": "UnAuth_FR_0458_PARTIAL"
+    },
+    {
+      "key": "ABTastyUA",
+      "num_modifications": 1,
+      "pii_category": "USER_PREFERENCES",
+      "config": "UnAuth_FR_0458_PARTIAL"
+    }
+  ],
+  "num_configs": 6
+}

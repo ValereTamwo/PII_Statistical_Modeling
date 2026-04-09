@@ -1,0 +1,95 @@
+{
+  "method": "Ridge_LogitSpace",
+  "lambda": 0.15,
+  "lambda_selection": {
+    "criterion": "minimum lambda satisfying all sanity checks",
+    "grid": [
+      {
+        "lambda": 0.0,
+        "rmse": 0.10249,
+        "mean_std": 0.31179,
+        "sanity_ok": false
+      },
+      {
+        "lambda": 0.01,
+        "rmse": 0.10158,
+        "mean_std": 0.30546,
+        "sanity_ok": false
+      },
+      {
+        "lambda": 0.05,
+        "rmse": 0.09863,
+        "mean_std": 0.28286,
+        "sanity_ok": false
+      },
+      {
+        "lambda": 0.1,
+        "rmse": 0.09617,
+        "mean_std": 0.25959,
+        "sanity_ok": false
+      },
+      {
+        "lambda": 0.15,
+        "rmse": 0.09464,
+        "mean_std": 0.24049,
+        "sanity_ok": true
+      },
+      {
+        "lambda": 0.2,
+        "rmse": 0.09377,
+        "mean_std": 0.22455,
+        "sanity_ok": true
+      },
+      {
+        "lambda": 0.3,
+        "rmse": 0.09331,
+        "mean_std": 0.19952,
+        "sanity_ok": true
+      },
+      {
+        "lambda": 0.5,
+        "rmse": 0.09514,
+        "mean_std": 0.16643,
+        "sanity_ok": true
+      },
+      {
+        "lambda": 1.0,
+        "rmse": 0.10505,
+        "mean_std": 0.12795,
+        "sanity_ok": false
+      }
+    ],
+    "selected": {
+      "lambda": 0.15,
+      "rmse": 0.09464,
+      "mean_std": 0.24049,
+      "sanity_ok": true
+    }
+  },
+  "rmse": 0.09464,
+  "betas": {
+    "intercept": -2.257,
+    "ho": 2.1291,
+    "se": 1.2413,
+    "ss": 1.0986,
+    "tp": 1.2208,
+    "pe": 0.8172,
+    "ho_pe": 0.0365
+  },
+  "stability": {
+    "intercept": 0.51918,
+    "ho": 0.17215,
+    "se": 0.05323,
+    "ss": 0.1502,
+    "tp": 0.24481,
+    "pe": 0.13465,
+    "ho_pe": 0.4092
+  },
+  "sanity": {
+    "beta_ho > beta_se": true,
+    "beta_se > beta_pe": true,
+    "beta_tp >= beta_ss": true,
+    "beta_ho_pe > 0": true,
+    "beta_intercept < 0": true
+  }
+}

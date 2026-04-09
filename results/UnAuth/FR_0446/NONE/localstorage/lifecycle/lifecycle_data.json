@@ -1,0 +1,255 @@
+{
+  "storage_type": "localstorage",
+  "metrics": {
+    "total_items": 348,
+    "items_modified": 157,
+    "items_deleted": 94,
+    "entropy_increases": 83,
+    "entropy_decreases": 48,
+    "size_increases": 32,
+    "size_decreases": 14,
+    "pii_transitions": {
+      "APP_STATE_STORAGE → IDENTITY_TRACKING": 2,
+      "USER_PREFERENCES → BEHAVIORAL_DATA": 2,
+      "APP_STATE_STORAGE → USER_PREFERENCES": 3,
+      "BEHAVIORAL_DATA → DIRECT_PII_KEYS": 16,
+      "DEVICE_ENV → ID_SOLUTIONS_AND_EXCHANGES": 5,
+      "BEHAVIORAL_DATA → ID_SOLUTIONS_AND_EXCHANGES": 6,
+      "APP_STATE_STORAGE → DEVICE_ENV": 3,
+      "DIRECT_PII → IDENTITY_TRACKING": 1,
+      "SECURITY_AND_BOT_MITIGATION → BEHAVIORAL_DATA": 2,
+      "DEVICE_ENV → NAVIGATION_HISTORY": 1,
+      "CONSENT_AND_PRIVACY → ID_SOLUTIONS_AND_EXCHANGES": 3,
+      "NAVIGATION_HISTORY → DIRECT_PII_KEYS": 1,
+      "USER_PREFERENCES → DIRECT_PII": 1,
+      "IDENTITY_TRACKING → TECHNICAL_PASSWORDS": 4,
+      "DEVICE_ENV → UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "DIRECT_PII_KEYS → UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "BEHAVIORAL_DATA → NAVIGATION_HISTORY": 2,
+      "CONSENT_AND_PRIVACY → UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "IDENTITY_TRACKING → UX_AND_PERFORMANCE_ANALYTICS": 2,
+      "BEHAVIORAL_DATA → USER_PREFERENCES": 4,
+      "BEHAVIORAL_DATA → LOCATION_AND_DEMOGRAPHICS": 2,
+      "BEHAVIORAL_DATA → IDENTITY_TRACKING": 2,
+      "APP_STATE_STORAGE → LOCATION_AND_DEMOGRAPHICS": 1,
+      "IDENTITY_TRACKING → ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "DEVICE_ENV → IDENTITY_TRACKING": 2,
+      "APP_STATE_STORAGE → DIRECT_PII_KEYS": 2,
+      "USER_PREFERENCES → UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "APP_STATE_STORAGE → TECHNICAL_PASSWORDS": 1,
+      "ID_SOLUTIONS_AND_EXCHANGES → UX_AND_PERFORMANCE_ANALYTICS": 4,
+      "DEVICE_ENV → TECHNICAL_PASSWORDS": 1,
+      "IDENTITY_TRACKING → USER_PREFERENCES": 1,
+      "BEHAVIORAL_DATA → UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "BEHAVIORAL_DATA → TECHNICAL_PASSWORDS": 2,
+      "DIRECT_PII → DIRECT_PII_KEYS": 1,
+      "DIRECT_PII → LOCATION_AND_DEMOGRAPHICS": 1,
+      "DEVICE_ENV → USER_PREFERENCES": 1,
+      "BEHAVIORAL_DATA → SESSION_MANAGEMENT": 1,
+      "DEVICE_ENV → DIRECT_PII_KEYS": 1
+    },
+    "volatility_distribution": {
+      "moderate": 141,
+      "stable": 139,
+      "high": 68
+    },
+    "change_frequency": {
+      "avg_gap": 32.87288977159881,
+      "min_gap": 0,
+      "max_gap": 376
+    },
+    "frequent_changes": [
+      {
+        "key": "ab.storage.sessionId.df88c069-84bb-4ae8-9830-0cfe6e341181",
+        "avg_gap": 0.0,
+        "num_modifications": 4,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "_qcses_p-6Fv0cGNfc_bw8",
+        "avg_gap": 0.0,
+        "num_modifications": 2,
+        "pii_category": "TECHNICAL_PASSWORDS"
+      },
+      {
+        "key": "ab.storage.lastReqToEndpoint.df88c069-84bb-4ae8-9830-0cfe6e341181",
+        "avg_gap": 0.0,
+        "num_modifications": 2,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "ab.storage.session_id_for_cached_metadata.df88c069-84bb-4ae8-9830-0cfe6e341181",
+        "avg_gap": 0.0,
+        "num_modifications": 4,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "pubx:defaults",
+        "avg_gap": 0.0,
+        "num_modifications": 2,
+        "pii_category": "USER_PREFERENCES"
+      },
+      {
+        "key": "TC_PRIVACY_IAB_VENDORLIST",
+        "avg_gap": 0.0,
+        "num_modifications": 4,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "ab.storage.lastSdkReq.df88c069-84bb-4ae8-9830-0cfe6e341181",
+        "avg_gap": 0.0,
+        "num_modifications": 2,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "ab.storage.deviceId.df88c069-84bb-4ae8-9830-0cfe6e341181",
+        "avg_gap": 0.0,
+        "num_modifications": 2,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "beyable-sessionsWithInfos",
+        "avg_gap": 0.0,
+        "num_modifications": 3,
+        "pii_category": "SESSION_MANAGEMENT"
+      },
+      {
+        "key": "ab.storage.triggers.ts.df88c069-84bb-4ae8-9830-0cfe6e341181",
+        "avg_gap": 0.0,
+        "num_modifications": 2,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "__mpq_436ab54ce79a37742241d4f156f647e9_ev",
+        "avg_gap": 1.5217391304347827,
+        "num_modifications": 24,
+        "pii_category": "USER_PREFERENCES"
+      },
+      {
+        "key": "id5id_v2_3041097886136397",
+        "avg_gap": 3.7777777777777777,
+        "num_modifications": 10,
+        "pii_category": "ID_SOLUTIONS_AND_EXCHANGES"
+      },
+      {
+        "key": "topicsLastReferenceTime",
+        "avg_gap": 8.288135593220339,
+        "num_modifications": 45,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "id5id_v2_3128260569756937",
+        "avg_gap": 9.857142857142858,
+        "num_modifications": 15,
+        "pii_category": "ID_SOLUTIONS_AND_EXCHANGES"
+      },
+      {
+        "key": "cto_bundle",
+        "avg_gap": 10.11111111111111,
+        "num_modifications": 30,
+        "pii_category": "ID_SOLUTIONS_AND_EXCHANGES"
+      },
+      {
+        "key": "didomi_token",
+        "avg_gap": 10.448275862068966,
+        "num_modifications": 24,
+        "pii_category": "DIRECT_PII_KEYS"
+      },
+      {
+        "key": "ph_phc_fzblsKH9pmelO7ONCKinE44x869fRiukwYB3IVIZDzJ_posthog",
+        "avg_gap": 10.8,
+        "num_modifications": 21,
+        "pii_category": "TECHNICAL_PASSWORDS"
+      },
+      {
+        "key": "_uetsid_exp",
+        "avg_gap": 13.0,
+        "num_modifications": 26,
+        "pii_category": "IDENTITY_TRACKING"
+      },
+      {
+        "key": "_uetvid_exp",
+        "avg_gap": 13.0,
+        "num_modifications": 26,
+        "pii_category": "IDENTITY_TRACKING"
+      },
+      {
+        "key": "intercom.intercom-state-s99hjxzs",
+        "avg_gap": 14.625,
+        "num_modifications": 9,
+        "pii_category": "LOCATION_AND_DEMOGRAPHICS"
+      }
+    ],
+    "url_modifications": {
+      "fr.fiverr.com": 63,
+      "www.petitfute.com": 45,
+      "www.viewsurf.com": 32,
+      "www.assistant-juridique.fr": 24,
+      "www.lhotellerie-restauration.fr": 22,
+      "www.sortiraparis.com": 21,
+      "www.seloger-bureaux-commerces.com": 20,
+      "www.legalstart.fr": 15,
+      "www.fram.fr": 15,
+      "www.legalplace.fr": 14
+    },
+    "pii_modification_patterns": {
+      "IDENTITY_TRACKING": {
+        "count": 125,
+        "avg_gap": 30.727848101265824
+      },
+      "ID_SOLUTIONS_AND_EXCHANGES": {
+        "count": 129,
+        "avg_gap": 28.037837837837838
+      },
+      "BEHAVIORAL_DATA": {
+        "count": 86,
+        "avg_gap": 42.92134831460674
+      },
+      "USER_PREFERENCES": {
+        "count": 82,
+        "avg_gap": 22.625
+      },
+      "APP_STATE_STORAGE": {
+        "count": 43,
+        "avg_gap": 51.36538461538461
+      },
+      "DIRECT_PII_KEYS": {
+        "count": 46,
+        "avg_gap": 28.785714285714285
+      },
+      "DEVICE_ENV": {
+        "count": 22,
+        "avg_gap": 45.0
+      },
+      "NAVIGATION_HISTORY": {
+        "count": 34,
+        "avg_gap": 31.051724137931036
+      },
+      "CONSENT_AND_PRIVACY": {
+        "count": 11,
+        "avg_gap": 115.125
+      },
+      "DIRECT_PII": {
+        "count": 2,
+        "avg_gap": 125.0
+      },
+      "UX_AND_PERFORMANCE_ANALYTICS": {
+        "count": 47,
+        "avg_gap": 22.020833333333332
+      },
+      "TECHNICAL_PASSWORDS": {
+        "count": 35,
+        "avg_gap": 21.375
+      },
+      "LOCATION_AND_DEMOGRAPHICS": {
+        "count": 11,
+        "avg_gap": 35.583333333333336
+      },
+      "SESSION_MANAGEMENT": {
+        "count": 3,
+        "avg_gap": 0.0
+      }
+    }
+  },
+  "num_timelines": 348
+}

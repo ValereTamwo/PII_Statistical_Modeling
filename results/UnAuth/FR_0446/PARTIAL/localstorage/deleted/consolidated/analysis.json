@@ -1,0 +1,671 @@
+{
+  "storage_type": "localstorage",
+  "total_items": 129,
+  "direct_pii_count": 2,
+  "other_count": 127,
+  "pii_distribution": {
+    "unknown": 2,
+    "APP_STATE_STORAGE": 32,
+    "BEHAVIORAL_DATA": 24,
+    "CONSENT_AND_PRIVACY": 6,
+    "DEVICE_ENV": 3,
+    "DIRECT_PII_KEYS": 4,
+    "IDENTITY_TRACKING": 37,
+    "ID_SOLUTIONS_AND_EXCHANGES": 1,
+    "LOCATION_AND_DEMOGRAPHICS": 1,
+    "NAVIGATION_HISTORY": 11,
+    "USER_PREFERENCES": 6,
+    "UX_AND_PERFORMANCE_ANALYTICS": 2
+  },
+  "pii_by_category": {
+    "DIRECT_PII": {
+      "unknown": 2
+    },
+    "APP_STATE_STORAGE": {
+      "APP_STATE_STORAGE": 32
+    },
+    "BEHAVIORAL_DATA": {
+      "BEHAVIORAL_DATA": 24
+    },
+    "CONSENT_AND_PRIVACY": {
+      "CONSENT_AND_PRIVACY": 6
+    },
+    "DEVICE_ENV": {
+      "DEVICE_ENV": 3
+    },
+    "DIRECT_PII_KEYS": {
+      "DIRECT_PII_KEYS": 4
+    },
+    "IDENTITY_TRACKING": {
+      "IDENTITY_TRACKING": 37
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "ID_SOLUTIONS_AND_EXCHANGES": 1
+    },
+    "LOCATION_AND_DEMOGRAPHICS": {
+      "LOCATION_AND_DEMOGRAPHICS": 1
+    },
+    "NAVIGATION_HISTORY": {
+      "NAVIGATION_HISTORY": 11
+    },
+    "USER_PREFERENCES": {
+      "USER_PREFERENCES": 6
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "UX_AND_PERFORMANCE_ANALYTICS": 2
+    }
+  },
+  "persistence_distribution": {
+    "Persistent": 129
+  },
+  "persistence_by_pii": {
+    "unknown": {
+      "Persistent": 2
+    },
+    "APP_STATE_STORAGE": {
+      "Persistent": 32
+    },
+    "BEHAVIORAL_DATA": {
+      "Persistent": 24
+    },
+    "CONSENT_AND_PRIVACY": {
+      "Persistent": 6
+    },
+    "DEVICE_ENV": {
+      "Persistent": 3
+    },
+    "DIRECT_PII_KEYS": {
+      "Persistent": 4
+    },
+    "IDENTITY_TRACKING": {
+      "Persistent": 37
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "Persistent": 1
+    },
+    "LOCATION_AND_DEMOGRAPHICS": {
+      "Persistent": 1
+    },
+    "NAVIGATION_HISTORY": {
+      "Persistent": 11
+    },
+    "USER_PREFERENCES": {
+      "Persistent": 6
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "Persistent": 2
+    }
+  },
+  "size_by_pii": {
+    "unknown": {
+      "total": 130,
+      "average": 65.0,
+      "count": 2
+    },
+    "APP_STATE_STORAGE": {
+      "total": 4459,
+      "average": 139.34375,
+      "count": 32
+    },
+    "BEHAVIORAL_DATA": {
+      "total": 771160,
+      "average": 32131.666666666668,
+      "count": 24
+    },
+    "CONSENT_AND_PRIVACY": {
+      "total": 770513,
+      "average": 128418.83333333333,
+      "count": 6
+    },
+    "DEVICE_ENV": {
+      "total": 769988,
+      "average": 256662.66666666666,
+      "count": 3
+    },
+    "DIRECT_PII_KEYS": {
+      "total": 3711,
+      "average": 927.75,
+      "count": 4
+    },
+    "IDENTITY_TRACKING": {
+      "total": 2022,
+      "average": 54.648648648648646,
+      "count": 37
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "total": 247,
+      "average": 247.0,
+      "count": 1
+    },
+    "LOCATION_AND_DEMOGRAPHICS": {
+      "total": 88,
+      "average": 88.0,
+      "count": 1
+    },
+    "NAVIGATION_HISTORY": {
+      "total": 408,
+      "average": 37.09090909090909,
+      "count": 11
+    },
+    "USER_PREFERENCES": {
+      "total": 155,
+      "average": 25.833333333333332,
+      "count": 6
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "total": 767241,
+      "average": 383620.5,
+      "count": 2
+    }
+  },
+  "content_hierarchy": {
+    "complex_string": {
+      "unknown": 2,
+      "APP_STATE_STORAGE": 26,
+      "BEHAVIORAL_DATA": 1,
+      "IDENTITY_TRACKING": 23,
+      "UX_AND_PERFORMANCE_ANALYTICS": 1
+    },
+    "json_structured": {
+      "APP_STATE_STORAGE": 6,
+      "BEHAVIORAL_DATA": 11,
+      "CONSENT_AND_PRIVACY": 6,
+      "DEVICE_ENV": 3,
+      "DIRECT_PII_KEYS": 4,
+      "IDENTITY_TRACKING": 7,
+      "LOCATION_AND_DEMOGRAPHICS": 1,
+      "NAVIGATION_HISTORY": 1,
+      "USER_PREFERENCES": 3,
+      "UX_AND_PERFORMANCE_ANALYTICS": 1
+    },
+    "number": {
+      "BEHAVIORAL_DATA": 11,
+      "NAVIGATION_HISTORY": 5
+    },
+    "timestamp": {
+      "BEHAVIORAL_DATA": 1
+    },
+    "uuid": {
+      "IDENTITY_TRACKING": 4
+    },
+    "token_id": {
+      "IDENTITY_TRACKING": 1,
+      "ID_SOLUTIONS_AND_EXCHANGES": 1
+    },
+    "short_text": {
+      "IDENTITY_TRACKING": 2,
+      "USER_PREFERENCES": 2
+    },
+    "language_code": {
+      "NAVIGATION_HISTORY": 5
+    },
+    "boolean": {
+      "USER_PREFERENCES": 1
+    }
+  },
+  "content_types": {
+    "complex_string": 53,
+    "json_structured": 43,
+    "number": 16,
+    "timestamp": 1,
+    "uuid": 4,
+    "token_id": 2,
+    "short_text": 4,
+    "language_code": 5,
+    "boolean": 1
+  },
+  "vendor_counts": {
+    "monnuage.fr": 19,
+    "mon-sejour-en-montagne.com": 6,
+    "myselogerpro.com": 5,
+    "kayak.fr": 32,
+    "ouedkniss.com": 1,
+    "sujetdebac.fr": 2,
+    "okvoyage.com": 4,
+    "thalazur.fr": 20,
+    "bourse-des-vols.com": 5,
+    "lessaisies.com": 10,
+    "avis.fr": 11,
+    "legalstart.fr": 6,
+    "nouvelair.com": 1,
+    "cdiscount.com": 6,
+    "iadfrance.fr": 1
+  },
+  "category_vendor_flows": [
+    [
+      "unknown",
+      "monnuage.fr",
+      2
+    ],
+    [
+      "APP_STATE_STORAGE",
+      "mon-sejour-en-montagne.com",
+      2
+    ],
+    [
+      "APP_STATE_STORAGE",
+      "myselogerpro.com",
+      1
+    ],
+    [
+      "APP_STATE_STORAGE",
+      "kayak.fr",
+      26
+    ],
+    [
+      "APP_STATE_STORAGE",
+      "ouedkniss.com",
+      1
+    ],
+    [
+      "APP_STATE_STORAGE",
+      "sujetdebac.fr",
+      1
+    ],
+    [
+      "APP_STATE_STORAGE",
+      "okvoyage.com",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "thalazur.fr",
+      2
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "bourse-des-vols.com",
+      2
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "mon-sejour-en-montagne.com",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "myselogerpro.com",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "lessaisies.com",
+      3
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "monnuage.fr",
+      9
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "avis.fr",
+      2
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "legalstart.fr",
+      2
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "nouvelair.com",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "cdiscount.com",
+      1
+    ],
+    [
+      "CONSENT_AND_PRIVACY",
+      "cdiscount.com",
+      1
+    ],
+    [
+      "CONSENT_AND_PRIVACY",
+      "mon-sejour-en-montagne.com",
+      1
+    ],
+    [
+      "CONSENT_AND_PRIVACY",
+      "myselogerpro.com",
+      1
+    ],
+    [
+      "CONSENT_AND_PRIVACY",
+      "monnuage.fr",
+      2
+    ],
+    [
+      "CONSENT_AND_PRIVACY",
+      "bourse-des-vols.com",
+      1
+    ],
+    [
+      "DEVICE_ENV",
+      "cdiscount.com",
+      1
+    ],
+    [
+      "DEVICE_ENV",
+      "myselogerpro.com",
+      1
+    ],
+    [
+      "DEVICE_ENV",
+      "sujetdebac.fr",
+      1
+    ],
+    [
+      "DIRECT_PII_KEYS",
+      "mon-sejour-en-montagne.com",
+      1
+    ],
+    [
+      "DIRECT_PII_KEYS",
+      "myselogerpro.com",
+      1
+    ],
+    [
+      "DIRECT_PII_KEYS",
+      "monnuage.fr",
+      1
+    ],
+    [
+      "DIRECT_PII_KEYS",
+      "avis.fr",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "thalazur.fr",
+      14
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "cdiscount.com",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "mon-sejour-en-montagne.com",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "kayak.fr",
+      5
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "monnuage.fr",
+      4
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "lessaisies.com",
+      3
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "avis.fr",
+      5
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "legalstart.fr",
+      4
+    ],
+    [
+      "ID_SOLUTIONS_AND_EXCHANGES",
+      "cdiscount.com",
+      1
+    ],
+    [
+      "LOCATION_AND_DEMOGRAPHICS",
+      "monnuage.fr",
+      1
+    ],
+    [
+      "NAVIGATION_HISTORY",
+      "thalazur.fr",
+      4
+    ],
+    [
+      "NAVIGATION_HISTORY",
+      "lessaisies.com",
+      4
+    ],
+    [
+      "NAVIGATION_HISTORY",
+      "avis.fr",
+      3
+    ],
+    [
+      "USER_PREFERENCES",
+      "kayak.fr",
+      1
+    ],
+    [
+      "USER_PREFERENCES",
+      "bourse-des-vols.com",
+      2
+    ],
+    [
+      "USER_PREFERENCES",
+      "okvoyage.com",
+      3
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "cdiscount.com",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "iadfrance.fr",
+      1
+    ]
+  ],
+  "entropy_by_pii": {
+    "unknown": [
+      4.031994599685459,
+      4.031994599685459
+    ],
+    "APP_STATE_STORAGE": [
+      4.134990152123812,
+      4.967502525145618,
+      3.7330072301048833,
+      3.698601303971483,
+      3.5552557931123943,
+      3.569440242716905,
+      3.739059189593494,
+      3.663320189106,
+      3.5553129590011165,
+      3.7254128972590443,
+      3.5272925846688996,
+      3.7641272837157884,
+      3.7193609377704338,
+      3.5820673863999555,
+      3.778645325632872,
+      3.189898095464287,
+      3.779315949407467,
+      3.7938339913245507,
+      3.7330072301048833,
+      3.4885210323234332,
+      3.7888583463760606,
+      3.834147917027245,
+      3.662986596793427,
+      3.5353679088960774,
+      3.868220250848072,
+      3.683208073322317,
+      3.7822682296173893,
+      3.485568752113511,
+      3.516207814343077,
+      3.1018812234760182,
+      4.681768526817388,
+      5.357779757879933
+    ],
+    "BEHAVIORAL_DATA": [
+      2.8150724101159437,
+      4.839833920632099,
+      2.7773627950641697,
+      4.967502525145618,
+      4.381503067617363,
+      2.8731406795131336,
+      4.678831392926849,
+      2.931208948910323,
+      4.771062347878202,
+      2.6235166412180155,
+      2.5073801024236357,
+      1.0,
+      2.6612262562697895,
+      0.0,
+      4.445244141641249,
+      0.0,
+      2.9219280948873623,
+      0.0,
+      1.0,
+      2.592850131858461,
+      1.0,
+      0.0,
+      1.0,
+      5.12518938307594
+    ],
+    "CONSENT_AND_PRIVACY": [
+      5.12518938307594,
+      5.357779757879933,
+      4.967502525145618,
+      4.173092228358935,
+      4.464558038845993,
+      4.173092228358935
+    ],
+    "DEVICE_ENV": [
+      5.12518938307594,
+      4.967502525145618,
+      3.1018812234760182
+    ],
+    "DIRECT_PII_KEYS": [
+      5.357779757879933,
+      4.967502525145618,
+      4.678831392926849,
+      4.771062347878202
+    ],
+    "IDENTITY_TRACKING": [
+      4.675769481663427,
+      4.674411895090359,
+      3.8243889795745694,
+      3.810928306279287,
+      4.004179955765251,
+      3.829239931817578,
+      5.4097691679168305,
+      4.659567094075592,
+      3.7543428694210528,
+      4.031994599685459,
+      3.718789129781929,
+      4.721286895090358,
+      3.213513256009071,
+      4.031994599685459,
+      3.9564050694324293,
+      3.9059244270435443,
+      4.747067630449594,
+      3.829239931817578,
+      3.879893823520666,
+      4.674411895090359,
+      3.5275182662886326,
+      3.6435230313733094,
+      3.750807235905091,
+      3.699027875319407,
+      4.693539871775567,
+      3.213513256009071,
+      4.027567157116929,
+      2.5032583347756456,
+      1.4466166676282082,
+      3.6084585933443494,
+      1.4466166676282082,
+      3.6556390622295662,
+      2.5032583347756456,
+      3.6084585933443494,
+      4.096439344671015,
+      3.829239931817578,
+      3.829239931817578
+    ],
+    "ID_SOLUTIONS_AND_EXCHANGES": [
+      5.4097691679168305
+    ],
+    "LOCATION_AND_DEMOGRAPHICS": [
+      4.612325511319296
+    ],
+    "NAVIGATION_HISTORY": [
+      2.321928094887362,
+      2.7192945256669794,
+      3.0269868333592873,
+      2.321928094887362,
+      2.8731406795131336,
+      2.321928094887362,
+      2.7773627950641693,
+      4.771062347878202,
+      2.321928094887362,
+      2.4116022179746714,
+      2.321928094887362
+    ],
+    "USER_PREFERENCES": [
+      2.0,
+      3.0957952550009344,
+      3.0957952550009344,
+      4.443365626644181,
+      4.303830742923251,
+      4.3213862662293785
+    ],
+    "UX_AND_PERFORMANCE_ANALYTICS": [
+      5.12518938307594,
+      4.545389678911046
+    ]
+  },
+  "risk_levels": {
+    "High Risk": 40,
+    "Medium Risk": 88,
+    "Critical Risk": 1
+  },
+  "risk_by_pii": {
+    "unknown": {
+      "High Risk": 2
+    },
+    "APP_STATE_STORAGE": {
+      "Medium Risk": 32
+    },
+    "BEHAVIORAL_DATA": {
+      "Medium Risk": 23,
+      "High Risk": 1
+    },
+    "CONSENT_AND_PRIVACY": {
+      "Medium Risk": 6
+    },
+    "DEVICE_ENV": {
+      "Medium Risk": 3
+    },
+    "DIRECT_PII_KEYS": {
+      "Medium Risk": 4
+    },
+    "IDENTITY_TRACKING": {
+      "High Risk": 36,
+      "Critical Risk": 1
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "High Risk": 1
+    },
+    "LOCATION_AND_DEMOGRAPHICS": {
+      "Medium Risk": 1
+    },
+    "NAVIGATION_HISTORY": {
+      "Medium Risk": 11
+    },
+    "USER_PREFERENCES": {
+      "Medium Risk": 6
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "Medium Risk": 2
+    }
+  }
+}

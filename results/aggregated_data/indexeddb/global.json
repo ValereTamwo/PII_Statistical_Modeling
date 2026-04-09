@@ -1,0 +1,335 @@
+{
+  "total_items": 306142,
+  "direct_pii_count": 207,
+  "other_count": 305935,
+  "risk_levels": {
+    "High Risk": 227477,
+    "Medium Risk": 78665
+  },
+  "risk_by_pii": {
+    "unknown": {
+      "High Risk": 207
+    },
+    "APP_STATE_STORAGE": {
+      "Medium Risk": 3368
+    },
+    "BEHAVIORAL_DATA": {
+      "Medium Risk": 24903,
+      "High Risk": 179027
+    },
+    "DEVICE_ENV": {
+      "High Risk": 21554,
+      "Medium Risk": 11545
+    },
+    "DIRECT_PII_KEYS": {
+      "Medium Risk": 1042
+    },
+    "IDENTITY_TRACKING": {
+      "High Risk": 23462
+    },
+    "INFRASTRUCTURE": {
+      "Medium Risk": 3799
+    },
+    "LOCATION_AND_DEMOGRAPHICS": {
+      "Medium Risk": 10361
+    },
+    "NAVIGATION_HISTORY": {
+      "High Risk": 2241,
+      "Medium Risk": 1778
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "Medium Risk": 479,
+      "High Risk": 118
+    },
+    "SENSITIVE_LOCATION_PII": {
+      "Medium Risk": 85
+    },
+    "TECHNICAL_PASSWORDS": {
+      "Medium Risk": 484
+    },
+    "USER_PREFERENCES": {
+      "Medium Risk": 18211,
+      "High Risk": 239
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "Medium Risk": 1355,
+      "High Risk": 9
+    },
+    "CONSENT_AND_PRIVACY": {
+      "Medium Risk": 994,
+      "High Risk": 16
+    },
+    "SUSPICIOUS_VALUES": {
+      "High Risk": 54
+    },
+    "FINGERPRINTING_ADVANCED": {
+      "High Risk": 6
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "High Risk": 101
+    },
+    "SESSION_MANAGEMENT": {
+      "High Risk": 443,
+      "Medium Risk": 199
+    },
+    "TELEMETRY_AND_ERRORS": {
+      "Medium Risk": 61
+    },
+    "UNCATEGORYED": {
+      "Medium Risk": 1
+    }
+  },
+  "content_hierarchy": {
+    "ip_address": {
+      "unknown": 42,
+      "DEVICE_ENV": 2376,
+      "USER_PREFERENCES": 3
+    },
+    "boolean": {
+      "APP_STATE_STORAGE": 763,
+      "BEHAVIORAL_DATA": 1123,
+      "DEVICE_ENV": 299,
+      "DIRECT_PII_KEYS": 47,
+      "IDENTITY_TRACKING": 809,
+      "INFRASTRUCTURE": 696,
+      "SECURITY_AND_BOT_MITIGATION": 53,
+      "USER_PREFERENCES": 3422,
+      "UX_AND_PERFORMANCE_ANALYTICS": 376,
+      "CONSENT_AND_PRIVACY": 276,
+      "LOCATION_AND_DEMOGRAPHICS": 22,
+      "unknown": 12,
+      "NAVIGATION_HISTORY": 81,
+      "ID_SOLUTIONS_AND_EXCHANGES": 3,
+      "SESSION_MANAGEMENT": 4
+    },
+    "complex_string": {
+      "APP_STATE_STORAGE": 1994,
+      "BEHAVIORAL_DATA": 79407,
+      "DEVICE_ENV": 11182,
+      "DIRECT_PII_KEYS": 230,
+      "IDENTITY_TRACKING": 10303,
+      "LOCATION_AND_DEMOGRAPHICS": 3640,
+      "NAVIGATION_HISTORY": 2666,
+      "SECURITY_AND_BOT_MITIGATION": 314,
+      "SENSITIVE_LOCATION_PII": 84,
+      "USER_PREFERENCES": 11372,
+      "UX_AND_PERFORMANCE_ANALYTICS": 569,
+      "unknown": 105,
+      "CONSENT_AND_PRIVACY": 498,
+      "TECHNICAL_PASSWORDS": 270,
+      "SUSPICIOUS_VALUES": 43,
+      "FINGERPRINTING_ADVANCED": 6,
+      "ID_SOLUTIONS_AND_EXCHANGES": 85,
+      "SESSION_MANAGEMENT": 215,
+      "TELEMETRY_AND_ERRORS": 31,
+      "UNCATEGORYED": 1
+    },
+    "short_text": {
+      "APP_STATE_STORAGE": 369,
+      "BEHAVIORAL_DATA": 64394,
+      "DEVICE_ENV": 12290,
+      "DIRECT_PII_KEYS": 150,
+      "IDENTITY_TRACKING": 5896,
+      "LOCATION_AND_DEMOGRAPHICS": 6409,
+      "TECHNICAL_PASSWORDS": 47,
+      "USER_PREFERENCES": 2818,
+      "CONSENT_AND_PRIVACY": 222,
+      "SECURITY_AND_BOT_MITIGATION": 36,
+      "ID_SOLUTIONS_AND_EXCHANGES": 9,
+      "TELEMETRY_AND_ERRORS": 21,
+      "UX_AND_PERFORMANCE_ANALYTICS": 11,
+      "SESSION_MANAGEMENT": 1,
+      "NAVIGATION_HISTORY": 1
+    },
+    "language_code": {
+      "BEHAVIORAL_DATA": 13143,
+      "DEVICE_ENV": 2445,
+      "USER_PREFERENCES": 361,
+      "UX_AND_PERFORMANCE_ANALYTICS": 14,
+      "IDENTITY_TRACKING": 19,
+      "APP_STATE_STORAGE": 9,
+      "NAVIGATION_HISTORY": 14,
+      "LOCATION_AND_DEMOGRAPHICS": 252,
+      "SECURITY_AND_BOT_MITIGATION": 3
+    },
+    "number": {
+      "BEHAVIORAL_DATA": 42877,
+      "DEVICE_ENV": 4237,
+      "IDENTITY_TRACKING": 4691,
+      "INFRASTRUCTURE": 3103,
+      "USER_PREFERENCES": 199,
+      "UX_AND_PERFORMANCE_ANALYTICS": 378,
+      "APP_STATE_STORAGE": 121,
+      "LOCATION_AND_DEMOGRAPHICS": 33,
+      "SUSPICIOUS_VALUES": 2,
+      "NAVIGATION_HISTORY": 1255,
+      "SECURITY_AND_BOT_MITIGATION": 18,
+      "CONSENT_AND_PRIVACY": 6,
+      "SENSITIVE_LOCATION_PII": 1,
+      "unknown": 15,
+      "SESSION_MANAGEMENT": 422,
+      "TECHNICAL_PASSWORDS": 4,
+      "DIRECT_PII_KEYS": 570
+    },
+    "token_id": {
+      "BEHAVIORAL_DATA": 2980,
+      "DEVICE_ENV": 270,
+      "IDENTITY_TRACKING": 992,
+      "TECHNICAL_PASSWORDS": 86,
+      "USER_PREFERENCES": 167,
+      "APP_STATE_STORAGE": 52,
+      "SECURITY_AND_BOT_MITIGATION": 173,
+      "CONSENT_AND_PRIVACY": 6,
+      "ID_SOLUTIONS_AND_EXCHANGES": 4,
+      "LOCATION_AND_DEMOGRAPHICS": 4,
+      "SUSPICIOUS_VALUES": 9,
+      "TELEMETRY_AND_ERRORS": 9,
+      "UX_AND_PERFORMANCE_ANALYTICS": 16
+    },
+    "json_structured": {
+      "DIRECT_PII_KEYS": 15,
+      "LOCATION_AND_DEMOGRAPHICS": 1,
+      "NAVIGATION_HISTORY": 2,
+      "TECHNICAL_PASSWORDS": 57,
+      "USER_PREFERENCES": 76,
+      "APP_STATE_STORAGE": 60,
+      "IDENTITY_TRACKING": 25,
+      "BEHAVIORAL_DATA": 6,
+      "CONSENT_AND_PRIVACY": 2,
+      "unknown": 3
+    },
+    "uuid": {
+      "IDENTITY_TRACKING": 694,
+      "TECHNICAL_PASSWORDS": 20
+    },
+    "empty": {
+      "USER_PREFERENCES": 32,
+      "IDENTITY_TRACKING": 33
+    },
+    "email": {
+      "unknown": 30,
+      "DIRECT_PII_KEYS": 30
+    }
+  },
+  "content_types": {
+    "ip_address": 2421,
+    "boolean": 7986,
+    "complex_string": 123015,
+    "short_text": 92674,
+    "language_code": 16260,
+    "number": 57932,
+    "token_id": 4768,
+    "json_structured": 247,
+    "uuid": 714,
+    "empty": 65,
+    "email": 60
+  },
+  "vendor_counts": {
+    "sortiraparis.com": 13690,
+    "Pinterest": 455,
+    "cdiscount.com": 845,
+    "vitisphere.com": 5277,
+    "entreparticuliers.com": 20,
+    "Google": 237222,
+    "fonciamillenium.net": 67,
+    "locservice.fr": 233,
+    "youtube-nocookie.com": 26,
+    "fiverr.com": 6568,
+    "kanpai.fr": 745,
+    "kayak.fr": 14,
+    "ouedkniss.com": 108,
+    "casamundo.fr": 10,
+    "easydmp.net": 21,
+    "tangooserver.com": 7,
+    "2trk.info": 7,
+    "lastminute.com": 10,
+    "volotea.com": 13,
+    "dalloz.fr": 39,
+    "lefebvre-dalloz.fr": 23,
+    "seloger.com": 1,
+    "lespompeuses.com": 307,
+    "toscane-boutique.fr": 1228,
+    "amoursucre.com": 216,
+    "windfinder.com": 630,
+    "zimo.fr": 14,
+    "goodnite.gg": 3732,
+    "sundayapp.io": 52,
+    "egora.fr": 3318,
+    "greenweez.com": 26,
+    "reseauinternational.net": 39,
+    "Microsoft": 1313,
+    "livenation.fr": 339,
+    "auto-doc.fr": 3,
+    "armandthiery.fr": 4,
+    "buycycle.com": 2,
+    "judgehype.com": 3,
+    "billetreduc.com": 959,
+    "cache-cache.fr": 5,
+    "but.fr": 4,
+    "planet.fr": 4084,
+    "bouyguestelecom.fr": 899,
+    "cosmopolitan.fr": 118,
+    "melty.fr": 12,
+    "pressesante.com": 56,
+    "creusot-infos.com": 10,
+    "laprovence.com": 110,
+    "willemsefrance.fr": 45,
+    "mister-auto.com": 208,
+    "vertbaudet.fr": 4555,
+    "valeursactuelles.com": 3719,
+    "wordpress.com": 53,
+    "dealabs.com": 798,
+    "carrefour.fr": 708,
+    "franceinfo.fr": 2199,
+    "numerama.com": 17,
+    "lexpress.fr": 190,
+    "01net.com": 974,
+    "magicmaman.com": 272,
+    "francebleu.fr": 75,
+    "huffingtonpost.fr": 175,
+    "abcbourse.com": 108,
+    "interencheres.com": 281,
+    "commentcamarche.com": 6,
+    "parents.fr": 3,
+    "wecasa.fr": 4,
+    "republicain-lorrain.fr": 100,
+    "nouvelobs.com": 40,
+    "cabaia.fr": 4,
+    "doctolib.fr": 30,
+    "idmarket.com": 11,
+    "ledauphine.com": 34,
+    "dna.fr": 84,
+    "marianne.net": 52,
+    "letudiant.fr": 3,
+    "legalstart.fr": 3534,
+    "fnac.com": 54,
+    "kiwi.com": 2,
+    "liligo.fr": 152,
+    "freshchat.com": 270,
+    "sixt.fr": 6,
+    "easyjet.com": 3,
+    "hertz.fr": 71,
+    "x.com": 32,
+    "boutique-dalloz.fr": 23,
+    "Akamai": 1,
+    "avis.fr": 3,
+    "online-metrix.net": 3,
+    "unibet.fr": 674,
+    "lefigaro.fr": 2209,
+    "odysee.com": 8,
+    "playvod.com": 119,
+    "docteur-fitness.com": 279,
+    "playtv.fr": 9,
+    "xvideos.com": 12,
+    "whitebit.com": 12,
+    "operadeparis.fr": 11,
+    "qapa.fr": 1,
+    "sunday.cloud": 4,
+    "gozofestival.com": 23,
+    "boursier.com": 971,
+    "bmw.fr": 8,
+    "courrier-picard.fr": 5,
+    "tomsguide.fr": 2,
+    "bonial.fr": 9
+  }
+}

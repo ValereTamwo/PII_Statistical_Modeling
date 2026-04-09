@@ -1,0 +1,1828 @@
+{
+  "total_cookies": 475,
+  "direct_pii_count": 0,
+  "other_count": 475,
+  "lifetime_distribution": {
+    "Session": 468,
+    "6-18 months": 3,
+    "<6 months": 4
+  },
+  "lifetime_by_pii": {
+    "APP_STATE_STORAGE": {
+      "Session": 211
+    },
+    "BEHAVIORAL_DATA": {
+      "Session": 42
+    },
+    "CONSENT_AND_PRIVACY": {
+      "Session": 2
+    },
+    "DEVICE_ENV": {
+      "Session": 3
+    },
+    "IDENTITY_TRACKING": {
+      "Session": 120,
+      "6-18 months": 1,
+      "<6 months": 2
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "Session": 1,
+      "<6 months": 2
+    },
+    "INFRASTRUCTURE": {
+      "Session": 1
+    },
+    "NAVIGATION_HISTORY": {
+      "Session": 9
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "Session": 26
+    },
+    "SENSITIVE_LOCATION_PII": {
+      "Session": 1
+    },
+    "SESSION_MANAGEMENT": {
+      "Session": 5
+    },
+    "TECHNICAL_PASSWORDS": {
+      "Session": 9
+    },
+    "USER_PREFERENCES": {
+      "Session": 9
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "Session": 29,
+      "6-18 months": 2
+    }
+  },
+  "httponly_distribution": {
+    "False": 419,
+    "True": 56
+  },
+  "httponly_by_pii": {
+    "APP_STATE_STORAGE": {
+      "False": 200,
+      "True": 11
+    },
+    "BEHAVIORAL_DATA": {
+      "False": 42
+    },
+    "CONSENT_AND_PRIVACY": {
+      "False": 2
+    },
+    "DEVICE_ENV": {
+      "False": 3
+    },
+    "IDENTITY_TRACKING": {
+      "False": 115,
+      "True": 8
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "False": 3
+    },
+    "INFRASTRUCTURE": {
+      "True": 1
+    },
+    "NAVIGATION_HISTORY": {
+      "False": 9
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "True": 23,
+      "False": 3
+    },
+    "SENSITIVE_LOCATION_PII": {
+      "False": 1
+    },
+    "SESSION_MANAGEMENT": {
+      "False": 2,
+      "True": 3
+    },
+    "TECHNICAL_PASSWORDS": {
+      "False": 9
+    },
+    "USER_PREFERENCES": {
+      "False": 8,
+      "True": 1
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "False": 22,
+      "True": 9
+    }
+  },
+  "secure_distribution": {
+    "False": 203,
+    "True": 272
+  },
+  "secure_by_pii": {
+    "APP_STATE_STORAGE": {
+      "False": 79,
+      "True": 132
+    },
+    "BEHAVIORAL_DATA": {
+      "True": 29,
+      "False": 13
+    },
+    "CONSENT_AND_PRIVACY": {
+      "True": 2
+    },
+    "DEVICE_ENV": {
+      "True": 2,
+      "False": 1
+    },
+    "IDENTITY_TRACKING": {
+      "True": 51,
+      "False": 72
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "True": 3
+    },
+    "INFRASTRUCTURE": {
+      "True": 1
+    },
+    "NAVIGATION_HISTORY": {
+      "True": 3,
+      "False": 6
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "True": 23,
+      "False": 3
+    },
+    "SENSITIVE_LOCATION_PII": {
+      "False": 1
+    },
+    "SESSION_MANAGEMENT": {
+      "False": 3,
+      "True": 2
+    },
+    "TECHNICAL_PASSWORDS": {
+      "False": 8,
+      "True": 1
+    },
+    "USER_PREFERENCES": {
+      "False": 4,
+      "True": 5
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "True": 18,
+      "False": 13
+    }
+  },
+  "samesite_distribution": {
+    "Lax": 213,
+    "No Restriction": 249,
+    "Strict": 13
+  },
+  "samesite_by_pii": {
+    "APP_STATE_STORAGE": {
+      "Lax": 79,
+      "No Restriction": 132
+    },
+    "BEHAVIORAL_DATA": {
+      "No Restriction": 26,
+      "Lax": 14,
+      "Strict": 2
+    },
+    "CONSENT_AND_PRIVACY": {
+      "Lax": 2
+    },
+    "DEVICE_ENV": {
+      "No Restriction": 2,
+      "Lax": 1
+    },
+    "IDENTITY_TRACKING": {
+      "Strict": 8,
+      "Lax": 73,
+      "No Restriction": 42
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "No Restriction": 3
+    },
+    "INFRASTRUCTURE": {
+      "No Restriction": 1
+    },
+    "NAVIGATION_HISTORY": {
+      "Lax": 9
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "No Restriction": 20,
+      "Lax": 6
+    },
+    "SENSITIVE_LOCATION_PII": {
+      "Lax": 1
+    },
+    "SESSION_MANAGEMENT": {
+      "Lax": 5
+    },
+    "TECHNICAL_PASSWORDS": {
+      "Lax": 9
+    },
+    "USER_PREFERENCES": {
+      "Lax": 4,
+      "No Restriction": 5
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "No Restriction": 18,
+      "Strict": 3,
+      "Lax": 10
+    }
+  },
+  "security_matrix": {
+    "(False, False)": 183,
+    "(False, True)": 236,
+    "(True, False)": 20,
+    "(True, True)": 36
+  },
+  "security_by_pii": {
+    "APP_STATE_STORAGE": {
+      "Lowly Secure": 68,
+      "Partially Secure": 143
+    },
+    "BEHAVIORAL_DATA": {
+      "Partially Secure": 29,
+      "Lowly Secure": 13
+    },
+    "CONSENT_AND_PRIVACY": {
+      "Partially Secure": 2
+    },
+    "DEVICE_ENV": {
+      "Partially Secure": 2,
+      "Lowly Secure": 1
+    },
+    "IDENTITY_TRACKING": {
+      "Partially Secure": 43,
+      "Lowly Secure": 72,
+      "Secure": 8
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "Partially Secure": 3
+    },
+    "INFRASTRUCTURE": {
+      "Secure": 1
+    },
+    "NAVIGATION_HISTORY": {
+      "Partially Secure": 3,
+      "Lowly Secure": 6
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "Secure": 23,
+      "Lowly Secure": 3
+    },
+    "SENSITIVE_LOCATION_PII": {
+      "Lowly Secure": 1
+    },
+    "SESSION_MANAGEMENT": {
+      "Lowly Secure": 1,
+      "Partially Secure": 3,
+      "Secure": 1
+    },
+    "TECHNICAL_PASSWORDS": {
+      "Lowly Secure": 8,
+      "Partially Secure": 1
+    },
+    "USER_PREFERENCES": {
+      "Lowly Secure": 4,
+      "Partially Secure": 4,
+      "Secure": 1
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "Partially Secure": 23,
+      "Lowly Secure": 6,
+      "Secure": 2
+    }
+  },
+  "thirdparty_distribution": {
+    "Third-Party": 461,
+    "First-Party": 14
+  },
+  "thirdparty_by_pii": {
+    "APP_STATE_STORAGE": {
+      "Third-Party": 211
+    },
+    "BEHAVIORAL_DATA": {
+      "Third-Party": 42
+    },
+    "CONSENT_AND_PRIVACY": {
+      "Third-Party": 2
+    },
+    "DEVICE_ENV": {
+      "Third-Party": 3
+    },
+    "IDENTITY_TRACKING": {
+      "Third-Party": 110,
+      "First-Party": 13
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "Third-Party": 3
+    },
+    "INFRASTRUCTURE": {
+      "Third-Party": 1
+    },
+    "NAVIGATION_HISTORY": {
+      "Third-Party": 9
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "Third-Party": 26
+    },
+    "SENSITIVE_LOCATION_PII": {
+      "Third-Party": 1
+    },
+    "SESSION_MANAGEMENT": {
+      "Third-Party": 5
+    },
+    "TECHNICAL_PASSWORDS": {
+      "Third-Party": 9
+    },
+    "USER_PREFERENCES": {
+      "Third-Party": 9
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "First-Party": 1,
+      "Third-Party": 30
+    }
+  },
+  "thirdparty_httponly": {
+    "Third-Party_False": 406,
+    "Third-Party_True": 55,
+    "First-Party_False": 13,
+    "First-Party_True": 1
+  },
+  "thirdparty_secure": {
+    "Third-Party_False": 191,
+    "Third-Party_True": 270,
+    "First-Party_False": 12,
+    "First-Party_True": 2
+  },
+  "risk_levels": {
+    "Medium Risk": 318,
+    "Low Risk": 14,
+    "High Risk": 143
+  },
+  "risk_by_pii": {
+    "APP_STATE_STORAGE": {
+      "Medium Risk": 200,
+      "Low Risk": 11
+    },
+    "BEHAVIORAL_DATA": {
+      "Medium Risk": 42
+    },
+    "CONSENT_AND_PRIVACY": {
+      "Medium Risk": 2
+    },
+    "DEVICE_ENV": {
+      "Medium Risk": 3
+    },
+    "IDENTITY_TRACKING": {
+      "High Risk": 122,
+      "Medium Risk": 1
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "High Risk": 3
+    },
+    "INFRASTRUCTURE": {
+      "Low Risk": 1
+    },
+    "NAVIGATION_HISTORY": {
+      "Medium Risk": 9
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "Medium Risk": 26
+    },
+    "SENSITIVE_LOCATION_PII": {
+      "Medium Risk": 1
+    },
+    "SESSION_MANAGEMENT": {
+      "Medium Risk": 5
+    },
+    "TECHNICAL_PASSWORDS": {
+      "Medium Risk": 8,
+      "Low Risk": 1
+    },
+    "USER_PREFERENCES": {
+      "Medium Risk": 8,
+      "Low Risk": 1
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "Medium Risk": 13,
+      "High Risk": 18
+    }
+  },
+  "keywords": {
+    "hjsession": 143,
+    "2329484": 39,
+    "xsrf": 36,
+    "token": 36,
+    "realytics": 33,
+    "session": 27,
+    "3432197": 26,
+    "wzsession": 24,
+    "tfpsi": 22,
+    "199596": 13,
+    "4950222": 13,
+    "5229344": 13,
+    "5153785": 13,
+    "528279": 13,
+    "3710789": 13
+  },
+  "content_hierarchy": {
+    "uuid": {
+      "APP_STATE_STORAGE": 2,
+      "IDENTITY_TRACKING": 66
+    },
+    "json_structured": {
+      "APP_STATE_STORAGE": 154,
+      "BEHAVIORAL_DATA": 23,
+      "IDENTITY_TRACKING": 1,
+      "NAVIGATION_HISTORY": 2,
+      "SECURITY_AND_BOT_MITIGATION": 1,
+      "USER_PREFERENCES": 1,
+      "UX_AND_PERFORMANCE_ANALYTICS": 12
+    },
+    "complex_string": {
+      "APP_STATE_STORAGE": 55,
+      "BEHAVIORAL_DATA": 12,
+      "DEVICE_ENV": 1,
+      "IDENTITY_TRACKING": 25,
+      "ID_SOLUTIONS_AND_EXCHANGES": 3,
+      "INFRASTRUCTURE": 1,
+      "NAVIGATION_HISTORY": 1,
+      "SECURITY_AND_BOT_MITIGATION": 25,
+      "SENSITIVE_LOCATION_PII": 1,
+      "SESSION_MANAGEMENT": 3,
+      "TECHNICAL_PASSWORDS": 1,
+      "USER_PREFERENCES": 4,
+      "UX_AND_PERFORMANCE_ANALYTICS": 10
+    },
+    "token_id": {
+      "BEHAVIORAL_DATA": 1,
+      "UX_AND_PERFORMANCE_ANALYTICS": 7
+    },
+    "boolean": {
+      "BEHAVIORAL_DATA": 3,
+      "DEVICE_ENV": 1,
+      "IDENTITY_TRACKING": 21,
+      "NAVIGATION_HISTORY": 5,
+      "SESSION_MANAGEMENT": 1,
+      "TECHNICAL_PASSWORDS": 7,
+      "USER_PREFERENCES": 3,
+      "UX_AND_PERFORMANCE_ANALYTICS": 2
+    },
+    "number": {
+      "BEHAVIORAL_DATA": 3,
+      "CONSENT_AND_PRIVACY": 2,
+      "DEVICE_ENV": 1,
+      "IDENTITY_TRACKING": 6
+    },
+    "short_text": {
+      "IDENTITY_TRACKING": 4,
+      "NAVIGATION_HISTORY": 1,
+      "SESSION_MANAGEMENT": 1,
+      "TECHNICAL_PASSWORDS": 1,
+      "USER_PREFERENCES": 1
+    }
+  },
+  "content_types": {
+    "uuid": 68,
+    "json_structured": 194,
+    "complex_string": 142,
+    "token_id": 8,
+    "boolean": 43,
+    "number": 12,
+    "short_text": 8
+  },
+  "vendor_counts": {
+    "showroomprive.com": 30,
+    "abracadaroom.com": 38,
+    "mitula.fr": 13,
+    "homeexchange.fr": 11,
+    "petitfute.com": 14,
+    "fram.fr": 24,
+    "cgos.info": 12,
+    "kiwiiz.fr": 14,
+    "legalplace.fr": 25,
+    "vide-greniers.org": 26,
+    "acuite.fr": 42,
+    "adscale.de": 12,
+    "kelbillet.com": 14,
+    "locservice.fr": 16,
+    "legalstart.fr": 4,
+    "fiverr.com": 5,
+    "cybevasion.fr": 1,
+    "aeroport.fr": 12,
+    "cdiscount.com": 6,
+    "captaincontrat.com": 3,
+    "sortiraparis.com": 2,
+    "inlietmoi.fr": 1,
+    "inli.fr": 2,
+    "lastminute.com": 15,
+    "dalloz.fr": 1,
+    "lefebvre-dalloz.fr": 4,
+    "volotea.com": 3,
+    "gitedegroupe.fr": 3,
+    "anibis.ch": 2,
+    "easyjet.com": 6,
+    "orpi.com": 2,
+    "cocoonr.fr": 2,
+    "nomade-aventure.com": 1,
+    "mobilhome-express.fr": 2,
+    "nexity.fr": 24,
+    "abcsalles.com": 2,
+    "sujetdebac.fr": 1,
+    "assistant-juridique.fr": 1,
+    "immonot.com": 1,
+    "licitor.com": 3,
+    "onepark.fr": 4,
+    "ircem.com": 1,
+    "Microsoft": 4,
+    "ctnsnet.com": 1,
+    "momondo.fr": 6,
+    "kayak.com": 1,
+    "kayak.fr": 5,
+    "entreparticuliers.com": 2,
+    "bien-dans-ma-ville.fr": 1,
+    "foncia.com": 1,
+    "proprietes-rurales.com": 1,
+    "PubMatic": 4,
+    "vol-direct.fr": 3,
+    "sc-static.net": 1,
+    "id5-sync.com": 1,
+    "Smart AdServer": 1,
+    "Salesforce": 1,
+    "bidtheatre.com": 1,
+    "eyeota.net": 1,
+    "h24travel.com": 1,
+    "calendly.com": 2,
+    "staticroot.com": 1,
+    "HubSpot": 2,
+    "myfonts.net": 2,
+    "vimeo.com": 2,
+    "liligo.com": 1,
+    "liligo.fr": 1,
+    "stay22.com": 2,
+    "temu.com": 2,
+    "stadefrance.com": 3,
+    "cogedim.com": 1,
+    "gites.fr": 1,
+    "vacances-campings.fr": 1,
+    "codeur.com": 1,
+    "notaires.fr": 2,
+    "edenred.fr": 1,
+    "voyages-auchan.com": 1,
+    "sddan.com": 2,
+    "Contentsquare": 2,
+    "Pinterest": 2,
+    "seloger-bureaux-commerces.com": 1,
+    "fonciamillenium.net": 1
+  },
+  "category_vendor_flows": [
+    [
+      "APP_STATE_STORAGE",
+      "showroomprive.com",
+      2
+    ],
+    [
+      "APP_STATE_STORAGE",
+      "abracadaroom.com",
+      33
+    ],
+    [
+      "APP_STATE_STORAGE",
+      "mitula.fr",
+      11
+    ],
+    [
+      "APP_STATE_STORAGE",
+      "homeexchange.fr",
+      11
+    ],
+    [
+      "APP_STATE_STORAGE",
+      "petitfute.com",
+      11
+    ],
+    [
+      "APP_STATE_STORAGE",
+      "fram.fr",
+      11
+    ],
+    [
+      "APP_STATE_STORAGE",
+      "cgos.info",
+      11
+    ],
+    [
+      "APP_STATE_STORAGE",
+      "kiwiiz.fr",
+      11
+    ],
+    [
+      "APP_STATE_STORAGE",
+      "legalplace.fr",
+      22
+    ],
+    [
+      "APP_STATE_STORAGE",
+      "vide-greniers.org",
+      22
+    ],
+    [
+      "APP_STATE_STORAGE",
+      "acuite.fr",
+      33
+    ],
+    [
+      "APP_STATE_STORAGE",
+      "adscale.de",
+      11
+    ],
+    [
+      "APP_STATE_STORAGE",
+      "kelbillet.com",
+      11
+    ],
+    [
+      "APP_STATE_STORAGE",
+      "locservice.fr",
+      11
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "abracadaroom.com",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "mitula.fr",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "petitfute.com",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "kiwiiz.fr",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "legalplace.fr",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "vide-greniers.org",
+      2
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "acuite.fr",
+      3
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "legalstart.fr",
+      2
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "fiverr.com",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "locservice.fr",
+      2
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "cybevasion.fr",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "aeroport.fr",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "cdiscount.com",
+      3
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "captaincontrat.com",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "sortiraparis.com",
+      2
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "inlietmoi.fr",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "inli.fr",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "lastminute.com",
+      3
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "dalloz.fr",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "lefebvre-dalloz.fr",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "volotea.com",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "fram.fr",
+      11
+    ],
+    [
+      "CONSENT_AND_PRIVACY",
+      "showroomprive.com",
+      2
+    ],
+    [
+      "DEVICE_ENV",
+      "gitedegroupe.fr",
+      1
+    ],
+    [
+      "DEVICE_ENV",
+      "anibis.ch",
+      1
+    ],
+    [
+      "DEVICE_ENV",
+      "easyjet.com",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "orpi.com",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "cocoonr.fr",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "locservice.fr",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "kiwiiz.fr",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "nomade-aventure.com",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "petitfute.com",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "mobilhome-express.fr",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "nexity.fr",
+      24
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "abcsalles.com",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "acuite.fr",
+      3
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "legalplace.fr",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "sujetdebac.fr",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "assistant-juridique.fr",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "immonot.com",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "licitor.com",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "adscale.de",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "onepark.fr",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "ircem.com",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "fiverr.com",
+      3
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "Microsoft",
+      3
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "ctnsnet.com",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "momondo.fr",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "kayak.com",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "kayak.fr",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "entreparticuliers.com",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "bien-dans-ma-ville.fr",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "foncia.com",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "proprietes-rurales.com",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "abracadaroom.com",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "easyjet.com",
+      4
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "PubMatic",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "vol-direct.fr",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "inli.fr",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "sc-static.net",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "id5-sync.com",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "Smart AdServer",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "Salesforce",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "showroomprive.com",
+      22
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "lastminute.com",
+      11
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "aeroport.fr",
+      11
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "bidtheatre.com",
+      1
+    ],
+    [
+      "ID_SOLUTIONS_AND_EXCHANGES",
+      "Microsoft",
+      1
+    ],
+    [
+      "ID_SOLUTIONS_AND_EXCHANGES",
+      "PubMatic",
+      2
+    ],
+    [
+      "INFRASTRUCTURE",
+      "eyeota.net",
+      1
+    ],
+    [
+      "NAVIGATION_HISTORY",
+      "showroomprive.com",
+      2
+    ],
+    [
+      "NAVIGATION_HISTORY",
+      "h24travel.com",
+      1
+    ],
+    [
+      "NAVIGATION_HISTORY",
+      "licitor.com",
+      2
+    ],
+    [
+      "NAVIGATION_HISTORY",
+      "gitedegroupe.fr",
+      2
+    ],
+    [
+      "NAVIGATION_HISTORY",
+      "lefebvre-dalloz.fr",
+      1
+    ],
+    [
+      "NAVIGATION_HISTORY",
+      "captaincontrat.com",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "calendly.com",
+      2
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "lastminute.com",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "staticroot.com",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "showroomprive.com",
+      2
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "HubSpot",
+      2
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "cgos.info",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "abracadaroom.com",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "vol-direct.fr",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "myfonts.net",
+      2
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "captaincontrat.com",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "cdiscount.com",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "anibis.ch",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "vimeo.com",
+      2
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "liligo.com",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "liligo.fr",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "stay22.com",
+      2
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "kelbillet.com",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "temu.com",
+      2
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "stadefrance.com",
+      1
+    ],
+    [
+      "SENSITIVE_LOCATION_PII",
+      "cogedim.com",
+      1
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "gites.fr",
+      1
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "abracadaroom.com",
+      1
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "vacances-campings.fr",
+      1
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "kelbillet.com",
+      1
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "lefebvre-dalloz.fr",
+      1
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "codeur.com",
+      1
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "mobilhome-express.fr",
+      1
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "notaires.fr",
+      2
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "kelbillet.com",
+      1
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "onepark.fr",
+      2
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "stadefrance.com",
+      1
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "lefebvre-dalloz.fr",
+      1
+    ],
+    [
+      "USER_PREFERENCES",
+      "edenred.fr",
+      1
+    ],
+    [
+      "USER_PREFERENCES",
+      "cdiscount.com",
+      1
+    ],
+    [
+      "USER_PREFERENCES",
+      "stadefrance.com",
+      1
+    ],
+    [
+      "USER_PREFERENCES",
+      "voyages-auchan.com",
+      1
+    ],
+    [
+      "USER_PREFERENCES",
+      "volotea.com",
+      2
+    ],
+    [
+      "USER_PREFERENCES",
+      "sddan.com",
+      2
+    ],
+    [
+      "USER_PREFERENCES",
+      "vol-direct.fr",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "easyjet.com",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "legalstart.fr",
+      2
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "abracadaroom.com",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "mitula.fr",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "petitfute.com",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "fram.fr",
+      2
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "Contentsquare",
+      2
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "kiwiiz.fr",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "legalplace.fr",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "Pinterest",
+      2
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "vide-greniers.org",
+      2
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "acuite.fr",
+      3
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "cdiscount.com",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "kayak.fr",
+      3
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "momondo.fr",
+      4
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "fiverr.com",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "locservice.fr",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "seloger-bureaux-commerces.com",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "fonciamillenium.net",
+      1
+    ]
+  ],
+  "entropy_by_pii": {
+    "APP_STATE_STORAGE": [
+      3.752715278979704,
+      3.7946534735443413,
+      5.0834304181482866,
+      5.0834304181482866,
+      5.0834304181482866,
+      5.0834304181482866,
+      5.0834304181482866,
+      5.0834304181482866,
+      5.0834304181482866,
+      5.0834304181482866,
+      5.0834304181482866,
+      5.0834304181482866,
+      5.0834304181482866,
+      5.061715600421555,
+      5.061715600421555,
+      5.061715600421555,
+      5.061715600421555,
+      5.061715600421555,
+      5.061715600421555,
+      5.061715600421555,
+      5.061715600421555,
+      5.061715600421555,
+      5.061715600421555,
+      5.061715600421555,
+      5.280970109812335,
+      5.280970109812335,
+      5.280970109812335,
+      5.280970109812335,
+      5.280970109812335,
+      5.280970109812335,
+      5.280970109812335,
+      5.280970109812335,
+      5.280970109812335,
+      5.280970109812335,
+      5.280970109812335,
+      5.046347481337436,
+      5.046347481337436,
+      5.046347481337436,
+      5.046347481337436,
+      5.046347481337436,
+      5.046347481337436,
+      5.046347481337436,
+      5.046347481337436,
+      5.046347481337436,
+      5.046347481337436,
+      5.046347481337436,
+      5.176993376946561,
+      5.176993376946561,
+      5.176993376946561,
+      5.176993376946561,
+      5.176993376946561,
+      5.176993376946561,
+      5.176993376946561,
+      5.176993376946561,
+      5.176993376946561,
+      5.176993376946561,
+      5.176993376946561,
+      5.62191797136609,
+      5.62191797136609,
+      5.62191797136609,
+      5.62191797136609,
+      5.62191797136609,
+      5.62191797136609,
+      5.62191797136609,
+      5.62191797136609,
+      5.62191797136609,
+      5.62191797136609,
+      5.62191797136609,
+      4.98314766514602,
+      4.98314766514602,
+      4.98314766514602,
+      4.98314766514602,
+      4.98314766514602,
+      4.98314766514602,
+      4.98314766514602,
+      4.98314766514602,
+      4.98314766514602,
+      4.98314766514602,
+      4.98314766514602,
+      5.44202147443331,
+      5.44202147443331,
+      5.44202147443331,
+      5.44202147443331,
+      5.44202147443331,
+      5.44202147443331,
+      5.44202147443331,
+      5.44202147443331,
+      5.44202147443331,
+      5.44202147443331,
+      5.44202147443331,
+      5.377628093466825,
+      5.377628093466825,
+      5.377628093466825,
+      5.377628093466825,
+      5.377628093466825,
+      5.377628093466825,
+      5.377628093466825,
+      5.377628093466825,
+      5.377628093466825,
+      5.377628093466825,
+      5.377628093466825,
+      5.071509634732489,
+      5.071509634732489,
+      5.071509634732489,
+      5.071509634732489,
+      5.071509634732489,
+      5.071509634732489,
+      5.071509634732489,
+      5.071509634732489,
+      5.071509634732489,
+      5.071509634732489,
+      5.071509634732489,
+      5.054251970097606,
+      5.054251970097606,
+      5.054251970097606,
+      5.054251970097606,
+      5.054251970097606,
+      5.054251970097606,
+      5.054251970097606,
+      5.054251970097606,
+      5.054251970097606,
+      5.054251970097606,
+      5.054251970097606,
+      5.387949734226068,
+      5.387949734226068,
+      5.387949734226068,
+      5.387949734226068,
+      5.387949734226068,
+      5.387949734226068,
+      5.387949734226068,
+      5.387949734226068,
+      5.387949734226068,
+      5.387949734226068,
+      5.387949734226068,
+      5.00474356624446,
+      5.00474356624446,
+      5.00474356624446,
+      5.00474356624446,
+      5.00474356624446,
+      5.00474356624446,
+      5.00474356624446,
+      5.00474356624446,
+      5.00474356624446,
+      5.00474356624446,
+      5.00474356624446,
+      5.0436252246395235,
+      5.0436252246395235,
+      5.0436252246395235,
+      5.0436252246395235,
+      5.0436252246395235,
+      5.0436252246395235,
+      5.0436252246395235,
+      5.0436252246395235,
+      5.0436252246395235,
+      5.0436252246395235,
+      5.0436252246395235,
+      4.9223243352447055,
+      4.9223243352447055,
+      4.9223243352447055,
+      4.9223243352447055,
+      4.9223243352447055,
+      4.9223243352447055,
+      4.9223243352447055,
+      4.9223243352447055,
+      4.9223243352447055,
+      4.9223243352447055,
+      4.9223243352447055,
+      4.999795542985323,
+      4.999795542985323,
+      4.999795542985323,
+      4.999795542985323,
+      4.999795542985323,
+      4.999795542985323,
+      4.999795542985323,
+      4.999795542985323,
+      4.999795542985323,
+      4.999795542985323,
+      4.999795542985323,
+      5.451623694210373,
+      5.451623694210373,
+      5.451623694210373,
+      5.451623694210373,
+      5.451623694210373,
+      5.451623694210373,
+      5.451623694210373,
+      5.451623694210373,
+      5.451623694210373,
+      5.451623694210373,
+      5.451623694210373,
+      5.020307215409855,
+      5.020307215409855,
+      5.020307215409855,
+      5.020307215409855,
+      5.020307215409855,
+      5.020307215409855,
+      5.020307215409855,
+      5.020307215409855,
+      5.020307215409855,
+      5.020307215409855,
+      5.020307215409855,
+      5.108230458197198,
+      5.108230458197198,
+      5.108230458197198,
+      5.108230458197198,
+      5.108230458197198,
+      5.108230458197198,
+      5.108230458197198,
+      5.108230458197198,
+      5.108230458197198,
+      5.108230458197198,
+      5.108230458197198
+    ],
+    "BEHAVIORAL_DATA": [
+      5.0834304181482866,
+      5.061715600421555,
+      5.046347481337436,
+      4.98314766514602,
+      5.071509634732489,
+      5.054251970097606,
+      5.00474356624446,
+      4.381489360772528,
+      4.9223243352447055,
+      4.517375797816042,
+      4.999795542985323,
+      5.020307215409855,
+      5.108230458197198,
+      0.0,
+      4.106377316818028,
+      3.439268146254097,
+      5.839712355672724,
+      3.054358614016781,
+      0.0,
+      0.0,
+      0.0,
+      4.125533250556851,
+      4.4468867611354375,
+      3.67553535414268,
+      0.0,
+      5.910794090568499,
+      5.89353600494316,
+      1.3485878960124222,
+      5.8980547690271266,
+      0.0,
+      0.0,
+      4.427037864904698,
+      4.427037864904698,
+      4.427037864904698,
+      4.427037864904698,
+      4.427037864904698,
+      4.427037864904698,
+      4.427037864904698,
+      4.427037864904698,
+      4.427037864904698,
+      4.427037864904698,
+      4.427037864904698
+    ],
+    "CONSENT_AND_PRIVACY": [
+      0.0,
+      0.0
+    ],
+    "DEVICE_ENV": [
+      0.0,
+      0.0,
+      4.986115106510787
+    ],
+    "IDENTITY_TRACKING": [
+      4.473839397179402,
+      3.0946939516467022,
+      0.0,
+      0.0,
+      4.555851948726349,
+      3.288884070537636,
+      3.7570488277869583,
+      3.3558342610220855,
+      4.521953643641604,
+      0.0,
+      0.0,
+      4.583133990665955,
+      0.0,
+      3.3230741894285694,
+      0.0,
+      3.093730583109656,
+      5.0436252246395235,
+      4.738409574712229,
+      4.745025837857368,
+      0.0,
+      0.0,
+      3.6914280318460246,
+      5.007700402566745,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      4.528132083922963,
+      4.419867413365261,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      2.7773627950641693,
+      2.321928094887362,
+      5.010133843062771,
+      4.986115106510787,
+      0.0,
+      5.918566619495861,
+      1.584962500721156,
+      3.826874881864637,
+      4.208367439558376,
+      2.321928094887362,
+      4.321928094887363,
+      1.584962500721156,
+      3.792837797403416,
+      5.606165779819447,
+      0.0,
+      3.00040980940788,
+      5.498653642932924,
+      3.752715278979704,
+      3.752715278979704,
+      3.752715278979704,
+      3.752715278979704,
+      3.752715278979704,
+      3.752715278979704,
+      3.752715278979704,
+      3.752715278979704,
+      3.752715278979704,
+      3.752715278979704,
+      3.752715278979704,
+      3.6761906261418296,
+      3.6761906261418296,
+      3.6761906261418296,
+      3.6761906261418296,
+      3.6761906261418296,
+      3.6761906261418296,
+      3.6761906261418296,
+      3.6761906261418296,
+      3.6761906261418296,
+      3.6761906261418296,
+      3.6761906261418296,
+      3.7527152789797036,
+      3.7527152789797036,
+      3.7527152789797036,
+      3.7527152789797036,
+      3.7527152789797036,
+      3.7527152789797036,
+      3.7527152789797036,
+      3.7527152789797036,
+      3.7527152789797036,
+      3.7527152789797036,
+      3.7527152789797036,
+      3.6178610297498888,
+      3.6178610297498888,
+      3.6178610297498888,
+      3.6178610297498888,
+      3.6178610297498888,
+      3.6178610297498888,
+      3.6178610297498888,
+      3.6178610297498888,
+      3.6178610297498888,
+      3.6178610297498888,
+      3.6178610297498888,
+      3.7946534735443413,
+      3.7946534735443413,
+      3.7946534735443413,
+      3.7946534735443413,
+      3.7946534735443413,
+      3.7946534735443413,
+      3.7946534735443413,
+      3.7946534735443413,
+      3.7946534735443413,
+      3.7946534735443413,
+      3.7946534735443413,
+      0.0,
+      3.7080030435786817,
+      3.7080030435786817,
+      3.7080030435786817,
+      3.7080030435786817,
+      3.7080030435786817,
+      3.7080030435786817,
+      3.7080030435786817,
+      3.7080030435786817,
+      3.7080030435786817,
+      3.7080030435786817,
+      3.7080030435786817
+    ],
+    "ID_SOLUTIONS_AND_EXCHANGES": [
+      5.007700402566745,
+      2.75,
+      3.0
+    ],
+    "INFRASTRUCTURE": [
+      2.0
+    ],
+    "NAVIGATION_HISTORY": [
+      1.9182958340544893,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.9182958340544893,
+      2.807354922057604,
+      3.810144243714968
+    ],
+    "SECURITY_AND_BOT_MITIGATION": [
+      5.727033845621662,
+      5.730223627703187,
+      5.673621196314115,
+      5.604548180732881,
+      5.669726506976734,
+      5.62191797136609,
+      5.377628093466825,
+      5.594875184855802,
+      5.7122335130061535,
+      5.644952184828129,
+      5.713901654061014,
+      5.820521645766835,
+      5.609259975834427,
+      5.607806616656918,
+      5.699199728469548,
+      5.740856389465146,
+      5.6978322427912556,
+      5.723180774844875,
+      5.451623694210373,
+      5.6816838106537375,
+      5.689443495471289,
+      5.667336083702814,
+      5.783520526704794,
+      5.64896946887578,
+      5.469730974505031,
+      5.709025645688598
+    ],
+    "SENSITIVE_LOCATION_PII": [
+      4.313738814383288
+    ],
+    "SESSION_MANAGEMENT": [
+      3.321928094887362,
+      5.44202147443331,
+      3.632048827786958,
+      4.715311532225101,
+      2.0
+    ],
+    "TECHNICAL_PASSWORDS": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      3.625
+    ],
+    "USER_PREFERENCES": [
+      4.2132601611956755,
+      4.7369055302179515,
+      4.395626084556433,
+      4.501027786780641,
+      2.0,
+      0.0,
+      0.0,
+      2.807354922057604,
+      4.075659031195112
+    ],
+    "UX_AND_PERFORMANCE_ANALYTICS": [
+      4.573244856845759,
+      4.008132025833399,
+      5.0834304181482866,
+      5.061715600421555,
+      5.046347481337436,
+      3.403989446485262,
+      4.427037864904698,
+      3.403989446485262,
+      4.98314766514602,
+      5.071509634732489,
+      0.0,
+      5.054251970097606,
+      5.00474356624446,
+      4.381489360772528,
+      3.0363722498302232,
+      5.309831400419019,
+      4.9223243352447055,
+      5.257619481864681,
+      5.463543969591968,
+      5.41133205103763,
+      4.517375797816042,
+      4.999795542985323,
+      5.449065917291543,
+      5.343026202422196,
+      5.020307215409855,
+      5.108230458197198,
+      3.3087513512471665,
+      4.654814060600669,
+      4.371754697471475,
+      5.194713557048203,
+      0.0
+    ]
+  },
+  "advanced_risk_levels": {
+    "Low": 157,
+    "High": 274,
+    "Medium": 44
+  }
+}

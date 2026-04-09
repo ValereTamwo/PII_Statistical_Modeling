@@ -1,0 +1,115 @@
+{
+  "storage_type": "sessionstorage",
+  "metrics": {
+    "total_items": 91,
+    "items_modified": 24,
+    "items_deleted": 43,
+    "entropy_increases": 10,
+    "entropy_decreases": 8,
+    "size_increases": 7,
+    "size_decreases": 2,
+    "pii_transitions": {
+      "IDENTITY_TRACKING → TECHNICAL_PASSWORDS": 1,
+      "APP_STATE_STORAGE → USER_PREFERENCES": 1,
+      "DEVICE_ENV → USER_PREFERENCES": 2,
+      "IDENTITY_TRACKING → SESSION_MANAGEMENT": 5,
+      "BEHAVIORAL_DATA → IDENTITY_TRACKING": 1,
+      "IDENTITY_TRACKING → ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "DEVICE_ENV → IDENTITY_TRACKING": 2,
+      "IDENTITY_TRACKING → UX_AND_PERFORMANCE_ANALYTICS": 2,
+      "BEHAVIORAL_DATA → LOCATION_AND_DEMOGRAPHICS": 1,
+      "APP_STATE_STORAGE → BEHAVIORAL_DATA": 1,
+      "USER_PREFERENCES → BEHAVIORAL_DATA": 1,
+      "DEVICE_ENV → NAVIGATION_HISTORY": 1,
+      "DIRECT_PII → LOCATION_AND_DEMOGRAPHICS": 1,
+      "BEHAVIORAL_DATA → DIRECT_PII_KEYS": 2,
+      "APP_STATE_STORAGE → NAVIGATION_HISTORY": 1,
+      "BEHAVIORAL_DATA → USER_PREFERENCES": 1
+    },
+    "volatility_distribution": {
+      "moderate": 46,
+      "high": 15,
+      "stable": 30
+    },
+    "change_frequency": {
+      "avg_gap": 49.06849315068493,
+      "min_gap": 0,
+      "max_gap": 311
+    },
+    "frequent_changes": [
+      {
+        "key": "ph_phc_fzblsKH9pmelO7ONCKinE44x869fRiukwYB3IVIZDzJ_posthog",
+        "avg_gap": 0.0,
+        "num_modifications": 2,
+        "pii_category": "NAVIGATION_HISTORY"
+      },
+      {
+        "key": "ph_phc_U2E3emzjXUtnHvqHIcdjcUbbyu8FzyHtJp1OCFlbxfY_posthog",
+        "avg_gap": 0.0,
+        "num_modifications": 3,
+        "pii_category": "NAVIGATION_HISTORY"
+      },
+      {
+        "key": "GTM_CORE_PARAMETERS",
+        "avg_gap": 6.411764705882353,
+        "num_modifications": 18,
+        "pii_category": "IDENTITY_TRACKING"
+      },
+      {
+        "key": "_cltk",
+        "avg_gap": 30.0,
+        "num_modifications": 4,
+        "pii_category": "IDENTITY_TRACKING"
+      },
+      {
+        "key": "idz_pageId",
+        "avg_gap": 43.285714285714285,
+        "num_modifications": 6,
+        "pii_category": "IDENTITY_TRACKING"
+      }
+    ],
+    "url_modifications": {
+      "www.easyjet.com": 21,
+      "www.showroomprive.com": 9,
+      "morbihan.com": 4,
+      "fr.foncia.com": 4,
+      "www.thalazur.fr": 4,
+      "moncompte.orpi.com": 3,
+      "www.cogedim.com": 3,
+      "www.kanpai.fr": 3,
+      "www.seloger-bureaux-commerces.com": 2,
+      "www.edenred.fr": 2
+    },
+    "pii_modification_patterns": {
+      "NAVIGATION_HISTORY": {
+        "count": 7,
+        "avg_gap": 21.0
+      },
+      "BEHAVIORAL_DATA": {
+        "count": 10,
+        "avg_gap": 105.8
+      },
+      "APP_STATE_STORAGE": {
+        "count": 3,
+        "avg_gap": 88.5
+      },
+      "IDENTITY_TRACKING": {
+        "count": 34,
+        "avg_gap": 29.3
+      },
+      "ID_SOLUTIONS_AND_EXCHANGES": {
+        "count": 4,
+        "avg_gap": 71.85714285714286
+      },
+      "UX_AND_PERFORMANCE_ANALYTICS": {
+        "count": 3,
+        "avg_gap": 221.0
+      },
+      "USER_PREFERENCES": {
+        "count": 2,
+        "avg_gap": 173.0
+      }
+    }
+  },
+  "num_timelines": 91
+}

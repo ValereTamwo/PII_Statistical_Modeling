@@ -1,0 +1,140 @@
+{
+  "by_user": {
+    "FR_0417": {
+      "total_items": 106367,
+      "by_policy": {
+        "ALL": 33744,
+        "NONE": 7379,
+        "PARTIAL": 19476
+      },
+      "by_nav_mode": {
+        "Auth": 45768,
+        "UnAuth": 60599
+      }
+    },
+    "FR_0446": {
+      "total_items": 248725,
+      "by_policy": {
+        "ALL": 98985,
+        "NONE": 59677,
+        "PARTIAL": 28119
+      },
+      "by_nav_mode": {
+        "Auth": 61944,
+        "UnAuth": 186781
+      }
+    },
+    "FR_0458": {
+      "total_items": 75314,
+      "by_policy": {
+        "ALL": 12434,
+        "NONE": 13653,
+        "PARTIAL": 10994
+      },
+      "by_nav_mode": {
+        "Auth": 38233,
+        "UnAuth": 37081
+      }
+    }
+  },
+  "by_nav_mode": {
+    "Auth": {
+      "total_items": 145945,
+      "by_user": {
+        "FR_0417": 45768,
+        "FR_0446": 61944,
+        "FR_0458": 38233
+      },
+      "by_policy": {
+        "ALL": 53324,
+        "NONE": 41690,
+        "PARTIAL": 50931
+      }
+    },
+    "UnAuth": {
+      "total_items": 284461,
+      "by_user": {
+        "FR_0417": 60599,
+        "FR_0446": 186781,
+        "FR_0458": 37081
+      },
+      "by_policy": {
+        "ALL": 145163,
+        "NONE": 80709,
+        "PARTIAL": 58589
+      }
+    }
+  },
+  "by_policy": {
+    "ALL": {
+      "total_items": 198487,
+      "by_user": {
+        "FR_0417": 49310,
+        "FR_0446": 122105,
+        "FR_0458": 27072
+      },
+      "by_nav_mode": {
+        "Auth": 53324,
+        "UnAuth": 145163
+      }
+    },
+    "NONE": {
+      "total_items": 122399,
+      "by_user": {
+        "FR_0417": 23889,
+        "FR_0446": 74387,
+        "FR_0458": 24123
+      },
+      "by_nav_mode": {
+        "Auth": 41690,
+        "UnAuth": 80709
+      }
+    },
+    "PARTIAL": {
+      "total_items": 109520,
+      "by_user": {
+        "FR_0417": 33168,
+        "FR_0446": 52233,
+        "FR_0458": 24119
+      },
+      "by_nav_mode": {
+        "Auth": 50931,
+        "UnAuth": 58589
+      }
+    }
+  },
+  "overall_statistics": {
+    "total_profiles": 18,
+    "total_pii_instances": 430406,
+    "by_category": {
+      "DIRECT_PII_KEYS": 3439,
+      "ID_SOLUTIONS_AND_EXCHANGES": 7397,
+      "LOCATION_AND_DEMOGRAPHICS": 11195,
+      "TECHNICAL_PASSWORDS": 3625,
+      "NAVIGATION_HISTORY": 5576,
+      "UX_AND_PERFORMANCE_ANALYTICS": 5493,
+      "SECURITY_AND_BOT_MITIGATION": 2812,
+      "APP_STATE_STORAGE": 26146,
+      "INFRASTRUCTURE": 4579,
+      "BEHAVIORAL_DATA": 212195,
+      "DIRECT_PII": 1135,
+      "IDENTITY_TRACKING": 81271,
+      "DEVICE_ENV": 35662,
+      "SESSION_MANAGEMENT": 1896,
+      "USER_PREFERENCES": 22471,
+      "CONSENT_AND_PRIVACY": 5195,
+      "SENSITIVE_LOCATION_PII": 100,
+      "SUSPICIOUS_VALUES": 72,
+      "FINGERPRINTING_ADVANCED": 47,
+      "SERVER_SIDE_TRACKING": 36,
+      "TELEMETRY_AND_ERRORS": 63,
+      "UNCATEGORYED": 1
+    },
+    "by_sensitivity": {
+      "critical": 4674,
+      "high": 18639,
+      "medium": 299114,
+      "low": 107979
+    }
+  }
+}

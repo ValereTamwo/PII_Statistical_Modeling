@@ -1,0 +1,70 @@
+{
+  "storage_type": "sessionstorage",
+  "metrics": {
+    "total_items": 91,
+    "items_modified": 11,
+    "items_deleted": 15,
+    "entropy_increases": 8,
+    "entropy_decreases": 7,
+    "size_increases": 2,
+    "size_decreases": 4,
+    "pii_transitions": {
+      "IDENTITY_TRACKING → SESSION_MANAGEMENT": 7,
+      "IDENTITY_TRACKING → NAVIGATION_HISTORY": 1,
+      "BEHAVIORAL_DATA → IDENTITY_TRACKING": 5,
+      "BEHAVIORAL_DATA → DIRECT_PII": 1,
+      "BEHAVIORAL_DATA → DIRECT_PII_KEYS": 4,
+      "BEHAVIORAL_DATA → ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "DIRECT_PII_KEYS → IDENTITY_TRACKING": 2,
+      "BEHAVIORAL_DATA → SESSION_MANAGEMENT": 1,
+      "BEHAVIORAL_DATA → USER_PREFERENCES": 1,
+      "APP_STATE_STORAGE → SESSION_MANAGEMENT": 1,
+      "APP_STATE_STORAGE → DIRECT_PII_KEYS": 1,
+      "APP_STATE_STORAGE → USER_PREFERENCES": 1
+    },
+    "volatility_distribution": {
+      "stable": 66,
+      "moderate": 22,
+      "high": 3
+    },
+    "change_frequency": {
+      "avg_gap": 36.48235294117647,
+      "min_gap": 0,
+      "max_gap": 294
+    },
+    "frequent_changes": [],
+    "url_modifications": {
+      "www.passagedudesir.fr": 4,
+      "sundayapp.io": 3,
+      "www.malakoffhumanis.com": 3,
+      "diablo3.judgehype.com": 2,
+      "www.les-transferts.com": 2,
+      "quiz.capital.fr": 1,
+      "www.assurland.com": 1,
+      "www.docteur-fitness.com": 1
+    },
+    "pii_modification_patterns": {
+      "NAVIGATION_HISTORY": {
+        "count": 5,
+        "avg_gap": 72.4
+      },
+      "BEHAVIORAL_DATA": {
+        "count": 7,
+        "avg_gap": 102.0
+      },
+      "IDENTITY_TRACKING": {
+        "count": 1,
+        "avg_gap": 0
+      },
+      "UX_AND_PERFORMANCE_ANALYTICS": {
+        "count": 2,
+        "avg_gap": 0
+      },
+      "SESSION_MANAGEMENT": {
+        "count": 2,
+        "avg_gap": 87.6
+      }
+    }
+  },
+  "num_timelines": 91
+}

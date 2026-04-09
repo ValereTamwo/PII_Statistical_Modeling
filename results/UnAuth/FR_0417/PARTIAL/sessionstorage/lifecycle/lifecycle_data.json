@@ -1,0 +1,92 @@
+{
+  "storage_type": "sessionstorage",
+  "metrics": {
+    "total_items": 79,
+    "items_modified": 14,
+    "items_deleted": 5,
+    "entropy_increases": 13,
+    "entropy_decreases": 16,
+    "size_increases": 5,
+    "size_decreases": 6,
+    "pii_transitions": {
+      "IDENTITY_TRACKING → SESSION_MANAGEMENT": 6,
+      "APP_STATE_STORAGE → SESSION_MANAGEMENT": 2,
+      "IDENTITY_TRACKING → NAVIGATION_HISTORY": 2,
+      "BEHAVIORAL_DATA → IDENTITY_TRACKING": 6,
+      "BEHAVIORAL_DATA → USER_PREFERENCES": 1,
+      "APP_STATE_STORAGE → USER_PREFERENCES": 1,
+      "APP_STATE_STORAGE → DIRECT_PII_KEYS": 1
+    },
+    "volatility_distribution": {
+      "stable": 61,
+      "moderate": 15,
+      "high": 3
+    },
+    "change_frequency": {
+      "avg_gap": 70.62745098039215,
+      "min_gap": 0,
+      "max_gap": 294
+    },
+    "frequent_changes": [
+      {
+        "key": "oct8ne-checkdomain-result-fr-FR",
+        "avg_gap": 26.333333333333332,
+        "num_modifications": 4,
+        "pii_category": "USER_PREFERENCES"
+      },
+      {
+        "key": "AMP_URL_INFO",
+        "avg_gap": 38.5,
+        "num_modifications": 3,
+        "pii_category": "NAVIGATION_HISTORY"
+      }
+    ],
+    "url_modifications": {
+      "lesciseauxmagiques.fr": 6,
+      "www.les-transferts.com": 6,
+      "www.malakoffhumanis.com": 4,
+      "sundayapp.io": 3,
+      "www.passagedudesir.fr": 3,
+      "diablo3.judgehype.com": 2,
+      "www.cinetrafic.fr": 2,
+      "www.panini.fr": 2,
+      "quiz.capital.fr": 1,
+      "www.vfscan.com": 1
+    },
+    "pii_modification_patterns": {
+      "APP_STATE_STORAGE": {
+        "count": 2,
+        "avg_gap": 79.0
+      },
+      "NAVIGATION_HISTORY": {
+        "count": 5,
+        "avg_gap": 51.714285714285715
+      },
+      "IDENTITY_TRACKING": {
+        "count": 1,
+        "avg_gap": 159.0
+      },
+      "BEHAVIORAL_DATA": {
+        "count": 3,
+        "avg_gap": 0
+      },
+      "UX_AND_PERFORMANCE_ANALYTICS": {
+        "count": 5,
+        "avg_gap": 170.0
+      },
+      "SERVER_SIDE_TRACKING": {
+        "count": 2,
+        "avg_gap": 54.5
+      },
+      "SESSION_MANAGEMENT": {
+        "count": 6,
+        "avg_gap": 87.6
+      },
+      "USER_PREFERENCES": {
+        "count": 6,
+        "avg_gap": 59.5
+      }
+    }
+  },
+  "num_timelines": 79
+}

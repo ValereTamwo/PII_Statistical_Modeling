@@ -1,0 +1,322 @@
+{
+  "total_items": 663,
+  "items_modified": 170,
+  "items_deleted": 152,
+  "pii_transitions": {
+    "IDENTITY_TRACKING \u2192 SESSION_MANAGEMENT": 22,
+    "IDENTITY_TRACKING \u2192 UX_AND_PERFORMANCE_ANALYTICS": 14,
+    "DEVICE_ENV \u2192 IDENTITY_TRACKING": 11,
+    "DEVICE_ENV \u2192 USER_PREFERENCES": 9,
+    "IDENTITY_TRACKING \u2192 TECHNICAL_PASSWORDS": 8,
+    "BEHAVIORAL_DATA \u2192 USER_PREFERENCES": 8,
+    "BEHAVIORAL_DATA \u2192 NAVIGATION_HISTORY": 7,
+    "DIRECT_PII \u2192 LOCATION_AND_DEMOGRAPHICS": 6,
+    "BEHAVIORAL_DATA \u2192 UX_AND_PERFORMANCE_ANALYTICS": 6,
+    "APP_STATE_STORAGE \u2192 USER_PREFERENCES": 5,
+    "BEHAVIORAL_DATA \u2192 IDENTITY_TRACKING": 5,
+    "BEHAVIORAL_DATA \u2192 LOCATION_AND_DEMOGRAPHICS": 5,
+    "DEVICE_ENV \u2192 NAVIGATION_HISTORY": 5,
+    "APP_STATE_STORAGE \u2192 NAVIGATION_HISTORY": 5,
+    "DIRECT_PII \u2192 USER_PREFERENCES": 5,
+    "DIRECT_PII_KEYS \u2192 LOCATION_AND_DEMOGRAPHICS": 5,
+    "IDENTITY_TRACKING \u2192 ID_SOLUTIONS_AND_EXCHANGES": 4,
+    "BEHAVIORAL_DATA \u2192 DIRECT_PII_KEYS": 4,
+    "DIRECT_PII_KEYS \u2192 IDENTITY_TRACKING": 4,
+    "APP_STATE_STORAGE \u2192 TECHNICAL_PASSWORDS": 3,
+    "APP_STATE_STORAGE \u2192 UX_AND_PERFORMANCE_ANALYTICS": 3,
+    "CONSENT_AND_PRIVACY \u2192 LOCATION_AND_DEMOGRAPHICS": 3,
+    "LOCATION_AND_DEMOGRAPHICS \u2192 DIRECT_PII": 2,
+    "SESSION_MANAGEMENT \u2192 BEHAVIORAL_DATA": 2,
+    "DIRECT_PII_KEYS \u2192 NAVIGATION_HISTORY": 2,
+    "DIRECT_PII_KEYS \u2192 USER_PREFERENCES": 2,
+    "APP_STATE_STORAGE \u2192 BEHAVIORAL_DATA": 1,
+    "USER_PREFERENCES \u2192 BEHAVIORAL_DATA": 1,
+    "BEHAVIORAL_DATA \u2192 TECHNICAL_PASSWORDS": 1,
+    "BEHAVIORAL_DATA \u2192 TELEMETRY_AND_ERRORS": 1,
+    "APP_STATE_STORAGE \u2192 DEVICE_ENV": 1,
+    "APP_STATE_STORAGE \u2192 IDENTITY_TRACKING": 1,
+    "ID_SOLUTIONS_AND_EXCHANGES \u2192 IDENTITY_TRACKING": 1,
+    "BEHAVIORAL_DATA \u2192 ID_SOLUTIONS_AND_EXCHANGES": 1,
+    "CONSENT_AND_PRIVACY \u2192 USER_PREFERENCES": 1,
+    "APP_STATE_STORAGE \u2192 LOCATION_AND_DEMOGRAPHICS": 1,
+    "DIRECT_PII_KEYS \u2192 SENSITIVE_LOCATION_PII": 1
+  },
+  "volatility_distribution": {
+    "moderate": 209,
+    "high": 86,
+    "stable": 368
+  },
+  "frequent_changes": [
+    {
+      "key": "GTM_CORE_PARAMETERS",
+      "num_modifications": 18,
+      "pii_category": "IDENTITY_TRACKING",
+      "config": "Auth_FR_0446_ALL"
+    },
+    {
+      "key": "GTM_CORE_PARAMETERS",
+      "num_modifications": 18,
+      "pii_category": "IDENTITY_TRACKING",
+      "config": "Auth_FR_0446_PARTIAL"
+    },
+    {
+      "key": "GTM_CORE_PARAMETERS",
+      "num_modifications": 10,
+      "pii_category": "IDENTITY_TRACKING",
+      "config": "Auth_FR_0446_NONE"
+    },
+    {
+      "key": "ph_phc_U2E3emzjXUtnHvqHIcdjcUbbyu8FzyHtJp1OCFlbxfY_posthog",
+      "num_modifications": 9,
+      "pii_category": "NAVIGATION_HISTORY",
+      "config": "UnAuth_FR_0446_ALL"
+    },
+    {
+      "key": "configC",
+      "num_modifications": 8,
+      "pii_category": "USER_PREFERENCES",
+      "config": "Auth_FR_0446_PARTIAL"
+    },
+    {
+      "key": "idz_pageId",
+      "num_modifications": 8,
+      "pii_category": "IDENTITY_TRACKING",
+      "config": "Auth_FR_0446_PARTIAL"
+    },
+    {
+      "key": "idz_pageId",
+      "num_modifications": 6,
+      "pii_category": "IDENTITY_TRACKING",
+      "config": "Auth_FR_0446_ALL"
+    },
+    {
+      "key": "idz_pageId",
+      "num_modifications": 6,
+      "pii_category": "IDENTITY_TRACKING",
+      "config": "UnAuth_FR_0446_ALL"
+    },
+    {
+      "key": "AMP_URL_INFO",
+      "num_modifications": 6,
+      "pii_category": "NAVIGATION_HISTORY",
+      "config": "UnAuth_FR_0446_PARTIAL"
+    },
+    {
+      "key": "ph_phc_fzblsKH9pmelO7ONCKinE44x869fRiukwYB3IVIZDzJ_posthog",
+      "num_modifications": 6,
+      "pii_category": "NAVIGATION_HISTORY",
+      "config": "UnAuth_FR_0446_PARTIAL"
+    },
+    {
+      "key": "ph_phc_U2E3emzjXUtnHvqHIcdjcUbbyu8FzyHtJp1OCFlbxfY_posthog",
+      "num_modifications": 6,
+      "pii_category": "NAVIGATION_HISTORY",
+      "config": "UnAuth_FR_0446_PARTIAL"
+    },
+    {
+      "key": "hulkBreadCrumb",
+      "num_modifications": 6,
+      "pii_category": "NAVIGATION_HISTORY",
+      "config": "UnAuth_FR_0446_PARTIAL"
+    },
+    {
+      "key": "ABTastyGeoloc",
+      "num_modifications": 6,
+      "pii_category": "USER_PREFERENCES",
+      "config": "UnAuth_FR_0446_NONE"
+    },
+    {
+      "key": "ph_phc_fzblsKH9pmelO7ONCKinE44x869fRiukwYB3IVIZDzJ_posthog",
+      "num_modifications": 6,
+      "pii_category": "NAVIGATION_HISTORY",
+      "config": "UnAuth_FR_0446_NONE"
+    },
+    {
+      "key": "_cltk",
+      "num_modifications": 4,
+      "pii_category": "IDENTITY_TRACKING",
+      "config": "Auth_FR_0446_ALL"
+    },
+    {
+      "key": "idz_pageId",
+      "num_modifications": 4,
+      "pii_category": "IDENTITY_TRACKING",
+      "config": "Auth_FR_0446_NONE"
+    },
+    {
+      "key": "ph_phc_fzblsKH9pmelO7ONCKinE44x869fRiukwYB3IVIZDzJ_posthog",
+      "num_modifications": 4,
+      "pii_category": "NAVIGATION_HISTORY",
+      "config": "UnAuth_FR_0446_ALL"
+    },
+    {
+      "key": "idz_pageId",
+      "num_modifications": 4,
+      "pii_category": "IDENTITY_TRACKING",
+      "config": "UnAuth_FR_0446_PARTIAL"
+    },
+    {
+      "key": "__rtbh.uid",
+      "num_modifications": 4,
+      "pii_category": "ID_SOLUTIONS_AND_EXCHANGES",
+      "config": "UnAuth_FR_0446_PARTIAL"
+    },
+    {
+      "key": "idz_pageId",
+      "num_modifications": 4,
+      "pii_category": "IDENTITY_TRACKING",
+      "config": "UnAuth_FR_0446_NONE"
+    },
+    {
+      "key": "ph_phc_U2E3emzjXUtnHvqHIcdjcUbbyu8FzyHtJp1OCFlbxfY_posthog",
+      "num_modifications": 3,
+      "pii_category": "NAVIGATION_HISTORY",
+      "config": "Auth_FR_0446_ALL"
+    },
+    {
+      "key": "_cltk",
+      "num_modifications": 3,
+      "pii_category": "IDENTITY_TRACKING",
+      "config": "Auth_FR_0446_PARTIAL"
+    },
+    {
+      "key": "ph_phc_U2E3emzjXUtnHvqHIcdjcUbbyu8FzyHtJp1OCFlbxfY_posthog",
+      "num_modifications": 3,
+      "pii_category": "NAVIGATION_HISTORY",
+      "config": "Auth_FR_0446_NONE"
+    },
+    {
+      "key": "AMP_URL_INFO",
+      "num_modifications": 3,
+      "pii_category": "NAVIGATION_HISTORY",
+      "config": "UnAuth_FR_0446_ALL"
+    },
+    {
+      "key": "AMP_URL_INFO",
+      "num_modifications": 3,
+      "pii_category": "NAVIGATION_HISTORY",
+      "config": "UnAuth_FR_0446_NONE"
+    },
+    {
+      "key": "ph_phc_fzblsKH9pmelO7ONCKinE44x869fRiukwYB3IVIZDzJ_posthog",
+      "num_modifications": 2,
+      "pii_category": "NAVIGATION_HISTORY",
+      "config": "Auth_FR_0446_ALL"
+    },
+    {
+      "key": "ph_phc_fzblsKH9pmelO7ONCKinE44x869fRiukwYB3IVIZDzJ_posthog",
+      "num_modifications": 2,
+      "pii_category": "NAVIGATION_HISTORY",
+      "config": "Auth_FR_0446_PARTIAL"
+    },
+    {
+      "key": "ndp_settings",
+      "num_modifications": 2,
+      "pii_category": "IDENTITY_TRACKING",
+      "config": "Auth_FR_0446_NONE"
+    },
+    {
+      "key": "_cltk",
+      "num_modifications": 2,
+      "pii_category": "IDENTITY_TRACKING",
+      "config": "Auth_FR_0446_NONE"
+    },
+    {
+      "key": "_cltk",
+      "num_modifications": 2,
+      "pii_category": "IDENTITY_TRACKING",
+      "config": "UnAuth_FR_0446_ALL"
+    },
+    {
+      "key": "boxzilla_pageviews",
+      "num_modifications": 2,
+      "pii_category": "BEHAVIORAL_DATA",
+      "config": "UnAuth_FR_0446_ALL"
+    },
+    {
+      "key": "tt_pixel_session_index",
+      "num_modifications": 2,
+      "pii_category": "IDENTITY_TRACKING",
+      "config": "UnAuth_FR_0446_ALL"
+    },
+    {
+      "key": "__rtbh.uid",
+      "num_modifications": 2,
+      "pii_category": "ID_SOLUTIONS_AND_EXCHANGES",
+      "config": "UnAuth_FR_0446_ALL"
+    },
+    {
+      "key": "ABT_IS_DATALAYER_CHECKED",
+      "num_modifications": 2,
+      "pii_category": "UX_AND_PERFORMANCE_ANALYTICS",
+      "config": "UnAuth_FR_0446_PARTIAL"
+    },
+    {
+      "key": "tt_pixel_session_index",
+      "num_modifications": 2,
+      "pii_category": "IDENTITY_TRACKING",
+      "config": "UnAuth_FR_0446_PARTIAL"
+    },
+    {
+      "key": "ABTastyUA",
+      "num_modifications": 2,
+      "pii_category": "USER_PREFERENCES",
+      "config": "UnAuth_FR_0446_NONE"
+    },
+    {
+      "key": "__rtbh.lid",
+      "num_modifications": 1,
+      "pii_category": "ID_SOLUTIONS_AND_EXCHANGES",
+      "config": "Auth_FR_0446_NONE"
+    },
+    {
+      "key": "__rtbh.aid",
+      "num_modifications": 1,
+      "pii_category": "ID_SOLUTIONS_AND_EXCHANGES",
+      "config": "Auth_FR_0446_NONE"
+    },
+    {
+      "key": "u_scsid_r",
+      "num_modifications": 1,
+      "pii_category": "TECHNICAL_PASSWORDS",
+      "config": "Auth_FR_0446_NONE"
+    },
+    {
+      "key": "ABTastyUA",
+      "num_modifications": 1,
+      "pii_category": "USER_PREFERENCES",
+      "config": "UnAuth_FR_0446_ALL"
+    },
+    {
+      "key": "onesignal-pageview-count",
+      "num_modifications": 1,
+      "pii_category": "BEHAVIORAL_DATA",
+      "config": "UnAuth_FR_0446_ALL"
+    },
+    {
+      "key": "_cltk",
+      "num_modifications": 1,
+      "pii_category": "IDENTITY_TRACKING",
+      "config": "UnAuth_FR_0446_PARTIAL"
+    },
+    {
+      "key": "ABT_ENOUGH_TIME_ELAPSED",
+      "num_modifications": 1,
+      "pii_category": "UX_AND_PERFORMANCE_ANALYTICS",
+      "config": "UnAuth_FR_0446_PARTIAL"
+    },
+    {
+      "key": "onesignal-pageview-count",
+      "num_modifications": 1,
+      "pii_category": "BEHAVIORAL_DATA",
+      "config": "UnAuth_FR_0446_PARTIAL"
+    },
+    {
+      "key": "_cltk",
+      "num_modifications": 1,
+      "pii_category": "IDENTITY_TRACKING",
+      "config": "UnAuth_FR_0446_NONE"
+    }
+  ],
+  "num_configs": 6
+}

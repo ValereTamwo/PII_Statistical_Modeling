@@ -1,0 +1,120 @@
+{
+  "storage_type": "sessionstorage",
+  "metrics": {
+    "total_items": 94,
+    "items_modified": 24,
+    "items_deleted": 39,
+    "entropy_increases": 14,
+    "entropy_decreases": 10,
+    "size_increases": 7,
+    "size_decreases": 3,
+    "pii_transitions": {
+      "BEHAVIORAL_DATA → IDENTITY_TRACKING": 2,
+      "IDENTITY_TRACKING → TECHNICAL_PASSWORDS": 2,
+      "BEHAVIORAL_DATA → TECHNICAL_PASSWORDS": 1,
+      "IDENTITY_TRACKING → ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "DEVICE_ENV → IDENTITY_TRACKING": 1,
+      "BEHAVIORAL_DATA → TELEMETRY_AND_ERRORS": 1,
+      "IDENTITY_TRACKING → UX_AND_PERFORMANCE_ANALYTICS": 2,
+      "BEHAVIORAL_DATA → USER_PREFERENCES": 1,
+      "DIRECT_PII → USER_PREFERENCES": 1,
+      "APP_STATE_STORAGE → TECHNICAL_PASSWORDS": 1,
+      "APP_STATE_STORAGE → USER_PREFERENCES": 1,
+      "IDENTITY_TRACKING → SESSION_MANAGEMENT": 3,
+      "APP_STATE_STORAGE → UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "DEVICE_ENV → NAVIGATION_HISTORY": 1,
+      "LOCATION_AND_DEMOGRAPHICS → DIRECT_PII": 2,
+      "DEVICE_ENV → USER_PREFERENCES": 1,
+      "APP_STATE_STORAGE → NAVIGATION_HISTORY": 1
+    },
+    "volatility_distribution": {
+      "moderate": 38,
+      "stable": 37,
+      "high": 19
+    },
+    "change_frequency": {
+      "avg_gap": 44.169082125603865,
+      "min_gap": 0,
+      "max_gap": 446
+    },
+    "frequent_changes": [
+      {
+        "key": "configC",
+        "avg_gap": 0.0,
+        "num_modifications": 8,
+        "pii_category": "USER_PREFERENCES"
+      },
+      {
+        "key": "ph_phc_fzblsKH9pmelO7ONCKinE44x869fRiukwYB3IVIZDzJ_posthog",
+        "avg_gap": 0.0,
+        "num_modifications": 2,
+        "pii_category": "NAVIGATION_HISTORY"
+      },
+      {
+        "key": "GTM_CORE_PARAMETERS",
+        "avg_gap": 6.411764705882353,
+        "num_modifications": 18,
+        "pii_category": "IDENTITY_TRACKING"
+      },
+      {
+        "key": "_cltk",
+        "avg_gap": 24.714285714285715,
+        "num_modifications": 3,
+        "pii_category": "IDENTITY_TRACKING"
+      },
+      {
+        "key": "idz_pageId",
+        "avg_gap": 29.181818181818183,
+        "num_modifications": 8,
+        "pii_category": "IDENTITY_TRACKING"
+      }
+    ],
+    "url_modifications": {
+      "www.easyjet.com": 21,
+      "www.cogedim.com": 9,
+      "www.nantes.aeroport.fr": 8,
+      "www.showroomprive.com": 6,
+      "morbihan.com": 4,
+      "www.fram.fr": 4,
+      "www.thalazur.fr": 4,
+      "www.edenred.fr": 3,
+      "s.voyageforum.com": 3,
+      "fr.foncia.com": 2
+    },
+    "pii_modification_patterns": {
+      "NAVIGATION_HISTORY": {
+        "count": 13,
+        "avg_gap": 50.55555555555556
+      },
+      "BEHAVIORAL_DATA": {
+        "count": 10,
+        "avg_gap": 151.125
+      },
+      "APP_STATE_STORAGE": {
+        "count": 2,
+        "avg_gap": 65.0
+      },
+      "IDENTITY_TRACKING": {
+        "count": 35,
+        "avg_gap": 34.729166666666664
+      },
+      "USER_PREFERENCES": {
+        "count": 9,
+        "avg_gap": 35.875
+      },
+      "UX_AND_PERFORMANCE_ANALYTICS": {
+        "count": 3,
+        "avg_gap": 80.5
+      },
+      "ID_SOLUTIONS_AND_EXCHANGES": {
+        "count": 6,
+        "avg_gap": 72.85714285714286
+      },
+      "TECHNICAL_PASSWORDS": {
+        "count": 2,
+        "avg_gap": 126.0
+      }
+    }
+  },
+  "num_timelines": 94
+}

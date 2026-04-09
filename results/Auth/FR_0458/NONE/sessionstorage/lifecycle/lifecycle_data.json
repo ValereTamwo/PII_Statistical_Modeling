@@ -1,0 +1,195 @@
+{
+  "storage_type": "sessionstorage",
+  "metrics": {
+    "total_items": 105,
+    "items_modified": 37,
+    "items_deleted": 40,
+    "entropy_increases": 20,
+    "entropy_decreases": 23,
+    "size_increases": 10,
+    "size_decreases": 10,
+    "pii_transitions": {
+      "IDENTITY_TRACKING → SESSION_MANAGEMENT": 5,
+      "IDENTITY_TRACKING → TECHNICAL_PASSWORDS": 2,
+      "BEHAVIORAL_DATA → IDENTITY_TRACKING": 1,
+      "IDENTITY_TRACKING → BEHAVIORAL_DATA": 1,
+      "BEHAVIORAL_DATA → CONSENT_AND_PRIVACY": 1,
+      "IDENTITY_TRACKING → ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "DIRECT_PII_KEYS → LOCATION_AND_DEMOGRAPHICS": 2,
+      "APP_STATE_STORAGE → UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "IDENTITY_TRACKING → SECURITY_AND_BOT_MITIGATION": 1,
+      "INFRASTRUCTURE → USER_PREFERENCES": 1,
+      "DEVICE_ENV → BEHAVIORAL_DATA": 1,
+      "APP_STATE_STORAGE → NAVIGATION_HISTORY": 2,
+      "DIRECT_PII_KEYS → IDENTITY_TRACKING": 1,
+      "APP_STATE_STORAGE → DEVICE_ENV": 2,
+      "BEHAVIORAL_DATA → TECHNICAL_PASSWORDS": 2,
+      "BEHAVIORAL_DATA → LOCATION_AND_DEMOGRAPHICS": 1,
+      "BEHAVIORAL_DATA → USER_PREFERENCES": 1,
+      "BEHAVIORAL_DATA → SECURITY_AND_BOT_MITIGATION": 1,
+      "CONSENT_AND_PRIVACY → USER_PREFERENCES": 1,
+      "LOCATION_AND_DEMOGRAPHICS → BEHAVIORAL_DATA": 1
+    },
+    "volatility_distribution": {
+      "high": 26,
+      "moderate": 36,
+      "stable": 43
+    },
+    "change_frequency": {
+      "avg_gap": 38.53735632183908,
+      "min_gap": 0,
+      "max_gap": 369
+    },
+    "frequent_changes": [
+      {
+        "key": "hiko_socials",
+        "avg_gap": 0.2926829268292683,
+        "num_modifications": 42,
+        "pii_category": "USER_PREFERENCES"
+      },
+      {
+        "key": "com.adobe.reactor.core.visitorTracking.landingTime",
+        "avg_gap": 4.0,
+        "num_modifications": 1,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "com.adobe.reactor.core.visitorTracking.landingPage",
+        "avg_gap": 4.0,
+        "num_modifications": 1,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "com.adobe.reactor.core.visitorTracking.pagesViewed",
+        "avg_gap": 10.0,
+        "num_modifications": 2,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "wbn_evt_count|45c73937-13ea-45f7-9821-dc879917c673",
+        "avg_gap": 12.0,
+        "num_modifications": 1,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "___so9874703",
+        "avg_gap": 13.333333333333334,
+        "num_modifications": 2,
+        "pii_category": "NAVIGATION_HISTORY"
+      },
+      {
+        "key": "___nrbic",
+        "avg_gap": 17.5,
+        "num_modifications": 10,
+        "pii_category": "SESSION_MANAGEMENT"
+      },
+      {
+        "key": "History.store",
+        "avg_gap": 18.823529411764707,
+        "num_modifications": 18,
+        "pii_category": "LOCATION_AND_DEMOGRAPHICS"
+      },
+      {
+        "key": "page_index",
+        "avg_gap": 31.0,
+        "num_modifications": 1,
+        "pii_category": "USER_PREFERENCES"
+      },
+      {
+        "key": "SSOenv",
+        "avg_gap": 34.77777777777778,
+        "num_modifications": 10,
+        "pii_category": "SECURITY_AND_BOT_MITIGATION"
+      },
+      {
+        "key": "tt_pixel_session_index",
+        "avg_gap": 37.0,
+        "num_modifications": 3,
+        "pii_category": "IDENTITY_TRACKING"
+      },
+      {
+        "key": "u_scsid_r",
+        "avg_gap": 37.57142857142857,
+        "num_modifications": 3,
+        "pii_category": "TECHNICAL_PASSWORDS"
+      },
+      {
+        "key": "___nrbi",
+        "avg_gap": 42.77777777777778,
+        "num_modifications": 2,
+        "pii_category": "IDENTITY_TRACKING"
+      },
+      {
+        "key": "ABT_ALREADY_SENT_CUSTOM_TRACKING",
+        "avg_gap": 45.22222222222222,
+        "num_modifications": 1,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "__rtbh.uid",
+        "avg_gap": 45.333333333333336,
+        "num_modifications": 2,
+        "pii_category": "ID_SOLUTIONS_AND_EXCHANGES"
+      }
+    ],
+    "url_modifications": {
+      "www.willemsefrance.fr": 45,
+      "www.bouyguestelecom.fr": 18,
+      "www.cabaia.fr": 13,
+      "www.cmb.fr": 12,
+      "www.vertbaudet.fr": 8,
+      "abonnement.latribune.fr": 8,
+      "www.01net.com": 6,
+      "copainsdavant.linternaute.com": 6,
+      "www.sarenza.com": 5,
+      "login.zooplus.fr": 4
+    },
+    "pii_modification_patterns": {
+      "BEHAVIORAL_DATA": {
+        "count": 30,
+        "avg_gap": 61.48571428571429
+      },
+      "TECHNICAL_PASSWORDS": {
+        "count": 4,
+        "avg_gap": 79.0
+      },
+      "IDENTITY_TRACKING": {
+        "count": 9,
+        "avg_gap": 67.11764705882354
+      },
+      "ID_SOLUTIONS_AND_EXCHANGES": {
+        "count": 6,
+        "avg_gap": 98.26315789473684
+      },
+      "USER_PREFERENCES": {
+        "count": 44,
+        "avg_gap": 8.25531914893617
+      },
+      "UX_AND_PERFORMANCE_ANALYTICS": {
+        "count": 5,
+        "avg_gap": 81.4
+      },
+      "SESSION_MANAGEMENT": {
+        "count": 10,
+        "avg_gap": 17.5
+      },
+      "NAVIGATION_HISTORY": {
+        "count": 3,
+        "avg_gap": 13.333333333333334
+      },
+      "LOCATION_AND_DEMOGRAPHICS": {
+        "count": 18,
+        "avg_gap": 18.823529411764707
+      },
+      "SECURITY_AND_BOT_MITIGATION": {
+        "count": 10,
+        "avg_gap": 34.77777777777778
+      },
+      "DEVICE_ENV": {
+        "count": 2,
+        "avg_gap": 81.75
+      }
+    }
+  },
+  "num_timelines": 105
+}

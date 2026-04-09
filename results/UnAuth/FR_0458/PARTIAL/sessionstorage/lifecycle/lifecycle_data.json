@@ -1,0 +1,160 @@
+{
+  "storage_type": "sessionstorage",
+  "metrics": {
+    "total_items": 166,
+    "items_modified": 39,
+    "items_deleted": 12,
+    "entropy_increases": 20,
+    "entropy_decreases": 19,
+    "size_increases": 11,
+    "size_decreases": 16,
+    "pii_transitions": {
+      "IDENTITY_TRACKING → TECHNICAL_PASSWORDS": 3,
+      "DIRECT_PII_KEYS → USER_PREFERENCES": 1,
+      "APP_STATE_STORAGE → TECHNICAL_PASSWORDS": 5,
+      "BEHAVIORAL_DATA → USER_PREFERENCES": 2,
+      "IDENTITY_TRACKING → SESSION_MANAGEMENT": 6,
+      "BEHAVIORAL_DATA → NAVIGATION_HISTORY": 2,
+      "DIRECT_PII → DIRECT_PII_KEYS": 1,
+      "DIRECT_PII → USER_PREFERENCES": 1,
+      "BEHAVIORAL_DATA → SECURITY_AND_BOT_MITIGATION": 1,
+      "DIRECT_PII_KEYS → IDENTITY_TRACKING": 1,
+      "BEHAVIORAL_DATA → TECHNICAL_PASSWORDS": 1,
+      "DEVICE_ENV → USER_PREFERENCES": 1,
+      "CONSENT_AND_PRIVACY → USER_PREFERENCES": 1,
+      "DIRECT_PII_KEYS → LOCATION_AND_DEMOGRAPHICS": 1,
+      "BEHAVIORAL_DATA → IDENTITY_TRACKING": 2,
+      "DEVICE_ENV → IDENTITY_TRACKING": 1,
+      "IDENTITY_TRACKING → ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "APP_STATE_STORAGE → DIRECT_PII_KEYS": 1,
+      "APP_STATE_STORAGE → NAVIGATION_HISTORY": 1,
+      "BEHAVIORAL_DATA → ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "APP_STATE_STORAGE → UX_AND_PERFORMANCE_ANALYTICS": 1
+    },
+    "volatility_distribution": {
+      "moderate": 30,
+      "stable": 119,
+      "high": 17
+    },
+    "change_frequency": {
+      "avg_gap": 46.25625,
+      "min_gap": 0,
+      "max_gap": 360
+    },
+    "frequent_changes": [
+      {
+        "key": "___nrbic",
+        "avg_gap": 6.388888888888889,
+        "num_modifications": 15,
+        "pii_category": "SESSION_MANAGEMENT"
+      },
+      {
+        "key": "History.store",
+        "avg_gap": 17.0625,
+        "num_modifications": 7,
+        "pii_category": "IDENTITY_TRACKING"
+      },
+      {
+        "key": "sf_522_queuedInteractions",
+        "avg_gap": 22.0,
+        "num_modifications": 1,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "marfeel-sdk-store",
+        "avg_gap": 28.88888888888889,
+        "num_modifications": 4,
+        "pii_category": "APP_STATE_STORAGE"
+      },
+      {
+        "key": "idSurveillanceCurrentPage",
+        "avg_gap": 30.0,
+        "num_modifications": 2,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "klaviyoPagesVisitCountV2",
+        "avg_gap": 40.8,
+        "num_modifications": 6,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "u_scsid_r",
+        "avg_gap": 44.0,
+        "num_modifications": 3,
+        "pii_category": "TECHNICAL_PASSWORDS"
+      },
+      {
+        "key": "ABTastyUA",
+        "avg_gap": 45.0,
+        "num_modifications": 1,
+        "pii_category": "USER_PREFERENCES"
+      },
+      {
+        "key": "imo:sessionID",
+        "avg_gap": 45.6,
+        "num_modifications": 3,
+        "pii_category": "SESSION_MANAGEMENT"
+      }
+    ],
+    "url_modifications": {
+      "www.cabaia.fr": 12,
+      "www.zooplus.fr": 12,
+      "www.bouyguestelecom.fr": 11,
+      "www.marianne.net": 8,
+      "www.cmb.fr": 7,
+      "www.latribune.fr": 5,
+      "www.sudouest.fr": 4,
+      "www.willemsefrance.fr": 3,
+      "www.lcl.fr": 3,
+      "www.01net.com": 3
+    },
+    "pii_modification_patterns": {
+      "USER_PREFERENCES": {
+        "count": 11,
+        "avg_gap": 65.41176470588235
+      },
+      "BEHAVIORAL_DATA": {
+        "count": 39,
+        "avg_gap": 106.05405405405405
+      },
+      "SESSION_MANAGEMENT": {
+        "count": 22,
+        "avg_gap": 17.043478260869566
+      },
+      "NAVIGATION_HISTORY": {
+        "count": 3,
+        "avg_gap": 76.83333333333333
+      },
+      "SECURITY_AND_BOT_MITIGATION": {
+        "count": 1,
+        "avg_gap": 90.0
+      },
+      "ID_SOLUTIONS_AND_EXCHANGES": {
+        "count": 7,
+        "avg_gap": 66.57142857142857
+      },
+      "UX_AND_PERFORMANCE_ANALYTICS": {
+        "count": 1,
+        "avg_gap": 180.0
+      },
+      "APP_STATE_STORAGE": {
+        "count": 4,
+        "avg_gap": 28.88888888888889
+      },
+      "LOCATION_AND_DEMOGRAPHICS": {
+        "count": 3,
+        "avg_gap": 72.0
+      },
+      "TECHNICAL_PASSWORDS": {
+        "count": 3,
+        "avg_gap": 44.0
+      },
+      "IDENTITY_TRACKING": {
+        "count": 9,
+        "avg_gap": 33.31578947368421
+      }
+    }
+  },
+  "num_timelines": 166
+}

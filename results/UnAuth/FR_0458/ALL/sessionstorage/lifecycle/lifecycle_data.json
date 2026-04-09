@@ -1,0 +1,220 @@
+{
+  "storage_type": "sessionstorage",
+  "metrics": {
+    "total_items": 152,
+    "items_modified": 42,
+    "items_deleted": 9,
+    "entropy_increases": 26,
+    "entropy_decreases": 20,
+    "size_increases": 16,
+    "size_decreases": 14,
+    "pii_transitions": {
+      "APP_STATE_STORAGE → TECHNICAL_PASSWORDS": 5,
+      "ID_SOLUTIONS_AND_EXCHANGES → IDENTITY_TRACKING": 1,
+      "IDENTITY_TRACKING → SESSION_MANAGEMENT": 4,
+      "IDENTITY_TRACKING → TECHNICAL_PASSWORDS": 1,
+      "DIRECT_PII → DIRECT_PII_KEYS": 1,
+      "DIRECT_PII → USER_PREFERENCES": 1,
+      "BEHAVIORAL_DATA → SECURITY_AND_BOT_MITIGATION": 1,
+      "NAVIGATION_HISTORY → BEHAVIORAL_DATA": 1,
+      "BEHAVIORAL_DATA → USER_PREFERENCES": 1,
+      "DIRECT_PII_KEYS → IDENTITY_TRACKING": 1,
+      "BEHAVIORAL_DATA → TECHNICAL_PASSWORDS": 2,
+      "BEHAVIORAL_DATA → IDENTITY_TRACKING": 3,
+      "DEVICE_ENV → USER_PREFERENCES": 1,
+      "CONSENT_AND_PRIVACY → USER_PREFERENCES": 1,
+      "APP_STATE_STORAGE → DEVICE_ENV": 1,
+      "DIRECT_PII_KEYS → LOCATION_AND_DEMOGRAPHICS": 1,
+      "IDENTITY_TRACKING → ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "APP_STATE_STORAGE → UX_AND_PERFORMANCE_ANALYTICS": 2,
+      "DEVICE_ENV → TECHNICAL_PASSWORDS": 1,
+      "DEVICE_ENV → DIRECT_PII_KEYS": 1,
+      "IDENTITY_TRACKING → UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "APP_STATE_STORAGE → DIRECT_PII_KEYS": 1,
+      "APP_STATE_STORAGE → NAVIGATION_HISTORY": 2,
+      "BEHAVIORAL_DATA → ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "APP_STATE_STORAGE → LOCATION_AND_DEMOGRAPHICS": 1
+    },
+    "volatility_distribution": {
+      "moderate": 25,
+      "stable": 106,
+      "high": 21
+    },
+    "change_frequency": {
+      "avg_gap": 36.60662525879917,
+      "min_gap": 0,
+      "max_gap": 324
+    },
+    "frequent_changes": [
+      {
+        "key": "hiko_socials",
+        "avg_gap": 0.0,
+        "num_modifications": 14,
+        "pii_category": "USER_PREFERENCES"
+      },
+      {
+        "key": "TAB_ID",
+        "avg_gap": 0.0,
+        "num_modifications": 2,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "___so19920",
+        "avg_gap": 0.0,
+        "num_modifications": 2,
+        "pii_category": "NAVIGATION_HISTORY"
+      },
+      {
+        "key": "com.grafana.faro.session",
+        "avg_gap": 2.6666666666666665,
+        "num_modifications": 4,
+        "pii_category": "SESSION_MANAGEMENT"
+      },
+      {
+        "key": "ABT_ALREADY_SENT_CUSTOM_TRACKING",
+        "avg_gap": 10.285714285714286,
+        "num_modifications": 21,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "___nrbic",
+        "avg_gap": 11.586206896551724,
+        "num_modifications": 11,
+        "pii_category": "SESSION_MANAGEMENT"
+      },
+      {
+        "key": "wbn_evt_count|58ca470e-c01f-421f-8e41-552efcdf5ef2",
+        "avg_gap": 12.0,
+        "num_modifications": 2,
+        "pii_category": "IDENTITY_TRACKING"
+      },
+      {
+        "key": "idz_pageId",
+        "avg_gap": 24.0,
+        "num_modifications": 2,
+        "pii_category": "IDENTITY_TRACKING"
+      },
+      {
+        "key": "idSurveillanceCurrentPage",
+        "avg_gap": 30.0,
+        "num_modifications": 2,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "pmc-page-num",
+        "avg_gap": 35.0,
+        "num_modifications": 2,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "marfeel-sdk-store",
+        "avg_gap": 37.333333333333336,
+        "num_modifications": 5,
+        "pii_category": "DEVICE_ENV"
+      },
+      {
+        "key": "imo:sessionID",
+        "avg_gap": 39.375,
+        "num_modifications": 3,
+        "pii_category": "SESSION_MANAGEMENT"
+      },
+      {
+        "key": "arLastUrl",
+        "avg_gap": 39.7,
+        "num_modifications": 2,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "__rtbh.uid",
+        "avg_gap": 40.0,
+        "num_modifications": 2,
+        "pii_category": "ID_SOLUTIONS_AND_EXCHANGES"
+      },
+      {
+        "key": "__rtbh.lid",
+        "avg_gap": 40.0,
+        "num_modifications": 2,
+        "pii_category": "ID_SOLUTIONS_AND_EXCHANGES"
+      },
+      {
+        "key": "wisepops-pageview_id",
+        "avg_gap": 40.5,
+        "num_modifications": 1,
+        "pii_category": "IDENTITY_TRACKING"
+      },
+      {
+        "key": "bytel-tag-commander/oauth",
+        "avg_gap": 41.142857142857146,
+        "num_modifications": 4,
+        "pii_category": "SECURITY_AND_BOT_MITIGATION"
+      },
+      {
+        "key": "arTimestamps",
+        "avg_gap": 41.90909090909091,
+        "num_modifications": 4,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "History.store",
+        "avg_gap": 45.5,
+        "num_modifications": 5,
+        "pii_category": "IDENTITY_TRACKING"
+      }
+    ],
+    "url_modifications": {
+      "www.cofidis.fr": 22,
+      "www.willemsefrance.fr": 18,
+      "www.bouyguestelecom.fr": 12,
+      "www.zooplus.fr": 12,
+      "www.laprovence.com": 10,
+      "www.cmb.fr": 7,
+      "www.4murs.com": 6,
+      "www.sudouest.fr": 4,
+      "www.maty.com": 4,
+      "www.cetelem.fr": 4
+    },
+    "pii_modification_patterns": {
+      "USER_PREFERENCES": {
+        "count": 23,
+        "avg_gap": 34.18181818181818
+      },
+      "BEHAVIORAL_DATA": {
+        "count": 58,
+        "avg_gap": 52.265060240963855
+      },
+      "IDENTITY_TRACKING": {
+        "count": 14,
+        "avg_gap": 54.0
+      },
+      "SESSION_MANAGEMENT": {
+        "count": 18,
+        "avg_gap": 16.475
+      },
+      "SECURITY_AND_BOT_MITIGATION": {
+        "count": 4,
+        "avg_gap": 41.142857142857146
+      },
+      "ID_SOLUTIONS_AND_EXCHANGES": {
+        "count": 8,
+        "avg_gap": 49.583333333333336
+      },
+      "UX_AND_PERFORMANCE_ANALYTICS": {
+        "count": 5,
+        "avg_gap": 51.42857142857143
+      },
+      "DEVICE_ENV": {
+        "count": 5,
+        "avg_gap": 37.333333333333336
+      },
+      "TECHNICAL_PASSWORDS": {
+        "count": 2,
+        "avg_gap": 62.333333333333336
+      },
+      "NAVIGATION_HISTORY": {
+        "count": 5,
+        "avg_gap": 101.33333333333333
+      }
+    }
+  },
+  "num_timelines": 152
+}

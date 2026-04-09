@@ -1,0 +1,601 @@
+{
+  "storage_type": "sessionstorage",
+  "total_items": 106,
+  "direct_pii_count": 2,
+  "other_count": 104,
+  "pii_distribution": {
+    "unknown": 2,
+    "APP_STATE_STORAGE": 4,
+    "BEHAVIORAL_DATA": 12,
+    "DEVICE_ENV": 4,
+    "DIRECT_PII_KEYS": 12,
+    "IDENTITY_TRACKING": 24,
+    "ID_SOLUTIONS_AND_EXCHANGES": 4,
+    "LOCATION_AND_DEMOGRAPHICS": 2,
+    "NAVIGATION_HISTORY": 9,
+    "SESSION_MANAGEMENT": 4,
+    "TECHNICAL_PASSWORDS": 6,
+    "USER_PREFERENCES": 17,
+    "UX_AND_PERFORMANCE_ANALYTICS": 6
+  },
+  "pii_by_category": {
+    "DIRECT_PII": {
+      "unknown": 2
+    },
+    "APP_STATE_STORAGE": {
+      "APP_STATE_STORAGE": 4
+    },
+    "BEHAVIORAL_DATA": {
+      "BEHAVIORAL_DATA": 12
+    },
+    "DEVICE_ENV": {
+      "DEVICE_ENV": 4
+    },
+    "DIRECT_PII_KEYS": {
+      "DIRECT_PII_KEYS": 12
+    },
+    "IDENTITY_TRACKING": {
+      "IDENTITY_TRACKING": 24
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "ID_SOLUTIONS_AND_EXCHANGES": 4
+    },
+    "LOCATION_AND_DEMOGRAPHICS": {
+      "LOCATION_AND_DEMOGRAPHICS": 2
+    },
+    "NAVIGATION_HISTORY": {
+      "NAVIGATION_HISTORY": 9
+    },
+    "SESSION_MANAGEMENT": {
+      "SESSION_MANAGEMENT": 4
+    },
+    "TECHNICAL_PASSWORDS": {
+      "TECHNICAL_PASSWORDS": 6
+    },
+    "USER_PREFERENCES": {
+      "USER_PREFERENCES": 17
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "UX_AND_PERFORMANCE_ANALYTICS": 6
+    }
+  },
+  "persistence_distribution": {
+    "Session": 106
+  },
+  "persistence_by_pii": {
+    "unknown": {
+      "Session": 2
+    },
+    "APP_STATE_STORAGE": {
+      "Session": 4
+    },
+    "BEHAVIORAL_DATA": {
+      "Session": 12
+    },
+    "DEVICE_ENV": {
+      "Session": 4
+    },
+    "DIRECT_PII_KEYS": {
+      "Session": 12
+    },
+    "IDENTITY_TRACKING": {
+      "Session": 24
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "Session": 4
+    },
+    "LOCATION_AND_DEMOGRAPHICS": {
+      "Session": 2
+    },
+    "NAVIGATION_HISTORY": {
+      "Session": 9
+    },
+    "SESSION_MANAGEMENT": {
+      "Session": 4
+    },
+    "TECHNICAL_PASSWORDS": {
+      "Session": 6
+    },
+    "USER_PREFERENCES": {
+      "Session": 17
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "Session": 6
+    }
+  },
+  "size_by_pii": {
+    "unknown": {
+      "total": 864,
+      "average": 432.0,
+      "count": 2
+    },
+    "APP_STATE_STORAGE": {
+      "total": 12700,
+      "average": 3175.0,
+      "count": 4
+    },
+    "BEHAVIORAL_DATA": {
+      "total": 12616,
+      "average": 1051.3333333333333,
+      "count": 12
+    },
+    "DEVICE_ENV": {
+      "total": 344,
+      "average": 86.0,
+      "count": 4
+    },
+    "DIRECT_PII_KEYS": {
+      "total": 40338,
+      "average": 3361.5,
+      "count": 12
+    },
+    "IDENTITY_TRACKING": {
+      "total": 906,
+      "average": 37.75,
+      "count": 24
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "total": 334,
+      "average": 83.5,
+      "count": 4
+    },
+    "LOCATION_AND_DEMOGRAPHICS": {
+      "total": 864,
+      "average": 432.0,
+      "count": 2
+    },
+    "NAVIGATION_HISTORY": {
+      "total": 315,
+      "average": 35.0,
+      "count": 9
+    },
+    "SESSION_MANAGEMENT": {
+      "total": 172,
+      "average": 43.0,
+      "count": 4
+    },
+    "TECHNICAL_PASSWORDS": {
+      "total": 12772,
+      "average": 2128.6666666666665,
+      "count": 6
+    },
+    "USER_PREFERENCES": {
+      "total": 14093,
+      "average": 829.0,
+      "count": 17
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "total": 12618,
+      "average": 2103.0,
+      "count": 6
+    }
+  },
+  "content_hierarchy": {
+    "json_structured": {
+      "unknown": 2,
+      "APP_STATE_STORAGE": 2,
+      "BEHAVIORAL_DATA": 4,
+      "DEVICE_ENV": 4,
+      "DIRECT_PII_KEYS": 12,
+      "IDENTITY_TRACKING": 4,
+      "ID_SOLUTIONS_AND_EXCHANGES": 4,
+      "LOCATION_AND_DEMOGRAPHICS": 2,
+      "NAVIGATION_HISTORY": 5,
+      "TECHNICAL_PASSWORDS": 2,
+      "USER_PREFERENCES": 13,
+      "UX_AND_PERFORMANCE_ANALYTICS": 2
+    },
+    "complex_string": {
+      "APP_STATE_STORAGE": 2,
+      "IDENTITY_TRACKING": 7,
+      "NAVIGATION_HISTORY": 2,
+      "SESSION_MANAGEMENT": 1,
+      "TECHNICAL_PASSWORDS": 2
+    },
+    "boolean": {
+      "BEHAVIORAL_DATA": 4,
+      "USER_PREFERENCES": 3,
+      "UX_AND_PERFORMANCE_ANALYTICS": 2
+    },
+    "number": {
+      "BEHAVIORAL_DATA": 3,
+      "USER_PREFERENCES": 1,
+      "UX_AND_PERFORMANCE_ANALYTICS": 2
+    },
+    "short_text": {
+      "BEHAVIORAL_DATA": 1,
+      "IDENTITY_TRACKING": 4
+    },
+    "uuid": {
+      "IDENTITY_TRACKING": 9,
+      "SESSION_MANAGEMENT": 3,
+      "TECHNICAL_PASSWORDS": 2
+    },
+    "empty": {
+      "NAVIGATION_HISTORY": 2
+    }
+  },
+  "content_types": {
+    "json_structured": 56,
+    "complex_string": 14,
+    "boolean": 9,
+    "number": 6,
+    "short_text": 5,
+    "uuid": 14,
+    "empty": 2
+  },
+  "vendor_counts": {
+    "showroomprive.com": 35,
+    "voyages-auchan.com": 36,
+    "abracadaroom.com": 3,
+    "justifit.fr": 2,
+    "dalloz.fr": 6,
+    "inli.fr": 2,
+    "legalstart.fr": 9,
+    "abcsalles.com": 1,
+    "lessaisies.com": 1,
+    "air-austral.com": 2,
+    "gites-de-france.com": 2,
+    "viewsurf.com": 2,
+    "casamundo.fr": 1,
+    "stadefrance.com": 1,
+    "lastminute.com": 3
+  },
+  "category_vendor_flows": [
+    [
+      "unknown",
+      "showroomprive.com",
+      2
+    ],
+    [
+      "APP_STATE_STORAGE",
+      "voyages-auchan.com",
+      4
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "voyages-auchan.com",
+      3
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "abracadaroom.com",
+      3
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "justifit.fr",
+      2
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "dalloz.fr",
+      2
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "inli.fr",
+      2
+    ],
+    [
+      "DEVICE_ENV",
+      "showroomprive.com",
+      2
+    ],
+    [
+      "DEVICE_ENV",
+      "voyages-auchan.com",
+      2
+    ],
+    [
+      "DIRECT_PII_KEYS",
+      "showroomprive.com",
+      6
+    ],
+    [
+      "DIRECT_PII_KEYS",
+      "voyages-auchan.com",
+      6
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "legalstart.fr",
+      6
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "abcsalles.com",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "showroomprive.com",
+      6
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "lessaisies.com",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "dalloz.fr",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "air-austral.com",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "gites-de-france.com",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "viewsurf.com",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "voyages-auchan.com",
+      2
+    ],
+    [
+      "ID_SOLUTIONS_AND_EXCHANGES",
+      "showroomprive.com",
+      4
+    ],
+    [
+      "LOCATION_AND_DEMOGRAPHICS",
+      "showroomprive.com",
+      2
+    ],
+    [
+      "NAVIGATION_HISTORY",
+      "voyages-auchan.com",
+      4
+    ],
+    [
+      "NAVIGATION_HISTORY",
+      "dalloz.fr",
+      1
+    ],
+    [
+      "NAVIGATION_HISTORY",
+      "showroomprive.com",
+      3
+    ],
+    [
+      "NAVIGATION_HISTORY",
+      "casamundo.fr",
+      1
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "legalstart.fr",
+      3
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "dalloz.fr",
+      1
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "voyages-auchan.com",
+      6
+    ],
+    [
+      "USER_PREFERENCES",
+      "showroomprive.com",
+      6
+    ],
+    [
+      "USER_PREFERENCES",
+      "voyages-auchan.com",
+      7
+    ],
+    [
+      "USER_PREFERENCES",
+      "stadefrance.com",
+      1
+    ],
+    [
+      "USER_PREFERENCES",
+      "lastminute.com",
+      3
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "showroomprive.com",
+      4
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "voyages-auchan.com",
+      2
+    ]
+  ],
+  "entropy_by_pii": {
+    "unknown": [
+      4.816216962910597,
+      4.816216962910597
+    ],
+    "APP_STATE_STORAGE": [
+      4.679359685638266,
+      4.93826835495303,
+      4.679359685638266,
+      4.93826835495303
+    ],
+    "BEHAVIORAL_DATA": [
+      4.93826835495303,
+      0.0,
+      4.93826835495303,
+      0.0,
+      0.0,
+      2.8731406795131336,
+      2.0,
+      0.0,
+      0.0,
+      2.75,
+      1.0,
+      1.0
+    ],
+    "DEVICE_ENV": [
+      4.239203099010332,
+      4.239203099010332,
+      4.239203099010332,
+      4.239203099010332
+    ],
+    "DIRECT_PII_KEYS": [
+      4.816216962910597,
+      4.816216962910597,
+      4.816216962910597,
+      4.93826835495303,
+      4.93826835495303,
+      4.93826835495303,
+      4.93826835495303,
+      4.93826835495303,
+      4.93826835495303,
+      4.816216962910597,
+      4.816216962910597,
+      4.816216962910597
+    ],
+    "IDENTITY_TRACKING": [
+      3.748778905366474,
+      3.6287043499044223,
+      2.5216406363433186,
+      5.056353007710581,
+      2.251629167387823,
+      4.633732298951548,
+      3.586897470347699,
+      3.8984128483640523,
+      4.6182559877660525,
+      4.90808382472548,
+      2.5216406363433186,
+      3.8138530781525786,
+      3.1555650133297184,
+      3.1464393446710153,
+      3.8000446184790095,
+      3.8000446184790095,
+      3.9701755214643453,
+      2.5,
+      3.748778905366474,
+      3.6287043499044223,
+      3.726198100024615,
+      3.8984128483640523,
+      3.895638807527667,
+      3.694385682587763
+    ],
+    "ID_SOLUTIONS_AND_EXCHANGES": [
+      4.633732298951548,
+      4.6182559877660525,
+      5.153203402617913,
+      5.114390064183108
+    ],
+    "LOCATION_AND_DEMOGRAPHICS": [
+      4.816216962910597,
+      4.816216962910597
+    ],
+    "NAVIGATION_HISTORY": [
+      0.0,
+      0.0,
+      1.0,
+      4.226628285180295,
+      4.691649156997151,
+      4.226628285180295,
+      4.106949132758152,
+      4.106949132758152,
+      4.226628285180295
+    ],
+    "SESSION_MANAGEMENT": [
+      3.748778905366474,
+      3.6287043499044223,
+      3.8984128483640523,
+      3.8138530781525786
+    ],
+    "TECHNICAL_PASSWORDS": [
+      4.679359685638266,
+      3.726198100024615,
+      4.93826835495303,
+      4.679359685638266,
+      3.895638807527667,
+      4.93826835495303
+    ],
+    "USER_PREFERENCES": [
+      4.816216962910597,
+      4.239203099010332,
+      4.410375773802864,
+      4.239203099010332,
+      4.93826835495303,
+      4.289261335760738,
+      4.239203099010332,
+      4.93826835495303,
+      4.280287093566062,
+      4.239203099010332,
+      4.488807146351883,
+      4.816216962910597,
+      4.392795441406006,
+      2.321928094887362,
+      2.321928094887362,
+      2.321928094887362,
+      0.0
+    ],
+    "UX_AND_PERFORMANCE_ANALYTICS": [
+      2.873140679513133,
+      2.321928094887362,
+      4.93826835495303,
+      4.93826835495303,
+      2.321928094887362,
+      2.873140679513133
+    ]
+  },
+  "risk_levels": {
+    "High Risk": 30,
+    "Low Risk": 45,
+    "Medium Risk": 31
+  },
+  "risk_by_pii": {
+    "unknown": {
+      "High Risk": 2
+    },
+    "APP_STATE_STORAGE": {
+      "Low Risk": 4
+    },
+    "BEHAVIORAL_DATA": {
+      "Medium Risk": 12
+    },
+    "DEVICE_ENV": {
+      "Low Risk": 4
+    },
+    "DIRECT_PII_KEYS": {
+      "Low Risk": 12
+    },
+    "IDENTITY_TRACKING": {
+      "High Risk": 24
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "High Risk": 4
+    },
+    "LOCATION_AND_DEMOGRAPHICS": {
+      "Low Risk": 2
+    },
+    "NAVIGATION_HISTORY": {
+      "Medium Risk": 9
+    },
+    "SESSION_MANAGEMENT": {
+      "Medium Risk": 4
+    },
+    "TECHNICAL_PASSWORDS": {
+      "Low Risk": 6
+    },
+    "USER_PREFERENCES": {
+      "Low Risk": 17
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "Medium Risk": 6
+    }
+  }
+}

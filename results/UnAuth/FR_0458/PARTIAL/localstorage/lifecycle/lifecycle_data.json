@@ -1,0 +1,251 @@
+{
+  "storage_type": "localstorage",
+  "metrics": {
+    "total_items": 353,
+    "items_modified": 98,
+    "items_deleted": 61,
+    "entropy_increases": 63,
+    "entropy_decreases": 41,
+    "size_increases": 30,
+    "size_decreases": 15,
+    "pii_transitions": {
+      "BEHAVIORAL_DATA → IDENTITY_TRACKING": 2,
+      "IDENTITY_TRACKING → BEHAVIORAL_DATA": 3,
+      "DEVICE_ENV → USER_PREFERENCES": 3,
+      "BEHAVIORAL_DATA → SESSION_MANAGEMENT": 1,
+      "BEHAVIORAL_DATA → TECHNICAL_PASSWORDS": 8,
+      "BEHAVIORAL_DATA → UX_AND_PERFORMANCE_ANALYTICS": 2,
+      "APP_STATE_STORAGE → UX_AND_PERFORMANCE_ANALYTICS": 2,
+      "DEVICE_ENV → ID_SOLUTIONS_AND_EXCHANGES": 2,
+      "IDENTITY_TRACKING → TECHNICAL_PASSWORDS": 6,
+      "CONSENT_AND_PRIVACY → ID_SOLUTIONS_AND_EXCHANGES": 3,
+      "APP_STATE_STORAGE → TECHNICAL_PASSWORDS": 2,
+      "BEHAVIORAL_DATA → DIRECT_PII_KEYS": 3,
+      "IDENTITY_TRACKING → USER_PREFERENCES": 2,
+      "IDENTITY_TRACKING → ID_SOLUTIONS_AND_EXCHANGES": 5,
+      "CONSENT_AND_PRIVACY → UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "APP_STATE_STORAGE → LOCATION_AND_DEMOGRAPHICS": 2,
+      "BEHAVIORAL_DATA → DEVICE_ENV": 3,
+      "APP_STATE_STORAGE → USER_PREFERENCES": 4,
+      "DEVICE_ENV → TECHNICAL_PASSWORDS": 1,
+      "BEHAVIORAL_DATA → USER_PREFERENCES": 5,
+      "ID_SOLUTIONS_AND_EXCHANGES → TECHNICAL_PASSWORDS": 2,
+      "BEHAVIORAL_DATA → ID_SOLUTIONS_AND_EXCHANGES": 4,
+      "DIRECT_PII_KEYS → IDENTITY_TRACKING": 3,
+      "CONSENT_AND_PRIVACY → DIRECT_PII": 1,
+      "USER_PREFERENCES → BEHAVIORAL_DATA": 2,
+      "DEVICE_ENV → DIRECT_PII_KEYS": 1,
+      "APP_STATE_STORAGE → IDENTITY_TRACKING": 2,
+      "BEHAVIORAL_DATA → NAVIGATION_HISTORY": 2,
+      "DIRECT_PII_KEYS → LOCATION_AND_DEMOGRAPHICS": 2,
+      "APP_STATE_STORAGE → NAVIGATION_HISTORY": 1,
+      "IDENTITY_TRACKING → SESSION_MANAGEMENT": 3,
+      "BEHAVIORAL_DATA → LOCATION_AND_DEMOGRAPHICS": 2,
+      "DEVICE_ENV → NAVIGATION_HISTORY": 2,
+      "CONSENT_AND_PRIVACY → TECHNICAL_PASSWORDS": 1,
+      "APP_STATE_STORAGE → DEVICE_ENV": 1,
+      "DIRECT_PII_KEYS → ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "APP_STATE_STORAGE → DIRECT_PII_KEYS": 1,
+      "DEVICE_ENV → IDENTITY_TRACKING": 1
+    },
+    "volatility_distribution": {
+      "moderate": 79,
+      "stable": 213,
+      "high": 61
+    },
+    "change_frequency": {
+      "avg_gap": 43.01196172248804,
+      "min_gap": 0,
+      "max_gap": 462
+    },
+    "frequent_changes": [
+      {
+        "key": "kameleoonGlobalPersonalizationExposition",
+        "avg_gap": 0.0,
+        "num_modifications": 2,
+        "pii_category": "ID_SOLUTIONS_AND_EXCHANGES"
+      },
+      {
+        "key": "kwords",
+        "avg_gap": 0.0,
+        "num_modifications": 6,
+        "pii_category": "TECHNICAL_PASSWORDS"
+      },
+      {
+        "key": "user_preferences",
+        "avg_gap": 0.0,
+        "num_modifications": 3,
+        "pii_category": "DIRECT_PII_KEYS"
+      },
+      {
+        "key": "sar_fr-FR_tracking_session",
+        "avg_gap": 0.0,
+        "num_modifications": 2,
+        "pii_category": "USER_PREFERENCES"
+      },
+      {
+        "key": "poool:customStyles:nDtrahO8rSK0QpBFGHrBJFphV2TobMXEikomTbnHTXOREXi6vcoLlamEwvxVBNzm",
+        "avg_gap": 0.0,
+        "num_modifications": 6,
+        "pii_category": "LOCATION_AND_DEMOGRAPHICS"
+      },
+      {
+        "key": "ContextHubPersistence",
+        "avg_gap": 0.0,
+        "num_modifications": 3,
+        "pii_category": "DEVICE_ENV"
+      },
+      {
+        "key": "__cmpconsentx137755_expire_.creusot-infos.com",
+        "avg_gap": 0.0,
+        "num_modifications": 2,
+        "pii_category": "TECHNICAL_PASSWORDS"
+      },
+      {
+        "key": "scapi_cache_refinements_fr-FR_SarenzaFR",
+        "avg_gap": 0.5882352941176471,
+        "num_modifications": 9,
+        "pii_category": "USER_PREFERENCES"
+      },
+      {
+        "key": "appconsent",
+        "avg_gap": 1.5714285714285714,
+        "num_modifications": 15,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "sar_fr-FR_record-list",
+        "avg_gap": 3.3333333333333335,
+        "num_modifications": 4,
+        "pii_category": "USER_PREFERENCES"
+      },
+      {
+        "key": "didomi_token",
+        "avg_gap": 6.852941176470588,
+        "num_modifications": 48,
+        "pii_category": "DIRECT_PII_KEYS"
+      },
+      {
+        "key": "gscs",
+        "avg_gap": 6.947368421052632,
+        "num_modifications": 20,
+        "pii_category": "USER_PREFERENCES"
+      },
+      {
+        "key": "sar_tracking_data",
+        "avg_gap": 10.0,
+        "num_modifications": 2,
+        "pii_category": "IDENTITY_TRACKING"
+      },
+      {
+        "key": "kameleoonLegalConsent",
+        "avg_gap": 10.935483870967742,
+        "num_modifications": 24,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "_qcses_p-FNaNcJe4bSewc",
+        "avg_gap": 11.333333333333334,
+        "num_modifications": 2,
+        "pii_category": "TECHNICAL_PASSWORDS"
+      },
+      {
+        "key": "topicsLastReferenceTime",
+        "avg_gap": 14.03448275862069,
+        "num_modifications": 16,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "__brwrtd",
+        "avg_gap": 15.2,
+        "num_modifications": 3,
+        "pii_category": "TECHNICAL_PASSWORDS"
+      },
+      {
+        "key": "euconsent-v2",
+        "avg_gap": 22.19047619047619,
+        "num_modifications": 2,
+        "pii_category": "CONSENT_AND_PRIVACY"
+      },
+      {
+        "key": "cto_bundle",
+        "avg_gap": 22.636363636363637,
+        "num_modifications": 4,
+        "pii_category": "ID_SOLUTIONS_AND_EXCHANGES"
+      },
+      {
+        "key": "perfmaker_session_id",
+        "avg_gap": 23.285714285714285,
+        "num_modifications": 4,
+        "pii_category": "SESSION_MANAGEMENT"
+      }
+    ],
+    "url_modifications": {
+      "particuliers.sg.fr": 22,
+      "www.promessedefleurs.com": 20,
+      "ouvrir-un-compte-en-ligne.sg.fr": 19,
+      "www.republicain-lorrain.fr": 19,
+      "www.zooplus.fr": 19,
+      "entreprises.sg.fr": 17,
+      "www.sarenza.com": 17,
+      "www.cabaia.fr": 17,
+      "mawaqit.net": 17,
+      "www.boursedirect.fr": 16
+    },
+    "pii_modification_patterns": {
+      "BEHAVIORAL_DATA": {
+        "count": 93,
+        "avg_gap": 67.18
+      },
+      "ID_SOLUTIONS_AND_EXCHANGES": {
+        "count": 24,
+        "avg_gap": 50.8235294117647
+      },
+      "IDENTITY_TRACKING": {
+        "count": 48,
+        "avg_gap": 41.97826086956522
+      },
+      "USER_PREFERENCES": {
+        "count": 78,
+        "avg_gap": 22.848837209302324
+      },
+      "SESSION_MANAGEMENT": {
+        "count": 4,
+        "avg_gap": 23.285714285714285
+      },
+      "UX_AND_PERFORMANCE_ANALYTICS": {
+        "count": 46,
+        "avg_gap": 24.74137931034483
+      },
+      "NAVIGATION_HISTORY": {
+        "count": 12,
+        "avg_gap": 37.541666666666664
+      },
+      "TECHNICAL_PASSWORDS": {
+        "count": 24,
+        "avg_gap": 22.689655172413794
+      },
+      "CONSENT_AND_PRIVACY": {
+        "count": 10,
+        "avg_gap": 38.4
+      },
+      "DIRECT_PII_KEYS": {
+        "count": 61,
+        "avg_gap": 11.75
+      },
+      "LOCATION_AND_DEMOGRAPHICS": {
+        "count": 9,
+        "avg_gap": 42.0
+      },
+      "DEVICE_ENV": {
+        "count": 11,
+        "avg_gap": 37.0
+      },
+      "APP_STATE_STORAGE": {
+        "count": 6,
+        "avg_gap": 73.25
+      }
+    }
+  },
+  "num_timelines": 353
+}

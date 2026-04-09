@@ -1,0 +1,104 @@
+{
+  "ceilings": {
+    "session_max": 16249.1073,
+    "mode": 52724.9123,
+    "policy": 35844.3601,
+    "storage": 44262.8625,
+    "mode_policy": 25199.8465,
+    "policy_storage": 21269.5525
+  },
+  "by_mode": {
+    "Auth": 0.5543,
+    "UnAuth": 1.0
+  },
+  "by_policy": {
+    "ALL": 1.0,
+    "PARTIAL": 0.6189,
+    "NONE": 0.6674
+  },
+  "by_storage": {
+    "cookie": 0.6317,
+    "localStorage": 0.1781,
+    "sessionStorage": 0.0416,
+    "IndexedDB": 1.0
+  },
+  "by_mode_policy": {
+    "Auth": {
+      "ALL": 0.4224,
+      "PARTIAL": 0.4093,
+      "NONE": 0.328
+    },
+    "UnAuth": {
+      "ALL": 1.0,
+      "PARTIAL": 0.471,
+      "NONE": 0.6212
+    }
+  },
+  "by_policy_storage": {
+    "ALL": {
+      "cookie": 0.5054,
+      "localStorage": 0.1481,
+      "sessionStorage": 0.0317,
+      "IndexedDB": 1.0
+    },
+    "PARTIAL": {
+      "cookie": 0.4226,
+      "localStorage": 0.1152,
+      "sessionStorage": 0.0287,
+      "IndexedDB": 0.4765
+    },
+    "NONE": {
+      "cookie": 0.3866,
+      "localStorage": 0.1073,
+      "sessionStorage": 0.0262,
+      "IndexedDB": 0.6045
+    }
+  },
+  "by_mode_mean": {
+    "Auth": 0.5801,
+    "UnAuth": 0.5769
+  },
+  "by_policy_mean": {
+    "ALL": 0.5807,
+    "PARTIAL": 0.5779,
+    "NONE": 0.5743
+  },
+  "by_storage_mean": {
+    "cookie": 0.6107,
+    "localStorage": 0.61,
+    "sessionStorage": 0.4679,
+    "IndexedDB": 0.5594
+  },
+  "by_mode_policy_mean": {
+    "Auth": {
+      "ALL": 0.5826,
+      "PARTIAL": 0.5846,
+      "NONE": 0.5715
+    },
+    "UnAuth": {
+      "ALL": 0.58,
+      "PARTIAL": 0.5722,
+      "NONE": 0.5757
+    }
+  },
+  "by_policy_storage_mean": {
+    "ALL": {
+      "cookie": 0.6183,
+      "localStorage": 0.6161,
+      "sessionStorage": 0.4756,
+      "IndexedDB": 0.5626
+    },
+    "PARTIAL": {
+      "cookie": 0.6079,
+      "localStorage": 0.604,
+      "sessionStorage": 0.4681,
+      "IndexedDB": 0.5557
+    },
+    "NONE": {
+      "cookie": 0.6041,
+      "localStorage": 0.6083,
+      "sessionStorage": 0.4586,
+      "IndexedDB": 0.5572
+    }
+  }
+}

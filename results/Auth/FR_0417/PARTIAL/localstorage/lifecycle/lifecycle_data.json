@@ -1,0 +1,240 @@
+{
+  "storage_type": "localstorage",
+  "metrics": {
+    "total_items": 221,
+    "items_modified": 84,
+    "items_deleted": 98,
+    "entropy_increases": 30,
+    "entropy_decreases": 27,
+    "size_increases": 10,
+    "size_decreases": 9,
+    "pii_transitions": {
+      "BEHAVIORAL_DATA → INFRASTRUCTURE": 1,
+      "BEHAVIORAL_DATA → UX_AND_PERFORMANCE_ANALYTICS": 3,
+      "IDENTITY_TRACKING → TECHNICAL_PASSWORDS": 2,
+      "APP_STATE_STORAGE → DEVICE_ENV": 2,
+      "APP_STATE_STORAGE → UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "APP_STATE_STORAGE → USER_PREFERENCES": 3,
+      "BEHAVIORAL_DATA → NAVIGATION_HISTORY": 2,
+      "BEHAVIORAL_DATA → USER_PREFERENCES": 1,
+      "CONSENT_AND_PRIVACY → USER_PREFERENCES": 2,
+      "CONSENT_AND_PRIVACY → ID_SOLUTIONS_AND_EXCHANGES": 3,
+      "APP_STATE_STORAGE → NAVIGATION_HISTORY": 2,
+      "USER_PREFERENCES → BEHAVIORAL_DATA": 4,
+      "IDENTITY_TRACKING → SESSION_MANAGEMENT": 1,
+      "BEHAVIORAL_DATA → DEVICE_ENV": 1,
+      "APP_STATE_STORAGE → IDENTITY_TRACKING": 1,
+      "SESSION_MANAGEMENT → BEHAVIORAL_DATA": 1,
+      "IDENTITY_TRACKING → ID_SOLUTIONS_AND_EXCHANGES": 2,
+      "CONSENT_AND_PRIVACY → UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "DIRECT_PII → LOCATION_AND_DEMOGRAPHICS": 1,
+      "BEHAVIORAL_DATA → ID_SOLUTIONS_AND_EXCHANGES": 2,
+      "DIRECT_PII_KEYS → IDENTITY_TRACKING": 1,
+      "CONSENT_AND_PRIVACY → TECHNICAL_PASSWORDS": 1,
+      "APP_STATE_STORAGE → LOCATION_AND_DEMOGRAPHICS": 1,
+      "APP_STATE_STORAGE → DIRECT_PII_KEYS": 1,
+      "ID_SOLUTIONS_AND_EXCHANGES → TECHNICAL_PASSWORDS": 2,
+      "BEHAVIORAL_DATA → SESSION_MANAGEMENT": 1,
+      "BEHAVIORAL_DATA → TECHNICAL_PASSWORDS": 1
+    },
+    "volatility_distribution": {
+      "moderate": 130,
+      "stable": 57,
+      "high": 34
+    },
+    "change_frequency": {
+      "avg_gap": 36.52019002375297,
+      "min_gap": 0,
+      "max_gap": 322
+    },
+    "frequent_changes": [
+      {
+        "key": "lscache-scls::session_id_ac7a4bf1-46dd-4cd3-9f04-47e2fb42f391",
+        "avg_gap": 0.0,
+        "num_modifications": 2,
+        "pii_category": "SESSION_MANAGEMENT"
+      },
+      {
+        "key": "_snrs_profile_config",
+        "avg_gap": 0.0,
+        "num_modifications": 2,
+        "pii_category": "IDENTITY_TRACKING"
+      },
+      {
+        "key": "__cmpconsentx25670_expire_.assurland.com",
+        "avg_gap": 0.0,
+        "num_modifications": 2,
+        "pii_category": "TECHNICAL_PASSWORDS"
+      },
+      {
+        "key": "SL_L_23361dd035530_SID",
+        "avg_gap": 0.0,
+        "num_modifications": 3,
+        "pii_category": "TECHNICAL_PASSWORDS"
+      },
+      {
+        "key": "snowplowOutQueue_snowplow_ecommerceMarketingTracker_post2",
+        "avg_gap": 2.4285714285714284,
+        "num_modifications": 8,
+        "pii_category": "TECHNICAL_PASSWORDS"
+      },
+      {
+        "key": "mage-cache-storage",
+        "avg_gap": 3.3793103448275863,
+        "num_modifications": 20,
+        "pii_category": "LOCATION_AND_DEMOGRAPHICS"
+      },
+      {
+        "key": "didomi_token",
+        "avg_gap": 7.172413793103448,
+        "num_modifications": 12,
+        "pii_category": "DIRECT_PII_KEYS"
+      },
+      {
+        "key": "__join_stories_tc_storage",
+        "avg_gap": 7.176470588235294,
+        "num_modifications": 18,
+        "pii_category": "USER_PREFERENCES"
+      },
+      {
+        "key": "previous_env_template",
+        "avg_gap": 9.0,
+        "num_modifications": 2,
+        "pii_category": "USER_PREFERENCES"
+      },
+      {
+        "key": "snowplowOutQueue_sp_post2.expires",
+        "avg_gap": 14.0,
+        "num_modifications": 2,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "intercom.intercom-state-ld9mkn53",
+        "avg_gap": 16.454545454545453,
+        "num_modifications": 12,
+        "pii_category": "USER_PREFERENCES"
+      },
+      {
+        "key": "cto_bundle",
+        "avg_gap": 19.666666666666668,
+        "num_modifications": 4,
+        "pii_category": "ID_SOLUTIONS_AND_EXCHANGES"
+      },
+      {
+        "key": "lastExternalReferrerTime",
+        "avg_gap": 21.0,
+        "num_modifications": 2,
+        "pii_category": "NAVIGATION_HISTORY"
+      },
+      {
+        "key": "_GESPSK-esp.criteo.com",
+        "avg_gap": 21.666666666666668,
+        "num_modifications": 2,
+        "pii_category": "TECHNICAL_PASSWORDS"
+      },
+      {
+        "key": "beyable-sessionsWithInfos",
+        "avg_gap": 24.4,
+        "num_modifications": 6,
+        "pii_category": "SESSION_MANAGEMENT"
+      },
+      {
+        "key": "pageLoadTimestamp",
+        "avg_gap": 24.5,
+        "num_modifications": 1,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "topicsLastReferenceTime",
+        "avg_gap": 25.333333333333332,
+        "num_modifications": 15,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "TERMLY_API_CACHE",
+        "avg_gap": 25.857142857142858,
+        "num_modifications": 8,
+        "pii_category": "USER_PREFERENCES"
+      },
+      {
+        "key": "_GESPSK-esp.pubmatic.com",
+        "avg_gap": 27.857142857142858,
+        "num_modifications": 2,
+        "pii_category": "TECHNICAL_PASSWORDS"
+      },
+      {
+        "key": "google_ama_settings",
+        "avg_gap": 37.0,
+        "num_modifications": 4,
+        "pii_category": "DEVICE_ENV"
+      }
+    ],
+    "url_modifications": {
+      "www.passagedudesir.fr": 43,
+      "www.atom.com": 22,
+      "www.pharmashopi.com": 22,
+      "www.toscane-boutique.fr": 18,
+      "www.panini.fr": 17,
+      "www.rentanddrop.com": 12,
+      "lesciseauxmagiques.fr": 12,
+      "worldofwarcraft.judgehype.com": 10,
+      "www.but-cuisines.fr": 10,
+      "topsitestreaming.info": 8
+    },
+    "pii_modification_patterns": {
+      "BEHAVIORAL_DATA": {
+        "count": 48,
+        "avg_gap": 65.86842105263158
+      },
+      "TECHNICAL_PASSWORDS": {
+        "count": 32,
+        "avg_gap": 35.515151515151516
+      },
+      "IDENTITY_TRACKING": {
+        "count": 30,
+        "avg_gap": 74.0
+      },
+      "USER_PREFERENCES": {
+        "count": 43,
+        "avg_gap": 13.694444444444445
+      },
+      "ID_SOLUTIONS_AND_EXCHANGES": {
+        "count": 9,
+        "avg_gap": 58.8421052631579
+      },
+      "CONSENT_AND_PRIVACY": {
+        "count": 10,
+        "avg_gap": 50.54545454545455
+      },
+      "DEVICE_ENV": {
+        "count": 6,
+        "avg_gap": 43.857142857142854
+      },
+      "LOCATION_AND_DEMOGRAPHICS": {
+        "count": 21,
+        "avg_gap": 3.3793103448275863
+      },
+      "SESSION_MANAGEMENT": {
+        "count": 11,
+        "avg_gap": 56.25
+      },
+      "NAVIGATION_HISTORY": {
+        "count": 3,
+        "avg_gap": 21.0
+      },
+      "APP_STATE_STORAGE": {
+        "count": 14,
+        "avg_gap": 97.66666666666667
+      },
+      "UX_AND_PERFORMANCE_ANALYTICS": {
+        "count": 2,
+        "avg_gap": 109.5
+      },
+      "DIRECT_PII_KEYS": {
+        "count": 12,
+        "avg_gap": 7.172413793103448
+      }
+    }
+  },
+  "num_timelines": 221
+}

@@ -1,0 +1,818 @@
+{
+  "storage_type": "sessionstorage",
+  "total_items": 169,
+  "direct_pii_count": 1,
+  "other_count": 168,
+  "pii_distribution": {
+    "unknown": 1,
+    "APP_STATE_STORAGE": 5,
+    "BEHAVIORAL_DATA": 66,
+    "DEVICE_ENV": 5,
+    "DIRECT_PII_KEYS": 8,
+    "IDENTITY_TRACKING": 31,
+    "ID_SOLUTIONS_AND_EXCHANGES": 2,
+    "NAVIGATION_HISTORY": 15,
+    "SECURITY_AND_BOT_MITIGATION": 4,
+    "SESSION_MANAGEMENT": 13,
+    "TECHNICAL_PASSWORDS": 6,
+    "USER_PREFERENCES": 11,
+    "UX_AND_PERFORMANCE_ANALYTICS": 2
+  },
+  "pii_by_category": {
+    "DIRECT_PII": {
+      "unknown": 1
+    },
+    "APP_STATE_STORAGE": {
+      "APP_STATE_STORAGE": 5
+    },
+    "BEHAVIORAL_DATA": {
+      "BEHAVIORAL_DATA": 66
+    },
+    "DEVICE_ENV": {
+      "DEVICE_ENV": 5
+    },
+    "DIRECT_PII_KEYS": {
+      "DIRECT_PII_KEYS": 8
+    },
+    "IDENTITY_TRACKING": {
+      "IDENTITY_TRACKING": 31
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "ID_SOLUTIONS_AND_EXCHANGES": 2
+    },
+    "NAVIGATION_HISTORY": {
+      "NAVIGATION_HISTORY": 15
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "SECURITY_AND_BOT_MITIGATION": 4
+    },
+    "SESSION_MANAGEMENT": {
+      "SESSION_MANAGEMENT": 13
+    },
+    "TECHNICAL_PASSWORDS": {
+      "TECHNICAL_PASSWORDS": 6
+    },
+    "USER_PREFERENCES": {
+      "USER_PREFERENCES": 11
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "UX_AND_PERFORMANCE_ANALYTICS": 2
+    }
+  },
+  "persistence_distribution": {
+    "Session": 169
+  },
+  "persistence_by_pii": {
+    "unknown": {
+      "Session": 1
+    },
+    "APP_STATE_STORAGE": {
+      "Session": 5
+    },
+    "BEHAVIORAL_DATA": {
+      "Session": 66
+    },
+    "DEVICE_ENV": {
+      "Session": 5
+    },
+    "DIRECT_PII_KEYS": {
+      "Session": 8
+    },
+    "IDENTITY_TRACKING": {
+      "Session": 31
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "Session": 2
+    },
+    "NAVIGATION_HISTORY": {
+      "Session": 15
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "Session": 4
+    },
+    "SESSION_MANAGEMENT": {
+      "Session": 13
+    },
+    "TECHNICAL_PASSWORDS": {
+      "Session": 6
+    },
+    "USER_PREFERENCES": {
+      "Session": 11
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "Session": 2
+    }
+  },
+  "size_by_pii": {
+    "unknown": {
+      "total": 126,
+      "average": 126.0,
+      "count": 1
+    },
+    "APP_STATE_STORAGE": {
+      "total": 3552,
+      "average": 710.4,
+      "count": 5
+    },
+    "BEHAVIORAL_DATA": {
+      "total": 18883,
+      "average": 286.1060606060606,
+      "count": 66
+    },
+    "DEVICE_ENV": {
+      "total": 5565,
+      "average": 1113.0,
+      "count": 5
+    },
+    "DIRECT_PII_KEYS": {
+      "total": 6786,
+      "average": 848.25,
+      "count": 8
+    },
+    "IDENTITY_TRACKING": {
+      "total": 20618,
+      "average": 665.0967741935484,
+      "count": 31
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "total": 175,
+      "average": 87.5,
+      "count": 2
+    },
+    "NAVIGATION_HISTORY": {
+      "total": 6413,
+      "average": 427.53333333333336,
+      "count": 15
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "total": 624,
+      "average": 156.0,
+      "count": 4
+    },
+    "SESSION_MANAGEMENT": {
+      "total": 3203,
+      "average": 246.3846153846154,
+      "count": 13
+    },
+    "TECHNICAL_PASSWORDS": {
+      "total": 3605,
+      "average": 600.8333333333334,
+      "count": 6
+    },
+    "USER_PREFERENCES": {
+      "total": 4025,
+      "average": 365.90909090909093,
+      "count": 11
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "total": 7,
+      "average": 3.5,
+      "count": 2
+    }
+  },
+  "content_hierarchy": {
+    "complex_string": {
+      "unknown": 1,
+      "BEHAVIORAL_DATA": 16,
+      "IDENTITY_TRACKING": 1,
+      "NAVIGATION_HISTORY": 3
+    },
+    "json_structured": {
+      "APP_STATE_STORAGE": 5,
+      "BEHAVIORAL_DATA": 26,
+      "DEVICE_ENV": 5,
+      "DIRECT_PII_KEYS": 8,
+      "IDENTITY_TRACKING": 27,
+      "ID_SOLUTIONS_AND_EXCHANGES": 2,
+      "NAVIGATION_HISTORY": 12,
+      "SECURITY_AND_BOT_MITIGATION": 4,
+      "SESSION_MANAGEMENT": 13,
+      "TECHNICAL_PASSWORDS": 2,
+      "USER_PREFERENCES": 10
+    },
+    "empty": {
+      "BEHAVIORAL_DATA": 3
+    },
+    "number": {
+      "BEHAVIORAL_DATA": 20,
+      "IDENTITY_TRACKING": 3,
+      "UX_AND_PERFORMANCE_ANALYTICS": 2
+    },
+    "boolean": {
+      "BEHAVIORAL_DATA": 1
+    },
+    "token_id": {
+      "TECHNICAL_PASSWORDS": 4
+    },
+    "short_text": {
+      "USER_PREFERENCES": 1
+    }
+  },
+  "content_types": {
+    "complex_string": 21,
+    "json_structured": 114,
+    "empty": 3,
+    "number": 25,
+    "boolean": 1,
+    "token_id": 4,
+    "short_text": 1
+  },
+  "vendor_counts": {
+    "actu.fr": 4,
+    "laprovence.com": 15,
+    "lcl.fr": 2,
+    "boursorama.com": 2,
+    "bouyguestelecom.fr": 24,
+    "cabaia.fr": 13,
+    "probtp.com": 3,
+    "zooplus.fr": 6,
+    "letudiant.fr": 4,
+    "4murs.com": 9,
+    "showroomprive.com": 1,
+    "willemsefrance.fr": 6,
+    "lexpress.fr": 1,
+    "booknode.com": 4,
+    "cetelem.fr": 6,
+    "universfreebox.com": 2,
+    "pressesante.com": 6,
+    "planet.fr": 4,
+    "boursier.com": 2,
+    "newsactual.fr": 1,
+    "cmb.fr": 6,
+    "sarenza.com": 18,
+    "marianne.net": 4,
+    "tomsguide.fr": 3,
+    "01net.com": 9,
+    "sudouest.fr": 6,
+    "magicmaman.com": 2,
+    "dealabs.com": 1,
+    "mgen.fr": 3,
+    "nouvelobs.com": 1,
+    "carrefour.fr": 1
+  },
+  "category_vendor_flows": [
+    [
+      "unknown",
+      "actu.fr",
+      1
+    ],
+    [
+      "APP_STATE_STORAGE",
+      "laprovence.com",
+      3
+    ],
+    [
+      "APP_STATE_STORAGE",
+      "lcl.fr",
+      1
+    ],
+    [
+      "APP_STATE_STORAGE",
+      "boursorama.com",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "bouyguestelecom.fr",
+      8
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "cabaia.fr",
+      7
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "probtp.com",
+      3
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "zooplus.fr",
+      6
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "letudiant.fr",
+      2
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "4murs.com",
+      3
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "showroomprive.com",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "willemsefrance.fr",
+      4
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "lexpress.fr",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "booknode.com",
+      4
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "cetelem.fr",
+      6
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "universfreebox.com",
+      2
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "pressesante.com",
+      6
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "actu.fr",
+      3
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "planet.fr",
+      4
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "boursier.com",
+      2
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "newsactual.fr",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "cmb.fr",
+      3
+    ],
+    [
+      "DEVICE_ENV",
+      "laprovence.com",
+      3
+    ],
+    [
+      "DEVICE_ENV",
+      "sarenza.com",
+      2
+    ],
+    [
+      "DIRECT_PII_KEYS",
+      "bouyguestelecom.fr",
+      4
+    ],
+    [
+      "DIRECT_PII_KEYS",
+      "sarenza.com",
+      4
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "cmb.fr",
+      3
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "marianne.net",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "tomsguide.fr",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "bouyguestelecom.fr",
+      8
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "01net.com",
+      3
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "laprovence.com",
+      3
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "sudouest.fr",
+      3
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "magicmaman.com",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "sarenza.com",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "cabaia.fr",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "letudiant.fr",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "4murs.com",
+      3
+    ],
+    [
+      "ID_SOLUTIONS_AND_EXCHANGES",
+      "dealabs.com",
+      1
+    ],
+    [
+      "ID_SOLUTIONS_AND_EXCHANGES",
+      "sarenza.com",
+      1
+    ],
+    [
+      "NAVIGATION_HISTORY",
+      "tomsguide.fr",
+      1
+    ],
+    [
+      "NAVIGATION_HISTORY",
+      "mgen.fr",
+      3
+    ],
+    [
+      "NAVIGATION_HISTORY",
+      "01net.com",
+      3
+    ],
+    [
+      "NAVIGATION_HISTORY",
+      "nouvelobs.com",
+      1
+    ],
+    [
+      "NAVIGATION_HISTORY",
+      "laprovence.com",
+      3
+    ],
+    [
+      "NAVIGATION_HISTORY",
+      "sarenza.com",
+      2
+    ],
+    [
+      "NAVIGATION_HISTORY",
+      "lcl.fr",
+      1
+    ],
+    [
+      "NAVIGATION_HISTORY",
+      "boursorama.com",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "bouyguestelecom.fr",
+      4
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "marianne.net",
+      2
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "tomsguide.fr",
+      1
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "01net.com",
+      3
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "laprovence.com",
+      3
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "sudouest.fr",
+      3
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "magicmaman.com",
+      1
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "letudiant.fr",
+      1
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "cabaia.fr",
+      2
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "sarenza.com",
+      3
+    ],
+    [
+      "USER_PREFERENCES",
+      "sarenza.com",
+      3
+    ],
+    [
+      "USER_PREFERENCES",
+      "4murs.com",
+      3
+    ],
+    [
+      "USER_PREFERENCES",
+      "willemsefrance.fr",
+      2
+    ],
+    [
+      "USER_PREFERENCES",
+      "carrefour.fr",
+      1
+    ],
+    [
+      "USER_PREFERENCES",
+      "cabaia.fr",
+      2
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "sarenza.com",
+      2
+    ]
+  ],
+  "entropy_by_pii": {
+    "unknown": [
+      4.516969005521724
+    ],
+    "APP_STATE_STORAGE": [
+      5.457874888755187,
+      5.4570318523055485,
+      5.443016381695505,
+      5.555049325169065,
+      5.440450530207807
+    ],
+    "BEHAVIORAL_DATA": [
+      4.454564416144748,
+      4.476198499463658,
+      4.508238257083069,
+      0.0,
+      4.5214805274078245,
+      4.449531832796991,
+      0.0,
+      4.436198499463656,
+      0.0,
+      0.0,
+      3.6753108689123644,
+      0.0,
+      0.0,
+      0.0,
+      3.5026204074720737,
+      3.91555328506335,
+      0.0,
+      3.6753108689123644,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      3.8848588918890474,
+      4.420175550117879,
+      3.056564762130954,
+      4.217656011347915,
+      4.632415641850853,
+      2.8729055953200557,
+      0.0,
+      3.8848588918890474,
+      0.0,
+      3.988077434998132,
+      3.1898980954642875,
+      4.317468077310788,
+      3.006238928653389,
+      4.050013373778756,
+      2.0,
+      2.4116022179746714,
+      2.5073801024236357,
+      3.1395722619867223,
+      0.0,
+      0.0,
+      3.8848588918890474,
+      0.0,
+      4.638320372714709,
+      3.240223928941852,
+      0.0,
+      4.298664447837997,
+      3.813095199802693,
+      3.9273495967179026,
+      3.0565647621309537,
+      0.0,
+      3.6753108689123644,
+      0.0,
+      4.025555565170781,
+      3.833094812495473,
+      5.02066344920662,
+      4.6147319433796765,
+      4.6147319433796765,
+      5.062618489899412,
+      4.508238257083069,
+      5.034975879220271,
+      4.5214805274078245,
+      4.6147319433796765,
+      4.6147319433796765
+    ],
+    "DEVICE_ENV": [
+      5.457874888755187,
+      5.4570318523055485,
+      4.5781021677661125,
+      5.443016381695505,
+      4.531217023979507
+    ],
+    "DIRECT_PII_KEYS": [
+      4.6147319433796765,
+      4.6147319433796765,
+      4.5781021677661125,
+      4.5781021677661125,
+      4.531217023979507,
+      4.531217023979507,
+      4.6147319433796765,
+      4.6147319433796765
+    ],
+    "IDENTITY_TRACKING": [
+      5.02066344920662,
+      4.991674099217456,
+      4.998379786499024,
+      4.6147319433796765,
+      4.454564416144748,
+      4.9875771233914445,
+      4.9862416790777,
+      5.007716831642705,
+      4.6147319433796765,
+      4.476198499463658,
+      4.842393686126278,
+      4.764101743822966,
+      5.003631168153863,
+      5.03635904950094,
+      5.062618489899412,
+      5.034975879220271,
+      5.026244399737948,
+      4.968314034535595,
+      3.621928094887362,
+      5.003061554952047,
+      3.521928094887362,
+      3.521928094887362,
+      4.449531832796991,
+      4.6147319433796765,
+      4.436198499463656,
+      4.6147319433796765,
+      4.85702076383453,
+      5.86167889978742,
+      2.873140679513133,
+      2.6612262562697895,
+      2.469670487371862
+    ],
+    "ID_SOLUTIONS_AND_EXCHANGES": [
+      4.150630164920536,
+      4.965891846837029
+    ],
+    "NAVIGATION_HISTORY": [
+      4.998379786499024,
+      3.993171609638258,
+      4.9875771233914445,
+      4.3173215738122055,
+      4.9862416790777,
+      5.007716831642705,
+      5.003631168153863,
+      4.968314034535595,
+      4.318783279783747,
+      4.5781021677661125,
+      5.003061554952047,
+      4.531217023979507,
+      5.555049325169065,
+      5.440450530207807,
+      4.223388733890012
+    ],
+    "SECURITY_AND_BOT_MITIGATION": [
+      4.6147319433796765,
+      4.6147319433796765,
+      4.6147319433796765,
+      4.6147319433796765
+    ],
+    "SESSION_MANAGEMENT": [
+      4.991674099217456,
+      4.998379786499024,
+      4.9875771233914445,
+      4.9862416790777,
+      5.007716831642705,
+      4.842393686126278,
+      4.764101743822966,
+      5.003631168153863,
+      5.03635904950094,
+      5.026244399737948,
+      4.968314034535595,
+      5.003061554952047,
+      4.85702076383453
+    ],
+    "TECHNICAL_PASSWORDS": [
+      5.453578949354194,
+      5.641030381250775,
+      4.5781021677661125,
+      5.4535789493541955,
+      4.531217023979507,
+      5.721137130790799
+    ],
+    "USER_PREFERENCES": [
+      4.5781021677661125,
+      4.483617685440307,
+      4.531217023979507,
+      3.833094812495473,
+      3.8263783486533804,
+      3.813095199802693,
+      3.813095199802693,
+      2.1556390622295662,
+      3.828873982386123,
+      3.833094812495473,
+      3.833094812495473
+    ],
+    "UX_AND_PERFORMANCE_ANALYTICS": [
+      1.584962500721156,
+      1.5
+    ]
+  },
+  "risk_levels": {
+    "High Risk": 34,
+    "Low Risk": 35,
+    "Medium Risk": 100
+  },
+  "risk_by_pii": {
+    "unknown": {
+      "High Risk": 1
+    },
+    "APP_STATE_STORAGE": {
+      "Low Risk": 5
+    },
+    "BEHAVIORAL_DATA": {
+      "Medium Risk": 66
+    },
+    "DEVICE_ENV": {
+      "Low Risk": 5
+    },
+    "DIRECT_PII_KEYS": {
+      "Low Risk": 8
+    },
+    "IDENTITY_TRACKING": {
+      "High Risk": 31
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "High Risk": 2
+    },
+    "NAVIGATION_HISTORY": {
+      "Medium Risk": 15
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "Medium Risk": 4
+    },
+    "SESSION_MANAGEMENT": {
+      "Medium Risk": 13
+    },
+    "TECHNICAL_PASSWORDS": {
+      "Low Risk": 6
+    },
+    "USER_PREFERENCES": {
+      "Low Risk": 11
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "Medium Risk": 2
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "storage_type": "sessionstorage",
+  "metrics": {
+    "total_items": 62,
+    "items_modified": 15,
+    "items_deleted": 19,
+    "entropy_increases": 9,
+    "entropy_decreases": 9,
+    "size_increases": 3,
+    "size_decreases": 2,
+    "pii_transitions": {
+      "DIRECT_PII_KEYS → LOCATION_AND_DEMOGRAPHICS": 1,
+      "IDENTITY_TRACKING → SESSION_MANAGEMENT": 3,
+      "BEHAVIORAL_DATA → NAVIGATION_HISTORY": 1,
+      "BEHAVIORAL_DATA → SESSION_MANAGEMENT": 1,
+      "IDENTITY_TRACKING → UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "BEHAVIORAL_DATA → USER_PREFERENCES": 2,
+      "BEHAVIORAL_DATA → ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "APP_STATE_STORAGE → USER_PREFERENCES": 1,
+      "APP_STATE_STORAGE → DIRECT_PII_KEYS": 1,
+      "DIRECT_PII → TECHNICAL_PASSWORDS": 1
+    },
+    "volatility_distribution": {
+      "stable": 29,
+      "moderate": 24,
+      "high": 9
+    },
+    "change_frequency": {
+      "avg_gap": 48.93181818181818,
+      "min_gap": 0,
+      "max_gap": 285
+    },
+    "frequent_changes": [
+      {
+        "key": "as_session_id",
+        "avg_gap": 0.0,
+        "num_modifications": 3,
+        "pii_category": "SESSION_MANAGEMENT"
+      },
+      {
+        "key": "pmTempStorage",
+        "avg_gap": 0.0,
+        "num_modifications": 5,
+        "pii_category": "SESSION_MANAGEMENT"
+      },
+      {
+        "key": "AMP_URL_INFO",
+        "avg_gap": 1.875,
+        "num_modifications": 9,
+        "pii_category": "NAVIGATION_HISTORY"
+      },
+      {
+        "key": "previousUrl",
+        "avg_gap": 9.0,
+        "num_modifications": 2,
+        "pii_category": "NAVIGATION_HISTORY"
+      },
+      {
+        "key": "u_scsid_r",
+        "avg_gap": 48.5,
+        "num_modifications": 3,
+        "pii_category": "TECHNICAL_PASSWORDS"
+      }
+    ],
+    "url_modifications": {
+      "sundayapp.io": 9,
+      "www.passagedudesir.fr": 8,
+      "lesciseauxmagiques.fr": 6,
+      "www.cinetrafic.fr": 4,
+      "worldofwarcraft.judgehype.com": 3,
+      "www.livenation.fr": 3,
+      "www.cedeo.fr": 2,
+      "www.panini.fr": 2,
+      "www.vfscan.com": 1,
+      "www.ina.fr": 1
+    },
+    "pii_modification_patterns": {
+      "APP_STATE_STORAGE": {
+        "count": 2,
+        "avg_gap": 161.0
+      },
+      "SESSION_MANAGEMENT": {
+        "count": 8,
+        "avg_gap": 0.0
+      },
+      "UX_AND_PERFORMANCE_ANALYTICS": {
+        "count": 4,
+        "avg_gap": 140.0
+      },
+      "NAVIGATION_HISTORY": {
+        "count": 12,
+        "avg_gap": 21.09090909090909
+      },
+      "BEHAVIORAL_DATA": {
+        "count": 6,
+        "avg_gap": 111.66666666666667
+      },
+      "USER_PREFERENCES": {
+        "count": 4,
+        "avg_gap": 53.666666666666664
+      },
+      "SERVER_SIDE_TRACKING": {
+        "count": 2,
+        "avg_gap": 142.5
+      },
+      "TECHNICAL_PASSWORDS": {
+        "count": 3,
+        "avg_gap": 48.5
+      }
+    }
+  },
+  "num_timelines": 62
+}

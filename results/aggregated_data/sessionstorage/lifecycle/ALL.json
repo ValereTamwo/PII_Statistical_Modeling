@@ -1,0 +1,356 @@
+{
+  "total_items": 688,
+  "items_modified": 190,
+  "items_deleted": 129,
+  "pii_transitions": {
+    "IDENTITY_TRACKING \u2192 SESSION_MANAGEMENT": 31,
+    "BEHAVIORAL_DATA \u2192 IDENTITY_TRACKING": 12,
+    "IDENTITY_TRACKING \u2192 TECHNICAL_PASSWORDS": 7,
+    "DEVICE_ENV \u2192 USER_PREFERENCES": 7,
+    "APP_STATE_STORAGE \u2192 NAVIGATION_HISTORY": 7,
+    "IDENTITY_TRACKING \u2192 ID_SOLUTIONS_AND_EXCHANGES": 6,
+    "IDENTITY_TRACKING \u2192 UX_AND_PERFORMANCE_ANALYTICS": 6,
+    "APP_STATE_STORAGE \u2192 TECHNICAL_PASSWORDS": 6,
+    "DIRECT_PII_KEYS \u2192 LOCATION_AND_DEMOGRAPHICS": 5,
+    "BEHAVIORAL_DATA \u2192 NAVIGATION_HISTORY": 5,
+    "DIRECT_PII \u2192 USER_PREFERENCES": 5,
+    "DIRECT_PII_KEYS \u2192 IDENTITY_TRACKING": 5,
+    "BEHAVIORAL_DATA \u2192 USER_PREFERENCES": 4,
+    "DEVICE_ENV \u2192 IDENTITY_TRACKING": 4,
+    "BEHAVIORAL_DATA \u2192 ID_SOLUTIONS_AND_EXCHANGES": 4,
+    "APP_STATE_STORAGE \u2192 UX_AND_PERFORMANCE_ANALYTICS": 4,
+    "BEHAVIORAL_DATA \u2192 SESSION_MANAGEMENT": 3,
+    "APP_STATE_STORAGE \u2192 USER_PREFERENCES": 3,
+    "BEHAVIORAL_DATA \u2192 DIRECT_PII_KEYS": 3,
+    "BEHAVIORAL_DATA \u2192 TECHNICAL_PASSWORDS": 3,
+    "APP_STATE_STORAGE \u2192 LOCATION_AND_DEMOGRAPHICS": 2,
+    "BEHAVIORAL_DATA \u2192 LOCATION_AND_DEMOGRAPHICS": 2,
+    "DEVICE_ENV \u2192 NAVIGATION_HISTORY": 2,
+    "DIRECT_PII \u2192 LOCATION_AND_DEMOGRAPHICS": 2,
+    "CONSENT_AND_PRIVACY \u2192 USER_PREFERENCES": 2,
+    "DEVICE_ENV \u2192 TECHNICAL_PASSWORDS": 2,
+    "APP_STATE_STORAGE \u2192 DEVICE_ENV": 2,
+    "BEHAVIORAL_DATA \u2192 INFRASTRUCTURE": 2,
+    "BEHAVIORAL_DATA \u2192 SECURITY_AND_BOT_MITIGATION": 2,
+    "APP_STATE_STORAGE \u2192 SESSION_MANAGEMENT": 2,
+    "IDENTITY_TRACKING \u2192 NAVIGATION_HISTORY": 2,
+    "APP_STATE_STORAGE \u2192 DIRECT_PII_KEYS": 2,
+    "ID_SOLUTIONS_AND_EXCHANGES \u2192 IDENTITY_TRACKING": 2,
+    "BEHAVIORAL_DATA \u2192 UX_AND_PERFORMANCE_ANALYTICS": 2,
+    "USER_PREFERENCES \u2192 IDENTITY_TRACKING": 1,
+    "APP_STATE_STORAGE \u2192 BEHAVIORAL_DATA": 1,
+    "USER_PREFERENCES \u2192 BEHAVIORAL_DATA": 1,
+    "DIRECT_PII_KEYS \u2192 NAVIGATION_HISTORY": 1,
+    "DIRECT_PII \u2192 DIRECT_PII_KEYS": 1,
+    "NAVIGATION_HISTORY \u2192 BEHAVIORAL_DATA": 1,
+    "DEVICE_ENV \u2192 DIRECT_PII_KEYS": 1
+  },
+  "volatility_distribution": {
+    "stable": 396,
+    "moderate": 177,
+    "high": 115
+  },
+  "frequent_changes": [
+    {
+      "key": "hiko_socials",
+      "num_modifications": 28,
+      "pii_category": "USER_PREFERENCES",
+      "config": "Auth_FR_0458_ALL"
+    },
+    {
+      "key": "ABT_ALREADY_SENT_CUSTOM_TRACKING",
+      "num_modifications": 21,
+      "pii_category": "BEHAVIORAL_DATA",
+      "config": "UnAuth_FR_0458_ALL"
+    },
+    {
+      "key": "GTM_CORE_PARAMETERS",
+      "num_modifications": 18,
+      "pii_category": "IDENTITY_TRACKING",
+      "config": "Auth_FR_0446_ALL"
+    },
+    {
+      "key": "hiko_socials",
+      "num_modifications": 14,
+      "pii_category": "USER_PREFERENCES",
+      "config": "UnAuth_FR_0458_ALL"
+    },
+    {
+      "key": "___nrbic",
+      "num_modifications": 13,
+      "pii_category": "SESSION_MANAGEMENT",
+      "config": "Auth_FR_0458_ALL"
+    },
+    {
+      "key": "idz_pageId",
+      "num_modifications": 12,
+      "pii_category": "IDENTITY_TRACKING",
+      "config": "Auth_FR_0458_ALL"
+    },
+    {
+      "key": "___nrbic",
+      "num_modifications": 11,
+      "pii_category": "SESSION_MANAGEMENT",
+      "config": "UnAuth_FR_0458_ALL"
+    },
+    {
+      "key": "mopDeploy",
+      "num_modifications": 10,
+      "pii_category": "TECHNICAL_PASSWORDS",
+      "config": "Auth_FR_0458_ALL"
+    },
+    {
+      "key": "AMP_URL_INFO",
+      "num_modifications": 9,
+      "pii_category": "NAVIGATION_HISTORY",
+      "config": "Auth_FR_0417_ALL"
+    },
+    {
+      "key": "ph_phc_U2E3emzjXUtnHvqHIcdjcUbbyu8FzyHtJp1OCFlbxfY_posthog",
+      "num_modifications": 9,
+      "pii_category": "NAVIGATION_HISTORY",
+      "config": "UnAuth_FR_0446_ALL"
+    },
+    {
+      "key": "session_id",
+      "num_modifications": 6,
+      "pii_category": "SESSION_MANAGEMENT",
+      "config": "Auth_FR_0417_ALL"
+    },
+    {
+      "key": "idz_pageId",
+      "num_modifications": 6,
+      "pii_category": "IDENTITY_TRACKING",
+      "config": "Auth_FR_0446_ALL"
+    },
+    {
+      "key": "SSOenv",
+      "num_modifications": 6,
+      "pii_category": "SECURITY_AND_BOT_MITIGATION",
+      "config": "Auth_FR_0458_ALL"
+    },
+    {
+      "key": "oct8ne-checkdomain-result-fr-FR",
+      "num_modifications": 6,
+      "pii_category": "USER_PREFERENCES",
+      "config": "UnAuth_FR_0417_ALL"
+    },
+    {
+      "key": "idz_pageId",
+      "num_modifications": 6,
+      "pii_category": "IDENTITY_TRACKING",
+      "config": "UnAuth_FR_0446_ALL"
+    },
+    {
+      "key": "pmTempStorage",
+      "num_modifications": 5,
+      "pii_category": "SESSION_MANAGEMENT",
+      "config": "Auth_FR_0417_ALL"
+    },
+    {
+      "key": "marfeel-sdk-store",
+      "num_modifications": 5,
+      "pii_category": "DEVICE_ENV",
+      "config": "UnAuth_FR_0458_ALL"
+    },
+    {
+      "key": "History.store",
+      "num_modifications": 5,
+      "pii_category": "IDENTITY_TRACKING",
+      "config": "UnAuth_FR_0458_ALL"
+    },
+    {
+      "key": "oct8ne-checkdomain-result-fr-FR",
+      "num_modifications": 4,
+      "pii_category": "USER_PREFERENCES",
+      "config": "Auth_FR_0417_ALL"
+    },
+    {
+      "key": "_cltk",
+      "num_modifications": 4,
+      "pii_category": "IDENTITY_TRACKING",
+      "config": "Auth_FR_0446_ALL"
+    },
+    {
+      "key": "__rtbh.uid",
+      "num_modifications": 4,
+      "pii_category": "ID_SOLUTIONS_AND_EXCHANGES",
+      "config": "UnAuth_FR_0417_ALL"
+    },
+    {
+      "key": "___nrbic",
+      "num_modifications": 4,
+      "pii_category": "SESSION_MANAGEMENT",
+      "config": "UnAuth_FR_0417_ALL"
+    },
+    {
+      "key": "ph_phc_fzblsKH9pmelO7ONCKinE44x869fRiukwYB3IVIZDzJ_posthog",
+      "num_modifications": 4,
+      "pii_category": "NAVIGATION_HISTORY",
+      "config": "UnAuth_FR_0446_ALL"
+    },
+    {
+      "key": "com.grafana.faro.session",
+      "num_modifications": 4,
+      "pii_category": "SESSION_MANAGEMENT",
+      "config": "UnAuth_FR_0458_ALL"
+    },
+    {
+      "key": "bytel-tag-commander/oauth",
+      "num_modifications": 4,
+      "pii_category": "SECURITY_AND_BOT_MITIGATION",
+      "config": "UnAuth_FR_0458_ALL"
+    },
+    {
+      "key": "arTimestamps",
+      "num_modifications": 4,
+      "pii_category": "BEHAVIORAL_DATA",
+      "config": "UnAuth_FR_0458_ALL"
+    },
+    {
+      "key": "ph_phc_U2E3emzjXUtnHvqHIcdjcUbbyu8FzyHtJp1OCFlbxfY_posthog",
+      "num_modifications": 3,
+      "pii_category": "NAVIGATION_HISTORY",
+      "config": "Auth_FR_0446_ALL"
+    },
+    {
+      "key": "AMP_URL_INFO",
+      "num_modifications": 3,
+      "pii_category": "NAVIGATION_HISTORY",
+      "config": "Auth_FR_0458_ALL"
+    },
+    {
+      "key": "ABT_DATALAYER_INTERVAL_ID",
+      "num_modifications": 3,
+      "pii_category": "UX_AND_PERFORMANCE_ANALYTICS",
+      "config": "Auth_FR_0458_ALL"
+    },
+    {
+      "key": "AMP_URL_INFO",
+      "num_modifications": 3,
+      "pii_category": "NAVIGATION_HISTORY",
+      "config": "UnAuth_FR_0417_ALL"
+    },
+    {
+      "key": "AMP_URL_INFO",
+      "num_modifications": 3,
+      "pii_category": "NAVIGATION_HISTORY",
+      "config": "UnAuth_FR_0446_ALL"
+    },
+    {
+      "key": "imo:sessionID",
+      "num_modifications": 3,
+      "pii_category": "SESSION_MANAGEMENT",
+      "config": "UnAuth_FR_0458_ALL"
+    },
+    {
+      "key": "previousUrl",
+      "num_modifications": 2,
+      "pii_category": "NAVIGATION_HISTORY",
+      "config": "Auth_FR_0417_ALL"
+    },
+    {
+      "key": "ph_phc_fzblsKH9pmelO7ONCKinE44x869fRiukwYB3IVIZDzJ_posthog",
+      "num_modifications": 2,
+      "pii_category": "NAVIGATION_HISTORY",
+      "config": "Auth_FR_0446_ALL"
+    },
+    {
+      "key": "SSO_tribu.find.bouyguestelecom.fr",
+      "num_modifications": 2,
+      "pii_category": "IDENTITY_TRACKING",
+      "config": "Auth_FR_0458_ALL"
+    },
+    {
+      "key": "___so9874703",
+      "num_modifications": 2,
+      "pii_category": "NAVIGATION_HISTORY",
+      "config": "Auth_FR_0458_ALL"
+    },
+    {
+      "key": "wbn_evt_count|0054e07f-3b63-440d-9ff9-18d3b0cc2538",
+      "num_modifications": 2,
+      "pii_category": "BEHAVIORAL_DATA",
+      "config": "Auth_FR_0458_ALL"
+    },
+    {
+      "key": "com.adobe.reactor.core.visitorTracking.trafficSource",
+      "num_modifications": 2,
+      "pii_category": "BEHAVIORAL_DATA",
+      "config": "Auth_FR_0458_ALL"
+    },
+    {
+      "key": "com.adobe.reactor.core.visitorTracking.pagesViewed",
+      "num_modifications": 2,
+      "pii_category": "BEHAVIORAL_DATA",
+      "config": "Auth_FR_0458_ALL"
+    },
+    {
+      "key": "prevPageType",
+      "num_modifications": 2,
+      "pii_category": "BEHAVIORAL_DATA",
+      "config": "Auth_FR_0458_ALL"
+    },
+    {
+      "key": "com.adobe.reactor.core.visitorTracking.landingTime",
+      "num_modifications": 2,
+      "pii_category": "BEHAVIORAL_DATA",
+      "config": "Auth_FR_0458_ALL"
+    },
+    {
+      "key": "com.adobe.reactor.core.visitorTracking.landingPage",
+      "num_modifications": 2,
+      "pii_category": "LOCATION_AND_DEMOGRAPHICS",
+      "config": "Auth_FR_0458_ALL"
+    },
+    {
+      "key": "prevPageName",
+      "num_modifications": 2,
+      "pii_category": "BEHAVIORAL_DATA",
+      "config": "Auth_FR_0458_ALL"
+    },
+    {
+      "key": "___nrbi",
+      "num_modifications": 2,
+      "pii_category": "IDENTITY_TRACKING",
+      "config": "Auth_FR_0458_ALL"
+    },
+    {
+      "key": "_cltk",
+      "num_modifications": 2,
+      "pii_category": "IDENTITY_TRACKING",
+      "config": "UnAuth_FR_0446_ALL"
+    },
+    {
+      "key": "boxzilla_pageviews",
+      "num_modifications": 2,
+      "pii_category": "BEHAVIORAL_DATA",
+      "config": "UnAuth_FR_0446_ALL"
+    },
+    {
+      "key": "tt_pixel_session_index",
+      "num_modifications": 2,
+      "pii_category": "IDENTITY_TRACKING",
+      "config": "UnAuth_FR_0446_ALL"
+    },
+    {
+      "key": "__rtbh.uid",
+      "num_modifications": 2,
+      "pii_category": "ID_SOLUTIONS_AND_EXCHANGES",
+      "config": "UnAuth_FR_0446_ALL"
+    },
+    {
+      "key": "TAB_ID",
+      "num_modifications": 2,
+      "pii_category": "UX_AND_PERFORMANCE_ANALYTICS",
+      "config": "UnAuth_FR_0458_ALL"
+    },
+    {
+      "key": "___so19920",
+      "num_modifications": 2,
+      "pii_category": "NAVIGATION_HISTORY",
+      "config": "UnAuth_FR_0458_ALL"
+    }
+  ],
+  "num_configs": 6
+}

@@ -1,0 +1,186 @@
+{
+  "storage_type": "sessionstorage",
+  "metrics": {
+    "total_items": 147,
+    "items_modified": 41,
+    "items_deleted": 16,
+    "entropy_increases": 26,
+    "entropy_decreases": 15,
+    "size_increases": 18,
+    "size_decreases": 7,
+    "pii_transitions": {
+      "IDENTITY_TRACKING → TECHNICAL_PASSWORDS": 3,
+      "APP_STATE_STORAGE → TECHNICAL_PASSWORDS": 2,
+      "BEHAVIORAL_DATA → DIRECT_PII_KEYS": 2,
+      "BEHAVIORAL_DATA → NAVIGATION_HISTORY": 5,
+      "DIRECT_PII → USER_PREFERENCES": 1,
+      "BEHAVIORAL_DATA → SECURITY_AND_BOT_MITIGATION": 1,
+      "IDENTITY_TRACKING → SESSION_MANAGEMENT": 3,
+      "USER_PREFERENCES → BEHAVIORAL_DATA": 1,
+      "DIRECT_PII_KEYS → IDENTITY_TRACKING": 2,
+      "DEVICE_ENV → USER_PREFERENCES": 1,
+      "APP_STATE_STORAGE → DEVICE_ENV": 1,
+      "BEHAVIORAL_DATA → IDENTITY_TRACKING": 3,
+      "BEHAVIORAL_DATA → TECHNICAL_PASSWORDS": 2,
+      "IDENTITY_TRACKING → ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "BEHAVIORAL_DATA → LOCATION_AND_DEMOGRAPHICS": 1,
+      "APP_STATE_STORAGE → UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "IDENTITY_TRACKING → UX_AND_PERFORMANCE_ANALYTICS": 2,
+      "DEVICE_ENV → BEHAVIORAL_DATA": 1,
+      "APP_STATE_STORAGE → DIRECT_PII_KEYS": 2,
+      "APP_STATE_STORAGE → NAVIGATION_HISTORY": 2,
+      "APP_STATE_STORAGE → LOCATION_AND_DEMOGRAPHICS": 1
+    },
+    "volatility_distribution": {
+      "moderate": 23,
+      "stable": 99,
+      "high": 25
+    },
+    "change_frequency": {
+      "avg_gap": 38.70933333333333,
+      "min_gap": 0,
+      "max_gap": 445
+    },
+    "frequent_changes": [
+      {
+        "key": "___so19920",
+        "avg_gap": 0.0,
+        "num_modifications": 2,
+        "pii_category": "NAVIGATION_HISTORY"
+      },
+      {
+        "key": "___so9874703",
+        "avg_gap": 8.666666666666666,
+        "num_modifications": 2,
+        "pii_category": "NAVIGATION_HISTORY"
+      },
+      {
+        "key": "wbn_evt_count|acc0a641-22bc-479e-b62c-991cc546739c",
+        "avg_gap": 12.0,
+        "num_modifications": 2,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "___nrbic",
+        "avg_gap": 14.40625,
+        "num_modifications": 27,
+        "pii_category": "SESSION_MANAGEMENT"
+      },
+      {
+        "key": "ABT_ALREADY_SENT_CUSTOM_TRACKING",
+        "avg_gap": 15.631578947368421,
+        "num_modifications": 12,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "bytel-tag-commander/oauth",
+        "avg_gap": 24.0,
+        "num_modifications": 16,
+        "pii_category": "SECURITY_AND_BOT_MITIGATION"
+      },
+      {
+        "key": "marfeel-sdk-store",
+        "avg_gap": 33.625,
+        "num_modifications": 6,
+        "pii_category": "DEVICE_ENV"
+      },
+      {
+        "key": "arTimestamps",
+        "avg_gap": 33.75,
+        "num_modifications": 7,
+        "pii_category": "NAVIGATION_HISTORY"
+      },
+      {
+        "key": "arLastUrl",
+        "avg_gap": 33.75,
+        "num_modifications": 7,
+        "pii_category": "NAVIGATION_HISTORY"
+      },
+      {
+        "key": "idSurveillanceCurrentPage",
+        "avg_gap": 38.5,
+        "num_modifications": 3,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "History.store",
+        "avg_gap": 38.6,
+        "num_modifications": 6,
+        "pii_category": "IDENTITY_TRACKING"
+      },
+      {
+        "key": "wisepops-pageview_id",
+        "avg_gap": 40.5,
+        "num_modifications": 3,
+        "pii_category": "IDENTITY_TRACKING"
+      },
+      {
+        "key": "tt_pixel_session_index",
+        "avg_gap": 46.0,
+        "num_modifications": 2,
+        "pii_category": "IDENTITY_TRACKING"
+      },
+      {
+        "key": "_shs_state",
+        "avg_gap": 49.0,
+        "num_modifications": 9,
+        "pii_category": "BEHAVIORAL_DATA"
+      }
+    ],
+    "url_modifications": {
+      "www.bouyguestelecom.fr": 24,
+      "www.sarenza.com": 18,
+      "www.laprovence.com": 15,
+      "www.cabaia.fr": 13,
+      "www.4murs.com": 9,
+      "www.01net.com": 9,
+      "www.willemsefrance.fr": 6,
+      "www.pressesante.com": 6,
+      "www.sudouest.fr": 6,
+      "www.zooplus.fr": 6
+    },
+    "pii_modification_patterns": {
+      "USER_PREFERENCES": {
+        "count": 2,
+        "avg_gap": 112.5
+      },
+      "BEHAVIORAL_DATA": {
+        "count": 61,
+        "avg_gap": 59.375
+      },
+      "IDENTITY_TRACKING": {
+        "count": 21,
+        "avg_gap": 45.333333333333336
+      },
+      "NAVIGATION_HISTORY": {
+        "count": 22,
+        "avg_gap": 42.12903225806452
+      },
+      "SECURITY_AND_BOT_MITIGATION": {
+        "count": 16,
+        "avg_gap": 24.0
+      },
+      "SESSION_MANAGEMENT": {
+        "count": 33,
+        "avg_gap": 21.27027027027027
+      },
+      "ID_SOLUTIONS_AND_EXCHANGES": {
+        "count": 2,
+        "avg_gap": 225.0
+      },
+      "UX_AND_PERFORMANCE_ANALYTICS": {
+        "count": 2,
+        "avg_gap": 99.0
+      },
+      "DEVICE_ENV": {
+        "count": 6,
+        "avg_gap": 33.625
+      },
+      "TECHNICAL_PASSWORDS": {
+        "count": 4,
+        "avg_gap": 66.6
+      }
+    }
+  },
+  "num_timelines": 147
+}

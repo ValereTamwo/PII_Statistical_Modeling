@@ -1,0 +1,708 @@
+{
+  "storage_type": "sessionstorage",
+  "total_items": 92,
+  "direct_pii_count": 1,
+  "other_count": 91,
+  "pii_distribution": {
+    "unknown": 1,
+    "APP_STATE_STORAGE": 3,
+    "BEHAVIORAL_DATA": 8,
+    "CONSENT_AND_PRIVACY": 1,
+    "DEVICE_ENV": 6,
+    "IDENTITY_TRACKING": 45,
+    "ID_SOLUTIONS_AND_EXCHANGES": 6,
+    "LOCATION_AND_DEMOGRAPHICS": 3,
+    "SERVER_SIDE_TRACKING": 1,
+    "SESSION_MANAGEMENT": 3,
+    "TECHNICAL_PASSWORDS": 7,
+    "USER_PREFERENCES": 5,
+    "UX_AND_PERFORMANCE_ANALYTICS": 3
+  },
+  "pii_by_category": {
+    "DIRECT_PII": {
+      "unknown": 1
+    },
+    "APP_STATE_STORAGE": {
+      "APP_STATE_STORAGE": 3
+    },
+    "BEHAVIORAL_DATA": {
+      "BEHAVIORAL_DATA": 8
+    },
+    "CONSENT_AND_PRIVACY": {
+      "CONSENT_AND_PRIVACY": 1
+    },
+    "DEVICE_ENV": {
+      "DEVICE_ENV": 6
+    },
+    "IDENTITY_TRACKING": {
+      "IDENTITY_TRACKING": 45
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "ID_SOLUTIONS_AND_EXCHANGES": 6
+    },
+    "LOCATION_AND_DEMOGRAPHICS": {
+      "LOCATION_AND_DEMOGRAPHICS": 3
+    },
+    "SERVER_SIDE_TRACKING": {
+      "SERVER_SIDE_TRACKING": 1
+    },
+    "SESSION_MANAGEMENT": {
+      "SESSION_MANAGEMENT": 3
+    },
+    "TECHNICAL_PASSWORDS": {
+      "TECHNICAL_PASSWORDS": 7
+    },
+    "USER_PREFERENCES": {
+      "USER_PREFERENCES": 5
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "UX_AND_PERFORMANCE_ANALYTICS": 3
+    }
+  },
+  "persistence_distribution": {
+    "Session": 92
+  },
+  "persistence_by_pii": {
+    "unknown": {
+      "Session": 1
+    },
+    "APP_STATE_STORAGE": {
+      "Session": 3
+    },
+    "BEHAVIORAL_DATA": {
+      "Session": 8
+    },
+    "CONSENT_AND_PRIVACY": {
+      "Session": 1
+    },
+    "DEVICE_ENV": {
+      "Session": 6
+    },
+    "IDENTITY_TRACKING": {
+      "Session": 45
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "Session": 6
+    },
+    "LOCATION_AND_DEMOGRAPHICS": {
+      "Session": 3
+    },
+    "SERVER_SIDE_TRACKING": {
+      "Session": 1
+    },
+    "SESSION_MANAGEMENT": {
+      "Session": 3
+    },
+    "TECHNICAL_PASSWORDS": {
+      "Session": 7
+    },
+    "USER_PREFERENCES": {
+      "Session": 5
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "Session": 3
+    }
+  },
+  "size_by_pii": {
+    "unknown": {
+      "total": 2,
+      "average": 2.0,
+      "count": 1
+    },
+    "APP_STATE_STORAGE": {
+      "total": 120,
+      "average": 40.0,
+      "count": 3
+    },
+    "BEHAVIORAL_DATA": {
+      "total": 308,
+      "average": 38.5,
+      "count": 8
+    },
+    "CONSENT_AND_PRIVACY": {
+      "total": 5,
+      "average": 5.0,
+      "count": 1
+    },
+    "DEVICE_ENV": {
+      "total": 190,
+      "average": 31.666666666666668,
+      "count": 6
+    },
+    "IDENTITY_TRACKING": {
+      "total": 250195,
+      "average": 5559.888888888889,
+      "count": 45
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "total": 362,
+      "average": 60.333333333333336,
+      "count": 6
+    },
+    "LOCATION_AND_DEMOGRAPHICS": {
+      "total": 6,
+      "average": 2.0,
+      "count": 3
+    },
+    "SERVER_SIDE_TRACKING": {
+      "total": 66,
+      "average": 66.0,
+      "count": 1
+    },
+    "SESSION_MANAGEMENT": {
+      "total": 156,
+      "average": 52.0,
+      "count": 3
+    },
+    "TECHNICAL_PASSWORDS": {
+      "total": 1209,
+      "average": 172.71428571428572,
+      "count": 7
+    },
+    "USER_PREFERENCES": {
+      "total": 448,
+      "average": 89.6,
+      "count": 5
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "total": 66,
+      "average": 22.0,
+      "count": 3
+    }
+  },
+  "content_hierarchy": {
+    "short_text": {
+      "unknown": 1,
+      "DEVICE_ENV": 1,
+      "IDENTITY_TRACKING": 10,
+      "ID_SOLUTIONS_AND_EXCHANGES": 2,
+      "LOCATION_AND_DEMOGRAPHICS": 3
+    },
+    "json_structured": {
+      "APP_STATE_STORAGE": 3,
+      "BEHAVIORAL_DATA": 4,
+      "DEVICE_ENV": 3,
+      "IDENTITY_TRACKING": 3,
+      "ID_SOLUTIONS_AND_EXCHANGES": 4,
+      "SERVER_SIDE_TRACKING": 1,
+      "TECHNICAL_PASSWORDS": 1,
+      "USER_PREFERENCES": 4
+    },
+    "number": {
+      "BEHAVIORAL_DATA": 2,
+      "IDENTITY_TRACKING": 1
+    },
+    "boolean": {
+      "BEHAVIORAL_DATA": 1,
+      "CONSENT_AND_PRIVACY": 1,
+      "IDENTITY_TRACKING": 1,
+      "UX_AND_PERFORMANCE_ANALYTICS": 1
+    },
+    "complex_string": {
+      "BEHAVIORAL_DATA": 1,
+      "IDENTITY_TRACKING": 23,
+      "SESSION_MANAGEMENT": 2,
+      "UX_AND_PERFORMANCE_ANALYTICS": 1
+    },
+    "token_id": {
+      "DEVICE_ENV": 1,
+      "TECHNICAL_PASSWORDS": 6,
+      "UX_AND_PERFORMANCE_ANALYTICS": 1
+    },
+    "uuid": {
+      "DEVICE_ENV": 1,
+      "IDENTITY_TRACKING": 7,
+      "SESSION_MANAGEMENT": 1
+    },
+    "empty": {
+      "USER_PREFERENCES": 1
+    }
+  },
+  "content_types": {
+    "short_text": 17,
+    "json_structured": 23,
+    "number": 3,
+    "boolean": 4,
+    "complex_string": 27,
+    "token_id": 8,
+    "uuid": 9,
+    "empty": 1
+  },
+  "vendor_counts": {
+    "hertz.fr": 5,
+    "mon-sejour-en-montagne.com": 3,
+    "legalstart.fr": 4,
+    "nexity.fr": 3,
+    "easyjet.com": 10,
+    "morbihan.com": 3,
+    "justifit.fr": 4,
+    "volotea.com": 1,
+    "bourse-des-vols.com": 7,
+    "locservice.fr": 3,
+    "captaincontrat.com": 3,
+    "lastminute.com": 2,
+    "gites-de-france.com": 1,
+    "vacances-campings.fr": 1,
+    "kiwiiz.fr": 3,
+    "casamundo.fr": 1,
+    "rentola.fr": 1,
+    "abcsalles.com": 3,
+    "legalplace.fr": 4,
+    "vide-greniers.org": 1,
+    "immonot.com": 1,
+    "thalazur.fr": 3,
+    "ouedkniss.com": 3,
+    "trivago.fr": 1,
+    "foncia.com": 4,
+    "kayak.fr": 1,
+    "aeroport.fr": 1,
+    "seloger.com": 1,
+    "viewsurf.com": 2,
+    "chamonix.com": 2,
+    "fram.fr": 7,
+    "showroomprive.com": 3
+  },
+  "category_vendor_flows": [
+    [
+      "unknown",
+      "hertz.fr",
+      1
+    ],
+    [
+      "APP_STATE_STORAGE",
+      "mon-sejour-en-montagne.com",
+      3
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "legalstart.fr",
+      2
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "nexity.fr",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "easyjet.com",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "morbihan.com",
+      2
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "justifit.fr",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "volotea.com",
+      1
+    ],
+    [
+      "CONSENT_AND_PRIVACY",
+      "bourse-des-vols.com",
+      1
+    ],
+    [
+      "DEVICE_ENV",
+      "easyjet.com",
+      3
+    ],
+    [
+      "DEVICE_ENV",
+      "bourse-des-vols.com",
+      1
+    ],
+    [
+      "DEVICE_ENV",
+      "locservice.fr",
+      1
+    ],
+    [
+      "DEVICE_ENV",
+      "captaincontrat.com",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "legalstart.fr",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "easyjet.com",
+      3
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "lastminute.com",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "gites-de-france.com",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "vacances-campings.fr",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "bourse-des-vols.com",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "kiwiiz.fr",
+      3
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "casamundo.fr",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "rentola.fr",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "abcsalles.com",
+      3
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "legalplace.fr",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "vide-greniers.org",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "captaincontrat.com",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "immonot.com",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "thalazur.fr",
+      3
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "morbihan.com",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "ouedkniss.com",
+      3
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "trivago.fr",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "foncia.com",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "kayak.fr",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "justifit.fr",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "aeroport.fr",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "seloger.com",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "viewsurf.com",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "hertz.fr",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "chamonix.com",
+      2
+    ],
+    [
+      "ID_SOLUTIONS_AND_EXCHANGES",
+      "fram.fr",
+      5
+    ],
+    [
+      "ID_SOLUTIONS_AND_EXCHANGES",
+      "foncia.com",
+      1
+    ],
+    [
+      "LOCATION_AND_DEMOGRAPHICS",
+      "hertz.fr",
+      3
+    ],
+    [
+      "SERVER_SIDE_TRACKING",
+      "showroomprive.com",
+      1
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "easyjet.com",
+      1
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "bourse-des-vols.com",
+      1
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "foncia.com",
+      1
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "bourse-des-vols.com",
+      2
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "fram.fr",
+      2
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "nexity.fr",
+      2
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "justifit.fr",
+      1
+    ],
+    [
+      "USER_PREFERENCES",
+      "locservice.fr",
+      2
+    ],
+    [
+      "USER_PREFERENCES",
+      "showroomprive.com",
+      1
+    ],
+    [
+      "USER_PREFERENCES",
+      "easyjet.com",
+      2
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "legalplace.fr",
+      2
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "showroomprive.com",
+      1
+    ]
+  ],
+  "entropy_by_pii": {
+    "unknown": [
+      1.0
+    ],
+    "APP_STATE_STORAGE": [
+      4.153055907333275,
+      4.153055907333275,
+      4.153055907333275
+    ],
+    "BEHAVIORAL_DATA": [
+      4.659726247543586,
+      2.873140679513133,
+      0.0,
+      2.0,
+      2.0,
+      4.729558888099227,
+      1.0,
+      3.4266094432542293
+    ],
+    "CONSENT_AND_PRIVACY": [
+      2.321928094887362
+    ],
+    "DEVICE_ENV": [
+      3.4992275471326932,
+      3.4992275471326932,
+      4.239203099010332,
+      4.201841232302569,
+      3.238901256602631,
+      3.7845276964165557
+    ],
+    "IDENTITY_TRACKING": [
+      2.584962500721156,
+      4.556995287947002,
+      3.521928094887362,
+      6.192595574101289,
+      2.2516291673878226,
+      6.406563486494732,
+      4.604574504151557,
+      3.521928094887362,
+      6.262233589587512,
+      6.184813228718162,
+      6.259505110139161,
+      6.303470702989576,
+      0.0,
+      3.7907512495564375,
+      6.102339001914037,
+      2.2516291673878226,
+      3.238901256602631,
+      2.521640636343318,
+      3.784527696416556,
+      2.584962500721156,
+      2.521640636343318,
+      6.33692547100851,
+      6.344707816391639,
+      6.184813228718164,
+      3.752715278979704,
+      6.233832687503353,
+      5.396675303897633,
+      2.2359263506290326,
+      6.192595574101291,
+      6.164194672017132,
+      6.275069800905417,
+      6.275069800905413,
+      6.2260503421202245,
+      6.213214130802324,
+      6.282852146288545,
+      6.406563486494733,
+      2.584962500721156,
+      5.398681976288084,
+      2.584962500721156,
+      2.873140679513133,
+      3.6314783907408077,
+      3.784527696416556,
+      3.752715278979704,
+      3.575922835185252,
+      3.7845276964165557
+    ],
+    "ID_SOLUTIONS_AND_EXCHANGES": [
+      5.045239685277583,
+      4.88939734072147,
+      2.5,
+      3.0,
+      4.948538111155111,
+      5.00750581902367
+    ],
+    "LOCATION_AND_DEMOGRAPHICS": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "SERVER_SIDE_TRACKING": [
+      4.5355485295785485
+    ],
+    "SESSION_MANAGEMENT": [
+      4.556995287947002,
+      4.604574504151557,
+      3.752715278979704
+    ],
+    "TECHNICAL_PASSWORDS": [
+      5.357590695516059,
+      5.357590695516059,
+      5.479348276893891,
+      5.479348276893891,
+      5.321854365656768,
+      5.321854365656768,
+      5.396675303897633
+    ],
+    "USER_PREFERENCES": [
+      4.443365626644181,
+      4.239203099010332,
+      4.153107168362812,
+      5.000121995885977,
+      0.0
+    ],
+    "UX_AND_PERFORMANCE_ANALYTICS": [
+      0.0,
+      3.7907512495564375,
+      3.5535088547976788
+    ]
+  },
+  "risk_levels": {
+    "High Risk": 52,
+    "Medium Risk": 18,
+    "Low Risk": 22
+  },
+  "risk_by_pii": {
+    "unknown": {
+      "High Risk": 1
+    },
+    "APP_STATE_STORAGE": {
+      "Medium Risk": 3
+    },
+    "BEHAVIORAL_DATA": {
+      "Medium Risk": 8
+    },
+    "CONSENT_AND_PRIVACY": {
+      "Low Risk": 1
+    },
+    "DEVICE_ENV": {
+      "Low Risk": 6
+    },
+    "IDENTITY_TRACKING": {
+      "High Risk": 45
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "High Risk": 6
+    },
+    "LOCATION_AND_DEMOGRAPHICS": {
+      "Low Risk": 3
+    },
+    "SERVER_SIDE_TRACKING": {
+      "Medium Risk": 1
+    },
+    "SESSION_MANAGEMENT": {
+      "Medium Risk": 3
+    },
+    "TECHNICAL_PASSWORDS": {
+      "Low Risk": 7
+    },
+    "USER_PREFERENCES": {
+      "Low Risk": 5
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "Medium Risk": 3
+    }
+  }
+}

@@ -1,0 +1,758 @@
+{
+  "storage_type": "sessionstorage",
+  "total_items": 141,
+  "direct_pii_count": 5,
+  "other_count": 136,
+  "pii_distribution": {
+    "unknown": 5,
+    "APP_STATE_STORAGE": 6,
+    "BEHAVIORAL_DATA": 43,
+    "DEVICE_ENV": 4,
+    "DIRECT_PII_KEYS": 14,
+    "IDENTITY_TRACKING": 29,
+    "ID_SOLUTIONS_AND_EXCHANGES": 2,
+    "LOCATION_AND_DEMOGRAPHICS": 2,
+    "NAVIGATION_HISTORY": 7,
+    "SERVER_SIDE_TRACKING": 2,
+    "SESSION_MANAGEMENT": 10,
+    "USER_PREFERENCES": 16,
+    "UX_AND_PERFORMANCE_ANALYTICS": 1
+  },
+  "pii_by_category": {
+    "DIRECT_PII": {
+      "unknown": 5
+    },
+    "APP_STATE_STORAGE": {
+      "APP_STATE_STORAGE": 6
+    },
+    "BEHAVIORAL_DATA": {
+      "BEHAVIORAL_DATA": 43
+    },
+    "DEVICE_ENV": {
+      "DEVICE_ENV": 4
+    },
+    "DIRECT_PII_KEYS": {
+      "DIRECT_PII_KEYS": 14
+    },
+    "IDENTITY_TRACKING": {
+      "IDENTITY_TRACKING": 29
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "ID_SOLUTIONS_AND_EXCHANGES": 2
+    },
+    "LOCATION_AND_DEMOGRAPHICS": {
+      "LOCATION_AND_DEMOGRAPHICS": 2
+    },
+    "NAVIGATION_HISTORY": {
+      "NAVIGATION_HISTORY": 7
+    },
+    "SERVER_SIDE_TRACKING": {
+      "SERVER_SIDE_TRACKING": 2
+    },
+    "SESSION_MANAGEMENT": {
+      "SESSION_MANAGEMENT": 10
+    },
+    "USER_PREFERENCES": {
+      "USER_PREFERENCES": 16
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "UX_AND_PERFORMANCE_ANALYTICS": 1
+    }
+  },
+  "persistence_distribution": {
+    "Session": 141
+  },
+  "persistence_by_pii": {
+    "unknown": {
+      "Session": 5
+    },
+    "APP_STATE_STORAGE": {
+      "Session": 6
+    },
+    "BEHAVIORAL_DATA": {
+      "Session": 43
+    },
+    "DEVICE_ENV": {
+      "Session": 4
+    },
+    "DIRECT_PII_KEYS": {
+      "Session": 14
+    },
+    "IDENTITY_TRACKING": {
+      "Session": 29
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "Session": 2
+    },
+    "LOCATION_AND_DEMOGRAPHICS": {
+      "Session": 2
+    },
+    "NAVIGATION_HISTORY": {
+      "Session": 7
+    },
+    "SERVER_SIDE_TRACKING": {
+      "Session": 2
+    },
+    "SESSION_MANAGEMENT": {
+      "Session": 10
+    },
+    "USER_PREFERENCES": {
+      "Session": 16
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "Session": 1
+    }
+  },
+  "size_by_pii": {
+    "unknown": {
+      "total": 2218,
+      "average": 443.6,
+      "count": 5
+    },
+    "APP_STATE_STORAGE": {
+      "total": 5865,
+      "average": 977.5,
+      "count": 6
+    },
+    "BEHAVIORAL_DATA": {
+      "total": 8895,
+      "average": 206.86046511627907,
+      "count": 43
+    },
+    "DEVICE_ENV": {
+      "total": 1281,
+      "average": 320.25,
+      "count": 4
+    },
+    "DIRECT_PII_KEYS": {
+      "total": 6213,
+      "average": 443.7857142857143,
+      "count": 14
+    },
+    "IDENTITY_TRACKING": {
+      "total": 2898,
+      "average": 99.93103448275862,
+      "count": 29
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "total": 360,
+      "average": 180.0,
+      "count": 2
+    },
+    "LOCATION_AND_DEMOGRAPHICS": {
+      "total": 1277,
+      "average": 638.5,
+      "count": 2
+    },
+    "NAVIGATION_HISTORY": {
+      "total": 1727,
+      "average": 246.71428571428572,
+      "count": 7
+    },
+    "SERVER_SIDE_TRACKING": {
+      "total": 132,
+      "average": 66.0,
+      "count": 2
+    },
+    "SESSION_MANAGEMENT": {
+      "total": 1478,
+      "average": 147.8,
+      "count": 10
+    },
+    "USER_PREFERENCES": {
+      "total": 7016,
+      "average": 438.5,
+      "count": 16
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "total": 117,
+      "average": 117.0,
+      "count": 1
+    }
+  },
+  "content_hierarchy": {
+    "json_structured": {
+      "unknown": 3,
+      "APP_STATE_STORAGE": 6,
+      "BEHAVIORAL_DATA": 19,
+      "DEVICE_ENV": 4,
+      "DIRECT_PII_KEYS": 14,
+      "IDENTITY_TRACKING": 14,
+      "ID_SOLUTIONS_AND_EXCHANGES": 2,
+      "LOCATION_AND_DEMOGRAPHICS": 2,
+      "NAVIGATION_HISTORY": 3,
+      "SERVER_SIDE_TRACKING": 2,
+      "SESSION_MANAGEMENT": 6,
+      "USER_PREFERENCES": 5,
+      "UX_AND_PERFORMANCE_ANALYTICS": 1
+    },
+    "boolean": {
+      "unknown": 1,
+      "BEHAVIORAL_DATA": 6,
+      "USER_PREFERENCES": 9
+    },
+    "number": {
+      "unknown": 1,
+      "BEHAVIORAL_DATA": 9
+    },
+    "short_text": {
+      "BEHAVIORAL_DATA": 1,
+      "IDENTITY_TRACKING": 4,
+      "USER_PREFERENCES": 1
+    },
+    "complex_string": {
+      "BEHAVIORAL_DATA": 7,
+      "IDENTITY_TRACKING": 2,
+      "NAVIGATION_HISTORY": 4,
+      "SESSION_MANAGEMENT": 1,
+      "USER_PREFERENCES": 1
+    },
+    "empty": {
+      "BEHAVIORAL_DATA": 1
+    },
+    "uuid": {
+      "IDENTITY_TRACKING": 9,
+      "SESSION_MANAGEMENT": 3
+    }
+  },
+  "content_types": {
+    "json_structured": 81,
+    "boolean": 16,
+    "number": 10,
+    "short_text": 6,
+    "complex_string": 15,
+    "empty": 1,
+    "uuid": 12
+  },
+  "vendor_counts": {
+    "billetreduc.com": 3,
+    "clubmed.fr": 4,
+    "lesciseauxmagiques.fr": 6,
+    "javseen.tv": 3,
+    "lefigaro.fr": 8,
+    "docteur-fitness.com": 3,
+    "sundayapp.io": 28,
+    "aubert.com": 8,
+    "passagedudesir.fr": 6,
+    "ocine.fr": 2,
+    "trashtalk.co": 6,
+    "free.fr": 17,
+    "Microsoft": 2,
+    "blaguesdujour.com": 5,
+    "cedeo.fr": 7,
+    "toscane-boutique.fr": 15,
+    "les-transferts.com": 9,
+    "pharmashopi.com": 1,
+    "flunch.fr": 3,
+    "play-in.com": 1,
+    "panini.fr": 2,
+    "judgehype.com": 2
+  },
+  "category_vendor_flows": [
+    [
+      "unknown",
+      "billetreduc.com",
+      2
+    ],
+    [
+      "unknown",
+      "clubmed.fr",
+      3
+    ],
+    [
+      "APP_STATE_STORAGE",
+      "lesciseauxmagiques.fr",
+      4
+    ],
+    [
+      "APP_STATE_STORAGE",
+      "javseen.tv",
+      1
+    ],
+    [
+      "APP_STATE_STORAGE",
+      "lefigaro.fr",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "docteur-fitness.com",
+      3
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "sundayapp.io",
+      5
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "aubert.com",
+      4
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "passagedudesir.fr",
+      3
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "lefigaro.fr",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "javseen.tv",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "ocine.fr",
+      2
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "trashtalk.co",
+      2
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "free.fr",
+      14
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "Microsoft",
+      2
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "blaguesdujour.com",
+      2
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "cedeo.fr",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "billetreduc.com",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "toscane-boutique.fr",
+      2
+    ],
+    [
+      "DEVICE_ENV",
+      "toscane-boutique.fr",
+      4
+    ],
+    [
+      "DIRECT_PII_KEYS",
+      "sundayapp.io",
+      6
+    ],
+    [
+      "DIRECT_PII_KEYS",
+      "aubert.com",
+      4
+    ],
+    [
+      "DIRECT_PII_KEYS",
+      "toscane-boutique.fr",
+      1
+    ],
+    [
+      "DIRECT_PII_KEYS",
+      "les-transferts.com",
+      2
+    ],
+    [
+      "DIRECT_PII_KEYS",
+      "javseen.tv",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "trashtalk.co",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "sundayapp.io",
+      12
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "pharmashopi.com",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "toscane-boutique.fr",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "passagedudesir.fr",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "flunch.fr",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "les-transferts.com",
+      4
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "lefigaro.fr",
+      4
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "clubmed.fr",
+      1
+    ],
+    [
+      "ID_SOLUTIONS_AND_EXCHANGES",
+      "sundayapp.io",
+      1
+    ],
+    [
+      "ID_SOLUTIONS_AND_EXCHANGES",
+      "les-transferts.com",
+      1
+    ],
+    [
+      "LOCATION_AND_DEMOGRAPHICS",
+      "toscane-boutique.fr",
+      2
+    ],
+    [
+      "NAVIGATION_HISTORY",
+      "toscane-boutique.fr",
+      2
+    ],
+    [
+      "NAVIGATION_HISTORY",
+      "passagedudesir.fr",
+      1
+    ],
+    [
+      "NAVIGATION_HISTORY",
+      "blaguesdujour.com",
+      1
+    ],
+    [
+      "NAVIGATION_HISTORY",
+      "play-in.com",
+      1
+    ],
+    [
+      "NAVIGATION_HISTORY",
+      "cedeo.fr",
+      2
+    ],
+    [
+      "SERVER_SIDE_TRACKING",
+      "panini.fr",
+      2
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "trashtalk.co",
+      1
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "sundayapp.io",
+      3
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "passagedudesir.fr",
+      1
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "flunch.fr",
+      1
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "les-transferts.com",
+      2
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "lefigaro.fr",
+      2
+    ],
+    [
+      "USER_PREFERENCES",
+      "lesciseauxmagiques.fr",
+      2
+    ],
+    [
+      "USER_PREFERENCES",
+      "toscane-boutique.fr",
+      2
+    ],
+    [
+      "USER_PREFERENCES",
+      "trashtalk.co",
+      1
+    ],
+    [
+      "USER_PREFERENCES",
+      "sundayapp.io",
+      1
+    ],
+    [
+      "USER_PREFERENCES",
+      "free.fr",
+      3
+    ],
+    [
+      "USER_PREFERENCES",
+      "judgehype.com",
+      1
+    ],
+    [
+      "USER_PREFERENCES",
+      "blaguesdujour.com",
+      2
+    ],
+    [
+      "USER_PREFERENCES",
+      "cedeo.fr",
+      4
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "judgehype.com",
+      1
+    ]
+  ],
+  "entropy_by_pii": {
+    "unknown": [
+      5.230306071962887,
+      5.230306071962887,
+      1.0,
+      0.0,
+      0.0
+    ],
+    "APP_STATE_STORAGE": [
+      3.8634651896016465,
+      4.978830402482778,
+      4.003856189774724,
+      4.976489930274087,
+      4.570278580148927,
+      4.95773524601527
+    ],
+    "BEHAVIORAL_DATA": [
+      0.0,
+      0.0,
+      0.0,
+      4.588637355578019,
+      4.671730617053126,
+      4.630086576817913,
+      4.640065607863341,
+      4.623102620253632,
+      4.731939417038616,
+      4.709611150323048,
+      4.69792565643153,
+      4.705493769881648,
+      4.617684006611348,
+      4.95773524601527,
+      4.570278580148927,
+      0.0,
+      0.0,
+      2.1556390622295662,
+      2.931208948910323,
+      3.9263701301561795,
+      0.0,
+      2.251629167387823,
+      3.0957952550009344,
+      2.790177891791632,
+      0.0,
+      3.0105709342684825,
+      2.873140679513133,
+      0.0,
+      0.0,
+      2.2516291673878226,
+      1.0,
+      0.0,
+      3.0269868333592873,
+      0.0,
+      1.0,
+      3.3735572622751855,
+      3.192422560515934,
+      3.7849418274376414,
+      2.827819531114783,
+      5.29679227322313,
+      5.230306071962887,
+      4.956977848848184,
+      4.9120083029468455
+    ],
+    "DEVICE_ENV": [
+      1.0,
+      4.956977848848184,
+      1.0,
+      4.9120083029468455
+    ],
+    "DIRECT_PII_KEYS": [
+      4.588637355578019,
+      4.671730617053126,
+      5.030076465621527,
+      4.630086576817913,
+      4.640065607863341,
+      4.623102620253632,
+      4.731939417038616,
+      4.709611150323048,
+      4.69792565643153,
+      4.705493769881648,
+      4.956977848848184,
+      4.767791872422341,
+      4.570278580148927,
+      4.774641806234065
+    ],
+    "IDENTITY_TRACKING": [
+      3.798145057407474,
+      4.588637355578019,
+      4.671730617053126,
+      1.7924812503605778,
+      4.630086576817913,
+      3.829239931817578,
+      3.825104932488481,
+      4.841540971510959,
+      4.640065607863341,
+      4.343019347393601,
+      4.623102620253632,
+      2.584962500721156,
+      2.584962500721156,
+      4.617684006611348,
+      2.584962500721156,
+      3.5413363769120147,
+      5.036195051481851,
+      4.767791872422341,
+      3.4274512249645186,
+      4.95773524601527,
+      5.072877439038124,
+      4.774641806234065,
+      5.030076465621527,
+      3.605337797403416,
+      3.798145057407474,
+      3.829239931817578,
+      3.5413363769120147,
+      3.4274512249645186,
+      3.7736843762620222
+    ],
+    "ID_SOLUTIONS_AND_EXCHANGES": [
+      4.841540971510959,
+      4.06232520417267
+    ],
+    "LOCATION_AND_DEMOGRAPHICS": [
+      4.956977848848184,
+      4.9120083029468455
+    ],
+    "NAVIGATION_HISTORY": [
+      4.956977848848184,
+      4.617684006611348,
+      4.9120083029468455,
+      4.124256907946324,
+      4.44268387746511,
+      3.653756708287001,
+      3.672997271796528
+    ],
+    "SERVER_SIDE_TRACKING": [
+      4.578802362491781,
+      4.567364673065061
+    ],
+    "SESSION_MANAGEMENT": [
+      3.798145057407474,
+      3.825104932488481,
+      4.841540971510959,
+      4.343019347393601,
+      4.617684006611348,
+      3.5413363769120147,
+      5.036195051481851,
+      3.4274512249645186,
+      4.95773524601527,
+      5.072877439038124
+    ],
+    "USER_PREFERENCES": [
+      4.978830402482778,
+      4.956977848848184,
+      4.976489930274087,
+      4.9120083029468455,
+      2.0,
+      2.0,
+      0.0,
+      0.0,
+      2.321928094887362,
+      0.0,
+      4.233639952626227,
+      0.0,
+      1.0,
+      2.0,
+      3.238901256602631,
+      2.0
+    ],
+    "UX_AND_PERFORMANCE_ANALYTICS": [
+      4.6092639777511835
+    ]
+  },
+  "risk_levels": {
+    "High Risk": 36,
+    "Low Risk": 42,
+    "Medium Risk": 63
+  },
+  "risk_by_pii": {
+    "unknown": {
+      "High Risk": 5
+    },
+    "APP_STATE_STORAGE": {
+      "Low Risk": 6
+    },
+    "BEHAVIORAL_DATA": {
+      "Medium Risk": 43
+    },
+    "DEVICE_ENV": {
+      "Low Risk": 4
+    },
+    "DIRECT_PII_KEYS": {
+      "Low Risk": 14
+    },
+    "IDENTITY_TRACKING": {
+      "High Risk": 29
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "High Risk": 2
+    },
+    "LOCATION_AND_DEMOGRAPHICS": {
+      "Low Risk": 2
+    },
+    "NAVIGATION_HISTORY": {
+      "Medium Risk": 7
+    },
+    "SERVER_SIDE_TRACKING": {
+      "Medium Risk": 2
+    },
+    "SESSION_MANAGEMENT": {
+      "Medium Risk": 10
+    },
+    "USER_PREFERENCES": {
+      "Low Risk": 16
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "Medium Risk": 1
+    }
+  }
+}

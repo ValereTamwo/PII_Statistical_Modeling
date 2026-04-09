@@ -1,0 +1,204 @@
+{
+  "storage_type": "sessionstorage",
+  "metrics": {
+    "total_items": 152,
+    "items_modified": 33,
+    "items_deleted": 52,
+    "entropy_increases": 15,
+    "entropy_decreases": 23,
+    "size_increases": 7,
+    "size_decreases": 10,
+    "pii_transitions": {
+      "IDENTITY_TRACKING → TECHNICAL_PASSWORDS": 2,
+      "DEVICE_ENV → USER_PREFERENCES": 2,
+      "DIRECT_PII → USER_PREFERENCES": 1,
+      "BEHAVIORAL_DATA → SECURITY_AND_BOT_MITIGATION": 2,
+      "BEHAVIORAL_DATA → SESSION_MANAGEMENT": 2,
+      "APP_STATE_STORAGE → TECHNICAL_PASSWORDS": 2,
+      "DIRECT_PII_KEYS → IDENTITY_TRACKING": 2,
+      "IDENTITY_TRACKING → SESSION_MANAGEMENT": 6,
+      "CONSENT_AND_PRIVACY → USER_PREFERENCES": 1,
+      "APP_STATE_STORAGE → DEVICE_ENV": 2,
+      "BEHAVIORAL_DATA → TECHNICAL_PASSWORDS": 1,
+      "DIRECT_PII_KEYS → LOCATION_AND_DEMOGRAPHICS": 1,
+      "BEHAVIORAL_DATA → IDENTITY_TRACKING": 2,
+      "DEVICE_ENV → LOCATION_AND_DEMOGRAPHICS": 1,
+      "IDENTITY_TRACKING → ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "APP_STATE_STORAGE → UX_AND_PERFORMANCE_ANALYTICS": 2,
+      "APP_STATE_STORAGE → NAVIGATION_HISTORY": 1
+    },
+    "volatility_distribution": {
+      "stable": 75,
+      "moderate": 46,
+      "high": 31
+    },
+    "change_frequency": {
+      "avg_gap": 37.50623441396509,
+      "min_gap": 0,
+      "max_gap": 417
+    },
+    "frequent_changes": [
+      {
+        "key": "user",
+        "avg_gap": 0.0,
+        "num_modifications": 13,
+        "pii_category": "LOCATION_AND_DEMOGRAPHICS"
+      },
+      {
+        "key": "hiko_socials",
+        "avg_gap": 0.2926829268292683,
+        "num_modifications": 28,
+        "pii_category": "USER_PREFERENCES"
+      },
+      {
+        "key": "com.adobe.reactor.core.visitorTracking.trafficSource",
+        "avg_gap": 4.0,
+        "num_modifications": 1,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "com.adobe.reactor.core.visitorTracking.pagesViewed",
+        "avg_gap": 4.0,
+        "num_modifications": 1,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "prevPageType",
+        "avg_gap": 4.0,
+        "num_modifications": 1,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "com.adobe.reactor.core.visitorTracking.landingTime",
+        "avg_gap": 4.0,
+        "num_modifications": 1,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "com.adobe.reactor.core.visitorTracking.landingPage",
+        "avg_gap": 4.0,
+        "num_modifications": 1,
+        "pii_category": "LOCATION_AND_DEMOGRAPHICS"
+      },
+      {
+        "key": "prevPageName",
+        "avg_gap": 4.0,
+        "num_modifications": 1,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "wisepops-pageview_id",
+        "avg_gap": 12.0,
+        "num_modifications": 1,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "wbn_evt_count|cbda3bdd-f61d-4211-902e-89bad0f4498e",
+        "avg_gap": 12.0,
+        "num_modifications": 2,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "___nrbic",
+        "avg_gap": 14.366666666666667,
+        "num_modifications": 14,
+        "pii_category": "SESSION_MANAGEMENT"
+      },
+      {
+        "key": "___nrbi",
+        "avg_gap": 33.15384615384615,
+        "num_modifications": 4,
+        "pii_category": "IDENTITY_TRACKING"
+      },
+      {
+        "key": "tt_pixel_session_index",
+        "avg_gap": 39.333333333333336,
+        "num_modifications": 2,
+        "pii_category": "IDENTITY_TRACKING"
+      },
+      {
+        "key": "u_scsid_r",
+        "avg_gap": 40.142857142857146,
+        "num_modifications": 6,
+        "pii_category": "TECHNICAL_PASSWORDS"
+      },
+      {
+        "key": "klaviyoPagesVisitCountV2",
+        "avg_gap": 43.6,
+        "num_modifications": 6,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "History.store",
+        "avg_gap": 45.714285714285715,
+        "num_modifications": 6,
+        "pii_category": "IDENTITY_TRACKING"
+      },
+      {
+        "key": "marfeel-sdk-store",
+        "avg_gap": 47.888888888888886,
+        "num_modifications": 4,
+        "pii_category": "DEVICE_ENV"
+      }
+    ],
+    "url_modifications": {
+      "www.willemsefrance.fr": 30,
+      "www.letudiant.fr": 17,
+      "www.cabaia.fr": 17,
+      "www.latribune.fr": 8,
+      "abonnement.latribune.fr": 8,
+      "www.4murs.com": 7,
+      "www.01net.com": 6,
+      "login.zooplus.fr": 6,
+      "www.cmb.fr": 6,
+      "www.bouyguestelecom.fr": 6
+    },
+    "pii_modification_patterns": {
+      "BEHAVIORAL_DATA": {
+        "count": 23,
+        "avg_gap": 60.36363636363637
+      },
+      "UX_AND_PERFORMANCE_ANALYTICS": {
+        "count": 1,
+        "avg_gap": 0
+      },
+      "SESSION_MANAGEMENT": {
+        "count": 14,
+        "avg_gap": 14.366666666666667
+      },
+      "IDENTITY_TRACKING": {
+        "count": 14,
+        "avg_gap": 43.035714285714285
+      },
+      "USER_PREFERENCES": {
+        "count": 37,
+        "avg_gap": 8.53061224489796
+      },
+      "ID_SOLUTIONS_AND_EXCHANGES": {
+        "count": 2,
+        "avg_gap": 167.5
+      },
+      "DEVICE_ENV": {
+        "count": 4,
+        "avg_gap": 47.888888888888886
+      },
+      "TECHNICAL_PASSWORDS": {
+        "count": 6,
+        "avg_gap": 40.142857142857146
+      },
+      "LOCATION_AND_DEMOGRAPHICS": {
+        "count": 14,
+        "avg_gap": 0.3076923076923077
+      },
+      "NAVIGATION_HISTORY": {
+        "count": 4,
+        "avg_gap": 84.5
+      },
+      "SECURITY_AND_BOT_MITIGATION": {
+        "count": 6,
+        "avg_gap": 62.6
+      }
+    }
+  },
+  "num_timelines": 152
+}

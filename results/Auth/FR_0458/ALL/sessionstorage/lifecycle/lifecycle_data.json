@@ -1,0 +1,233 @@
+{
+  "storage_type": "sessionstorage",
+  "metrics": {
+    "total_items": 164,
+    "items_modified": 48,
+    "items_deleted": 36,
+    "entropy_increases": 18,
+    "entropy_decreases": 27,
+    "size_increases": 8,
+    "size_decreases": 10,
+    "pii_transitions": {
+      "IDENTITY_TRACKING → SESSION_MANAGEMENT": 5,
+      "IDENTITY_TRACKING → TECHNICAL_PASSWORDS": 2,
+      "DIRECT_PII_KEYS → LOCATION_AND_DEMOGRAPHICS": 2,
+      "DIRECT_PII → USER_PREFERENCES": 1,
+      "BEHAVIORAL_DATA → ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "BEHAVIORAL_DATA → SESSION_MANAGEMENT": 1,
+      "DIRECT_PII_KEYS → IDENTITY_TRACKING": 2,
+      "DEVICE_ENV → USER_PREFERENCES": 1,
+      "CONSENT_AND_PRIVACY → USER_PREFERENCES": 1,
+      "BEHAVIORAL_DATA → TECHNICAL_PASSWORDS": 1,
+      "BEHAVIORAL_DATA → IDENTITY_TRACKING": 2,
+      "BEHAVIORAL_DATA → NAVIGATION_HISTORY": 1,
+      "APP_STATE_STORAGE → TECHNICAL_PASSWORDS": 1,
+      "IDENTITY_TRACKING → ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "APP_STATE_STORAGE → NAVIGATION_HISTORY": 3,
+      "APP_STATE_STORAGE → UX_AND_PERFORMANCE_ANALYTICS": 2,
+      "DEVICE_ENV → TECHNICAL_PASSWORDS": 1,
+      "APP_STATE_STORAGE → DEVICE_ENV": 1,
+      "BEHAVIORAL_DATA → INFRASTRUCTURE": 2,
+      "BEHAVIORAL_DATA → SECURITY_AND_BOT_MITIGATION": 1
+    },
+    "volatility_distribution": {
+      "moderate": 37,
+      "stable": 88,
+      "high": 39
+    },
+    "change_frequency": {
+      "avg_gap": 33.409200968523,
+      "min_gap": 0,
+      "max_gap": 266
+    },
+    "frequent_changes": [
+      {
+        "key": "SSO_tribu.find.bouyguestelecom.fr",
+        "avg_gap": 0.0,
+        "num_modifications": 2,
+        "pii_category": "IDENTITY_TRACKING"
+      },
+      {
+        "key": "AMP_URL_INFO",
+        "avg_gap": 0.0,
+        "num_modifications": 3,
+        "pii_category": "NAVIGATION_HISTORY"
+      },
+      {
+        "key": "___so9874703",
+        "avg_gap": 0.0,
+        "num_modifications": 2,
+        "pii_category": "NAVIGATION_HISTORY"
+      },
+      {
+        "key": "hiko_socials",
+        "avg_gap": 0.07407407407407407,
+        "num_modifications": 28,
+        "pii_category": "USER_PREFERENCES"
+      },
+      {
+        "key": "ABT_IS_DATALAYER_CHECKED",
+        "avg_gap": 2.0,
+        "num_modifications": 1,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "tt_s_pixel_session_index",
+        "avg_gap": 4.0,
+        "num_modifications": 1,
+        "pii_category": "IDENTITY_TRACKING"
+      },
+      {
+        "key": "wbn_evt_count|0054e07f-3b63-440d-9ff9-18d3b0cc2538",
+        "avg_gap": 12.0,
+        "num_modifications": 2,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "ABT_ALREADY_SENT_CUSTOM_TRACKING",
+        "avg_gap": 12.428571428571429,
+        "num_modifications": 1,
+        "pii_category": "USER_PREFERENCES"
+      },
+      {
+        "key": "SSOenv",
+        "avg_gap": 15.2,
+        "num_modifications": 6,
+        "pii_category": "SECURITY_AND_BOT_MITIGATION"
+      },
+      {
+        "key": "com.adobe.reactor.core.visitorTracking.trafficSource",
+        "avg_gap": 16.0,
+        "num_modifications": 2,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "com.adobe.reactor.core.visitorTracking.pagesViewed",
+        "avg_gap": 16.0,
+        "num_modifications": 2,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "prevPageType",
+        "avg_gap": 16.0,
+        "num_modifications": 2,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "com.adobe.reactor.core.visitorTracking.landingTime",
+        "avg_gap": 16.0,
+        "num_modifications": 2,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "com.adobe.reactor.core.visitorTracking.landingPage",
+        "avg_gap": 16.0,
+        "num_modifications": 2,
+        "pii_category": "LOCATION_AND_DEMOGRAPHICS"
+      },
+      {
+        "key": "prevPageName",
+        "avg_gap": 16.0,
+        "num_modifications": 2,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "___nrbic",
+        "avg_gap": 18.047619047619047,
+        "num_modifications": 13,
+        "pii_category": "SESSION_MANAGEMENT"
+      },
+      {
+        "key": "ABT_DATALAYER_INTERVAL_ID",
+        "avg_gap": 22.25,
+        "num_modifications": 3,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "mopDeploy",
+        "avg_gap": 22.857142857142858,
+        "num_modifications": 10,
+        "pii_category": "TECHNICAL_PASSWORDS"
+      },
+      {
+        "key": "___nrbi",
+        "avg_gap": 28.285714285714285,
+        "num_modifications": 2,
+        "pii_category": "IDENTITY_TRACKING"
+      },
+      {
+        "key": "idz_pageId",
+        "avg_gap": 28.384615384615383,
+        "num_modifications": 12,
+        "pii_category": "IDENTITY_TRACKING"
+      }
+    ],
+    "url_modifications": {
+      "www.willemsefrance.fr": 31,
+      "www.vertbaudet.fr": 27,
+      "www.bouyguestelecom.fr": 22,
+      "www.cmb.fr": 20,
+      "www.cabaia.fr": 13,
+      "login.zooplus.fr": 12,
+      "www.4murs.com": 9,
+      "www.01net.com": 9,
+      "abonnement.laprovence.com": 7,
+      "www.carrefour.fr": 5
+    },
+    "pii_modification_patterns": {
+      "USER_PREFERENCES": {
+        "count": 43,
+        "avg_gap": 16.645833333333332
+      },
+      "TECHNICAL_PASSWORDS": {
+        "count": 17,
+        "avg_gap": 46.476190476190474
+      },
+      "BEHAVIORAL_DATA": {
+        "count": 26,
+        "avg_gap": 36.04761904761905
+      },
+      "DIRECT_PII": {
+        "count": 1,
+        "avg_gap": 0
+      },
+      "ID_SOLUTIONS_AND_EXCHANGES": {
+        "count": 21,
+        "avg_gap": 56.65
+      },
+      "UX_AND_PERFORMANCE_ANALYTICS": {
+        "count": 4,
+        "avg_gap": 18.2
+      },
+      "SESSION_MANAGEMENT": {
+        "count": 17,
+        "avg_gap": 23.0
+      },
+      "IDENTITY_TRACKING": {
+        "count": 30,
+        "avg_gap": 42.91891891891892
+      },
+      "CONSENT_AND_PRIVACY": {
+        "count": 1,
+        "avg_gap": 0
+      },
+      "NAVIGATION_HISTORY": {
+        "count": 7,
+        "avg_gap": 19.25
+      },
+      "INFRASTRUCTURE": {
+        "count": 4,
+        "avg_gap": 146.25
+      },
+      "SECURITY_AND_BOT_MITIGATION": {
+        "count": 6,
+        "avg_gap": 15.2
+      },
+      "LOCATION_AND_DEMOGRAPHICS": {
+        "count": 2,
+        "avg_gap": 16.0
+      }
+    }
+  },
+  "num_timelines": 164
+}

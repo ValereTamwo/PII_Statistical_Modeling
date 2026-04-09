@@ -1,0 +1,138 @@
+{
+  "storage_type": "sessionstorage",
+  "metrics": {
+    "total_items": 92,
+    "items_modified": 23,
+    "items_deleted": 18,
+    "entropy_increases": 7,
+    "entropy_decreases": 9,
+    "size_increases": 4,
+    "size_decreases": 3,
+    "pii_transitions": {
+      "DIRECT_PII_KEYS → LOCATION_AND_DEMOGRAPHICS": 1,
+      "IDENTITY_TRACKING → SESSION_MANAGEMENT": 4,
+      "BEHAVIORAL_DATA → NAVIGATION_HISTORY": 1,
+      "DIRECT_PII → USER_PREFERENCES": 1,
+      "BEHAVIORAL_DATA → ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "DIRECT_PII_KEYS → NAVIGATION_HISTORY": 1,
+      "DIRECT_PII_KEYS → IDENTITY_TRACKING": 1,
+      "BEHAVIORAL_DATA → SESSION_MANAGEMENT": 1,
+      "DEVICE_ENV → USER_PREFERENCES": 1,
+      "APP_STATE_STORAGE → USER_PREFERENCES": 1,
+      "APP_STATE_STORAGE → DIRECT_PII_KEYS": 1
+    },
+    "volatility_distribution": {
+      "stable": 57,
+      "moderate": 22,
+      "high": 13
+    },
+    "change_frequency": {
+      "avg_gap": 51.252873563218394,
+      "min_gap": 0,
+      "max_gap": 297
+    },
+    "frequent_changes": [
+      {
+        "key": "AMP_URL_INFO",
+        "avg_gap": 1.2,
+        "num_modifications": 6,
+        "pii_category": "NAVIGATION_HISTORY"
+      },
+      {
+        "key": "pmTempStorage",
+        "avg_gap": 1.8888888888888888,
+        "num_modifications": 10,
+        "pii_category": "SESSION_MANAGEMENT"
+      },
+      {
+        "key": "pmTrackingSession",
+        "avg_gap": 8.5,
+        "num_modifications": 2,
+        "pii_category": "DIRECT_PII"
+      },
+      {
+        "key": "previousUrl",
+        "avg_gap": 9.0,
+        "num_modifications": 2,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "wbn_evt_count|a1eba6b6-90df-41f2-a4fa-9abd18f64a7f",
+        "avg_gap": 17.0,
+        "num_modifications": 1,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "oct8ne-checkdomain-result-fr-FR",
+        "avg_gap": 37.666666666666664,
+        "num_modifications": 4,
+        "pii_category": "USER_PREFERENCES"
+      },
+      {
+        "key": "rxvt",
+        "avg_gap": 41.0,
+        "num_modifications": 2,
+        "pii_category": "NAVIGATION_HISTORY"
+      }
+    ],
+    "url_modifications": {
+      "www.passagedudesir.fr": 21,
+      "connect.lefigaro.fr": 7,
+      "lesciseauxmagiques.fr": 6,
+      "www.cinetrafic.fr": 6,
+      "sundayapp.io": 6,
+      "www.malakoffhumanis.com": 3,
+      "www.les-transferts.com": 2,
+      "www.cedeo.fr": 2,
+      "www.panini.fr": 1,
+      "www.vfscan.com": 1
+    },
+    "pii_modification_patterns": {
+      "APP_STATE_STORAGE": {
+        "count": 2,
+        "avg_gap": 113.0
+      },
+      "UX_AND_PERFORMANCE_ANALYTICS": {
+        "count": 6,
+        "avg_gap": 168.0
+      },
+      "NAVIGATION_HISTORY": {
+        "count": 8,
+        "avg_gap": 7.833333333333333
+      },
+      "BEHAVIORAL_DATA": {
+        "count": 10,
+        "avg_gap": 45.0
+      },
+      "DIRECT_PII": {
+        "count": 2,
+        "avg_gap": 8.5
+      },
+      "SERVER_SIDE_TRACKING": {
+        "count": 1,
+        "avg_gap": 271.0
+      },
+      "SESSION_MANAGEMENT": {
+        "count": 14,
+        "avg_gap": 29.666666666666668
+      },
+      "ID_SOLUTIONS_AND_EXCHANGES": {
+        "count": 1,
+        "avg_gap": 0
+      },
+      "TECHNICAL_PASSWORDS": {
+        "count": 3,
+        "avg_gap": 66.0
+      },
+      "USER_PREFERENCES": {
+        "count": 7,
+        "avg_gap": 47.0
+      },
+      "IDENTITY_TRACKING": {
+        "count": 2,
+        "avg_gap": 92.0
+      }
+    }
+  },
+  "num_timelines": 92
+}

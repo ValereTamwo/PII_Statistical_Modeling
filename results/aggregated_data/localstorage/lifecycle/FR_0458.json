@@ -1,0 +1,371 @@
+{
+  "total_items": 2029,
+  "items_modified": 590,
+  "items_deleted": 613,
+  "pii_transitions": {
+    "IDENTITY_TRACKING \u2192 ID_SOLUTIONS_AND_EXCHANGES": 39,
+    "BEHAVIORAL_DATA \u2192 ID_SOLUTIONS_AND_EXCHANGES": 35,
+    "BEHAVIORAL_DATA \u2192 TECHNICAL_PASSWORDS": 26,
+    "APP_STATE_STORAGE \u2192 USER_PREFERENCES": 26,
+    "BEHAVIORAL_DATA \u2192 DIRECT_PII_KEYS": 22,
+    "BEHAVIORAL_DATA \u2192 USER_PREFERENCES": 19,
+    "APP_STATE_STORAGE \u2192 NAVIGATION_HISTORY": 19,
+    "IDENTITY_TRACKING \u2192 BEHAVIORAL_DATA": 17,
+    "APP_STATE_STORAGE \u2192 DIRECT_PII_KEYS": 17,
+    "BEHAVIORAL_DATA \u2192 IDENTITY_TRACKING": 17,
+    "CONSENT_AND_PRIVACY \u2192 ID_SOLUTIONS_AND_EXCHANGES": 15,
+    "DEVICE_ENV \u2192 USER_PREFERENCES": 15,
+    "IDENTITY_TRACKING \u2192 TECHNICAL_PASSWORDS": 13,
+    "BEHAVIORAL_DATA \u2192 LOCATION_AND_DEMOGRAPHICS": 12,
+    "ID_SOLUTIONS_AND_EXCHANGES \u2192 TECHNICAL_PASSWORDS": 12,
+    "DIRECT_PII_KEYS \u2192 IDENTITY_TRACKING": 12,
+    "USER_PREFERENCES \u2192 BEHAVIORAL_DATA": 12,
+    "BEHAVIORAL_DATA \u2192 NAVIGATION_HISTORY": 11,
+    "IDENTITY_TRACKING \u2192 SESSION_MANAGEMENT": 11,
+    "DEVICE_ENV \u2192 ID_SOLUTIONS_AND_EXCHANGES": 10,
+    "APP_STATE_STORAGE \u2192 IDENTITY_TRACKING": 10,
+    "BEHAVIORAL_DATA \u2192 DEVICE_ENV": 10,
+    "BEHAVIORAL_DATA \u2192 UX_AND_PERFORMANCE_ANALYTICS": 9,
+    "APP_STATE_STORAGE \u2192 TECHNICAL_PASSWORDS": 9,
+    "ID_SOLUTIONS_AND_EXCHANGES \u2192 UX_AND_PERFORMANCE_ANALYTICS": 9,
+    "DIRECT_PII_KEYS \u2192 LOCATION_AND_DEMOGRAPHICS": 8,
+    "APP_STATE_STORAGE \u2192 UX_AND_PERFORMANCE_ANALYTICS": 7,
+    "IDENTITY_TRACKING \u2192 USER_PREFERENCES": 7,
+    "BEHAVIORAL_DATA \u2192 SESSION_MANAGEMENT": 6,
+    "CONSENT_AND_PRIVACY \u2192 DIRECT_PII": 6,
+    "CONSENT_AND_PRIVACY \u2192 UX_AND_PERFORMANCE_ANALYTICS": 6,
+    "CONSENT_AND_PRIVACY \u2192 TECHNICAL_PASSWORDS": 6,
+    "APP_STATE_STORAGE \u2192 DEVICE_ENV": 5,
+    "DEVICE_ENV \u2192 IDENTITY_TRACKING": 5,
+    "DEVICE_ENV \u2192 DIRECT_PII_KEYS": 5,
+    "DEVICE_ENV \u2192 NAVIGATION_HISTORY": 5,
+    "CONSENT_AND_PRIVACY \u2192 USER_PREFERENCES": 4,
+    "USER_PREFERENCES \u2192 CONSENT_AND_PRIVACY": 4,
+    "DEVICE_ENV \u2192 TECHNICAL_PASSWORDS": 4,
+    "APP_STATE_STORAGE \u2192 LOCATION_AND_DEMOGRAPHICS": 4,
+    "DIRECT_PII_KEYS \u2192 UX_AND_PERFORMANCE_ANALYTICS": 3,
+    "DIRECT_PII_KEYS \u2192 SESSION_MANAGEMENT": 3,
+    "CONSENT_AND_PRIVACY \u2192 IDENTITY_TRACKING": 3,
+    "INFRASTRUCTURE \u2192 BEHAVIORAL_DATA": 3,
+    "IDENTITY_TRACKING \u2192 NAVIGATION_HISTORY": 2,
+    "IDENTITY_TRACKING \u2192 UX_AND_PERFORMANCE_ANALYTICS": 2,
+    "DIRECT_PII_KEYS \u2192 TECHNICAL_PASSWORDS": 1,
+    "USER_PREFERENCES \u2192 IDENTITY_TRACKING": 1,
+    "DIRECT_PII_KEYS \u2192 USER_PREFERENCES": 1,
+    "SESSION_MANAGEMENT \u2192 USER_PREFERENCES": 1,
+    "ID_SOLUTIONS_AND_EXCHANGES \u2192 IDENTITY_TRACKING": 1,
+    "DEVICE_ENV \u2192 UX_AND_PERFORMANCE_ANALYTICS": 1,
+    "DIRECT_PII \u2192 DIRECT_PII_KEYS": 1,
+    "BEHAVIORAL_DATA \u2192 INFRASTRUCTURE": 1,
+    "DIRECT_PII_KEYS \u2192 ID_SOLUTIONS_AND_EXCHANGES": 1,
+    "APP_STATE_STORAGE \u2192 SESSION_MANAGEMENT": 1
+  },
+  "volatility_distribution": {
+    "stable": 986,
+    "moderate": 599,
+    "high": 444
+  },
+  "frequent_changes": [
+    {
+      "key": "didomi_token",
+      "num_modifications": 75,
+      "pii_category": "DIRECT_PII_KEYS",
+      "config": "UnAuth_FR_0458_NONE"
+    },
+    {
+      "key": "didomi_token",
+      "num_modifications": 57,
+      "pii_category": "DIRECT_PII_KEYS",
+      "config": "UnAuth_FR_0458_ALL"
+    },
+    {
+      "key": "didomi_token",
+      "num_modifications": 48,
+      "pii_category": "DIRECT_PII_KEYS",
+      "config": "UnAuth_FR_0458_PARTIAL"
+    },
+    {
+      "key": "topicsLastReferenceTime",
+      "num_modifications": 44,
+      "pii_category": "BEHAVIORAL_DATA",
+      "config": "Auth_FR_0458_ALL"
+    },
+    {
+      "key": "didomi_token",
+      "num_modifications": 39,
+      "pii_category": "DIRECT_PII_KEYS",
+      "config": "Auth_FR_0458_PARTIAL"
+    },
+    {
+      "key": "kameleoonLegalConsent",
+      "num_modifications": 36,
+      "pii_category": "UX_AND_PERFORMANCE_ANALYTICS",
+      "config": "UnAuth_FR_0458_NONE"
+    },
+    {
+      "key": "kameleoonLegalConsent",
+      "num_modifications": 32,
+      "pii_category": "UX_AND_PERFORMANCE_ANALYTICS",
+      "config": "Auth_FR_0458_PARTIAL"
+    },
+    {
+      "key": "topicsLastReferenceTime",
+      "num_modifications": 31,
+      "pii_category": "BEHAVIORAL_DATA",
+      "config": "UnAuth_FR_0458_ALL"
+    },
+    {
+      "key": "gscs",
+      "num_modifications": 30,
+      "pii_category": "USER_PREFERENCES",
+      "config": "UnAuth_FR_0458_NONE"
+    },
+    {
+      "key": "kameleoonLegalConsent",
+      "num_modifications": 28,
+      "pii_category": "UX_AND_PERFORMANCE_ANALYTICS",
+      "config": "UnAuth_FR_0458_ALL"
+    },
+    {
+      "key": "kameleoonLegalConsent",
+      "num_modifications": 24,
+      "pii_category": "UX_AND_PERFORMANCE_ANALYTICS",
+      "config": "Auth_FR_0458_ALL"
+    },
+    {
+      "key": "didomi_token",
+      "num_modifications": 24,
+      "pii_category": "DIRECT_PII_KEYS",
+      "config": "Auth_FR_0458_NONE"
+    },
+    {
+      "key": "ABTastyData",
+      "num_modifications": 24,
+      "pii_category": "USER_PREFERENCES",
+      "config": "UnAuth_FR_0458_ALL"
+    },
+    {
+      "key": "kameleoonLegalConsent",
+      "num_modifications": 24,
+      "pii_category": "UX_AND_PERFORMANCE_ANALYTICS",
+      "config": "UnAuth_FR_0458_PARTIAL"
+    },
+    {
+      "key": "didomi_token",
+      "num_modifications": 21,
+      "pii_category": "DIRECT_PII_KEYS",
+      "config": "Auth_FR_0458_ALL"
+    },
+    {
+      "key": "gscs",
+      "num_modifications": 21,
+      "pii_category": "USER_PREFERENCES",
+      "config": "UnAuth_FR_0458_ALL"
+    },
+    {
+      "key": "cto_bundle",
+      "num_modifications": 20,
+      "pii_category": "ID_SOLUTIONS_AND_EXCHANGES",
+      "config": "Auth_FR_0458_ALL"
+    },
+    {
+      "key": "gscs",
+      "num_modifications": 20,
+      "pii_category": "USER_PREFERENCES",
+      "config": "Auth_FR_0458_PARTIAL"
+    },
+    {
+      "key": "gscs",
+      "num_modifications": 20,
+      "pii_category": "USER_PREFERENCES",
+      "config": "UnAuth_FR_0458_PARTIAL"
+    },
+    {
+      "key": "_uetsid_exp",
+      "num_modifications": 19,
+      "pii_category": "IDENTITY_TRACKING",
+      "config": "Auth_FR_0458_ALL"
+    },
+    {
+      "key": "_uetvid_exp",
+      "num_modifications": 19,
+      "pii_category": "IDENTITY_TRACKING",
+      "config": "Auth_FR_0458_ALL"
+    },
+    {
+      "key": "ABTastyData",
+      "num_modifications": 18,
+      "pii_category": "USER_PREFERENCES",
+      "config": "Auth_FR_0458_ALL"
+    },
+    {
+      "key": "permutive-app",
+      "num_modifications": 18,
+      "pii_category": "SESSION_MANAGEMENT",
+      "config": "Auth_FR_0458_ALL"
+    },
+    {
+      "key": "scapi_cache_refinements_fr-FR_SarenzaFR",
+      "num_modifications": 18,
+      "pii_category": "USER_PREFERENCES",
+      "config": "UnAuth_FR_0458_ALL"
+    },
+    {
+      "key": "topicsLastReferenceTime",
+      "num_modifications": 18,
+      "pii_category": "BEHAVIORAL_DATA",
+      "config": "UnAuth_FR_0458_NONE"
+    },
+    {
+      "key": "kameleoonLegalConsent",
+      "num_modifications": 16,
+      "pii_category": "UX_AND_PERFORMANCE_ANALYTICS",
+      "config": "Auth_FR_0458_NONE"
+    },
+    {
+      "key": "topicsLastReferenceTime",
+      "num_modifications": 16,
+      "pii_category": "BEHAVIORAL_DATA",
+      "config": "UnAuth_FR_0458_PARTIAL"
+    },
+    {
+      "key": "intercom.intercom-state-derkpl7b",
+      "num_modifications": 15,
+      "pii_category": "USER_PREFERENCES",
+      "config": "Auth_FR_0458_ALL"
+    },
+    {
+      "key": "intercom.intercom-state-piphhhai",
+      "num_modifications": 15,
+      "pii_category": "USER_PREFERENCES",
+      "config": "Auth_FR_0458_NONE"
+    },
+    {
+      "key": "appconsent",
+      "num_modifications": 15,
+      "pii_category": "UX_AND_PERFORMANCE_ANALYTICS",
+      "config": "UnAuth_FR_0458_PARTIAL"
+    },
+    {
+      "key": "ABTastyData",
+      "num_modifications": 14,
+      "pii_category": "USER_PREFERENCES",
+      "config": "UnAuth_FR_0458_NONE"
+    },
+    {
+      "key": "ABTastyData",
+      "num_modifications": 12,
+      "pii_category": "USER_PREFERENCES",
+      "config": "Auth_FR_0458_NONE"
+    },
+    {
+      "key": "cto_bundle",
+      "num_modifications": 12,
+      "pii_category": "ID_SOLUTIONS_AND_EXCHANGES",
+      "config": "UnAuth_FR_0458_ALL"
+    },
+    {
+      "key": "userinfo",
+      "num_modifications": 12,
+      "pii_category": "LOCATION_AND_DEMOGRAPHICS",
+      "config": "UnAuth_FR_0458_NONE"
+    },
+    {
+      "key": "kwords",
+      "num_modifications": 12,
+      "pii_category": "TECHNICAL_PASSWORDS",
+      "config": "UnAuth_FR_0458_NONE"
+    },
+    {
+      "key": "id5id_v2_2855883420024252",
+      "num_modifications": 10,
+      "pii_category": "ID_SOLUTIONS_AND_EXCHANGES",
+      "config": "Auth_FR_0458_ALL"
+    },
+    {
+      "key": "id5id",
+      "num_modifications": 10,
+      "pii_category": "ID_SOLUTIONS_AND_EXCHANGES",
+      "config": "Auth_FR_0458_PARTIAL"
+    },
+    {
+      "key": "intercom.intercom-state-derkpl7b",
+      "num_modifications": 10,
+      "pii_category": "USER_PREFERENCES",
+      "config": "Auth_FR_0458_PARTIAL"
+    },
+    {
+      "key": "topicsLastReferenceTime",
+      "num_modifications": 10,
+      "pii_category": "BEHAVIORAL_DATA",
+      "config": "Auth_FR_0458_NONE"
+    },
+    {
+      "key": "gscs",
+      "num_modifications": 10,
+      "pii_category": "USER_PREFERENCES",
+      "config": "Auth_FR_0458_NONE"
+    },
+    {
+      "key": "mfb.actor.beta.s.pagesVisited",
+      "num_modifications": 10,
+      "pii_category": "DIRECT_PII_KEYS",
+      "config": "UnAuth_FR_0458_NONE"
+    },
+    {
+      "key": "brs_streaming",
+      "num_modifications": 9,
+      "pii_category": "DIRECT_PII_KEYS",
+      "config": "UnAuth_FR_0458_ALL"
+    },
+    {
+      "key": "user_preferences",
+      "num_modifications": 9,
+      "pii_category": "DIRECT_PII_KEYS",
+      "config": "UnAuth_FR_0458_ALL"
+    },
+    {
+      "key": "webyn_failed_events",
+      "num_modifications": 9,
+      "pii_category": "BEHAVIORAL_DATA",
+      "config": "UnAuth_FR_0458_ALL"
+    },
+    {
+      "key": "scapi_cache_refinements_fr-FR_SarenzaFR",
+      "num_modifications": 9,
+      "pii_category": "USER_PREFERENCES",
+      "config": "UnAuth_FR_0458_PARTIAL"
+    },
+    {
+      "key": "user_preferences",
+      "num_modifications": 9,
+      "pii_category": "DIRECT_PII_KEYS",
+      "config": "UnAuth_FR_0458_NONE"
+    },
+    {
+      "key": "scapi_cache_refinements_fr-FR_SarenzaFR",
+      "num_modifications": 9,
+      "pii_category": "USER_PREFERENCES",
+      "config": "UnAuth_FR_0458_NONE"
+    },
+    {
+      "key": "mage-cache-storage",
+      "num_modifications": 8,
+      "pii_category": "USER_PREFERENCES",
+      "config": "Auth_FR_0458_NONE"
+    },
+    {
+      "key": "TC_PRIVACY_IAB_VENDORLIST",
+      "num_modifications": 8,
+      "pii_category": "UX_AND_PERFORMANCE_ANALYTICS",
+      "config": "Auth_FR_0458_NONE"
+    },
+    {
+      "key": "hct",
+      "num_modifications": 8,
+      "pii_category": "TECHNICAL_PASSWORDS",
+      "config": "Auth_FR_0458_NONE"
+    }
+  ],
+  "num_configs": 6
+}
