@@ -24,13 +24,8 @@ The codebase is organized into five hierarchical phases. Each phase can be execu
 
 ## Getting Started
 
-### 1. Global Orchestration (Recommended)
-To run the entire pipeline from raw data to final risk figures:
-```bash
-python scripts/run_all.py
-```
 
-### 2. Phase-Specific Execution
+###  Phase-Specific Execution
 
 #### Phase 1: Preprocessing & Categorization
 Cleans raw browser traces and executes regex + AI-assisted PII categorization.
@@ -74,9 +69,8 @@ python risk_analysis_PxI/run_all.py
 
 
 ### How to use the Data
-1.  **Download**: Obtain the research dataset from [Zenodo DOI Link] or internal research drive.
-2.  **Placement**: Extract the dataset into the root `data/` directory.
-3.  **Verification**: Run `python scripts/generate_results_reproducibility.py` to ensure local results match the published metrics.
+1.  **Download**: Obtain the data folder from [Zenodo DOI Link].
+2.  **Placement**: Extract the folder and  replace the root `data/` directory.
 
 ---
 
