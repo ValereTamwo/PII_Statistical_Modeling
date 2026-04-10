@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
 Script d'analyse des cookies PII PAR CATÉGORIE.
-Génre des visualisations spécifiques pour chaque catégorie de données personnelles.
 """
 
 import json

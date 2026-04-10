@@ -1,21 +1,5 @@
 #!/usr/bin/env python3
-"""
-MODULE  SCORE DE RISQUE RGPD UNIFIÉ (VERSION  RIGUEUR FORMELLE)
 
-
-Ce score est :
-- ORDINAL (comparatif)
-- HEURISTIQUE (risk-based, non probabiliste)
-- DISCRET (points entiers)
-
-Il ne constitue PAS une mesure légale de non-conformité,
-mais un outil daide  laudit et  la priorisation RGPD.
-
-Inspiré :
-- RGPD (art. 4, 24, 25, 32)
-- Lignes directrices EDPB (identifiabilité, linkabilité)
-- Analyse technique des stockages web modernes
-"""
 
 from pathlib import Path
 from typing import Dict, Tuple, NamedTuple

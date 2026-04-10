@@ -1,20 +1,16 @@
 #!/usr/bin/env python3
 """
-Base de données des vendors de tracking avec sources.
+Base de données des vendors de tracking 
 
-Sources défendables scientifiquement :
 1. WhoTracks.Me - Tracker Database (https://whotracks.me/)
 2. Cookiepedia - Cookie Database (https://cookiepedia.co.uk/)
 3. Ghostery Tracker Database
 4. IAB Tech Lab - Ads.txt Specification
-5. GDPR Enforcement Tracker
 """
 
-# Mapping complet des vendors (50+ vendors documentés)
 VENDOR_MAPPING_EXTENDED = {
     # ========================================================================
     # GOOGLE ECOSYSTEM
-    # Source: WhoTracks.Me, Cookiepedia
     # ========================================================================
     'google.com': 'Google',
     'google.fr': 'Google',
@@ -34,7 +30,6 @@ VENDOR_MAPPING_EXTENDED = {
     
     # ========================================================================
     # META/FACEBOOK
-    # Source: WhoTracks.Me, Cookiepedia
     # ========================================================================
     'facebook.com': 'Meta',
     'facebook.net': 'Meta',
@@ -46,7 +41,6 @@ VENDOR_MAPPING_EXTENDED = {
     
     # ========================================================================
     # AMAZON
-    # Source: WhoTracks.Me
     # ========================================================================
     'amazon.com': 'Amazon',
     'amazon.fr': 'Amazon',
@@ -58,7 +52,6 @@ VENDOR_MAPPING_EXTENDED = {
     
     # ========================================================================
     # MICROSOFT
-    # Source: WhoTracks.Me, Cookiepedia
     # ========================================================================
     'microsoft.com': 'Microsoft',
     'live.com': 'Microsoft',

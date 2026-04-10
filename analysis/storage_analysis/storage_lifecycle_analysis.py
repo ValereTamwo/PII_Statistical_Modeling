@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 """
 Analyse de cycle de vie des stockages web (localStorage, sessionStorage, IndexedDB).
-
-
 """
 
 import json

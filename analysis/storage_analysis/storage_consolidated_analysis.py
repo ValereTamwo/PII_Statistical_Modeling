@@ -2,10 +2,6 @@
 """
 Script d'analyse consolidée pour les stockages web (localStorage, sessionStorage, IndexedDB).
 
-Adapté de l'analyse des cookies, mais sans les attributs de sécurité spécifiques aux cookies
-(HttpOnly, Secure, SameSite) qui n'existent pas pour les autres types de stockage.
-
-Focus RGPD :
 - Quantification des données personnelles par catégorie
 - Analyse du cycle de vie et de la persistance
 - Analyse des modifications (added/modified/deleted)

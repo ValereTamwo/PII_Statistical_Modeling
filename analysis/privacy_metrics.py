@@ -1,8 +1,5 @@
 #!/usr/bin/env python3
-"""
-Module de calcul des métriques vie privée pour l'analyse RGPD.
-Implémente les 4 axes d'analyse avancée.
-"""
+
 
 import re
 import json
@@ -14,21 +11,7 @@ from collections import Counter
 
 
 def calculate_entropy(value: str) -> float:
-    """
-    Calcule l'entropie de Shannon d'une chaîne de caractres.
-    
-    L'entropie mesure l'unicité/imprévisibilité d'une valeur :
-    - 0 bits : Valeur constante (ex: "true", "1")
-    - 1-2 bits : Faible entropie (ex: "fr", "en")
-    - 3-5 bits : Entropie moyenne (ex: dates, compteurs)
-    - 6+ bits : Haute entropie (ex: UUID, tokens, identifiants uniques)
-    
-    Args:
-        value: La valeur du cookie
-        
-    Returns:
-        Entropie en bits (0  ~8+)
-    """
+
     if not value or len(value) == 0:
         return 0.0
     
@@ -48,7 +31,7 @@ def calculate_entropy(value: str) -> float:
 
 def decode_value(value: str) -> Tuple[str, str, bool]:
     """
-    Tente de décoder une valeur de cookie avec différentes méthodes.
+    Décoder une valeur de cookie avec différentes méthodes.
     
     Args:
         value: Valeur brute du cookie
