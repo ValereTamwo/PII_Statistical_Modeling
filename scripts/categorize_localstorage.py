@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-LocalStorage and SessionStorage categorization script.
-Logic: Strict hierarchy, deep JSON analysis, and family-based PII deduplication.
+Script final de catégorisation localStorage / sessionStorage.
+Logique : Hiérarchie stricte + Analyse JSON profonde + Déduplication PII par famille + Anti-Répétition.
 """
 
 import json
@@ -30,19 +30,25 @@ from categorize_cookies import (
     try_decode_value
 )
 
-# Helper Utilities
+# =====================================================================
+# FONCTIONS UTILITAIRES
+# =====================================================================
 
 def shannon_entropy(s: str) -> float:
-    """Calculates Shannon entropy for a string"""
+    """Calcule l'entropie de Shannon d'une chaîne"""
     if not s: return 0.0
     counts = Counter(s)
     length = len(s)
     return -sum((c/length) * math.log2(c/length) for c in counts.values())
 
-# Storage PII Deduplication
+# =====================================================================
+# DÉDUPLICATION DES PII (Storage)
+# =====================================================================
 
 def deduplicate_pii_matches_storage(matches_list):
-    # Deduplicate PII matches by family
+    """
+    Déduplique les matches PII par famille.
+    """
     if not matches_list: return []
     
     subcat_to_family = {}
@@ -75,10 +81,14 @@ def deduplicate_pii_matches_storage(matches_list):
     deduplicated.extend(standalone_matches)
     return deduplicated
 
-# Categorization Logic
+# =====================================================================
+# CATÉGORISATION
+# =====================================================================
 
 def categorize_storage_item(item, patterns):
-    # Hybrid Strategy for Storage items
+    """
+    Stratégie Hybride pour Storage.
+    """
     main_key = item.get('key', '')
     value_raw = str(item.get('value', ''))
 
@@ -103,7 +113,7 @@ def categorize_storage_item(item, patterns):
     all_identity_elements = [main_key] + internal_keys
     pii_keys_matches = set() # Set pour éviter les répétitions techniques (ex: 20x 'phone')
 
-    # Intent-based PII detection
+    # --- ÉTAPE 1 : DIRECT_PII_KEYS (Intention) ---
     if 'DIRECT_PII_KEYS' in patterns:
         for subcat, pattern in patterns['DIRECT_PII_KEYS'].items():
             for identity in all_identity_elements:
@@ -111,7 +121,7 @@ def categorize_storage_item(item, patterns):
                     pii_keys_matches.add(('DIRECT_PII_KEYS', subcat))
                     break
 
-    # Context-based categorization and extraction
+    # --- ÉTAPE 2 : PRIORITÉ ET COLLECTE DE TOUTES LES CATÉGORIES ---
     priority_order = ['DIRECT_PII', 'SUSPICIOUS_VALUES', 'SENSITIVE_LOCATION_PII', 'LOCATION_AND_DEMOGRAPHICS', 'IDENTITY_TRACKING', 'ID_SOLUTIONS_AND_EXCHANGES', 'CONSENT_AND_PRIVACY']
     for cat in patterns.keys():
         if cat not in priority_order and cat != 'DIRECT_PII_KEYS':
@@ -140,7 +150,7 @@ def categorize_storage_item(item, patterns):
                         pii_matches.add((category, subcat))
                         break 
                     else:
-                        # Pour les autres catégories, ajouter � la liste de tous les matchs
+                        # Pour les autres catégories, ajouter à la liste de tous les matchs
                         all_category_matches.append((category, subcat))
                         break  # Passer au pattern suivant
 
@@ -208,7 +218,9 @@ def categorize_storage_item(item, patterns):
 
     return {'primary_matches': None, 'pii_keys_matches': list(pii_keys_matches)}
 
-# File Processing
+# =====================================================================
+# TRAITEMENT DES FICHIERS
+# =====================================================================
 
 def process_storage_file(input_file: Path, output_dir: Path, patterns: Dict):
     if not input_file.exists(): return

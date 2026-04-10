@@ -1,9 +1,10 @@
 TRACKING_PATTERNS_COMPLETE = {
     
-# Comprehensive tracking patterns categorized by PII type
-# DIRECT_PII: Per-user pattern lists for FR_0417, FR_0446, FR_0458
+    # DIRECT_PII est maintenant une LISTE de patterns, un par utilisateur
+    # Index 0 = FR_0417, Index 1 = FR_0418, Index 2 = FR_0419
 'DIRECT_PII': [
-    { # FR_0417
+    # ===== USER FR_0417 =====
+    {
         # Email patterns - exact and partial
         'email_exact': r'chris\.martin\.gdpr\+FR_0417@gmail\.com',
         'email_encoded': r'chris(?:%2E|\.)martin(?:%2E|\.)gdpr(?:%2B|\+)FR_0417(?:%40|@)gmail(?:%2E|\.)com',
@@ -25,10 +26,10 @@ TRACKING_PATTERNS_COMPLETE = {
          'name_encoded': r'Chris(?:%20|\s)Martin',
         
         # Address patterns - full and components
-        'address_full': r'688,?\s*avenue\s+Th√©r√se\s+Robin',
+        'address_full': r'688,?\s*avenue\s+Th√©r√®se\s+Robin',
         # 'address_number': r'\b688\b',
-        'address_street': r'avenue\s+Th√©r√se\s+Robin',
-        'address_encoded': r'688(?:%2C|,)?\s*avenue(?:%20|\s)Th√©r√se(?:%20|\s)Robin',
+        'address_street': r'avenue\s+Th√©r√®se\s+Robin',
+        'address_encoded': r'688(?:%2C|,)?\s*avenue(?:%20|\s)Th√©r√®se(?:%20|\s)Robin',
         
         # City
         'city': r'\bRoubaix\b',
@@ -74,7 +75,9 @@ TRACKING_PATTERNS_COMPLETE = {
         #ip_adress
         'ip_address': r'\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b|\b(?:[A-F0-9]{1,4}:){7}[A-F0-9]{1,4}\b'
     },
-    { # FR_0446
+    
+    # ===== USER FR_0446 =====
+    {
         # Email patterns - exact and partial
         'email_exact': r'chris\.martin\.gdpr\+FR_0446@gmail\.com',
         'email_encoded': r'chris(?:%2E|\.)martin(?:%2E|\.)gdpr(?:%2B|\+)FR_0446(?:%40|@)gmail(?:%2E|\.)com',
@@ -102,8 +105,8 @@ TRACKING_PATTERNS_COMPLETE = {
         'address_encoded': r'75(?:%2C|,)?\s*chemin(?:%20|\s)Margaux(?:%20|\s)Lombard',
         
         # City
-        'city': r'\bParis\s+16(?:√me|e)\b',
-        'city_encoded': r'Paris(?:%20|\s)16(?:√me|e)?',
+        'city': r'\bParis\s+16(?:√®me|e)\b',
+        'city_encoded': r'Paris(?:%20|\s)16(?:√®me|e)?',
         'arrondissement': r'\b75016\b',
         
         # Birth date - multiple formats
@@ -151,7 +154,9 @@ TRACKING_PATTERNS_COMPLETE = {
         'ip_address': r'\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b|\b(?:[A-F0-9]{1,4}:){7}[A-F0-9]{1,4}\b'
         
     },
-    { # FR_0458
+    
+    # ===== USER FR_0458 =====
+    {
         # Email patterns - exact and partial
         'email_exact': r'chris\.martin\.gdpr\+FR_0458@gmail\.com',
         'email_encoded': r'chris(?:%2E|\.)martin(?:%2E|\.)gdpr(?:%2B|\+)FR_0458(?:%40|@)gmail(?:%2E|\.)com',
@@ -209,12 +214,12 @@ TRACKING_PATTERNS_COMPLETE = {
         
         # Health-related (sensitive)
         'health_marker': r'\bcancer\b',
-        # 'dependent': r'\bp√re\b.*charge|parent.*charge',
+        # 'dependent': r'\bp√®re\b.*charge|parent.*charge',
         
         # Demographics
         # 'religion': r'\bCatholique\b',
         # 'marital_status': r'\bMari√©\b',
-        'household': r'parent\s+√\s+charge',
+        'household': r'parent\s+√†\s+charge',
         
         # Lifestyle
         # 'loisirs': r'\b√âglise\b',
@@ -223,7 +228,7 @@ TRACKING_PATTERNS_COMPLETE = {
         # Combined patterns
         'name_and_city': r'Chris\s+Martin.*Thibault|Thibault.*Chris\s+Martin',
         'email_and_phone': r'chris\.martin.*653277579|653277579.*chris\.martin',
-        'aidant_context': r'aidant.*p√re|p√re.*cancer',
+        'aidant_context': r'aidant.*p√®re|p√®re.*cancer',
         #ip_adress
         'ip_address': r'\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b|\b(?:[A-F0-9]{1,4}:){7}[A-F0-9]{1,4}\b'
         

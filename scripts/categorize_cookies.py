@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """
-Final cookie categorization script.
-Logic:
-- DIRECT_PII_KEYS detected independently (names + values)
-- Strict hierarchy for primary category
-- Family-based PII deduplication
-- Standardized output format for all categories
+Script final de catégorisation des cookies.
+Logique : 
+- DIRECT_PII_KEYS détecté INDÉPENDAMMENT (noms + valeurs)
+- Hiérarchie stricte pour catégorie principale
+- Déduplication PII par famille
+- Format d'écriture identique pour toutes les catégories
 """
 
 import re
@@ -25,7 +25,9 @@ from overlap_detection import collect_all_pii_matches
 
 USER_ID_TO_INDEX = {'FR_0417': 0, 'FR_0446': 1, 'FR_0458': 2}
 
-# PII Pattern Families for Deduplication
+# =====================================================================
+# FAMILLES DE PATTERNS PII (pour déduplication)
+# =====================================================================
 
 PII_PATTERN_FAMILIES = {
     'email': ['email_exact', 'email_encoded', 'email_username', 'email_pattern'],
@@ -52,10 +54,12 @@ PII_PRIORITY_ORDER = {
     'ip_address': ['ip_address']
 }
 
-# Helper Utilities
+# =====================================================================
+# FONCTIONS UTILITAIRES
+# =====================================================================
 
 def shannon_entropy(s: str) -> float:
-    """Calculates Shannon entropy for a string"""
+    """Calcule l'entropie de Shannon d'une chaîne"""
     if not s:
         return 0.0
     counts = Counter(s)
@@ -64,7 +68,7 @@ def shannon_entropy(s: str) -> float:
 
 
 def try_decode_value(value):
-    """Attempts to decode a value (URL, Base64, JSON)"""
+    """Tente de décoder une valeur (URL, Base64, JSON)"""
     if not value or not isinstance(value, str):
         return [value]
     
@@ -132,7 +136,7 @@ def is_valid_ip(value: str) -> bool:
     Valide qu'une valeur est une adresse IP réelle et non un numéro de version.
     
     IMPORTANT : Les IPs privées (192.168.x.x, 10.x.x.x, etc.) sont des PII car elles
-    rév�lent l'environnement réseau de l'utilisateur. On les GARDE.
+    révèlent l'environnement réseau de l'utilisateur. On les GARDE.
     
     Filtre uniquement :
     - Adresses invalides (0.0.0.0, 127.0.0.1 loopback)
@@ -147,7 +151,7 @@ def is_valid_ip(value: str) -> bool:
         
         # Filtrer les patterns de version courants
         # Pattern 1: Tous les octets < 10 (ex: 1.2.1.1, 2.3.4.5)
-        # Pattern 2: x.0.y.z o� x < 10 (ex: 1.0.1.1, 2.0.0.1)
+        # Pattern 2: x.0.y.z où x < 10 (ex: 1.0.1.1, 2.0.0.1)
         # Pattern 3: x.y.0.0 (ex: 140.0.0.0, 537.36.0.0 - versions logicielles)
         parts = value.split('.')
         if len(parts) == 4:
@@ -158,7 +162,7 @@ def is_valid_ip(value: str) -> bool:
                 if all(n < 10 for n in nums):
                     return False
                 
-                # Pattern spécifique : x.0.y.z o� x < 10
+                # Pattern spécifique : x.0.y.z où x < 10
                 if nums[0] < 10 and nums[1] == 0:
                     return False
                 
@@ -223,14 +227,14 @@ def is_valid_gender(match_text, full_value):
     """
     Valide qu'une détection de genre (male/female) est un vrai PII et non un faux positif.
     
-    Filtre les cas o� male/female apparaissent dans :
+    Filtre les cas où male/female apparaissent dans :
     - Des textes descriptifs longs (politiques de confidentialité, etc.)
     - Des URLs ou chemins
     - Des clés JSON techniques
     
     Args:
         match_text: Le texte qui a matché (ex: "male", "female")
-        full_value: La valeur compl�te o� le match a été trouvé
+        full_value: La valeur complète où le match a été trouvé
     
     Returns:
         True si c'est probablement un vrai PII, False si c'est un faux positif
@@ -238,7 +242,7 @@ def is_valid_gender(match_text, full_value):
     match_lower = match_text.lower()
     value_str = str(full_value)
     
-    # Si la valeur est tr�s longue (>500 caract�res), c'est probablement du texte descriptif
+    # Si la valeur est très longue (>500 caractères), c'est probablement du texte descriptif
     if len(value_str) > 500:
         return False
     
@@ -259,7 +263,7 @@ def is_valid_gender(match_text, full_value):
     # Chercher le contexte autour du match
     match_index = value_str.lower().find(match_lower)
     if match_index != -1:
-        # Vérifier les caract�res avant et apr�s
+        # Vérifier les caractères avant et après
         before_char = value_str[match_index - 1] if match_index > 0 else ' '
         after_char = value_str[match_index + len(match_lower)] if match_index + len(match_lower) < len(value_str) else ' '
         
@@ -312,7 +316,7 @@ def deduplicate_pii_matches(matches):
     """
     Déduplique les matches PII par famille.
     
-    R�gles :
+    Règles :
     - 1 seul match par famille (email, phone, birth_date, etc.)
     - Priorité au pattern le plus spécifique (email_exact > email_pattern)
     - Ignore les name patterns si trouvés dans un email
@@ -440,7 +444,7 @@ def categorize_cookie(cookie, patterns):
                                     })
                                     break  # Un seul match par pattern
                             if pii_keys_matches and pii_keys_matches[-1]['subcategory'] == subcat:
-                                break  # Déj� trouvé pour ce pattern, passer au suivant
+                                break  # Déjà trouvé pour ce pattern, passer au suivant
                     except (json.JSONDecodeError, TypeError):
                         # Pas un JSON valide, continuer avec la prochaine valeur
                         continue
@@ -450,7 +454,7 @@ def categorize_cookie(cookie, patterns):
 
     # =====================================================================
     # ÉTAPE 2 : HIÉRARCHIE DE PRIORITÉ (CATÉGORIE PRINCIPALE)
-    # Sans DIRECT_PII_KEYS qui est déj� traité
+    # Sans DIRECT_PII_KEYS qui est déjà traité
     # =====================================================================
     
     # Ordre de priorité
@@ -522,7 +526,7 @@ def categorize_cookie(cookie, patterns):
                         })
                         continue  
 
-                    # Pour les autres catégories (location, tracking, etc.), ajouter � la liste
+                    # Pour les autres catégories (location, tracking, etc.), ajouter à la liste
                     all_category_matches.append({
                         'category': category,
                         'subcategory': subcat,
@@ -531,7 +535,7 @@ def categorize_cookie(cookie, patterns):
                         'pattern': pattern,
                         'decoded_value': None
                     })
-                    continue  # Continuer � chercher les PII dans les valeurs
+                    continue  # Continuer à chercher les PII dans les valeurs
 
                 # --- B. MATCH SUR LA VALEUR (PII UNIQUEMENT) ---
                 if category == 'DIRECT_PII':
@@ -548,7 +552,7 @@ def categorize_cookie(cookie, patterns):
                             if subcat in ['first_name', 'last_name', 'full_name', 'name_encoded']:
                                 # Vérifier si la valeur contient un email
                                 if re.search(r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}', val):
-                                    # Name trouvé dans un email  ne pas compter
+                                    # Name trouvé dans un email → ne pas compter
                                     continue
                             
                             # Validation pour ip_address
@@ -742,7 +746,7 @@ def main():
                                 
                                 categorized[match['category']].append(cookie_out)
                         else:
-                            # Pas de catégorie principale  UNCATEGORIZED
+                            # Pas de catégorie principale → UNCATEGORIZED
                             cookie_out = cookie.copy()
                             cookie_out['source_file'] = f_name
                             
@@ -788,14 +792,14 @@ def main():
                         unique_cookies = len(set(c['name'] for c in categorized['DIRECT_PII']))
                         total_entries = len(categorized['DIRECT_PII'])
                         avg_pii = total_entries / unique_cookies if unique_cookies > 0 else 0
-                        print(f"  - DIRECT_PII: {unique_cookies} cookies uniques, {total_entries} entrées (avg {avg_pii:.1f} PII/cookie)")
+                        print(f"  → DIRECT_PII: {unique_cookies} cookies uniques, {total_entries} entrées (avg {avg_pii:.1f} PII/cookie)")
                     
                     # Stats pour DIRECT_PII_KEYS
                     if categorized['DIRECT_PII_KEYS']:
                         unique_cookies_keys = len(set(c['name'] for c in categorized['DIRECT_PII_KEYS']))
                         total_entries_keys = len(categorized['DIRECT_PII_KEYS'])
                         avg_keys = total_entries_keys / unique_cookies_keys if unique_cookies_keys > 0 else 0
-                        print(f"  - DIRECT_PII_KEYS: {unique_cookies_keys} cookies uniques, {total_entries_keys} intentions (avg {avg_keys:.1f} clés PII/cookie)")
+                        print(f"  → DIRECT_PII_KEYS: {unique_cookies_keys} cookies uniques, {total_entries_keys} intentions (avg {avg_keys:.1f} clés PII/cookie)")
 
 if __name__ == '__main__':
     main()
