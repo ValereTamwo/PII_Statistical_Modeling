@@ -92,7 +92,7 @@ Aggregates results across all user profiles, computes global transition matrices
 ```bash
 python analysis_gdpr_profiles/run_all.py
 ```
-Generates reproducible, high-level reports on PII density stratified by profile category.  
+Generates high-level reports on PII density stratified by profile category.  
 **Output:** `reproducibility_report.txt` and aggregate statistics in `analysis_gdpr_profiles/reports/`.
 
 ### Phase 5 — Risk Analysis (PxI Model)
