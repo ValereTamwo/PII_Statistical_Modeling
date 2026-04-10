@@ -528,6 +528,7 @@ def main():
     configurations = []
     users = ["FR_0446"]
     
+    
     for auth in ["UnAuth"]:
         for user in users:
             for policy in ["ALL", "PARTIAL", "NONE"]:
