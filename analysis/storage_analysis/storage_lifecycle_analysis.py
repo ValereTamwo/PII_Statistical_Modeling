@@ -10,7 +10,7 @@ import sys
 from pathlib import Path
 from collections import defaultdict, Counter
 from typing import Dict, List, Tuple
-from analysis.storage_analysis import storage_lifecycle_visualizations as slviz
+# from analysis.storage_analysis import storage_lifecycle_visualizations as slviz
 from analysis import privacy_metrics as pm
 # Imports des modules d'analyse
 # import analysis.privacy_metrics as pm

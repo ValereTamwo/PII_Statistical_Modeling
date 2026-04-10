@@ -11,7 +11,8 @@ from pathlib import Path
 # Base directory for analysis scripts
 ANALYSIS_DIR = Path(__file__).resolve().parent
 
-def run_script(script_path, description):
+
+def run_script(script_path, description, use_module=False):
     print(f"\n" + "="*80)
     print(f" STEP: {description}")
     print(f" Executing: {script_path.name}")
@@ -22,10 +23,26 @@ def run_script(script_path, description):
         return False
         
     try:
-        result = subprocess.run([sys.executable, str(script_path)], 
-                               cwd=script_path.parent, 
-                               check=True)
+        if use_module:
+            # Convert path → module (analysis.storage_analysis.xxx)
+            project_root = ANALYSIS_DIR.parent
+            module_path = script_path.relative_to(project_root).with_suffix('')
+            module_name = ".".join(module_path.parts)
+
+            result = subprocess.run(
+                [sys.executable, "-m", module_name],
+                cwd=project_root,
+                check=True
+            )
+        else:
+            result = subprocess.run(
+                [sys.executable, str(script_path)],
+                cwd=script_path.parent,
+                check=True
+            )
+
         return result.returncode == 0
+
     except subprocess.CalledProcessError as e:
         print(f" Error executing {script_path.name}: {e}")
         return False
@@ -46,8 +63,19 @@ def main():
     # 2. Storage Analysis (LocalStorage, SessionStorage, IndexedDB)
     print("\n--- PHASE 2: STORAGE ANALYSIS ---")
     storage_dir = ANALYSIS_DIR / "storage_analysis"
-    run_script(storage_dir / "storage_consolidated_analysis.py", "Other Storages Consolidated Analysis")
-    run_script(storage_dir / "storage_lifecycle_analysis.py", "Other Storages Lifecycle Analysis")
+    run_script(
+    storage_dir / "storage_consolidated_analysis.py",
+    "Other Storages Consolidated Analysis",
+    use_module=True
+)
+
+    run_script(
+        storage_dir / "storage_lifecycle_analysis.py",
+        "Other Storages Lifecycle Analysis",
+        use_module=True
+    )
+    # run_script(storage_dir / "storage_consolidated_analysis.py", "Other Storages Consolidated Analysis")
+    # run_script(storage_dir / "storage_lifecycle_analysis.py", "Other Storages Lifecycle Analysis")
 
     print("\n" + "#"*80)
     print("#" + " "*24 + "ANALYSIS PIPELINE COMPLETED" + " "*27 + "#")

@@ -21,7 +21,7 @@ from typing import Dict, List, Tuple, Optional
 # Imports des modules d'analyse
 sys.path.insert(0, str(Path(__file__).parent))
 import privacy_metrics as pm
-import lifecycle_visualizations as lviz
+# import lifecycle_visualizations as lviz
 
 
 def create_cookie_key(cookie: Dict) -> str:
