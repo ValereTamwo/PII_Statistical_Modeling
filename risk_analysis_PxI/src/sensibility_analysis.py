@@ -321,7 +321,7 @@ def run_step3_rankings(sens_1d: dict, items: list) -> dict:
     """
     Teste la stabilité des findings RQ4 à travers les 60 configs OAT.
 
-    Claims testés (alignés sur RQ4) :
+    Claims testés :
     ──────────────────────────────────────────────────────────
     MEAN-LEVEL (ordinal)
       M1 — |mean_Auth - mean_UnAuth| < 0.05          (F6: Auth ≈ UnAuth)
