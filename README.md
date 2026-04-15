@@ -119,13 +119,19 @@ Computes technical Exposure scores (Pᵢ), Impact scores (Iᵢ), and composite R
 
 This repository is part of a broader experimental ecosystem. The following companion artifacts help reproduce the experimental setup or to re-collect raw data from scratch:
 
-| Artifact | Description | Link |
+<!-- | Artifact | Description | Link |
 |:--|:--|:--|
 | **XArena** | Automated browser crawler used to collect raw storage traces under controlled browsing sessions | [GitHub — XArena]([PLACEHOLDER_XARENA_URL]) |
 | **Site Classification Module** | Categorizes target websites by content type and GDPR relevance; produces the browsing task lists consumed by XArena | [GitHub — Site Classifier]([PLACEHOLDER_CLASSIFIER_URL]) |
 | **Virtual Persona System** | Generates synthetic user personas with demographic and behavioral profiles used to drive XArena browsing sessions | [GitHub — Persona System]([PLACEHOLDER_PERSONA_SYSTEM_URL]) |
 | **Persona Dataset** | Full dataset of virtual personas used in the study, including demographic attributes and assigned behavioral parameters | [Dataset]([PLACEHOLDER_PERSONA_DATA_URL]) |
-| **Persona-to-Site Assignments** | Mapping of virtual personas to their attributed website sets, defining the browsing scope for each experimental subject | [Dataset]([PLACEHOLDER_SITE_ASSIGNMENTS_URL]) |
+| **Persona-to-Site Assignments** | Mapping of virtual personas to their attributed website sets, defining the browsing scope for each experimental subject | [Dataset]([PLACEHOLDER_SITE_ASSIGNMENTS_URL]) | -->
+| Artifact | Description | Repository Link |
+| :--- | :--- | :--- |
+| **Persona Generation Framework** | Multilingual engine for generating culturally and socio-economically coherent personas. Includes the full dataset of synthetic identities across 15+ European jurisdictions. | [Link — Persona-Gen](https://anonymous.4open.science/r/Cookyst-UserProfiles-Gen-211E/) 
+| **TaskGen Pipeline** | LLM-driven suite for automated domain scoring, site attribution (based on CrUX popularity), and the generation of context-aware navigation tasks (3–6 goals per persona-site pair). | [Link — TaskGen-Core](https://anonymous.4open.science/r/Domains_Attribution_TaskGen-4B84/)
+| **XArena Crawler** | Automated high-fidelity browser crawler designed to execute navigation tasks and collect longitudinal storage traces (cookies, localStorage) under controlled browsing sessions. | [Link — XArena](https://anonymous.4open.science/r/WebAgentNavigation-DFDB/README.md) 
+| **Cookie & DOM Tracker** | Specialized analysis tool that inspects browser storage and the DOM to detect PII leaks (email, name, etc.), decoded tokens (JWT, Base64), and tracking identifiers (Session IDs, UUIDs). | [Link — Analysis-Tracker](https://anonymous.4open.science/r/CookieTracker-3B36/) 
 
 ---
 
