@@ -20,12 +20,12 @@ from collections import defaultdict
 matplotlib.rcParams.update({
     'font.family':        'serif',
     'font.size':          8,
-    'axes.labelsize':     8,
+    'axes.labelsize':     14,
     'axes.titlesize':     8,
     'axes.titleweight':   'normal',
-    'xtick.labelsize':    7,
-    'ytick.labelsize':    7,
-    'legend.fontsize':    7,
+    'xtick.labelsize':    12,
+    'ytick.labelsize':    12,
+    'legend.fontsize':    12,
     'legend.framealpha':  1.0,
     'legend.edgecolor':   '#aaaaaa',
     'legend.borderpad':   0.4,
@@ -115,16 +115,17 @@ def load_items_multi(data_root: Path, mode: str, policies: list,
 
 def _render(
     ax, ax_r,
-    group_labels: list,        # labels axe X
-    series: list,              # [{'label', 'data_per_group', 'color', 'hatch'}]
-    counts: list,              # un count par groupe (axe Y droit)
+    group_labels: list,        
+    series: list,              
+    counts: list,              
+    group_w=0.72, box_ratio=0.80
 ):
     """
     Core rendering engine: Overlays grouped boxplots with frequency line plots.
     """
     n_groups  = len(group_labels)
     n_series  = len(series)
-    group_w   = 0.72
+    # group_w   = 0.72
     box_w     = group_w / n_series
     offsets   = np.linspace(-(n_series-1)/2, (n_series-1)/2, n_series) * box_w
 
@@ -139,7 +140,7 @@ def _render(
             bp  = ax.boxplot(
                 data,
                 positions    = [pos],
-                widths       = box_w * 0.80,
+                widths       = box_w * box_ratio,
                 patch_artist = True,
                 notch        = False,
                 showfliers   = False,          # Exclude outliers for visual clarity
@@ -182,7 +183,7 @@ def _render(
     offset = 0.08 * max(counts)
     for xi, cnt in zip(x_c, counts):
         ax_r.text(xi, cnt + offset, str(cnt),
-                  ha='center', va='top', fontsize=8, color=COUNT_COLOR,
+                  ha='center', va='top', fontsize=10, color=COUNT_COLOR,
                   bbox=dict(boxstyle='round,pad=0.1', fc='white', ec='none', alpha=0.8))
     ax_r.set_ylabel('# Items', color=COUNT_COLOR)
     ax_r.tick_params(axis='y', labelcolor=COUNT_COLOR,
@@ -202,6 +203,7 @@ def _render(
         loc='upper left', ncol=n_series + 1,
         handlelength=1.2, handleheight=0.9,
         columnspacing=0.7, borderpad=0.4,
+        bbox_to_anchor=(0, 1.05),
     )
 
 
@@ -247,7 +249,7 @@ def plot_f1_metrics_by_storage(data_root: Path, output_dir: Path,
     ]
     counts = [len(groups.get(s, [])) for s in STORAGES]
 
-    fig, ax = plt.subplots(figsize=(7.0, 3.0))
+    fig, ax = plt.subplots(figsize=(7.0, 4.5))
     ax_r    = ax.twinx()
     _render(ax, ax_r, STORAGE_SHORT, series, counts)
 
@@ -326,10 +328,10 @@ def plot_f2_modes_by_policy_per_storage(data_root: Path, output_dir: Path):
             'hatch': METRIC_HATCHES['Ri']
         }]
 
-        fig, ax1 = plt.subplots(figsize=(5, 3.5))
+        fig, ax1 = plt.subplots(figsize=(3.5, 4.0))
         ax2 = ax1.twinx()
         
-        _render(ax1, ax2, POLICIES, series, counts_per_policy)
+        _render(ax1, ax2, POLICIES, series, counts_per_policy, group_w=0.4, box_ratio=0.6)
         stem = f"f2_modes_by_policy_{st}"
         # ax1.set_title(f"Risk Score: {st_short}")
         _save(fig, output_dir, stem)
@@ -363,9 +365,9 @@ def plot_f3_modes_by_policy_all_storages(data_root: Path, output_dir: Path):
         n = sum(len(load_items(data_root, mode=m, policy=policy)) for m in MODES)
         counts.append(n)
 
-    fig, ax = plt.subplots(figsize=(7, 3))
+    fig, ax = plt.subplots(figsize=(6.0, 4.5))
     ax_r    = ax.twinx()
-    _render(ax, ax_r, POLICIES, series, counts)
+    _render(ax, ax_r, POLICIES, series, counts, box_ratio=0.6, group_w=0.5)
 
     _save(fig, output_dir, "f3_modes_by_policy_all_storages")
 
