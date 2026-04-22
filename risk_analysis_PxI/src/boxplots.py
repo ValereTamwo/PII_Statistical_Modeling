@@ -249,7 +249,7 @@ def plot_f1_metrics_by_storage(data_root: Path, output_dir: Path,
     ]
     counts = [len(groups.get(s, [])) for s in STORAGES]
 
-    fig, ax = plt.subplots(figsize=(7.0, 4.5))
+    fig, ax = plt.subplots(figsize=(7.0, 3.0))
     ax_r    = ax.twinx()
     _render(ax, ax_r, STORAGE_SHORT, series, counts)
 
@@ -328,10 +328,10 @@ def plot_f2_modes_by_policy_per_storage(data_root: Path, output_dir: Path):
             'hatch': METRIC_HATCHES['Ri']
         }]
 
-        fig, ax1 = plt.subplots(figsize=(3.5, 4.0))
+        fig, ax1 = plt.subplots(figsize=(4, 4))
         ax2 = ax1.twinx()
         
-        _render(ax1, ax2, POLICIES, series, counts_per_policy, group_w=0.4, box_ratio=0.6)
+        _render(ax1, ax2, POLICIES, series, counts_per_policy)
         stem = f"f2_modes_by_policy_{st}"
         # ax1.set_title(f"Risk Score: {st_short}")
         _save(fig, output_dir, stem)
@@ -365,9 +365,9 @@ def plot_f3_modes_by_policy_all_storages(data_root: Path, output_dir: Path):
         n = sum(len(load_items(data_root, mode=m, policy=policy)) for m in MODES)
         counts.append(n)
 
-    fig, ax = plt.subplots(figsize=(6.0, 4.5))
+    fig, ax = plt.subplots(figsize=(7.0, 3.0))
     ax_r    = ax.twinx()
-    _render(ax, ax_r, POLICIES, series, counts, box_ratio=0.6, group_w=0.5)
+    _render(ax, ax_r, POLICIES, series, counts)
 
     _save(fig, output_dir, "f3_modes_by_policy_all_storages")
 
