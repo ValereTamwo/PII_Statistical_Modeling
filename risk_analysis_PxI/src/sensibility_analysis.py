@@ -612,7 +612,7 @@ def main():
     s2 = run_step2_range(items)
     s3 = run_step3_rankings(s1, items=items)
     s4 = run_step4_drivers(s1)
-    # s5 = run_step5_sobol(items)
+    s5 = run_step5_sobol(items)
 
     output = {
         'sensitivity_1d'   : s1,
