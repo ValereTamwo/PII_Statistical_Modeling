@@ -404,8 +404,7 @@ def run_step3_rankings(sens_1d: dict, items: list) -> dict:
             med_ck_all_u  = dist_mp['cookie']['UnAuth']['ALL']['median']
             med_ck_none_u = dist_mp['cookie']['UnAuth']['NONE']['median']
 
-            # Juste avant le calcul de D5, ajoute :
-            if dim == 'id' and val == 0.9:  # ≈ default
+            if dim == 'id' and val == 0.9:  
                 print(f"  DEBUG D5:")
                 print(f"    med_cookie_Auth_ALL  = {dist_mp['cookie']['Auth']['ALL']['median']}")
                 print(f"    med_cookie_Auth_NONE = {dist_mp['cookie']['Auth']['NONE']['median']}")
