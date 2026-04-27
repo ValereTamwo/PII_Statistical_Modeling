@@ -318,33 +318,13 @@ def _describe_storage_by_mode_policy(items: list) -> dict:
 
 
 def run_step3_rankings(sens_1d: dict, items: list) -> dict:
-    """
-    Teste la stabilité des findings RQ4 à travers les 60 configs OAT.
-
-    Claims testés :
-    ──────────────────────────────────────────────────────────
-    MEAN-LEVEL (ordinal)
-      M1 — |mean_Auth - mean_UnAuth| < 0.05          (F6: Auth ≈ UnAuth)
-      M2 — mean_ALL >= mean_NONE                      (F5: policy ordering)
-      M3 — mean_cookie > mean_sessionStorage          (F1 vs F3)
-      M4 — mean_cookie > mean_IndexedDB               (F1 vs F4)
-
-    DISTRIBUTIONAL
-      D1 — median_cookie > median_sessionStorage      (F1 vs F3)
-      D2 — IQR_IndexedDB == 0                         (F4: dégenérée)
-      D3 — IQR_cookie > IQR_sessionStorage            (F1: hétérogénéité)
-      D4 — |median_Auth - median_UnAuth| < 0.01       (F6: Δmedian ≤ 0.001)
-      D5 — median_cookie_ALL ≈ median_cookie_NONE     (F5: consent n'altère
-             i.e. |Δmedian_cookie| < 0.02              pas la distribution)
-    ──────────────────────────────────────────────────────────
-    """
+ 
     print("\n  [Step 3] Ranking stability — rigorous RQ4-aligned...")
     dims_data = sens_1d['dimensions']
     details   = []
 
     for dim in ALPHA_KEYS:
         for val in ALPHA_GRID:
-            # ── Recalculer les scores pour cette config ──────────────
             alphas = {**DEFAULT_ALPHAS, dim: val}
             _apply_alphas(items, alphas)
 
@@ -480,19 +460,19 @@ def run_step3_rankings(sens_1d: dict, items: list) -> dict:
     n = len(details)
     claims = {
         'M1_auth_unauth_equiv' : ('mean', 'F6 : |mean_Auth - mean_UnAuth| < 0.05'),
-        'M2_all_gt_none'       : ('mean', 'F5 : mean_ALL >= mean_NONE'),
-        'M3_cookie_gt_ss'      : ('mean', 'F1/F3 : mean_cookie > mean_sessionStorage'),
-        'M4_cookie_gt_idb'     : ('mean', 'F1/F4 : mean_cookie > mean_IndexedDB'),
-        'D1_median_cookie_gt_ss'  : ('dist', 'F1/F3 : median_cookie > median_sessionStorage'),
-        'D2_idb_iqr_zero'         : ('dist', 'F4 : IQR_IndexedDB = 0'),
+        'M2_all_gt_none'       : ('mean', 'F2 : mean_ALL >= mean_NONE'),
+        'M3_cookie_gt_ss'      : ('mean', 'F1/F4 : mean_cookie > mean_sessionStorage'),
+        'M4_cookie_gt_idb'     : ('mean', 'F1/F5 : mean_cookie > mean_IndexedDB'),
+        'D1_median_cookie_gt_ss'  : ('dist', 'F1/F4 : median_cookie > median_sessionStorage'),
+        'D2_idb_iqr_zero'         : ('dist', 'F5 : IQR_IndexedDB = 0'),
         'D3_iqr_cookie_gt_ss'     : ('dist', 'F1 : IQR_cookie > IQR_sessionStorage'),
         'D4_median_mode_equiv'    : ('dist', 'F6 : |median_Auth - median_UnAuth| < 0.01'),
-        'D5_cookie_median_stable' : ('dist', 'F5 : |median_cookie_ALL - median_cookie_NONE| < 0.02'),
-        'M5_ls_equiv_cookie'      : ('mean', 'F2 : |mean_localStorage - mean_cookie| < 0.02'),
-        'M6_ls_gt_ss'             : ('mean', 'F2/F3 : mean_localStorage > mean_sessionStorage'),
-        'M7_ls_gt_idb'            : ('mean', 'F2/F4 : mean_localStorage > mean_IndexedDB'),
-        'D6_median_ls_equiv_cookie': ('dist', 'F2 : |median_localStorage - median_cookie| < 0.05'),
-        'D7_iqr_ls_lt_cookie'     : ('dist', 'F2 : IQR_localStorage < IQR_cookie'),
+        'D5_cookie_median_stable' : ('dist', 'F4 : |median_cookie_ALL - median_cookie_NONE| < 0.02'),
+        'M5_ls_equiv_cookie'      : ('mean', 'F3 : |mean_localStorage - mean_cookie| < 0.02'),
+        'M6_ls_gt_ss'             : ('mean', 'F3/F4 : mean_localStorage > mean_sessionStorage'),
+        'M7_ls_gt_idb'            : ('mean', 'F3/F5 : mean_localStorage > mean_IndexedDB'),
+        'D6_median_ls_equiv_cookie': ('dist', 'F3 : |median_localStorage - median_cookie| < 0.05'),
+        'D7_iqr_ls_lt_cookie'     : ('dist', 'F3 : IQR_localStorage < IQR_cookie'),
     }
 
     summary = {}
@@ -618,7 +598,7 @@ def main():
         'sensitivity_range': s2,
         'ranking_stability': s3,
         'drivers_by_storage': s4,
-        # 'sobol_indices'   : s5,
+        'sobol_indices'   : s5,
     }
 
     out_dir  = base_dir / "data" / "reports"

@@ -143,11 +143,11 @@ def _render(
                 widths       = box_w * box_ratio,
                 patch_artist = True,
                 notch        = False,
-                showfliers   = False,          # Exclude outliers for visual clarity
-                whis         = (0, 100),       # Whiskers encompass the full range
+                showfliers   = False,          
+                whis         = (0, 100),       
                 medianprops  = dict(color='black', linewidth=1.5),
                 boxprops     = dict(facecolor=col, alpha=0.75, linewidth=0.6),
-                whiskerprops = dict(linewidth=0.8, linestyle='-'),  # ligne pleine
+                whiskerprops = dict(linewidth=0.8, linestyle='-'),  
                 capprops     = dict(linewidth=1.0),
             )
             for patch in bp['boxes']:

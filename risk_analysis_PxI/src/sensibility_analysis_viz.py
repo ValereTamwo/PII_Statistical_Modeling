@@ -9,12 +9,12 @@ from pathlib import Path
 matplotlib.rcParams.update({
     'font.family':        'serif',
     'font.size':          8,
-    'axes.labelsize':     7.5,
+    'axes.labelsize':     10,
     'axes.titlesize':     8,
     'axes.titleweight':   'normal',
-    'xtick.labelsize':    6.5,
-    'ytick.labelsize':    6.5,
-    'legend.fontsize':    6.5,
+    'xtick.labelsize':    9,
+    'ytick.labelsize':    9,
+    'legend.fontsize':    9,
     'legend.framealpha':  1.0,
     'legend.edgecolor':   '#aaaaaa',
     'legend.borderpad':   0.3,
@@ -244,7 +244,7 @@ def plot_fig_a1_by_storage(sens: dict, out_dir: Path):
                     f'{DIM_LABELS[dim]} Δ={delta:.3f}',
                     transform=ax.transAxes,
                     ha='right', va='bottom',
-                    fontsize=6,
+                    fontsize=9,
                     color=DIM_COLORS[dim])
             y_pos += 0.10
 
@@ -363,7 +363,7 @@ def plot_fig_a2_by_mode(sens: dict, out_dir: Path):
                     f'{DIM_LABELS[dim]} Δ={delta:.3f}',
                     transform=ax.transAxes,
                     ha='right', va='bottom',
-                    fontsize=6,
+                    fontsize=9,
                     color=DIM_COLORS[dim])
             y_pos += 0.10
 
