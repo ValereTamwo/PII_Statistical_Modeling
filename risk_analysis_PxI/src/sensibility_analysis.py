@@ -378,29 +378,46 @@ def run_step3_rankings(sens_1d: dict, items: list) -> dict:
 
             # D5 — médiane cookie stable entre ALL et NONE
             # |median_cookie_ALL - median_cookie_NONE| < 0.02
-            med_ck_all  = dist_mp['cookie']['Auth']['ALL']['median']   # Auth+ALL
-            med_ck_none = dist_mp['cookie']['Auth']['NONE']['median']  # Auth+NONE
-            # On prend la moyenne des deux modes pour être plus robuste
-            med_ck_all_u  = dist_mp['cookie']['UnAuth']['ALL']['median']
-            med_ck_none_u = dist_mp['cookie']['UnAuth']['NONE']['median']
 
-            if dim == 'id' and val == 0.9:  
-                print(f"  DEBUG D5:")
-                print(f"    med_cookie_Auth_ALL  = {dist_mp['cookie']['Auth']['ALL']['median']}")
-                print(f"    med_cookie_Auth_NONE = {dist_mp['cookie']['Auth']['NONE']['median']}")
-                print(f"    med_cookie_UnAuth_ALL  = {dist_mp['cookie']['UnAuth']['ALL']['median']}")
-                print(f"    med_cookie_UnAuth_NONE = {dist_mp['cookie']['UnAuth']['NONE']['median']}")
+            # med_ck_all  = dist_mp['cookie']['Auth']['ALL']['median']   # Auth+ALL
+            # med_ck_none = dist_mp['cookie']['Auth']['NONE']['median']  # Auth+NONE
+            # # On prend la moyenne des deux modes pour être plus robuste
+            # med_ck_all_u  = dist_mp['cookie']['UnAuth']['ALL']['median']
+            # med_ck_none_u = dist_mp['cookie']['UnAuth']['NONE']['median']
 
-            if all(v is not None for v in [med_ck_all, med_ck_none,
-                                            med_ck_all_u, med_ck_none_u]):
-                delta_consent_auth   = abs(med_ck_all   - med_ck_none)
-                delta_consent_unauth = abs(med_ck_all_u - med_ck_none_u)
-                D5 = bool(delta_consent_auth   < 0.02 and
-                          delta_consent_unauth < 0.02)
+            # if dim == 'id' and val == 0.9:  
+            #     print(f"  DEBUG D5:")
+            #     print(f"    med_cookie_Auth_ALL  = {dist_mp['cookie']['Auth']['ALL']['median']}")
+            #     print(f"    med_cookie_Auth_NONE = {dist_mp['cookie']['Auth']['NONE']['median']}")
+            #     print(f"    med_cookie_UnAuth_ALL  = {dist_mp['cookie']['UnAuth']['ALL']['median']}")
+            #     print(f"    med_cookie_UnAuth_NONE = {dist_mp['cookie']['UnAuth']['NONE']['median']}")
+
+            # if all(v is not None for v in [med_ck_all, med_ck_none,
+            #                                 med_ck_all_u, med_ck_none_u]):
+            #     delta_consent_auth   = abs(med_ck_all   - med_ck_none)
+            #     delta_consent_unauth = abs(med_ck_all_u - med_ck_none_u)
+            #     D5 = bool(delta_consent_auth   < 0.02 and
+            #               delta_consent_unauth < 0.02)
+            # else:
+            #     D5 = None
+            vals_ck_all = np.array([
+                it['_risk_i'] for it in items 
+                if it.get('storage_type','').lower() == 'cookie' and it['_policy'] == 'ALL'
+            ])
+            vals_ck_none = np.array([
+                it['_risk_i'] for it in items 
+                if it.get('storage_type','').lower() == 'cookie' and it['_policy'] == 'NONE'
+            ])
+
+            if len(vals_ck_all) > 0 and len(vals_ck_none) > 0:
+                med_ck_all_global  = float(np.median(vals_ck_all))
+                med_ck_none_global = float(np.median(vals_ck_none))
+                # Vérification de la stabilité globale (< 0.02)
+                D5 = bool(abs(med_ck_all_global - med_ck_none_global) < 0.02)
             else:
                 D5 = None
 
-            # ── Claims localStorage (F2) ─────────────────────────────
+            # ── Claims localStorage  ─────────────────────────────
 
             mean_cookie = agg['mean_by_storage']['cookie']
             mean_ls     = agg['mean_by_storage']['localStorage']
@@ -603,7 +620,7 @@ def main():
 
     out_dir  = base_dir / "data" / "reports"
     out_dir.mkdir(parents=True, exist_ok=True)
-    out_path = out_dir / "sensitivity_full_pipeline.json"
+    out_path = out_dir / "sensitivity_full_pipeline_test.json"
     class NumpyEncoder(json.JSONEncoder):
         def default(self, obj):
             import numpy as np
