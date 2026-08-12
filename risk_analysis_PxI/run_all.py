@@ -60,6 +60,10 @@ def main():
     if not run_script(SRC_DIR / "sensibility_analysis.py", "Sensitivity Analysis (Full Grid)"): return
     if not run_script(SRC_DIR / "sensibility_analysis_viz.py", "Sensitivity Visualizations (Appendix)"): return
 
+    # 5. Within-Tier Robustness (Level 1)
+    print("\n--- PHASE 5: WITHIN-TIER ROBUSTNESS (Level 1) ---")
+    if not run_script(SRC_DIR / "within_tier_analysis.py", "Within-Tier Robustness Analysis (z_W × z_S grid)"): return
+
     print("\n" + "#"*80)
     print("#" + " "*26 + "RISK PIPELINE COMPLETED" + " "*29 + "#")
     print("#"*80 + "\n")

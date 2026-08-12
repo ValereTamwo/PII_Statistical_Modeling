@@ -1,0 +1,771 @@
+{
+  "metadata": {
+    "analysis": "within_tier_robustness_level1",
+    "grid": {
+      "z_W": [
+        0.1,
+        0.2,
+        0.3
+      ],
+      "z_S": [
+        0.5,
+        0.6,
+        0.7
+      ]
+    },
+    "n_configs": 9,
+    "alphas_used": {
+      "id": 0.9,
+      "ato": 0.95,
+      "link": 0.85,
+      "loc": 0.75,
+      "prof": 0.7,
+      "env": 0.5
+    },
+    "n_items": 141761
+  },
+  "audit": {
+    "violations": []
+  },
+  "configurations": {
+    "zW=0.1_zS=0.5": {
+      "z_W": 0.1,
+      "z_S": 0.5,
+      "global_mean_ii": 0.7785,
+      "global_mean_ri": 0.5613,
+      "mean_by_storage": {
+        "cookie": 0.5844,
+        "localStorage": 0.5837,
+        "sessionStorage": 0.4505,
+        "IndexedDB": 0.5497
+      },
+      "mean_by_mode": {
+        "Auth": 0.56,
+        "UnAuth": 0.5619
+      },
+      "mean_by_policy": {
+        "ALL": 0.5665,
+        "PARTIAL": 0.5583,
+        "NONE": 0.5562
+      },
+      "dist_by_storage": {
+        "cookie": {
+          "n": 45783,
+          "mean": 0.5844,
+          "median": 0.6794,
+          "q1": 0.3821,
+          "q3": 0.8118,
+          "iqr": 0.4297
+        },
+        "localStorage": {
+          "n": 12921,
+          "mean": 0.5837,
+          "median": 0.5577,
+          "q1": 0.4937,
+          "q3": 0.7898,
+          "iqr": 0.2961
+        },
+        "sessionStorage": {
+          "n": 3937,
+          "mean": 0.4505,
+          "median": 0.3874,
+          "q1": 0.3874,
+          "q3": 0.6759,
+          "iqr": 0.2885
+        },
+        "IndexedDB": {
+          "n": 79120,
+          "mean": 0.5497,
+          "median": 0.5577,
+          "q1": 0.5577,
+          "q3": 0.5577,
+          "iqr": 0.0
+        }
+      },
+      "findings": {
+        "M1_auth_unauth_equiv": true,
+        "M2_all_gt_none": true,
+        "M3_cookie_gt_ss": true,
+        "M4_cookie_gt_idb": true,
+        "M5_ls_equiv_cookie": true,
+        "M6_ls_gt_ss": true,
+        "M7_ls_gt_idb": true,
+        "D1_median_cookie_gt_ss": true,
+        "D2_idb_iqr_zero": true,
+        "D3_iqr_cookie_gt_ss": true,
+        "D4_median_mode_equiv": true,
+        "D5_cookie_median_stable": true,
+        "D6_median_ls_equiv_cookie": false,
+        "D7_iqr_ls_lt_cookie": true
+      }
+    },
+    "zW=0.1_zS=0.6": {
+      "z_W": 0.1,
+      "z_S": 0.6,
+      "global_mean_ii": 0.8031,
+      "global_mean_ri": 0.5785,
+      "mean_by_storage": {
+        "cookie": 0.6008,
+        "localStorage": 0.6011,
+        "sessionStorage": 0.4637,
+        "IndexedDB": 0.5676
+      },
+      "mean_by_mode": {
+        "Auth": 0.5773,
+        "UnAuth": 0.5792
+      },
+      "mean_by_policy": {
+        "ALL": 0.5836,
+        "PARTIAL": 0.5756,
+        "NONE": 0.5737
+      },
+      "dist_by_storage": {
+        "cookie": {
+          "n": 45783,
+          "mean": 0.6008,
+          "median": 0.6873,
+          "q1": 0.4274,
+          "q3": 0.8212,
+          "iqr": 0.3939
+        },
+        "localStorage": {
+          "n": 12921,
+          "mean": 0.6011,
+          "median": 0.5858,
+          "q1": 0.5326,
+          "q3": 0.799,
+          "iqr": 0.2663
+        },
+        "sessionStorage": {
+          "n": 3937,
+          "mean": 0.4637,
+          "median": 0.4016,
+          "q1": 0.3993,
+          "q3": 0.6837,
+          "iqr": 0.2845
+        },
+        "IndexedDB": {
+          "n": 79120,
+          "mean": 0.5676,
+          "median": 0.5748,
+          "q1": 0.5748,
+          "q3": 0.5748,
+          "iqr": 0.0
+        }
+      },
+      "findings": {
+        "M1_auth_unauth_equiv": true,
+        "M2_all_gt_none": true,
+        "M3_cookie_gt_ss": true,
+        "M4_cookie_gt_idb": true,
+        "M5_ls_equiv_cookie": true,
+        "M6_ls_gt_ss": true,
+        "M7_ls_gt_idb": true,
+        "D1_median_cookie_gt_ss": true,
+        "D2_idb_iqr_zero": true,
+        "D3_iqr_cookie_gt_ss": true,
+        "D4_median_mode_equiv": true,
+        "D5_cookie_median_stable": true,
+        "D6_median_ls_equiv_cookie": false,
+        "D7_iqr_ls_lt_cookie": true
+      }
+    },
+    "zW=0.1_zS=0.7": {
+      "z_W": 0.1,
+      "z_S": 0.7,
+      "global_mean_ii": 0.8276,
+      "global_mean_ri": 0.5957,
+      "mean_by_storage": {
+        "cookie": 0.6171,
+        "localStorage": 0.6182,
+        "sessionStorage": 0.4768,
+        "IndexedDB": 0.5855
+      },
+      "mean_by_mode": {
+        "Auth": 0.5945,
+        "UnAuth": 0.5963
+      },
+      "mean_by_policy": {
+        "ALL": 0.6006,
+        "PARTIAL": 0.5927,
+        "NONE": 0.5912
+      },
+      "dist_by_storage": {
+        "cookie": {
+          "n": 45783,
+          "mean": 0.6171,
+          "median": 0.6952,
+          "q1": 0.4679,
+          "q3": 0.8307,
+          "iqr": 0.3628
+        },
+        "localStorage": {
+          "n": 12921,
+          "mean": 0.6182,
+          "median": 0.6193,
+          "q1": 0.58,
+          "q3": 0.8082,
+          "iqr": 0.2282
+        },
+        "sessionStorage": {
+          "n": 3937,
+          "mean": 0.4768,
+          "median": 0.4198,
+          "q1": 0.4112,
+          "q3": 0.6916,
+          "iqr": 0.2804
+        },
+        "IndexedDB": {
+          "n": 79120,
+          "mean": 0.5855,
+          "median": 0.592,
+          "q1": 0.592,
+          "q3": 0.592,
+          "iqr": 0.0
+        }
+      },
+      "findings": {
+        "M1_auth_unauth_equiv": true,
+        "M2_all_gt_none": true,
+        "M3_cookie_gt_ss": true,
+        "M4_cookie_gt_idb": true,
+        "M5_ls_equiv_cookie": true,
+        "M6_ls_gt_ss": true,
+        "M7_ls_gt_idb": true,
+        "D1_median_cookie_gt_ss": true,
+        "D2_idb_iqr_zero": true,
+        "D3_iqr_cookie_gt_ss": true,
+        "D4_median_mode_equiv": true,
+        "D5_cookie_median_stable": true,
+        "D6_median_ls_equiv_cookie": true,
+        "D7_iqr_ls_lt_cookie": true
+      }
+    },
+    "zW=0.2_zS=0.5": {
+      "z_W": 0.2,
+      "z_S": 0.5,
+      "global_mean_ii": 0.7915,
+      "global_mean_ri": 0.5699,
+      "mean_by_storage": {
+        "cookie": 0.5989,
+        "localStorage": 0.5958,
+        "sessionStorage": 0.4582,
+        "IndexedDB": 0.5545
+      },
+      "mean_by_mode": {
+        "Auth": 0.5702,
+        "UnAuth": 0.5697
+      },
+      "mean_by_policy": {
+        "ALL": 0.5738,
+        "PARTIAL": 0.5685,
+        "NONE": 0.5655
+      },
+      "dist_by_storage": {
+        "cookie": {
+          "n": 45783,
+          "mean": 0.5989,
+          "median": 0.6794,
+          "q1": 0.4198,
+          "q3": 0.8118,
+          "iqr": 0.392
+        },
+        "localStorage": {
+          "n": 12921,
+          "mean": 0.5958,
+          "median": 0.5577,
+          "q1": 0.5073,
+          "q3": 0.7898,
+          "iqr": 0.2825
+        },
+        "sessionStorage": {
+          "n": 3937,
+          "mean": 0.4582,
+          "median": 0.3874,
+          "q1": 0.3874,
+          "q3": 0.6759,
+          "iqr": 0.2885
+        },
+        "IndexedDB": {
+          "n": 79120,
+          "mean": 0.5545,
+          "median": 0.5577,
+          "q1": 0.5577,
+          "q3": 0.5577,
+          "iqr": 0.0
+        }
+      },
+      "findings": {
+        "M1_auth_unauth_equiv": true,
+        "M2_all_gt_none": true,
+        "M3_cookie_gt_ss": true,
+        "M4_cookie_gt_idb": true,
+        "M5_ls_equiv_cookie": true,
+        "M6_ls_gt_ss": true,
+        "M7_ls_gt_idb": true,
+        "D1_median_cookie_gt_ss": true,
+        "D2_idb_iqr_zero": true,
+        "D3_iqr_cookie_gt_ss": true,
+        "D4_median_mode_equiv": true,
+        "D5_cookie_median_stable": true,
+        "D6_median_ls_equiv_cookie": false,
+        "D7_iqr_ls_lt_cookie": true
+      }
+    },
+    "zW=0.2_zS=0.6": {
+      "z_W": 0.2,
+      "z_S": 0.6,
+      "global_mean_ii": 0.8154,
+      "global_mean_ri": 0.5866,
+      "mean_by_storage": {
+        "cookie": 0.6144,
+        "localStorage": 0.6124,
+        "sessionStorage": 0.4708,
+        "IndexedDB": 0.5721
+      },
+      "mean_by_mode": {
+        "Auth": 0.5868,
+        "UnAuth": 0.5865
+      },
+      "mean_by_policy": {
+        "ALL": 0.5904,
+        "PARTIAL": 0.5851,
+        "NONE": 0.5824
+      },
+      "dist_by_storage": {
+        "cookie": {
+          "n": 45783,
+          "mean": 0.6144,
+          "median": 0.6873,
+          "q1": 0.455,
+          "q3": 0.8212,
+          "iqr": 0.3663
+        },
+        "localStorage": {
+          "n": 12921,
+          "mean": 0.6124,
+          "median": 0.5858,
+          "q1": 0.5433,
+          "q3": 0.799,
+          "iqr": 0.2557
+        },
+        "sessionStorage": {
+          "n": 3937,
+          "mean": 0.4708,
+          "median": 0.4016,
+          "q1": 0.3993,
+          "q3": 0.6837,
+          "iqr": 0.2845
+        },
+        "IndexedDB": {
+          "n": 79120,
+          "mean": 0.5721,
+          "median": 0.5748,
+          "q1": 0.5748,
+          "q3": 0.5748,
+          "iqr": 0.0
+        }
+      },
+      "findings": {
+        "M1_auth_unauth_equiv": true,
+        "M2_all_gt_none": true,
+        "M3_cookie_gt_ss": true,
+        "M4_cookie_gt_idb": true,
+        "M5_ls_equiv_cookie": true,
+        "M6_ls_gt_ss": true,
+        "M7_ls_gt_idb": true,
+        "D1_median_cookie_gt_ss": true,
+        "D2_idb_iqr_zero": true,
+        "D3_iqr_cookie_gt_ss": true,
+        "D4_median_mode_equiv": true,
+        "D5_cookie_median_stable": true,
+        "D6_median_ls_equiv_cookie": false,
+        "D7_iqr_ls_lt_cookie": true
+      }
+    },
+    "zW=0.2_zS=0.7": {
+      "z_W": 0.2,
+      "z_S": 0.7,
+      "global_mean_ii": 0.8391,
+      "global_mean_ri": 0.6033,
+      "mean_by_storage": {
+        "cookie": 0.6299,
+        "localStorage": 0.6287,
+        "sessionStorage": 0.4832,
+        "IndexedDB": 0.5897
+      },
+      "mean_by_mode": {
+        "Auth": 0.6033,
+        "UnAuth": 0.6032
+      },
+      "mean_by_policy": {
+        "ALL": 0.6069,
+        "PARTIAL": 0.6016,
+        "NONE": 0.5993
+      },
+      "dist_by_storage": {
+        "cookie": {
+          "n": 45783,
+          "mean": 0.6299,
+          "median": 0.6952,
+          "q1": 0.4762,
+          "q3": 0.8307,
+          "iqr": 0.3545
+        },
+        "localStorage": {
+          "n": 12921,
+          "mean": 0.6287,
+          "median": 0.6223,
+          "q1": 0.5871,
+          "q3": 0.8082,
+          "iqr": 0.2211
+        },
+        "sessionStorage": {
+          "n": 3937,
+          "mean": 0.4832,
+          "median": 0.4319,
+          "q1": 0.4112,
+          "q3": 0.6916,
+          "iqr": 0.2804
+        },
+        "IndexedDB": {
+          "n": 79120,
+          "mean": 0.5897,
+          "median": 0.592,
+          "q1": 0.592,
+          "q3": 0.592,
+          "iqr": 0.0
+        }
+      },
+      "findings": {
+        "M1_auth_unauth_equiv": true,
+        "M2_all_gt_none": true,
+        "M3_cookie_gt_ss": true,
+        "M4_cookie_gt_idb": true,
+        "M5_ls_equiv_cookie": true,
+        "M6_ls_gt_ss": true,
+        "M7_ls_gt_idb": true,
+        "D1_median_cookie_gt_ss": true,
+        "D2_idb_iqr_zero": true,
+        "D3_iqr_cookie_gt_ss": true,
+        "D4_median_mode_equiv": true,
+        "D5_cookie_median_stable": true,
+        "D6_median_ls_equiv_cookie": true,
+        "D7_iqr_ls_lt_cookie": true
+      }
+    },
+    "zW=0.3_zS=0.5": {
+      "z_W": 0.3,
+      "z_S": 0.5,
+      "global_mean_ii": 0.8037,
+      "global_mean_ri": 0.5781,
+      "mean_by_storage": {
+        "cookie": 0.6126,
+        "localStorage": 0.6073,
+        "sessionStorage": 0.4657,
+        "IndexedDB": 0.5589
+      },
+      "mean_by_mode": {
+        "Auth": 0.5798,
+        "UnAuth": 0.5771
+      },
+      "mean_by_policy": {
+        "ALL": 0.5806,
+        "PARTIAL": 0.578,
+        "NONE": 0.5742
+      },
+      "dist_by_storage": {
+        "cookie": {
+          "n": 45783,
+          "mean": 0.6126,
+          "median": 0.6794,
+          "q1": 0.4525,
+          "q3": 0.8118,
+          "iqr": 0.3593
+        },
+        "localStorage": {
+          "n": 12921,
+          "mean": 0.6073,
+          "median": 0.5747,
+          "q1": 0.5208,
+          "q3": 0.7898,
+          "iqr": 0.2689
+        },
+        "sessionStorage": {
+          "n": 3937,
+          "mean": 0.4657,
+          "median": 0.3874,
+          "q1": 0.3874,
+          "q3": 0.6759,
+          "iqr": 0.2885
+        },
+        "IndexedDB": {
+          "n": 79120,
+          "mean": 0.5589,
+          "median": 0.5577,
+          "q1": 0.5577,
+          "q3": 0.5577,
+          "iqr": 0.0
+        }
+      },
+      "findings": {
+        "M1_auth_unauth_equiv": true,
+        "M2_all_gt_none": true,
+        "M3_cookie_gt_ss": true,
+        "M4_cookie_gt_idb": true,
+        "M5_ls_equiv_cookie": true,
+        "M6_ls_gt_ss": true,
+        "M7_ls_gt_idb": true,
+        "D1_median_cookie_gt_ss": true,
+        "D2_idb_iqr_zero": true,
+        "D3_iqr_cookie_gt_ss": true,
+        "D4_median_mode_equiv": true,
+        "D5_cookie_median_stable": true,
+        "D6_median_ls_equiv_cookie": false,
+        "D7_iqr_ls_lt_cookie": true
+      }
+    },
+    "zW=0.3_zS=0.6": {
+      "z_W": 0.3,
+      "z_S": 0.6,
+      "global_mean_ii": 0.8269,
+      "global_mean_ri": 0.5943,
+      "mean_by_storage": {
+        "cookie": 0.6272,
+        "localStorage": 0.623,
+        "sessionStorage": 0.4776,
+        "IndexedDB": 0.5763
+      },
+      "mean_by_mode": {
+        "Auth": 0.5958,
+        "UnAuth": 0.5934
+      },
+      "mean_by_policy": {
+        "ALL": 0.5968,
+        "PARTIAL": 0.5941,
+        "NONE": 0.5906
+      },
+      "dist_by_storage": {
+        "cookie": {
+          "n": 45783,
+          "mean": 0.6272,
+          "median": 0.6873,
+          "q1": 0.4707,
+          "q3": 0.8212,
+          "iqr": 0.3505
+        },
+        "localStorage": {
+          "n": 12921,
+          "mean": 0.623,
+          "median": 0.5858,
+          "q1": 0.5539,
+          "q3": 0.799,
+          "iqr": 0.2451
+        },
+        "sessionStorage": {
+          "n": 3937,
+          "mean": 0.4776,
+          "median": 0.4253,
+          "q1": 0.3993,
+          "q3": 0.6837,
+          "iqr": 0.2845
+        },
+        "IndexedDB": {
+          "n": 79120,
+          "mean": 0.5763,
+          "median": 0.5748,
+          "q1": 0.5748,
+          "q3": 0.5748,
+          "iqr": 0.0
+        }
+      },
+      "findings": {
+        "M1_auth_unauth_equiv": true,
+        "M2_all_gt_none": true,
+        "M3_cookie_gt_ss": true,
+        "M4_cookie_gt_idb": true,
+        "M5_ls_equiv_cookie": true,
+        "M6_ls_gt_ss": true,
+        "M7_ls_gt_idb": true,
+        "D1_median_cookie_gt_ss": true,
+        "D2_idb_iqr_zero": true,
+        "D3_iqr_cookie_gt_ss": true,
+        "D4_median_mode_equiv": true,
+        "D5_cookie_median_stable": true,
+        "D6_median_ls_equiv_cookie": false,
+        "D7_iqr_ls_lt_cookie": true
+      }
+    },
+    "zW=0.3_zS=0.7": {
+      "z_W": 0.3,
+      "z_S": 0.7,
+      "global_mean_ii": 0.8499,
+      "global_mean_ri": 0.6104,
+      "mean_by_storage": {
+        "cookie": 0.6418,
+        "localStorage": 0.6385,
+        "sessionStorage": 0.4893,
+        "IndexedDB": 0.5936
+      },
+      "mean_by_mode": {
+        "Auth": 0.6117,
+        "UnAuth": 0.6097
+      },
+      "mean_by_policy": {
+        "ALL": 0.6129,
+        "PARTIAL": 0.61,
+        "NONE": 0.607
+      },
+      "dist_by_storage": {
+        "cookie": {
+          "n": 45783,
+          "mean": 0.6418,
+          "median": 0.6952,
+          "q1": 0.4762,
+          "q3": 0.8307,
+          "iqr": 0.3545
+        },
+        "localStorage": {
+          "n": 12921,
+          "mean": 0.6385,
+          "median": 0.6223,
+          "q1": 0.592,
+          "q3": 0.8082,
+          "iqr": 0.2161
+        },
+        "sessionStorage": {
+          "n": 3937,
+          "mean": 0.4893,
+          "median": 0.447,
+          "q1": 0.4112,
+          "q3": 0.6916,
+          "iqr": 0.2804
+        },
+        "IndexedDB": {
+          "n": 79120,
+          "mean": 0.5936,
+          "median": 0.592,
+          "q1": 0.592,
+          "q3": 0.592,
+          "iqr": 0.0
+        }
+      },
+      "findings": {
+        "M1_auth_unauth_equiv": true,
+        "M2_all_gt_none": true,
+        "M3_cookie_gt_ss": true,
+        "M4_cookie_gt_idb": true,
+        "M5_ls_equiv_cookie": true,
+        "M6_ls_gt_ss": true,
+        "M7_ls_gt_idb": true,
+        "D1_median_cookie_gt_ss": true,
+        "D2_idb_iqr_zero": true,
+        "D3_iqr_cookie_gt_ss": true,
+        "D4_median_mode_equiv": true,
+        "D5_cookie_median_stable": true,
+        "D6_median_ls_equiv_cookie": true,
+        "D7_iqr_ls_lt_cookie": true
+      }
+    }
+  },
+  "robustness_summary": {
+    "M1_auth_unauth_equiv": {
+      "label": "F6 : |mean_Auth - mean_UnAuth| < 0.05",
+      "level": "mean",
+      "ok": 9,
+      "total": 9,
+      "classification": "Invariant"
+    },
+    "M2_all_gt_none": {
+      "label": "F2 : mean_ALL >= mean_NONE",
+      "level": "mean",
+      "ok": 9,
+      "total": 9,
+      "classification": "Invariant"
+    },
+    "M3_cookie_gt_ss": {
+      "label": "F1/F4 : mean_cookie > mean_sessionStorage",
+      "level": "mean",
+      "ok": 9,
+      "total": 9,
+      "classification": "Invariant"
+    },
+    "M4_cookie_gt_idb": {
+      "label": "F1/F5 : mean_cookie > mean_IndexedDB",
+      "level": "mean",
+      "ok": 9,
+      "total": 9,
+      "classification": "Invariant"
+    },
+    "M5_ls_equiv_cookie": {
+      "label": "F3 : |mean_localStorage - mean_cookie| < 0.07",
+      "level": "mean",
+      "ok": 9,
+      "total": 9,
+      "classification": "Invariant"
+    },
+    "M6_ls_gt_ss": {
+      "label": "F3/F4 : mean_localStorage > mean_sessionStorage",
+      "level": "mean",
+      "ok": 9,
+      "total": 9,
+      "classification": "Invariant"
+    },
+    "M7_ls_gt_idb": {
+      "label": "F3/F5 : mean_localStorage > mean_IndexedDB",
+      "level": "mean",
+      "ok": 9,
+      "total": 9,
+      "classification": "Invariant"
+    },
+    "D1_median_cookie_gt_ss": {
+      "label": "F1/F4 : median_cookie > median_sessionStorage",
+      "level": "dist",
+      "ok": 9,
+      "total": 9,
+      "classification": "Invariant"
+    },
+    "D2_idb_iqr_zero": {
+      "label": "F5 : IQR_IndexedDB = 0",
+      "level": "dist",
+      "ok": 9,
+      "total": 9,
+      "classification": "Invariant"
+    },
+    "D3_iqr_cookie_gt_ss": {
+      "label": "F1 : IQR_cookie > IQR_sessionStorage",
+      "level": "dist",
+      "ok": 9,
+      "total": 9,
+      "classification": "Invariant"
+    },
+    "D4_median_mode_equiv": {
+      "label": "F6 : |median_Auth - median_UnAuth| < 0.01",
+      "level": "dist",
+      "ok": 9,
+      "total": 9,
+      "classification": "Invariant"
+    },
+    "D5_cookie_median_stable": {
+      "label": "F4 : |median_cookie_ALL - median_cookie_NONE| < 0.02",
+      "level": "dist",
+      "ok": 9,
+      "total": 9,
+      "classification": "Invariant"
+    },
+    "D6_median_ls_equiv_cookie": {
+      "label": "F3 : |median_localStorage - median_cookie| < 0.09",
+      "level": "dist",
+      "ok": 3,
+      "total": 9,
+      "classification": "Sensitive"
+    },
+    "D7_iqr_ls_lt_cookie": {
+      "label": "F3 : IQR_localStorage < IQR_cookie",
+      "level": "dist",
+      "ok": 9,
+      "total": 9,
+      "classification": "Invariant"
+    }
+  }
+}
