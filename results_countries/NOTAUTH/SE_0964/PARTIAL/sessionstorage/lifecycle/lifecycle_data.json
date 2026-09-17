@@ -1,0 +1,129 @@
+{
+  "storage_type": "sessionstorage",
+  "metrics": {
+    "total_items": 51,
+    "items_modified": 14,
+    "items_deleted": 21,
+    "entropy_increases": 13,
+    "entropy_decreases": 7,
+    "size_increases": 5,
+    "size_decreases": 4,
+    "pii_transitions": {
+      "APP_STATE_STORAGE -> BEHAVIORAL_DATA": 1,
+      "DIRECT_PII -> ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "DIRECT_PII_KEYS -> LOCATION_AND_DEMOGRAPHICS": 1,
+      "BEHAVIORAL_DATA -> DIRECT_PII_KEYS": 1,
+      "ID_SOLUTIONS_AND_EXCHANGES -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "DEVICE_ENV -> NAVIGATION_HISTORY": 1,
+      "IDENTITY_TRACKING -> ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "NAVIGATION_HISTORY -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "IDENTITY_TRACKING -> BEHAVIORAL_DATA": 1,
+      "IDENTITY_TRACKING -> UX_AND_PERFORMANCE_ANALYTICS": 4,
+      "IDENTITY_TRACKING -> NAVIGATION_HISTORY": 1,
+      "DIRECT_PII_KEYS -> NAVIGATION_HISTORY": 1,
+      "SESSION_MANAGEMENT -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "IDENTITY_TRACKING -> SESSION_MANAGEMENT": 1
+    },
+    "volatility_distribution": {
+      "stable": 21,
+      "moderate": 14,
+      "high": 16
+    },
+    "change_frequency": {
+      "avg_gap": 47.85401459854015,
+      "min_gap": 0,
+      "max_gap": 350
+    },
+    "frequent_changes": [
+      {
+        "key": "user-storage",
+        "avg_gap": 0.0,
+        "num_modifications": 2,
+        "pii_category": "LOCATION_AND_DEMOGRAPHICS"
+      },
+      {
+        "key": "_teal_previous_page_url",
+        "avg_gap": 13.0,
+        "num_modifications": 4,
+        "pii_category": "NAVIGATION_HISTORY"
+      },
+      {
+        "key": "usersession",
+        "avg_gap": 23.857142857142858,
+        "num_modifications": 15,
+        "pii_category": "NAVIGATION_HISTORY"
+      },
+      {
+        "key": "AI_buffer",
+        "avg_gap": 29.0,
+        "num_modifications": 11,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "QSI_HistorySession",
+        "avg_gap": 32.5,
+        "num_modifications": 2,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "History.store",
+        "avg_gap": 35.15384615384615,
+        "num_modifications": 6,
+        "pii_category": "ID_SOLUTIONS_AND_EXCHANGES"
+      },
+      {
+        "key": "com.grafana.faro.session",
+        "avg_gap": 46.2,
+        "num_modifications": 6,
+        "pii_category": "SESSION_MANAGEMENT"
+      }
+    ],
+    "url_modifications": {
+      "www.manpower.se": 15,
+      "www.trygghansa.se": 8,
+      "www.gjensidige.se": 8,
+      "artportalen.se": 4,
+      "servicefinder.se": 3,
+      "se.jobtome.com": 3,
+      "www.saco.se": 3,
+      "app.bokio.se": 3,
+      "thatsup.se": 3,
+      "www.randstad.se": 3
+    },
+    "pii_modification_patterns": {
+      "ID_SOLUTIONS_AND_EXCHANGES": {
+        "count": 9,
+        "avg_gap": 49.13333333333333
+      },
+      "LOCATION_AND_DEMOGRAPHICS": {
+        "count": 2,
+        "avg_gap": 0.0
+      },
+      "DEVICE_ENV": {
+        "count": 3,
+        "avg_gap": 171.5
+      },
+      "BEHAVIORAL_DATA": {
+        "count": 19,
+        "avg_gap": 51.94736842105263
+      },
+      "NAVIGATION_HISTORY": {
+        "count": 22,
+        "avg_gap": 28.38095238095238
+      },
+      "UX_AND_PERFORMANCE_ANALYTICS": {
+        "count": 2,
+        "avg_gap": 32.5
+      },
+      "USER_PREFERENCES": {
+        "count": 1,
+        "avg_gap": 99.0
+      },
+      "SESSION_MANAGEMENT": {
+        "count": 6,
+        "avg_gap": 46.2
+      }
+    }
+  },
+  "num_timelines": 51
+}

@@ -1,0 +1,622 @@
+<title>Country PII Pipeline</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap">
+<style>
+  :root {
+    --bg: #eff2ee;
+    --surface: #ffffff;
+    --surface-2: #f5f7f4;
+    --ink: #17211c;
+    --ink-muted: #55655c;
+    --line: #d7ded6;
+    --accent: #2f6e5c;
+    --accent-ink: #ffffff;
+    --accent-soft: #dceae3;
+    --warn: #a85a22;
+    --warn-soft: #f3e3d3;
+    --warn-ink: #4a2a10;
+    --chip-bg: #101915;
+    --chip-ink: #cfe8dc;
+    --blueprint-bg: #eaf1ef;
+    --blueprint-ink: #123028;
+    --serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+    --mono: 'JetBrains Mono', 'SF Mono', Consolas, monospace;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f1613;
+      --surface: #16201b;
+      --surface-2: #1c2822;
+      --ink: #e7eeea;
+      --ink-muted: #9baea4;
+      --line: #2a3931;
+      --accent: #6fbfa3;
+      --accent-ink: #0b1512;
+      --accent-soft: #1e332c;
+      --warn: #e2934f;
+      --warn-soft: #3a2a1a;
+      --warn-ink: #f7dcbd;
+      --chip-bg: #0a100d;
+      --chip-ink: #bfe3d2;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #0f1613;
+    --surface: #16201b;
+    --surface-2: #1c2822;
+    --ink: #e7eeea;
+    --ink-muted: #9baea4;
+    --line: #2a3931;
+    --accent: #6fbfa3;
+    --accent-ink: #0b1512;
+    --accent-soft: #1e332c;
+    --warn: #e2934f;
+    --warn-soft: #3a2a1a;
+    --warn-ink: #f7dcbd;
+    --chip-bg: #0a100d;
+    --chip-ink: #bfe3d2;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--serif);
+    padding-inline: 20px;
+    padding-block: 40px;
+  }
+
+  .page {
+    max-width: 880px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  header.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 28px;
+  }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  h1 {
+    font-family: var(--mono);
+    font-size: clamp(28px, 4.5vw, 38px);
+    font-weight: 700;
+    margin: 0;
+    text-wrap: balance;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+  }
+
+  .subtitle {
+    font-size: 17px;
+    color: var(--ink-muted);
+    max-width: 62ch;
+    line-height: 1.55;
+    margin: 0;
+  }
+
+  .meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 4px;
+  }
+
+  .meta-chip {
+    font-family: var(--mono);
+    font-size: 12px;
+    background: var(--surface-2);
+    border: 1px solid var(--line);
+    color: var(--ink-muted);
+    padding: 4px 10px;
+    border-radius: 4px;
+  }
+
+  section.block {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .section-label {
+    font-family: var(--mono);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink);
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+
+  .section-label::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--line);
+  }
+
+  .diagram-frame {
+    background: var(--blueprint-bg);
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    padding: 20px;
+    overflow-x: auto;
+  }
+
+  .diagram-frame pre.mermaid {
+    margin: 0;
+    min-width: 640px;
+  }
+
+  .diagram-caption {
+    font-size: 14px;
+    color: var(--ink-muted);
+    line-height: 1.6;
+  }
+
+  .phase-intro {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .phase-name {
+    font-family: var(--mono);
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--accent);
+  }
+
+  .phase-desc {
+    font-size: 15px;
+    color: var(--ink-muted);
+  }
+
+  .stage-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    overflow: hidden;
+    background: var(--surface);
+  }
+
+  .stage {
+    display: grid;
+    grid-template-columns: 44px 1fr;
+    gap: 16px;
+    padding: 20px 20px;
+    border-top: 1px solid var(--line);
+  }
+
+  .stage:first-child { border-top: none; }
+
+  .stage.start { background: var(--accent-soft); }
+  .stage.terminus {
+    background: var(--accent);
+    color: var(--accent-ink);
+  }
+  .stage.terminus .stage-title,
+  .stage.terminus .field-label,
+  .stage.terminus .observe-label { color: var(--accent-ink); }
+  .stage.terminus .path code { background: rgba(0,0,0,0.28); color: var(--accent-ink); }
+  .stage.terminus .observe { background: rgba(0,0,0,0.18); border-color: transparent; }
+  .stage.terminus .observe-label { color: var(--accent-ink); }
+  .stage.terminus .observe-text { color: var(--accent-ink); }
+
+  .stage-num {
+    font-family: var(--mono);
+    font-weight: 700;
+    font-size: 15px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--surface-2);
+    border: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .stage.start .stage-num { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+  .stage.terminus .stage-num { background: var(--accent-ink); color: var(--accent); border-color: var(--accent-ink); }
+
+  .stage-body { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+
+  .stage-title {
+    font-family: var(--mono);
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .script-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+
+  .script-chips code {
+    font-family: var(--mono);
+    font-size: 12.5px;
+    background: var(--chip-bg);
+    color: var(--chip-ink);
+    padding: 3px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+
+  .flow-fields { display: flex; flex-direction: column; gap: 4px; }
+
+  .field-row { display: flex; gap: 8px; font-size: 13.5px; line-height: 1.5; flex-wrap: wrap; }
+
+  .field-label {
+    font-family: var(--mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--ink-muted);
+    padding-top: 2px;
+    flex-shrink: 0;
+    width: 52px;
+  }
+
+  .path code {
+    font-family: var(--mono);
+    font-size: 13px;
+    background: var(--surface-2);
+    padding: 1px 6px;
+    border-radius: 3px;
+    word-break: break-all;
+  }
+
+  .observe {
+    display: flex;
+    gap: 8px;
+    background: var(--warn-soft);
+    border: 1px solid color-mix(in srgb, var(--warn) 40%, transparent);
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin-top: 2px;
+  }
+
+  .observe-label {
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: var(--warn);
+    flex-shrink: 0;
+    padding-top: 1px;
+  }
+
+  .observe-text { font-size: 13.5px; line-height: 1.55; color: var(--ink); }
+
+  footer {
+    border-top: 1px solid var(--line);
+    padding-top: 20px;
+    font-size: 13px;
+    color: var(--ink-muted);
+    line-height: 1.6;
+  }
+
+  footer code {
+    font-family: var(--mono);
+    background: var(--surface-2);
+    padding: 1px 5px;
+    border-radius: 3px;
+  }
+
+  @media (max-width: 560px) {
+    .stage { grid-template-columns: 34px 1fr; padding: 16px 14px; gap: 12px; }
+    .field-row { flex-direction: column; gap: 2px; }
+    .field-label { width: auto; }
+  }
+</style>
+
+<div class="page">
+
+  <header class="hero">
+    <span class="eyebrow">Reference · scripts_countries/</span>
+    <h1>Country PII Pipeline</h1>
+    <p class="subtitle">Eleven stages, one starting point, one destination. This is the map back to where each script reads from, what it writes, and what to check before trusting the next stage.</p>
+    <div class="meta-row">
+      <span class="meta-chip">6 countries</span>
+      <span class="meta-chip">AUTH / NOTAUTH</span>
+      <span class="meta-chip">policy: PARTIAL only</span>
+      <span class="meta-chip">FR pipeline untouched</span>
+    </div>
+  </header>
+
+  <section class="block">
+    <div class="section-label">The map</div>
+    <div class="diagram-frame">
+<pre class="mermaid">
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor':'#dceae3', 'primaryBorderColor':'#2f6e5c', 'primaryTextColor':'#123028', 'lineColor':'#2f6e5c', 'tertiaryColor':'#ffffff', 'fontFamily':'JetBrains Mono, monospace', 'fontSize':'13px', 'background':'#eaf1ef' }}}%%
+flowchart TD
+    S1["1. Preprocessing"]
+    S2["2. Regex categorization"]
+    S3["3. Cleaning"]
+    S4["4. IndexedDB aggregation"]
+    S5["5. AI categorization"]
+    S6["6. Redistribute + finalize"]
+    D1[("user_countries/")]
+    D2[("user_countries_raws/")]
+    S7["7. Cookie analysis"]
+    S8["8. Other storage analysis"]
+    S9["9. PII aggregation"]
+    S10["10. GDPR report"]
+    S11["11. Cross-country comparison"]
+    F1[["country_comparison.json + .csv"]]
+
+    S1 --> S2 --> S3 --> S4 --> S5 --> S6
+    S6 --> D1
+    S6 --> D2
+    D1 --> S7
+    D1 --> S8
+    D1 --> S9
+    D2 --> S9
+    S9 --> S10
+    S7 --> S11
+    S8 --> S11
+    S9 --> S11
+    S11 --> F1
+
+    classDef phaseA fill:#dceae3,stroke:#2f6e5c,color:#123028
+    classDef phaseB fill:#eaf1ef,stroke:#2f6e5c,color:#123028
+    classDef phaseC fill:#f3e3d3,stroke:#a85a22,color:#3a2413
+    classDef store fill:#ffffff,stroke:#2f6e5c,color:#123028,stroke-dasharray: 3 3
+    classDef final fill:#2f6e5c,stroke:#123028,color:#ffffff,font-weight:bold
+
+    class S1,S2,S3,S4,S5,S6 phaseA
+    class D1,D2 store
+    class S7,S8 phaseB
+    class S9,S10 phaseC
+    class S11,F1 final
+</pre>
+    </div>
+    <p class="diagram-caption">Dashed cylinders are the two frozen data stores that everything downstream reads from. Phase B and Phase C both run off <code>user_countries/</code> independently — they don't depend on each other — and both feed the final comparison.</p>
+  </section>
+
+  <section class="block">
+    <div class="phase-intro">
+      <span class="phase-name">Phase A</span>
+      <span class="phase-desc">Categorization pipeline — turns raw captures into labeled PII categories. Orchestrated by <code>scripts_countries/run_all.py</code>.</span>
+    </div>
+    <div class="stage-list">
+
+      <div class="stage start">
+        <div class="stage-num">1</div>
+        <div class="stage-body">
+          <p class="stage-title">Preprocessing — START</p>
+          <div class="script-chips">
+            <code>extract_cookies.py</code><code>extract_indexeddb.py</code><code>extract_localstorage.py</code><code>extract_sessionstorage.py</code>
+          </div>
+          <div class="flow-fields">
+            <div class="field-row"><span class="field-label">reads</span><span class="path"><code>data/Countries_data/Users/{user}/…</code></span></div>
+            <div class="field-row"><span class="field-label">writes</span><span class="path"><code>data/preprocessing_countries/{AUTH|NOTAUTH}/{user}/PARTIAL/{storage}/…</code></span></div>
+          </div>
+          <div class="observe">
+            <span class="observe-label">OBSERVE</span>
+            <span class="observe-text">Files exist for every storage type, all 6 users, both auth modes — nothing is categorized yet at this point.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="stage">
+        <div class="stage-num">2</div>
+        <div class="stage-body">
+          <p class="stage-title">Regex categorization</p>
+          <div class="script-chips">
+            <code>categorize_cookies.py</code><code>categorize_localstorage.py</code><code>categorize_indexeddb.py</code><code>regex_merged_v3.py</code>
+          </div>
+          <div class="flow-fields">
+            <div class="field-row"><span class="field-label">reads</span><span class="path"><code>data/preprocessing_countries/…</code></span></div>
+            <div class="field-row"><span class="field-label">writes</span><span class="path"><code>data/user_countries/{AUTH|NOTAUTH}/{user}/PARTIAL/{storage}/[{lifecycle}/]{CATEGORY}.json</code></span></div>
+          </div>
+          <div class="observe">
+            <span class="observe-label">OBSERVE</span>
+            <span class="observe-text">DIRECT_PII counts per user; watch for regex false positives (e.g. the ip_address pattern over-matching long digit chains); check the size of UNCATEGORIZED.json per folder.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="stage">
+        <div class="stage-num">3</div>
+        <div class="stage-body">
+          <p class="stage-title">Cleaning</p>
+          <div class="script-chips"><code>clean_idb.py</code><code>clean_pii.py</code></div>
+          <div class="flow-fields">
+            <div class="field-row"><span class="field-label">reads</span><span class="path"><code>data/user_countries/…</code></span></div>
+            <div class="field-row"><span class="field-label">writes</span><span class="path"><code>data/user_countries/…</code> (in place) + <code>data_false_positives_countries/</code></span></div>
+          </div>
+          <div class="observe">
+            <span class="observe-label">OBSERVE</span>
+            <span class="observe-text">Run summary: IP false positives moved, timestamp-key false positives moved, files modified — printed at the end of <code>clean_pii.py</code>.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="stage">
+        <div class="stage-num">4</div>
+        <div class="stage-body">
+          <p class="stage-title">IndexedDB aggregation</p>
+          <div class="script-chips"><code>aggregate_indexeddb.py</code></div>
+          <div class="flow-fields">
+            <div class="field-row"><span class="field-label">reads</span><span class="path"><code>data/user_countries/{AUTH|NOTAUTH}/{user}/PARTIAL/indexeddb/*.json</code></span></div>
+            <div class="field-row"><span class="field-label">writes</span><span class="path"><code>data/aggregates_countries/indexeddb/…/hierarchical_reconstruction.json</code></span></div>
+          </div>
+          <div class="observe">
+            <span class="observe-label">OBSERVE</span>
+            <span class="observe-text">total_records / total_pii_instances in global_statistics.json. Hard prerequisite for stage 5's IndexedDB pass — nothing to categorize without it.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="stage">
+        <div class="stage-num">5</div>
+        <div class="stage-body">
+          <p class="stage-title">AI categorization</p>
+          <div class="script-chips"><code>ai_categorize_all_storages.py</code><code>ai_parallel_indexededdb.py</code></div>
+          <div class="flow-fields">
+            <div class="field-row"><span class="field-label">reads</span><span class="path"><code>UNCATEGORIZED.json</code> + <code>hierarchical_reconstruction.json</code></span></div>
+            <div class="field-row"><span class="field-label">writes</span><span class="path"><code>data/user_countries/…</code> (storages) · <code>data/aggregates_ai_complete_countries/indexeddb/…/ai_categorizations.json</code></span></div>
+          </div>
+          <div class="observe">
+            <span class="observe-label">OBSERVE</span>
+            <span class="observe-text">A wall of RateLimitError on batch 1 across every worker means the account's quota/tier, not a code bug. Records with 50+ uncategorized fields get silently truncated by the model's output limit — compare fields sent vs fields returned.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="stage">
+        <div class="stage-num">6</div>
+        <div class="stage-body">
+          <p class="stage-title">Redistribution + finalize</p>
+          <div class="script-chips"><code>redistribute_ai_categorizations.py</code><code>clean_user_folder.py</code></div>
+          <div class="flow-fields">
+            <div class="field-row"><span class="field-label">writes</span><span class="path"><code>data/user_countries/</code> (final) · <code>data/user_countries_raws/</code> (UNCATEGORIZED.json relocated here)</span></div>
+          </div>
+          <div class="observe">
+            <span class="observe-label">OBSERVE</span>
+            <span class="observe-text">fields_recategorized vs fields_still_uncategorized. After this step, UNCATEGORIZED.json is gone from user_countries/ — treat that folder as frozen input from here down.</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="phase-intro">
+      <span class="phase-name">Phase B</span>
+      <span class="phase-desc">Per-storage analysis — cookie and storage-level metrics. Orchestrated by <code>analysis_countries/run_all.py</code>.</span>
+    </div>
+    <div class="stage-list">
+
+      <div class="stage">
+        <div class="stage-num">7</div>
+        <div class="stage-body">
+          <p class="stage-title">Cookie analysis</p>
+          <div class="script-chips"><code>consolidated_analysis.py</code><code>lifecycle_analysis.py</code></div>
+          <div class="flow-fields">
+            <div class="field-row"><span class="field-label">reads</span><span class="path"><code>data/user_countries/…/cookies/{added,modified,removed}/*.json</code></span></div>
+            <div class="field-row"><span class="field-label">writes</span><span class="path"><code>results_countries/…/cookies/{added,modified,deleted}/consolidated/analysis.json</code></span></div>
+          </div>
+          <div class="observe">
+            <span class="observe-label">OBSERVE</span>
+            <span class="observe-text">httpOnly / secure / sameSite distributions, the security matrix, third-party cross-tabs, lifetime buckets — all delineated per PII category.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="stage">
+        <div class="stage-num">8</div>
+        <div class="stage-body">
+          <p class="stage-title">Other storage analysis</p>
+          <div class="script-chips"><code>storage_consolidated_analysis.py</code><code>storage_lifecycle_analysis.py</code></div>
+          <div class="flow-fields">
+            <div class="field-row"><span class="field-label">reads</span><span class="path"><code>data/user_countries/…/{localstorage,sessionstorage,indexeddb}/…</code></span></div>
+            <div class="field-row"><span class="field-label">writes</span><span class="path"><code>results_countries/…/{storage}/{lifecycle}/consolidated/analysis.json</code></span></div>
+          </div>
+          <div class="observe">
+            <span class="observe-label">OBSERVE</span>
+            <span class="observe-text">pii_by_category per storage type — subcategories now resolve correctly (email, gender…) instead of the FR pipeline's "unknown" bug — and persistence ratios.</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="phase-intro">
+      <span class="phase-name">Phase C</span>
+      <span class="phase-desc">GDPR profile aggregation — reads user_countries/ independently of Phase B. Orchestrated by <code>analysis_gdpr_profiles_countries/run_all.py</code>.</span>
+    </div>
+    <div class="stage-list">
+
+      <div class="stage">
+        <div class="stage-num">9</div>
+        <div class="stage-body">
+          <p class="stage-title">PII aggregation</p>
+          <div class="script-chips"><code>pii_aggregator.py</code></div>
+          <div class="flow-fields">
+            <div class="field-row"><span class="field-label">reads</span><span class="path"><code>data/user_countries/</code> + <code>data/user_countries_raws/</code></span></div>
+            <div class="field-row"><span class="field-label">writes</span><span class="path"><code>analysis_gdpr_profiles_countries/outputs/…/pii_aggregation_summary.json</code> · <code>reports/pii_comparative_analysis.json</code></span></div>
+          </div>
+          <div class="observe">
+            <span class="observe-label">OBSERVE</span>
+            <span class="observe-text">by_category prevalence per country; cookie_security now carries full httpOnly/secure/sameSite/third-party detail per category; uncategorized_items reported separately from total_items.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="stage">
+        <div class="stage-num">10</div>
+        <div class="stage-body">
+          <p class="stage-title">GDPR report</p>
+          <div class="script-chips"><code>generate_report.py</code></div>
+          <div class="flow-fields">
+            <div class="field-row"><span class="field-label">reads</span><span class="path"><code>reports/pii_comparative_analysis.json</code> + per-profile summaries</span></div>
+            <div class="field-row"><span class="field-label">writes</span><span class="path"><code>reports/reproducibility_report.txt</code></span></div>
+          </div>
+          <div class="observe">
+            <span class="observe-label">OBSERVE</span>
+            <span class="observe-text">AUTH vs NOTAUTH ratio, with and without UNCATEGORIZED; inter-country variability ratio; the full per-country cookie security breakdown.</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="phase-intro">
+      <span class="phase-name">Final</span>
+      <span class="phase-desc">Run manually once Phase B and Phase C have both finished — it merges their outputs, nothing more.</span>
+    </div>
+    <div class="stage-list">
+
+      <div class="stage terminus">
+        <div class="stage-num">11</div>
+        <div class="stage-body">
+          <p class="stage-title">Cross-country comparison — END</p>
+          <div class="script-chips"><code>country_comparative_summary.py</code></div>
+          <div class="flow-fields">
+            <div class="field-row"><span class="field-label">reads</span><span class="path"><code>results_countries/</code> (Phase B) + <code>analysis_gdpr_profiles_countries/outputs/</code> (Phase C)</span></div>
+            <div class="field-row"><span class="field-label">writes</span><span class="path"><code>analysis_countries/comparative/country_comparison.json</code> + <code>country_comparison_headline.csv</code></span></div>
+          </div>
+          <div class="observe">
+            <span class="observe-label">OBSERVE</span>
+            <span class="observe-text">This is the destination. Open the CSV for a one-row-per-country read of every headline number; open the JSON when you need the per-category, per-attribute detail behind any of them.</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    Nothing here touches the French pipeline (<code>scripts/</code>, <code>data/user/</code>, <code>analysis/</code>, <code>analysis_gdpr_profiles/</code>) — every path above lives under a <code>_countries</code> suffix or a dedicated country directory.
+  </footer>
+
+</div>

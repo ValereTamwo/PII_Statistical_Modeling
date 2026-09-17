@@ -1,0 +1,126 @@
+{
+  "storage_type": "sessionstorage",
+  "metrics": {
+    "total_items": 112,
+    "items_modified": 29,
+    "items_deleted": 7,
+    "entropy_increases": 20,
+    "entropy_decreases": 23,
+    "size_increases": 8,
+    "size_decreases": 11,
+    "pii_transitions": {
+      "APP_STATE_STORAGE -> BEHAVIORAL_DATA": 1,
+      "APP_STATE_STORAGE -> SECURITY_AND_BOT_MITIGATION": 3,
+      "IDENTITY_TRACKING -> UX_AND_PERFORMANCE_ANALYTICS": 3,
+      "NAVIGATION_HISTORY -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "IDENTITY_TRACKING -> NAVIGATION_HISTORY": 1,
+      "BEHAVIORAL_DATA -> DIRECT_PII_KEYS": 4,
+      "DIRECT_PII_KEYS -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "ID_SOLUTIONS_AND_EXCHANGES -> SECURITY_AND_BOT_MITIGATION": 1,
+      "ID_SOLUTIONS_AND_EXCHANGES -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "APP_STATE_STORAGE -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "BEHAVIORAL_DATA -> ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "IDENTITY_TRACKING -> SESSION_MANAGEMENT": 1,
+      "DEVICE_ENV -> NAVIGATION_HISTORY": 1
+    },
+    "volatility_distribution": {
+      "moderate": 22,
+      "stable": 77,
+      "high": 13
+    },
+    "change_frequency": {
+      "avg_gap": 79.27884615384616,
+      "min_gap": 0,
+      "max_gap": 403
+    },
+    "frequent_changes": [
+      {
+        "key": "_im_cap_v",
+        "avg_gap": 10.0,
+        "num_modifications": 2,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "ph_phc_rAdbPu6KnoisVKit75UUEk58fGR9oErocnPf3FvnSYh_posthog",
+        "avg_gap": 20.75,
+        "num_modifications": 5,
+        "pii_category": "NAVIGATION_HISTORY"
+      },
+      {
+        "key": "rxvt",
+        "avg_gap": 21.210526315789473,
+        "num_modifications": 16,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "_shs_state",
+        "avg_gap": 22.0,
+        "num_modifications": 6,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "___nrbic",
+        "avg_gap": 23.714285714285715,
+        "num_modifications": 7,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "navigationHistory",
+        "avg_gap": 25.8,
+        "num_modifications": 6,
+        "pii_category": "NAVIGATION_HISTORY"
+      },
+      {
+        "key": "tentacles_q64jwfimf5vrky7e5evo754dn7zweku3_urls_time",
+        "avg_gap": 36.0,
+        "num_modifications": 1,
+        "pii_category": "IDENTITY_TRACKING"
+      },
+      {
+        "key": "onesignal-pageview-count",
+        "avg_gap": 44.875,
+        "num_modifications": 6,
+        "pii_category": "BEHAVIORAL_DATA"
+      }
+    ],
+    "url_modifications": {
+      "www.bil.com": 27,
+      "sicnoticias.pt": 8,
+      "mediamarkt.lu": 7,
+      "www.publico.pt": 7,
+      "bilnet.lu.bil.com": 6,
+      "www.vdl.lu": 5,
+      "observador.pt": 5,
+      "editalconcursosbrasil.com.br": 3,
+      "m.apkpure.com": 3,
+      "www.noticiasaominuto.com": 3
+    },
+    "pii_modification_patterns": {
+      "CONSENT_AND_PRIVACY": {
+        "count": 1,
+        "avg_gap": 0
+      },
+      "UX_AND_PERFORMANCE_ANALYTICS": {
+        "count": 37,
+        "avg_gap": 42.6530612244898
+      },
+      "BEHAVIORAL_DATA": {
+        "count": 34,
+        "avg_gap": 98.43333333333334
+      },
+      "IDENTITY_TRACKING": {
+        "count": 1,
+        "avg_gap": 36.0
+      },
+      "NAVIGATION_HISTORY": {
+        "count": 11,
+        "avg_gap": 23.555555555555557
+      },
+      "ID_SOLUTIONS_AND_EXCHANGES": {
+        "count": 3,
+        "avg_gap": 256.5
+      }
+    }
+  },
+  "num_timelines": 112
+}

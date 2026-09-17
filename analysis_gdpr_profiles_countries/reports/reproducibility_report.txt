@@ -1,0 +1,210 @@
+SECTION 1: GLOBAL STATISTICS
+--------------------------------------------------------------------------------
+Total PII Instances (categorized only): 339,155
+Total UNCATEGORIZED Items (excluded above, moved to user_countries_raws/): 307,710
+Total Items Including UNCATEGORIZED: 646,865
+Total Profiles: 12
+Average PII per Profile: 28,262.9
+
+Top 10 PII Categories by Volume:
+   1. BEHAVIORAL_DATA                           140,549 ( 41.4%)
+   2. IDENTITY_TRACKING                          63,635 ( 18.8%)
+   3. DEVICE_ENV                                 36,260 ( 10.7%)
+   4. ID_SOLUTIONS_AND_EXCHANGES                 36,079 ( 10.6%)
+   5. UX_AND_PERFORMANCE_ANALYTICS               16,626 (  4.9%)
+   6. USER_PREFERENCES                            9,270 (  2.7%)
+   7. SECURITY_AND_BOT_MITIGATION                 6,849 (  2.0%)
+   8. NAVIGATION_HISTORY                          6,248 (  1.8%)
+   9. CONSENT_AND_PRIVACY                         4,807 (  1.4%)
+  10. APP_STATE_STORAGE                           3,598 (  1.1%)
+
+Cookie Security (all countries, all cookies):
+  Total Cookies: 58,506
+  httpOnly:
+    True                     15,099 ( 25.8%)
+    False                    43,407 ( 74.2%)
+  secure:
+    True                     39,599 ( 67.7%)
+    False                    18,907 ( 32.3%)
+  sameSite:
+    No Restriction           31,182 ( 53.3%)
+    Lax                      25,955 ( 44.4%)
+    Strict                    1,369 (  2.3%)
+  Third-party vs First-party:
+    Third-Party              36,863 ( 63.0%)
+    First-Party              21,643 ( 37.0%)
+  Security Posture (derived from httpOnly + secure):
+    Secure                   14,482 ( 24.8%)
+    Partially Secure         25,734 ( 44.0%)
+    Lowly Secure             18,290 ( 31.3%)
+
+SECTION 2: AUTHENTICATION STATUS IMPACT (AUTH vs NOTAUTH)
+--------------------------------------------------------------------------------
+AUTH (authenticated users) - categorized items only:
+  Total Items: 146,918
+  Average per Profile (6 profiles): 24,486.3
+
+NOTAUTH (non-authenticated users) - categorized items only:
+  Total Items: 192,237
+  Average per Profile (6 profiles): 32,039.5
+
+Ratio NOTAUTH/AUTH (categorized only): 1.31
+
+Including UNCATEGORIZED items (moved to user_countries_raws/ by clean_user_folder.py,
+not seen by the categorized-only totals above):
+  AUTH total (incl. UNCATEGORIZED): 258,849
+  NOTAUTH total (incl. UNCATEGORIZED): 388,016
+  Ratio NOTAUTH/AUTH (incl. UNCATEGORIZED): 1.50
+
+SECTION 3: INTER-COUNTRY VARIABILITY
+--------------------------------------------------------------------------------
+IT_0573:
+  Total Items: 103,457
+  Average per Config (2 configs): 51,728.5
+
+LU_0634:
+  Total Items: 48,429
+  Average per Config (2 configs): 24,214.5
+
+PT_0838:
+  Total Items: 50,260
+  Average per Config (2 configs): 25,130.0
+
+SE_0964:
+  Total Items: 35,344
+  Average per Config (2 configs): 17,672.0
+
+ES_0290:
+  Total Items: 70,484
+  Average per Config (2 configs): 35,242.0
+
+DE_0018:
+  Total Items: 31,181
+  Average per Config (2 configs): 15,590.5
+
+Highest volume: IT_0573 (103,457)
+Lowest volume: DE_0018 (31,181)
+Variability Ratio (Max/Min): 3.32
+
+SECTION 4: COOKIE SECURITY NON-CONFORMITY BY COUNTRY
+--------------------------------------------------------------------------------
+IT_0573:
+  Total Cookies: 8,424
+  httpOnly:
+    True                      2,088 ( 24.8%)
+    False                     6,336 ( 75.2%)
+  secure:
+    True                      5,168 ( 61.3%)
+    False                     3,256 ( 38.7%)
+  sameSite:
+    Lax                       4,727 ( 56.1%)
+    No Restriction            3,385 ( 40.2%)
+    Strict                      312 (  3.7%)
+  Third-party vs First-party:
+    Third-Party               4,288 ( 50.9%)
+    First-Party               4,136 ( 49.1%)
+  Security Posture (derived from httpOnly + secure):
+    Secure                    1,963 ( 23.3%)
+    Partially Secure          3,330 ( 39.5%)
+    Lowly Secure              3,131 ( 37.2%)
+
+LU_0634:
+  Total Cookies: 8,164
+  httpOnly:
+    True                      2,233 ( 27.4%)
+    False                     5,931 ( 72.6%)
+  secure:
+    True                      5,404 ( 66.2%)
+    False                     2,760 ( 33.8%)
+  sameSite:
+    No Restriction            4,333 ( 53.1%)
+    Lax                       3,734 ( 45.7%)
+    Strict                       97 (  1.2%)
+  Third-party vs First-party:
+    Third-Party               5,518 ( 67.6%)
+    First-Party               2,646 ( 32.4%)
+  Security Posture (derived from httpOnly + secure):
+    Secure                    2,102 ( 25.7%)
+    Partially Secure          3,433 ( 42.1%)
+    Lowly Secure              2,629 ( 32.2%)
+
+PT_0838:
+  Total Cookies: 9,274
+  httpOnly:
+    True                      2,461 ( 26.5%)
+    False                     6,813 ( 73.5%)
+  secure:
+    True                      5,842 ( 63.0%)
+    False                     3,432 ( 37.0%)
+  sameSite:
+    No Restriction            4,822 ( 52.0%)
+    Lax                       4,265 ( 46.0%)
+    Strict                      187 (  2.0%)
+  Third-party vs First-party:
+    Third-Party               5,727 ( 61.8%)
+    First-Party               3,547 ( 38.2%)
+  Security Posture (derived from httpOnly + secure):
+    Secure                    2,297 ( 24.8%)
+    Partially Secure          3,709 ( 40.0%)
+    Lowly Secure              3,268 ( 35.2%)
+
+SE_0964:
+  Total Cookies: 5,922
+  httpOnly:
+    True                      1,902 ( 32.1%)
+    False                     4,020 ( 67.9%)
+  secure:
+    True                      3,970 ( 67.0%)
+    False                     1,952 ( 33.0%)
+  sameSite:
+    No Restriction            3,180 ( 53.7%)
+    Lax                       2,540 ( 42.9%)
+    Strict                      202 (  3.4%)
+  Third-party vs First-party:
+    Third-Party               4,156 ( 70.2%)
+    First-Party               1,766 ( 29.8%)
+  Security Posture (derived from httpOnly + secure):
+    Secure                    1,844 ( 31.1%)
+    Partially Secure          2,184 ( 36.9%)
+    Lowly Secure              1,894 ( 32.0%)
+
+ES_0290:
+  Total Cookies: 19,599
+  httpOnly:
+    True                      4,982 ( 25.4%)
+    False                    14,617 ( 74.6%)
+  secure:
+    True                     14,438 ( 73.7%)
+    False                     5,161 ( 26.3%)
+  sameSite:
+    No Restriction           12,040 ( 61.4%)
+    Lax                       7,178 ( 36.6%)
+    Strict                      381 (  1.9%)
+  Third-party vs First-party:
+    Third-Party              12,934 ( 66.0%)
+    First-Party               6,665 ( 34.0%)
+  Security Posture (derived from httpOnly + secure):
+    Secure                    4,908 ( 25.0%)
+    Partially Secure          9,604 ( 49.0%)
+    Lowly Secure              5,087 ( 26.0%)
+
+DE_0018:
+  Total Cookies: 7,123
+  httpOnly:
+    True                      1,433 ( 20.1%)
+    False                     5,690 ( 79.9%)
+  secure:
+    True                      4,777 ( 67.1%)
+    False                     2,346 ( 32.9%)
+  sameSite:
+    Lax                       3,511 ( 49.3%)
+    No Restriction            3,422 ( 48.0%)
+    Strict                      190 (  2.7%)
+  Third-party vs First-party:
+    Third-Party               4,240 ( 59.5%)
+    First-Party               2,883 ( 40.5%)
+  Security Posture (derived from httpOnly + secure):
+    Secure                    1,368 ( 19.2%)
+    Partially Secure          3,474 ( 48.8%)
+    Lowly Secure              2,281 ( 32.0%)
+

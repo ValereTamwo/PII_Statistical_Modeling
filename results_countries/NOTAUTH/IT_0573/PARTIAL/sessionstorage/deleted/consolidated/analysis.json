@@ -1,0 +1,615 @@
+{
+  "storage_type": "sessionstorage",
+  "total_items": 82,
+  "direct_pii_count": 0,
+  "other_count": 82,
+  "pii_distribution": {
+    "APP_STATE_STORAGE": 14,
+    "BEHAVIORAL_DATA": 8,
+    "CONSENT_AND_PRIVACY": 8,
+    "DEVICE_ENV": 3,
+    "IDENTITY_TRACKING": 15,
+    "ID_SOLUTIONS_AND_EXCHANGES": 5,
+    "LOCATION_AND_DEMOGRAPHICS": 2,
+    "NAVIGATION_HISTORY": 2,
+    "SECURITY_AND_BOT_MITIGATION": 3,
+    "SESSION_MANAGEMENT": 2,
+    "TECHNICAL_PASSWORDS": 2,
+    "USER_PREFERENCES": 5,
+    "UX_AND_PERFORMANCE_ANALYTICS": 13
+  },
+  "pii_by_category": {
+    "APP_STATE_STORAGE": {
+      "APP_STATE_STORAGE": 14
+    },
+    "BEHAVIORAL_DATA": {
+      "BEHAVIORAL_DATA": 8
+    },
+    "CONSENT_AND_PRIVACY": {
+      "CONSENT_AND_PRIVACY": 8
+    },
+    "DEVICE_ENV": {
+      "DEVICE_ENV": 3
+    },
+    "IDENTITY_TRACKING": {
+      "IDENTITY_TRACKING": 15
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "ID_SOLUTIONS_AND_EXCHANGES": 5
+    },
+    "LOCATION_AND_DEMOGRAPHICS": {
+      "LOCATION_AND_DEMOGRAPHICS": 2
+    },
+    "NAVIGATION_HISTORY": {
+      "NAVIGATION_HISTORY": 2
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "SECURITY_AND_BOT_MITIGATION": 3
+    },
+    "SESSION_MANAGEMENT": {
+      "SESSION_MANAGEMENT": 2
+    },
+    "TECHNICAL_PASSWORDS": {
+      "TECHNICAL_PASSWORDS": 2
+    },
+    "USER_PREFERENCES": {
+      "USER_PREFERENCES": 5
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "UX_AND_PERFORMANCE_ANALYTICS": 13
+    }
+  },
+  "persistence_distribution": {
+    "Session": 82
+  },
+  "persistence_by_pii": {
+    "APP_STATE_STORAGE": {
+      "Session": 14
+    },
+    "BEHAVIORAL_DATA": {
+      "Session": 8
+    },
+    "CONSENT_AND_PRIVACY": {
+      "Session": 8
+    },
+    "DEVICE_ENV": {
+      "Session": 3
+    },
+    "IDENTITY_TRACKING": {
+      "Session": 15
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "Session": 5
+    },
+    "LOCATION_AND_DEMOGRAPHICS": {
+      "Session": 2
+    },
+    "NAVIGATION_HISTORY": {
+      "Session": 2
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "Session": 3
+    },
+    "SESSION_MANAGEMENT": {
+      "Session": 2
+    },
+    "TECHNICAL_PASSWORDS": {
+      "Session": 2
+    },
+    "USER_PREFERENCES": {
+      "Session": 5
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "Session": 13
+    }
+  },
+  "size_by_pii": {
+    "APP_STATE_STORAGE": {
+      "total": 17731,
+      "average": 1266.5,
+      "count": 14
+    },
+    "BEHAVIORAL_DATA": {
+      "total": 490,
+      "average": 61.25,
+      "count": 8
+    },
+    "CONSENT_AND_PRIVACY": {
+      "total": 8270,
+      "average": 1033.75,
+      "count": 8
+    },
+    "DEVICE_ENV": {
+      "total": 3348,
+      "average": 1116.0,
+      "count": 3
+    },
+    "IDENTITY_TRACKING": {
+      "total": 15972,
+      "average": 1064.8,
+      "count": 15
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "total": 16067,
+      "average": 3213.4,
+      "count": 5
+    },
+    "LOCATION_AND_DEMOGRAPHICS": {
+      "total": 27678,
+      "average": 13839.0,
+      "count": 2
+    },
+    "NAVIGATION_HISTORY": {
+      "total": 315,
+      "average": 157.5,
+      "count": 2
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "total": 6,
+      "average": 2.0,
+      "count": 3
+    },
+    "SESSION_MANAGEMENT": {
+      "total": 72,
+      "average": 36.0,
+      "count": 2
+    },
+    "TECHNICAL_PASSWORDS": {
+      "total": 15674,
+      "average": 7837.0,
+      "count": 2
+    },
+    "USER_PREFERENCES": {
+      "total": 622,
+      "average": 124.4,
+      "count": 5
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "total": 15554,
+      "average": 1196.4615384615386,
+      "count": 13
+    }
+  },
+  "content_hierarchy": {
+    "json_structured": {
+      "APP_STATE_STORAGE": 13,
+      "BEHAVIORAL_DATA": 5,
+      "CONSENT_AND_PRIVACY": 5,
+      "DEVICE_ENV": 2,
+      "IDENTITY_TRACKING": 3,
+      "ID_SOLUTIONS_AND_EXCHANGES": 5,
+      "NAVIGATION_HISTORY": 2,
+      "SECURITY_AND_BOT_MITIGATION": 3,
+      "TECHNICAL_PASSWORDS": 2,
+      "USER_PREFERENCES": 1,
+      "UX_AND_PERFORMANCE_ANALYTICS": 6
+    },
+    "complex_string": {
+      "APP_STATE_STORAGE": 1,
+      "CONSENT_AND_PRIVACY": 3,
+      "IDENTITY_TRACKING": 2,
+      "LOCATION_AND_DEMOGRAPHICS": 2,
+      "UX_AND_PERFORMANCE_ANALYTICS": 2
+    },
+    "boolean": {
+      "BEHAVIORAL_DATA": 3,
+      "USER_PREFERENCES": 2,
+      "UX_AND_PERFORMANCE_ANALYTICS": 2
+    },
+    "short_text": {
+      "DEVICE_ENV": 1,
+      "IDENTITY_TRACKING": 1,
+      "USER_PREFERENCES": 2
+    },
+    "uuid": {
+      "IDENTITY_TRACKING": 3,
+      "SESSION_MANAGEMENT": 2,
+      "UX_AND_PERFORMANCE_ANALYTICS": 1
+    },
+    "number": {
+      "IDENTITY_TRACKING": 5,
+      "UX_AND_PERFORMANCE_ANALYTICS": 1
+    },
+    "empty": {
+      "IDENTITY_TRACKING": 1,
+      "UX_AND_PERFORMANCE_ANALYTICS": 1
+    }
+  },
+  "content_types": {
+    "json_structured": 47,
+    "complex_string": 10,
+    "boolean": 7,
+    "short_text": 4,
+    "uuid": 6,
+    "number": 6,
+    "empty": 2
+  },
+  "vendor_counts": {
+    "safarasoftair.com": 12,
+    "igieco.it": 12,
+    "esteticanail.it": 3,
+    "country-creations.it": 7,
+    "cuoieriashop.com": 13,
+    "farmaeurope.eu": 9,
+    "lidl.it": 6,
+    "leastedisoha.com": 3,
+    "seduzioniperdue.com": 8,
+    "second-hand.it": 4,
+    "alibaba.com": 2,
+    "scarpescarpestore.com": 1,
+    "beauty-star.it": 2
+  },
+  "category_vendor_flows": [
+    [
+      "APP_STATE_STORAGE",
+      "safarasoftair.com",
+      7
+    ],
+    [
+      "APP_STATE_STORAGE",
+      "igieco.it",
+      4
+    ],
+    [
+      "APP_STATE_STORAGE",
+      "esteticanail.it",
+      2
+    ],
+    [
+      "APP_STATE_STORAGE",
+      "country-creations.it",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "cuoieriashop.com",
+      2
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "igieco.it",
+      2
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "farmaeurope.eu",
+      2
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "lidl.it",
+      2
+    ],
+    [
+      "CONSENT_AND_PRIVACY",
+      "cuoieriashop.com",
+      1
+    ],
+    [
+      "CONSENT_AND_PRIVACY",
+      "leastedisoha.com",
+      1
+    ],
+    [
+      "CONSENT_AND_PRIVACY",
+      "farmaeurope.eu",
+      1
+    ],
+    [
+      "CONSENT_AND_PRIVACY",
+      "seduzioniperdue.com",
+      5
+    ],
+    [
+      "DEVICE_ENV",
+      "seduzioniperdue.com",
+      2
+    ],
+    [
+      "DEVICE_ENV",
+      "country-creations.it",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "cuoieriashop.com",
+      5
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "igieco.it",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "lidl.it",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "second-hand.it",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "esteticanail.it",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "farmaeurope.eu",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "alibaba.com",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "country-creations.it",
+      1
+    ],
+    [
+      "ID_SOLUTIONS_AND_EXCHANGES",
+      "cuoieriashop.com",
+      1
+    ],
+    [
+      "ID_SOLUTIONS_AND_EXCHANGES",
+      "leastedisoha.com",
+      1
+    ],
+    [
+      "ID_SOLUTIONS_AND_EXCHANGES",
+      "igieco.it",
+      2
+    ],
+    [
+      "ID_SOLUTIONS_AND_EXCHANGES",
+      "farmaeurope.eu",
+      1
+    ],
+    [
+      "LOCATION_AND_DEMOGRAPHICS",
+      "country-creations.it",
+      2
+    ],
+    [
+      "NAVIGATION_HISTORY",
+      "cuoieriashop.com",
+      1
+    ],
+    [
+      "NAVIGATION_HISTORY",
+      "farmaeurope.eu",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "safarasoftair.com",
+      3
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "lidl.it",
+      2
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "igieco.it",
+      2
+    ],
+    [
+      "USER_PREFERENCES",
+      "seduzioniperdue.com",
+      1
+    ],
+    [
+      "USER_PREFERENCES",
+      "country-creations.it",
+      1
+    ],
+    [
+      "USER_PREFERENCES",
+      "scarpescarpestore.com",
+      1
+    ],
+    [
+      "USER_PREFERENCES",
+      "beauty-star.it",
+      2
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "safarasoftair.com",
+      2
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "cuoieriashop.com",
+      3
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "leastedisoha.com",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "second-hand.it",
+      2
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "farmaeurope.eu",
+      3
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "alibaba.com",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "country-creations.it",
+      1
+    ]
+  ],
+  "entropy_by_pii": {
+    "APP_STATE_STORAGE": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      4.599374675090669,
+      4.153055907333275,
+      4.4906655254558565,
+      4.153055907333275,
+      4.945438587120005,
+      3.763856189774724,
+      5.106033610806975
+    ],
+    "BEHAVIORAL_DATA": [
+      4.0472990984266435,
+      4.7120369747371305,
+      4.599374675090669,
+      4.4906655254558565,
+      4.65158274606047,
+      0.0,
+      0.0,
+      2.0
+    ],
+    "CONSENT_AND_PRIVACY": [
+      4.622532752357148,
+      4.861530252405225,
+      4.728196919071892,
+      4.870566415521143,
+      4.605534173461663,
+      4.483590755113885,
+      4.589915351485778,
+      4.870566415521143
+    ],
+    "DEVICE_ENV": [
+      4.589915351485778,
+      4.37303318878839,
+      2.321928094887362
+    ],
+    "IDENTITY_TRACKING": [
+      3.0,
+      4.912388677074042,
+      3.673416585305445,
+      3.8561962982193805,
+      4.912388677074042,
+      3.752715278979704,
+      2.873140679513133,
+      2.873140679513133,
+      2.8150724101159437,
+      2.6235166412180155,
+      4.21126073643228,
+      4.53834886265227,
+      3.085055102756477,
+      3.652447488023126,
+      0.0
+    ],
+    "ID_SOLUTIONS_AND_EXCHANGES": [
+      3.7390065943594837,
+      3.7390065943594837,
+      4.912388677074042,
+      4.912388677074042,
+      3.7390065943594837
+    ],
+    "LOCATION_AND_DEMOGRAPHICS": [
+      5.106033610806975,
+      5.020000109092742
+    ],
+    "NAVIGATION_HISTORY": [
+      4.7120369747371305,
+      4.65158274606047
+    ],
+    "SECURITY_AND_BOT_MITIGATION": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "SESSION_MANAGEMENT": [
+      3.673416585305445,
+      3.752715278979704
+    ],
+    "TECHNICAL_PASSWORDS": [
+      4.912388677074042,
+      4.912388677074042
+    ],
+    "USER_PREFERENCES": [
+      4.589915351485778,
+      2.321928094887362,
+      2.75,
+      2.321928094887362,
+      2.0
+    ],
+    "UX_AND_PERFORMANCE_ANALYTICS": [
+      1.0,
+      0.0,
+      2.0,
+      4.7120369747371305,
+      3.7390065943594837,
+      3.7390065943594837,
+      3.5514621540398004,
+      3.8561962982193805,
+      2.931208948910323,
+      4.65158274606047,
+      3.7390065943594837,
+      0.0,
+      5.106033610806975
+    ]
+  },
+  "risk_levels": {
+    "Low Risk": 34,
+    "Medium Risk": 28,
+    "High Risk": 20
+  },
+  "risk_by_pii": {
+    "APP_STATE_STORAGE": {
+      "Low Risk": 14
+    },
+    "BEHAVIORAL_DATA": {
+      "Medium Risk": 8
+    },
+    "CONSENT_AND_PRIVACY": {
+      "Low Risk": 8
+    },
+    "DEVICE_ENV": {
+      "Low Risk": 3
+    },
+    "IDENTITY_TRACKING": {
+      "High Risk": 15
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "High Risk": 5
+    },
+    "LOCATION_AND_DEMOGRAPHICS": {
+      "Low Risk": 2
+    },
+    "NAVIGATION_HISTORY": {
+      "Medium Risk": 2
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "Medium Risk": 3
+    },
+    "SESSION_MANAGEMENT": {
+      "Medium Risk": 2
+    },
+    "TECHNICAL_PASSWORDS": {
+      "Low Risk": 2
+    },
+    "USER_PREFERENCES": {
+      "Low Risk": 5
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "Medium Risk": 13
+    }
+  }
+}

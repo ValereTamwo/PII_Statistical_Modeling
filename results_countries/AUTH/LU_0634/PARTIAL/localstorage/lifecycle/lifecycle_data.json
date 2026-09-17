@@ -1,0 +1,251 @@
+{
+  "storage_type": "localstorage",
+  "metrics": {
+    "total_items": 496,
+    "items_modified": 100,
+    "items_deleted": 376,
+    "entropy_increases": 88,
+    "entropy_decreases": 66,
+    "size_increases": 32,
+    "size_decreases": 15,
+    "pii_transitions": {
+      "BEHAVIORAL_DATA -> UX_AND_PERFORMANCE_ANALYTICS": 7,
+      "APP_STATE_STORAGE -> SECURITY_AND_BOT_MITIGATION": 2,
+      "USER_PREFERENCES -> CONSENT_AND_PRIVACY": 1,
+      "DIRECT_PII -> USER_PREFERENCES": 3,
+      "CONSENT_AND_PRIVACY -> ID_SOLUTIONS_AND_EXCHANGES": 6,
+      "IDENTITY_TRACKING -> ID_SOLUTIONS_AND_EXCHANGES": 11,
+      "IDENTITY_TRACKING -> BEHAVIORAL_DATA": 3,
+      "USER_PREFERENCES -> BEHAVIORAL_DATA": 3,
+      "APP_STATE_STORAGE -> UX_AND_PERFORMANCE_ANALYTICS": 23,
+      "IDENTITY_TRACKING -> UX_AND_PERFORMANCE_ANALYTICS": 12,
+      "BEHAVIORAL_DATA -> IDENTITY_TRACKING": 3,
+      "BEHAVIORAL_DATA -> TECHNICAL_PASSWORDS": 2,
+      "ID_SOLUTIONS_AND_EXCHANGES -> UX_AND_PERFORMANCE_ANALYTICS": 6,
+      "BEHAVIORAL_DATA -> USER_PREFERENCES": 2,
+      "APP_STATE_STORAGE -> DEVICE_ENV": 1,
+      "APP_STATE_STORAGE -> LOCATION_AND_DEMOGRAPHICS": 2,
+      "DIRECT_PII -> DIRECT_PII_KEYS": 1,
+      "DIRECT_PII_KEYS -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "SECURITY_AND_BOT_MITIGATION -> TECHNICAL_PASSWORDS": 1,
+      "CONSENT_AND_PRIVACY -> DIRECT_PII_KEYS": 1,
+      "BEHAVIORAL_DATA -> INFRASTRUCTURE": 2,
+      "IDENTITY_TRACKING -> TECHNICAL_PASSWORDS": 1,
+      "BEHAVIORAL_DATA -> CONSENT_AND_PRIVACY": 1,
+      "IDENTITY_TRACKING -> SESSION_MANAGEMENT": 2,
+      "ID_SOLUTIONS_AND_EXCHANGES -> TECHNICAL_PASSWORDS": 2,
+      "BEHAVIORAL_DATA -> NAVIGATION_HISTORY": 2,
+      "USER_PREFERENCES -> SECURITY_AND_BOT_MITIGATION": 2,
+      "APP_STATE_STORAGE -> ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "CONSENT_AND_PRIVACY -> LOCATION_AND_DEMOGRAPHICS": 1,
+      "BEHAVIORAL_DATA -> DIRECT_PII_KEYS": 1,
+      "DIRECT_PII_KEYS -> ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "BEHAVIORAL_DATA -> LOCATION_AND_DEMOGRAPHICS": 1,
+      "DIRECT_PII -> LOCATION_AND_DEMOGRAPHICS": 1,
+      "DIRECT_PII -> ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "TECHNICAL_PASSWORDS -> UX_AND_PERFORMANCE_ANALYTICS": 3,
+      "CONSENT_AND_PRIVACY -> UX_AND_PERFORMANCE_ANALYTICS": 2,
+      "IDENTITY_TRACKING -> USER_PREFERENCES": 1,
+      "IDENTITY_TRACKING -> SECURITY_AND_BOT_MITIGATION": 1,
+      "ID_SOLUTIONS_AND_EXCHANGES -> SECURITY_AND_BOT_MITIGATION": 1,
+      "CONSENT_AND_PRIVACY -> TECHNICAL_PASSWORDS": 1,
+      "DEVICE_ENV -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "SESSION_MANAGEMENT -> UX_AND_PERFORMANCE_ANALYTICS": 1
+    },
+    "volatility_distribution": {
+      "moderate": 227,
+      "high": 183,
+      "stable": 86
+    },
+    "change_frequency": {
+      "avg_gap": 38.23452157598499,
+      "min_gap": 0,
+      "max_gap": 335
+    },
+    "frequent_changes": [
+      {
+        "key": "mage-cache-storage",
+        "avg_gap": 0.0,
+        "num_modifications": 9,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "park.consent.initialReferrer",
+        "avg_gap": 0.0,
+        "num_modifications": 3,
+        "pii_category": "TECHNICAL_PASSWORDS"
+      },
+      {
+        "key": "message_bubbles_have_been_shown-undefined",
+        "avg_gap": 4.0,
+        "num_modifications": 2,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "persist:root",
+        "avg_gap": 4.333333333333333,
+        "num_modifications": 2,
+        "pii_category": "LOCATION_AND_DEMOGRAPHICS"
+      },
+      {
+        "key": "ContextHubPersistence",
+        "avg_gap": 5.421052631578948,
+        "num_modifications": 20,
+        "pii_category": "LOCATION_AND_DEMOGRAPHICS"
+      },
+      {
+        "key": "id5id",
+        "avg_gap": 5.5423728813559325,
+        "num_modifications": 15,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "i18nextLng",
+        "avg_gap": 6.355263157894737,
+        "num_modifications": 2,
+        "pii_category": "APP_STATE_STORAGE"
+      },
+      {
+        "key": "featureToggles",
+        "avg_gap": 7.636363636363637,
+        "num_modifications": 8,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "didomi_token",
+        "avg_gap": 9.1,
+        "num_modifications": 3,
+        "pii_category": "ID_SOLUTIONS_AND_EXCHANGES"
+      },
+      {
+        "key": "__exponea_last_session_ping_timestamp__",
+        "avg_gap": 10.5,
+        "num_modifications": 9,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "_gcl_ls",
+        "avg_gap": 11.7,
+        "num_modifications": 14,
+        "pii_category": "IDENTITY_TRACKING"
+      },
+      {
+        "key": "gbc_consent",
+        "avg_gap": 15.571428571428571,
+        "num_modifications": 8,
+        "pii_category": "ID_SOLUTIONS_AND_EXCHANGES"
+      },
+      {
+        "key": "_pbstck_session_fcb8e29f",
+        "avg_gap": 15.714285714285714,
+        "num_modifications": 4,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "rlv_userid_sharedId_exp",
+        "avg_gap": 16.857142857142858,
+        "num_modifications": 3,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "rlv_userid_sharedId_last",
+        "avg_gap": 16.857142857142858,
+        "num_modifications": 3,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "rlv_userid_sharedId_cst",
+        "avg_gap": 16.857142857142858,
+        "num_modifications": 3,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "cto_bundle",
+        "avg_gap": 19.57894736842105,
+        "num_modifications": 2,
+        "pii_category": "ID_SOLUTIONS_AND_EXCHANGES"
+      },
+      {
+        "key": "lastExternalReferrer",
+        "avg_gap": 22.842105263157894,
+        "num_modifications": 1,
+        "pii_category": "NAVIGATION_HISTORY"
+      },
+      {
+        "key": "lastExternalReferrerTime",
+        "avg_gap": 22.842105263157894,
+        "num_modifications": 1,
+        "pii_category": "NAVIGATION_HISTORY"
+      },
+      {
+        "key": "cto_bidid",
+        "avg_gap": 24.8,
+        "num_modifications": 2,
+        "pii_category": "ID_SOLUTIONS_AND_EXCHANGES"
+      }
+    ],
+    "url_modifications": {
+      "www.iefimerida.gr": 35,
+      "batmaid.lu": 29,
+      "webbanking.bgl.lu": 20,
+      "observador.pt": 19,
+      "www.cmjornal.pt": 15,
+      "www.upwork.com": 13,
+      "www.noticiasaominuto.com": 12,
+      "en.protothema.gr": 12,
+      "www.mondorf.lu": 12,
+      "www.protothema.gr": 10
+    },
+    "pii_modification_patterns": {
+      "UX_AND_PERFORMANCE_ANALYTICS": {
+        "count": 112,
+        "avg_gap": 26.11764705882353
+      },
+      "ID_SOLUTIONS_AND_EXCHANGES": {
+        "count": 27,
+        "avg_gap": 23.302158273381295
+      },
+      "IDENTITY_TRACKING": {
+        "count": 39,
+        "avg_gap": 51.67142857142857
+      },
+      "CONSENT_AND_PRIVACY": {
+        "count": 6,
+        "avg_gap": 121.33333333333333
+      },
+      "NAVIGATION_HISTORY": {
+        "count": 2,
+        "avg_gap": 22.842105263157894
+      },
+      "USER_PREFERENCES": {
+        "count": 8,
+        "avg_gap": 48.88461538461539
+      },
+      "BEHAVIORAL_DATA": {
+        "count": 48,
+        "avg_gap": 65.64556962025317
+      },
+      "LOCATION_AND_DEMOGRAPHICS": {
+        "count": 22,
+        "avg_gap": 5.2727272727272725
+      },
+      "TECHNICAL_PASSWORDS": {
+        "count": 5,
+        "avg_gap": 28.2
+      },
+      "SECURITY_AND_BOT_MITIGATION": {
+        "count": 4,
+        "avg_gap": 25.529411764705884
+      },
+      "INFRASTRUCTURE": {
+        "count": 3,
+        "avg_gap": 147.4
+      },
+      "APP_STATE_STORAGE": {
+        "count": 7,
+        "avg_gap": 15.654761904761905
+      }
+    }
+  },
+  "num_timelines": 496
+}

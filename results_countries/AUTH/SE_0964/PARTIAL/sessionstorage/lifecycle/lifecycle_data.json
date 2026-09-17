@@ -1,0 +1,94 @@
+{
+  "storage_type": "sessionstorage",
+  "metrics": {
+    "total_items": 73,
+    "items_modified": 6,
+    "items_deleted": 27,
+    "entropy_increases": 14,
+    "entropy_decreases": 8,
+    "size_increases": 1,
+    "size_decreases": 2,
+    "pii_transitions": {
+      "APP_STATE_STORAGE -> BEHAVIORAL_DATA": 1,
+      "IDENTITY_TRACKING -> TECHNICAL_PASSWORDS": 1,
+      "IDENTITY_TRACKING -> UX_AND_PERFORMANCE_ANALYTICS": 6,
+      "DEVICE_ENV -> NAVIGATION_HISTORY": 2,
+      "IDENTITY_TRACKING -> ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "IDENTITY_TRACKING -> NAVIGATION_HISTORY": 1,
+      "BEHAVIORAL_DATA -> ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "ID_SOLUTIONS_AND_EXCHANGES -> SECURITY_AND_BOT_MITIGATION": 1,
+      "TECHNICAL_PASSWORDS -> IDENTITY_TRACKING": 1,
+      "NAVIGATION_HISTORY -> UX_AND_PERFORMANCE_ANALYTICS": 2,
+      "DIRECT_PII -> DIRECT_PII_KEYS": 1,
+      "DEVICE_ENV -> USER_PREFERENCES": 1,
+      "DIRECT_PII_KEYS -> NAVIGATION_HISTORY": 1,
+      "SESSION_MANAGEMENT -> UX_AND_PERFORMANCE_ANALYTICS": 1
+    },
+    "volatility_distribution": {
+      "high": 16,
+      "stable": 43,
+      "moderate": 14
+    },
+    "change_frequency": {
+      "avg_gap": 43.282828282828284,
+      "min_gap": 0,
+      "max_gap": 304
+    },
+    "frequent_changes": [
+      {
+        "key": "AI_buffer",
+        "avg_gap": 19.36842105263158,
+        "num_modifications": 9,
+        "pii_category": "IDENTITY_TRACKING"
+      },
+      {
+        "key": "History.store",
+        "avg_gap": 23.352941176470587,
+        "num_modifications": 4,
+        "pii_category": "ID_SOLUTIONS_AND_EXCHANGES"
+      },
+      {
+        "key": "tt_pixel_session_index",
+        "avg_gap": 26.071428571428573,
+        "num_modifications": 6,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "sentryReplaySession",
+        "avg_gap": 31.333333333333332,
+        "num_modifications": 3,
+        "pii_category": "ID_SOLUTIONS_AND_EXCHANGES"
+      }
+    ],
+    "url_modifications": {
+      "www.sverigeforunhcr.se": 9,
+      "avima.app": 4,
+      "servicefinder.se": 3,
+      "www.rodakorset.se": 3,
+      "app.bokio.se": 3,
+      "kalender.se": 2,
+      "www.axa.se": 1,
+      "int.saco.se": 1,
+      "www.saco.se": 1
+    },
+    "pii_modification_patterns": {
+      "NAVIGATION_HISTORY": {
+        "count": 2,
+        "avg_gap": 69.33333333333333
+      },
+      "ID_SOLUTIONS_AND_EXCHANGES": {
+        "count": 7,
+        "avg_gap": 24.55
+      },
+      "UX_AND_PERFORMANCE_ANALYTICS": {
+        "count": 6,
+        "avg_gap": 26.071428571428573
+      },
+      "IDENTITY_TRACKING": {
+        "count": 12,
+        "avg_gap": 25.61904761904762
+      }
+    }
+  },
+  "num_timelines": 73
+}

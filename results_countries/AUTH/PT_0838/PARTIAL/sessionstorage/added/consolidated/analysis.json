@@ -1,0 +1,830 @@
+{
+  "storage_type": "sessionstorage",
+  "total_items": 173,
+  "direct_pii_count": 0,
+  "other_count": 173,
+  "pii_distribution": {
+    "APP_STATE_STORAGE": 3,
+    "BEHAVIORAL_DATA": 28,
+    "DEVICE_ENV": 5,
+    "IDENTITY_TRACKING": 39,
+    "ID_SOLUTIONS_AND_EXCHANGES": 2,
+    "LOCATION_AND_DEMOGRAPHICS": 1,
+    "NAVIGATION_HISTORY": 5,
+    "SECURITY_AND_BOT_MITIGATION": 3,
+    "SESSION_MANAGEMENT": 12,
+    "TECHNICAL_PASSWORDS": 2,
+    "USER_PREFERENCES": 15,
+    "UX_AND_PERFORMANCE_ANALYTICS": 58
+  },
+  "pii_by_category": {
+    "APP_STATE_STORAGE": {
+      "APP_STATE_STORAGE": 3
+    },
+    "BEHAVIORAL_DATA": {
+      "BEHAVIORAL_DATA": 28
+    },
+    "DEVICE_ENV": {
+      "DEVICE_ENV": 5
+    },
+    "IDENTITY_TRACKING": {
+      "IDENTITY_TRACKING": 39
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "ID_SOLUTIONS_AND_EXCHANGES": 2
+    },
+    "LOCATION_AND_DEMOGRAPHICS": {
+      "LOCATION_AND_DEMOGRAPHICS": 1
+    },
+    "NAVIGATION_HISTORY": {
+      "NAVIGATION_HISTORY": 5
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "SECURITY_AND_BOT_MITIGATION": 3
+    },
+    "SESSION_MANAGEMENT": {
+      "SESSION_MANAGEMENT": 12
+    },
+    "TECHNICAL_PASSWORDS": {
+      "TECHNICAL_PASSWORDS": 2
+    },
+    "USER_PREFERENCES": {
+      "USER_PREFERENCES": 15
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "UX_AND_PERFORMANCE_ANALYTICS": 58
+    }
+  },
+  "persistence_distribution": {
+    "Session": 173
+  },
+  "persistence_by_pii": {
+    "APP_STATE_STORAGE": {
+      "Session": 3
+    },
+    "BEHAVIORAL_DATA": {
+      "Session": 28
+    },
+    "DEVICE_ENV": {
+      "Session": 5
+    },
+    "IDENTITY_TRACKING": {
+      "Session": 39
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "Session": 2
+    },
+    "LOCATION_AND_DEMOGRAPHICS": {
+      "Session": 1
+    },
+    "NAVIGATION_HISTORY": {
+      "Session": 5
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "Session": 3
+    },
+    "SESSION_MANAGEMENT": {
+      "Session": 12
+    },
+    "TECHNICAL_PASSWORDS": {
+      "Session": 2
+    },
+    "USER_PREFERENCES": {
+      "Session": 15
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "Session": 58
+    }
+  },
+  "size_by_pii": {
+    "APP_STATE_STORAGE": {
+      "total": 82,
+      "average": 27.333333333333332,
+      "count": 3
+    },
+    "BEHAVIORAL_DATA": {
+      "total": 2889,
+      "average": 103.17857142857143,
+      "count": 28
+    },
+    "DEVICE_ENV": {
+      "total": 352,
+      "average": 70.4,
+      "count": 5
+    },
+    "IDENTITY_TRACKING": {
+      "total": 3400,
+      "average": 87.17948717948718,
+      "count": 39
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "total": 467,
+      "average": 233.5,
+      "count": 2
+    },
+    "LOCATION_AND_DEMOGRAPHICS": {
+      "total": 1856,
+      "average": 1856.0,
+      "count": 1
+    },
+    "NAVIGATION_HISTORY": {
+      "total": 289,
+      "average": 57.8,
+      "count": 5
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "total": 1935,
+      "average": 645.0,
+      "count": 3
+    },
+    "SESSION_MANAGEMENT": {
+      "total": 563,
+      "average": 46.916666666666664,
+      "count": 12
+    },
+    "TECHNICAL_PASSWORDS": {
+      "total": 18,
+      "average": 9.0,
+      "count": 2
+    },
+    "USER_PREFERENCES": {
+      "total": 41,
+      "average": 2.7333333333333334,
+      "count": 15
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "total": 2400,
+      "average": 41.37931034482759,
+      "count": 58
+    }
+  },
+  "content_hierarchy": {
+    "json_structured": {
+      "APP_STATE_STORAGE": 3,
+      "BEHAVIORAL_DATA": 18,
+      "DEVICE_ENV": 5,
+      "IDENTITY_TRACKING": 12,
+      "ID_SOLUTIONS_AND_EXCHANGES": 2,
+      "LOCATION_AND_DEMOGRAPHICS": 1,
+      "NAVIGATION_HISTORY": 2,
+      "SECURITY_AND_BOT_MITIGATION": 2,
+      "SESSION_MANAGEMENT": 6,
+      "USER_PREFERENCES": 1,
+      "UX_AND_PERFORMANCE_ANALYTICS": 22
+    },
+    "complex_string": {
+      "BEHAVIORAL_DATA": 6,
+      "IDENTITY_TRACKING": 11,
+      "NAVIGATION_HISTORY": 3,
+      "SECURITY_AND_BOT_MITIGATION": 1,
+      "SESSION_MANAGEMENT": 4,
+      "TECHNICAL_PASSWORDS": 1,
+      "UX_AND_PERFORMANCE_ANALYTICS": 6
+    },
+    "boolean": {
+      "BEHAVIORAL_DATA": 2,
+      "SESSION_MANAGEMENT": 1,
+      "USER_PREFERENCES": 8,
+      "UX_AND_PERFORMANCE_ANALYTICS": 18
+    },
+    "language_code": {
+      "BEHAVIORAL_DATA": 2
+    },
+    "short_text": {
+      "IDENTITY_TRACKING": 6,
+      "TECHNICAL_PASSWORDS": 1,
+      "USER_PREFERENCES": 3,
+      "UX_AND_PERFORMANCE_ANALYTICS": 3
+    },
+    "token_id": {
+      "IDENTITY_TRACKING": 4,
+      "UX_AND_PERFORMANCE_ANALYTICS": 8
+    },
+    "uuid": {
+      "IDENTITY_TRACKING": 5
+    },
+    "number": {
+      "IDENTITY_TRACKING": 1,
+      "SESSION_MANAGEMENT": 1,
+      "USER_PREFERENCES": 3,
+      "UX_AND_PERFORMANCE_ANALYTICS": 1
+    }
+  },
+  "content_types": {
+    "json_structured": 74,
+    "complex_string": 32,
+    "boolean": 29,
+    "language_code": 2,
+    "short_text": 13,
+    "token_id": 12,
+    "uuid": 5,
+    "number": 6
+  },
+  "vendor_counts": {
+    "lisboasecreta.co": 11,
+    "casafari.com": 11,
+    "com.br": 25,
+    "eurosender.com": 5,
+    "airbnb.pt": 5,
+    "infraestruturasdeportugal.pt": 21,
+    "androidgeek.pt": 24,
+    "jolidey.pt": 2,
+    "inpost.pt": 12,
+    "iadportugal.pt": 3,
+    "jll.pt": 7,
+    "flertecasuais.com": 6,
+    "vilagale.com": 1,
+    "truck1.pt": 1,
+    "portadafrente.com": 5,
+    "kayak.pt": 1,
+    "pwc.pt": 6,
+    "carris.pt": 2,
+    "comprarcasa.pt": 2,
+    "otempo.pt": 2,
+    "e-redes.pt": 3,
+    "portaldahabitacao.pt": 2,
+    "rsi-viagens.pt": 2,
+    "bigmat.pt": 1,
+    "remax.pt": 10,
+    "carout.pt": 3
+  },
+  "category_vendor_flows": [
+    [
+      "APP_STATE_STORAGE",
+      "lisboasecreta.co",
+      1
+    ],
+    [
+      "APP_STATE_STORAGE",
+      "casafari.com",
+      2
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "com.br",
+      9
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "eurosender.com",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "airbnb.pt",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "infraestruturasdeportugal.pt",
+      4
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "androidgeek.pt",
+      6
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "jolidey.pt",
+      2
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "inpost.pt",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "iadportugal.pt",
+      2
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "casafari.com",
+      2
+    ],
+    [
+      "DEVICE_ENV",
+      "jll.pt",
+      1
+    ],
+    [
+      "DEVICE_ENV",
+      "lisboasecreta.co",
+      1
+    ],
+    [
+      "DEVICE_ENV",
+      "inpost.pt",
+      1
+    ],
+    [
+      "DEVICE_ENV",
+      "casafari.com",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "flertecasuais.com",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "vilagale.com",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "com.br",
+      8
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "jll.pt",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "lisboasecreta.co",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "truck1.pt",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "portadafrente.com",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "inpost.pt",
+      3
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "kayak.pt",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "iadportugal.pt",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "eurosender.com",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "pwc.pt",
+      3
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "airbnb.pt",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "infraestruturasdeportugal.pt",
+      5
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "carris.pt",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "comprarcasa.pt",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "casafari.com",
+      1
+    ],
+    [
+      "ID_SOLUTIONS_AND_EXCHANGES",
+      "lisboasecreta.co",
+      1
+    ],
+    [
+      "ID_SOLUTIONS_AND_EXCHANGES",
+      "com.br",
+      1
+    ],
+    [
+      "LOCATION_AND_DEMOGRAPHICS",
+      "eurosender.com",
+      1
+    ],
+    [
+      "NAVIGATION_HISTORY",
+      "flertecasuais.com",
+      2
+    ],
+    [
+      "NAVIGATION_HISTORY",
+      "inpost.pt",
+      1
+    ],
+    [
+      "NAVIGATION_HISTORY",
+      "casafari.com",
+      2
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "lisboasecreta.co",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "portadafrente.com",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "eurosender.com",
+      1
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "otempo.pt",
+      1
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "jll.pt",
+      2
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "lisboasecreta.co",
+      2
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "inpost.pt",
+      1
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "pwc.pt",
+      3
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "com.br",
+      1
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "casafari.com",
+      2
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "portadafrente.com",
+      2
+    ],
+    [
+      "USER_PREFERENCES",
+      "e-redes.pt",
+      3
+    ],
+    [
+      "USER_PREFERENCES",
+      "infraestruturasdeportugal.pt",
+      6
+    ],
+    [
+      "USER_PREFERENCES",
+      "com.br",
+      1
+    ],
+    [
+      "USER_PREFERENCES",
+      "portaldahabitacao.pt",
+      2
+    ],
+    [
+      "USER_PREFERENCES",
+      "lisboasecreta.co",
+      1
+    ],
+    [
+      "USER_PREFERENCES",
+      "rsi-viagens.pt",
+      2
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "flertecasuais.com",
+      2
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "infraestruturasdeportugal.pt",
+      6
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "com.br",
+      5
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "androidgeek.pt",
+      18
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "otempo.pt",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "bigmat.pt",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "jll.pt",
+      2
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "lisboasecreta.co",
+      2
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "remax.pt",
+      10
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "carout.pt",
+      3
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "inpost.pt",
+      5
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "airbnb.pt",
+      3
+    ]
+  ],
+  "entropy_by_pii": {
+    "APP_STATE_STORAGE": [
+      1.0,
+      4.153055907333275,
+      4.153055907333275
+    ],
+    "BEHAVIORAL_DATA": [
+      3.810684609055371,
+      4.043766868256646,
+      4.762982904568216,
+      4.9867465227466665,
+      4.0785559236087945,
+      4.086089463019182,
+      3.5465935642949384,
+      4.46343539390861,
+      4.419402685670849,
+      1.0,
+      1.0,
+      4.479496830124854,
+      0.0,
+      2.6688388898504303,
+      3.8966266730551826,
+      1.0,
+      1.0,
+      2.8615758177648116,
+      4.402695968966625,
+      2.94770277922009,
+      2.321928094887362,
+      2.321928094887362,
+      1.0,
+      1.0,
+      4.529620569268803,
+      0.0,
+      4.574411672140688,
+      4.461347775700744
+    ],
+    "DEVICE_ENV": [
+      3.4992275471326932,
+      3.4992275471326932,
+      4.313458571783145,
+      4.2813025399545355,
+      4.2813025399545355
+    ],
+    "IDENTITY_TRACKING": [
+      4.2987014741508505,
+      2.584962500721156,
+      4.094760845817661,
+      4.723661954613669,
+      3.521928094887362,
+      4.698068512058838,
+      3.521928094887362,
+      1.9182958340544893,
+      3.084962500721156,
+      4.313458571783145,
+      2.807354922057604,
+      2.584962500721156,
+      1.0,
+      4.762982904568216,
+      4.4021721053841345,
+      4.9867465227466665,
+      4.094760845817661,
+      4.2987014741508505,
+      4.25122870915772,
+      4.418786907671611,
+      3.1117568363634587,
+      4.219528282299547,
+      2.8736287051460168,
+      3.9908683555108015,
+      3.7845276964165557,
+      5.122923918313785,
+      3.742589501851919,
+      4.51819630188572,
+      3.9032080616476805,
+      2.2516291673878226,
+      3.752715278979704,
+      3.925410635240724,
+      2.873140679513133,
+      5.189231449866568,
+      4.505245499275517,
+      3.7080030435786813,
+      3.7845276964165557,
+      3.8301826981560265,
+      2.584962500721156
+    ],
+    "ID_SOLUTIONS_AND_EXCHANGES": [
+      3.926655325888903,
+      5.3869593524145865
+    ],
+    "LOCATION_AND_DEMOGRAPHICS": [
+      4.762982904568216
+    ],
+    "NAVIGATION_HISTORY": [
+      4.2987014741508505,
+      3.157872114061108,
+      4.2813025399545355,
+      4.2987014741508505,
+      4.2813025399545355
+    ],
+    "SECURITY_AND_BOT_MITIGATION": [
+      3.926655325888903,
+      3.084962500721156,
+      4.762982904568216
+    ],
+    "SESSION_MANAGEMENT": [
+      2.873140679513133,
+      4.723661954613669,
+      3.521928094887362,
+      4.698068512058838,
+      3.521928094887362,
+      4.313458571783145,
+      4.4021721053841345,
+      4.014146761422729,
+      4.25122870915772,
+      4.418786907671611,
+      2.0,
+      3.7974165797919075
+    ],
+    "TECHNICAL_PASSWORDS": [
+      2.584962500721156,
+      3.084962500721156
+    ],
+    "USER_PREFERENCES": [
+      1.584962500721156,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      3.880179922675737,
+      0.0,
+      1.584962500721156,
+      0.0,
+      1.584962500721156
+    ],
+    "UX_AND_PERFORMANCE_ANALYTICS": [
+      4.2987014741508505,
+      4.52708180488393,
+      4.0388735855462485,
+      3.0565647621309537,
+      0.0,
+      0.0,
+      4.373669222208583,
+      4.176999958742696,
+      0.0,
+      0.0,
+      4.386569514871061,
+      4.400310530134925,
+      2.873140679513133,
+      2.0,
+      2.0,
+      0.0,
+      0.0,
+      4.373669222208583,
+      4.176999958742696,
+      0.0,
+      0.0,
+      4.723661954613669,
+      3.521928094887362,
+      4.698068512058838,
+      3.521928094887362,
+      4.521874978566387,
+      4.400310530134924,
+      2.7773627950641693,
+      2.7773627950641693,
+      2.0,
+      2.7773627950641693,
+      2.7773627950641693,
+      0.0,
+      4.313458571783145,
+      4.96486333949908,
+      4.366759974483216,
+      3.157872114061108,
+      2.1219280948873624,
+      2.0,
+      2.0,
+      0.0,
+      4.373669222208583,
+      0.0,
+      0.0,
+      0.0,
+      4.176999958742696,
+      2.1219280948873624,
+      4.9867465227466665,
+      2.0,
+      4.014146761422729,
+      2.7773627950641693,
+      2.7773627950641693,
+      4.2987014741508505,
+      3.1395722619867223,
+      2.7773627950641693,
+      2.7773627950641693,
+      2.7773627950641693,
+      2.7773627950641693
+    ]
+  },
+  "risk_levels": {
+    "Low Risk": 26,
+    "Medium Risk": 106,
+    "High Risk": 41
+  },
+  "risk_by_pii": {
+    "APP_STATE_STORAGE": {
+      "Low Risk": 3
+    },
+    "BEHAVIORAL_DATA": {
+      "Medium Risk": 28
+    },
+    "DEVICE_ENV": {
+      "Low Risk": 5
+    },
+    "IDENTITY_TRACKING": {
+      "High Risk": 39
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "High Risk": 2
+    },
+    "LOCATION_AND_DEMOGRAPHICS": {
+      "Low Risk": 1
+    },
+    "NAVIGATION_HISTORY": {
+      "Medium Risk": 5
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "Medium Risk": 3
+    },
+    "SESSION_MANAGEMENT": {
+      "Medium Risk": 12
+    },
+    "TECHNICAL_PASSWORDS": {
+      "Low Risk": 2
+    },
+    "USER_PREFERENCES": {
+      "Low Risk": 15
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "Medium Risk": 58
+    }
+  }
+}
