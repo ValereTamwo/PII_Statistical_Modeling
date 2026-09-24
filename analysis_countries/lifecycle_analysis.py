@@ -19,6 +19,9 @@ from typing import Dict, List, Tuple, Optional
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / 'analysis'))
 import privacy_metrics as pm
 
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from countries_config import add_users_arg, resolve_users
+
 
 def create_cookie_key(cookie: Dict) -> str:
     """Creates a unique key for a cookie. Format: name|domain|path"""
@@ -268,7 +271,7 @@ def analyze_lifecycle(added_dir: Path, modified_dir: Path, removed_dir: Path = N
     }
 
 
-def main():
+def main(users=None):
     """Main script (country extension)."""
     base_dir = Path(__file__).resolve().parent.parent / 'data'
     output_base = Path(__file__).resolve().parent.parent / 'results_countries'
@@ -277,7 +280,7 @@ def main():
         print(f"Directory {base_dir} not found")
         return
 
-    users = ('IT_0573', 'LU_0634', 'PT_0838', 'SE_0964', 'ES_0290', 'DE_0018')
+    users = users or resolve_users(None)
     auth_statuses = ('AUTH', 'NOTAUTH')
     policies = ('PARTIAL',)
 
@@ -344,4 +347,8 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    import argparse
+    parser = argparse.ArgumentParser()
+    add_users_arg(parser)
+    args = parser.parse_args()
+    main(users=resolve_users(args.users))

@@ -917,7 +917,7 @@ TRACKING_PATTERNS_COMPLETE = {
         'vendor_nexx360_p2_expansion': r'(n360_thirtythreeacross|n360\-thirtythreeacross|n360_appnexus|n360\-appnexus|n360_bliink|n360\-bliink|n360_amx|n360\-amx|n360_adform|n360\-adform|n360_adnuntius|n360\-adnuntius|n360_adot|n360\-adot|n360_adyoulike|n360\-adyoulike|n360_connectad|n360\-connectad|n360_conversant|n360\-conversant)',
         'vendor_adobe_advertising_p2_expansion': r'(everest_g_v2|everest_session_v2|ev_tm|_tmae|_lcc|ev_sync_ax|ev_sync_bk|ev_sync_dd|ev_sync_fs|ev_sync_ix|ev_sync_nx|ev_sync_ox|ev_sync_pm|ev_sync_rc|ev_sync_tm|ev_sync_yh|adcloud|id_adcloud)',
         'vendor_pubmatic_p2_expansion': r'(PUBMDCID|^pp$|PUBRETARGET|^KCCH$|SyncRTB|DPSync|ADUSERCOOKIE|^PugT$|KRTBCOOKIE_|f5_cspm|^USCC$|DPPIX_ON|SYNCUPPIX_ON|camfreq_|pubfreq_|^DPFQ$|^pi$)',
-        'vendor_outbrain_p2_expansion': r'(cookieJartestCookie|apnxs|mdfrc|^adrl$|^ttd$|^recs$|bdswch|obsessionid\-|opout|^recs\-$|europe|^ref\-$|^auid$|outbrain_dicbo_id|unifiedPixel)',
+        'vendor_outbrain_p2_expansion': r'(cookieJartestCookie|apnxs|mdfrc|^adrl$|^ttd$|^recs$|bdswch|obsessionid\-|opout|^recs\-$|^ref\-$|^auid$|outbrain_dicbo_id|unifiedPixel)',
         'vendor_yieldmo_p2_expansion': r'(ptrcriteo|ptrrhs|yieldmo_id|ptrrc|ptran|^ptrt$|ptrpp|ptrpub|^ptrc$|^ptrb$|ptropenx|ptrbsw|ptreps|ptradtrt)',
         'vendor_dotomi_p2_expansion': r'(DotomiUser|^cjae$|DotomiStatus|DotomiSession_|DotomiSync|dtm_token_exp|dtm_tcdata|dtm_tcdata_exp|dtm_token_sc|dtm_user_id|dtm_user_id_sc|dtm_gdpr_delete|dtm_gpc_optout)',
         'vendor_smartadserver_p2_expansion': r'(^cnfq$|lcsrc|^gid$|partner\-|^vs$|^Comp$|^Pwb$|^sasd$|sasd2|TestIfCookie|TestIfCookieP|^pid$|^pbw$)',
@@ -1031,18 +1031,18 @@ TRACKING_PATTERNS_COMPLETE = {
         'generic_ids': r'(visitor_id|client_id|browser_id|(?<![a-zA-Z])uuid(?![a-zA-Z])|(?<![a-zA-Z])guid(?![a-zA-Z])|[_-]uid[_-]?|^uid$|session_id|user_hash|visitorId|sessionid|^PVID$|^VID$)',
         'googl_stack': r'(^_ga$|_ga_|_gid|_gat|__utma|__utmb|__utmz|gclid|dclid|_gac_|_gcl_|gtm_|^__gads$|^__gpi$)',
         'google_session': r'(__Secure-[13]PSIDCC|SIDCC|g_state)',
-        'meta_setack': r'(_fbp|_fbc|fbclid|act_|c_user|^xs$|^fr$|^datr$)',
+        'meta_setack': r'(_fbp|_fbc|fbclid|act_|c_user|^xs$|^datr$)',
         'microsoft_stack': r'(^MUID$|MUIDB|_uetsid|_uetvid)',
-        'amazon_stack': r'(session-id|ubid-acbfr|x-wl-uid|ad-id|ad-privacy)',
+        'amazon_stack': r'(session-id|ubid-acbfr|x-wl-uid|ad-id)',
         'tiktok_stack': r'(_ttp|_tt_enable|_tt_session|tt_pixel)',
         'generic_adtech': r'(idsync|^uuid$|[_-]sid[_-]?|^sid$|^yid$|yahoo|^aol$)',
         'segment_io': r'(ajs_user_id|ajs_anonymous_id)',
         'mixpanel': r'(mp_.*_mixpanel)',
         'amplitude': r'(amplitude_id|amp_)',
         'hubspot': r'(hubspotutk|__hstc|__hssc)',
-        'firebase_ids': r'(firebase_appId|firebase_auth|firebase_instanceId|\bfid\b)',
+        'firebase_ids': r'(firebase_appId|firebase_instanceId|\bfid\b)',
         'sso_ids': r'(okta_user_id|auth0_id|keycloak_id)',
-        'publisher_ids': r'(__eoi|_ht_v|_ht_s|fidsdk|rossel_id)',
+        'publisher_ids': r'(__eoi|_ht_v|_ht_s|\bfidsdk\b|rossel_id)',
         'snapchat_pixel': r'(_scid|_scid_r)',
         'shopify_analytics': r'(_shopify_analytics)',
         'pinterest_extended': r'(_pin_unauth|_pinterest_)',
@@ -1054,14 +1054,11 @@ TRACKING_PATTERNS_COMPLETE = {
         'hash_ids': r'(\bhash\b|hashSessionId|redhash)',
         'cluster_session': r'(\bcluster\b|\bsp\b)',
         'cltk': r'(_cltk)',
-        'idz_page': r'(idz_pageId)',
         'mcssids': r'(mcssids)',
         'core_ads_session': r'(CoreAdsPvSession)',
         'spdt': r'(__spdt)',
         'zendesk': r'(ZD-suid)',
-        'forter': r'(forterToken)',
         'datadog_session': r'(ddSession)',
-        'auth_key': r'(authKey|authToken|refreshToken|accessToken)',
         'geoip_enabled': r'(geoIP)',
         'algorithm_id': r'(algorithm_parameters.id)',
         'persistence_vectors': r'(evercookie|ec_cache|fp_cache|device_hash|fingerprint_id|machine_id)',
@@ -1083,7 +1080,6 @@ TRACKING_PATTERNS_COMPLETE = {
         'embedded_urls': r'(embedUrl|referringUrl|originalUrl)',
         'page_tracking': r'(pageCount|NbPagesVues|pageViewCounter|page_score|PageViewEvent|sequenceNumber)',
         'path_tracking': r'(pathName|\broute\b|selected_route|searchPathname|current_path)',
-        'ga_extended': r'(__utmt)',
         'session_journey': r'(sbjs_session)',
         'rxvt': r'(^rxvt$)',
     },
@@ -1164,6 +1160,8 @@ TRACKING_PATTERNS_COMPLETE = {
         'surveillance': r'(idSurveillanceCurrentPage)',
         'page_nav_events':r'(PageViewEvent)',
         'timestamp_key': r'\b(timestamp|created_at|updated_at|last_visit|event_time|session_start|creationTime|expiresIn|lastSentHeartbeatDate|lastHeartbeatDate|lastHeartbeatTimestamp|lastHeartbeatTimestamp|LastUsed)\b',
+        'idz_page': r'(idz_pageId)',
+
     },
 
 
@@ -1214,13 +1212,18 @@ TRACKING_PATTERNS_COMPLETE = {
         'auth0_patterns': r'(auth0|auth0_compat|bkng_sso_auth)',
         'auth_tokens': r'(session_token|auth_token|^csid$|[_-]sid[_-]?|^sid$|\bjwt\b|^jwt$|jwtToken|authToken)',
         'jwt_token': r'^[A-Za-z0-9-_]+\.[A-Za-z0-9-_]+\.[A-Za-z0-9-_]+$',
+        'auth_key': r'(authKey|authToken|refreshToken|accessToken)',
+        'forter': r'(forterToken)',
+
+
     },
     'DEVICE_ENV': {
-        'vendor_google_maps_p2_expansion': r'(^OGPC$|^OGP$)',
-        'os_browser': r'(userAgent|platform|navigator_os|navigator_browser)',
+        # 'vendor_google_maps_p2_expansion': r'(^OGPC$|^OGP$)',
+        'os_browser': r'(userAgent|platform|navigator_os|navigator_browser|user-agent-data)',
         'screen_resolution': r'(screenWidth|screenHeight|devicePixelRatio|\bresolution\b)',
-        'language': r'(navigator_language|^lang$|locale)',
+        # 'language': r'(navigator_language|^lang$|locale)',
         'youtube_device': r'(X-YouTube-Device|X-YouTube-Page-Label)',
+        
         'youtube_visitor': r'(VISITOR_PRIVACY_METADATA|VISITOR_INFO1_LIVE|^YSC$)',
         'device_memory': r'(deviceMemory|hardware_concurrency)',
         'time_zone': r'(timezone|timeZoneOffset|Intl_DateTimeFormat)',
@@ -1230,7 +1233,7 @@ TRACKING_PATTERNS_COMPLETE = {
         'posthog': r'(ph_phc_[A-Za-z0-9]+_posthog)',
         'device_detection': r'(\bkhaos\b|khaos_p)',
 
-        'user_agent_extended': r'(userAgent|browser|platform)',
+        # 'user_agent_extended': r'(userAgent|browser|platform)',
         'screen_extended': r'(screen|viewport|resolution)',
     },
 
@@ -1240,7 +1243,7 @@ TRACKING_PATTERNS_COMPLETE = {
         'hardware_concurrency': r'(hardware_concurrency|device_memory|cpu_class|platform_ua)',
         'battery_network': r'(battery_level|charging_time|connection_rtt|downlink_max)',
         'fonts_installed': r'(font_list|available_fonts|font_hash|text_metrics)',
-        'user_agent_data': r'(user-agent-data)',
+        # 'user_agent_data': r'(user-agent-data)',
         # moved from IDENTITY_TRACKING - generic (non-vendor) fingerprint signals
         'generic_fingerprint_keys': r'(fingerprint|canvas_hash|device_fingerprint|^fpjs$|browser_signature)',
         'generic_fingerprint_audio_webgl': r'(fp_audio|fp_webgl|canvas_fp)',
@@ -1281,7 +1284,9 @@ TRACKING_PATTERNS_COMPLETE = {
         'permission_state': r'(_wpinitialpermissionstate)',
         'dnt': r'(ayads-dnt)',
         'is_eu': r'(is_eu)',
-        'vendor_media_net' : r'(gdpr_status)'
+        'vendor_media_net' : r'(gdpr_status)',
+        'privacy': r'(tracking_opt_out|cookie_consent|ad_personalization)'
+
     },
 
         
@@ -1298,16 +1303,13 @@ TRACKING_PATTERNS_COMPLETE = {
         'theme': r'(dark_mode|light_mode|theme_preference)',
         'language': r'(lang_preference|locale|preferred_language|fr-FR)',
         'notifications': r'(notification_pref|email_notifications|push_notifications)',
-        'privacy': r'(tracking_opt_out|cookie_consent|ad_personalization)',
         'layout': r'(dashboard_layout|view_mode|grid_preference)',
-        'other_settings': r'(font_size|timezone|currency)',
+        'other_settings': r'(font_size|currency)',
         'ab_testing_state': r'(optimizely|vwo_|ab_test|split_group|experiment_id|variant_id|bucket_id|_vis_opt)',
         'user_config_storage': r'(user_data|user_config|site_settings|app_config|visitor_config|sub19|sub20|settings_blob)',
         'preference_endpoints': r'(preferences?_url|preferences?_host|pref_endpoint|sync_preferences)',
         
-        'abtasty': r'(ABTasty|abtasty)',
     },
-
 
 'UX_AND_PERFORMANCE_ANALYTICS': {
         'vendor_quantcast_p2_expansion': r'(^cref$|^mc$|^d$|__qca)',
@@ -1391,6 +1393,10 @@ TRACKING_PATTERNS_COMPLETE = {
     'vendor_wepublish_p2_expansion': r'(_wepublishGa|_wepublishGa_gid)',
     'vendor_zendesk_p2_expansion': r'(_zdshared_user_session_analytics|ZD\-buid)',
     'vendor_comscore_p2_expansion': r'(^S1$|^C1$)',
+        'ga_extended': r'(__utmt)',
+        'abtasty': r'(ABTasty|abtasty)'
+
+
 },
 'SECURITY_AND_BOT_MITIGATION': {
     'cloudflare': r'(__cf_bm|_cfuvid|cf_clearance|cf_ob_info|cf_use_ob)',
@@ -1399,8 +1405,8 @@ TRACKING_PATTERNS_COMPLETE = {
     'imperva_incapsula': r'(incap_ses|visid_incap|nlbi_)',
     'datadome': r'(datadome)',
     'akamai_bot': r'(_abck|bm_sz|bm_sv|ak_bmsc)',
-    'auth_security': r'(auth_token|secure_session|login_csrf)',
-    'oauth': r'(oauth|OAuth)',
+    'auth_security': r'(secure_session|login_csrf)',
+    # 'oauth': r'(oauth|OAuth)',
     'dtm_token': r'(dtm_token)',
     'vendor_paypal_expansion': r'(enforce_policy|^x\-pp\-s$|^ts$|ts_c|tsrce|^nsid$|X\-PP\-SILOVER|X\-PP\-L7|l7_az)',
     'vendor_cleantalk_expansion': r'(apbct_antibot|ct_check_js|ct_fkp_timestamp|ct_has_scrolled|ct_pointer_data|ct_ps_timestamp|ct_timezone|apbct_cookies_test|apbct_|ct_|ct_sfw_|spbc_cookies_test|spbc_firewall_pass_key|spbc_is_logged_in|spbc_2fa_passed)',

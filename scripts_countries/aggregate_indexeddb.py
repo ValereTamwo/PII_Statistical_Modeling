@@ -11,10 +11,15 @@ separate from the FR pipeline's data/aggregates/indexeddb/.
 """
 
 import re
+import sys
+import os
 from pathlib import Path
 from collections import defaultdict, Counter
 from typing import Dict, List, Any
 import json
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from countries_config import add_users_arg, resolve_users
 
 
 def extract_record_index_from_path(field_path: str) -> int:
@@ -278,12 +283,12 @@ def process_indexeddb_aggregates(user_dir: Path, output_dir: Path):
     print(f"  {global_statistics['total_pii_instances']} PII instances")
 
 
-def main():
+def main(users=None):
     base_dir = Path(__file__).resolve().parent.parent / 'data'
     user_base_dir = base_dir / 'user_countries'
     aggregates_base_dir = base_dir / 'aggregates_countries' / 'indexeddb'
 
-    users = ('IT_0573', 'PT_0838', 'LU_0634', 'DE_0018', 'SE_0964', 'ES_0290')
+    users = users or resolve_users(None)
 
     print("=== INDEXEDDB AGGREGATION SYSTEM (country extension) ===\n")
 
@@ -299,4 +304,8 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    import argparse
+    parser = argparse.ArgumentParser()
+    add_users_arg(parser)
+    args = parser.parse_args()
+    main(users=resolve_users(args.users))

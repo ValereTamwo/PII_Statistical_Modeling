@@ -9,9 +9,14 @@ personas (single PARTIAL policy). Does NOT modify UNCATEGORIZED.json.
 """
 
 import json
+import os
+import sys
 from pathlib import Path
 from typing import Dict
 from collections import defaultdict, Counter
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from countries_config import add_users_arg, resolve_users
 
 def redistribute_ai_categorizations(
     ai_categorizations_file: Path,
@@ -111,7 +116,7 @@ def redistribute_ai_categorizations(
 # MAIN
 # =====================================================================
 
-def main():
+def main(users=None):
     base_dir = Path(__file__).resolve().parent.parent / "data"
     aggregates_ai_base = base_dir / "aggregates_ai_complete_countries" / "indexeddb"
     user_base = base_dir / "user_countries"
@@ -120,7 +125,8 @@ def main():
     print("AI CATEGORIZATION REDISTRIBUTION - INDEXEDDB - country extension")
     print("=" * 80)
 
-    users = ["IT_0573", "PT_0838", "LU_0634", "DE_0018", "SE_0964", "ES_0290"]
+    users = users or resolve_users(None)
+    print(f"Scoped to users: {users}")
 
     total_stats = {
         "total_fields_processed": 0,
@@ -169,4 +175,8 @@ def main():
     print("\n REDISTRIBUTION COMPLETE")
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    parser = argparse.ArgumentParser()
+    add_users_arg(parser)
+    args = parser.parse_args()
+    main(users=resolve_users(args.users))

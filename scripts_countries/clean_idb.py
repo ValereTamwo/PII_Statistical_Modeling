@@ -8,8 +8,13 @@ data/user_countries instead of data/user.
 
 import json
 import re
+import sys
+import os
 from pathlib import Path
 from typing import List, Dict, Any
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from countries_config import add_users_arg, resolve_users
 
 
 # Structural Regex & Resource Patterns (Anti-Noise)
@@ -107,13 +112,20 @@ def is_idb_internal_key(item: Dict[str, Any]) -> bool:
 # INDEXEDDB TASK DISCOVERY
 # ============================================================
 
-def discover_uncategorized_tasks(base_path: Path) -> List[Dict[str, Any]]:
+def discover_uncategorized_tasks(base_path: Path, users: List[str] = None) -> List[Dict[str, Any]]:
     tasks: List[Dict[str, Any]] = []
 
     if not base_path.exists():
         return tasks
 
+    users_filter = set(users) if users else None
+
     for uncategorized in base_path.glob("**/indexeddb/UNCATEGORIZED.json"):
+        # path shape: base_path/{auth}/{user}/{policy}/indexeddb/UNCATEGORIZED.json
+        rel_parts = uncategorized.relative_to(base_path).parts
+        user = rel_parts[1] if len(rel_parts) > 1 else None
+        if users_filter is not None and user not in users_filter:
+            continue
         tasks.append({
             "path": uncategorized,
             "dir": uncategorized.parent,
@@ -126,12 +138,12 @@ def discover_uncategorized_tasks(base_path: Path) -> List[Dict[str, Any]]:
 # MAIN FILTERING
 # ============================================================
 
-def filter_idb_internal_keys(base_path: Path) -> None:
+def filter_idb_internal_keys(base_path: Path, users: List[str] = None) -> None:
     """
     Separates technical noise and web resources from actually exploitable data.
     """
 
-    tasks = discover_uncategorized_tasks(base_path)
+    tasks = discover_uncategorized_tasks(base_path, users=users)
     print(f"--- Analyzing {len(tasks)} IndexedDB folders ---")
 
     for task in tasks:
@@ -201,8 +213,13 @@ def filter_idb_internal_keys(base_path: Path) -> None:
 # ============================================================
 
 if __name__ == "__main__":
+    import argparse
+    parser = argparse.ArgumentParser()
+    add_users_arg(parser)
+    args = parser.parse_args()
+
     base_path = Path(__file__).resolve().parent.parent / "data" / "user_countries"
 
-    filter_idb_internal_keys(base_path)
+    filter_idb_internal_keys(base_path, users=resolve_users(args.users))
 
     print("--- End of technical resource/noise filtering ---")

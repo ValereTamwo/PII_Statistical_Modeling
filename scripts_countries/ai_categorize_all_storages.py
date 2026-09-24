@@ -33,14 +33,8 @@ except ImportError:
 sys.path.insert(0, str(Path(__file__).parent))
 from regex_merged_v3 import TRACKING_PATTERNS_COMPLETE
 
-USER_ID_TO_INDEX = {
-    'IT_0573': 4,
-    'LU_0634': 5,
-    'PT_0838': 8,
-    'SE_0964': 10,
-    'ES_0290': 14,
-    'DE_0018': 17,
-}
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from countries_config import add_users_arg, resolve_users
 
 USER_PROFILES_FILE = Path(__file__).parent / "user_profiles_countries.json"
 if USER_PROFILES_FILE.exists():
@@ -95,7 +89,7 @@ def get_item_id(item: Dict) -> str:
 # TASK DISCOVERY
 # =====================================================================
 
-def discover_uncategorized_tasks(base_path: Path) -> List[Dict]:
+def discover_uncategorized_tasks(base_path: Path, users: List[str] = None) -> List[Dict]:
     """
     Discovers all UNCATEGORIZED.json files in the data/user_countries structure.
     Skips IndexedDB (has its own specialized pipeline).
@@ -104,6 +98,8 @@ def discover_uncategorized_tasks(base_path: Path) -> List[Dict]:
 
     if not base_path.exists():
         return tasks
+
+    users_filter = set(users) if users else None
 
     for auth_dir in base_path.iterdir():
         if not auth_dir.is_dir():
@@ -114,6 +110,8 @@ def discover_uncategorized_tasks(base_path: Path) -> List[Dict]:
             if not user_dir.is_dir():
                 continue
             user_id = user_dir.name
+            if users_filter is not None and user_id not in users_filter:
+                continue
 
             for policy_dir in user_dir.iterdir():
                 if not policy_dir.is_dir():
@@ -487,21 +485,23 @@ def process_single_configuration(config: Dict) -> Dict:
 # MAIN PARALLEL PROCESSING
 # =====================================================================
 
-def main():
+def main(users=None):
     """Main entry point with parallel processing."""
     api_key = os.getenv("OPENAI_API_KEY")
     if not api_key:
         print("OPENAI_API_KEY missing")
         return
 
+    users = users or resolve_users(None)
     base_path = Path(__file__).resolve().parent.parent / "data" / "user_countries"
 
     print("=" * 80)
     print("AI CATEGORIZATION - COOKIES/STORAGE - country extension (PARALLELIZED)")
     print("=" * 80)
+    print(f"Scoped to users: {users}")
 
     print("\nDiscovering UNCATEGORIZED files...")
-    raw_tasks = discover_uncategorized_tasks(base_path)
+    raw_tasks = discover_uncategorized_tasks(base_path, users=users)
 
     if not raw_tasks:
         print("No UNCATEGORIZED files to process")
@@ -584,4 +584,8 @@ def main():
     print(f"{'='*80}")
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    parser = argparse.ArgumentParser()
+    add_users_arg(parser)
+    args = parser.parse_args()
+    main(users=resolve_users(args.users))

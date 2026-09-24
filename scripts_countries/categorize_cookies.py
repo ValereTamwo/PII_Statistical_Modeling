@@ -27,15 +27,8 @@ from collections import Counter
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from regex_merged_v3 import TRACKING_PATTERNS_COMPLETE
 from overlap_detection import collect_all_pii_matches
-
-USER_ID_TO_INDEX = {
-    'IT_0573': 4,
-    'LU_0634': 5,
-    'PT_0838': 8,
-    'SE_0964': 10,
-    'ES_0290': 14,
-    'DE_0018': 17,
-}
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from countries_config import add_users_arg, resolve_users, USER_ID_TO_INDEX
 
 # PII PATTERN FAMILIES
 
@@ -561,9 +554,9 @@ def categorize_cookie(cookie, patterns):
     }
 
 
-def main():
+def main(users=None):
     base_dir = Path(__file__).resolve().parent.parent / 'data'
-    users = ('IT_0573', 'PT_0838', 'LU_0634', 'DE_0018', 'SE_0964', 'ES_0290')
+    users = users or resolve_users(None)
     auth_statuses = ('AUTH', 'NOTAUTH')
     policies = ('PARTIAL',)
 
@@ -673,4 +666,8 @@ def main():
                         print(f"  -> DIRECT_PII_KEYS: {unique_cookies_keys} unique cookies, {total_entries_keys} intentions (avg {avg_keys:.1f} PII keys/cookie)")
 
 if __name__ == '__main__':
-    main()
+    import argparse
+    parser = argparse.ArgumentParser()
+    add_users_arg(parser)
+    args = parser.parse_args()
+    main(users=resolve_users(args.users))

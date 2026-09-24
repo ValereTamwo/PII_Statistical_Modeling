@@ -8,10 +8,13 @@ reads/writes under data/user_countries/ for the 6 new-country personas
 (single PARTIAL policy, AUTH/NOTAUTH naming).
 """
 import json
+import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+from countries_config import add_users_arg, resolve_users
 
-USERS    = ["IT_0573", "LU_0634", "PT_0838", "SE_0964", "ES_0290", "DE_0018"]
+
 MODES    = ["AUTH", "NOTAUTH"]
 POLICIES = ["PARTIAL"]
 
@@ -37,17 +40,20 @@ def process_risk_items(data_root: Path, mode: str, user: str, policy: str):
 
     print(f"  [Ri] {mode}/{user}/{policy} : Processed {len(items)} items")
 
-def main():
+def main(users=None):
     base_dir  = Path(__file__).resolve().parents[2]
     data_root = base_dir / "data"
+
+    users = users or resolve_users(None)
 
     print("=" * 65)
     print("  ITEM RISK ENGINE - country extension")
     print("  Calculating Risk_i based on harm and likelihood (Pi x Ii)")
     print("=" * 65)
+    print(f"Scoped to users: {users}")
 
     for mode in MODES:
-        for user in USERS:
+        for user in users:
             for policy in POLICIES:
                 process_risk_items(data_root, mode, user, policy)
 
@@ -56,4 +62,8 @@ def main():
     print("=" * 65)
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    parser = argparse.ArgumentParser()
+    add_users_arg(parser)
+    args = parser.parse_args()
+    main(users=resolve_users(args.users))

@@ -3,16 +3,19 @@
 Path resolution for the country-extension preprocessing stage.
 
 Mirrors preprocessing/extract_*.py, but reads from data/Countries_data/Users/
-instead of data/raw/, covers 6 new personas, and only the PARTIAL policy
-(the only one collected for these users). Kept fully separate from the
-existing FR pipeline (preprocessing/, data/raw/, data/preprocessing/) so the
-original data and results are never touched.
+instead of data/raw/, covers the country personas (see
+countries_config.USERS), and only the PARTIAL policy (the only one
+collected for these users). Kept fully separate from the existing FR
+pipeline (preprocessing/, data/raw/, data/preprocessing/) so the original
+data and results are never touched.
 """
 
+import sys
 from pathlib import Path
 
-USERS = ('IT_0573', 'PT_0838', 'LU_0634', 'DE_0018', 'SE_0964', 'ES_0290')
-AUTH_STATUSES = ('AUTH', 'NOTAUTH')
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from countries_config import USERS, AUTH_STATUSES
+
 POLICY = 'PARTIAL'
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent

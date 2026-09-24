@@ -11,6 +11,8 @@ import json
 
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 import paths
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from countries_config import add_users_arg, resolve_users
 
 
 def _meta(data):
@@ -64,8 +66,8 @@ def extract_removed(data, task_id):
     return entries
 
 
-def main():
-    for user in paths.USERS:
+def main(users=None):
+    for user in (users or paths.USERS):
         for auth_status in paths.AUTH_STATUSES:
             input_dir = paths.storage_state_dir(user, auth_status)
             if not input_dir.exists():
@@ -113,4 +115,8 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    import argparse
+    parser = argparse.ArgumentParser()
+    add_users_arg(parser)
+    args = parser.parse_args()
+    main(users=resolve_users(args.users))

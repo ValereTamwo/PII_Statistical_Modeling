@@ -26,8 +26,11 @@ RISK_DIR = Path(__file__).resolve().parent
 SRC_DIR = RISK_DIR / "src"
 UTILS_DIR = SRC_DIR / "utils"
 
+sys.path.insert(0, str(RISK_DIR.parent))
+from countries_config import add_users_arg
 
-def run_script(script_path, description):
+
+def run_script(script_path, description, extra_args=None):
     print(f"\n" + "="*80)
     print(f" STEP: {description}")
     print(f" Executing: {script_path.name}")
@@ -38,7 +41,7 @@ def run_script(script_path, description):
         return False
 
     try:
-        result = subprocess.run([sys.executable, str(script_path)],
+        result = subprocess.run([sys.executable, str(script_path)] + (extra_args or []),
                                cwd=script_path.parent,
                                check=True)
         return result.returncode == 0
@@ -50,22 +53,24 @@ def run_script(script_path, description):
         return False
 
 
-def main():
+def main(extra_args=None):
     print("\n" + "#"*80)
     print("#" + " "*18 + "COUNTRY RISK ANALYSIS PxI RUNNER" + " "*25 + "#")
     print("#"*80)
+    if extra_args:
+        print(f"Forwarding extra args to every stage: {extra_args}")
 
     print("\n--- PHASE 1: VECTORIZATION ---")
-    if not run_script(UTILS_DIR / "items_vectorizer.py", "Items Vectorization"): return
+    if not run_script(UTILS_DIR / "items_vectorizer.py", "Items Vectorization", extra_args): return
 
     print("\n--- PHASE 2: RISK ENGINES (Pi, Ii, Ri) ---")
-    if not run_script(SRC_DIR / "item_exposure_engine.py", "Item Exposure Engine (Pi)"): return
-    if not run_script(SRC_DIR / "item_impact_engine.py", "Item Impact Engine (Ii)"): return
-    if not run_script(SRC_DIR / "item_risk_engine.py", "Item Risk Engine (Ri)"): return
+    if not run_script(SRC_DIR / "item_exposure_engine.py", "Item Exposure Engine (Pi)", extra_args): return
+    if not run_script(SRC_DIR / "item_impact_engine.py", "Item Impact Engine (Ii)", extra_args): return
+    if not run_script(SRC_DIR / "item_risk_engine.py", "Item Risk Engine (Ri)", extra_args): return
 
     print("\n--- PHASE 3: STATISTICS & VISUALIZATIONS ---")
-    if not run_script(SRC_DIR / "risk_stats.py", "Risk Statistics Generation"): return
-    if not run_script(SRC_DIR / "boxplots.py", "Boxplot Generation (F1)"): return
+    if not run_script(SRC_DIR / "risk_stats.py", "Risk Statistics Generation", extra_args): return
+    if not run_script(SRC_DIR / "boxplots.py", "Boxplot Generation (F1)", extra_args): return
 
     print("\n" + "#"*80)
     print("#" + " "*23 + "COUNTRY RISK PIPELINE COMPLETED" + " "*24 + "#")
@@ -73,4 +78,9 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    parser = argparse.ArgumentParser()
+    add_users_arg(parser)
+    args = parser.parse_args()
+    extra_args = ["--users", args.users] if args.users else []
+    main(extra_args=extra_args)

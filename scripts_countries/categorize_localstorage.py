@@ -32,6 +32,8 @@ from categorize_cookies import (
     is_valid_gender,
     try_decode_value
 )
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from countries_config import add_users_arg, resolve_users
 
 
 def shannon_entropy(s: str) -> float:
@@ -244,9 +246,9 @@ def process_storage_file(input_file: Path, output_dir: Path, patterns: Dict):
         elif out_path.exists():
             out_path.unlink()
 
-def main():
+def main(users=None):
     base_dir = Path(__file__).resolve().parent.parent / 'data'
-    users = ('IT_0573', 'PT_0838', 'LU_0634', 'DE_0018', 'SE_0964', 'ES_0290')
+    users = users or resolve_users(None)
     auth_statuses = ('AUTH', 'NOTAUTH')
     policies = ('PARTIAL',)
     storage_types = ('localstorage', 'sessionstorage')
@@ -263,4 +265,8 @@ def main():
                             process_storage_file(input_path / f"{lifecycle}_{s_type}.json", output_base / lifecycle, user_patterns)
 
 if __name__ == '__main__':
-    main()
+    import argparse
+    parser = argparse.ArgumentParser()
+    add_users_arg(parser)
+    args = parser.parse_args()
+    main(users=resolve_users(args.users))

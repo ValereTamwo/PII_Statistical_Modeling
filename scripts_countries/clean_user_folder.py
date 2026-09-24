@@ -9,9 +9,14 @@ Adapted from scripts/clean_user_folder.py for the country extension
 finalization step after AI categorization + redistribution.
 """
 
+import os
 import shutil
+import sys
 from pathlib import Path
-from typing import List, Tuple
+from typing import List, Optional, Tuple
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from countries_config import add_users_arg, resolve_users
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 BASE_DIR = PROJECT_ROOT / "data" / "user_countries"
@@ -23,11 +28,18 @@ FILES_TO_MOVE = [
 ]
 
 
-def find_files_to_move() -> List[Tuple[Path, Path]]:
+def find_files_to_move(users: Optional[List[str]] = None) -> List[Tuple[Path, Path]]:
     files_map = []
+    users_filter = set(users) if users else None
 
-    for root, dirs, files in __import__("os").walk(BASE_DIR):
+    for root, dirs, files in os.walk(BASE_DIR):
         root_path = Path(root)
+
+        if users_filter is not None:
+            rel_parts = root_path.relative_to(BASE_DIR).parts
+            user = rel_parts[1] if len(rel_parts) > 1 else None
+            if user is not None and user not in users_filter:
+                continue
 
         for filename in files:
             if filename in FILES_TO_MOVE:
@@ -70,17 +82,20 @@ def move_files(files_map: List[Tuple[Path, Path]]) -> dict:
     return stats
 
 
-def main():
+def main(users=None):
+    users = users or resolve_users(None)
+
     print("=" * 80)
     print(" Starting user_countries folder cleanup")
     print("=" * 80)
     print(f"\nSource directory: {BASE_DIR}")
     print(f"Destination directory: {RAW_DIR}")
     print(f"\nFiles to move: {', '.join(FILES_TO_MOVE)}")
+    print(f"Scoped to users: {users}")
     print("\n" + "=" * 80)
 
     print("\n Scanning for files to move...")
-    files_map = find_files_to_move()
+    files_map = find_files_to_move(users=users)
 
     if not files_map:
         print("\n No files found to move. Directory is already clean!")
@@ -110,4 +125,8 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    parser = argparse.ArgumentParser()
+    add_users_arg(parser)
+    args = parser.parse_args()
+    main(users=resolve_users(args.users))

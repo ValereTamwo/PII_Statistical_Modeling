@@ -12,6 +12,7 @@ this review is approved.
 
 import argparse
 import json
+import os
 import sys
 from pathlib import Path
 from collections import defaultdict, Counter
@@ -19,7 +20,8 @@ from collections import defaultdict, Counter
 sys.path.insert(0, str(Path(__file__).parent))
 from regex_post_ai_correction import get_rules, match_item
 
-USERS = ["IT_0573", "PT_0838", "LU_0634", "DE_0018", "SE_0964", "ES_0290"]
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from countries_config import add_users_arg, resolve_users
 
 
 def main():
@@ -28,10 +30,13 @@ def main():
                          help="Path to the data/ directory (override to point at the real dataset "
                               "when running from a worktree that doesn't have it).")
     parser.add_argument("--samples", type=int, default=3, help="Sample matches to print per rule.")
+    add_users_arg(parser)
     args = parser.parse_args()
 
     base = Path(args.data_dir)
     raws_base = base / "user_countries_raws"
+    USERS = resolve_users(args.users)
+    print(f"Scoped to users: {USERS}")
 
     per_rule_count = Counter()
     per_rule_samples = defaultdict(list)

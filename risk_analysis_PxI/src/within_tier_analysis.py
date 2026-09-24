@@ -61,8 +61,9 @@ PII_TIER_MAP = {
 
     # --- TRACKING AND AD-TECH ---
     "IDENTITY_TRACKING":            ['A', 'A', 'C', 'A', 'S', 'A'],
-    "ID_SOLUTIONS_AND_EXCHANGES":   ['A', 'A', 'C', 'A', 'S', 'A'],
     "SERVER_SIDE_TRACKING":         ['A', 'A', 'S', 'A', 'W', 'A'],
+    "ID_SOLUTIONS_AND_EXCHANGES":   ['A', 'A', 'C', 'A', 'S', 'A'],
+
 
     # --- BEHAVIORAL AND ANALYTICS ---
     "BEHAVIORAL_DATA":              ['A', 'A', 'S', 'A', 'C', 'A'],

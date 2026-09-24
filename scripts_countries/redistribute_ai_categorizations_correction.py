@@ -18,6 +18,7 @@ and:
 """
 
 import json
+import os
 import sys
 from pathlib import Path
 from typing import Dict
@@ -25,6 +26,9 @@ from collections import defaultdict, Counter
 
 sys.path.insert(0, str(Path(__file__).parent))
 from aggregate_indexeddb import extract_record_index_from_path, generate_record_id
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from countries_config import add_users_arg, resolve_users
 
 
 def redistribute_correction(
@@ -168,7 +172,7 @@ def redistribute_correction(
     return stats
 
 
-def main():
+def main(users=None):
     base_dir = Path(__file__).resolve().parent.parent / "data"
     ai_complete_base = base_dir / "aggregates_ai_complete_countries" / "indexeddb"
     user_base = base_dir / "user_countries"
@@ -178,7 +182,8 @@ def main():
     print("AI CORRECTION REDISTRIBUTION - INDEXEDDB - country extension")
     print("=" * 80)
 
-    users = ["IT_0573", "PT_0838", "LU_0634", "DE_0018", "SE_0964", "ES_0290"]
+    users = users or resolve_users(None)
+    print(f"Scoped to users: {users}")
 
     total_stats = {
         "total_fields_processed": 0,
@@ -226,4 +231,8 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    parser = argparse.ArgumentParser()
+    add_users_arg(parser)
+    args = parser.parse_args()
+    main(users=resolve_users(args.users))

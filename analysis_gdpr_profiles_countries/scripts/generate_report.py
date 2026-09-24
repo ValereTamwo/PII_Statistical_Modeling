@@ -1,8 +1,11 @@
 import json
 import os
+import sys
 from pathlib import Path
 
-USERS = ['IT_0573', 'LU_0634', 'PT_0838', 'SE_0964', 'ES_0290', 'DE_0018']
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
+from countries_config import USERS
+
 NAV_MODES = ['AUTH', 'NOTAUTH']
 POLICIES = ['PARTIAL']
 

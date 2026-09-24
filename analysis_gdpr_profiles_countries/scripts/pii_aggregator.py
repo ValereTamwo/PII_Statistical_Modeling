@@ -46,6 +46,9 @@ from utils import (
 sys.path.append(str(Path(__file__).parent.parent.parent / 'analysis'))
 from analyze_by_category import normalize_samesite, is_third_party
 
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
+from countries_config import add_users_arg, resolve_users
+
 
 def load_uncategorized_counts(raws_path: str, nav_mode: str, user_id: str, policy: str) -> Dict[str, int]:
     """
@@ -141,11 +144,11 @@ def merge_cookie_security_rollup(dest: Dict[str, Any], source: Dict[str, Any]) -
 class PIIAggregator:
     """Aggregate PII across all storage types and lifecycles (country extension)."""
 
-    def __init__(self, base_path: str, raws_path: str, output_path: str):
+    def __init__(self, base_path: str, raws_path: str, output_path: str, users: List[str] = None):
         self.base_path = base_path
         self.raws_path = raws_path
         self.output_path = output_path
-        self.users = ['IT_0573', 'LU_0634', 'PT_0838', 'SE_0964', 'ES_0290', 'DE_0018']
+        self.users = users or resolve_users(None)
         self.nav_modes = ['AUTH', 'NOTAUTH']
         self.policies = ['PARTIAL']
         self.storage_types = ['cookies', 'indexeddb', 'localstorage', 'sessionstorage']
@@ -460,15 +463,19 @@ class PIIAggregator:
             print(f"  - {posture}: {count}")
 
 
-def main():
+def main(users=None):
     """Main entry point."""
     base_path = Path(__file__).parent.parent.parent / 'data' / 'user_countries'
     raws_path = Path(__file__).parent.parent.parent / 'data' / 'user_countries_raws'
     output_path = Path(__file__).parent.parent / 'outputs'
 
-    aggregator = PIIAggregator(str(base_path), str(raws_path), str(output_path))
+    aggregator = PIIAggregator(str(base_path), str(raws_path), str(output_path), users=users)
     aggregator.run()
 
 
 if __name__ == '__main__':
-    main()
+    import argparse
+    parser = argparse.ArgumentParser()
+    add_users_arg(parser)
+    args = parser.parse_args()
+    main(users=resolve_users(args.users))

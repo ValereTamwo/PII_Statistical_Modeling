@@ -34,6 +34,8 @@ from categorize_cookies import (
     PII_PRIORITY_ORDER,
     is_valid_ip
 )
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from countries_config import add_users_arg, resolve_users
 
 
 def is_valid_location_value(subcat, value):
@@ -331,9 +333,9 @@ def process_indexeddb_for_config(input_dir, output_dir, patterns):
         elif out_path.exists():
             out_path.unlink()
 
-def main():
+def main(users=None):
     base_dir = Path(__file__).resolve().parent.parent / 'data'
-    users = ('IT_0573', 'PT_0838', 'LU_0634', 'DE_0018', 'SE_0964', 'ES_0290')
+    users = users or resolve_users(None)
     for auth in ('AUTH', 'NOTAUTH'):
         for user in users:
             patterns = get_patterns_for_user(user)
@@ -345,4 +347,8 @@ def main():
                     process_indexeddb_for_config(input_p, output_p, patterns)
 
 if __name__ == '__main__':
-    main()
+    import argparse
+    parser = argparse.ArgumentParser()
+    add_users_arg(parser)
+    args = parser.parse_args()
+    main(users=resolve_users(args.users))

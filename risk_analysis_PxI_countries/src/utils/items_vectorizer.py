@@ -23,9 +23,10 @@ from collections import defaultdict
 sys.path.insert(0, str(Path(__file__).resolve().parents[3] / "analysis"))
 from analyze_by_category import is_third_party, calculate_lifetime_category
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[3]))
+from countries_config import add_users_arg, resolve_users
 
 
-USERS         = ["IT_0573", "LU_0634", "PT_0838", "SE_0964", "ES_0290", "DE_0018"]
 AUTH_STATUSES = ["AUTH", "NOTAUTH"]
 POLICIES      = ["PARTIAL"]
 
@@ -470,18 +471,21 @@ def vectorize_user_policy(data_root: Path, auth_status: str, user: str,
     print(f"   {auth_status}/{user}/{policy} -> {len(final_vectors):,} physical items -> {out_path}")
     return len(final_vectors)
 
-def main():
+def main(users=None):
     base_dir    = Path(__file__).resolve().parents[3]
     data_root   = base_dir / "data"
     output_root = data_root
 
+    users = users or resolve_users(None)
+
     print("=" * 65)
     print("  ITEMS VECTORIZER (Physical Grouping) - country extension")
     print("=" * 65)
+    print(f"Scoped to users: {users}")
 
     total = 0
     for auth_status in AUTH_STATUSES:
-        for user in USERS:
+        for user in users:
             for policy in POLICIES:
                 total += vectorize_user_policy(data_root, auth_status, user, policy, output_root)
 
@@ -490,4 +494,8 @@ def main():
     print("=" * 65)
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    parser = argparse.ArgumentParser()
+    add_users_arg(parser)
+    args = parser.parse_args()
+    main(users=resolve_users(args.users))

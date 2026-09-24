@@ -11,6 +11,8 @@ import shutil
 
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 import paths
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from countries_config import add_users_arg, resolve_users
 
 
 def extract_indexeddb_for_user(source_dir, output_dir):
@@ -25,13 +27,13 @@ def extract_indexeddb_for_user(source_dir, output_dir):
     return len(json_files)
 
 
-def main():
+def main(users=None):
     print("=" * 70)
     print("INDEXEDDB EXTRACTION (countries)")
     print("=" * 70)
 
     total_files = 0
-    for user in paths.USERS:
+    for user in (users or paths.USERS):
         for auth_status in paths.AUTH_STATUSES:
             source_dir = paths.indexeddb_dir(user, auth_status)
             output_dir = paths.output_dir(auth_status, user, 'indexeddb')
@@ -45,8 +47,12 @@ def main():
 
 
 if __name__ == '__main__':
+    import argparse
+    parser = argparse.ArgumentParser()
+    add_users_arg(parser)
+    args = parser.parse_args()
     try:
-        main()
+        main(users=resolve_users(args.users))
         print("EXTRACTION COMPLETE")
     except Exception as e:
         print(f"ERROR: {e}")

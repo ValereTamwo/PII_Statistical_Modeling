@@ -21,6 +21,7 @@ planned on top of this one.
 """
 
 import json
+import os
 import sys
 from pathlib import Path
 from collections import defaultdict, Counter
@@ -28,7 +29,8 @@ from collections import defaultdict, Counter
 sys.path.insert(0, str(Path(__file__).parent))
 from regex_post_ai_correction import match_item
 
-USERS = ["IT_0573", "PT_0838", "LU_0634", "DE_0018", "SE_0964", "ES_0290"]
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from countries_config import add_users_arg, resolve_users
 
 
 def apply_correction_for_config(idb_dir: Path, raws_uncat_file: Path):
@@ -98,7 +100,7 @@ def apply_correction_for_config(idb_dir: Path, raws_uncat_file: Path):
     return stats
 
 
-def main():
+def main(users=None):
     base_dir = Path(__file__).resolve().parent.parent / "data"
     user_base = base_dir / "user_countries"
     raws_base = base_dir / "user_countries_raws"
@@ -106,6 +108,9 @@ def main():
     print("=" * 80)
     print("APPLY POST-AI REGEX CORRECTION - INDEXEDDB - country extension")
     print("=" * 80)
+
+    USERS = users or resolve_users(None)
+    print(f"Scoped to users: {USERS}")
 
     total_stats = {
         "total_items": 0,
@@ -153,4 +158,8 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    parser = argparse.ArgumentParser()
+    add_users_arg(parser)
+    args = parser.parse_args()
+    main(users=resolve_users(args.users))

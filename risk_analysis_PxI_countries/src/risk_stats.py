@@ -16,11 +16,14 @@ FR version has no equivalent for.
 """
 
 import json
+import sys
 import numpy as np
 from pathlib import Path
 from collections import defaultdict
 
-USERS    = ["IT_0573", "LU_0634", "PT_0838", "SE_0964", "ES_0290", "DE_0018"]
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+from countries_config import add_users_arg, resolve_users
+
 MODES    = ["AUTH", "NOTAUTH"]
 POLICIES = ["PARTIAL"]
 STORAGES = ["cookie", "localStorage", "sessionStorage", "IndexedDB"]
@@ -75,14 +78,17 @@ def load_items_for_user(data_root: Path, mode: str, user: str, policy: str) -> l
         return json.load(f)
 
 
-def main():
+def main(users=None):
     base_dir  = Path(__file__).resolve().parents[2]
     data_root = base_dir / "data"
+
+    users = users or resolve_users(None)
 
     print("=" * 55)
     print("  RISK STATISTICS ENGINE - country extension")
     print("  Q1 / Median / Q3 / IQR / min / max / mean / std")
     print("=" * 55)
+    print(f"Scoped to users: {users}")
 
     stats = {
         "by_storage_policy_mode":  {},   # Primary granularity (pooled across countries)
@@ -136,7 +142,7 @@ def main():
     # -- 3. by_storage x country x mode (NEW - cross-country comparison) --
     for st in STORAGES:
         stats["by_storage_country_mode"][st] = {}
-        for user in USERS:
+        for user in users:
             stats["by_storage_country_mode"][st][user] = {}
             for mode in MODES:
                 items = load_items_for_user(data_root, mode, user, POLICIES[0])
@@ -162,4 +168,8 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    parser = argparse.ArgumentParser()
+    add_users_arg(parser)
+    args = parser.parse_args()
+    main(users=resolve_users(args.users))

@@ -9,8 +9,12 @@ separate from the FR pipeline's data_false_positives/.
 
 import json
 import os
+import sys
 from pathlib import Path
 from typing import List, Dict, Any
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from countries_config import add_users_arg, resolve_users, AUTH_STATUSES
 
 BEHAVIORAL_TRANSFERS = ["lastLoginAt", "createdAt", "isAnonymous"]
 
@@ -28,7 +32,7 @@ SUSPICIOUS_MAPPING = {
     "php_serialized": "APP_STATE_STORAGE.json"
 }
 
-def main():
+def main(users=None):
     base_dir = Path(__file__).resolve().parent.parent
     data_user_dir = base_dir / "data" / "user_countries"
     fp_dir_root = base_dir / "data_false_positives_countries"
@@ -37,7 +41,9 @@ def main():
         print(f"Error: Directory {data_user_dir} does not exist.")
         return
 
+    users = users or resolve_users(None)
     print(f"Starting PII cleaning and redistribution from: {data_user_dir}")
+    print(f"Scoped to users: {users}")
 
     stats = {
         'files_processed': 0,
@@ -48,20 +54,28 @@ def main():
         'files_cleaned': 0
     }
 
-    for root, dirs, files in os.walk(data_user_dir):
-        root_path = Path(root)
+    # Walk only the requested users' subtrees, not the whole data_user_dir,
+    # so an incremental run never touches already-finalized personas.
+    for auth in AUTH_STATUSES:
+        for user in users:
+            user_dir = data_user_dir / auth / user
+            if not user_dir.exists():
+                continue
 
-        for filename in files:
-            file_upper = filename.upper()
-            if file_upper == "DIRECT_PII.JSON":
-                file_path = root_path / filename
-                clean_direct_pii(file_path, data_user_dir, fp_dir_root, stats)
-            elif file_upper == "DIRECT_PII_KEYS.JSON":
-                file_path = root_path / filename
-                clean_direct_pii_keys(file_path, data_user_dir, fp_dir_root, stats)
-            elif file_upper == "SUSPICIOUS_VALUES.JSON":
-                file_path = root_path / filename
-                redistribute_suspicious(file_path, stats)
+            for root, dirs, files in os.walk(user_dir):
+                root_path = Path(root)
+
+                for filename in files:
+                    file_upper = filename.upper()
+                    if file_upper == "DIRECT_PII.JSON":
+                        file_path = root_path / filename
+                        clean_direct_pii(file_path, data_user_dir, fp_dir_root, stats)
+                    elif file_upper == "DIRECT_PII_KEYS.JSON":
+                        file_path = root_path / filename
+                        clean_direct_pii_keys(file_path, data_user_dir, fp_dir_root, stats)
+                    elif file_upper == "SUSPICIOUS_VALUES.JSON":
+                        file_path = root_path / filename
+                        redistribute_suspicious(file_path, stats)
 
     print("\n" + "="*40)
     print("CLEANING & REDISTRIBUTION COMPLETE")
@@ -225,4 +239,8 @@ def save_items_to_path(original_file_path: Path, items: List[Dict], data_user_di
         json.dump(all_items, f, indent=2)
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    parser = argparse.ArgumentParser()
+    add_users_arg(parser)
+    args = parser.parse_args()
+    main(users=resolve_users(args.users))

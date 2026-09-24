@@ -14,8 +14,12 @@ if this should be revisited.
 """
 import json
 import math
+import sys
 import numpy as np
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+from countries_config import add_users_arg, resolve_users
 
 # Vector order z: [z_ID, z_ATO, z_LINK, z_LOC, z_PROF, z_ENV]
 # z_ID   : Direct identification
@@ -105,19 +109,26 @@ def process_impact_for_policy(data_root, mode, user, policy, alphas=DEFAULT_ALPH
         json.dump(items, f, indent=2, ensure_ascii=False)
 
 
-def main():
+def main(users=None):
     base_dir  = Path(__file__).resolve().parents[2]
     data_root = base_dir / "data"
+
+    users = users or resolve_users(None)
 
     print("=" * 65)
     print("  ITEM IMPACT ENGINE - country extension")
     print("  Model: Noisy-OR Aggregate with Information-Theoretic Boost")
     print("=" * 65)
+    print(f"Scoped to users: {users}")
 
     for mode in ["AUTH", "NOTAUTH"]:
-        for user in ["IT_0573", "LU_0634", "PT_0838", "SE_0964", "ES_0290", "DE_0018"]:
+        for user in users:
             for policy in ["PARTIAL"]:
                 process_impact_for_policy(data_root, mode, user, policy)
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    parser = argparse.ArgumentParser()
+    add_users_arg(parser)
+    args = parser.parse_args()
+    main(users=resolve_users(args.users))

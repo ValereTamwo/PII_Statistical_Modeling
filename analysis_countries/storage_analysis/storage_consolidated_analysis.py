@@ -30,6 +30,7 @@ from typing import Dict, List, Tuple
 # Reuse the FR pipeline's generic analysis modules directly (no duplication)
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 import analysis.privacy_metrics as pm
+from countries_config import add_users_arg, resolve_users
 
 
 def load_all_storage_items(input_dir: Path, storage_type: str) -> Tuple[List[Dict], List[Dict]]:
@@ -219,7 +220,7 @@ def analyze_storage_consolidated(direct_pii_items: List[Dict], other_items: List
     }
 
 
-def main():
+def main(users=None):
     """Main script (country extension)."""
     base_dir = Path(__file__).resolve().parent.parent.parent / 'data'
     output_base = Path(__file__).resolve().parent.parent.parent / 'results_countries'
@@ -228,7 +229,7 @@ def main():
         print(f" Directory {base_dir} not found")
         return
 
-    users = ('IT_0573', 'LU_0634', 'PT_0838', 'SE_0964', 'ES_0290', 'DE_0018')
+    users = users or resolve_users(None)
     auth_statuses = ('AUTH', 'NOTAUTH')
     policies = ('PARTIAL',)
     storage_types = ('localstorage', 'sessionstorage', 'indexeddb')
@@ -289,4 +290,8 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    import argparse
+    parser = argparse.ArgumentParser()
+    add_users_arg(parser)
+    args = parser.parse_args()
+    main(users=resolve_users(args.users))

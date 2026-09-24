@@ -26,16 +26,19 @@ country, for quick spreadsheet comparison).
 
 import json
 import csv
+import sys
 from pathlib import Path
 from collections import defaultdict, Counter
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(PROJECT_ROOT))
+from countries_config import add_users_arg, resolve_users
+
 RESULTS_DIR = PROJECT_ROOT / 'results_countries'
 GDPR_OUTPUTS_DIR = PROJECT_ROOT / 'analysis_gdpr_profiles_countries' / 'outputs'
 GDPR_REPORTS_DIR = PROJECT_ROOT / 'analysis_gdpr_profiles_countries' / 'reports'
 OUTPUT_DIR = PROJECT_ROOT / 'analysis_countries' / 'comparative'
 
-USERS = ['IT_0573', 'LU_0634', 'PT_0838', 'SE_0964', 'ES_0290', 'DE_0018']
 AUTH_MODES = ['AUTH', 'NOTAUTH']
 POLICY = 'PARTIAL'
 COOKIE_LIFECYCLES = ['added', 'modified', 'deleted']  # 'removed' is remapped to 'deleted' on output
@@ -280,11 +283,13 @@ def write_csv(countries: dict, output_path: Path):
         writer.writerows(rows)
 
 
-def main():
+def main(users=None):
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
+    users = users or resolve_users(None)
+
     countries = {}
-    for user in USERS:
+    for user in users:
         countries[user] = build_country_summary(user)
 
     json_output = OUTPUT_DIR / 'country_comparison.json'
@@ -298,4 +303,8 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    import argparse
+    parser = argparse.ArgumentParser()
+    add_users_arg(parser)
+    args = parser.parse_args()
+    main(users=resolve_users(args.users))

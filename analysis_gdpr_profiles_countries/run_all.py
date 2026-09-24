@@ -15,8 +15,11 @@ from pathlib import Path
 GDPR_DIR = Path(__file__).resolve().parent
 SCRIPTS_DIR = GDPR_DIR / "scripts"
 
+sys.path.insert(0, str(GDPR_DIR.parent))
+from countries_config import add_users_arg
 
-def run_script(script_path, description):
+
+def run_script(script_path, description, extra_args=None):
     print(f"\n" + "="*80)
     print(f" STEP: {description}")
     print(f" Executing: {script_path.name}")
@@ -27,7 +30,7 @@ def run_script(script_path, description):
         return False
 
     try:
-        result = subprocess.run([sys.executable, str(script_path)],
+        result = subprocess.run([sys.executable, str(script_path)] + (extra_args or []),
                                cwd=script_path.parent,
                                check=True)
         return result.returncode == 0
@@ -39,17 +42,21 @@ def run_script(script_path, description):
         return False
 
 
-def main():
+def main(extra_args=None):
     print("\n" + "#"*80)
     print("#" + " "*16 + "COUNTRY GDPR PROFILES ANALYSIS RUNNER" + " "*18 + "#")
     print("#"*80)
+    if extra_args:
+        print(f"Forwarding extra args to aggregation stage: {extra_args}")
 
     print("\n--- PHASE 1: PII AGGREGATION ---")
-    if not run_script(SCRIPTS_DIR / "pii_aggregator.py", "Global PII Aggregation"):
+    if not run_script(SCRIPTS_DIR / "pii_aggregator.py", "Global PII Aggregation", extra_args):
         print(" Error during aggregation. Stopping.")
         return
 
     print("\n--- PHASE 2: REPORT ---")
+    # generate_report.py has no --users override: it just reads whatever
+    # pii_comparative_analysis.json the aggregation step above produced.
     run_script(SCRIPTS_DIR / "generate_report.py", "Report Generation")
 
     print("\n" + "#"*80)
@@ -58,4 +65,9 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    parser = argparse.ArgumentParser()
+    add_users_arg(parser)
+    args = parser.parse_args()
+    extra_args = ["--users", args.users] if args.users else []
+    main(extra_args=extra_args)

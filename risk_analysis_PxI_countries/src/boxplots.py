@@ -24,6 +24,7 @@ single hardcoded mode/policy example):
 """
 
 import json
+import sys
 import numpy as np
 import matplotlib
 import matplotlib.pyplot as plt
@@ -32,6 +33,9 @@ from matplotlib.ticker import FuncFormatter
 
 from pathlib import Path
 from collections import defaultdict
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+from countries_config import add_users_arg, resolve_users
 
 matplotlib.rcParams.update({
     'font.family':        'serif',
@@ -62,7 +66,6 @@ matplotlib.rcParams.update({
     'savefig.pad_inches': 0.03,
 })
 
-USERS         = ["IT_0573", "LU_0634", "PT_0838", "SE_0964", "ES_0290", "DE_0018"]
 STORAGES      = ['cookie', 'localStorage', 'sessionStorage', 'IndexedDB']
 STORAGE_SHORT = ['Cookie', 'LS', 'SS', 'IDB']
 POLICIES      = ['PARTIAL']
@@ -260,9 +263,9 @@ def plot_f1_metrics_by_storage(data_root: Path, output_dir: Path,
 # storage types pooled per country)
 # ============================================================
 
-def plot_risk_by_country_and_mode(data_root: Path, output_dir: Path, policy: str):
+def plot_risk_by_country_and_mode(data_root: Path, output_dir: Path, policy: str, users: list):
     """
-    X-axis  : the 6 countries
+    X-axis  : the countries in `users`
     Boxplots: Ri^AUTH  Ri^NOTAUTH  (all storage types pooled)
     """
     series = []
@@ -270,7 +273,7 @@ def plot_risk_by_country_and_mode(data_root: Path, output_dir: Path, policy: str
 
     for mode in MODES:
         data_per_country = []
-        for user in USERS:
+        for user in users:
             items = load_items(data_root, mode=mode, policy=policy, user=user)
             vals  = [it.get('risk_i', 0.) for it in items]
             data_per_country.append(vals)
@@ -281,26 +284,29 @@ def plot_risk_by_country_and_mode(data_root: Path, output_dir: Path, policy: str
             'data_per_group': data_per_country,
         })
 
-    for user in USERS:
+    for user in users:
         n = sum(len(load_items(data_root, mode=m, policy=policy, user=user)) for m in MODES)
         counts_per_country.append(n)
 
     fig, ax = plt.subplots(figsize=(9.0, 3.4))
     ax_r    = ax.twinx()
-    _render(ax, ax_r, USERS, series, counts_per_country)
+    _render(ax, ax_r, users, series, counts_per_country)
     ax.set_title(f"Risk score ($R_i$) distribution by country - AUTH vs NOTAUTH ({policy} policy)")
 
     _save(fig, output_dir, "f2_risk_by_country_and_mode")
 
 
-def main():
+def main(users=None):
     base_dir   = Path(__file__).resolve().parents[2]
     data_root  = base_dir / "data"
     output_dir = Path(__file__).resolve().parent / "outputs" / "figures"
 
+    users = users or resolve_users(None)
+
     print("=" * 55)
     print("  ITEM-LEVEL BOXPLOT SUITE - country extension")
     print("=" * 55)
+    print(f"Scoped to users: {users}")
 
     policy = POLICIES[0]
 
@@ -310,14 +316,14 @@ def main():
 
     print("\n  [F1] Pi/Ii/Ri by storage - per country, per auth mode")
     for mode in MODES:
-        for user in USERS:
+        for user in users:
             try:
                 plot_f1_metrics_by_storage(data_root, output_dir, mode=mode, policy=policy, user=user)
             except FileNotFoundError as e:
                 print(f"  [SKIP] {e}")
 
     print("\n  [F2] Risk (Ri) distribution by country - AUTH vs NOTAUTH")
-    plot_risk_by_country_and_mode(data_root, output_dir, policy=policy)
+    plot_risk_by_country_and_mode(data_root, output_dir, policy=policy, users=users)
 
     print("\n" + "=" * 55)
     print("  Done.")
@@ -325,4 +331,8 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    parser = argparse.ArgumentParser()
+    add_users_arg(parser)
+    args = parser.parse_args()
+    main(users=resolve_users(args.users))

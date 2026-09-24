@@ -8,8 +8,11 @@ import subprocess
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from countries_config import add_users_arg
 
-def run_script(script_name):
+
+def run_script(script_name, extra_args=None):
     script_path = Path(__file__).parent / script_name
 
     print(f"\n{'='*60}")
@@ -17,7 +20,7 @@ def run_script(script_name):
     print(f"{'='*60}\n")
 
     try:
-        subprocess.run([sys.executable, str(script_path)], check=True)
+        subprocess.run([sys.executable, str(script_path)] + (extra_args or []), check=True)
         print(f"\n{script_name} completed successfully")
         return True
     except subprocess.CalledProcessError as e:
@@ -25,7 +28,7 @@ def run_script(script_name):
         return False
 
 
-def main():
+def main(extra_args=None):
     print("\n" + "=" * 60)
     print("COUNTRY-EXTENSION PREPROCESSING")
     print("=" * 60)
@@ -37,7 +40,7 @@ def main():
         'extract_indexeddb.py',
     ]
 
-    results = {script: run_script(script) for script in scripts}
+    results = {script: run_script(script, extra_args) for script in scripts}
 
     print("\n" + "=" * 60)
     print("SUMMARY")
@@ -55,4 +58,9 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    import argparse
+    parser = argparse.ArgumentParser()
+    add_users_arg(parser)
+    args = parser.parse_args()
+    extra_args = ["--users", args.users] if args.users else []
+    main(extra_args=extra_args)

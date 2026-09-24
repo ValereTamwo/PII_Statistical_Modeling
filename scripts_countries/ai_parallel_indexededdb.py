@@ -37,14 +37,8 @@ except ImportError:
 sys.path.insert(0, str(Path(__file__).parent))
 from regex_merged_v3 import TRACKING_PATTERNS_COMPLETE
 
-USER_ID_TO_INDEX = {
-    'IT_0573': 4,
-    'LU_0634': 5,
-    'PT_0838': 8,
-    'SE_0964': 10,
-    'ES_0290': 14,
-    'DE_0018': 17,
-}
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from countries_config import add_users_arg, resolve_users
 
 USER_PROFILES_FILE = Path(__file__).parent / "user_profiles_countries.json"
 if USER_PROFILES_FILE.exists():
@@ -444,7 +438,7 @@ def process_single_configuration(config: Dict) -> Dict:
 # MAIN PARALLEL PROCESSING
 # =====================================================================
 
-def main():
+def main(users=None):
     api_key = os.getenv("OPENAI_API_KEY")
     if not api_key:
         print("Error: OPENAI_API_KEY missing")
@@ -460,7 +454,8 @@ def main():
     print("=" * 80)
 
     configurations = []
-    users = ["IT_0573", "PT_0838", "LU_0634", "DE_0018", "SE_0964", "ES_0290"]
+    users = users or resolve_users(None)
+    print(f"Scoped to users: {users}")
 
     for auth in ["AUTH", "NOTAUTH"]:
         for user in users:
@@ -545,4 +540,8 @@ def main():
     print("\n  Use redistribute_ai_categorizations.py to redistribute")
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    parser = argparse.ArgumentParser()
+    add_users_arg(parser)
+    args = parser.parse_args()
+    main(users=resolve_users(args.users))
