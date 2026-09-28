@@ -1,15 +1,15 @@
 {
   "storage_type": "sessionstorage",
-  "total_items": 327,
+  "total_items": 320,
   "direct_pii_count": 0,
-  "other_count": 327,
+  "other_count": 320,
   "pii_distribution": {
     "APP_STATE_STORAGE": 44,
-    "BEHAVIORAL_DATA": 60,
+    "BEHAVIORAL_DATA": 55,
     "CONSENT_AND_PRIVACY": 9,
-    "DEVICE_ENV": 9,
+    "DEVICE_ENV": 5,
     "DIRECT_PII_KEYS": 13,
-    "IDENTITY_TRACKING": 62,
+    "IDENTITY_TRACKING": 63,
     "ID_SOLUTIONS_AND_EXCHANGES": 25,
     "INFRASTRUCTURE": 1,
     "LOCATION_AND_DEMOGRAPHICS": 12,
@@ -17,7 +17,7 @@
     "SECURITY_AND_BOT_MITIGATION": 8,
     "SESSION_MANAGEMENT": 4,
     "TECHNICAL_PASSWORDS": 3,
-    "USER_PREFERENCES": 29,
+    "USER_PREFERENCES": 30,
     "UX_AND_PERFORMANCE_ANALYTICS": 32
   },
   "pii_by_category": {
@@ -25,19 +25,19 @@
       "APP_STATE_STORAGE": 44
     },
     "BEHAVIORAL_DATA": {
-      "BEHAVIORAL_DATA": 60
+      "BEHAVIORAL_DATA": 55
     },
     "CONSENT_AND_PRIVACY": {
       "CONSENT_AND_PRIVACY": 9
     },
     "DEVICE_ENV": {
-      "DEVICE_ENV": 9
+      "DEVICE_ENV": 5
     },
     "DIRECT_PII_KEYS": {
       "DIRECT_PII_KEYS": 13
     },
     "IDENTITY_TRACKING": {
-      "IDENTITY_TRACKING": 62
+      "IDENTITY_TRACKING": 63
     },
     "ID_SOLUTIONS_AND_EXCHANGES": {
       "ID_SOLUTIONS_AND_EXCHANGES": 25
@@ -61,33 +61,33 @@
       "TECHNICAL_PASSWORDS": 3
     },
     "USER_PREFERENCES": {
-      "USER_PREFERENCES": 29
+      "USER_PREFERENCES": 30
     },
     "UX_AND_PERFORMANCE_ANALYTICS": {
       "UX_AND_PERFORMANCE_ANALYTICS": 32
     }
   },
   "persistence_distribution": {
-    "Session": 327
+    "Session": 320
   },
   "persistence_by_pii": {
     "APP_STATE_STORAGE": {
       "Session": 44
     },
     "BEHAVIORAL_DATA": {
-      "Session": 60
+      "Session": 55
     },
     "CONSENT_AND_PRIVACY": {
       "Session": 9
     },
     "DEVICE_ENV": {
-      "Session": 9
+      "Session": 5
     },
     "DIRECT_PII_KEYS": {
       "Session": 13
     },
     "IDENTITY_TRACKING": {
-      "Session": 62
+      "Session": 63
     },
     "ID_SOLUTIONS_AND_EXCHANGES": {
       "Session": 25
@@ -111,7 +111,7 @@
       "Session": 3
     },
     "USER_PREFERENCES": {
-      "Session": 29
+      "Session": 30
     },
     "UX_AND_PERFORMANCE_ANALYTICS": {
       "Session": 32
@@ -124,9 +124,9 @@
       "count": 44
     },
     "BEHAVIORAL_DATA": {
-      "total": 36543,
-      "average": 609.05,
-      "count": 60
+      "total": 36452,
+      "average": 662.7636363636364,
+      "count": 55
     },
     "CONSENT_AND_PRIVACY": {
       "total": 36,
@@ -134,9 +134,9 @@
       "count": 9
     },
     "DEVICE_ENV": {
-      "total": 701566,
-      "average": 77951.77777777778,
-      "count": 9
+      "total": 667450,
+      "average": 133490.0,
+      "count": 5
     },
     "DIRECT_PII_KEYS": {
       "total": 59572,
@@ -144,9 +144,9 @@
       "count": 13
     },
     "IDENTITY_TRACKING": {
-      "total": 317526,
-      "average": 5121.387096774193,
-      "count": 62
+      "total": 317527,
+      "average": 5040.111111111111,
+      "count": 63
     },
     "ID_SOLUTIONS_AND_EXCHANGES": {
       "total": 673584,
@@ -184,9 +184,9 @@
       "count": 3
     },
     "USER_PREFERENCES": {
-      "total": 433036,
-      "average": 14932.275862068966,
-      "count": 29
+      "total": 433117,
+      "average": 14437.233333333334,
+      "count": 30
     },
     "UX_AND_PERFORMANCE_ANALYTICS": {
       "total": 38785,
@@ -197,8 +197,8 @@
   "content_hierarchy": {
     "json_structured": {
       "APP_STATE_STORAGE": 44,
-      "BEHAVIORAL_DATA": 20,
-      "DEVICE_ENV": 7,
+      "BEHAVIORAL_DATA": 19,
+      "DEVICE_ENV": 3,
       "DIRECT_PII_KEYS": 13,
       "IDENTITY_TRACKING": 23,
       "ID_SOLUTIONS_AND_EXCHANGES": 24,
@@ -208,19 +208,19 @@
       "SECURITY_AND_BOT_MITIGATION": 8,
       "SESSION_MANAGEMENT": 3,
       "TECHNICAL_PASSWORDS": 2,
-      "USER_PREFERENCES": 11,
+      "USER_PREFERENCES": 12,
       "UX_AND_PERFORMANCE_ANALYTICS": 15
     },
     "boolean": {
-      "BEHAVIORAL_DATA": 13,
+      "BEHAVIORAL_DATA": 11,
       "CONSENT_AND_PRIVACY": 9,
-      "IDENTITY_TRACKING": 2,
+      "IDENTITY_TRACKING": 3,
       "NAVIGATION_HISTORY": 1,
       "USER_PREFERENCES": 12,
       "UX_AND_PERFORMANCE_ANALYTICS": 3
     },
     "number": {
-      "BEHAVIORAL_DATA": 9,
+      "BEHAVIORAL_DATA": 8,
       "IDENTITY_TRACKING": 11,
       "USER_PREFERENCES": 1,
       "UX_AND_PERFORMANCE_ANALYTICS": 2
@@ -233,7 +233,7 @@
       "UX_AND_PERFORMANCE_ANALYTICS": 1
     },
     "complex_string": {
-      "BEHAVIORAL_DATA": 17,
+      "BEHAVIORAL_DATA": 16,
       "IDENTITY_TRACKING": 8,
       "LOCATION_AND_DEMOGRAPHICS": 1,
       "NAVIGATION_HISTORY": 3,
@@ -262,11 +262,11 @@
     }
   },
   "content_types": {
-    "json_structured": 193,
-    "boolean": 40,
-    "number": 23,
+    "json_structured": 189,
+    "boolean": 39,
+    "number": 22,
     "short_text": 13,
-    "complex_string": 35,
+    "complex_string": 34,
     "uuid": 12,
     "token_id": 7,
     "language_code": 2,
@@ -274,8 +274,8 @@
   },
   "vendor_counts": {
     "mainova.de": 4,
-    "michaelkors.de": 39,
-    "skechers.de": 29,
+    "michaelkors.de": 38,
+    "skechers.de": 26,
     "schiesser.com": 4,
     "union-zeughaus.de": 5,
     "jet.de": 2,
@@ -307,10 +307,9 @@
     "90min.de": 7,
     "sportpirate.com": 2,
     "zeelool-de.com": 9,
-    "Amazon": 2,
     "aldi-onlineshop.de": 4,
     "asphaltgold.com": 1,
-    "ligainsider.de": 5,
+    "ligainsider.de": 3,
     "ebay.de": 4,
     "shoop.de": 2,
     "rieker.com": 6,
@@ -324,12 +323,12 @@
     "bfv.de": 2,
     "cncest.de": 1,
     "wirkaufendeinauto.de": 4,
+    "Amazon": 2,
     "dsab-vfs.de": 1,
     "as-garten.de": 1,
     "kopp-verlag.de": 1,
     "vfb.de": 1,
     "liga.nu": 1,
-    "gastro-hero.de": 1,
     "swk.de": 1
   },
   "category_vendor_flows": [
@@ -506,7 +505,7 @@
     [
       "BEHAVIORAL_DATA",
       "mytischtennis.de",
-      2
+      1
     ],
     [
       "BEHAVIORAL_DATA",
@@ -531,12 +530,7 @@
     [
       "BEHAVIORAL_DATA",
       "zeelool-de.com",
-      3
-    ],
-    [
-      "BEHAVIORAL_DATA",
-      "Amazon",
-      1
+      2
     ],
     [
       "BEHAVIORAL_DATA",
@@ -556,7 +550,7 @@
     [
       "BEHAVIORAL_DATA",
       "ligainsider.de",
-      3
+      1
     ],
     [
       "BEHAVIORAL_DATA",
@@ -616,16 +610,6 @@
     [
       "DEVICE_ENV",
       "shoop.de",
-      1
-    ],
-    [
-      "DEVICE_ENV",
-      "skechers.de",
-      3
-    ],
-    [
-      "DEVICE_ENV",
-      "michaelkors.de",
       1
     ],
     [
@@ -771,7 +755,7 @@
     [
       "IDENTITY_TRACKING",
       "Amazon",
-      1
+      2
     ],
     [
       "IDENTITY_TRACKING",
@@ -1060,6 +1044,16 @@
     ],
     [
       "USER_PREFERENCES",
+      "zeelool-de.com",
+      1
+    ],
+    [
+      "USER_PREFERENCES",
+      "mytischtennis.de",
+      1
+    ],
+    [
+      "USER_PREFERENCES",
       "bikeexchange.de",
       6
     ],
@@ -1067,11 +1061,6 @@
       "USER_PREFERENCES",
       "shopdisney.de",
       3
-    ],
-    [
-      "USER_PREFERENCES",
-      "gastro-hero.de",
-      1
     ],
     [
       "USER_PREFERENCES",
@@ -1241,18 +1230,13 @@
       4.800860047401687,
       2.0,
       0.0,
-      0.0,
       3.9132696895151073,
       2.6612262562697895,
       3.9377519554085865,
-      4.807820022548393,
-      3.734521664779752,
       2.9182958340544896,
       4.70374600904456,
       5.0265560006408965,
       0.0,
-      0.0,
-      1.584962500721156,
       3.547725164132625,
       4.992723949756939,
       4.963337384153431,
@@ -1272,10 +1256,6 @@
     "DEVICE_ENV": [
       5.2780115748558085,
       3.620635070586274,
-      5.224164852614349,
-      4.802436929194792,
-      4.935312898595573,
-      4.866486883595332,
       3.863826390090815,
       5.198282199400095,
       5.227169451537062
@@ -1346,6 +1326,7 @@
       4.954783547037796,
       5.495063217760945,
       5.13842061071472,
+      0.0,
       0.0,
       2.8731406795131336,
       2.9312089489103235,
@@ -1461,13 +1442,14 @@
       2.0,
       0.0,
       2.0,
+      4.807820022548393,
+      3.734521664779752,
       2.0,
       2.0,
       2.0,
       2.321928094887362,
       1.0,
       2.0,
-      1.9219280948873623,
       4.514046066931212,
       2.5032583347756456,
       2.0,
@@ -1509,9 +1491,9 @@
     ]
   },
   "risk_levels": {
-    "Low Risk": 112,
-    "Medium Risk": 128,
-    "High Risk": 87
+    "Low Risk": 109,
+    "Medium Risk": 123,
+    "High Risk": 88
   },
   "risk_by_pii": {
     "APP_STATE_STORAGE": {
@@ -1519,19 +1501,19 @@
       "Medium Risk": 2
     },
     "BEHAVIORAL_DATA": {
-      "Medium Risk": 60
+      "Medium Risk": 55
     },
     "CONSENT_AND_PRIVACY": {
       "Low Risk": 9
     },
     "DEVICE_ENV": {
-      "Low Risk": 9
+      "Low Risk": 5
     },
     "DIRECT_PII_KEYS": {
       "Low Risk": 13
     },
     "IDENTITY_TRACKING": {
-      "High Risk": 62
+      "High Risk": 63
     },
     "ID_SOLUTIONS_AND_EXCHANGES": {
       "High Risk": 25
@@ -1555,7 +1537,7 @@
       "Low Risk": 3
     },
     "USER_PREFERENCES": {
-      "Low Risk": 23,
+      "Low Risk": 24,
       "Medium Risk": 6
     },
     "UX_AND_PERFORMANCE_ANALYTICS": {

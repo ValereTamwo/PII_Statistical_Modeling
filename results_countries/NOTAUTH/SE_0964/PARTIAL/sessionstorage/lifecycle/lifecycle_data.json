@@ -1,7 +1,7 @@
 {
   "storage_type": "sessionstorage",
   "metrics": {
-    "total_items": 51,
+    "total_items": 54,
     "items_modified": 14,
     "items_deleted": 21,
     "entropy_increases": 13,
@@ -9,28 +9,28 @@
     "size_increases": 5,
     "size_decreases": 4,
     "pii_transitions": {
+      "DIRECT_PII_KEYS -> NAVIGATION_HISTORY": 1,
+      "IDENTITY_TRACKING -> UX_AND_PERFORMANCE_ANALYTICS": 4,
+      "NAVIGATION_HISTORY -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "IDENTITY_TRACKING -> SESSION_MANAGEMENT": 1,
       "APP_STATE_STORAGE -> BEHAVIORAL_DATA": 1,
+      "BEHAVIORAL_DATA -> DIRECT_PII_KEYS": 1,
+      "DEVICE_ENV -> NAVIGATION_HISTORY": 1,
+      "SESSION_MANAGEMENT -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "IDENTITY_TRACKING -> ID_SOLUTIONS_AND_EXCHANGES": 1,
       "DIRECT_PII -> ID_SOLUTIONS_AND_EXCHANGES": 1,
       "DIRECT_PII_KEYS -> LOCATION_AND_DEMOGRAPHICS": 1,
-      "BEHAVIORAL_DATA -> DIRECT_PII_KEYS": 1,
-      "ID_SOLUTIONS_AND_EXCHANGES -> UX_AND_PERFORMANCE_ANALYTICS": 1,
-      "DEVICE_ENV -> NAVIGATION_HISTORY": 1,
-      "IDENTITY_TRACKING -> ID_SOLUTIONS_AND_EXCHANGES": 1,
-      "NAVIGATION_HISTORY -> UX_AND_PERFORMANCE_ANALYTICS": 1,
-      "IDENTITY_TRACKING -> BEHAVIORAL_DATA": 1,
-      "IDENTITY_TRACKING -> UX_AND_PERFORMANCE_ANALYTICS": 4,
+      "BEHAVIORAL_DATA -> IDENTITY_TRACKING": 1,
       "IDENTITY_TRACKING -> NAVIGATION_HISTORY": 1,
-      "DIRECT_PII_KEYS -> NAVIGATION_HISTORY": 1,
-      "SESSION_MANAGEMENT -> UX_AND_PERFORMANCE_ANALYTICS": 1,
-      "IDENTITY_TRACKING -> SESSION_MANAGEMENT": 1
+      "ID_SOLUTIONS_AND_EXCHANGES -> UX_AND_PERFORMANCE_ANALYTICS": 1
     },
     "volatility_distribution": {
-      "stable": 21,
+      "stable": 24,
       "moderate": 14,
       "high": 16
     },
     "change_frequency": {
-      "avg_gap": 47.85401459854015,
+      "avg_gap": 47.58695652173913,
       "min_gap": 0,
       "max_gap": 350
     },
@@ -57,7 +57,7 @@
         "key": "AI_buffer",
         "avg_gap": 29.0,
         "num_modifications": 11,
-        "pii_category": "BEHAVIORAL_DATA"
+        "pii_category": "IDENTITY_TRACKING"
       },
       {
         "key": "QSI_HistorySession",
@@ -83,30 +83,14 @@
       "www.trygghansa.se": 8,
       "www.gjensidige.se": 8,
       "artportalen.se": 4,
-      "servicefinder.se": 3,
       "se.jobtome.com": 3,
-      "www.saco.se": 3,
-      "app.bokio.se": 3,
       "thatsup.se": 3,
-      "www.randstad.se": 3
+      "servicefinder.se": 3,
+      "www.randstad.se": 3,
+      "app.bokio.se": 3,
+      "www.saco.se": 3
     },
     "pii_modification_patterns": {
-      "ID_SOLUTIONS_AND_EXCHANGES": {
-        "count": 9,
-        "avg_gap": 49.13333333333333
-      },
-      "LOCATION_AND_DEMOGRAPHICS": {
-        "count": 2,
-        "avg_gap": 0.0
-      },
-      "DEVICE_ENV": {
-        "count": 3,
-        "avg_gap": 171.5
-      },
-      "BEHAVIORAL_DATA": {
-        "count": 19,
-        "avg_gap": 51.94736842105263
-      },
       "NAVIGATION_HISTORY": {
         "count": 22,
         "avg_gap": 28.38095238095238
@@ -122,8 +106,28 @@
       "SESSION_MANAGEMENT": {
         "count": 6,
         "avg_gap": 46.2
+      },
+      "DEVICE_ENV": {
+        "count": 3,
+        "avg_gap": 171.5
+      },
+      "BEHAVIORAL_DATA": {
+        "count": 5,
+        "avg_gap": 113.33333333333333
+      },
+      "ID_SOLUTIONS_AND_EXCHANGES": {
+        "count": 9,
+        "avg_gap": 49.13333333333333
+      },
+      "IDENTITY_TRACKING": {
+        "count": 14,
+        "avg_gap": 40.4375
+      },
+      "LOCATION_AND_DEMOGRAPHICS": {
+        "count": 2,
+        "avg_gap": 0.0
       }
     }
   },
-  "num_timelines": 51
+  "num_timelines": 54
 }

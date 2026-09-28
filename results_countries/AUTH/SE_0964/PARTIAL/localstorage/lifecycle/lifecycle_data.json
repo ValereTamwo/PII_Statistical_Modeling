@@ -3,72 +3,73 @@
   "metrics": {
     "total_items": 278,
     "items_modified": 38,
-    "items_deleted": 160,
-    "entropy_increases": 36,
+    "items_deleted": 157,
+    "entropy_increases": 37,
     "entropy_decreases": 41,
     "size_increases": 19,
-    "size_decreases": 10,
+    "size_decreases": 11,
     "pii_transitions": {
-      "BEHAVIORAL_DATA -> UX_AND_PERFORMANCE_ANALYTICS": 7,
-      "DIRECT_PII -> UX_AND_PERFORMANCE_ANALYTICS": 2,
-      "DIRECT_PII_KEYS -> LOCATION_AND_DEMOGRAPHICS": 1,
-      "IDENTITY_TRACKING -> UX_AND_PERFORMANCE_ANALYTICS": 10,
-      "APP_STATE_STORAGE -> UX_AND_PERFORMANCE_ANALYTICS": 8,
-      "CONSENT_AND_PRIVACY -> USER_PREFERENCES": 5,
-      "ID_SOLUTIONS_AND_EXCHANGES -> UX_AND_PERFORMANCE_ANALYTICS": 7,
-      "BEHAVIORAL_DATA -> USER_PREFERENCES": 1,
-      "CONSENT_AND_PRIVACY -> UX_AND_PERFORMANCE_ANALYTICS": 5,
-      "DIRECT_PII_KEYS -> UX_AND_PERFORMANCE_ANALYTICS": 2,
-      "APP_STATE_STORAGE -> LOCATION_AND_DEMOGRAPHICS": 4,
-      "SESSION_MANAGEMENT -> UX_AND_PERFORMANCE_ANALYTICS": 1,
-      "DIRECT_PII -> DIRECT_PII_KEYS": 2,
-      "IDENTITY_TRACKING -> TECHNICAL_PASSWORDS": 1,
-      "BEHAVIORAL_DATA -> NAVIGATION_HISTORY": 2,
-      "USER_PREFERENCES -> UX_AND_PERFORMANCE_ANALYTICS": 1,
-      "IDENTITY_TRACKING -> ID_SOLUTIONS_AND_EXCHANGES": 3,
-      "APP_STATE_STORAGE -> IDENTITY_TRACKING": 2,
       "BEHAVIORAL_DATA -> ID_SOLUTIONS_AND_EXCHANGES": 1,
-      "SECURITY_AND_BOT_MITIGATION -> UX_AND_PERFORMANCE_ANALYTICS": 1,
-      "CONSENT_AND_PRIVACY -> LOCATION_AND_DEMOGRAPHICS": 1,
-      "CONSENT_AND_PRIVACY -> TECHNICAL_PASSWORDS": 3,
-      "NAVIGATION_HISTORY -> UX_AND_PERFORMANCE_ANALYTICS": 2,
       "CONSENT_AND_PRIVACY -> ID_SOLUTIONS_AND_EXCHANGES": 3,
-      "DEVICE_ENV -> UX_AND_PERFORMANCE_ANALYTICS": 1,
-      "IDENTITY_TRACKING -> SECURITY_AND_BOT_MITIGATION": 1,
-      "APP_STATE_STORAGE -> USER_PREFERENCES": 2,
-      "ID_SOLUTIONS_AND_EXCHANGES -> TECHNICAL_PASSWORDS": 2,
-      "BEHAVIORAL_DATA -> IDENTITY_TRACKING": 1,
-      "DEVICE_ENV -> ID_SOLUTIONS_AND_EXCHANGES": 1,
-      "BEHAVIORAL_DATA -> INFRASTRUCTURE": 1,
-      "DEVICE_ENV -> USER_PREFERENCES": 1,
+      "BEHAVIORAL_DATA -> UX_AND_PERFORMANCE_ANALYTICS": 7,
+      "CONSENT_AND_PRIVACY -> TECHNICAL_PASSWORDS": 3,
+      "CONSENT_AND_PRIVACY -> UX_AND_PERFORMANCE_ANALYTICS": 5,
+      "IDENTITY_TRACKING -> ID_SOLUTIONS_AND_EXCHANGES": 3,
+      "IDENTITY_TRACKING -> UX_AND_PERFORMANCE_ANALYTICS": 10,
       "TECHNICAL_PASSWORDS -> UX_AND_PERFORMANCE_ANALYTICS": 3,
-      "ID_SOLUTIONS_AND_EXCHANGES -> SECURITY_AND_BOT_MITIGATION": 1,
+      "APP_STATE_STORAGE -> LOCATION_AND_DEMOGRAPHICS": 4,
+      "CONSENT_AND_PRIVACY -> LOCATION_AND_DEMOGRAPHICS": 1,
+      "ID_SOLUTIONS_AND_EXCHANGES -> UX_AND_PERFORMANCE_ANALYTICS": 7,
+      "DIRECT_PII -> UX_AND_PERFORMANCE_ANALYTICS": 2,
+      "SESSION_MANAGEMENT -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "APP_STATE_STORAGE -> UX_AND_PERFORMANCE_ANALYTICS": 8,
+      "BEHAVIORAL_DATA -> USER_PREFERENCES": 1,
       "ID_SOLUTIONS_AND_EXCHANGES -> NAVIGATION_HISTORY": 1,
-      "IDENTITY_TRACKING -> BEHAVIORAL_DATA": 2,
-      "DIRECT_PII_KEYS -> ID_SOLUTIONS_AND_EXCHANGES": 1
+      "ID_SOLUTIONS_AND_EXCHANGES -> TECHNICAL_PASSWORDS": 2,
+      "DIRECT_PII_KEYS -> UX_AND_PERFORMANCE_ANALYTICS": 2,
+      "DEVICE_ENV -> LOCATION_AND_DEMOGRAPHICS": 1,
+      "USER_PREFERENCES -> CONSENT_AND_PRIVACY": 1,
+      "SECURITY_AND_BOT_MITIGATION -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "DIRECT_PII_KEYS -> ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "INFRASTRUCTURE -> IDENTITY_TRACKING": 1,
+      "INFRASTRUCTURE -> BEHAVIORAL_DATA": 2,
+      "USER_PREFERENCES -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "IDENTITY_TRACKING -> SECURITY_AND_BOT_MITIGATION": 1,
+      "NAVIGATION_HISTORY -> UX_AND_PERFORMANCE_ANALYTICS": 2,
+      "APP_STATE_STORAGE -> IDENTITY_TRACKING": 2,
+      "IDENTITY_TRACKING -> BEHAVIORAL_DATA": 1,
+      "DIRECT_PII -> DIRECT_PII_KEYS": 2,
+      "APP_STATE_STORAGE -> USER_PREFERENCES": 2,
+      "IDENTITY_TRACKING -> TECHNICAL_PASSWORDS": 1,
+      "DEVICE_ENV -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "DEVICE_ENV -> ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "DIRECT_PII_KEYS -> LOCATION_AND_DEMOGRAPHICS": 1,
+      "SESSION_MANAGEMENT -> IDENTITY_TRACKING": 1,
+      "ID_SOLUTIONS_AND_EXCHANGES -> SECURITY_AND_BOT_MITIGATION": 1,
+      "CONSENT_AND_PRIVACY -> USER_PREFERENCES": 1
     },
     "volatility_distribution": {
+      "stable": 104,
       "high": 78,
-      "moderate": 99,
-      "stable": 101
+      "moderate": 96
     },
     "change_frequency": {
-      "avg_gap": 35.48692810457516,
+      "avg_gap": 35.620421753607104,
       "min_gap": 0,
       "max_gap": 308
     },
     "frequent_changes": [
       {
-        "key": "optimizely_data$$oeu1787442167494r0.03023433804275688$$28811840211$$layer_states",
-        "avg_gap": 0.0,
-        "num_modifications": 2,
-        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
-      },
-      {
         "key": "ZD-suid",
         "avg_gap": 0.0,
         "num_modifications": 2,
         "pii_category": "ID_SOLUTIONS_AND_EXCHANGES"
+      },
+      {
+        "key": "_sp_user_consent_33810",
+        "avg_gap": 0.0,
+        "num_modifications": 3,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
       },
       {
         "key": "gbc_consent",
@@ -77,15 +78,15 @@
         "pii_category": "ID_SOLUTIONS_AND_EXCHANGES"
       },
       {
-        "key": "__zlcstore",
+        "key": "optimizely_data$$oeu1787442167494r0.03023433804275688$$28811840211$$layer_states",
         "avg_gap": 0.0,
         "num_modifications": 2,
         "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
       },
       {
-        "key": "_sp_user_consent_33810",
+        "key": "__zlcstore",
         "avg_gap": 0.0,
-        "num_modifications": 3,
+        "num_modifications": 2,
         "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
       },
       {
@@ -182,47 +183,47 @@
     "url_modifications": {
       "www.rodakorset.se": 32,
       "www.sverigeforunhcr.se": 27,
-      "www.sensorforsakring.se": 16,
       "kalender.se": 16,
+      "www.sensorforsakring.se": 16,
       "app.bokio.se": 16,
       "profile.varbi.com": 9,
-      "onlineklocka.se": 6,
       "www.merinfo.se": 6,
-      "auth.wikimedia.org": 6,
-      "startsiden.abcnyheter.no": 6
+      "startsiden.abcnyheter.no": 6,
+      "onlineklocka.se": 6,
+      "auth.wikimedia.org": 6
     },
     "pii_modification_patterns": {
-      "USER_PREFERENCES": {
-        "count": 8,
-        "avg_gap": 83.53846153846153
+      "ID_SOLUTIONS_AND_EXCHANGES": {
+        "count": 15,
+        "avg_gap": 38.6
       },
       "UX_AND_PERFORMANCE_ANALYTICS": {
         "count": 119,
         "avg_gap": 17.528795811518325
       },
-      "APP_STATE_STORAGE": {
-        "count": 6,
-        "avg_gap": 7.088495575221239
+      "IDENTITY_TRACKING": {
+        "count": 7,
+        "avg_gap": 62.94117647058823
       },
-      "ID_SOLUTIONS_AND_EXCHANGES": {
-        "count": 15,
-        "avg_gap": 38.6
+      "USER_PREFERENCES": {
+        "count": 8,
+        "avg_gap": 83.53846153846153
       },
       "BEHAVIORAL_DATA": {
         "count": 11,
         "avg_gap": 63.642857142857146
       },
-      "IDENTITY_TRACKING": {
-        "count": 7,
-        "avg_gap": 59.44444444444444
-      },
-      "TECHNICAL_PASSWORDS": {
-        "count": 16,
-        "avg_gap": 7.333333333333333
+      "APP_STATE_STORAGE": {
+        "count": 6,
+        "avg_gap": 7.088495575221239
       },
       "SECURITY_AND_BOT_MITIGATION": {
         "count": 6,
         "avg_gap": 32.9
+      },
+      "TECHNICAL_PASSWORDS": {
+        "count": 16,
+        "avg_gap": 7.333333333333333
       }
     }
   },

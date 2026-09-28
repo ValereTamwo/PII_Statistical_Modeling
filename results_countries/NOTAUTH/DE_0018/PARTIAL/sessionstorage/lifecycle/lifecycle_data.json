@@ -1,39 +1,39 @@
 {
   "storage_type": "sessionstorage",
   "metrics": {
-    "total_items": 183,
+    "total_items": 180,
     "items_modified": 44,
     "items_deleted": 11,
-    "entropy_increases": 30,
-    "entropy_decreases": 25,
+    "entropy_increases": 29,
+    "entropy_decreases": 26,
     "size_increases": 23,
     "size_decreases": 11,
     "pii_transitions": {
-      "APP_STATE_STORAGE -> SECURITY_AND_BOT_MITIGATION": 2,
-      "DEVICE_ENV -> USER_PREFERENCES": 3,
-      "IDENTITY_TRACKING -> UX_AND_PERFORMANCE_ANALYTICS": 5,
-      "DIRECT_PII_KEYS -> LOCATION_AND_DEMOGRAPHICS": 1,
-      "BEHAVIORAL_DATA -> USER_PREFERENCES": 1,
-      "IDENTITY_TRACKING -> ID_SOLUTIONS_AND_EXCHANGES": 1,
-      "DEVICE_ENV -> NAVIGATION_HISTORY": 1,
-      "ID_SOLUTIONS_AND_EXCHANGES -> UX_AND_PERFORMANCE_ANALYTICS": 2,
-      "APP_STATE_STORAGE -> ID_SOLUTIONS_AND_EXCHANGES": 1,
-      "NAVIGATION_HISTORY -> UX_AND_PERFORMANCE_ANALYTICS": 1,
       "APP_STATE_STORAGE -> UX_AND_PERFORMANCE_ANALYTICS": 5,
-      "IDENTITY_TRACKING -> NAVIGATION_HISTORY": 2,
-      "APP_STATE_STORAGE -> BEHAVIORAL_DATA": 1,
-      "IDENTITY_TRACKING -> TECHNICAL_PASSWORDS": 3,
-      "BEHAVIORAL_DATA -> UX_AND_PERFORMANCE_ANALYTICS": 2,
+      "DEVICE_ENV -> NAVIGATION_HISTORY": 2,
+      "IDENTITY_TRACKING -> UX_AND_PERFORMANCE_ANALYTICS": 5,
+      "APP_STATE_STORAGE -> SECURITY_AND_BOT_MITIGATION": 2,
+      "NAVIGATION_HISTORY -> UX_AND_PERFORMANCE_ANALYTICS": 1,
       "BEHAVIORAL_DATA -> ID_SOLUTIONS_AND_EXCHANGES": 1,
-      "BEHAVIORAL_DATA -> IDENTITY_TRACKING": 2
+      "BEHAVIORAL_DATA -> UX_AND_PERFORMANCE_ANALYTICS": 2,
+      "DIRECT_PII_KEYS -> LOCATION_AND_DEMOGRAPHICS": 1,
+      "ID_SOLUTIONS_AND_EXCHANGES -> UX_AND_PERFORMANCE_ANALYTICS": 2,
+      "BEHAVIORAL_DATA -> USER_PREFERENCES": 3,
+      "IDENTITY_TRACKING -> USER_PREFERENCES": 2,
+      "IDENTITY_TRACKING -> ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "IDENTITY_TRACKING -> TECHNICAL_PASSWORDS": 1,
+      "APP_STATE_STORAGE -> BEHAVIORAL_DATA": 1,
+      "BEHAVIORAL_DATA -> IDENTITY_TRACKING": 2,
+      "IDENTITY_TRACKING -> NAVIGATION_HISTORY": 2,
+      "APP_STATE_STORAGE -> ID_SOLUTIONS_AND_EXCHANGES": 1
     },
     "volatility_distribution": {
-      "high": 26,
-      "stable": 133,
-      "moderate": 24
+      "high": 24,
+      "stable": 130,
+      "moderate": 26
     },
     "change_frequency": {
-      "avg_gap": 33.40045248868778,
+      "avg_gap": 34.044600938967136,
       "min_gap": 0,
       "max_gap": 481
     },
@@ -58,8 +58,8 @@
       },
       {
         "key": "cq.viewReco",
-        "avg_gap": 12.166666666666666,
-        "num_modifications": 10,
+        "avg_gap": 15.368421052631579,
+        "num_modifications": 8,
         "pii_category": "USER_PREFERENCES"
       },
       {
@@ -69,16 +69,16 @@
         "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
       },
       {
-        "key": "wpsStore",
-        "avg_gap": 21.285714285714285,
-        "num_modifications": 22,
-        "pii_category": "USER_PREFERENCES"
-      },
-      {
         "key": "csa-tabbed-browsing",
         "avg_gap": 26.142857142857142,
         "num_modifications": 6,
         "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "wpsStore",
+        "avg_gap": 27.9375,
+        "num_modifications": 17,
+        "pii_category": "NAVIGATION_HISTORY"
       },
       {
         "key": "__rtbh.uid",
@@ -123,13 +123,13 @@
         "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
       },
       {
-        "key": "shopify-chat-nudge-path",
+        "key": "shopify-chat-nudge-pages",
         "avg_gap": 44.0,
         "num_modifications": 2,
         "pii_category": "BEHAVIORAL_DATA"
       },
       {
-        "key": "shopify-chat-nudge-pages",
+        "key": "shopify-chat-nudge-path",
         "avg_gap": 44.0,
         "num_modifications": 2,
         "pii_category": "BEHAVIORAL_DATA"
@@ -137,54 +137,54 @@
     ],
     "url_modifications": {
       "configure.bmw.de": 36,
-      "de.zeelool.com": 23,
+      "de.zeelool.com": 21,
       "www.bmw.de": 16,
-      "www.kopp-verlag.de": 15,
       "fanartikel.union-zeughaus.de": 13,
       "www.diemer-shop.com": 13,
-      "www.running-point.de": 12,
+      "www.kopp-verlag.de": 12,
       "www.digikala.com": 12,
+      "www.running-point.de": 12,
       "rieker.us": 11,
       "www.asphaltgold.com": 10
     },
     "pii_modification_patterns": {
-      "CONSENT_AND_PRIVACY": {
-        "count": 18,
-        "avg_gap": 44.8
-      },
-      "BEHAVIORAL_DATA": {
-        "count": 37,
-        "avg_gap": 65.11111111111111
-      },
       "UX_AND_PERFORMANCE_ANALYTICS": {
         "count": 129,
         "avg_gap": 19.325581395348838
       },
-      "LOCATION_AND_DEMOGRAPHICS": {
-        "count": 3,
-        "avg_gap": 134.0
-      },
-      "ID_SOLUTIONS_AND_EXCHANGES": {
-        "count": 16,
-        "avg_gap": 31.615384615384617
-      },
       "NAVIGATION_HISTORY": {
-        "count": 7,
-        "avg_gap": 61.333333333333336
-      },
-      "USER_PREFERENCES": {
-        "count": 36,
-        "avg_gap": 19.340425531914892
+        "count": 24,
+        "avg_gap": 37.04545454545455
       },
       "IDENTITY_TRACKING": {
         "count": 14,
         "avg_gap": 119.23076923076923
       },
       "TECHNICAL_PASSWORDS": {
-        "count": 10,
-        "avg_gap": 78.14285714285714
+        "count": 8,
+        "avg_gap": 57.4
+      },
+      "BEHAVIORAL_DATA": {
+        "count": 37,
+        "avg_gap": 65.11111111111111
+      },
+      "CONSENT_AND_PRIVACY": {
+        "count": 18,
+        "avg_gap": 44.8
+      },
+      "USER_PREFERENCES": {
+        "count": 12,
+        "avg_gap": 22.0
+      },
+      "ID_SOLUTIONS_AND_EXCHANGES": {
+        "count": 16,
+        "avg_gap": 31.615384615384617
+      },
+      "LOCATION_AND_DEMOGRAPHICS": {
+        "count": 3,
+        "avg_gap": 134.0
       }
     }
   },
-  "num_timelines": 183
+  "num_timelines": 180
 }

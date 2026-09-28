@@ -1,10 +1,10 @@
 {
-  "total_cookies": 2313,
-  "direct_pii_count": 7,
-  "other_count": 2306,
+  "total_cookies": 2305,
+  "direct_pii_count": 9,
+  "other_count": 2296,
   "lifetime_distribution": {
-    "<6 months": 1061,
-    "6-18 months": 1182,
+    "<6 months": 1052,
+    "6-18 months": 1183,
     "Session": 70
   },
   "lifetime_by_pii": {
@@ -13,24 +13,27 @@
     },
     "ai_refined": {
       "6-18 months": 3,
-      "<6 months": 1
+      "<6 months": 3
     },
     "APP_STATE_STORAGE": {
       "<6 months": 36,
-      "6-18 months": 71
+      "6-18 months": 70
     },
     "BEHAVIORAL_DATA": {
-      "6-18 months": 29,
-      "<6 months": 29,
-      "Session": 12
+      "6-18 months": 18,
+      "<6 months": 24,
+      "Session": 11
+    },
+    "CONSENT_AND_PRIVACY.iubenda": {
+      "6-18 months": 5
     },
     "CONSENT_AND_PRIVACY": {
-      "6-18 months": 83,
-      "<6 months": 81
+      "6-18 months": 88,
+      "<6 months": 76
     },
     "DEVICE_ENV": {
-      "6-18 months": 9,
-      "<6 months": 18
+      "6-18 months": 6,
+      "<6 months": 15
     },
     "DIRECT_PII_KEYS": {
       "6-18 months": 6,
@@ -40,11 +43,11 @@
       "6-18 months": 3
     },
     "IDENTITY_TRACKING": {
-      "6-18 months": 519,
-      "<6 months": 324,
-      "Session": 30
+      "6-18 months": 529,
+      "<6 months": 322,
+      "Session": 34
     },
-    "IDENTITY_TRACKING.user_id_key": {
+    "IDENTITY_TRACKING.vendor_adcalls_p2_expansion": {
       "6-18 months": 1
     },
     "ID_SOLUTIONS_AND_EXCHANGES": {
@@ -52,30 +55,32 @@
       "<6 months": 86
     },
     "INFRASTRUCTURE": {
-      "<6 months": 27,
+      "<6 months": 28,
       "Session": 4,
-      "6-18 months": 9
+      "6-18 months": 13
     },
     "LOCATION_AND_DEMOGRAPHICS.general_loc": {
       "6-18 months": 1
     },
     "LOCATION_AND_DEMOGRAPHICS": {
       "<6 months": 12,
-      "6-18 months": 2
+      "6-18 months": 1
     },
     "NAVIGATION_HISTORY": {
       "<6 months": 16,
       "Session": 5
     },
     "SECURITY_AND_BOT_MITIGATION": {
-      "6-18 months": 73,
-      "<6 months": 59,
-      "Session": 1
+      "6-18 months": 71,
+      "<6 months": 57
+    },
+    "SENSITIVE_LOCATION_PII.general_loc": {
+      "6-18 months": 1
     },
     "SESSION_MANAGEMENT": {
-      "<6 months": 58,
-      "6-18 months": 12,
-      "Session": 5
+      "<6 months": 56,
+      "6-18 months": 11,
+      "Session": 3
     },
     "SESSION_MANAGEMENT.php_session": {
       "<6 months": 1
@@ -85,8 +90,8 @@
       "6-18 months": 10
     },
     "USER_PREFERENCES": {
-      "<6 months": 109,
-      "6-18 months": 124,
+      "<6 months": 116,
+      "6-18 months": 119,
       "Session": 4
     },
     "UX_AND_PERFORMANCE_ANALYTICS": {
@@ -96,28 +101,30 @@
     }
   },
   "httponly_distribution": {
-    "False": 1865,
-    "True": 448
+    "False": 1863,
+    "True": 442
   },
   "httponly_by_pii": {
     "ip_address": {
       "False": 3
     },
     "ai_refined": {
-      "False": 4
+      "False": 6
     },
     "APP_STATE_STORAGE": {
-      "False": 107
+      "False": 106
     },
     "BEHAVIORAL_DATA": {
-      "False": 70
+      "False": 53
+    },
+    "CONSENT_AND_PRIVACY.iubenda": {
+      "False": 5
     },
     "CONSENT_AND_PRIVACY": {
-      "False": 162,
-      "True": 2
+      "False": 164
     },
     "DEVICE_ENV": {
-      "False": 12,
+      "False": 6,
       "True": 15
     },
     "DIRECT_PII_KEYS": {
@@ -127,10 +134,10 @@
       "True": 3
     },
     "IDENTITY_TRACKING": {
-      "False": 743,
-      "True": 130
+      "False": 756,
+      "True": 129
     },
-    "IDENTITY_TRACKING.user_id_key": {
+    "IDENTITY_TRACKING.vendor_adcalls_p2_expansion": {
       "False": 1
     },
     "ID_SOLUTIONS_AND_EXCHANGES": {
@@ -138,13 +145,13 @@
       "True": 15
     },
     "INFRASTRUCTURE": {
-      "False": 40
+      "False": 45
     },
     "LOCATION_AND_DEMOGRAPHICS.general_loc": {
       "False": 1
     },
     "LOCATION_AND_DEMOGRAPHICS": {
-      "False": 13,
+      "False": 12,
       "True": 1
     },
     "NAVIGATION_HISTORY": {
@@ -152,12 +159,15 @@
       "True": 2
     },
     "SECURITY_AND_BOT_MITIGATION": {
-      "False": 61,
-      "True": 72
+      "False": 59,
+      "True": 69
+    },
+    "SENSITIVE_LOCATION_PII.general_loc": {
+      "False": 1
     },
     "SESSION_MANAGEMENT": {
-      "True": 34,
-      "False": 41
+      "True": 32,
+      "False": 38
     },
     "SESSION_MANAGEMENT.php_session": {
       "True": 1
@@ -168,7 +178,7 @@
     },
     "USER_PREFERENCES": {
       "False": 222,
-      "True": 15
+      "True": 17
     },
     "UX_AND_PERFORMANCE_ANALYTICS": {
       "False": 217,
@@ -177,7 +187,7 @@
   },
   "secure_distribution": {
     "False": 1027,
-    "True": 1286
+    "True": 1278
   },
   "secure_by_pii": {
     "ip_address": {
@@ -185,23 +195,25 @@
     },
     "ai_refined": {
       "True": 3,
-      "False": 1
+      "False": 3
     },
     "APP_STATE_STORAGE": {
-      "True": 37,
+      "True": 36,
       "False": 70
     },
     "BEHAVIORAL_DATA": {
-      "True": 27,
-      "False": 43
+      "True": 22,
+      "False": 31
+    },
+    "CONSENT_AND_PRIVACY.iubenda": {
+      "True": 5
     },
     "CONSENT_AND_PRIVACY": {
-      "False": 53,
-      "True": 111
+      "False": 52,
+      "True": 112
     },
     "DEVICE_ENV": {
-      "True": 24,
-      "False": 3
+      "True": 21
     },
     "DIRECT_PII_KEYS": {
       "True": 8,
@@ -211,10 +223,10 @@
       "True": 3
     },
     "IDENTITY_TRACKING": {
-      "True": 340,
-      "False": 533
+      "True": 342,
+      "False": 543
     },
-    "IDENTITY_TRACKING.user_id_key": {
+    "IDENTITY_TRACKING.vendor_adcalls_p2_expansion": {
       "True": 1
     },
     "ID_SOLUTIONS_AND_EXCHANGES": {
@@ -222,26 +234,29 @@
       "True": 116
     },
     "INFRASTRUCTURE": {
-      "False": 15,
-      "True": 25
+      "False": 17,
+      "True": 28
     },
     "LOCATION_AND_DEMOGRAPHICS.general_loc": {
       "True": 1
     },
     "LOCATION_AND_DEMOGRAPHICS": {
       "False": 10,
-      "True": 4
+      "True": 3
     },
     "NAVIGATION_HISTORY": {
       "False": 16,
       "True": 5
     },
     "SECURITY_AND_BOT_MITIGATION": {
-      "True": 122,
+      "True": 117,
       "False": 11
     },
+    "SENSITIVE_LOCATION_PII.general_loc": {
+      "True": 1
+    },
     "SESSION_MANAGEMENT": {
-      "True": 68,
+      "True": 63,
       "False": 7
     },
     "SESSION_MANAGEMENT.php_session": {
@@ -252,7 +267,7 @@
       "False": 11
     },
     "USER_PREFERENCES": {
-      "False": 112,
+      "False": 114,
       "True": 125
     },
     "UX_AND_PERFORMANCE_ANALYTICS": {
@@ -261,9 +276,9 @@
     }
   },
   "samesite_distribution": {
-    "Lax": 1463,
-    "No Restriction": 767,
-    "Strict": 83
+    "Lax": 1458,
+    "No Restriction": 766,
+    "Strict": 81
   },
   "samesite_by_pii": {
     "ip_address": {
@@ -271,25 +286,28 @@
     },
     "ai_refined": {
       "No Restriction": 3,
-      "Lax": 1
+      "Lax": 3
     },
     "APP_STATE_STORAGE": {
       "Strict": 13,
-      "Lax": 86,
+      "Lax": 85,
       "No Restriction": 8
     },
     "BEHAVIORAL_DATA": {
-      "No Restriction": 15,
-      "Lax": 55
+      "No Restriction": 17,
+      "Lax": 36
+    },
+    "CONSENT_AND_PRIVACY.iubenda": {
+      "No Restriction": 5
     },
     "CONSENT_AND_PRIVACY": {
-      "Lax": 66,
-      "Strict": 8,
-      "No Restriction": 90
+      "Lax": 64,
+      "Strict": 6,
+      "No Restriction": 94
     },
     "DEVICE_ENV": {
-      "Lax": 6,
-      "No Restriction": 18,
+      "Lax": 3,
+      "No Restriction": 15,
       "Strict": 3
     },
     "DIRECT_PII_KEYS": {
@@ -300,11 +318,11 @@
       "No Restriction": 3
     },
     "IDENTITY_TRACKING": {
-      "Lax": 676,
-      "No Restriction": 166,
-      "Strict": 31
+      "Lax": 686,
+      "No Restriction": 169,
+      "Strict": 30
     },
-    "IDENTITY_TRACKING.user_id_key": {
+    "IDENTITY_TRACKING.vendor_adcalls_p2_expansion": {
       "Strict": 1
     },
     "ID_SOLUTIONS_AND_EXCHANGES": {
@@ -312,29 +330,30 @@
       "No Restriction": 101
     },
     "INFRASTRUCTURE": {
-      "Lax": 18,
-      "No Restriction": 22
+      "Lax": 22,
+      "No Restriction": 23
     },
     "LOCATION_AND_DEMOGRAPHICS.general_loc": {
       "No Restriction": 1
     },
     "LOCATION_AND_DEMOGRAPHICS": {
       "Lax": 12,
-      "No Restriction": 2
+      "No Restriction": 1
     },
     "NAVIGATION_HISTORY": {
       "Lax": 19,
       "No Restriction": 2
     },
     "SECURITY_AND_BOT_MITIGATION": {
-      "No Restriction": 99,
-      "Lax": 33,
-      "Strict": 1
+      "No Restriction": 97,
+      "Lax": 31
+    },
+    "SENSITIVE_LOCATION_PII.general_loc": {
+      "No Restriction": 1
     },
     "SESSION_MANAGEMENT": {
-      "Lax": 50,
-      "No Restriction": 23,
-      "Strict": 2
+      "Lax": 48,
+      "No Restriction": 22
     },
     "SESSION_MANAGEMENT.php_session": {
       "No Restriction": 1
@@ -345,9 +364,9 @@
       "Strict": 1
     },
     "USER_PREFERENCES": {
-      "Lax": 134,
-      "No Restriction": 97,
-      "Strict": 6
+      "Lax": 142,
+      "No Restriction": 87,
+      "Strict": 10
     },
     "UX_AND_PERFORMANCE_ANALYTICS": {
       "No Restriction": 103,
@@ -357,8 +376,8 @@
   },
   "security_matrix": {
     "(False, False)": 1006,
-    "(False, True)": 859,
-    "(True, True)": 427,
+    "(False, True)": 857,
+    "(True, True)": 421,
     "(True, False)": 21
   },
   "security_by_pii": {
@@ -367,25 +386,26 @@
     },
     "ai_refined": {
       "Partially Secure": 3,
-      "Lowly Secure": 1
+      "Lowly Secure": 3
     },
     "APP_STATE_STORAGE": {
-      "Partially Secure": 37,
+      "Partially Secure": 36,
       "Lowly Secure": 70
     },
     "BEHAVIORAL_DATA": {
-      "Partially Secure": 27,
-      "Lowly Secure": 43
+      "Partially Secure": 22,
+      "Lowly Secure": 31
+    },
+    "CONSENT_AND_PRIVACY.iubenda": {
+      "Partially Secure": 5
     },
     "CONSENT_AND_PRIVACY": {
-      "Lowly Secure": 53,
-      "Partially Secure": 109,
-      "Secure": 2
+      "Lowly Secure": 52,
+      "Partially Secure": 112
     },
     "DEVICE_ENV": {
-      "Partially Secure": 9,
-      "Secure": 15,
-      "Lowly Secure": 3
+      "Partially Secure": 6,
+      "Secure": 15
     },
     "DIRECT_PII_KEYS": {
       "Partially Secure": 8,
@@ -395,11 +415,11 @@
       "Secure": 3
     },
     "IDENTITY_TRACKING": {
-      "Partially Secure": 226,
-      "Lowly Secure": 525,
-      "Secure": 122
+      "Partially Secure": 229,
+      "Lowly Secure": 535,
+      "Secure": 121
     },
-    "IDENTITY_TRACKING.user_id_key": {
+    "IDENTITY_TRACKING.vendor_adcalls_p2_expansion": {
       "Partially Secure": 1
     },
     "ID_SOLUTIONS_AND_EXCHANGES": {
@@ -408,15 +428,15 @@
       "Partially Secure": 101
     },
     "INFRASTRUCTURE": {
-      "Lowly Secure": 15,
-      "Partially Secure": 25
+      "Lowly Secure": 17,
+      "Partially Secure": 28
     },
     "LOCATION_AND_DEMOGRAPHICS.general_loc": {
       "Partially Secure": 1
     },
     "LOCATION_AND_DEMOGRAPHICS": {
       "Lowly Secure": 9,
-      "Partially Secure": 5
+      "Partially Secure": 4
     },
     "NAVIGATION_HISTORY": {
       "Lowly Secure": 16,
@@ -424,13 +444,16 @@
       "Partially Secure": 3
     },
     "SECURITY_AND_BOT_MITIGATION": {
-      "Partially Secure": 50,
-      "Secure": 72,
+      "Partially Secure": 48,
+      "Secure": 69,
       "Lowly Secure": 11
     },
+    "SENSITIVE_LOCATION_PII.general_loc": {
+      "Partially Secure": 1
+    },
     "SESSION_MANAGEMENT": {
-      "Secure": 28,
-      "Partially Secure": 46,
+      "Secure": 26,
+      "Partially Secure": 43,
       "Lowly Secure": 1
     },
     "SESSION_MANAGEMENT.php_session": {
@@ -442,9 +465,9 @@
       "Secure": 11
     },
     "USER_PREFERENCES": {
-      "Lowly Secure": 112,
-      "Secure": 15,
-      "Partially Secure": 110
+      "Lowly Secure": 114,
+      "Secure": 17,
+      "Partially Secure": 108
     },
     "UX_AND_PERFORMANCE_ANALYTICS": {
       "Partially Secure": 102,
@@ -453,7 +476,7 @@
     }
   },
   "thirdparty_distribution": {
-    "First-Party": 1694,
+    "First-Party": 1686,
     "Third-Party": 619
   },
   "thirdparty_by_pii": {
@@ -461,22 +484,25 @@
       "First-Party": 3
     },
     "ai_refined": {
-      "First-Party": 4
+      "First-Party": 6
     },
     "APP_STATE_STORAGE": {
-      "First-Party": 87,
+      "First-Party": 86,
       "Third-Party": 20
     },
     "BEHAVIORAL_DATA": {
-      "First-Party": 63,
-      "Third-Party": 7
+      "First-Party": 47,
+      "Third-Party": 6
+    },
+    "CONSENT_AND_PRIVACY.iubenda": {
+      "First-Party": 5
     },
     "CONSENT_AND_PRIVACY": {
-      "First-Party": 92,
-      "Third-Party": 72
+      "First-Party": 89,
+      "Third-Party": 75
     },
     "DEVICE_ENV": {
-      "First-Party": 12,
+      "First-Party": 6,
       "Third-Party": 15
     },
     "DIRECT_PII_KEYS": {
@@ -487,10 +513,10 @@
       "Third-Party": 3
     },
     "IDENTITY_TRACKING": {
-      "First-Party": 679,
-      "Third-Party": 194
+      "First-Party": 687,
+      "Third-Party": 198
     },
-    "IDENTITY_TRACKING.user_id_key": {
+    "IDENTITY_TRACKING.vendor_adcalls_p2_expansion": {
       "First-Party": 1
     },
     "ID_SOLUTIONS_AND_EXCHANGES": {
@@ -498,14 +524,14 @@
       "Third-Party": 101
     },
     "INFRASTRUCTURE": {
-      "Third-Party": 17,
-      "First-Party": 23
+      "Third-Party": 18,
+      "First-Party": 27
     },
     "LOCATION_AND_DEMOGRAPHICS.general_loc": {
       "First-Party": 1
     },
     "LOCATION_AND_DEMOGRAPHICS": {
-      "First-Party": 12,
+      "First-Party": 11,
       "Third-Party": 2
     },
     "NAVIGATION_HISTORY": {
@@ -514,11 +540,14 @@
     },
     "SECURITY_AND_BOT_MITIGATION": {
       "Third-Party": 50,
-      "First-Party": 83
+      "First-Party": 78
+    },
+    "SENSITIVE_LOCATION_PII.general_loc": {
+      "First-Party": 1
     },
     "SESSION_MANAGEMENT": {
-      "First-Party": 69,
-      "Third-Party": 6
+      "First-Party": 65,
+      "Third-Party": 5
     },
     "SESSION_MANAGEMENT.php_session": {
       "First-Party": 1
@@ -528,8 +557,8 @@
       "Third-Party": 7
     },
     "USER_PREFERENCES": {
-      "First-Party": 208,
-      "Third-Party": 29
+      "First-Party": 216,
+      "Third-Party": 23
     },
     "UX_AND_PERFORMANCE_ANALYTICS": {
       "First-Party": 272,
@@ -537,21 +566,21 @@
     }
   },
   "thirdparty_httponly": {
-    "First-Party_False": 1438,
+    "First-Party_False": 1436,
     "Third-Party_False": 427,
     "Third-Party_True": 192,
-    "First-Party_True": 256
+    "First-Party_True": 250
   },
   "thirdparty_secure": {
     "First-Party_False": 917,
-    "First-Party_True": 777,
+    "First-Party_True": 769,
     "Third-Party_False": 110,
     "Third-Party_True": 509
   },
   "risk_levels": {
-    "High Risk": 857,
-    "Low Risk": 304,
-    "Medium Risk": 1052,
+    "High Risk": 875,
+    "Low Risk": 298,
+    "Medium Risk": 1032,
     "Critical Risk": 100
   },
   "risk_by_pii": {
@@ -559,24 +588,27 @@
       "High Risk": 3
     },
     "ai_refined": {
-      "High Risk": 4
+      "High Risk": 6
     },
     "APP_STATE_STORAGE": {
       "Low Risk": 32,
-      "Medium Risk": 75
+      "Medium Risk": 74
     },
     "BEHAVIORAL_DATA": {
-      "Medium Risk": 66,
+      "Medium Risk": 49,
       "Low Risk": 4
     },
+    "CONSENT_AND_PRIVACY.iubenda": {
+      "Medium Risk": 5
+    },
     "CONSENT_AND_PRIVACY": {
-      "Medium Risk": 133,
-      "Low Risk": 17,
+      "Medium Risk": 135,
+      "Low Risk": 15,
       "High Risk": 14
     },
     "DEVICE_ENV": {
-      "Low Risk": 9,
-      "Medium Risk": 18
+      "Low Risk": 6,
+      "Medium Risk": 15
     },
     "DIRECT_PII_KEYS": {
       "Medium Risk": 6,
@@ -586,11 +618,11 @@
       "High Risk": 3
     },
     "IDENTITY_TRACKING": {
-      "High Risk": 727,
+      "High Risk": 743,
       "Critical Risk": 73,
-      "Medium Risk": 73
+      "Medium Risk": 69
     },
-    "IDENTITY_TRACKING.user_id_key": {
+    "IDENTITY_TRACKING.vendor_adcalls_p2_expansion": {
       "Low Risk": 1
     },
     "ID_SOLUTIONS_AND_EXCHANGES": {
@@ -599,7 +631,7 @@
       "Medium Risk": 12
     },
     "INFRASTRUCTURE": {
-      "Medium Risk": 26,
+      "Medium Risk": 31,
       "Low Risk": 14
     },
     "LOCATION_AND_DEMOGRAPHICS.general_loc": {
@@ -607,7 +639,7 @@
     },
     "LOCATION_AND_DEMOGRAPHICS": {
       "Low Risk": 12,
-      "Medium Risk": 2
+      "Medium Risk": 1
     },
     "NAVIGATION_HISTORY": {
       "Medium Risk": 17,
@@ -615,12 +647,15 @@
       "High Risk": 2
     },
     "SECURITY_AND_BOT_MITIGATION": {
-      "Medium Risk": 123,
-      "Low Risk": 10
+      "Medium Risk": 119,
+      "Low Risk": 9
+    },
+    "SENSITIVE_LOCATION_PII.general_loc": {
+      "Medium Risk": 1
     },
     "SESSION_MANAGEMENT": {
-      "Medium Risk": 60,
-      "Low Risk": 15
+      "Medium Risk": 59,
+      "Low Risk": 11
     },
     "SESSION_MANAGEMENT.php_session": {
       "Low Risk": 1
@@ -630,8 +665,8 @@
       "Medium Risk": 7
     },
     "USER_PREFERENCES": {
-      "Medium Risk": 191,
-      "Low Risk": 46
+      "Medium Risk": 189,
+      "Low Risk": 50
     },
     "UX_AND_PERFORMANCE_ANALYTICS": {
       "Medium Risk": 242,
@@ -643,15 +678,15 @@
     "iub": 102,
     "secure": 101,
     "shopify": 100,
-    "session": 83,
+    "session": 80,
     "preference": 68,
     "consent": 66,
     "cart": 65,
     "previous": 65,
     "essential": 65,
     "fbp": 64,
-    "token": 58,
     "3psidcc": 56,
+    "token": 55,
     "localization": 54,
     "currency": 51,
     "clearance": 48
@@ -662,44 +697,44 @@
     },
     "language_code": {
       "ai_refined": 3,
-      "DEVICE_ENV": 3,
       "DIRECT_PII_KEYS": 3,
       "IDENTITY_TRACKING": 3,
       "SECURITY_AND_BOT_MITIGATION": 3,
-      "USER_PREFERENCES": 7
+      "USER_PREFERENCES": 10
     },
     "complex_string": {
-      "ai_refined": 1,
-      "APP_STATE_STORAGE": 11,
-      "BEHAVIORAL_DATA": 22,
-      "CONSENT_AND_PRIVACY": 55,
+      "ai_refined": 3,
+      "APP_STATE_STORAGE": 10,
+      "BEHAVIORAL_DATA": 13,
+      "CONSENT_AND_PRIVACY": 54,
       "DEVICE_ENV": 8,
       "DIRECT_PII_KEYS": 3,
       "FINGERPRINTING_ADVANCED": 3,
-      "IDENTITY_TRACKING": 557,
+      "IDENTITY_TRACKING": 558,
       "ID_SOLUTIONS_AND_EXCHANGES": 46,
-      "INFRASTRUCTURE": 36,
+      "INFRASTRUCTURE": 39,
       "LOCATION_AND_DEMOGRAPHICS.general_loc": 1,
-      "LOCATION_AND_DEMOGRAPHICS": 6,
+      "LOCATION_AND_DEMOGRAPHICS": 5,
       "NAVIGATION_HISTORY": 16,
       "SECURITY_AND_BOT_MITIGATION": 114,
-      "SESSION_MANAGEMENT": 25,
+      "SENSITIVE_LOCATION_PII.general_loc": 1,
+      "SESSION_MANAGEMENT": 24,
       "SESSION_MANAGEMENT.php_session": 1,
       "TECHNICAL_PASSWORDS": 3,
-      "USER_PREFERENCES": 33,
+      "USER_PREFERENCES": 35,
       "UX_AND_PERFORMANCE_ANALYTICS": 209
     },
     "empty": {
       "APP_STATE_STORAGE": 18,
-      "USER_PREFERENCES": 1,
+      "IDENTITY_TRACKING": 1,
       "UX_AND_PERFORMANCE_ANALYTICS": 3
     },
     "short_text": {
       "APP_STATE_STORAGE": 54,
       "CONSENT_AND_PRIVACY": 7,
       "DEVICE_ENV": 10,
-      "IDENTITY_TRACKING": 34,
-      "IDENTITY_TRACKING.user_id_key": 1,
+      "IDENTITY_TRACKING": 33,
+      "IDENTITY_TRACKING.vendor_adcalls_p2_expansion": 1,
       "NAVIGATION_HISTORY": 3,
       "TECHNICAL_PASSWORDS": 16,
       "USER_PREFERENCES": 57,
@@ -707,84 +742,79 @@
     },
     "uuid": {
       "APP_STATE_STORAGE": 14,
-      "BEHAVIORAL_DATA": 1,
-      "DEVICE_ENV": 3,
-      "IDENTITY_TRACKING": 64,
+      "IDENTITY_TRACKING": 67,
       "ID_SOLUTIONS_AND_EXCHANGES": 2,
-      "SESSION_MANAGEMENT": 1,
       "TECHNICAL_PASSWORDS": 7,
-      "USER_PREFERENCES": 1,
       "UX_AND_PERFORMANCE_ANALYTICS": 34
     },
     "number": {
       "APP_STATE_STORAGE": 2,
-      "BEHAVIORAL_DATA": 12,
+      "BEHAVIORAL_DATA": 11,
       "CONSENT_AND_PRIVACY": 14,
-      "IDENTITY_TRACKING": 41,
+      "IDENTITY_TRACKING": 44,
       "ID_SOLUTIONS_AND_EXCHANGES": 1,
-      "INFRASTRUCTURE": 1,
+      "INFRASTRUCTURE": 2,
       "NAVIGATION_HISTORY": 2,
-      "SECURITY_AND_BOT_MITIGATION": 12,
-      "USER_PREFERENCES": 2,
+      "SECURITY_AND_BOT_MITIGATION": 10,
+      "USER_PREFERENCES": 4,
       "UX_AND_PERFORMANCE_ANALYTICS": 9
     },
     "boolean": {
       "APP_STATE_STORAGE": 8,
-      "BEHAVIORAL_DATA": 5,
+      "BEHAVIORAL_DATA": 4,
       "CONSENT_AND_PRIVACY": 52,
-      "IDENTITY_TRACKING": 11,
+      "IDENTITY_TRACKING": 14,
       "ID_SOLUTIONS_AND_EXCHANGES": 8,
       "SESSION_MANAGEMENT": 17,
       "TECHNICAL_PASSWORDS": 9,
-      "USER_PREFERENCES": 17,
+      "USER_PREFERENCES": 16,
       "UX_AND_PERFORMANCE_ANALYTICS": 25
     },
     "json_structured": {
       "BEHAVIORAL_DATA": 25,
-      "CONSENT_AND_PRIVACY": 36,
+      "CONSENT_AND_PRIVACY.iubenda": 5,
+      "CONSENT_AND_PRIVACY": 37,
       "DEVICE_ENV": 3,
       "DIRECT_PII_KEYS": 8,
-      "IDENTITY_TRACKING": 31,
+      "IDENTITY_TRACKING": 25,
       "ID_SOLUTIONS_AND_EXCHANGES": 6,
       "LOCATION_AND_DEMOGRAPHICS": 8,
-      "SECURITY_AND_BOT_MITIGATION": 3,
       "SESSION_MANAGEMENT": 10,
       "TECHNICAL_PASSWORDS": 4,
-      "USER_PREFERENCES": 113,
+      "USER_PREFERENCES": 112,
       "UX_AND_PERFORMANCE_ANALYTICS": 35
     },
-    "timestamp": {
-      "BEHAVIORAL_DATA": 4,
-      "IDENTITY_TRACKING": 27,
-      "ID_SOLUTIONS_AND_EXCHANGES": 16,
-      "INFRASTRUCTURE": 3
-    },
     "token_id": {
-      "BEHAVIORAL_DATA": 1,
-      "IDENTITY_TRACKING": 105,
+      "IDENTITY_TRACKING": 110,
       "ID_SOLUTIONS_AND_EXCHANGES": 43,
       "SECURITY_AND_BOT_MITIGATION": 1,
-      "SESSION_MANAGEMENT": 22,
-      "USER_PREFERENCES": 6,
+      "SESSION_MANAGEMENT": 19,
+      "USER_PREFERENCES": 5,
       "UX_AND_PERFORMANCE_ANALYTICS": 33
+    },
+    "timestamp": {
+      "IDENTITY_TRACKING": 30,
+      "ID_SOLUTIONS_AND_EXCHANGES": 16,
+      "INFRASTRUCTURE": 4
     }
   },
   "content_types": {
     "ip_address": 3,
     "language_code": 22,
-    "complex_string": 1150,
+    "complex_string": 1146,
     "empty": 22,
-    "short_text": 198,
-    "uuid": 127,
-    "number": 96,
-    "boolean": 152,
-    "json_structured": 282,
-    "timestamp": 50,
-    "token_id": 211
+    "short_text": 197,
+    "uuid": 124,
+    "number": 99,
+    "boolean": 153,
+    "json_structured": 278,
+    "token_id": 211,
+    "timestamp": 50
   },
   "vendor_counts": {
     "farmacievigorito.it": 39,
     "stanhome.it": 48,
+    "glamood.com": 31,
     "trollbeads.it": 16,
     "lampadadiretta.it": 22,
     "ynot.it": 7,
@@ -797,7 +827,6 @@
     "safarasoftair.com": 28,
     "cuoieriashop.com": 15,
     "nkd.it": 17,
-    "glamood.com": 31,
     "nerogiardini.it": 27,
     "boleco.it": 19,
     "figuredart.it": 17,
@@ -805,31 +834,32 @@
     "kiwivapor.com": 6,
     "bauzaar.it": 25,
     "bears-with-benefits.it": 24,
-    "uwalls.it": 14,
+    "uwalls.it": 13,
     "fracomina.com": 13,
     "gnoceitalia.com": 7,
     "ultimataglia.com": 12,
-    "nkd.com": 83,
+    "nkd.com": 82,
     "nau.it": 18,
     "bestprato.com": 35,
-    "pslove.it": 46,
+    "pslove.it": 44,
     "beauty-star.it": 4,
     "ragno.com": 3,
-    "scarpescarpestore.com": 24,
     "cosaporto.it": 21,
     "carvago.com": 26,
     "mondoconv.it": 13,
     "tavolla.com": 21,
-    "casadelprofumo.it": 55,
+    "casadelprofumo.it": 50,
     "lafeltrinelli.it": 25,
     "vistaprint.it": 33,
-    "ebay.it": 212,
     "estrosa.it": 30,
-    "gioiapura.it": 25,
-    "igieco.it": 9,
+    "igieco.it": 8,
     "robinsonpetshop.it": 5,
-    "holyart.it": 22,
-    "san-marco.com": 8,
+    "ebay.it": 212,
+    "scarpescarpestore.com": 24,
+    "lyst.com": 8,
+    "luisaspagnoli.com": 12,
+    "coopfirenze.it": 4,
+    "glamsport.it": 11,
     "interflora.it": 5,
     "privatefloor.com": 7,
     "pacopetshop.it": 14,
@@ -849,33 +879,31 @@
     "mediaworld.it": 10,
     "yves-rocher.it": 3,
     "flightaware.com": 15,
-    "victoriassecret.com": 20,
+    "victoriassecret.com": 16,
     "ct.it": 2,
     "lookfantastic.it": 25,
     "dondisalotti.com": 15,
     "pescaloccasione.it": 14,
     "nailfor.com": 6,
-    "arredo3.com": 2,
     "iubenda.com": 9,
+    "discotecalaziale.com": 2,
     "feedaty.com": 14,
-    "trackcmp.net": 3,
-    "hobbyland.eu": 14,
-    "michellenails.com": 3,
+    "diotti.com": 14,
     "trendevice.com": 6,
     "Google": 123,
-    "golbet.bet": 4,
-    "luisaspagnoli.com": 12,
     "tangooserver.com": 6,
     "Pinterest": 32,
     "country-creations.it": 12,
-    "betfair.it": 18,
+    "betfair.it": 19,
     "suppsit.net": 8,
     "convertful.com": 3,
     "dfl.it": 9,
     "giromagi.com": 3,
     "Microsoft": 4,
     "Criteo": 35,
+    "gioiapura.it": 25,
     "Adform": 3,
+    "hobbyland.eu": 14,
     "italyparadise.net": 10,
     "second-hand.it": 27,
     "mondadoristore.it": 19,
@@ -894,18 +922,20 @@
     "tessuti.com": 6,
     "seduzioniperdue.com": 6,
     "ebay-us.com": 2,
-    "diotti.com": 14,
     "inblu.com": 4,
     "aquariumline.com": 5,
     "panty.com": 6,
     "marconifarma.it": 14,
-    "glamsport.it": 10,
+    "holyart.it": 21,
     "jivox.com": 3,
+    "trackcmp.net": 3,
     "unrulymedia.com": 5,
     "scarabresearch.com": 9,
     "onetag-sys.com": 2,
     "presage.io": 1,
+    "michellenails.com": 3,
     "yotpo.com": 2,
+    "san-marco.com": 8,
     "alicdn.com": 1,
     "aliapp.org": 2,
     "tuscanyleather.it": 15,
@@ -923,19 +953,18 @@
     "ringcentral.com": 3,
     "evergage.com": 2,
     "Cloudflare": 24,
-    "murripatrizia.it": 4,
+    "murripatrizia.it": 3,
     "snai.it": 12,
-    "merula.com": 5,
-    "lyst.com": 8,
-    "motoracingshop.com": 4,
+    "merula.com": 6,
+    "motoracingshop.com": 6,
     "bricocenter.it": 3,
     "zoomalia.it": 5,
     "hcaptcha.com": 2,
     "farmacialoreto.it": 3,
     "ortomio.it": 6,
-    "coopfirenze.it": 4,
+    "arredo3.com": 2,
     "misterrunning.com": 3,
-    "discotecalaziale.com": 2,
+    "golbet.bet": 7,
     "vimeo.com": 3,
     "shop.app": 4,
     "ragno.eu": 1
@@ -950,6 +979,11 @@
       "ai_refined",
       "stanhome.it",
       3
+    ],
+    [
+      "ai_refined",
+      "glamood.com",
+      2
     ],
     [
       "ai_refined",
@@ -1117,11 +1151,6 @@
       1
     ],
     [
-      "APP_STATE_STORAGE",
-      "scarpescarpestore.com",
-      1
-    ],
-    [
       "BEHAVIORAL_DATA",
       "cosaporto.it",
       2
@@ -1159,7 +1188,7 @@
     [
       "BEHAVIORAL_DATA",
       "vistaprint.it",
-      6
+      7
     ],
     [
       "BEHAVIORAL_DATA",
@@ -1168,23 +1197,13 @@
     ],
     [
       "BEHAVIORAL_DATA",
-      "ebay.it",
-      12
-    ],
-    [
-      "BEHAVIORAL_DATA",
       "estrosa.it",
-      7
+      6
     ],
     [
       "BEHAVIORAL_DATA",
       "leastedisoha.com",
       1
-    ],
-    [
-      "BEHAVIORAL_DATA",
-      "gioiapura.it",
-      4
     ],
     [
       "BEHAVIORAL_DATA",
@@ -1209,7 +1228,12 @@
     [
       "BEHAVIORAL_DATA",
       "uwalls.it",
-      3
+      4
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "ebay.it",
+      2
     ],
     [
       "BEHAVIORAL_DATA",
@@ -1218,23 +1242,33 @@
     ],
     [
       "BEHAVIORAL_DATA",
+      "pslove.it",
+      3
+    ],
+    [
+      "BEHAVIORAL_DATA",
       "scarpescarpestore.com",
       1
     ],
     [
       "BEHAVIORAL_DATA",
-      "pslove.it",
-      4
-    ],
-    [
-      "BEHAVIORAL_DATA",
-      "holyart.it",
+      "lyst.com",
       1
     ],
     [
-      "BEHAVIORAL_DATA",
-      "san-marco.com",
-      3
+      "CONSENT_AND_PRIVACY.iubenda",
+      "luisaspagnoli.com",
+      2
+    ],
+    [
+      "CONSENT_AND_PRIVACY.iubenda",
+      "coopfirenze.it",
+      2
+    ],
+    [
+      "CONSENT_AND_PRIVACY.iubenda",
+      "glamsport.it",
+      1
     ],
     [
       "CONSENT_AND_PRIVACY",
@@ -1264,7 +1298,7 @@
     [
       "CONSENT_AND_PRIVACY",
       "farmacievigorito.it",
-      3
+      2
     ],
     [
       "CONSENT_AND_PRIVACY",
@@ -1309,7 +1343,7 @@
     [
       "CONSENT_AND_PRIVACY",
       "asmana.ch",
-      1
+      4
     ],
     [
       "CONSENT_AND_PRIVACY",
@@ -1349,12 +1383,12 @@
     [
       "CONSENT_AND_PRIVACY",
       "bears-with-benefits.it",
-      7
+      6
     ],
     [
       "CONSENT_AND_PRIVACY",
       "fracomina.com",
-      1
+      2
     ],
     [
       "CONSENT_AND_PRIVACY",
@@ -1428,22 +1462,7 @@
     ],
     [
       "CONSENT_AND_PRIVACY",
-      "arredo3.com",
-      1
-    ],
-    [
-      "CONSENT_AND_PRIVACY",
-      "iubenda.com",
-      1
-    ],
-    [
-      "CONSENT_AND_PRIVACY",
       "alextheory.it",
-      2
-    ],
-    [
-      "CONSENT_AND_PRIVACY",
-      "manilagrace.com",
       1
     ],
     [
@@ -1453,38 +1472,33 @@
     ],
     [
       "CONSENT_AND_PRIVACY",
+      "iubenda.com",
+      6
+    ],
+    [
+      "CONSENT_AND_PRIVACY",
+      "manilagrace.com",
+      1
+    ],
+    [
+      "CONSENT_AND_PRIVACY",
+      "discotecalaziale.com",
+      1
+    ],
+    [
+      "CONSENT_AND_PRIVACY",
       "feedaty.com",
       1
     ],
     [
       "CONSENT_AND_PRIVACY",
-      "scarpescarpestore.com",
+      "diotti.com",
       1
     ],
     [
       "CONSENT_AND_PRIVACY",
-      "trackcmp.net",
+      "bauzaar.it",
       1
-    ],
-    [
-      "CONSENT_AND_PRIVACY",
-      "hobbyland.eu",
-      1
-    ],
-    [
-      "CONSENT_AND_PRIVACY",
-      "michellenails.com",
-      2
-    ],
-    [
-      "CONSENT_AND_PRIVACY",
-      "casadelprofumo.it",
-      1
-    ],
-    [
-      "CONSENT_AND_PRIVACY",
-      "nerogiardini.it",
-      2
     ],
     [
       "DEVICE_ENV",
@@ -1499,16 +1513,6 @@
     [
       "DEVICE_ENV",
       "pinkpanda.it",
-      3
-    ],
-    [
-      "DEVICE_ENV",
-      "golbet.bet",
-      3
-    ],
-    [
-      "DEVICE_ENV",
-      "casadelprofumo.it",
       3
     ],
     [
@@ -1544,12 +1548,12 @@
     [
       "IDENTITY_TRACKING",
       "vistaprint.it",
-      19
+      17
     ],
     [
       "IDENTITY_TRACKING",
       "pescaloccasione.it",
-      11
+      12
     ],
     [
       "IDENTITY_TRACKING",
@@ -1559,12 +1563,12 @@
     [
       "IDENTITY_TRACKING",
       "Google",
-      38
+      37
     ],
     [
       "IDENTITY_TRACKING",
       "lampadadiretta.it",
-      9
+      11
     ],
     [
       "IDENTITY_TRACKING",
@@ -1579,7 +1583,7 @@
     [
       "IDENTITY_TRACKING",
       "betfair.it",
-      3
+      4
     ],
     [
       "IDENTITY_TRACKING",
@@ -1599,12 +1603,12 @@
     [
       "IDENTITY_TRACKING",
       "ebay.it",
-      152
+      161
     ],
     [
       "IDENTITY_TRACKING",
       "privatefloor.com",
-      4
+      6
     ],
     [
       "IDENTITY_TRACKING",
@@ -1614,7 +1618,7 @@
     [
       "IDENTITY_TRACKING",
       "suppsit.net",
-      7
+      8
     ],
     [
       "IDENTITY_TRACKING",
@@ -1679,12 +1683,12 @@
     [
       "IDENTITY_TRACKING",
       "gioiapura.it",
-      19
+      22
     ],
     [
       "IDENTITY_TRACKING",
       "glamood.com",
-      7
+      6
     ],
     [
       "IDENTITY_TRACKING",
@@ -1734,12 +1738,12 @@
     [
       "IDENTITY_TRACKING",
       "feedaty.com",
-      8
+      9
     ],
     [
       "IDENTITY_TRACKING",
       "bergzeit.it",
-      19
+      18
     ],
     [
       "IDENTITY_TRACKING",
@@ -1764,7 +1768,7 @@
     [
       "IDENTITY_TRACKING",
       "decarocalzature.com",
-      13
+      11
     ],
     [
       "IDENTITY_TRACKING",
@@ -1854,7 +1858,7 @@
     [
       "IDENTITY_TRACKING",
       "bestprato.com",
-      12
+      11
     ],
     [
       "IDENTITY_TRACKING",
@@ -1864,7 +1868,7 @@
     [
       "IDENTITY_TRACKING",
       "casadelprofumo.it",
-      41
+      37
     ],
     [
       "IDENTITY_TRACKING",
@@ -1904,7 +1908,7 @@
     [
       "IDENTITY_TRACKING",
       "leastedisoha.com",
-      5
+      6
     ],
     [
       "IDENTITY_TRACKING",
@@ -1923,13 +1927,13 @@
     ],
     [
       "IDENTITY_TRACKING",
-      "pacopetshop.it",
-      3
+      "glamsport.it",
+      6
     ],
     [
       "IDENTITY_TRACKING",
-      "glamsport.it",
-      4
+      "pacopetshop.it",
+      3
     ],
     [
       "IDENTITY_TRACKING",
@@ -1953,13 +1957,18 @@
     ],
     [
       "IDENTITY_TRACKING",
+      "trackcmp.net",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
       "luisaspagnoli.com",
       2
     ],
     [
       "IDENTITY_TRACKING",
       "boleco.it",
-      5
+      6
     ],
     [
       "IDENTITY_TRACKING",
@@ -1988,23 +1997,18 @@
     ],
     [
       "IDENTITY_TRACKING",
-      "igieco.it",
+      "michellenails.com",
       1
     ],
     [
       "IDENTITY_TRACKING",
       "victoriassecret.com",
-      3
+      2
     ],
     [
       "IDENTITY_TRACKING",
       "pslove.it",
       6
-    ],
-    [
-      "IDENTITY_TRACKING",
-      "scarpescarpestore.com",
-      1
     ],
     [
       "IDENTITY_TRACKING",
@@ -2027,7 +2031,7 @@
       2
     ],
     [
-      "IDENTITY_TRACKING.user_id_key",
+      "IDENTITY_TRACKING.vendor_adcalls_p2_expansion",
       "glamsport.it",
       1
     ],
@@ -2178,18 +2182,18 @@
     ],
     [
       "INFRASTRUCTURE",
-      "nkd.com",
+      "safarasoftair.com",
       1
+    ],
+    [
+      "INFRASTRUCTURE",
+      "nkd.com",
+      2
     ],
     [
       "INFRASTRUCTURE",
       "bestprato.com",
-      1
-    ],
-    [
-      "INFRASTRUCTURE",
-      "ebay.it",
-      3
+      2
     ],
     [
       "INFRASTRUCTURE",
@@ -2200,6 +2204,16 @@
       "INFRASTRUCTURE",
       "vistaprint.it",
       1
+    ],
+    [
+      "INFRASTRUCTURE",
+      "pslove.it",
+      1
+    ],
+    [
+      "INFRASTRUCTURE",
+      "ebay.it",
+      4
     ],
     [
       "LOCATION_AND_DEMOGRAPHICS.general_loc",
@@ -2229,7 +2243,7 @@
     [
       "LOCATION_AND_DEMOGRAPHICS",
       "luisaspagnoli.com",
-      2
+      1
     ],
     [
       "NAVIGATION_HISTORY",
@@ -2294,7 +2308,7 @@
     [
       "SECURITY_AND_BOT_MITIGATION",
       "murripatrizia.it",
-      4
+      3
     ],
     [
       "SECURITY_AND_BOT_MITIGATION",
@@ -2309,7 +2323,7 @@
     [
       "SECURITY_AND_BOT_MITIGATION",
       "betfair.it",
-      15
+      14
     ],
     [
       "SECURITY_AND_BOT_MITIGATION",
@@ -2324,7 +2338,7 @@
     [
       "SECURITY_AND_BOT_MITIGATION",
       "merula.com",
-      5
+      6
     ],
     [
       "SECURITY_AND_BOT_MITIGATION",
@@ -2344,7 +2358,7 @@
     [
       "SECURITY_AND_BOT_MITIGATION",
       "lyst.com",
-      8
+      7
     ],
     [
       "SECURITY_AND_BOT_MITIGATION",
@@ -2354,7 +2368,7 @@
     [
       "SECURITY_AND_BOT_MITIGATION",
       "motoracingshop.com",
-      4
+      5
     ],
     [
       "SECURITY_AND_BOT_MITIGATION",
@@ -2389,7 +2403,7 @@
     [
       "SECURITY_AND_BOT_MITIGATION",
       "victoriassecret.com",
-      8
+      5
     ],
     [
       "SECURITY_AND_BOT_MITIGATION",
@@ -2413,18 +2427,18 @@
     ],
     [
       "SECURITY_AND_BOT_MITIGATION",
-      "vistaprint.it",
+      "Google",
       1
     ],
     [
-      "SECURITY_AND_BOT_MITIGATION",
-      "privatefloor.com",
+      "SENSITIVE_LOCATION_PII.general_loc",
+      "luisaspagnoli.com",
       1
     ],
     [
       "SESSION_MANAGEMENT",
       "lampadadiretta.it",
-      6
+      4
     ],
     [
       "SESSION_MANAGEMENT",
@@ -2509,7 +2523,7 @@
     [
       "SESSION_MANAGEMENT",
       "casadelprofumo.it",
-      3
+      2
     ],
     [
       "SESSION_MANAGEMENT",
@@ -2519,16 +2533,6 @@
     [
       "SESSION_MANAGEMENT",
       "italyparadise.net",
-      1
-    ],
-    [
-      "SESSION_MANAGEMENT",
-      "michellenails.com",
-      1
-    ],
-    [
-      "SESSION_MANAGEMENT",
-      "suppsit.net",
       1
     ],
     [
@@ -2644,12 +2648,12 @@
     [
       "USER_PREFERENCES",
       "leastedisoha.com",
-      6
+      5
     ],
     [
       "USER_PREFERENCES",
       "alextheory.it",
-      2
+      3
     ],
     [
       "USER_PREFERENCES",
@@ -2664,7 +2668,7 @@
     [
       "USER_PREFERENCES",
       "farmacievigorito.it",
-      14
+      15
     ],
     [
       "USER_PREFERENCES",
@@ -2674,7 +2678,7 @@
     [
       "USER_PREFERENCES",
       "glamood.com",
-      8
+      7
     ],
     [
       "USER_PREFERENCES",
@@ -2684,7 +2688,7 @@
     [
       "USER_PREFERENCES",
       "nerogiardini.it",
-      7
+      9
     ],
     [
       "USER_PREFERENCES",
@@ -2694,17 +2698,17 @@
     [
       "USER_PREFERENCES",
       "bauzaar.it",
-      6
-    ],
-    [
-      "USER_PREFERENCES",
-      "bears-with-benefits.it",
       5
     ],
     [
       "USER_PREFERENCES",
-      "fracomina.com",
+      "bears-with-benefits.it",
       6
+    ],
+    [
+      "USER_PREFERENCES",
+      "fracomina.com",
+      5
     ],
     [
       "USER_PREFERENCES",
@@ -2719,7 +2723,7 @@
     [
       "USER_PREFERENCES",
       "pslove.it",
-      11
+      9
     ],
     [
       "USER_PREFERENCES",
@@ -2734,17 +2738,7 @@
     [
       "USER_PREFERENCES",
       "vistaprint.it",
-      6
-    ],
-    [
-      "USER_PREFERENCES",
-      "luisaspagnoli.com",
-      4
-    ],
-    [
-      "USER_PREFERENCES",
-      "coopfirenze.it",
-      4
+      8
     ],
     [
       "USER_PREFERENCES",
@@ -2753,13 +2747,13 @@
     ],
     [
       "USER_PREFERENCES",
-      "glamsport.it",
-      4
+      "arredo3.com",
+      2
     ],
     [
       "USER_PREFERENCES",
-      "privatefloor.com",
-      1
+      "iubenda.com",
+      3
     ],
     [
       "USER_PREFERENCES",
@@ -2773,13 +2767,18 @@
     ],
     [
       "USER_PREFERENCES",
+      "glamsport.it",
+      2
+    ],
+    [
+      "USER_PREFERENCES",
       "ebay.it",
       1
     ],
     [
       "USER_PREFERENCES",
       "estrosa.it",
-      4
+      5
     ],
     [
       "USER_PREFERENCES",
@@ -2793,23 +2792,28 @@
     ],
     [
       "USER_PREFERENCES",
-      "trackcmp.net",
+      "gioiapura.it",
+      1
+    ],
+    [
+      "USER_PREFERENCES",
+      "luisaspagnoli.com",
+      2
+    ],
+    [
+      "USER_PREFERENCES",
+      "coopfirenze.it",
       2
     ],
     [
       "USER_PREFERENCES",
       "boleco.it",
-      4
+      3
     ],
     [
       "USER_PREFERENCES",
       "asmana.ch",
-      6
-    ],
-    [
-      "USER_PREFERENCES",
-      "iubenda.com",
-      8
+      3
     ],
     [
       "USER_PREFERENCES",
@@ -2824,12 +2828,12 @@
     [
       "USER_PREFERENCES",
       "feedaty.com",
-      5
+      4
     ],
     [
       "USER_PREFERENCES",
       "bergzeit.it",
-      1
+      2
     ],
     [
       "USER_PREFERENCES",
@@ -2839,7 +2843,7 @@
     [
       "USER_PREFERENCES",
       "discotecalaziale.com",
-      2
+      1
     ],
     [
       "USER_PREFERENCES",
@@ -2848,12 +2852,22 @@
     ],
     [
       "USER_PREFERENCES",
-      "decarocalzature.com",
-      9
+      "golbet.bet",
+      7
     ],
     [
       "USER_PREFERENCES",
-      "golbet.bet",
+      "decarocalzature.com",
+      11
+    ],
+    [
+      "USER_PREFERENCES",
+      "betfair.it",
+      1
+    ],
+    [
+      "USER_PREFERENCES",
+      "motoracingshop.com",
       1
     ],
     [
@@ -2863,23 +2877,8 @@
     ],
     [
       "USER_PREFERENCES",
-      "safarasoftair.com",
-      1
-    ],
-    [
-      "USER_PREFERENCES",
       "marconifarma.it",
       4
-    ],
-    [
-      "USER_PREFERENCES",
-      "uwalls.it",
-      2
-    ],
-    [
-      "USER_PREFERENCES",
-      "pescaloccasione.it",
-      1
     ],
     [
       "USER_PREFERENCES",
@@ -2889,21 +2888,11 @@
     [
       "USER_PREFERENCES",
       "scarpescarpestore.com",
-      6
+      9
     ],
     [
       "USER_PREFERENCES",
       "nkd.it",
-      1
-    ],
-    [
-      "USER_PREFERENCES",
-      "nkd.com",
-      2
-    ],
-    [
-      "USER_PREFERENCES",
-      "diotti.com",
       1
     ],
     [
@@ -2914,7 +2903,17 @@
     [
       "USER_PREFERENCES",
       "hobbyland.eu",
+      2
+    ],
+    [
+      "USER_PREFERENCES",
+      "trackcmp.net",
       1
+    ],
+    [
+      "USER_PREFERENCES",
+      "michellenails.com",
+      2
     ],
     [
       "USER_PREFERENCES",
@@ -2933,18 +2932,23 @@
     ],
     [
       "USER_PREFERENCES",
+      "casadelprofumo.it",
+      4
+    ],
+    [
+      "USER_PREFERENCES",
       "lookfantastic.it",
       2
     ],
     [
       "USER_PREFERENCES",
-      "arredo3.com",
+      "holyart.it",
       1
     ],
     [
       "USER_PREFERENCES",
-      "holyart.it",
-      1
+      "san-marco.com",
+      3
     ],
     [
       "UX_AND_PERFORMANCE_ANALYTICS",
@@ -3290,9 +3294,11 @@
     ],
     "ai_refined": [
       1.5,
+      4.748614158882745,
       1.5,
       1.5,
-      4.979684159015882
+      4.979684159015882,
+      4.748614158882745
     ],
     "APP_STATE_STORAGE": [
       0.0,
@@ -3400,8 +3406,7 @@
       1.0,
       1.0,
       1.0,
-      3.68354236243323,
-      3.651210641914682
+      3.68354236243323
     ],
     "BEHAVIORAL_DATA": [
       5.134674237538987,
@@ -3423,57 +3428,47 @@
       4.111364528228628,
       1.0,
       4.51930727752405,
-      2.6464393446710153,
-      2.7773627950641693,
-      2.688721875540867,
       0.0,
       3.3401998765158556,
       0.0,
-      3.095795255000934,
       4.130583097316051,
-      3.916158258933452,
-      4.1628294983768335,
-      2.873140679513133,
-      3.6943856825877637,
-      1.0,
-      2.9219280948873623,
-      3.121928094887362,
       5.061976875613826,
       3.2678941476196224,
       4.556598299165945,
+      0.0,
       4.111445487442033,
       0.0,
       5.1345943216865635,
       4.748614158882745,
-      2.0,
       3.5532470324098178,
       2.5032583347756456,
-      3.095795255000934,
-      3.095795255000934,
-      3.095795255000934,
+      2.2810361125534238,
+      2.0,
       0.0,
       2.321928094887362,
-      2.0,
       3.569773835029478,
-      4.156999006527364,
-      2.6464393446710153,
+      2.7192945256669794,
+      1.0,
       4.944425649650408,
       3.8245387807277758,
       5.017043095723144,
       4.262106568749284,
-      1.0,
-      4.278056520260012,
-      4.157302735193389,
-      4.585061897915199,
-      5.0634732686980275,
       2.411602217974672,
       0.0,
-      3.750464706653701,
-      3.095795255000934,
-      3.095795255000934,
-      3.095795255000934,
-      2.411602217974672,
-      0.0
+      4.585061897915199,
+      1.0,
+      0.0,
+      4.278056520260012,
+      4.157302735193389,
+      5.0634732686980275,
+      2.411602217974672
+    ],
+    "CONSENT_AND_PRIVACY.iubenda": [
+      3.9561272059984436,
+      3.343257610694762,
+      3.245313755677523,
+      4.008178108116112,
+      3.3110290948171555
     ],
     "CONSENT_AND_PRIVACY": [
       5.217435544362466,
@@ -3621,25 +3616,25 @@
       5.197599648748646,
       4.423111722918921,
       4.3476503230060795,
-      3.3160226287431867,
-      3.96404479272224,
       3.9919823232135316,
-      3.3622551716250744,
-      3.3904071804504405,
       3.9814685231059137,
-      3.3451988360382727,
       4.5275589315457285,
+      4.066015497507923,
+      3.3904071804504405,
+      4.2342278861711415,
+      3.940599190251536,
+      3.290656825048854,
+      4.2342278861711415,
+      3.940599190251536,
+      3.956655537984476,
+      3.3532845284349366,
+      3.201277775398868,
       4.5275589315457285,
       3.961853346454041,
-      3.951494526587781,
-      3.5542292966721747,
-      3.2785171618312843,
-      4.816629003942713,
-      4.342210517678591,
-      2.2516291673878226,
-      4.013719745896857,
-      3.413676687944007,
-      4.342210517678591
+      4.194385682587763,
+      3.368972843883247,
+      3.96404479272224,
+      4.066015497507923
     ],
     "DEVICE_ENV": [
       4.535911898084584,
@@ -3650,25 +3645,19 @@
       3.277613436819116,
       4.902479553833678,
       1.584962500721156,
-      1.0,
       3.277613436819116,
       4.842318879259731,
       3.2776134368191165,
       4.848394345536402,
-      1.0,
       1.584962500721156,
       4.559715850080738,
       4.842318879259731,
       1.584962500721156,
-      3.6597992243145265,
-      3.638830127032208,
       3.2776134368191165,
       4.842318879259731,
-      3.7663326399706225,
       4.539874907117843,
       3.277613436819116,
-      4.802479553833678,
-      1.0
+      4.802479553833678
     ],
     "DIRECT_PII_KEYS": [
       2.5,
@@ -4263,11 +4252,12 @@
       3.4595264406351998,
       4.396077617900943,
       5.465867460154471,
-      4.2702817879889015,
       3.594117891631185,
       3.54017404413517,
       3.988310325317176,
       3.9912059052593474,
+      3.72992007267946,
+      2.0,
       5.777978228259296,
       4.854977445140414,
       5.131431330260004,
@@ -4287,6 +4277,7 @@
       2.721928094887362,
       5.90069796964648,
       3.9468543656567663,
+      2.2516291673878226,
       5.252111923240397,
       3.7807260376391016,
       3.323231428797621,
@@ -4314,7 +4305,10 @@
       3.824754022478557,
       3.355279393101203,
       3.714720063307726,
+      2.6464393446710153,
+      2.7773627950641693,
       3.6943856825877637,
+      2.688721875540867,
       4.879664004902592,
       3.5486881132034154,
       2.9219280948873623,
@@ -4344,12 +4338,21 @@
       1.5,
       3.584962500721156,
       3.874669710245348,
+      3.5542292966721747,
       3.842857292808497,
+      3.97567417957267,
       3.906890595608518,
       3.584962500721156,
       3.874669710245348,
       5.161182856820302,
       3.426970530453494,
+      3.916158258933452,
+      4.1628294983768335,
+      2.873140679513133,
+      3.6943856825877637,
+      1.0,
+      2.9219280948873623,
+      3.121928094887362,
       5.844895626176558,
       3.264083511770376,
       4.27637062808645,
@@ -4359,13 +4362,14 @@
       3.7736843762620227,
       3.6017792181866795,
       2.689391746743088,
+      3.7750276910155143,
       1.0103029464166384,
       2.8464393446710154,
       0.0,
       3.9784146414940356,
-      5.211617476034021,
       5.460409078279684,
       3.6842599054599776,
+      0.0,
       4.58929115705178,
       4.9611484756323305,
       2.737796811598595,
@@ -4373,7 +4377,6 @@
       3.843010159554855,
       3.1556390622295662,
       5.3559077023961805,
-      2.2516291673878226,
       3.1556390622295662,
       4.27637062808645,
       5.736975785612514,
@@ -4381,16 +4384,19 @@
       3.684956826262283,
       5.339614648336088,
       4.501629167387823,
-      0.9182958340544896,
       3.728972140861,
       4.193553795580809,
       3.762818395221641,
       3.979215265135325,
+      3.54017404413517,
       3.9936494938117955,
       3.975000875293786,
       5.777978228259296,
       4.854977445140414,
+      3.095795255000934,
+      3.095795255000934,
       5.069073888621429,
+      3.095795255000934,
       4.044593579430565,
       3.710777084415067,
       3.6017792181866795,
@@ -4403,6 +4409,8 @@
       3.758458513163001,
       3.4603424053286784,
       3.807294071959585,
+      4.156999006527364,
+      2.6464393446710153,
       2.6612262562697895,
       3.6943856825877637,
       2.918295834054489,
@@ -4414,14 +4422,11 @@
       2.6464393446710153,
       5.895345575428137,
       3.264083511770376,
-      5.576439197093726,
       3.1556390622295662,
       5.8196710455231075,
       5.618862833204404,
       5.125288246562355,
-      2.7192945256669794,
       3.6943856825877637,
-      1.0,
       5.141071996126381,
       3.4561469411365207,
       2.7516291673878226,
@@ -4437,21 +4442,22 @@
       2.9219280948873623,
       2.9219280948873623,
       5.493444897734957,
+      3.5542292966721747,
       3.5611431414174888,
       3.9864000126148604,
+      3.9914343152648386,
       5.507928051949388,
+      3.6597992243145265,
       3.648955904159993,
       3.6597992243145265,
-      2.2516291673878226,
-      2.2516291673878226,
       3.9653640468040336,
       3.1556390622295662,
       4.906123356168827,
+      2.2516291673878226,
       3.8400832519721115,
       2.2516291673878226,
       3.874669710245348,
       3.584962500721156,
-      3.381580488309164,
       4.215229652650057,
       5.208371247436517,
       2.6612262562697895,
@@ -4464,9 +4470,12 @@
       3.264083511770376,
       3.8363717480061807,
       4.163847419256543,
+      2.446439344671016,
       4.879664004902592,
+      2.6464393446710157,
       5.874369432575302,
       3.932555733619594,
+      2.9219280948873623,
       2.9219280948873623,
       3.9773173861465776,
       3.906890595608518,
@@ -4474,16 +4483,11 @@
       4.580478975907049,
       4.136842188131012,
       4.27637062808645,
-      4.585061897915199,
-      5.265535363015473,
       3.575922835185252,
       5.474023212183248,
-      4.2702817879889015,
       3.6597992243145265,
       3.8054967936988744,
-      2.2516291673878226,
       3.6597992243145265,
-      2.2516291673878226,
       5.2861816398005255,
       3.0269868333592873,
       3.6943856825877637,
@@ -4499,6 +4503,7 @@
       5.02169023293223,
       3.843010159554855,
       3.1556390622295662,
+      3.9818132767979173,
       4.906123356168827,
       3.992396642946794,
       3.906890595608518,
@@ -4507,15 +4512,16 @@
       1.5,
       3.990693486599043,
       3.3927474104487847,
+      2.0,
       3.992391580588772,
       3.6597992243145265,
       3.5583691005811033,
-      2.2516291673878226,
       3.6597992243145265,
-      2.2516291673878226,
+      4.957785978260687,
       3.6688388898504303,
       5.072017340261913,
       3.5441104177484006,
+      0.0,
       4.978147767168037,
       2.2516291673878226,
       4.580478975907049,
@@ -4524,6 +4530,7 @@
       3.095795255000934,
       3.095795255000934,
       3.095795255000934,
+      0.0,
       1.584962500721156,
       5.33717534112308,
       5.351409765557392,
@@ -4535,7 +4542,6 @@
       3.728972140861,
       2.7946534735443413,
       3.5441104177484006,
-      4.906123356168827,
       4.926458804276406,
       3.7934290883117234,
       5.218728152027554,
@@ -4548,13 +4554,9 @@
       3.5486881132034154,
       3.3274213294333803,
       3.8083207910247334,
-      2.6464393446710157,
       4.879664004902592,
-      2.6464393446710157,
       5.875746519673597,
       3.8912775764582204,
-      2.9219280948873623,
-      2.9219280948873623,
       4.545412751096862,
       5.02169023293223,
       4.9611484756323305,
@@ -4563,10 +4565,9 @@
       5.072017340261913,
       4.580478975907049,
       4.136842188131012,
-      4.748614158882745,
       2.7946534735443413
     ],
-    "IDENTITY_TRACKING.user_id_key": [
+    "IDENTITY_TRACKING.vendor_adcalls_p2_expansion": [
       3.3927474104487847
     ],
     "ID_SOLUTIONS_AND_EXCHANGES": [
@@ -4724,16 +4725,21 @@
       5.66690440019508,
       5.508248883100669,
       3.7334585933443494,
+      3.652518266288633,
       3.566428031846024,
       3.702819531114783,
+      3.889049535914169,
       3.6914280318460246,
+      3.757048827786958,
       3.578626767019874,
-      2.446439344671016,
-      2.6464393446710157,
-      2.9219280948873623,
       3.5511085007312415,
       0.0,
-      3.500807235905091
+      3.500807235905091,
+      0.0,
+      2.6464393446710157,
+      2.6464393446710157,
+      2.9219280948873623,
+      2.9219280948873623
     ],
     "LOCATION_AND_DEMOGRAPHICS.general_loc": [
       2.5
@@ -4751,7 +4757,6 @@
       4.2991993544031635,
       4.207058908492353,
       3.717179696713516,
-      2.5,
       2.5
     ],
     "NAVIGATION_HISTORY": [
@@ -4856,7 +4861,6 @@
       5.959419279164825,
       5.960124465577981,
       5.669643684682182,
-      5.58368436621211,
       5.472474048733943,
       5.898813065395268,
       5.72741834631336,
@@ -4868,7 +4872,6 @@
       5.692975106106667,
       5.773044958121537,
       5.762478094157036,
-      5.497363610690644,
       5.91727116617825,
       5.635403980465638,
       5.880279666372534,
@@ -4882,7 +4885,6 @@
       5.844915712152825,
       6.003186171225024,
       5.6957094686404375,
-      5.5718775009224935,
       5.582868707455907,
       5.951127145404792,
       5.925284889432727,
@@ -4903,14 +4905,15 @@
       0.0,
       0.0,
       0.0,
+      5.576439197093726,
+      0.0,
+      0.0,
       0.0,
       5.576238611943677,
-      2.2516291673878226,
-      0.0,
-      5.594812174681238,
-      0.0,
-      0.0,
-      0.0
+      5.594812174681238
+    ],
+    "SENSITIVE_LOCATION_PII.general_loc": [
+      2.5
     ],
     "SESSION_MANAGEMENT": [
       3.566428031846024,
@@ -4982,12 +4985,7 @@
       5.643685682638319,
       4.2946635862096025,
       4.286739064979162,
-      4.116729296672174,
-      3.72992007267946,
-      3.7750276910155143,
-      3.9914343152648386,
-      3.6597992243145265,
-      3.9818132767979173
+      4.116729296672174
     ],
     "SESSION_MANAGEMENT.php_session": [
       3.9759991574012226
@@ -5090,18 +5088,17 @@
       1.584962500721156,
       1.584962500721156,
       1.584962500721156,
+      4.2702817879889015,
       2.0,
-      3.9561272059984436,
-      3.343257610694762,
-      3.245313755677523,
-      4.008178108116112,
       2.5219280948873624,
-      3.3110290948171555,
-      2.0,
-      2.2516291673878226,
+      3.3160226287431867,
+      3.96404479272224,
       3.376002261729874,
+      3.3622551716250744,
+      3.3904071804504405,
       0.0,
       1.0,
+      3.3451988360382727,
       4.2342278861711415,
       3.98796538467522,
       3.3617035044512686,
@@ -5115,7 +5112,7 @@
       4.083856189774724,
       1.0,
       1.0,
-      4.748614158882745,
+      3.095795255000934,
       5.545588830011498,
       0.0,
       1.0,
@@ -5123,10 +5120,8 @@
       4.2342278861711415,
       3.413676687944007,
       4.013719745896857,
-      3.5542292966721747,
       3.343257610694762,
       3.245313755677523,
-      3.97567417957267,
       3.303483541813023,
       4.2342278861711415,
       3.940599190251536,
@@ -5147,6 +5142,7 @@
       3.429011146557208,
       4.2342278861711415,
       3.9984130440999337,
+      1.0,
       3.3617035044512686,
       4.2342278861711415,
       1.0,
@@ -5156,55 +5152,46 @@
       1.584962500721156,
       1.584962500721156,
       1.584962500721156,
+      5.211617476034021,
       1.0,
       4.2702817879889015,
       2.0,
+      0.0,
+      0.0,
       3.429011146557208,
       4.2342278861711415,
       3.546439344671015,
+      0.0,
       1.584962500721156,
+      1.0,
       5.581627981641125,
-      4.066015497507923,
-      3.3904071804504405,
       5.495743005690355,
-      4.2342278861711415,
-      3.940599190251536,
       3.290656825048854,
-      4.2342278861711415,
-      3.940599190251536,
-      3.290656825048854,
-      3.652518266288633,
       4.632217167276071,
       3.368972843883247,
       4.813583690901176,
+      2.2516291673878226,
       4.0054602265108326,
       3.377943487073385,
       3.3297630301484893,
       3.9690629437582845,
-      2.2810361125534238,
-      2.0,
       1.0,
       3.376002261729874,
       4.8193298415419354,
       3.3904071804504405,
-      3.54017404413517,
-      3.956655537984476,
-      3.3532845284349366,
-      3.201277775398868,
       3.32314896652544,
+      2.0,
       3.169925001442312,
       3.2496920902629176,
       3.381580488309164,
       3.266413220633984,
+      3.951494526587781,
+      3.651210641914682,
       3.7504647066537014,
-      0.0,
       3.429011146557208,
       3.546439344671015,
       4.2342278861711415,
-      4.194385682587763,
       3.381580488309164,
-      3.368972843883247,
-      3.5542292966721747,
       3.2785171618312843,
       4.231710639172629,
       3.3729499531473537,
@@ -5213,29 +5200,36 @@
       3.3729499531473537,
       3.3617035044512686,
       4.2342278861711415,
+      3.5542292966721747,
+      3.2785171618312843,
+      4.816629003942713,
+      4.342210517678591,
       3.7417292966721747,
       2.0464393446710156,
       3.190228027324427,
       3.977000624432284,
-      3.889049535914169,
       3.501397825434103,
+      4.013719745896857,
+      3.413676687944007,
       3.381580488309164,
-      3.757048827786958,
+      3.381580488309164,
       3.303483541813023,
       3.343257610694762,
       3.201277775398868,
       3.2496920902629176,
       3.3576439260128508,
-      2.411602217974672,
-      0.0,
       2.321928094887362,
       5.265535363015473,
       4.075327976879371,
       3.266413220633984,
       3.381580488309164,
+      5.265535363015473,
       4.075327976879371,
       1.0,
       2.0,
+      4.2702817879889015,
+      2.2516291673878226,
+      2.2516291673878226,
       4.632217167276071,
       3.303483541813023,
       3.201277775398868,
@@ -5245,29 +5239,35 @@
       4.2342278861711415,
       3.266413220633984,
       3.381580488309164,
+      4.585061897915199,
       3.3110290948171555,
+      2.2516291673878226,
+      2.2516291673878226,
       3.32314896652544,
       2.446439344671015,
-      4.957785978260687,
       3.190228027324427,
       3.368972843883247,
       1.0,
-      0.0,
       4.083856189774724,
       3.245313755677523,
       3.3576439260128508,
-      2.321928094887362,
       1.5219280948873621,
       3.377943487073385,
       5.472201712419109,
       3.3160226287431867,
-      3.96404479272224,
-      4.066015497507923,
+      4.342210517678591,
       3.750464706653701,
       3.376002261729874,
       3.377943487073385,
+      3.095795255000934,
+      3.095795255000934,
+      3.095795255000934,
+      1.584962500721156,
+      0.0,
+      1.0,
       3.3576439260128508,
-      2.321928094887362,
+      2.411602217974672,
+      0.0,
       3.9690629437582845,
       3.3297630301484893,
       1.5219280948873621
@@ -5640,8 +5640,8 @@
     ]
   },
   "advanced_risk_levels": {
-    "Low": 1356,
-    "High": 602,
-    "Medium": 355
+    "Low": 1352,
+    "High": 601,
+    "Medium": 352
   }
 }

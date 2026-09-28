@@ -1,49 +1,57 @@
 {
   "storage_type": "localstorage",
-  "total_items": 425,
-  "direct_pii_count": 1,
-  "other_count": 424,
+  "total_items": 431,
+  "direct_pii_count": 0,
+  "other_count": 431,
   "pii_distribution": {
-    "unknown": 1,
-    "APP_STATE_STORAGE": 27,
-    "BEHAVIORAL_DATA": 35,
-    "CONSENT_AND_PRIVACY": 46,
+    "APP_STATE_STORAGE": 28,
+    "BEHAVIORAL_DATA": 34,
+    "CONSENT_AND_PRIVACY": 52,
+    "DEVICE_ENV": 2,
     "DIRECT_PII_KEYS": 3,
-    "FINGERPRINTING_ADVANCED": 1,
     "IDENTITY_TRACKING": 65,
+    "IDENTITY_TRACKING.user_id_key": 1,
     "ID_SOLUTIONS_AND_EXCHANGES": 87,
+    "INFRASTRUCTURE": 3,
+    "LOCATION_AND_DEMOGRAPHICS.general_loc": 1,
     "LOCATION_AND_DEMOGRAPHICS": 2,
     "NAVIGATION_HISTORY": 7,
     "SECURITY_AND_BOT_MITIGATION": 22,
     "SESSION_MANAGEMENT": 1,
     "TECHNICAL_PASSWORDS": 17,
-    "USER_PREFERENCES": 49,
+    "USER_PREFERENCES": 44,
     "UX_AND_PERFORMANCE_ANALYTICS": 62
   },
   "pii_by_category": {
-    "DIRECT_PII": {
-      "unknown": 1
-    },
     "APP_STATE_STORAGE": {
-      "APP_STATE_STORAGE": 27
+      "APP_STATE_STORAGE": 28
     },
     "BEHAVIORAL_DATA": {
-      "BEHAVIORAL_DATA": 35
+      "BEHAVIORAL_DATA": 34
     },
     "CONSENT_AND_PRIVACY": {
-      "CONSENT_AND_PRIVACY": 46
+      "CONSENT_AND_PRIVACY": 52
+    },
+    "DEVICE_ENV": {
+      "DEVICE_ENV": 2
     },
     "DIRECT_PII_KEYS": {
       "DIRECT_PII_KEYS": 3
     },
-    "FINGERPRINTING_ADVANCED": {
-      "FINGERPRINTING_ADVANCED": 1
-    },
     "IDENTITY_TRACKING": {
       "IDENTITY_TRACKING": 65
     },
+    "IDENTITY_TRACKING.user_id_key": {
+      "IDENTITY_TRACKING.user_id_key": 1
+    },
     "ID_SOLUTIONS_AND_EXCHANGES": {
       "ID_SOLUTIONS_AND_EXCHANGES": 87
+    },
+    "INFRASTRUCTURE": {
+      "INFRASTRUCTURE": 3
+    },
+    "LOCATION_AND_DEMOGRAPHICS.general_loc": {
+      "LOCATION_AND_DEMOGRAPHICS.general_loc": 1
     },
     "LOCATION_AND_DEMOGRAPHICS": {
       "LOCATION_AND_DEMOGRAPHICS": 2
@@ -61,39 +69,45 @@
       "TECHNICAL_PASSWORDS": 17
     },
     "USER_PREFERENCES": {
-      "USER_PREFERENCES": 49
+      "USER_PREFERENCES": 44
     },
     "UX_AND_PERFORMANCE_ANALYTICS": {
       "UX_AND_PERFORMANCE_ANALYTICS": 62
     }
   },
   "persistence_distribution": {
-    "Persistent": 425
+    "Persistent": 431
   },
   "persistence_by_pii": {
-    "unknown": {
-      "Persistent": 1
-    },
     "APP_STATE_STORAGE": {
-      "Persistent": 27
+      "Persistent": 28
     },
     "BEHAVIORAL_DATA": {
-      "Persistent": 35
+      "Persistent": 34
     },
     "CONSENT_AND_PRIVACY": {
-      "Persistent": 46
+      "Persistent": 52
+    },
+    "DEVICE_ENV": {
+      "Persistent": 2
     },
     "DIRECT_PII_KEYS": {
       "Persistent": 3
     },
-    "FINGERPRINTING_ADVANCED": {
-      "Persistent": 1
-    },
     "IDENTITY_TRACKING": {
       "Persistent": 65
     },
+    "IDENTITY_TRACKING.user_id_key": {
+      "Persistent": 1
+    },
     "ID_SOLUTIONS_AND_EXCHANGES": {
       "Persistent": 87
+    },
+    "INFRASTRUCTURE": {
+      "Persistent": 3
+    },
+    "LOCATION_AND_DEMOGRAPHICS.general_loc": {
+      "Persistent": 1
     },
     "LOCATION_AND_DEMOGRAPHICS": {
       "Persistent": 2
@@ -111,52 +125,62 @@
       "Persistent": 17
     },
     "USER_PREFERENCES": {
-      "Persistent": 49
+      "Persistent": 44
     },
     "UX_AND_PERFORMANCE_ANALYTICS": {
       "Persistent": 62
     }
   },
   "size_by_pii": {
-    "unknown": {
-      "total": 154,
-      "average": 154.0,
-      "count": 1
-    },
     "APP_STATE_STORAGE": {
-      "total": 9550,
-      "average": 353.7037037037037,
-      "count": 27
+      "total": 9554,
+      "average": 341.2142857142857,
+      "count": 28
     },
     "BEHAVIORAL_DATA": {
-      "total": 12493,
-      "average": 356.9428571428571,
-      "count": 35
+      "total": 12391,
+      "average": 364.44117647058823,
+      "count": 34
     },
     "CONSENT_AND_PRIVACY": {
-      "total": 12339,
-      "average": 268.2391304347826,
-      "count": 46
+      "total": 12386,
+      "average": 238.19230769230768,
+      "count": 52
+    },
+    "DEVICE_ENV": {
+      "total": 329,
+      "average": 164.5,
+      "count": 2
     },
     "DIRECT_PII_KEYS": {
       "total": 12,
       "average": 4.0,
       "count": 3
     },
-    "FINGERPRINTING_ADVANCED": {
-      "total": 209,
-      "average": 209.0,
-      "count": 1
-    },
     "IDENTITY_TRACKING": {
-      "total": 19318,
-      "average": 297.2,
+      "total": 19299,
+      "average": 296.9076923076923,
       "count": 65
+    },
+    "IDENTITY_TRACKING.user_id_key": {
+      "total": 26,
+      "average": 26.0,
+      "count": 1
     },
     "ID_SOLUTIONS_AND_EXCHANGES": {
       "total": 22992,
       "average": 264.2758620689655,
       "count": 87
+    },
+    "INFRASTRUCTURE": {
+      "total": 15,
+      "average": 5.0,
+      "count": 3
+    },
+    "LOCATION_AND_DEMOGRAPHICS.general_loc": {
+      "total": 154,
+      "average": 154.0,
+      "count": 1
     },
     "LOCATION_AND_DEMOGRAPHICS": {
       "total": 29002,
@@ -184,9 +208,9 @@
       "count": 17
     },
     "USER_PREFERENCES": {
-      "total": 18560,
-      "average": 378.7755102040816,
-      "count": 49
+      "total": 18589,
+      "average": 422.47727272727275,
+      "count": 44
     },
     "UX_AND_PERFORMANCE_ANALYTICS": {
       "total": 22019,
@@ -195,18 +219,6 @@
     }
   },
   "content_hierarchy": {
-    "complex_string": {
-      "unknown": 1,
-      "BEHAVIORAL_DATA": 2,
-      "CONSENT_AND_PRIVACY": 14,
-      "FINGERPRINTING_ADVANCED": 1,
-      "IDENTITY_TRACKING": 8,
-      "ID_SOLUTIONS_AND_EXCHANGES": 23,
-      "NAVIGATION_HISTORY": 1,
-      "TECHNICAL_PASSWORDS": 2,
-      "USER_PREFERENCES": 2,
-      "UX_AND_PERFORMANCE_ANALYTICS": 11
-    },
     "json_structured": {
       "APP_STATE_STORAGE": 25,
       "BEHAVIORAL_DATA": 19,
@@ -218,7 +230,7 @@
       "SECURITY_AND_BOT_MITIGATION": 22,
       "SESSION_MANAGEMENT": 1,
       "TECHNICAL_PASSWORDS": 8,
-      "USER_PREFERENCES": 15,
+      "USER_PREFERENCES": 17,
       "UX_AND_PERFORMANCE_ANALYTICS": 33
     },
     "language_code": {
@@ -231,6 +243,13 @@
       "IDENTITY_TRACKING": 7,
       "ID_SOLUTIONS_AND_EXCHANGES": 1
     },
+    "short_text": {
+      "APP_STATE_STORAGE": 1,
+      "CONSENT_AND_PRIVACY": 11,
+      "IDENTITY_TRACKING": 4,
+      "TECHNICAL_PASSWORDS": 2,
+      "USER_PREFERENCES": 4
+    },
     "number": {
       "BEHAVIORAL_DATA": 7,
       "CONSENT_AND_PRIVACY": 6,
@@ -242,64 +261,75 @@
     },
     "boolean": {
       "BEHAVIORAL_DATA": 7,
-      "CONSENT_AND_PRIVACY": 5,
+      "CONSENT_AND_PRIVACY": 7,
       "DIRECT_PII_KEYS": 3,
-      "USER_PREFERENCES": 19,
+      "INFRASTRUCTURE": 2,
+      "USER_PREFERENCES": 16,
       "UX_AND_PERFORMANCE_ANALYTICS": 3
     },
-    "short_text": {
-      "CONSENT_AND_PRIVACY": 7,
-      "IDENTITY_TRACKING": 3,
+    "complex_string": {
+      "BEHAVIORAL_DATA": 1,
+      "CONSENT_AND_PRIVACY": 14,
+      "DEVICE_ENV": 2,
+      "IDENTITY_TRACKING": 8,
+      "ID_SOLUTIONS_AND_EXCHANGES": 23,
+      "LOCATION_AND_DEMOGRAPHICS.general_loc": 1,
+      "NAVIGATION_HISTORY": 1,
       "TECHNICAL_PASSWORDS": 2,
-      "USER_PREFERENCES": 9
+      "USER_PREFERENCES": 3,
+      "UX_AND_PERFORMANCE_ANALYTICS": 11
     },
     "token_id": {
-      "IDENTITY_TRACKING": 5,
+      "IDENTITY_TRACKING": 4,
+      "IDENTITY_TRACKING.user_id_key": 1,
       "ID_SOLUTIONS_AND_EXCHANGES": 2,
       "TECHNICAL_PASSWORDS": 1,
       "UX_AND_PERFORMANCE_ANALYTICS": 2
+    },
+    "timestamp": {
+      "INFRASTRUCTURE": 1
     },
     "empty": {
       "UX_AND_PERFORMANCE_ANALYTICS": 1
     }
   },
   "content_types": {
-    "complex_string": 65,
-    "json_structured": 240,
+    "json_structured": 242,
     "language_code": 4,
     "uuid": 9,
+    "short_text": 22,
     "number": 38,
-    "boolean": 37,
-    "short_text": 21,
+    "boolean": 38,
+    "complex_string": 66,
     "token_id": 10,
+    "timestamp": 1,
     "empty": 1
   },
   "vendor_counts": {
-    "cmjornal.pt": 7,
     "com.br": 11,
     "inll.lu": 3,
     "iefimerida.gr": 60,
     "mondorf.lu": 7,
-    "in.gr": 32,
+    "in.gr": 33,
     "noticiasaominuto.com": 9,
-    "charter97.org": 7,
-    "ria-m.tv": 17,
+    "charter97.org": 8,
+    "ria-m.tv": 18,
     "volksfreund.de": 11,
     "vijesti.me": 34,
     "observador.pt": 17,
-    "tuasaude.com": 14,
-    "paperjam.lu": 20,
+    "tuasaude.com": 13,
     "publico.pt": 33,
+    "paperjam.lu": 20,
     "nouvelobs.com": 11,
     "sapo.pt": 9,
     "baidu.com": 3,
     "hotnews.ro": 6,
     "howdy.id": 1,
     "iol.pt": 18,
-    "rbc.ua": 6,
+    "rbc.ua": 7,
     "sicnoticias.pt": 14,
+    "record.pt": 11,
     "public.lu": 5,
-    "lbr.lu": 5,
     "raiffeisen.lu": 12,
     "wort.lu": 1,
     "lequotidien.lu": 1,
@@ -308,8 +338,8 @@
     "bil.com": 9,
     "batmaid.lu": 4,
     "jobfinder.lu": 1,
-    "record.pt": 8,
     "tageblatt.lu": 2,
+    "cmjornal.pt": 7,
     "digi24.ro": 1,
     "unian.net": 8,
     "pharmacie.lu": 1,
@@ -317,15 +347,11 @@
     "openbudget.uz": 1,
     "houseoftraining.lu": 1,
     "petitiounen.lu": 1,
+    "lbr.lu": 5,
     "protothema.gr": 2,
     "spuerkeess.lu": 1
   },
   "category_vendor_flows": [
-    [
-      "unknown",
-      "cmjornal.pt",
-      1
-    ],
     [
       "APP_STATE_STORAGE",
       "com.br",
@@ -387,9 +413,14 @@
       1
     ],
     [
+      "APP_STATE_STORAGE",
+      "publico.pt",
+      1
+    ],
+    [
       "BEHAVIORAL_DATA",
       "tuasaude.com",
-      3
+      2
     ],
     [
       "BEHAVIORAL_DATA",
@@ -444,7 +475,7 @@
     [
       "BEHAVIORAL_DATA",
       "hotnews.ro",
-      2
+      1
     ],
     [
       "BEHAVIORAL_DATA",
@@ -473,12 +504,17 @@
     ],
     [
       "BEHAVIORAL_DATA",
+      "record.pt",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
       "public.lu",
       1
     ],
     [
       "BEHAVIORAL_DATA",
-      "lbr.lu",
+      "charter97.org",
       1
     ],
     [
@@ -499,7 +535,7 @@
     [
       "CONSENT_AND_PRIVACY",
       "noticiasaominuto.com",
-      3
+      6
     ],
     [
       "CONSENT_AND_PRIVACY",
@@ -553,18 +589,28 @@
     ],
     [
       "CONSENT_AND_PRIVACY",
+      "hotnews.ro",
+      1
+    ],
+    [
+      "CONSENT_AND_PRIVACY",
       "iefimerida.gr",
-      4
+      6
+    ],
+    [
+      "DEVICE_ENV",
+      "com.br",
+      1
+    ],
+    [
+      "DEVICE_ENV",
+      "hotnews.ro",
+      1
     ],
     [
       "DIRECT_PII_KEYS",
       "br-performance.lu",
       3
-    ],
-    [
-      "FINGERPRINTING_ADVANCED",
-      "com.br",
-      1
     ],
     [
       "IDENTITY_TRACKING",
@@ -644,7 +690,7 @@
     [
       "IDENTITY_TRACKING",
       "cmjornal.pt",
-      2
+      1
     ],
     [
       "IDENTITY_TRACKING",
@@ -669,7 +715,7 @@
     [
       "IDENTITY_TRACKING",
       "rbc.ua",
-      1
+      2
     ],
     [
       "IDENTITY_TRACKING",
@@ -684,6 +730,11 @@
     [
       "IDENTITY_TRACKING",
       "pharmacie.lu",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING.user_id_key",
+      "cmjornal.pt",
       1
     ],
     [
@@ -780,6 +831,21 @@
       "ID_SOLUTIONS_AND_EXCHANGES",
       "sicnoticias.pt",
       4
+    ],
+    [
+      "INFRASTRUCTURE",
+      "record.pt",
+      2
+    ],
+    [
+      "INFRASTRUCTURE",
+      "public.lu",
+      1
+    ],
+    [
+      "LOCATION_AND_DEMOGRAPHICS.general_loc",
+      "cmjornal.pt",
+      1
     ],
     [
       "LOCATION_AND_DEMOGRAPHICS",
@@ -918,23 +984,8 @@
     ],
     [
       "USER_PREFERENCES",
-      "hotnews.ro",
-      1
-    ],
-    [
-      "USER_PREFERENCES",
-      "publico.pt",
-      2
-    ],
-    [
-      "USER_PREFERENCES",
-      "noticiasaominuto.com",
-      3
-    ],
-    [
-      "USER_PREFERENCES",
       "iefimerida.gr",
-      3
+      1
     ],
     [
       "USER_PREFERENCES",
@@ -979,16 +1030,26 @@
     [
       "USER_PREFERENCES",
       "public.lu",
-      4
+      3
+    ],
+    [
+      "USER_PREFERENCES",
+      "ria-m.tv",
+      1
     ],
     [
       "USER_PREFERENCES",
       "lbr.lu",
-      4
+      5
     ],
     [
       "USER_PREFERENCES",
       "in.gr",
+      2
+    ],
+    [
+      "USER_PREFERENCES",
+      "publico.pt",
       1
     ],
     [
@@ -1103,9 +1164,6 @@
     ]
   ],
   "entropy_by_pii": {
-    "unknown": [
-      5.377372212521923
-    ],
     "APP_STATE_STORAGE": [
       3.97209107708235,
       2.321928094887362,
@@ -1133,7 +1191,8 @@
       4.936840971321963,
       4.692878374480435,
       4.719363206242015,
-      3.006238928653389
+      3.006238928653389,
+      2.0
     ],
     "BEHAVIORAL_DATA": [
       3.0269868333592873,
@@ -1151,7 +1210,6 @@
       4.271598379853424,
       4.5980685120588385,
       2.8731406795131336,
-      4.597711266420106,
       2.873140679513133,
       0.0,
       0.0,
@@ -1164,13 +1222,13 @@
       4.238901256602629,
       4.163856189774723,
       0.0,
+      4.333616975397233,
       2.7192945256669794,
       3.521640636343319,
-      4.293594289588575,
+      3.5068905956085183,
       0.0,
       3.1898980954642866,
-      3.1898980954642875,
-      3.1068905956085184
+      3.1898980954642875
     ],
     "CONSENT_AND_PRIVACY": [
       4.268719696310996,
@@ -1207,8 +1265,14 @@
       3.178620676188981,
       3.5090781953334553,
       0.0,
+      2.75,
       5.395409259024203,
       2.2516291673878226,
+      3.095795255000934,
+      2.321928094887362,
+      2.5216406363433186,
+      3.095795255000934,
+      2.321928094887362,
       5.395249680396079,
       2.2516291673878226,
       2.321928094887362,
@@ -1220,13 +1284,14 @@
       0.9182958340544896,
       4.3845171317931
     ],
+    "DEVICE_ENV": [
+      4.892897244519499,
+      4.597711266420106
+    ],
     "DIRECT_PII_KEYS": [
       2.0,
       2.0,
       2.0
-    ],
-    "FINGERPRINTING_ADVANCED": [
-      4.892897244519499
     ],
     "IDENTITY_TRACKING": [
       5.895803833334427,
@@ -1288,11 +1353,14 @@
       4.3464393446710154,
       4.593069207771891,
       3.8073549220576055,
+      2.521640636343318,
       4.116408565770045,
       3.872155557912736,
       3.908490717847595,
       4.156353704528091,
-      4.142914673354254,
+      4.142914673354254
+    ],
+    "IDENTITY_TRACKING.user_id_key": [
       4.056020968057881
     ],
     "ID_SOLUTIONS_AND_EXCHANGES": [
@@ -1384,6 +1452,14 @@
       5.00977948721859,
       4.425303992426577
     ],
+    "INFRASTRUCTURE": [
+      2.9219280948873623,
+      0.0,
+      2.0
+    ],
+    "LOCATION_AND_DEMOGRAPHICS.general_loc": [
+      5.377372212521923
+    ],
     "LOCATION_AND_DEMOGRAPHICS": [
       4.999495379223576,
       4.465094550489885
@@ -1452,13 +1528,6 @@
       4.7269039005661515,
       2.321928094887362,
       2.0,
-      2.75,
-      2.0,
-      3.095795255000934,
-      2.321928094887362,
-      2.5216406363433186,
-      3.095795255000934,
-      2.321928094887362,
       2.321928094887362,
       0.0,
       2.0,
@@ -1480,18 +1549,20 @@
       2.321928094887362,
       2.321928094887362,
       2.0,
-      2.0,
       4.300559092390953,
       2.321928094887362,
       3.0306390622295662,
       2.0,
+      3.32323142879762,
       4.789453097471707,
       4.835070157453207,
       4.7449203253083025,
+      4.293594289588575,
       4.536170001338232,
       2.0,
       4.8245166329180975,
       3.7034651896016464,
+      4.284683810317086,
       3.085055102756477
     ],
     "UX_AND_PERFORMANCE_ANALYTICS": [
@@ -1560,35 +1631,41 @@
     ]
   },
   "risk_levels": {
-    "High Risk": 154,
-    "Medium Risk": 270,
+    "Medium Risk": 278,
+    "High Risk": 152,
     "Critical Risk": 1
   },
   "risk_by_pii": {
-    "unknown": {
-      "High Risk": 1
-    },
     "APP_STATE_STORAGE": {
-      "Medium Risk": 27
+      "Medium Risk": 28
     },
     "BEHAVIORAL_DATA": {
-      "Medium Risk": 35
+      "Medium Risk": 34
     },
     "CONSENT_AND_PRIVACY": {
-      "Medium Risk": 46
+      "Medium Risk": 52
+    },
+    "DEVICE_ENV": {
+      "Medium Risk": 2
     },
     "DIRECT_PII_KEYS": {
       "Medium Risk": 3
-    },
-    "FINGERPRINTING_ADVANCED": {
-      "High Risk": 1
     },
     "IDENTITY_TRACKING": {
       "High Risk": 64,
       "Critical Risk": 1
     },
+    "IDENTITY_TRACKING.user_id_key": {
+      "Medium Risk": 1
+    },
     "ID_SOLUTIONS_AND_EXCHANGES": {
       "High Risk": 87
+    },
+    "INFRASTRUCTURE": {
+      "Medium Risk": 3
+    },
+    "LOCATION_AND_DEMOGRAPHICS.general_loc": {
+      "Medium Risk": 1
     },
     "LOCATION_AND_DEMOGRAPHICS": {
       "Medium Risk": 2
@@ -1606,7 +1683,7 @@
       "Medium Risk": 17
     },
     "USER_PREFERENCES": {
-      "Medium Risk": 49
+      "Medium Risk": 44
     },
     "UX_AND_PERFORMANCE_ANALYTICS": {
       "Medium Risk": 61,

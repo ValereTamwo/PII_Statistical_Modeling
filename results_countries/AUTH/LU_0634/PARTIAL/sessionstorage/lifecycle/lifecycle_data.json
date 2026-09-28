@@ -6,34 +6,34 @@
     "items_deleted": 94,
     "entropy_increases": 23,
     "entropy_decreases": 32,
-    "size_increases": 12,
-    "size_decreases": 3,
+    "size_increases": 11,
+    "size_decreases": 4,
     "pii_transitions": {
       "APP_STATE_STORAGE -> SECURITY_AND_BOT_MITIGATION": 3,
-      "IDENTITY_TRACKING -> UX_AND_PERFORMANCE_ANALYTICS": 8,
       "NAVIGATION_HISTORY -> UX_AND_PERFORMANCE_ANALYTICS": 2,
-      "BEHAVIORAL_DATA -> INFRASTRUCTURE": 1,
-      "IDENTITY_TRACKING -> SESSION_MANAGEMENT": 3,
+      "IDENTITY_TRACKING -> UX_AND_PERFORMANCE_ANALYTICS": 8,
+      "SESSION_MANAGEMENT -> UX_AND_PERFORMANCE_ANALYTICS": 2,
+      "IDENTITY_TRACKING -> ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "APP_STATE_STORAGE -> UX_AND_PERFORMANCE_ANALYTICS": 3,
       "ID_SOLUTIONS_AND_EXCHANGES -> SECURITY_AND_BOT_MITIGATION": 3,
       "ID_SOLUTIONS_AND_EXCHANGES -> UX_AND_PERFORMANCE_ANALYTICS": 1,
-      "APP_STATE_STORAGE -> UX_AND_PERFORMANCE_ANALYTICS": 3,
-      "IDENTITY_TRACKING -> TECHNICAL_PASSWORDS": 1,
-      "IDENTITY_TRACKING -> ID_SOLUTIONS_AND_EXCHANGES": 1,
-      "APP_STATE_STORAGE -> BEHAVIORAL_DATA": 1,
-      "SESSION_MANAGEMENT -> UX_AND_PERFORMANCE_ANALYTICS": 2,
-      "IDENTITY_TRACKING -> NAVIGATION_HISTORY": 1,
-      "IDENTITY_TRACKING -> SECURITY_AND_BOT_MITIGATION": 1,
       "USER_PREFERENCES -> BEHAVIORAL_DATA": 3,
+      "IDENTITY_TRACKING -> SESSION_MANAGEMENT": 3,
+      "IDENTITY_TRACKING -> SECURITY_AND_BOT_MITIGATION": 1,
       "IDENTITY_TRACKING -> BEHAVIORAL_DATA": 1,
-      "BEHAVIORAL_DATA -> CONSENT_AND_PRIVACY": 1
+      "APP_STATE_STORAGE -> BEHAVIORAL_DATA": 1,
+      "INFRASTRUCTURE -> USER_PREFERENCES": 1,
+      "BEHAVIORAL_DATA -> CONSENT_AND_PRIVACY": 1,
+      "IDENTITY_TRACKING -> NAVIGATION_HISTORY": 1,
+      "IDENTITY_TRACKING -> TECHNICAL_PASSWORDS": 1
     },
     "volatility_distribution": {
       "high": 42,
-      "stable": 47,
-      "moderate": 62
+      "moderate": 62,
+      "stable": 47
     },
     "change_frequency": {
-      "avg_gap": 44.54829545454545,
+      "avg_gap": 44.78632478632478,
       "min_gap": 0,
       "max_gap": 327
     },
@@ -120,10 +120,18 @@
       "editalconcursosbrasil.com.br": 3,
       "www.vinted.fr": 3,
       "www.in.gr": 3,
-      "www.spuerkeess.lu": 2,
-      "www.seg-social.pt": 2
+      "www.wort.lu": 2,
+      "www.spuerkeess.lu": 2
     },
     "pii_modification_patterns": {
+      "DEVICE_ENV": {
+        "count": 1,
+        "avg_gap": 327.0
+      },
+      "ID_SOLUTIONS_AND_EXCHANGES": {
+        "count": 3,
+        "avg_gap": 45.57142857142857
+      },
       "IDENTITY_TRACKING": {
         "count": 7,
         "avg_gap": 90.76470588235294
@@ -136,9 +144,9 @@
         "count": 17,
         "avg_gap": 72.58823529411765
       },
-      "ID_SOLUTIONS_AND_EXCHANGES": {
-        "count": 3,
-        "avg_gap": 45.57142857142857
+      "SESSION_MANAGEMENT": {
+        "count": 2,
+        "avg_gap": 0.0
       },
       "LOCATION_AND_DEMOGRAPHICS": {
         "count": 1,
@@ -147,14 +155,6 @@
       "CONSENT_AND_PRIVACY": {
         "count": 6,
         "avg_gap": 34.2
-      },
-      "DEVICE_ENV": {
-        "count": 1,
-        "avg_gap": 327.0
-      },
-      "SESSION_MANAGEMENT": {
-        "count": 2,
-        "avg_gap": 0.0
       }
     }
   },

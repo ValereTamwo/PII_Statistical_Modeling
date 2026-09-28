@@ -1,0 +1,2161 @@
+{
+  "total_cookies": 549,
+  "direct_pii_count": 0,
+  "other_count": 549,
+  "lifetime_distribution": {
+    "Session": 533,
+    "<6 months": 6,
+    "6-18 months": 10
+  },
+  "lifetime_by_pii": {
+    "APP_STATE_STORAGE": {
+      "Session": 2
+    },
+    "BEHAVIORAL_DATA": {
+      "Session": 11
+    },
+    "CONSENT_AND_PRIVACY": {
+      "Session": 2,
+      "<6 months": 2,
+      "6-18 months": 1
+    },
+    "DIRECT_PII_KEYS": {
+      "Session": 2
+    },
+    "IDENTITY_TRACKING": {
+      "Session": 165,
+      "6-18 months": 6
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "<6 months": 4,
+      "6-18 months": 1,
+      "Session": 18
+    },
+    "INFRASTRUCTURE": {
+      "Session": 5
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "Session": 143
+    },
+    "SENSITIVE_LOCATION_PII": {
+      "Session": 1
+    },
+    "SESSION_MANAGEMENT": {
+      "Session": 12
+    },
+    "TECHNICAL_PASSWORDS": {
+      "Session": 39
+    },
+    "USER_PREFERENCES": {
+      "Session": 4
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "Session": 129,
+      "6-18 months": 2
+    }
+  },
+  "httponly_distribution": {
+    "False": 381,
+    "True": 168
+  },
+  "httponly_by_pii": {
+    "APP_STATE_STORAGE": {
+      "False": 2
+    },
+    "BEHAVIORAL_DATA": {
+      "False": 11
+    },
+    "CONSENT_AND_PRIVACY": {
+      "False": 4,
+      "True": 1
+    },
+    "DIRECT_PII_KEYS": {
+      "True": 2
+    },
+    "IDENTITY_TRACKING": {
+      "False": 149,
+      "True": 22
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "False": 22,
+      "True": 1
+    },
+    "INFRASTRUCTURE": {
+      "True": 5
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "True": 125,
+      "False": 18
+    },
+    "SENSITIVE_LOCATION_PII": {
+      "True": 1
+    },
+    "SESSION_MANAGEMENT": {
+      "False": 8,
+      "True": 4
+    },
+    "TECHNICAL_PASSWORDS": {
+      "False": 39
+    },
+    "USER_PREFERENCES": {
+      "False": 4
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "False": 124,
+      "True": 7
+    }
+  },
+  "secure_distribution": {
+    "True": 397,
+    "False": 152
+  },
+  "secure_by_pii": {
+    "APP_STATE_STORAGE": {
+      "True": 2
+    },
+    "BEHAVIORAL_DATA": {
+      "True": 6,
+      "False": 5
+    },
+    "CONSENT_AND_PRIVACY": {
+      "True": 4,
+      "False": 1
+    },
+    "DIRECT_PII_KEYS": {
+      "True": 2
+    },
+    "IDENTITY_TRACKING": {
+      "False": 45,
+      "True": 126
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "True": 20,
+      "False": 3
+    },
+    "INFRASTRUCTURE": {
+      "True": 5
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "True": 141,
+      "False": 2
+    },
+    "SENSITIVE_LOCATION_PII": {
+      "True": 1
+    },
+    "SESSION_MANAGEMENT": {
+      "True": 12
+    },
+    "TECHNICAL_PASSWORDS": {
+      "False": 28,
+      "True": 11
+    },
+    "USER_PREFERENCES": {
+      "False": 3,
+      "True": 1
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "False": 65,
+      "True": 66
+    }
+  },
+  "samesite_distribution": {
+    "No Restriction": 314,
+    "Lax": 191,
+    "Strict": 44
+  },
+  "samesite_by_pii": {
+    "APP_STATE_STORAGE": {
+      "No Restriction": 2
+    },
+    "BEHAVIORAL_DATA": {
+      "No Restriction": 6,
+      "Lax": 5
+    },
+    "CONSENT_AND_PRIVACY": {
+      "No Restriction": 3,
+      "Lax": 2
+    },
+    "DIRECT_PII_KEYS": {
+      "No Restriction": 2
+    },
+    "IDENTITY_TRACKING": {
+      "Lax": 54,
+      "Strict": 14,
+      "No Restriction": 103
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "No Restriction": 17,
+      "Lax": 6
+    },
+    "INFRASTRUCTURE": {
+      "No Restriction": 5
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "No Restriction": 128,
+      "Strict": 9,
+      "Lax": 6
+    },
+    "SENSITIVE_LOCATION_PII": {
+      "No Restriction": 1
+    },
+    "SESSION_MANAGEMENT": {
+      "No Restriction": 8,
+      "Lax": 4
+    },
+    "TECHNICAL_PASSWORDS": {
+      "Lax": 29,
+      "Strict": 10
+    },
+    "USER_PREFERENCES": {
+      "Strict": 1,
+      "Lax": 2,
+      "No Restriction": 1
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "Lax": 83,
+      "No Restriction": 38,
+      "Strict": 10
+    }
+  },
+  "security_matrix": {
+    "(False, True)": 231,
+    "(False, False)": 150,
+    "(True, True)": 166,
+    "(True, False)": 2
+  },
+  "security_by_pii": {
+    "APP_STATE_STORAGE": {
+      "Partially Secure": 2
+    },
+    "BEHAVIORAL_DATA": {
+      "Partially Secure": 6,
+      "Lowly Secure": 5
+    },
+    "CONSENT_AND_PRIVACY": {
+      "Partially Secure": 3,
+      "Secure": 1,
+      "Lowly Secure": 1
+    },
+    "DIRECT_PII_KEYS": {
+      "Secure": 2
+    },
+    "IDENTITY_TRACKING": {
+      "Lowly Secure": 45,
+      "Partially Secure": 104,
+      "Secure": 22
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "Partially Secure": 19,
+      "Lowly Secure": 3,
+      "Secure": 1
+    },
+    "INFRASTRUCTURE": {
+      "Secure": 5
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "Secure": 123,
+      "Partially Secure": 20
+    },
+    "SENSITIVE_LOCATION_PII": {
+      "Secure": 1
+    },
+    "SESSION_MANAGEMENT": {
+      "Partially Secure": 8,
+      "Secure": 4
+    },
+    "TECHNICAL_PASSWORDS": {
+      "Lowly Secure": 28,
+      "Partially Secure": 11
+    },
+    "USER_PREFERENCES": {
+      "Lowly Secure": 3,
+      "Partially Secure": 1
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "Lowly Secure": 65,
+      "Partially Secure": 59,
+      "Secure": 7
+    }
+  },
+  "thirdparty_distribution": {
+    "Third-Party": 517,
+    "First-Party": 32
+  },
+  "thirdparty_by_pii": {
+    "APP_STATE_STORAGE": {
+      "Third-Party": 2
+    },
+    "BEHAVIORAL_DATA": {
+      "Third-Party": 11
+    },
+    "CONSENT_AND_PRIVACY": {
+      "Third-Party": 4,
+      "First-Party": 1
+    },
+    "DIRECT_PII_KEYS": {
+      "Third-Party": 2
+    },
+    "IDENTITY_TRACKING": {
+      "First-Party": 20,
+      "Third-Party": 151
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "Third-Party": 23
+    },
+    "INFRASTRUCTURE": {
+      "Third-Party": 5
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "Third-Party": 143
+    },
+    "SENSITIVE_LOCATION_PII": {
+      "Third-Party": 1
+    },
+    "SESSION_MANAGEMENT": {
+      "Third-Party": 12
+    },
+    "TECHNICAL_PASSWORDS": {
+      "Third-Party": 39
+    },
+    "USER_PREFERENCES": {
+      "Third-Party": 4
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "First-Party": 11,
+      "Third-Party": 120
+    }
+  },
+  "thirdparty_httponly": {
+    "Third-Party_False": 350,
+    "First-Party_True": 1,
+    "Third-Party_True": 167,
+    "First-Party_False": 31
+  },
+  "thirdparty_secure": {
+    "Third-Party_True": 394,
+    "Third-Party_False": 123,
+    "First-Party_True": 3,
+    "First-Party_False": 29
+  },
+  "risk_levels": {
+    "Medium Risk": 325,
+    "Low Risk": 29,
+    "High Risk": 193,
+    "Critical Risk": 2
+  },
+  "risk_by_pii": {
+    "APP_STATE_STORAGE": {
+      "Medium Risk": 2
+    },
+    "BEHAVIORAL_DATA": {
+      "Medium Risk": 11
+    },
+    "CONSENT_AND_PRIVACY": {
+      "Medium Risk": 4,
+      "Low Risk": 1
+    },
+    "DIRECT_PII_KEYS": {
+      "Low Risk": 2
+    },
+    "IDENTITY_TRACKING": {
+      "High Risk": 163,
+      "Medium Risk": 7,
+      "Critical Risk": 1
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "High Risk": 22,
+      "Critical Risk": 1
+    },
+    "INFRASTRUCTURE": {
+      "Low Risk": 5
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "Medium Risk": 143
+    },
+    "SENSITIVE_LOCATION_PII": {
+      "Low Risk": 1
+    },
+    "SESSION_MANAGEMENT": {
+      "Medium Risk": 8,
+      "Low Risk": 4
+    },
+    "TECHNICAL_PASSWORDS": {
+      "Medium Risk": 28,
+      "Low Risk": 11
+    },
+    "USER_PREFERENCES": {
+      "Medium Risk": 4
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "Medium Risk": 118,
+      "High Risk": 8,
+      "Low Risk": 5
+    }
+  },
+  "keywords": {
+    "amc": 72,
+    "ses": 58,
+    "sid": 39,
+    "stripe": 36,
+    "gat": 30,
+    "gtag": 20,
+    "hjsession": 18,
+    "session": 13,
+    "custom": 13,
+    "data": 13,
+    "abtastysession": 13,
+    "2404871": 9,
+    "production": 8,
+    "hssc": 7,
+    "svref": 7
+  },
+  "content_hierarchy": {
+    "complex_string": {
+      "APP_STATE_STORAGE": 2,
+      "BEHAVIORAL_DATA": 1,
+      "CONSENT_AND_PRIVACY": 2,
+      "IDENTITY_TRACKING": 61,
+      "ID_SOLUTIONS_AND_EXCHANGES": 11,
+      "INFRASTRUCTURE": 5,
+      "SECURITY_AND_BOT_MITIGATION": 131,
+      "SESSION_MANAGEMENT": 5,
+      "TECHNICAL_PASSWORDS": 3,
+      "UX_AND_PERFORMANCE_ANALYTICS": 54
+    },
+    "json_structured": {
+      "BEHAVIORAL_DATA": 6,
+      "CONSENT_AND_PRIVACY": 1,
+      "IDENTITY_TRACKING": 5,
+      "SESSION_MANAGEMENT": 6,
+      "TECHNICAL_PASSWORDS": 1,
+      "UX_AND_PERFORMANCE_ANALYTICS": 8
+    },
+    "boolean": {
+      "BEHAVIORAL_DATA": 2,
+      "IDENTITY_TRACKING": 26,
+      "ID_SOLUTIONS_AND_EXCHANGES": 9,
+      "SECURITY_AND_BOT_MITIGATION": 1,
+      "TECHNICAL_PASSWORDS": 26,
+      "USER_PREFERENCES": 3,
+      "UX_AND_PERFORMANCE_ANALYTICS": 45
+    },
+    "short_text": {
+      "BEHAVIORAL_DATA": 2,
+      "CONSENT_AND_PRIVACY": 1,
+      "DIRECT_PII_KEYS": 2,
+      "IDENTITY_TRACKING": 19,
+      "ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "SENSITIVE_LOCATION_PII": 1,
+      "SESSION_MANAGEMENT": 1,
+      "UX_AND_PERFORMANCE_ANALYTICS": 11
+    },
+    "uuid": {
+      "CONSENT_AND_PRIVACY": 1,
+      "IDENTITY_TRACKING": 10,
+      "UX_AND_PERFORMANCE_ANALYTICS": 2
+    },
+    "token_id": {
+      "IDENTITY_TRACKING": 21,
+      "SECURITY_AND_BOT_MITIGATION": 9,
+      "TECHNICAL_PASSWORDS": 9,
+      "UX_AND_PERFORMANCE_ANALYTICS": 10
+    },
+    "number": {
+      "IDENTITY_TRACKING": 27,
+      "SECURITY_AND_BOT_MITIGATION": 2,
+      "UX_AND_PERFORMANCE_ANALYTICS": 1
+    },
+    "empty": {
+      "IDENTITY_TRACKING": 2,
+      "ID_SOLUTIONS_AND_EXCHANGES": 2
+    },
+    "language_code": {
+      "USER_PREFERENCES": 1
+    }
+  },
+  "content_types": {
+    "complex_string": 275,
+    "json_structured": 27,
+    "boolean": 112,
+    "short_text": 38,
+    "uuid": 13,
+    "token_id": 49,
+    "number": 30,
+    "empty": 4,
+    "language_code": 1
+  },
+  "vendor_counts": {
+    "kompass.com": 12,
+    "hellopro.fr": 9,
+    "lefigaro.fr": 6,
+    "revolution-energetique.com": 9,
+    "perfdrive.com": 3,
+    "bidswitch.net": 15,
+    "PulsePoint": 4,
+    "huffingtonpost.fr": 4,
+    "laposte.fr": 1,
+    "radio-canada.ca": 9,
+    "holissence.com": 5,
+    "culturepsg.com": 7,
+    "cab-formations.fr": 12,
+    "a-mo.net": 76,
+    "yespark.fr": 3,
+    "medadom.com": 6,
+    "mesdepanneurs.fr": 12,
+    "terravita.fr": 2,
+    "unboncoiffeur.fr": 6,
+    "croq-kilos.com": 19,
+    "forum-hifi.fr": 3,
+    "logicrdv.fr": 14,
+    "lepermislibre.fr": 4,
+    "sudouest.fr": 8,
+    "permisapoints.fr": 6,
+    "oscaro.com": 12,
+    "zohopublic.eu": 3,
+    "zendesk.com": 3,
+    "booknode.com": 10,
+    "ouest-france.fr": 5,
+    "netcampus.fr": 2,
+    "renaissancekingdoms.com": 4,
+    "pasteur.fr": 7,
+    "Microsoft": 10,
+    "gentside.com": 4,
+    "surveymonkey.com": 5,
+    "adp.com": 7,
+    "richaudience.com": 1,
+    "bidtheatre.com": 2,
+    "ville-ideale.fr": 3,
+    "easydmp.net": 1,
+    "roblox.com": 1,
+    "ingage.tech": 2,
+    "pmbmonetize.live": 9,
+    "Outbrain": 2,
+    "Google": 1,
+    "adgrx.com": 2,
+    "Teads": 4,
+    "Sovrn": 1,
+    "marketiq.com": 1,
+    "mediago.io": 2,
+    "cartegriseminute.fr": 1,
+    "sddan.com": 1,
+    "PubMatic": 4,
+    "qassa.com": 8,
+    "id5-sync.com": 1,
+    "bidberry.net": 1,
+    "onaudience.com": 4,
+    "Smart AdServer": 2,
+    "rqtrk.eu": 1,
+    "unss.org": 2,
+    "eyeota.net": 5,
+    "opti-digital.com": 2,
+    "Cloudflare": 1,
+    "slgnt.eu": 2,
+    "decathlon.fr": 4,
+    "zoho.com": 3,
+    "myfonts.net": 1,
+    "onesignal.com": 3,
+    "temu.com": 11,
+    "Twitter": 8,
+    "hsforms.com": 4,
+    "hsappstatic.net": 1,
+    "hs-analytics.net": 4,
+    "HubSpot": 4,
+    "hs-sites.com": 2,
+    "hubspotusercontent-na1.net": 2,
+    "hs-scripts.com": 4,
+    "hs-banner.com": 4,
+    "openai.com": 9,
+    "pmdstatic.net": 4,
+    "yourketo.diet": 1,
+    "payfit.com": 2,
+    "Piano": 3,
+    "usemessages.com": 3,
+    "hsadspixel.net": 3,
+    "getjan.io": 2,
+    "getjad.io": 2,
+    "pampers.fr": 1,
+    "506.io": 1,
+    "hcaptcha.com": 3,
+    "lean-labs.com": 1,
+    "x.com": 1,
+    "hubspotusercontent20.net": 1,
+    "doctolib.com": 1,
+    "doctolib.fr": 1,
+    "yespark.com": 1,
+    "calendly.com": 1,
+    "but.fr": 4,
+    "idgarages.com": 6,
+    "unsa-fp.org": 2,
+    "belin.education": 6,
+    "tribunedelyon.fr": 4,
+    "sorbonne-universite.fr": 2,
+    "gouv.fr": 5,
+    "xn--cfdt-retraits-mhb.fr": 4,
+    "cfdt.fr": 2,
+    "monepi.fr": 6,
+    "carpimko.com": 4,
+    "sante.fr": 2,
+    "orange.fr": 1,
+    "dotomi.com": 1,
+    "prixtel.com": 3,
+    "brevo.com": 1,
+    "handicap.live": 3,
+    "sparteo.com": 1,
+    "oralb.fr": 1,
+    "eau-thermale-avene.fr": 1
+  },
+  "category_vendor_flows": [
+    [
+      "APP_STATE_STORAGE",
+      "kompass.com",
+      2
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "kompass.com",
+      2
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "hellopro.fr",
+      3
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "lefigaro.fr",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "revolution-energetique.com",
+      2
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "perfdrive.com",
+      3
+    ],
+    [
+      "CONSENT_AND_PRIVACY",
+      "bidswitch.net",
+      1
+    ],
+    [
+      "CONSENT_AND_PRIVACY",
+      "PulsePoint",
+      2
+    ],
+    [
+      "CONSENT_AND_PRIVACY",
+      "huffingtonpost.fr",
+      1
+    ],
+    [
+      "CONSENT_AND_PRIVACY",
+      "laposte.fr",
+      1
+    ],
+    [
+      "DIRECT_PII_KEYS",
+      "radio-canada.ca",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "holissence.com",
+      3
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "culturepsg.com",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "cab-formations.fr",
+      3
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "a-mo.net",
+      56
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "yespark.fr",
+      3
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "kompass.com",
+      4
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "medadom.com",
+      3
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "mesdepanneurs.fr",
+      3
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "terravita.fr",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "unboncoiffeur.fr",
+      4
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "croq-kilos.com",
+      3
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "forum-hifi.fr",
+      3
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "logicrdv.fr",
+      5
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "lepermislibre.fr",
+      3
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "sudouest.fr",
+      3
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "permisapoints.fr",
+      4
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "oscaro.com",
+      6
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "zohopublic.eu",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "zendesk.com",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "booknode.com",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "ouest-france.fr",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "netcampus.fr",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "renaissancekingdoms.com",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "pasteur.fr",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "Microsoft",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "gentside.com",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "surveymonkey.com",
+      3
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "adp.com",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "richaudience.com",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "bidtheatre.com",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "ville-ideale.fr",
+      3
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "easydmp.net",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "PulsePoint",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "bidswitch.net",
+      13
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "roblox.com",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "ingage.tech",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "pmbmonetize.live",
+      9
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "Outbrain",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "Google",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "adgrx.com",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "Teads",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "Sovrn",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "marketiq.com",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "mediago.io",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "cartegriseminute.fr",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "sddan.com",
+      1
+    ],
+    [
+      "ID_SOLUTIONS_AND_EXCHANGES",
+      "PubMatic",
+      4
+    ],
+    [
+      "ID_SOLUTIONS_AND_EXCHANGES",
+      "PulsePoint",
+      1
+    ],
+    [
+      "ID_SOLUTIONS_AND_EXCHANGES",
+      "qassa.com",
+      2
+    ],
+    [
+      "ID_SOLUTIONS_AND_EXCHANGES",
+      "gentside.com",
+      3
+    ],
+    [
+      "ID_SOLUTIONS_AND_EXCHANGES",
+      "id5-sync.com",
+      1
+    ],
+    [
+      "ID_SOLUTIONS_AND_EXCHANGES",
+      "bidberry.net",
+      1
+    ],
+    [
+      "ID_SOLUTIONS_AND_EXCHANGES",
+      "adgrx.com",
+      1
+    ],
+    [
+      "ID_SOLUTIONS_AND_EXCHANGES",
+      "onaudience.com",
+      4
+    ],
+    [
+      "ID_SOLUTIONS_AND_EXCHANGES",
+      "Smart AdServer",
+      2
+    ],
+    [
+      "ID_SOLUTIONS_AND_EXCHANGES",
+      "rqtrk.eu",
+      1
+    ],
+    [
+      "ID_SOLUTIONS_AND_EXCHANGES",
+      "Teads",
+      2
+    ],
+    [
+      "ID_SOLUTIONS_AND_EXCHANGES",
+      "unss.org",
+      1
+    ],
+    [
+      "INFRASTRUCTURE",
+      "eyeota.net",
+      5
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "opti-digital.com",
+      2
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "Cloudflare",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "slgnt.eu",
+      2
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "decathlon.fr",
+      4
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "zoho.com",
+      3
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "myfonts.net",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "cab-formations.fr",
+      3
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "onesignal.com",
+      3
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "Microsoft",
+      9
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "temu.com",
+      11
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "Twitter",
+      8
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "adp.com",
+      4
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "hsforms.com",
+      4
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "hsappstatic.net",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "hs-analytics.net",
+      4
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "HubSpot",
+      4
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "zendesk.com",
+      2
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "hs-sites.com",
+      2
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "hubspotusercontent-na1.net",
+      2
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "hs-scripts.com",
+      4
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "hs-banner.com",
+      4
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "medadom.com",
+      3
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "openai.com",
+      9
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "croq-kilos.com",
+      3
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "pmdstatic.net",
+      4
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "yourketo.diet",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "qassa.com",
+      2
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "revolution-energetique.com",
+      6
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "payfit.com",
+      2
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "Piano",
+      3
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "usemessages.com",
+      3
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "hsadspixel.net",
+      3
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "getjan.io",
+      2
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "getjad.io",
+      2
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "logicrdv.fr",
+      3
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "pampers.fr",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "506.io",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "hcaptcha.com",
+      3
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "lean-labs.com",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "ouest-france.fr",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "x.com",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "hubspotusercontent20.net",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "doctolib.com",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "doctolib.fr",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "lefigaro.fr",
+      2
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "unss.org",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "yespark.com",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "calendly.com",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "but.fr",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "radio-canada.ca",
+      2
+    ],
+    [
+      "SENSITIVE_LOCATION_PII",
+      "radio-canada.ca",
+      1
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "bidswitch.net",
+      1
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "kompass.com",
+      2
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "qassa.com",
+      2
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "idgarages.com",
+      1
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "hellopro.fr",
+      3
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "booknode.com",
+      2
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "lefigaro.fr",
+      1
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "unsa-fp.org",
+      1
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "pasteur.fr",
+      3
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "cab-formations.fr",
+      3
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "mesdepanneurs.fr",
+      3
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "belin.education",
+      3
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "croq-kilos.com",
+      6
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "unboncoiffeur.fr",
+      1
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "tribunedelyon.fr",
+      2
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "logicrdv.fr",
+      3
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "sorbonne-universite.fr",
+      1
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "gouv.fr",
+      2
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "xn--cfdt-retraits-mhb.fr",
+      2
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "cfdt.fr",
+      1
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "monepi.fr",
+      3
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "carpimko.com",
+      2
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "sante.fr",
+      1
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "booknode.com",
+      1
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "surveymonkey.com",
+      1
+    ],
+    [
+      "USER_PREFERENCES",
+      "orange.fr",
+      1
+    ],
+    [
+      "USER_PREFERENCES",
+      "croq-kilos.com",
+      1
+    ],
+    [
+      "USER_PREFERENCES",
+      "revolution-energetique.com",
+      1
+    ],
+    [
+      "USER_PREFERENCES",
+      "Outbrain",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "holissence.com",
+      2
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "culturepsg.com",
+      5
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "dotomi.com",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "unsa-fp.org",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "pasteur.fr",
+      3
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "cab-formations.fr",
+      3
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "a-mo.net",
+      20
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "mesdepanneurs.fr",
+      6
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "kompass.com",
+      2
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "adp.com",
+      2
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "idgarages.com",
+      5
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "belin.education",
+      3
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "croq-kilos.com",
+      6
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "qassa.com",
+      2
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "unboncoiffeur.fr",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "prixtel.com",
+      3
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "brevo.com",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "tribunedelyon.fr",
+      2
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "logicrdv.fr",
+      3
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "hellopro.fr",
+      3
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "permisapoints.fr",
+      2
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "sorbonne-universite.fr",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "gouv.fr",
+      3
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "xn--cfdt-retraits-mhb.fr",
+      2
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "cfdt.fr",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "monepi.fr",
+      3
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "oscaro.com",
+      6
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "handicap.live",
+      3
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "huffingtonpost.fr",
+      3
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "radio-canada.ca",
+      4
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "carpimko.com",
+      2
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "zohopublic.eu",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "sudouest.fr",
+      5
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "sante.fr",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "lepermislibre.fr",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "booknode.com",
+      6
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "ouest-france.fr",
+      2
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "renaissancekingdoms.com",
+      2
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "sparteo.com",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "lefigaro.fr",
+      2
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "oralb.fr",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "surveymonkey.com",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "eau-thermale-avene.fr",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "but.fr",
+      3
+    ]
+  ],
+  "entropy_by_pii": {
+    "APP_STATE_STORAGE": [
+      3.936891797757288,
+      3.936891797757288
+    ],
+    "BEHAVIORAL_DATA": [
+      5.14199033942929,
+      5.076912611245745,
+      5.08055754073114,
+      4.97032952234647,
+      5.074643999058278,
+      5.087326748677102,
+      2.321928094887362,
+      2.321928094887362,
+      0.9910760598382222,
+      0.9910760598382222,
+      4.1974014889630915
+    ],
+    "CONSENT_AND_PRIVACY": [
+      5.549771659743818,
+      5.549771659743818,
+      3.749941238143319,
+      3.4827687334789585,
+      0.8112781244591328
+    ],
+    "DIRECT_PII_KEYS": [
+      1.0,
+      1.0
+    ],
+    "IDENTITY_TRACKING": [
+      0.0,
+      3.2390795706241744,
+      3.719964304742391,
+      1.0,
+      5.549771659743818,
+      1.0,
+      5.549771659743818,
+      1.584962500721156,
+      1.584962500721156,
+      3.5385623360756298,
+      3.2516291673878226,
+      3.2720552088742005,
+      3.109275070710713,
+      1.584962500721156,
+      1.5,
+      4.4066768125817655,
+      3.936891797757288,
+      4.301554701647529,
+      4.4066768125817655,
+      1.0,
+      1.0,
+      1.5,
+      1.0,
+      4.4066768125817655,
+      0.0,
+      1.0,
+      4.4066768125817655,
+      1.5,
+      1.5,
+      0.0,
+      3.7199643047423914,
+      0.0,
+      0.0,
+      0.0,
+      3.2201755214643453,
+      3.731636328448893,
+      3.7582890779432674,
+      4.209141489348476,
+      4.772745702660753,
+      2.688721875540867,
+      0.0,
+      0.0,
+      3.1572682296173893,
+      0.0,
+      3.173533209849189,
+      3.951143017707788,
+      1.584962500721156,
+      3.936891797757288,
+      4.542073830212671,
+      0.0,
+      3.9604372921259596,
+      0.0,
+      0.0,
+      3.930416151741,
+      3.3825680832760763,
+      1.0,
+      5.549771659743818,
+      1.0,
+      5.549771659743818,
+      1.584962500721156,
+      1.584962500721156,
+      0.0,
+      4.138503348267362,
+      3.1216535224393334,
+      3.2049868557726664,
+      2.9532696895151083,
+      4.534748347068103,
+      3.189529631552713,
+      2.751629167387823,
+      0.0,
+      0.0,
+      1.5,
+      4.4066768125817655,
+      4.4066768125817655,
+      3.4261085007312415,
+      1.0,
+      1.0,
+      1.5,
+      5.054714953481535,
+      1.0,
+      4.4066768125817655,
+      1.0,
+      4.4066768125817655,
+      1.5,
+      1.5,
+      5.502935718771965,
+      4.141064001347102,
+      1.5,
+      4.4066768125817655,
+      1.0,
+      4.4066768125817655,
+      4.4066768125817655,
+      1.0,
+      4.4066768125817655,
+      1.0,
+      1.0,
+      1.5,
+      1.5,
+      1.5,
+      1.0,
+      5.5567970116206995,
+      1.0,
+      5.5567970116206995,
+      0.9182958340544896,
+      0.9182958340544896,
+      4.122530462709277,
+      3.9128182445069126,
+      3.67619062614183,
+      3.272769892034794,
+      0.0,
+      3.863826390090815,
+      4.177215527865488,
+      3.8738784344259667,
+      0.0,
+      3.765319531114783,
+      0.0,
+      0.0,
+      3.1668126804131225,
+      2.8553885422075336,
+      3.2586885704510973,
+      0.0,
+      3.8379314105134203,
+      3.4401204074720737,
+      0.0,
+      0.0,
+      3.81562257082666,
+      3.752715278979704,
+      4.440223928941852,
+      5.688351433461105,
+      5.235628109872144,
+      0.0,
+      5.021746400602861,
+      3.6629863129566904,
+      3.6314783907408077,
+      3.641604167868593,
+      3.641604167868593,
+      5.046021373355381,
+      3.6625732651509115,
+      2.6031579868726,
+      5.131384267056822,
+      2.4116022179746714,
+      2.7773627950641693,
+      2.353533948577482,
+      2.6612262562697895,
+      5.02793387314208,
+      5.004899055911101,
+      1.584962500721156,
+      5.694846060044532,
+      5.06716518977786,
+      2.7773627950641697,
+      4.973002400890108,
+      5.015494414932971,
+      5.055049014747594,
+      0.0,
+      4.989444244852008,
+      4.640223928941852,
+      4.771599634547437,
+      5.100038316504951,
+      0.0,
+      0.0,
+      2.889549430862088,
+      0.0,
+      3.7806390622295662,
+      3.495906598484245,
+      3.8789280318460246,
+      3.0269868333592873,
+      3.757048827786958,
+      4.9089486429059646,
+      2.6612262562697895,
+      4.152789263003677,
+      2.3158243335257076
+    ],
+    "ID_SOLUTIONS_AND_EXCHANGES": [
+      1.584962500721156,
+      3.2516291673878226,
+      3.0,
+      5.545713084249505,
+      2.0,
+      5.55703879623202,
+      4.258995786136859,
+      2.75,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      2.0,
+      2.0,
+      2.1556390622295662,
+      4.1038248697274735,
+      4.322054889288212,
+      3.986494186417733,
+      0.0,
+      0.0,
+      0.0,
+      5.548386577422042
+    ],
+    "INFRASTRUCTURE": [
+      2.4056390622295662,
+      2.75,
+      2.75,
+      2.75,
+      3.0
+    ],
+    "SECURITY_AND_BOT_MITIGATION": [
+      5.629470257171213,
+      5.7656423418167035,
+      5.813566252286397,
+      5.806145384894319,
+      5.698933531376794,
+      5.763074183924732,
+      3.719964304742391,
+      5.6325803787327615,
+      5.696435365186844,
+      5.643720666716124,
+      5.7446089977905235,
+      5.697813840288736,
+      5.877488801956983,
+      5.843344358165837,
+      5.704589229391162,
+      5.744563257313758,
+      5.645499068250953,
+      5.7073950362750745,
+      5.714854810844288,
+      5.779205734648339,
+      5.716781692499744,
+      5.709471830409215,
+      5.745471847602122,
+      5.689385946197313,
+      5.667623843436697,
+      5.733832849987835,
+      5.689648815434217,
+      5.745042027566847,
+      3.7199643047423914,
+      5.683209563951921,
+      5.701702327600286,
+      5.606990378771281,
+      5.545713084249505,
+      5.702550704169404,
+      5.740836528500601,
+      5.705530959047096,
+      5.65610455338301,
+      5.789551668942136,
+      5.656855886814017,
+      5.737885868078736,
+      5.60712427077306,
+      5.683079757173216,
+      5.78020940771477,
+      5.682595750307116,
+      5.745254194532199,
+      5.721158227587434,
+      5.733249719433632,
+      5.631824827825376,
+      5.769250566170126,
+      5.718837551390325,
+      3.731636328448893,
+      3.7582890779432674,
+      5.684763586309287,
+      5.722778925665125,
+      5.616033355136594,
+      5.796516505693846,
+      5.719333286214072,
+      5.746126085244778,
+      5.6445082903814106,
+      5.74208602636737,
+      5.630842630563635,
+      5.55703879623202,
+      5.720315483475814,
+      5.690536759461475,
+      5.794066852261614,
+      5.694066176232013,
+      5.706019333454134,
+      5.725161073833447,
+      3.951143017707788,
+      5.73955590845773,
+      5.772657840821193,
+      5.675704048905942,
+      5.731933545846537,
+      5.838332162645615,
+      5.772236780136213,
+      3.9604372921259596,
+      5.731337456078837,
+      5.782382114170565,
+      5.804850976094369,
+      5.754891285090065,
+      5.677503066520059,
+      5.660911896280423,
+      5.714901572724324,
+      5.6921263353630644,
+      5.73787207932166,
+      5.719624021947589,
+      5.6688632420853535,
+      5.720641483771098,
+      5.701329795081729,
+      5.598112416583847,
+      5.751564163545571,
+      5.749802642213045,
+      5.612274674603747,
+      5.7142341840084905,
+      5.695592621075221,
+      5.667221927507542,
+      5.750298993193662,
+      5.629294709915737,
+      5.635849979419664,
+      5.789985834449216,
+      5.827382497374513,
+      5.692566298039627,
+      5.775849428931038,
+      5.716216435925691,
+      5.734383199278769,
+      5.692220588597548,
+      5.779369787977472,
+      5.657273586772374,
+      5.628592215465945,
+      5.656302757981215,
+      5.729778750333822,
+      5.742260081257241,
+      5.733509332991049,
+      3.9128182445069126,
+      5.719853340357386,
+      5.701986961624337,
+      5.763867585735054,
+      5.714994804555536,
+      5.548386577422042,
+      5.6965720294695785,
+      5.769008686872662,
+      5.850582263609931,
+      5.800080429098778,
+      5.720119000976778,
+      5.7727386166694306,
+      5.726572330198609,
+      5.759042930620979,
+      5.764941536346348,
+      5.75840330571049,
+      3.8738784344259667,
+      5.762296739716386,
+      5.685475694098613,
+      5.5878094830232055,
+      5.803670180270826,
+      5.824577354614196,
+      5.7416048360952585,
+      5.8006614211654695,
+      5.738468169089358,
+      5.758814496402258,
+      3.8379314105134203,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "SENSITIVE_LOCATION_PII": [
+      1.0
+    ],
+    "SESSION_MANAGEMENT": [
+      3.4548223999466066,
+      5.14199033942929,
+      5.464284897764395,
+      5.0626670357301045,
+      5.076912611245745,
+      5.08055754073114,
+      4.97032952234647,
+      5.578511651974558,
+      4.8530559073332755,
+      5.074643999058278,
+      4.721928094887362,
+      5.087326748677102
+    ],
+    "TECHNICAL_PASSWORDS": [
+      0.0,
+      0.0,
+      3.719964304742391,
+      0.0,
+      0.0,
+      3.7199643047423914,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      3.731636328448893,
+      0.0,
+      3.7582890779432674,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      3.951143017707788,
+      3.9604372921259596,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      4.122530462709277,
+      3.9128182445069126,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      3.8738784344259667,
+      0.0,
+      3.8379314105134203
+    ],
+    "USER_PREFERENCES": [
+      0.9182958340544896,
+      0.0,
+      2.321928094887362,
+      1.584962500721156
+    ],
+    "UX_AND_PERFORMANCE_ANALYTICS": [
+      0.0,
+      0.0,
+      2.8655768552072485,
+      0.0,
+      3.2390795706241744,
+      0.0,
+      3.719964304742391,
+      5.549771659743818,
+      5.549771659743818,
+      0.0,
+      4.28716317775404,
+      5.14199033942929,
+      5.877488801956983,
+      0.0,
+      3.109275070710713,
+      4.3798429015438405,
+      0.0,
+      4.4066768125817655,
+      4.4066768125817655,
+      4.4066768125817655,
+      4.4066768125817655,
+      4.3798429015438405,
+      3.7199643047423914,
+      0.0,
+      5.464284897764395,
+      0.0,
+      3.1775662320965252,
+      4.380631000600122,
+      0.0,
+      0.0,
+      4.28716317775404,
+      5.0626670357301045,
+      3.731636328448893,
+      0.0,
+      3.974052812609055,
+      3.7582890779432674,
+      5.076912611245745,
+      4.3798429015438405,
+      4.27824999601453,
+      0.0,
+      0.0,
+      5.08055754073114,
+      4.28716317775404,
+      0.0,
+      4.97032952234647,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      5.578511651974558,
+      0.0,
+      2.94770277922009,
+      3.951143017707788,
+      4.824435630117524,
+      2.94770277922009,
+      2.75,
+      4.27824999601453,
+      2.75,
+      3.9604372921259596,
+      0.0,
+      0.0,
+      0.0,
+      2.75,
+      3.930416151741,
+      5.549771659743818,
+      5.549771659743818,
+      0.0,
+      4.886342527417368,
+      2.75,
+      0.0,
+      4.285533250556852,
+      3.8774437510817337,
+      0.0,
+      2.75,
+      0.0,
+      3.189529631552713,
+      2.751629167387823,
+      2.94770277922009,
+      4.8530559073332755,
+      0.0,
+      0.0,
+      0.0,
+      4.4066768125817655,
+      0.0,
+      4.4066768125817655,
+      4.4066768125817655,
+      4.372810402021882,
+      4.4066768125817655,
+      5.074643999058278,
+      0.0,
+      0.0,
+      0.0,
+      3.7317461816973854,
+      4.4066768125817655,
+      4.4066768125817655,
+      4.4066768125817655,
+      4.4066768125817655,
+      4.721928094887362,
+      5.5567970116206995,
+      5.5567970116206995,
+      4.122530462709277,
+      3.9128182445069126,
+      0.0,
+      0.0,
+      5.800080429098778,
+      3.327819531114783,
+      5.982202852287256,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      3.8738784344259667,
+      0.0,
+      2.75,
+      2.75,
+      4.285533250556852,
+      5.087326748677102,
+      0.0,
+      0.0,
+      0.0,
+      4.627643160149414,
+      3.27280432733462,
+      4.63770425022726,
+      2.8553885422075336,
+      0.0,
+      5.803670180270826,
+      0.0,
+      3.931324965009473,
+      3.8379314105134203
+    ]
+  },
+  "advanced_risk_levels": {
+    "Low": 293,
+    "High": 123,
+    "Medium": 133
+  }
+}

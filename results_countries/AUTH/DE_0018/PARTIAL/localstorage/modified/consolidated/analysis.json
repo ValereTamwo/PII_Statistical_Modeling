@@ -7,18 +7,18 @@
     "unknown": 1,
     "APP_STATE_STORAGE": 18,
     "BEHAVIORAL_DATA": 54,
-    "CONSENT_AND_PRIVACY": 20,
-    "DEVICE_ENV": 5,
+    "CONSENT_AND_PRIVACY": 22,
+    "DEVICE_ENV": 3,
     "DIRECT_PII_KEYS": 3,
-    "IDENTITY_TRACKING": 74,
+    "IDENTITY_TRACKING": 75,
     "ID_SOLUTIONS_AND_EXCHANGES": 66,
-    "INFRASTRUCTURE": 1,
+    "INFRASTRUCTURE": 2,
     "LOCATION_AND_DEMOGRAPHICS": 4,
     "NAVIGATION_HISTORY": 9,
     "SECURITY_AND_BOT_MITIGATION": 4,
     "SESSION_MANAGEMENT": 7,
     "TECHNICAL_PASSWORDS": 19,
-    "USER_PREFERENCES": 5,
+    "USER_PREFERENCES": 3,
     "UX_AND_PERFORMANCE_ANALYTICS": 56
   },
   "pii_by_category": {
@@ -32,22 +32,22 @@
       "BEHAVIORAL_DATA": 54
     },
     "CONSENT_AND_PRIVACY": {
-      "CONSENT_AND_PRIVACY": 20
+      "CONSENT_AND_PRIVACY": 22
     },
     "DEVICE_ENV": {
-      "DEVICE_ENV": 5
+      "DEVICE_ENV": 3
     },
     "DIRECT_PII_KEYS": {
       "DIRECT_PII_KEYS": 3
     },
     "IDENTITY_TRACKING": {
-      "IDENTITY_TRACKING": 74
+      "IDENTITY_TRACKING": 75
     },
     "ID_SOLUTIONS_AND_EXCHANGES": {
       "ID_SOLUTIONS_AND_EXCHANGES": 66
     },
     "INFRASTRUCTURE": {
-      "INFRASTRUCTURE": 1
+      "INFRASTRUCTURE": 2
     },
     "LOCATION_AND_DEMOGRAPHICS": {
       "LOCATION_AND_DEMOGRAPHICS": 4
@@ -65,7 +65,7 @@
       "TECHNICAL_PASSWORDS": 19
     },
     "USER_PREFERENCES": {
-      "USER_PREFERENCES": 5
+      "USER_PREFERENCES": 3
     },
     "UX_AND_PERFORMANCE_ANALYTICS": {
       "UX_AND_PERFORMANCE_ANALYTICS": 56
@@ -85,22 +85,22 @@
       "Persistent": 54
     },
     "CONSENT_AND_PRIVACY": {
-      "Persistent": 20
+      "Persistent": 22
     },
     "DEVICE_ENV": {
-      "Persistent": 5
+      "Persistent": 3
     },
     "DIRECT_PII_KEYS": {
       "Persistent": 3
     },
     "IDENTITY_TRACKING": {
-      "Persistent": 74
+      "Persistent": 75
     },
     "ID_SOLUTIONS_AND_EXCHANGES": {
       "Persistent": 66
     },
     "INFRASTRUCTURE": {
-      "Persistent": 1
+      "Persistent": 2
     },
     "LOCATION_AND_DEMOGRAPHICS": {
       "Persistent": 4
@@ -118,7 +118,7 @@
       "Persistent": 19
     },
     "USER_PREFERENCES": {
-      "Persistent": 5
+      "Persistent": 3
     },
     "UX_AND_PERFORMANCE_ANALYTICS": {
       "Persistent": 56
@@ -141,14 +141,14 @@
       "count": 54
     },
     "CONSENT_AND_PRIVACY": {
-      "total": 88418,
-      "average": 4420.9,
-      "count": 20
+      "total": 90035,
+      "average": 4092.5,
+      "count": 22
     },
     "DEVICE_ENV": {
-      "total": 6897,
-      "average": 1379.4,
-      "count": 5
+      "total": 6246,
+      "average": 2082.0,
+      "count": 3
     },
     "DIRECT_PII_KEYS": {
       "total": 32050,
@@ -156,9 +156,9 @@
       "count": 3
     },
     "IDENTITY_TRACKING": {
-      "total": 134619,
-      "average": 1819.1756756756756,
-      "count": 74
+      "total": 134731,
+      "average": 1796.4133333333334,
+      "count": 75
     },
     "ID_SOLUTIONS_AND_EXCHANGES": {
       "total": 132324,
@@ -167,8 +167,8 @@
     },
     "INFRASTRUCTURE": {
       "total": 2669,
-      "average": 2669.0,
-      "count": 1
+      "average": 1334.5,
+      "count": 2
     },
     "LOCATION_AND_DEMOGRAPHICS": {
       "total": 88540,
@@ -196,9 +196,9 @@
       "count": 19
     },
     "USER_PREFERENCES": {
-      "total": 1768,
-      "average": 353.6,
-      "count": 5
+      "total": 151,
+      "average": 50.333333333333336,
+      "count": 3
     },
     "UX_AND_PERFORMANCE_ANALYTICS": {
       "total": 208487,
@@ -211,10 +211,10 @@
       "unknown": 1,
       "APP_STATE_STORAGE": 11,
       "BEHAVIORAL_DATA": 42,
-      "CONSENT_AND_PRIVACY": 9,
-      "DEVICE_ENV": 5,
+      "CONSENT_AND_PRIVACY": 10,
+      "DEVICE_ENV": 3,
       "DIRECT_PII_KEYS": 3,
-      "IDENTITY_TRACKING": 36,
+      "IDENTITY_TRACKING": 37,
       "ID_SOLUTIONS_AND_EXCHANGES": 34,
       "INFRASTRUCTURE": 1,
       "LOCATION_AND_DEMOGRAPHICS": 3,
@@ -222,7 +222,7 @@
       "SECURITY_AND_BOT_MITIGATION": 4,
       "SESSION_MANAGEMENT": 7,
       "TECHNICAL_PASSWORDS": 6,
-      "USER_PREFERENCES": 2,
+      "USER_PREFERENCES": 1,
       "UX_AND_PERFORMANCE_ANALYTICS": 51
     },
     "complex_string": {
@@ -254,6 +254,10 @@
       "IDENTITY_TRACKING": 3,
       "USER_PREFERENCES": 1
     },
+    "short_text": {
+      "CONSENT_AND_PRIVACY": 1,
+      "USER_PREFERENCES": 1
+    },
     "timestamp": {
       "IDENTITY_TRACKING": 1,
       "UX_AND_PERFORMANCE_ANALYTICS": 1
@@ -266,20 +270,21 @@
       "ID_SOLUTIONS_AND_EXCHANGES": 15,
       "TECHNICAL_PASSWORDS": 4
     },
-    "short_text": {
-      "USER_PREFERENCES": 2
+    "empty": {
+      "INFRASTRUCTURE": 1
     }
   },
   "content_types": {
-    "json_structured": 221,
+    "json_structured": 220,
     "complex_string": 66,
     "language_code": 2,
     "number": 24,
     "boolean": 6,
+    "short_text": 2,
     "timestamp": 2,
     "uuid": 2,
     "token_id": 21,
-    "short_text": 2
+    "empty": 1
   },
   "vendor_counts": {
     "asphaltgold.com": 17,
@@ -307,15 +312,16 @@
     "running-point.de": 6,
     "rblive.de": 4,
     "proplanta.de": 3,
-    "fresco.dog": 4,
     "duschmeister.de": 6,
     "barcanews.org": 3,
     "jack-wolfskin.de": 5,
+    "fresco.dog": 3,
     "shirtinator.de": 1,
     "purina.de": 2,
     "technikboerse.com": 4,
     "gudrunsjoden.com": 2,
     "evlfans.de": 1,
+    "wirkaufendeinauto.de": 1,
     "zaunfuchs.de": 1,
     "sprade.tv": 1,
     "flixbus.com": 1,
@@ -500,7 +506,7 @@
     [
       "CONSENT_AND_PRIVACY",
       "sportpirate.com",
-      1
+      3
     ],
     [
       "CONSENT_AND_PRIVACY",
@@ -521,16 +527,6 @@
       "DEVICE_ENV",
       "fck.de",
       2
-    ],
-    [
-      "DEVICE_ENV",
-      "fresco.dog",
-      1
-    ],
-    [
-      "DEVICE_ENV",
-      "sportpirate.com",
-      1
     ],
     [
       "DIRECT_PII_KEYS",
@@ -655,7 +651,7 @@
     [
       "IDENTITY_TRACKING",
       "sportpirate.com",
-      2
+      3
     ],
     [
       "ID_SOLUTIONS_AND_EXCHANGES",
@@ -740,6 +736,11 @@
     [
       "INFRASTRUCTURE",
       "michaelkors.de",
+      1
+    ],
+    [
+      "INFRASTRUCTURE",
+      "wirkaufendeinauto.de",
       1
     ],
     [
@@ -841,11 +842,6 @@
       "USER_PREFERENCES",
       "zaunfuchs.de",
       1
-    ],
-    [
-      "USER_PREFERENCES",
-      "sportpirate.com",
-      2
     ],
     [
       "USER_PREFERENCES",
@@ -1083,14 +1079,14 @@
       5.896299472709726,
       3.8369589098021653,
       2.5654483718208256,
-      4.733218855865124
+      4.733218855865124,
+      3.2155850979024048,
+      0.9182958340544896
     ],
     "DEVICE_ENV": [
       5.839272929352011,
       4.827186908808021,
-      4.827141612924964,
-      4.919684084356513,
-      4.772127887591157
+      4.827141612924964
     ],
     "DIRECT_PII_KEYS": [
       5.839272929352011,
@@ -1164,6 +1160,7 @@
       3.8538632199977876,
       4.142982528872494,
       3.617861029749889,
+      4.772127887591157,
       5.569571633817964,
       3.3927474104487847,
       3.9748899442849237,
@@ -1242,7 +1239,8 @@
       5.068860948122781
     ],
     "INFRASTRUCTURE": [
-      4.970490825255594
+      4.970490825255594,
+      0.0
     ],
     "LOCATION_AND_DEMOGRAPHICS": [
       4.382648958307839,
@@ -1299,8 +1297,6 @@
     ],
     "USER_PREFERENCES": [
       4.718880893691921,
-      3.2155850979024048,
-      0.9182958340544896,
       2.503258334775646,
       2.0
     ],
@@ -1364,8 +1360,8 @@
     ]
   },
   "risk_levels": {
-    "High Risk": 141,
-    "Medium Risk": 205
+    "High Risk": 142,
+    "Medium Risk": 204
   },
   "risk_by_pii": {
     "unknown": {
@@ -1378,22 +1374,22 @@
       "Medium Risk": 54
     },
     "CONSENT_AND_PRIVACY": {
-      "Medium Risk": 20
+      "Medium Risk": 22
     },
     "DEVICE_ENV": {
-      "Medium Risk": 5
+      "Medium Risk": 3
     },
     "DIRECT_PII_KEYS": {
       "Medium Risk": 3
     },
     "IDENTITY_TRACKING": {
-      "High Risk": 74
+      "High Risk": 75
     },
     "ID_SOLUTIONS_AND_EXCHANGES": {
       "High Risk": 66
     },
     "INFRASTRUCTURE": {
-      "Medium Risk": 1
+      "Medium Risk": 2
     },
     "LOCATION_AND_DEMOGRAPHICS": {
       "Medium Risk": 4
@@ -1411,7 +1407,7 @@
       "Medium Risk": 19
     },
     "USER_PREFERENCES": {
-      "Medium Risk": 5
+      "Medium Risk": 3
     },
     "UX_AND_PERFORMANCE_ANALYTICS": {
       "Medium Risk": 56

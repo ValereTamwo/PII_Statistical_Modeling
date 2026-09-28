@@ -353,15 +353,9 @@ def _summarize_robustness(results: dict) -> dict:
     return summary
 
 
-# ════════════════════════════════════════════════════════════
-# TIER MAP AUDIT — verify TIER_MAP coherence with baseline Z^(0)
-# ════════════════════════════════════════════════════════════
 
 def audit_tier_map() -> dict:
-    """
-    For each cell, verify that the baseline value lies within the tier's
-    admissible set Z(t). Reports any inconsistency.
-    """
+
     admissible = {
         'A': lambda v: v == 0.0,
         'W': lambda v: 0.1 <= v <= 0.3,

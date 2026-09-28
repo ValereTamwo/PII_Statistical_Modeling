@@ -1,12 +1,11 @@
 {
   "storage_type": "sessionstorage",
-  "total_items": 28,
+  "total_items": 25,
   "direct_pii_count": 0,
-  "other_count": 28,
+  "other_count": 25,
   "pii_distribution": {
     "BEHAVIORAL_DATA": 4,
     "CONSENT_AND_PRIVACY": 1,
-    "DEVICE_ENV": 3,
     "IDENTITY_TRACKING": 9,
     "ID_SOLUTIONS_AND_EXCHANGES": 3,
     "LOCATION_AND_DEMOGRAPHICS": 3,
@@ -20,9 +19,6 @@
     },
     "CONSENT_AND_PRIVACY": {
       "CONSENT_AND_PRIVACY": 1
-    },
-    "DEVICE_ENV": {
-      "DEVICE_ENV": 3
     },
     "IDENTITY_TRACKING": {
       "IDENTITY_TRACKING": 9
@@ -44,7 +40,7 @@
     }
   },
   "persistence_distribution": {
-    "Session": 28
+    "Session": 25
   },
   "persistence_by_pii": {
     "BEHAVIORAL_DATA": {
@@ -52,9 +48,6 @@
     },
     "CONSENT_AND_PRIVACY": {
       "Session": 1
-    },
-    "DEVICE_ENV": {
-      "Session": 3
     },
     "IDENTITY_TRACKING": {
       "Session": 9
@@ -85,11 +78,6 @@
       "total": 4,
       "average": 4.0,
       "count": 1
-    },
-    "DEVICE_ENV": {
-      "total": 3145,
-      "average": 1048.3333333333333,
-      "count": 3
     },
     "IDENTITY_TRACKING": {
       "total": 3715,
@@ -125,7 +113,6 @@
   "content_hierarchy": {
     "json_structured": {
       "BEHAVIORAL_DATA": 3,
-      "DEVICE_ENV": 3,
       "IDENTITY_TRACKING": 8,
       "ID_SOLUTIONS_AND_EXCHANGES": 3,
       "LOCATION_AND_DEMOGRAPHICS": 3,
@@ -148,7 +135,7 @@
     }
   },
   "content_types": {
-    "json_structured": 23,
+    "json_structured": 20,
     "number": 1,
     "boolean": 1,
     "short_text": 1,
@@ -158,9 +145,9 @@
   "vendor_counts": {
     "burnhard.de": 2,
     "shopdisney.de": 1,
-    "vidaxl.de": 7,
+    "vidaxl.de": 6,
     "nuerburgring.de": 1,
-    "skechers.de": 12,
+    "skechers.de": 10,
     "cocooncenter.de": 1,
     "bfv.de": 2,
     "vfb.de": 1,
@@ -185,16 +172,6 @@
     [
       "CONSENT_AND_PRIVACY",
       "nuerburgring.de",
-      1
-    ],
-    [
-      "DEVICE_ENV",
-      "skechers.de",
-      2
-    ],
-    [
-      "DEVICE_ENV",
-      "vidaxl.de",
       1
     ],
     [
@@ -268,11 +245,6 @@
     "CONSENT_AND_PRIVACY": [
       2.0
     ],
-    "DEVICE_ENV": [
-      4.347859083465824,
-      4.657207120318829,
-      4.345848612736709
-    ],
     "IDENTITY_TRACKING": [
       4.347859083465824,
       4.657207120318829,
@@ -308,7 +280,7 @@
   },
   "risk_levels": {
     "Medium Risk": 6,
-    "Low Risk": 10,
+    "Low Risk": 7,
     "High Risk": 12
   },
   "risk_by_pii": {
@@ -317,9 +289,6 @@
     },
     "CONSENT_AND_PRIVACY": {
       "Low Risk": 1
-    },
-    "DEVICE_ENV": {
-      "Low Risk": 3
     },
     "IDENTITY_TRACKING": {
       "High Risk": 9

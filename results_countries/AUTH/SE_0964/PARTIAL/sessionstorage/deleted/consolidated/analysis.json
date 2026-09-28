@@ -1,15 +1,15 @@
 {
   "storage_type": "sessionstorage",
-  "total_items": 133,
+  "total_items": 137,
   "direct_pii_count": 0,
-  "other_count": 133,
+  "other_count": 137,
   "pii_distribution": {
     "APP_STATE_STORAGE": 9,
-    "BEHAVIORAL_DATA": 18,
+    "BEHAVIORAL_DATA": 20,
     "CONSENT_AND_PRIVACY": 2,
     "DEVICE_ENV": 5,
     "DIRECT_PII_KEYS": 3,
-    "IDENTITY_TRACKING": 26,
+    "IDENTITY_TRACKING": 28,
     "ID_SOLUTIONS_AND_EXCHANGES": 11,
     "INFRASTRUCTURE": 1,
     "LOCATION_AND_DEMOGRAPHICS": 3,
@@ -25,7 +25,7 @@
       "APP_STATE_STORAGE": 9
     },
     "BEHAVIORAL_DATA": {
-      "BEHAVIORAL_DATA": 18
+      "BEHAVIORAL_DATA": 20
     },
     "CONSENT_AND_PRIVACY": {
       "CONSENT_AND_PRIVACY": 2
@@ -37,7 +37,7 @@
       "DIRECT_PII_KEYS": 3
     },
     "IDENTITY_TRACKING": {
-      "IDENTITY_TRACKING": 26
+      "IDENTITY_TRACKING": 28
     },
     "ID_SOLUTIONS_AND_EXCHANGES": {
       "ID_SOLUTIONS_AND_EXCHANGES": 11
@@ -68,14 +68,14 @@
     }
   },
   "persistence_distribution": {
-    "Session": 133
+    "Session": 137
   },
   "persistence_by_pii": {
     "APP_STATE_STORAGE": {
       "Session": 9
     },
     "BEHAVIORAL_DATA": {
-      "Session": 18
+      "Session": 20
     },
     "CONSENT_AND_PRIVACY": {
       "Session": 2
@@ -87,7 +87,7 @@
       "Session": 3
     },
     "IDENTITY_TRACKING": {
-      "Session": 26
+      "Session": 28
     },
     "ID_SOLUTIONS_AND_EXCHANGES": {
       "Session": 11
@@ -124,9 +124,9 @@
       "count": 9
     },
     "BEHAVIORAL_DATA": {
-      "total": 11860,
-      "average": 658.8888888888889,
-      "count": 18
+      "total": 11864,
+      "average": 593.2,
+      "count": 20
     },
     "CONSENT_AND_PRIVACY": {
       "total": 3117,
@@ -144,9 +144,9 @@
       "count": 3
     },
     "IDENTITY_TRACKING": {
-      "total": 18949,
-      "average": 728.8076923076923,
-      "count": 26
+      "total": 18957,
+      "average": 677.0357142857143,
+      "count": 28
     },
     "ID_SOLUTIONS_AND_EXCHANGES": {
       "total": 7844,
@@ -197,7 +197,7 @@
   "content_hierarchy": {
     "json_structured": {
       "APP_STATE_STORAGE": 9,
-      "BEHAVIORAL_DATA": 17,
+      "BEHAVIORAL_DATA": 19,
       "CONSENT_AND_PRIVACY": 1,
       "DEVICE_ENV": 2,
       "DIRECT_PII_KEYS": 3,
@@ -213,6 +213,7 @@
     },
     "boolean": {
       "BEHAVIORAL_DATA": 1,
+      "IDENTITY_TRACKING": 2,
       "UX_AND_PERFORMANCE_ANALYTICS": 2
     },
     "complex_string": {
@@ -244,8 +245,8 @@
     }
   },
   "content_types": {
-    "json_structured": 94,
-    "boolean": 3,
+    "json_structured": 96,
+    "boolean": 5,
     "complex_string": 13,
     "uuid": 14,
     "empty": 6,
@@ -256,15 +257,15 @@
     "expo.se": 6,
     "skolon.com": 6,
     "temadagar.se": 6,
+    "sysav.se": 7,
     "trygghansa.se": 18,
     "bilsportmc.se": 6,
     "axa.se": 2,
     "saco.se": 2,
     "skk.se": 6,
     "gooya.com": 26,
-    "sysav.se": 5,
-    "jobtome.com": 1,
-    "kalender.se": 5,
+    "jobtome.com": 2,
+    "kalender.se": 6,
     "manpower.se": 21,
     "artportalen.se": 12,
     "webforum.com": 2,
@@ -303,6 +304,11 @@
       "BEHAVIORAL_DATA",
       "temadagar.se",
       3
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "sysav.se",
+      2
     ],
     [
       "BEHAVIORAL_DATA",
@@ -411,8 +417,13 @@
     ],
     [
       "IDENTITY_TRACKING",
-      "kalender.se",
+      "jobtome.com",
       1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "kalender.se",
+      2
     ],
     [
       "ID_SOLUTIONS_AND_EXCHANGES",
@@ -572,6 +583,8 @@
       4.502876282202619,
       4.560019139345476,
       4.560019139345476,
+      1.0,
+      1.0,
       5.485631675716167,
       1.0,
       5.236811933825561,
@@ -623,6 +636,8 @@
       5.325098252723428,
       5.467314527747109,
       4.983924818167107,
+      2.0,
+      2.0,
       3.9251732369569954,
       5.068755383176422
     ],
@@ -717,15 +732,15 @@
   },
   "risk_levels": {
     "Low Risk": 31,
-    "Medium Risk": 65,
-    "High Risk": 37
+    "Medium Risk": 67,
+    "High Risk": 39
   },
   "risk_by_pii": {
     "APP_STATE_STORAGE": {
       "Low Risk": 9
     },
     "BEHAVIORAL_DATA": {
-      "Medium Risk": 18
+      "Medium Risk": 20
     },
     "CONSENT_AND_PRIVACY": {
       "Low Risk": 2
@@ -737,7 +752,7 @@
       "Low Risk": 3
     },
     "IDENTITY_TRACKING": {
-      "High Risk": 26
+      "High Risk": 28
     },
     "ID_SOLUTIONS_AND_EXCHANGES": {
       "High Risk": 11

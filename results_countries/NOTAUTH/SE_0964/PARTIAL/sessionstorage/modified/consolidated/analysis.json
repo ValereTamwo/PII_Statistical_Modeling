@@ -4,10 +4,10 @@
   "direct_pii_count": 0,
   "other_count": 64,
   "pii_distribution": {
-    "BEHAVIORAL_DATA": 13,
+    "BEHAVIORAL_DATA": 5,
     "DEVICE_ENV": 3,
     "DIRECT_PII_KEYS": 4,
-    "IDENTITY_TRACKING": 16,
+    "IDENTITY_TRACKING": 24,
     "ID_SOLUTIONS_AND_EXCHANGES": 11,
     "LOCATION_AND_DEMOGRAPHICS": 4,
     "NAVIGATION_HISTORY": 8,
@@ -17,7 +17,7 @@
   },
   "pii_by_category": {
     "BEHAVIORAL_DATA": {
-      "BEHAVIORAL_DATA": 13
+      "BEHAVIORAL_DATA": 5
     },
     "DEVICE_ENV": {
       "DEVICE_ENV": 3
@@ -26,7 +26,7 @@
       "DIRECT_PII_KEYS": 4
     },
     "IDENTITY_TRACKING": {
-      "IDENTITY_TRACKING": 16
+      "IDENTITY_TRACKING": 24
     },
     "ID_SOLUTIONS_AND_EXCHANGES": {
       "ID_SOLUTIONS_AND_EXCHANGES": 11
@@ -52,7 +52,7 @@
   },
   "persistence_by_pii": {
     "BEHAVIORAL_DATA": {
-      "Session": 13
+      "Session": 5
     },
     "DEVICE_ENV": {
       "Session": 3
@@ -61,7 +61,7 @@
       "Session": 4
     },
     "IDENTITY_TRACKING": {
-      "Session": 16
+      "Session": 24
     },
     "ID_SOLUTIONS_AND_EXCHANGES": {
       "Session": 11
@@ -84,9 +84,9 @@
   },
   "size_by_pii": {
     "BEHAVIORAL_DATA": {
-      "total": 3117,
-      "average": 239.76923076923077,
-      "count": 13
+      "total": 92,
+      "average": 18.4,
+      "count": 5
     },
     "DEVICE_ENV": {
       "total": 270,
@@ -99,9 +99,9 @@
       "count": 4
     },
     "IDENTITY_TRACKING": {
-      "total": 7290,
-      "average": 455.625,
-      "count": 16
+      "total": 10315,
+      "average": 429.7916666666667,
+      "count": 24
     },
     "ID_SOLUTIONS_AND_EXCHANGES": {
       "total": 5803,
@@ -146,10 +146,9 @@
       "USER_PREFERENCES": 1
     },
     "json_structured": {
-      "BEHAVIORAL_DATA": 8,
       "DEVICE_ENV": 3,
       "DIRECT_PII_KEYS": 4,
-      "IDENTITY_TRACKING": 14,
+      "IDENTITY_TRACKING": 22,
       "ID_SOLUTIONS_AND_EXCHANGES": 11,
       "LOCATION_AND_DEMOGRAPHICS": 4,
       "NAVIGATION_HISTORY": 6,
@@ -169,18 +168,18 @@
   "vendor_counts": {
     "thatsup.se": 3,
     "gjensidige.se": 8,
-    "bokio.se": 3,
-    "bilsportmc.se": 1,
-    "saco.se": 3,
-    "rodakorset.se": 1,
-    "axa.se": 1,
-    "trygghansa.se": 8,
     "jobtome.com": 3,
     "manpower.se": 15,
     "sensorforsakring.se": 2,
     "artportalen.se": 6,
+    "trygghansa.se": 8,
+    "bokio.se": 3,
+    "saco.se": 3,
     "sverigeforunhcr.se": 1,
     "skk.se": 2,
+    "bilsportmc.se": 1,
+    "rodakorset.se": 1,
+    "axa.se": 1,
     "servicefinder.se": 3,
     "randstad.se": 3,
     "slu.se": 1
@@ -194,36 +193,6 @@
     [
       "BEHAVIORAL_DATA",
       "gjensidige.se",
-      2
-    ],
-    [
-      "BEHAVIORAL_DATA",
-      "bokio.se",
-      2
-    ],
-    [
-      "BEHAVIORAL_DATA",
-      "bilsportmc.se",
-      1
-    ],
-    [
-      "BEHAVIORAL_DATA",
-      "saco.se",
-      1
-    ],
-    [
-      "BEHAVIORAL_DATA",
-      "rodakorset.se",
-      1
-    ],
-    [
-      "BEHAVIORAL_DATA",
-      "axa.se",
-      1
-    ],
-    [
-      "BEHAVIORAL_DATA",
-      "trygghansa.se",
       2
     ],
     [
@@ -259,17 +228,17 @@
     [
       "IDENTITY_TRACKING",
       "trygghansa.se",
-      2
+      4
     ],
     [
       "IDENTITY_TRACKING",
       "bokio.se",
-      1
+      3
     ],
     [
       "IDENTITY_TRACKING",
       "saco.se",
-      2
+      3
     ],
     [
       "IDENTITY_TRACKING",
@@ -280,6 +249,21 @@
       "IDENTITY_TRACKING",
       "skk.se",
       2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "bilsportmc.se",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "rodakorset.se",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "axa.se",
+      1
     ],
     [
       "ID_SOLUTIONS_AND_EXCHANGES",
@@ -348,15 +332,7 @@
       3.5535088547976783,
       3.121928094887362,
       3.5739348962840563,
-      5.137797564147446,
-      5.179359933735739,
-      1.0,
-      1.0,
-      3.321928094887362,
-      1.0,
-      1.0,
-      1.0,
-      5.477756893325151
+      3.321928094887362
     ],
     "DEVICE_ENV": [
       4.242311535860571,
@@ -385,7 +361,15 @@
       5.230598648500488,
       1.0,
       1.0,
-      1.0
+      1.0,
+      5.137797564147446,
+      5.179359933735739,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      5.477756893325151
     ],
     "ID_SOLUTIONS_AND_EXCHANGES": [
       4.977663322762326,
@@ -429,13 +413,13 @@
     ]
   },
   "risk_levels": {
-    "Medium Risk": 25,
+    "Medium Risk": 17,
     "Low Risk": 12,
-    "High Risk": 27
+    "High Risk": 35
   },
   "risk_by_pii": {
     "BEHAVIORAL_DATA": {
-      "Medium Risk": 13
+      "Medium Risk": 5
     },
     "DEVICE_ENV": {
       "Low Risk": 3
@@ -444,7 +428,7 @@
       "Low Risk": 4
     },
     "IDENTITY_TRACKING": {
-      "High Risk": 16
+      "High Risk": 24
     },
     "ID_SOLUTIONS_AND_EXCHANGES": {
       "High Risk": 11

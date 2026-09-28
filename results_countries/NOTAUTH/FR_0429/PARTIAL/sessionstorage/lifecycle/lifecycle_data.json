@@ -1,0 +1,198 @@
+{
+  "storage_type": "sessionstorage",
+  "metrics": {
+    "total_items": 109,
+    "items_modified": 44,
+    "items_deleted": 15,
+    "entropy_increases": 14,
+    "entropy_decreases": 24,
+    "size_increases": 10,
+    "size_decreases": 12,
+    "pii_transitions": {
+      "APP_STATE_STORAGE -> UX_AND_PERFORMANCE_ANALYTICS": 6,
+      "DIRECT_PII_KEYS -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "IDENTITY_TRACKING -> UX_AND_PERFORMANCE_ANALYTICS": 7,
+      "IDENTITY_TRACKING -> SESSION_MANAGEMENT": 1,
+      "APP_STATE_STORAGE -> BEHAVIORAL_DATA": 1,
+      "IDENTITY_TRACKING -> ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "IDENTITY_TRACKING -> NAVIGATION_HISTORY": 1,
+      "ID_SOLUTIONS_AND_EXCHANGES -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "ID_SOLUTIONS_AND_EXCHANGES -> SECURITY_AND_BOT_MITIGATION": 2,
+      "APP_STATE_STORAGE -> USER_PREFERENCES": 2,
+      "NAVIGATION_HISTORY -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "SESSION_MANAGEMENT -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "DIRECT_PII -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "BEHAVIORAL_DATA -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "IDENTITY_TRACKING -> TECHNICAL_PASSWORDS": 1
+    },
+    "volatility_distribution": {
+      "stable": 57,
+      "high": 28,
+      "moderate": 24
+    },
+    "change_frequency": {
+      "avg_gap": 40.60117302052786,
+      "min_gap": 0,
+      "max_gap": 369
+    },
+    "frequent_changes": [
+      {
+        "key": "wpEmojiSettingsSupports",
+        "avg_gap": 0.0,
+        "num_modifications": 2,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "AMP_URL_INFO",
+        "avg_gap": 0.0,
+        "num_modifications": 2,
+        "pii_category": "NAVIGATION_HISTORY"
+      },
+      {
+        "key": "4-fr_FR",
+        "avg_gap": 0.0,
+        "num_modifications": 11,
+        "pii_category": "USER_PREFERENCES"
+      },
+      {
+        "key": "ph_phc_nQp2LHBNr2FYxDzLpDmYVN7NraM2gjPZJtUTnSgCbX4L_session_registered_properties",
+        "avg_gap": 0.0,
+        "num_modifications": 2,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "hbdbrk-ttl",
+        "avg_gap": 5.0,
+        "num_modifications": 1,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "tt_pixel_session_index",
+        "avg_gap": 8.560975609756097,
+        "num_modifications": 33,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "ph_phc_nQp2LHBNr2FYxDzLpDmYVN7NraM2gjPZJtUTnSgCbX4L_posthog",
+        "avg_gap": 12.666666666666666,
+        "num_modifications": 13,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "tt_sessionId",
+        "avg_gap": 14.285714285714286,
+        "num_modifications": 6,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "vuex",
+        "avg_gap": 16.956521739130434,
+        "num_modifications": 24,
+        "pii_category": "USER_PREFERENCES"
+      },
+      {
+        "key": "ABTastySessionHitHistory",
+        "avg_gap": 19.0,
+        "num_modifications": 1,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "___nrbic",
+        "avg_gap": 21.416666666666668,
+        "num_modifications": 9,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "mopDeploy",
+        "avg_gap": 24.1,
+        "num_modifications": 6,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "ABT_IS_DATALAYER_CHECKED",
+        "avg_gap": 27.6,
+        "num_modifications": 2,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "_shs_state",
+        "avg_gap": 28.545454545454547,
+        "num_modifications": 12,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "arTimestamps",
+        "avg_gap": 37.63636363636363,
+        "num_modifications": 6,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "mcssids",
+        "avg_gap": 41.714285714285715,
+        "num_modifications": 5,
+        "pii_category": "IDENTITY_TRACKING"
+      },
+      {
+        "key": "ZD-suid",
+        "avg_gap": 44.714285714285715,
+        "num_modifications": 6,
+        "pii_category": "ID_SOLUTIONS_AND_EXCHANGES"
+      }
+    ],
+    "url_modifications": {
+      "www.aufeminin.com": 29,
+      "simple-life-app.com": 27,
+      "onboarding.brevo.com": 20,
+      "www.croq-kilos.com": 18,
+      "www.votreopinion.fr": 11,
+      "www.terravita.fr": 9,
+      "login.brevo.com": 9,
+      "www.soshape.com": 7,
+      "www.gentside.com": 7,
+      "support.decathlon.fr": 6
+    },
+    "pii_modification_patterns": {
+      "UX_AND_PERFORMANCE_ANALYTICS": {
+        "count": 96,
+        "avg_gap": 22.294117647058822
+      },
+      "BEHAVIORAL_DATA": {
+        "count": 51,
+        "avg_gap": 88.875
+      },
+      "SESSION_MANAGEMENT": {
+        "count": 6,
+        "avg_gap": 55.2
+      },
+      "ID_SOLUTIONS_AND_EXCHANGES": {
+        "count": 6,
+        "avg_gap": 44.714285714285715
+      },
+      "IDENTITY_TRACKING": {
+        "count": 15,
+        "avg_gap": 76.29411764705883
+      },
+      "NAVIGATION_HISTORY": {
+        "count": 2,
+        "avg_gap": 0.0
+      },
+      "USER_PREFERENCES": {
+        "count": 35,
+        "avg_gap": 11.818181818181818
+      },
+      "SECURITY_AND_BOT_MITIGATION": {
+        "count": 2,
+        "avg_gap": 97.33333333333333
+      },
+      "CONSENT_AND_PRIVACY": {
+        "count": 2,
+        "avg_gap": 79.0
+      },
+      "LOCATION_AND_DEMOGRAPHICS": {
+        "count": 1,
+        "avg_gap": 0
+      }
+    }
+  },
+  "num_timelines": 109
+}

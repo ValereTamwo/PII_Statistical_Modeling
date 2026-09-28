@@ -5,9 +5,9 @@
   "other_count": 155,
   "pii_distribution": {
     "APP_STATE_STORAGE": 8,
-    "BEHAVIORAL_DATA": 35,
+    "BEHAVIORAL_DATA": 37,
     "CONSENT_AND_PRIVACY": 1,
-    "DEVICE_ENV": 8,
+    "DEVICE_ENV": 6,
     "DIRECT_PII_KEYS": 3,
     "IDENTITY_TRACKING": 30,
     "ID_SOLUTIONS_AND_EXCHANGES": 17,
@@ -25,13 +25,13 @@
       "APP_STATE_STORAGE": 8
     },
     "BEHAVIORAL_DATA": {
-      "BEHAVIORAL_DATA": 35
+      "BEHAVIORAL_DATA": 37
     },
     "CONSENT_AND_PRIVACY": {
       "CONSENT_AND_PRIVACY": 1
     },
     "DEVICE_ENV": {
-      "DEVICE_ENV": 8
+      "DEVICE_ENV": 6
     },
     "DIRECT_PII_KEYS": {
       "DIRECT_PII_KEYS": 3
@@ -75,13 +75,13 @@
       "Session": 8
     },
     "BEHAVIORAL_DATA": {
-      "Session": 35
+      "Session": 37
     },
     "CONSENT_AND_PRIVACY": {
       "Session": 1
     },
     "DEVICE_ENV": {
-      "Session": 8
+      "Session": 6
     },
     "DIRECT_PII_KEYS": {
       "Session": 3
@@ -124,9 +124,9 @@
       "count": 8
     },
     "BEHAVIORAL_DATA": {
-      "total": 627,
-      "average": 17.914285714285715,
-      "count": 35
+      "total": 633,
+      "average": 17.10810810810811,
+      "count": 37
     },
     "CONSENT_AND_PRIVACY": {
       "total": 7165,
@@ -134,9 +134,9 @@
       "count": 1
     },
     "DEVICE_ENV": {
-      "total": 14370,
-      "average": 1796.25,
-      "count": 8
+      "total": 1564,
+      "average": 260.6666666666667,
+      "count": 6
     },
     "DIRECT_PII_KEYS": {
       "total": 572322,
@@ -197,9 +197,9 @@
   "content_hierarchy": {
     "json_structured": {
       "APP_STATE_STORAGE": 8,
-      "BEHAVIORAL_DATA": 7,
+      "BEHAVIORAL_DATA": 8,
       "CONSENT_AND_PRIVACY": 1,
-      "DEVICE_ENV": 8,
+      "DEVICE_ENV": 6,
       "DIRECT_PII_KEYS": 3,
       "IDENTITY_TRACKING": 17,
       "ID_SOLUTIONS_AND_EXCHANGES": 17,
@@ -227,7 +227,7 @@
       "UX_AND_PERFORMANCE_ANALYTICS": 4
     },
     "boolean": {
-      "BEHAVIORAL_DATA": 4,
+      "BEHAVIORAL_DATA": 5,
       "USER_PREFERENCES": 3
     },
     "empty": {
@@ -250,11 +250,11 @@
     }
   },
   "content_types": {
-    "json_structured": 82,
+    "json_structured": 81,
     "number": 13,
     "language_code": 1,
     "complex_string": 24,
-    "boolean": 7,
+    "boolean": 8,
     "empty": 11,
     "timestamp": 2,
     "short_text": 8,
@@ -262,20 +262,20 @@
     "uuid": 1
   },
   "vendor_counts": {
-    "opodo.pt": 21,
+    "opodo.pt": 20,
     "consolidador.com": 6,
     "gecond.com": 7,
     "casafari.com": 1,
-    "hyundai.pt": 5,
-    "com.br": 9,
+    "hyundai.pt": 4,
+    "com.br": 10,
     "edp.pt": 7,
     "portadafrente.com": 1,
     "pwc.pt": 18,
+    "truck1.pt": 13,
     "endesa.pt": 10,
     "emfa.pt": 1,
     "egorealestate.com": 2,
     "goldenergy.pt": 27,
-    "truck1.pt": 12,
     "iefp.pt": 6,
     "era.pt": 4,
     "green-acres.pt": 4,
@@ -324,7 +324,7 @@
     [
       "BEHAVIORAL_DATA",
       "com.br",
-      7
+      8
     ],
     [
       "BEHAVIORAL_DATA",
@@ -345,6 +345,11 @@
       "BEHAVIORAL_DATA",
       "pwc.pt",
       12
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "truck1.pt",
+      1
     ],
     [
       "BEHAVIORAL_DATA",
@@ -374,17 +379,12 @@
     [
       "DEVICE_ENV",
       "opodo.pt",
-      2
+      1
     ],
     [
       "DEVICE_ENV",
       "truck1.pt",
       2
-    ],
-    [
-      "DEVICE_ENV",
-      "hyundai.pt",
-      1
     ],
     [
       "DIRECT_PII_KEYS",
@@ -618,6 +618,8 @@
       0.0,
       3.0565647621309537,
       4.072986513345729,
+      1.0,
+      2.0,
       0.0,
       0.0,
       2.873140679513133,
@@ -645,12 +647,10 @@
     ],
     "DEVICE_ENV": [
       3.4992275471326932,
-      4.887898773841175,
       4.9998864892960695,
       3.4992275471326932,
       3.4992275471326932,
       4.649548254394882,
-      4.700818598039363,
       4.632750159869495
     ],
     "DIRECT_PII_KEYS": [
@@ -780,8 +780,8 @@
     ]
   },
   "risk_levels": {
-    "Low Risk": 29,
-    "Medium Risk": 79,
+    "Low Risk": 27,
+    "Medium Risk": 81,
     "High Risk": 47
   },
   "risk_by_pii": {
@@ -789,13 +789,13 @@
       "Low Risk": 8
     },
     "BEHAVIORAL_DATA": {
-      "Medium Risk": 35
+      "Medium Risk": 37
     },
     "CONSENT_AND_PRIVACY": {
       "Low Risk": 1
     },
     "DEVICE_ENV": {
-      "Low Risk": 8
+      "Low Risk": 6
     },
     "DIRECT_PII_KEYS": {
       "Low Risk": 3

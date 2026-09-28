@@ -1,0 +1,155 @@
+{
+  "storage_type": "sessionstorage",
+  "metrics": {
+    "total_items": 101,
+    "items_modified": 18,
+    "items_deleted": 63,
+    "entropy_increases": 18,
+    "entropy_decreases": 17,
+    "size_increases": 5,
+    "size_decreases": 8,
+    "pii_transitions": {
+      "BEHAVIORAL_DATA -> UX_AND_PERFORMANCE_ANALYTICS": 3,
+      "CONSENT_AND_PRIVACY -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "IDENTITY_TRACKING -> UX_AND_PERFORMANCE_ANALYTICS": 5,
+      "IDENTITY_TRACKING -> SESSION_MANAGEMENT": 1,
+      "APP_STATE_STORAGE -> BEHAVIORAL_DATA": 1,
+      "IDENTITY_TRACKING -> ID_SOLUTIONS_AND_EXCHANGES": 2,
+      "TECHNICAL_PASSWORDS -> IDENTITY_TRACKING": 1,
+      "IDENTITY_TRACKING -> NAVIGATION_HISTORY": 1,
+      "IDENTITY_TRACKING -> SECURITY_AND_BOT_MITIGATION": 1,
+      "DIRECT_PII -> ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "ID_SOLUTIONS_AND_EXCHANGES -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "BEHAVIORAL_DATA -> DIRECT_PII_KEYS": 1,
+      "DIRECT_PII_KEYS -> LOCATION_AND_DEMOGRAPHICS": 1,
+      "APP_STATE_STORAGE -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "BEHAVIORAL_DATA -> NAVIGATION_HISTORY": 1,
+      "APP_STATE_STORAGE -> USER_PREFERENCES": 2,
+      "BEHAVIORAL_DATA -> IDENTITY_TRACKING": 1,
+      "NAVIGATION_HISTORY -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "SESSION_MANAGEMENT -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "DIRECT_PII -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "USER_PREFERENCES -> BEHAVIORAL_DATA": 1,
+      "IDENTITY_TRACKING -> TECHNICAL_PASSWORDS": 1
+    },
+    "volatility_distribution": {
+      "moderate": 31,
+      "stable": 32,
+      "high": 38
+    },
+    "change_frequency": {
+      "avg_gap": 35.67657992565056,
+      "min_gap": 0,
+      "max_gap": 246
+    },
+    "frequent_changes": [
+      {
+        "key": "4-fr_FR",
+        "avg_gap": 0.0,
+        "num_modifications": 11,
+        "pii_category": "USER_PREFERENCES"
+      },
+      {
+        "key": "pendo_srLastUserInteractionEvent",
+        "avg_gap": 10.8,
+        "num_modifications": 3,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "vuex",
+        "avg_gap": 11.533333333333333,
+        "num_modifications": 8,
+        "pii_category": "USER_PREFERENCES"
+      },
+      {
+        "key": "tt_sessionId",
+        "avg_gap": 13.26923076923077,
+        "num_modifications": 6,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "tt_pixel_session_index",
+        "avg_gap": 13.26923076923077,
+        "num_modifications": 6,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "previous_page_loads",
+        "avg_gap": 27.0,
+        "num_modifications": 2,
+        "pii_category": "NAVIGATION_HISTORY"
+      },
+      {
+        "key": "wzsid",
+        "avg_gap": 29.0,
+        "num_modifications": 1,
+        "pii_category": "IDENTITY_TRACKING"
+      },
+      {
+        "key": "_cltk",
+        "avg_gap": 33.90909090909091,
+        "num_modifications": 2,
+        "pii_category": "IDENTITY_TRACKING"
+      },
+      {
+        "key": "wpEmojiSettingsSupports",
+        "avg_gap": 37.4,
+        "num_modifications": 2,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "ABTastyUA",
+        "avg_gap": 43.8,
+        "num_modifications": 1,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      }
+    ],
+    "url_modifications": {
+      "app.medadom.com": 18,
+      "www.votreopinion.fr": 11,
+      "simple-life-app.com": 10,
+      "tutoriels.oscaro.com": 5,
+      "www.soshape.com": 4,
+      "www.revolution-energetique.com": 3,
+      "client.o2.fr": 2,
+      "www.monepi.fr": 2,
+      "www.cned.fr": 2,
+      "www.mesdepanneurs.fr": 1
+    },
+    "pii_modification_patterns": {
+      "CONSENT_AND_PRIVACY": {
+        "count": 1,
+        "avg_gap": 0
+      },
+      "UX_AND_PERFORMANCE_ANALYTICS": {
+        "count": 26,
+        "avg_gap": 28.0126582278481
+      },
+      "NAVIGATION_HISTORY": {
+        "count": 2,
+        "avg_gap": 27.0
+      },
+      "BEHAVIORAL_DATA": {
+        "count": 5,
+        "avg_gap": 70.88888888888889
+      },
+      "IDENTITY_TRACKING": {
+        "count": 3,
+        "avg_gap": 33.15384615384615
+      },
+      "INFRASTRUCTURE": {
+        "count": 3,
+        "avg_gap": 115.5
+      },
+      "USER_PREFERENCES": {
+        "count": 19,
+        "avg_gap": 6.92
+      },
+      "ID_SOLUTIONS_AND_EXCHANGES": {
+        "count": 1,
+        "avg_gap": 107.0
+      }
+    }
+  },
+  "num_timelines": 101
+}

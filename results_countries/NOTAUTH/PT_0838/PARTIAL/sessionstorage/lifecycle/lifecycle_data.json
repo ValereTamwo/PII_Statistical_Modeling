@@ -1,7 +1,7 @@
 {
   "storage_type": "sessionstorage",
   "metrics": {
-    "total_items": 187,
+    "total_items": 190,
     "items_modified": 30,
     "items_deleted": 19,
     "entropy_increases": 21,
@@ -9,36 +9,36 @@
     "size_increases": 8,
     "size_decreases": 20,
     "pii_transitions": {
-      "ID_SOLUTIONS_AND_EXCHANGES -> UX_AND_PERFORMANCE_ANALYTICS": 1,
-      "NAVIGATION_HISTORY -> UX_AND_PERFORMANCE_ANALYTICS": 3,
-      "APP_STATE_STORAGE -> UX_AND_PERFORMANCE_ANALYTICS": 3,
-      "BEHAVIORAL_DATA -> UX_AND_PERFORMANCE_ANALYTICS": 1,
-      "DEVICE_ENV -> NAVIGATION_HISTORY": 2,
       "IDENTITY_TRACKING -> SESSION_MANAGEMENT": 2,
-      "IDENTITY_TRACKING -> NAVIGATION_HISTORY": 1,
       "IDENTITY_TRACKING -> UX_AND_PERFORMANCE_ANALYTICS": 8,
-      "CONSENT_AND_PRIVACY -> UX_AND_PERFORMANCE_ANALYTICS": 1,
-      "IDENTITY_TRACKING -> ID_SOLUTIONS_AND_EXCHANGES": 1,
-      "CONSENT_AND_PRIVACY -> LOCATION_AND_DEMOGRAPHICS": 4,
-      "SESSION_MANAGEMENT -> UX_AND_PERFORMANCE_ANALYTICS": 2,
-      "BEHAVIORAL_DATA -> IDENTITY_TRACKING": 1,
-      "DEVICE_ENV -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "NAVIGATION_HISTORY -> UX_AND_PERFORMANCE_ANALYTICS": 3,
       "APP_STATE_STORAGE -> LOCATION_AND_DEMOGRAPHICS": 3,
-      "DIRECT_PII -> LOCATION_AND_DEMOGRAPHICS": 1,
-      "APP_STATE_STORAGE -> BEHAVIORAL_DATA": 1,
-      "IDENTITY_TRACKING -> TECHNICAL_PASSWORDS": 2,
-      "APP_STATE_STORAGE -> DEVICE_ENV": 1,
       "SECURITY_AND_BOT_MITIGATION -> UX_AND_PERFORMANCE_ANALYTICS": 2,
       "APP_STATE_STORAGE -> USER_PREFERENCES": 1,
-      "CONSENT_AND_PRIVACY -> USER_PREFERENCES": 1
+      "IDENTITY_TRACKING -> TECHNICAL_PASSWORDS": 2,
+      "CONSENT_AND_PRIVACY -> LOCATION_AND_DEMOGRAPHICS": 4,
+      "ID_SOLUTIONS_AND_EXCHANGES -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "DEVICE_ENV -> NAVIGATION_HISTORY": 2,
+      "IDENTITY_TRACKING -> NAVIGATION_HISTORY": 1,
+      "IDENTITY_TRACKING -> ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "LOCATION_AND_DEMOGRAPHICS -> SENSITIVE_LOCATION_PII": 1,
+      "DIRECT_PII -> LOCATION_AND_DEMOGRAPHICS": 1,
+      "APP_STATE_STORAGE -> BEHAVIORAL_DATA": 1,
+      "BEHAVIORAL_DATA -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "CONSENT_AND_PRIVACY -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "CONSENT_AND_PRIVACY -> USER_PREFERENCES": 1,
+      "BEHAVIORAL_DATA -> IDENTITY_TRACKING": 2,
+      "APP_STATE_STORAGE -> UX_AND_PERFORMANCE_ANALYTICS": 3,
+      "SESSION_MANAGEMENT -> UX_AND_PERFORMANCE_ANALYTICS": 2,
+      "DEVICE_ENV -> UX_AND_PERFORMANCE_ANALYTICS": 1
     },
     "volatility_distribution": {
-      "stable": 143,
-      "high": 19,
-      "moderate": 25
+      "stable": 146,
+      "moderate": 25,
+      "high": 19
     },
     "change_frequency": {
-      "avg_gap": 49.08517350157729,
+      "avg_gap": 49.76433121019108,
       "min_gap": 0,
       "max_gap": 399
     },
@@ -51,8 +51,8 @@
       },
       {
         "key": "tc_vars",
-        "avg_gap": 2.0526315789473686,
-        "num_modifications": 20,
+        "avg_gap": 2.2941176470588234,
+        "num_modifications": 18,
         "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
       },
       {
@@ -123,41 +123,41 @@
       }
     ],
     "url_modifications": {
-      "www.opodo.pt": 47,
+      "www.opodo.pt": 45,
       "lisboasecreta.co": 18,
       "www.era.pt": 9,
       "www.green-acres.pt": 6,
       "www.endesa.pt": 5,
+      "www.betano.pt": 4,
       "www.daikin.pt": 4,
       "www.pwc.pt": 4,
-      "www.betano.pt": 4,
-      "www.topatlantico.pt": 3,
-      "www.alfaromeo.pt": 3
+      "www.alfaromeo.pt": 3,
+      "www.hyundai.pt": 3
     },
     "pii_modification_patterns": {
-      "BEHAVIORAL_DATA": {
-        "count": 26,
-        "avg_gap": 76.0952380952381
-      },
-      "UX_AND_PERFORMANCE_ANALYTICS": {
-        "count": 66,
-        "avg_gap": 29.933333333333334
-      },
-      "NAVIGATION_HISTORY": {
-        "count": 3,
-        "avg_gap": 38.5
+      "IDENTITY_TRACKING": {
+        "count": 11,
+        "avg_gap": 107.0
       },
       "ID_SOLUTIONS_AND_EXCHANGES": {
         "count": 20,
         "avg_gap": 47.06666666666667
       },
-      "IDENTITY_TRACKING": {
-        "count": 11,
-        "avg_gap": 107.0
+      "NAVIGATION_HISTORY": {
+        "count": 3,
+        "avg_gap": 38.5
+      },
+      "UX_AND_PERFORMANCE_ANALYTICS": {
+        "count": 64,
+        "avg_gap": 30.96551724137931
       },
       "TECHNICAL_PASSWORDS": {
         "count": 3,
         "avg_gap": 43.2
+      },
+      "BEHAVIORAL_DATA": {
+        "count": 26,
+        "avg_gap": 76.0952380952381
       },
       "LOCATION_AND_DEMOGRAPHICS": {
         "count": 5,
@@ -165,5 +165,5 @@
       }
     }
   },
-  "num_timelines": 187
+  "num_timelines": 190
 }

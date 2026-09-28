@@ -1,21 +1,21 @@
 {
   "storage_type": "sessionstorage",
-  "total_items": 82,
+  "total_items": 83,
   "direct_pii_count": 0,
-  "other_count": 82,
+  "other_count": 83,
   "pii_distribution": {
     "APP_STATE_STORAGE": 14,
-    "BEHAVIORAL_DATA": 8,
+    "BEHAVIORAL_DATA": 9,
     "CONSENT_AND_PRIVACY": 8,
-    "DEVICE_ENV": 3,
-    "IDENTITY_TRACKING": 15,
+    "DEVICE_ENV": 1,
+    "IDENTITY_TRACKING": 14,
     "ID_SOLUTIONS_AND_EXCHANGES": 5,
     "LOCATION_AND_DEMOGRAPHICS": 2,
     "NAVIGATION_HISTORY": 2,
     "SECURITY_AND_BOT_MITIGATION": 3,
     "SESSION_MANAGEMENT": 2,
     "TECHNICAL_PASSWORDS": 2,
-    "USER_PREFERENCES": 5,
+    "USER_PREFERENCES": 8,
     "UX_AND_PERFORMANCE_ANALYTICS": 13
   },
   "pii_by_category": {
@@ -23,16 +23,16 @@
       "APP_STATE_STORAGE": 14
     },
     "BEHAVIORAL_DATA": {
-      "BEHAVIORAL_DATA": 8
+      "BEHAVIORAL_DATA": 9
     },
     "CONSENT_AND_PRIVACY": {
       "CONSENT_AND_PRIVACY": 8
     },
     "DEVICE_ENV": {
-      "DEVICE_ENV": 3
+      "DEVICE_ENV": 1
     },
     "IDENTITY_TRACKING": {
-      "IDENTITY_TRACKING": 15
+      "IDENTITY_TRACKING": 14
     },
     "ID_SOLUTIONS_AND_EXCHANGES": {
       "ID_SOLUTIONS_AND_EXCHANGES": 5
@@ -53,30 +53,30 @@
       "TECHNICAL_PASSWORDS": 2
     },
     "USER_PREFERENCES": {
-      "USER_PREFERENCES": 5
+      "USER_PREFERENCES": 8
     },
     "UX_AND_PERFORMANCE_ANALYTICS": {
       "UX_AND_PERFORMANCE_ANALYTICS": 13
     }
   },
   "persistence_distribution": {
-    "Session": 82
+    "Session": 83
   },
   "persistence_by_pii": {
     "APP_STATE_STORAGE": {
       "Session": 14
     },
     "BEHAVIORAL_DATA": {
-      "Session": 8
+      "Session": 9
     },
     "CONSENT_AND_PRIVACY": {
       "Session": 8
     },
     "DEVICE_ENV": {
-      "Session": 3
+      "Session": 1
     },
     "IDENTITY_TRACKING": {
-      "Session": 15
+      "Session": 14
     },
     "ID_SOLUTIONS_AND_EXCHANGES": {
       "Session": 5
@@ -97,7 +97,7 @@
       "Session": 2
     },
     "USER_PREFERENCES": {
-      "Session": 5
+      "Session": 8
     },
     "UX_AND_PERFORMANCE_ANALYTICS": {
       "Session": 13
@@ -110,9 +110,9 @@
       "count": 14
     },
     "BEHAVIORAL_DATA": {
-      "total": 490,
-      "average": 61.25,
-      "count": 8
+      "total": 503,
+      "average": 55.888888888888886,
+      "count": 9
     },
     "CONSENT_AND_PRIVACY": {
       "total": 8270,
@@ -120,14 +120,14 @@
       "count": 8
     },
     "DEVICE_ENV": {
-      "total": 3348,
-      "average": 1116.0,
-      "count": 3
+      "total": 2743,
+      "average": 2743.0,
+      "count": 1
     },
     "IDENTITY_TRACKING": {
-      "total": 15972,
-      "average": 1064.8,
-      "count": 15
+      "total": 15959,
+      "average": 1139.9285714285713,
+      "count": 14
     },
     "ID_SOLUTIONS_AND_EXCHANGES": {
       "total": 16067,
@@ -160,9 +160,9 @@
       "count": 2
     },
     "USER_PREFERENCES": {
-      "total": 622,
-      "average": 124.4,
-      "count": 5
+      "total": 5011,
+      "average": 626.375,
+      "count": 8
     },
     "UX_AND_PERFORMANCE_ANALYTICS": {
       "total": 15554,
@@ -175,13 +175,13 @@
       "APP_STATE_STORAGE": 13,
       "BEHAVIORAL_DATA": 5,
       "CONSENT_AND_PRIVACY": 5,
-      "DEVICE_ENV": 2,
+      "DEVICE_ENV": 1,
       "IDENTITY_TRACKING": 3,
       "ID_SOLUTIONS_AND_EXCHANGES": 5,
       "NAVIGATION_HISTORY": 2,
       "SECURITY_AND_BOT_MITIGATION": 3,
       "TECHNICAL_PASSWORDS": 2,
-      "USER_PREFERENCES": 1,
+      "USER_PREFERENCES": 4,
       "UX_AND_PERFORMANCE_ANALYTICS": 6
     },
     "complex_string": {
@@ -196,8 +196,12 @@
       "USER_PREFERENCES": 2,
       "UX_AND_PERFORMANCE_ANALYTICS": 2
     },
+    "number": {
+      "BEHAVIORAL_DATA": 1,
+      "IDENTITY_TRACKING": 4,
+      "UX_AND_PERFORMANCE_ANALYTICS": 1
+    },
     "short_text": {
-      "DEVICE_ENV": 1,
       "IDENTITY_TRACKING": 1,
       "USER_PREFERENCES": 2
     },
@@ -206,34 +210,30 @@
       "SESSION_MANAGEMENT": 2,
       "UX_AND_PERFORMANCE_ANALYTICS": 1
     },
-    "number": {
-      "IDENTITY_TRACKING": 5,
-      "UX_AND_PERFORMANCE_ANALYTICS": 1
-    },
     "empty": {
       "IDENTITY_TRACKING": 1,
       "UX_AND_PERFORMANCE_ANALYTICS": 1
     }
   },
   "content_types": {
-    "json_structured": 47,
+    "json_structured": 49,
     "complex_string": 10,
     "boolean": 7,
-    "short_text": 4,
-    "uuid": 6,
     "number": 6,
+    "short_text": 3,
+    "uuid": 6,
     "empty": 2
   },
   "vendor_counts": {
     "safarasoftair.com": 12,
     "igieco.it": 12,
     "esteticanail.it": 3,
-    "country-creations.it": 7,
+    "country-creations.it": 6,
     "cuoieriashop.com": 13,
     "farmaeurope.eu": 9,
     "lidl.it": 6,
     "leastedisoha.com": 3,
-    "seduzioniperdue.com": 8,
+    "seduzioniperdue.com": 10,
     "second-hand.it": 4,
     "alibaba.com": 2,
     "scarpescarpestore.com": 1,
@@ -273,7 +273,7 @@
     [
       "BEHAVIORAL_DATA",
       "farmaeurope.eu",
-      2
+      3
     ],
     [
       "BEHAVIORAL_DATA",
@@ -303,11 +303,6 @@
     [
       "DEVICE_ENV",
       "seduzioniperdue.com",
-      2
-    ],
-    [
-      "DEVICE_ENV",
-      "country-creations.it",
       1
     ],
     [
@@ -333,11 +328,6 @@
     [
       "IDENTITY_TRACKING",
       "esteticanail.it",
-      1
-    ],
-    [
-      "IDENTITY_TRACKING",
-      "farmaeurope.eu",
       1
     ],
     [
@@ -403,7 +393,7 @@
     [
       "USER_PREFERENCES",
       "seduzioniperdue.com",
-      1
+      4
     ],
     [
       "USER_PREFERENCES",
@@ -481,6 +471,7 @@
       4.65158274606047,
       0.0,
       0.0,
+      3.085055102756477,
       2.0
     ],
     "CONSENT_AND_PRIVACY": [
@@ -494,9 +485,7 @@
       4.870566415521143
     ],
     "DEVICE_ENV": [
-      4.589915351485778,
-      4.37303318878839,
-      2.321928094887362
+      4.37303318878839
     ],
     "IDENTITY_TRACKING": [
       3.0,
@@ -511,7 +500,6 @@
       2.6235166412180155,
       4.21126073643228,
       4.53834886265227,
-      3.085055102756477,
       3.652447488023126,
       0.0
     ],
@@ -546,6 +534,9 @@
     "USER_PREFERENCES": [
       4.589915351485778,
       2.321928094887362,
+      4.930281737742723,
+      4.5541790293798075,
+      4.930281737742723,
       2.75,
       2.321928094887362,
       2.0
@@ -567,25 +558,25 @@
     ]
   },
   "risk_levels": {
-    "Low Risk": 34,
-    "Medium Risk": 28,
-    "High Risk": 20
+    "Low Risk": 35,
+    "Medium Risk": 29,
+    "High Risk": 19
   },
   "risk_by_pii": {
     "APP_STATE_STORAGE": {
       "Low Risk": 14
     },
     "BEHAVIORAL_DATA": {
-      "Medium Risk": 8
+      "Medium Risk": 9
     },
     "CONSENT_AND_PRIVACY": {
       "Low Risk": 8
     },
     "DEVICE_ENV": {
-      "Low Risk": 3
+      "Low Risk": 1
     },
     "IDENTITY_TRACKING": {
-      "High Risk": 15
+      "High Risk": 14
     },
     "ID_SOLUTIONS_AND_EXCHANGES": {
       "High Risk": 5
@@ -606,7 +597,7 @@
       "Low Risk": 2
     },
     "USER_PREFERENCES": {
-      "Low Risk": 5
+      "Low Risk": 8
     },
     "UX_AND_PERFORMANCE_ANALYTICS": {
       "Medium Risk": 13

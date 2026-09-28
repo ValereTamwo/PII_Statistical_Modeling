@@ -1,16 +1,16 @@
 {
   "storage_type": "sessionstorage",
-  "total_items": 486,
+  "total_items": 483,
   "direct_pii_count": 1,
-  "other_count": 485,
+  "other_count": 482,
   "pii_distribution": {
     "unknown": 1,
     "APP_STATE_STORAGE": 30,
-    "BEHAVIORAL_DATA": 71,
+    "BEHAVIORAL_DATA": 69,
     "CONSENT_AND_PRIVACY": 7,
-    "DEVICE_ENV": 22,
+    "DEVICE_ENV": 19,
     "DIRECT_PII_KEYS": 21,
-    "IDENTITY_TRACKING": 90,
+    "IDENTITY_TRACKING": 85,
     "ID_SOLUTIONS_AND_EXCHANGES": 28,
     "INFRASTRUCTURE": 1,
     "LOCATION_AND_DEMOGRAPHICS": 6,
@@ -19,7 +19,7 @@
     "SERVER_SIDE_TRACKING": 1,
     "SESSION_MANAGEMENT": 50,
     "TECHNICAL_PASSWORDS": 2,
-    "USER_PREFERENCES": 34,
+    "USER_PREFERENCES": 41,
     "UX_AND_PERFORMANCE_ANALYTICS": 76
   },
   "pii_by_category": {
@@ -30,19 +30,19 @@
       "APP_STATE_STORAGE": 30
     },
     "BEHAVIORAL_DATA": {
-      "BEHAVIORAL_DATA": 71
+      "BEHAVIORAL_DATA": 69
     },
     "CONSENT_AND_PRIVACY": {
       "CONSENT_AND_PRIVACY": 7
     },
     "DEVICE_ENV": {
-      "DEVICE_ENV": 22
+      "DEVICE_ENV": 19
     },
     "DIRECT_PII_KEYS": {
       "DIRECT_PII_KEYS": 21
     },
     "IDENTITY_TRACKING": {
-      "IDENTITY_TRACKING": 90
+      "IDENTITY_TRACKING": 85
     },
     "ID_SOLUTIONS_AND_EXCHANGES": {
       "ID_SOLUTIONS_AND_EXCHANGES": 28
@@ -69,14 +69,14 @@
       "TECHNICAL_PASSWORDS": 2
     },
     "USER_PREFERENCES": {
-      "USER_PREFERENCES": 34
+      "USER_PREFERENCES": 41
     },
     "UX_AND_PERFORMANCE_ANALYTICS": {
       "UX_AND_PERFORMANCE_ANALYTICS": 76
     }
   },
   "persistence_distribution": {
-    "Session": 486
+    "Session": 483
   },
   "persistence_by_pii": {
     "unknown": {
@@ -86,19 +86,19 @@
       "Session": 30
     },
     "BEHAVIORAL_DATA": {
-      "Session": 71
+      "Session": 69
     },
     "CONSENT_AND_PRIVACY": {
       "Session": 7
     },
     "DEVICE_ENV": {
-      "Session": 22
+      "Session": 19
     },
     "DIRECT_PII_KEYS": {
       "Session": 21
     },
     "IDENTITY_TRACKING": {
-      "Session": 90
+      "Session": 85
     },
     "ID_SOLUTIONS_AND_EXCHANGES": {
       "Session": 28
@@ -125,7 +125,7 @@
       "Session": 2
     },
     "USER_PREFERENCES": {
-      "Session": 34
+      "Session": 41
     },
     "UX_AND_PERFORMANCE_ANALYTICS": {
       "Session": 76
@@ -143,9 +143,9 @@
       "count": 30
     },
     "BEHAVIORAL_DATA": {
-      "total": 12858,
-      "average": 181.09859154929578,
-      "count": 71
+      "total": 12781,
+      "average": 185.231884057971,
+      "count": 69
     },
     "CONSENT_AND_PRIVACY": {
       "total": 133,
@@ -153,9 +153,9 @@
       "count": 7
     },
     "DEVICE_ENV": {
-      "total": 12668,
-      "average": 575.8181818181819,
-      "count": 22
+      "total": 12662,
+      "average": 666.421052631579,
+      "count": 19
     },
     "DIRECT_PII_KEYS": {
       "total": 35457,
@@ -163,9 +163,9 @@
       "count": 21
     },
     "IDENTITY_TRACKING": {
-      "total": 27180,
-      "average": 302.0,
-      "count": 90
+      "total": 27017,
+      "average": 317.84705882352944,
+      "count": 85
     },
     "ID_SOLUTIONS_AND_EXCHANGES": {
       "total": 17986,
@@ -208,9 +208,9 @@
       "count": 2
     },
     "USER_PREFERENCES": {
-      "total": 6688,
-      "average": 196.7058823529412,
-      "count": 34
+      "total": 9307,
+      "average": 227.0,
+      "count": 41
     },
     "UX_AND_PERFORMANCE_ANALYTICS": {
       "total": 32778,
@@ -221,9 +221,9 @@
   "content_hierarchy": {
     "complex_string": {
       "unknown": 1,
-      "BEHAVIORAL_DATA": 18,
+      "BEHAVIORAL_DATA": 19,
       "CONSENT_AND_PRIVACY": 3,
-      "IDENTITY_TRACKING": 23,
+      "IDENTITY_TRACKING": 21,
       "SESSION_MANAGEMENT": 27,
       "USER_PREFERENCES": 12,
       "UX_AND_PERFORMANCE_ANALYTICS": 15
@@ -241,25 +241,22 @@
       "SERVER_SIDE_TRACKING": 1,
       "SESSION_MANAGEMENT": 22,
       "TECHNICAL_PASSWORDS": 2,
-      "USER_PREFERENCES": 8,
+      "USER_PREFERENCES": 10,
       "UX_AND_PERFORMANCE_ANALYTICS": 52
     },
     "boolean": {
-      "BEHAVIORAL_DATA": 10,
+      "BEHAVIORAL_DATA": 9,
       "CONSENT_AND_PRIVACY": 4,
-      "IDENTITY_TRACKING": 12,
-      "USER_PREFERENCES": 9,
+      "IDENTITY_TRACKING": 9,
+      "USER_PREFERENCES": 10,
       "UX_AND_PERFORMANCE_ANALYTICS": 2
     },
     "number": {
-      "BEHAVIORAL_DATA": 13,
+      "BEHAVIORAL_DATA": 11,
       "ID_SOLUTIONS_AND_EXCHANGES": 1,
       "INFRASTRUCTURE": 1,
-      "NAVIGATION_HISTORY": 1
-    },
-    "language_code": {
-      "DEVICE_ENV": 3,
-      "UX_AND_PERFORMANCE_ANALYTICS": 1
+      "NAVIGATION_HISTORY": 1,
+      "USER_PREFERENCES": 1
     },
     "short_text": {
       "IDENTITY_TRACKING": 10,
@@ -270,22 +267,26 @@
       "SESSION_MANAGEMENT": 1,
       "UX_AND_PERFORMANCE_ANALYTICS": 3
     },
+    "language_code": {
+      "USER_PREFERENCES": 3,
+      "UX_AND_PERFORMANCE_ANALYTICS": 1
+    },
     "token_id": {
       "UX_AND_PERFORMANCE_ANALYTICS": 3
     }
   },
   "content_types": {
-    "complex_string": 99,
-    "json_structured": 303,
-    "boolean": 37,
-    "number": 16,
-    "language_code": 4,
+    "complex_string": 98,
+    "json_structured": 305,
+    "boolean": 34,
+    "number": 15,
     "short_text": 15,
     "uuid": 9,
+    "language_code": 4,
     "token_id": 3
   },
   "vendor_counts": {
-    "bancosantander.es": 55,
+    "bancosantander.es": 51,
     "bricodepot.es": 12,
     "20minutos.es": 3,
     "lecturas.com": 24,
@@ -293,33 +294,31 @@
     "elnacional.cat": 6,
     "directoalpaladar.com": 18,
     "elmueble.com": 23,
-    "elmundo.es": 16,
+    "elmundo.es": 17,
     "moncloa.com": 11,
     "merkal.com": 2,
-    "noracora.com": 46,
+    "noracora.com": 47,
     "bbva.es": 62,
     "parfois.com": 6,
-    "cajamar.es": 2,
-    "endesa.com": 14,
+    "endesa.com": 15,
     "pequerecetas.com": 8,
+    "cajamar.es": 2,
     "elmira.es": 11,
     "carrefour.es": 6,
     "desigual.com": 9,
     "ofertero.es": 3,
-    "caixabank.es": 2,
     "laverdad.es": 1,
     "diariosur.es": 4,
     "primor.eu": 9,
-    "cofidis.es": 7,
+    "cofidis.es": 9,
     "dominospizza.es": 10,
     "infojobs.net": 10,
     "laopiniondemalaga.es": 9,
     "fichajes.net": 16,
     "sport.es": 10,
     "recetasgratis.net": 8,
-    "chateagratis.net": 1,
     "lavozdealmeria.com": 1,
-    "amazon.es": 6,
+    "amazon.es": 4,
     "hobbyconsolas.com": 1,
     "telecinco.es": 1,
     "flashscore.es": 2,
@@ -348,6 +347,7 @@
     "fiftyoutlet.com": 2,
     "linktr.ee": 8,
     "ebay.es": 1,
+    "caixabank.es": 1,
     "depor.com": 1,
     "futbolme.com": 1
   },
@@ -420,7 +420,7 @@
     [
       "BEHAVIORAL_DATA",
       "bbva.es",
-      14
+      15
     ],
     [
       "BEHAVIORAL_DATA",
@@ -434,11 +434,6 @@
     ],
     [
       "BEHAVIORAL_DATA",
-      "cajamar.es",
-      2
-    ],
-    [
-      "BEHAVIORAL_DATA",
       "endesa.com",
       5
     ],
@@ -449,13 +444,13 @@
     ],
     [
       "BEHAVIORAL_DATA",
-      "bancosantander.es",
-      3
+      "lecturas.com",
+      2
     ],
     [
       "BEHAVIORAL_DATA",
-      "lecturas.com",
-      2
+      "cajamar.es",
+      1
     ],
     [
       "BEHAVIORAL_DATA",
@@ -479,13 +474,13 @@
     ],
     [
       "BEHAVIORAL_DATA",
-      "ofertero.es",
-      3
+      "bancosantander.es",
+      1
     ],
     [
       "BEHAVIORAL_DATA",
-      "caixabank.es",
-      1
+      "ofertero.es",
+      2
     ],
     [
       "BEHAVIORAL_DATA",
@@ -500,12 +495,12 @@
     [
       "BEHAVIORAL_DATA",
       "elmundo.es",
-      6
+      7
     ],
     [
       "BEHAVIORAL_DATA",
       "moncloa.com",
-      4
+      5
     ],
     [
       "CONSENT_AND_PRIVACY",
@@ -550,7 +545,7 @@
     [
       "DEVICE_ENV",
       "bancosantander.es",
-      9
+      6
     ],
     [
       "DEVICE_ENV",
@@ -665,7 +660,7 @@
     [
       "IDENTITY_TRACKING",
       "bbva.es",
-      7
+      6
     ],
     [
       "IDENTITY_TRACKING",
@@ -680,16 +675,11 @@
     [
       "IDENTITY_TRACKING",
       "moncloa.com",
-      2
-    ],
-    [
-      "IDENTITY_TRACKING",
-      "elmundo.es",
       1
     ],
     [
       "IDENTITY_TRACKING",
-      "chateagratis.net",
+      "elmundo.es",
       1
     ],
     [
@@ -705,7 +695,7 @@
     [
       "IDENTITY_TRACKING",
       "amazon.es",
-      6
+      4
     ],
     [
       "IDENTITY_TRACKING",
@@ -1170,7 +1160,7 @@
     [
       "USER_PREFERENCES",
       "noracora.com",
-      3
+      4
     ],
     [
       "USER_PREFERENCES",
@@ -1184,13 +1174,23 @@
     ],
     [
       "USER_PREFERENCES",
+      "cajamar.es",
+      1
+    ],
+    [
+      "USER_PREFERENCES",
+      "endesa.com",
+      2
+    ],
+    [
+      "USER_PREFERENCES",
       "cofidis.es",
-      4
+      6
     ],
     [
       "USER_PREFERENCES",
       "bancosantander.es",
-      8
+      9
     ],
     [
       "USER_PREFERENCES",
@@ -1209,12 +1209,12 @@
     ],
     [
       "USER_PREFERENCES",
-      "caixabank.es",
+      "ofertero.es",
       1
     ],
     [
       "USER_PREFERENCES",
-      "endesa.com",
+      "caixabank.es",
       1
     ],
     [
@@ -1388,15 +1388,12 @@
       4.648858210159493,
       4.166901696131649,
       2.0,
-      4.368042422572717,
-      2.8731406795131336,
       2.0,
       3.7622673906514947,
       4.5423188792597315,
       4.145018825486946,
       3.3450739957852544,
       2.0,
-      0.9182958340544896,
       0.0,
       4.41231084602873,
       1.0,
@@ -1417,9 +1414,8 @@
       2.0,
       3.0957952550009344,
       0.0,
-      2.0,
-      1.5827993325271836,
       3.7622673906514947,
+      2.5654483718208256,
       3.973429846245158,
       2.9995812306460645,
       2.0,
@@ -1434,9 +1430,12 @@
       4.394378742342907,
       2.5654483718208256,
       2.6612262562697895,
+      3.588354347173234,
       5.152981050853092,
+      1.0,
       4.58006198874676,
       3.323231428797621,
+      1.0,
       3.6572682296173893,
       4.42292738033765,
       3.8802510855608423,
@@ -1444,8 +1443,7 @@
       1.0,
       4.875870814047751,
       4.58006198874676,
-      3.3232314287976203,
-      0.9182958340544896
+      3.3232314287976203
     ],
     "CONSENT_AND_PRIVACY": [
       2.0,
@@ -1461,12 +1459,10 @@
       3.4992275471326932,
       3.4992275471326932,
       3.4992275471326932,
-      1.0,
       4.828961631494078,
       3.4992275471326932,
       3.4992275471326932,
       3.4992275471326932,
-      1.0,
       4.828961631494078,
       3.4992275471326932,
       4.72211916218825,
@@ -1476,7 +1472,6 @@
       5.0906882388392765,
       5.159700433784293,
       4.721072501814435,
-      1.0,
       3.4992275471326932,
       4.828961631494078
     ],
@@ -1562,7 +1557,6 @@
       5.832817399015773,
       4.775652212593065,
       3.521928094887362,
-      4.713111772857041,
       3.67619062614183,
       4.116264615668023,
       3.7323018133264285,
@@ -1580,18 +1574,14 @@
       0.0,
       0.0,
       0.0,
-      2.0,
       3.8774437510817337,
-      0.0,
-      0.0,
-      0.0,
       3.6792292966721747,
       4.894251787109475,
+      2.0,
       3.9897444701554794,
       3.948167110648961,
       3.979738416023235,
       3.9074559644653895,
-      3.588354347173234,
       3.6150869889135038,
       2.584962500721156
     ],
@@ -1754,10 +1744,13 @@
       5.159700433784293,
       4.496772825386893,
       3.182005814760214,
+      4.368042422572717,
+      2.8731406795131336,
       2.5216406363433186,
       2.5216406363433186,
       4.2550274088004265,
       3.5804621997271013,
+      1.0,
       2.0,
       2.94770277922009,
       2.321928094887362,
@@ -1766,20 +1759,24 @@
       2.5216406363433186,
       4.2550274088004265,
       3.180832987205441,
+      1.0,
       3.5804621997271013,
       2.321928094887362,
       2.5216406363433186,
       2.321928094887362,
       0.0,
+      2.0,
       3.0957952550009344,
       2.0,
       2.321928094887362,
       2.5216406363433186,
       2.321928094887362,
+      5.528464993472769,
+      2.5216406363433186,
+      2.5216406363433186,
       5.528565715310867,
-      4.2550274088004265,
-      3.5804621997271013,
-      3.180832987205441
+      1.0,
+      4.2550274088004265
     ],
     "UX_AND_PERFORMANCE_ANALYTICS": [
       4.28279230889429,
@@ -1861,9 +1858,9 @@
     ]
   },
   "risk_levels": {
-    "High Risk": 119,
-    "Low Risk": 123,
-    "Medium Risk": 244
+    "High Risk": 114,
+    "Low Risk": 127,
+    "Medium Risk": 242
   },
   "risk_by_pii": {
     "unknown": {
@@ -1873,19 +1870,19 @@
       "Low Risk": 30
     },
     "BEHAVIORAL_DATA": {
-      "Medium Risk": 71
+      "Medium Risk": 69
     },
     "CONSENT_AND_PRIVACY": {
       "Low Risk": 7
     },
     "DEVICE_ENV": {
-      "Low Risk": 22
+      "Low Risk": 19
     },
     "DIRECT_PII_KEYS": {
       "Low Risk": 21
     },
     "IDENTITY_TRACKING": {
-      "High Risk": 90
+      "High Risk": 85
     },
     "ID_SOLUTIONS_AND_EXCHANGES": {
       "High Risk": 28
@@ -1912,7 +1909,7 @@
       "Low Risk": 2
     },
     "USER_PREFERENCES": {
-      "Low Risk": 34
+      "Low Risk": 41
     },
     "UX_AND_PERFORMANCE_ANALYTICS": {
       "Medium Risk": 76
