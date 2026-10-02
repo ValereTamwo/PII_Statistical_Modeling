@@ -1,0 +1,232 @@
+{
+  "storage_type": "sessionstorage",
+  "metrics": {
+    "total_items": 711,
+    "items_modified": 51,
+    "items_deleted": 378,
+    "entropy_increases": 100,
+    "entropy_decreases": 73,
+    "size_increases": 8,
+    "size_decreases": 12,
+    "pii_transitions": {
+      "BEHAVIORAL_DATA -> UX_AND_PERFORMANCE_ANALYTICS": 106,
+      "APP_STATE_STORAGE -> UX_AND_PERFORMANCE_ANALYTICS": 5,
+      "APP_STATE_STORAGE -> SECURITY_AND_BOT_MITIGATION": 2,
+      "IDENTITY_TRACKING -> UX_AND_PERFORMANCE_ANALYTICS": 8,
+      "ID_SOLUTIONS_AND_EXCHANGES -> UX_AND_PERFORMANCE_ANALYTICS": 8,
+      "SESSION_MANAGEMENT -> UX_AND_PERFORMANCE_ANALYTICS": 5,
+      "CONSENT_AND_PRIVACY -> USER_PREFERENCES": 1,
+      "IDENTITY_TRACKING -> NAVIGATION_HISTORY": 2,
+      "DIRECT_PII_KEYS -> USER_PREFERENCES": 1,
+      "USER_PREFERENCES -> BEHAVIORAL_DATA": 4,
+      "IDENTITY_TRACKING -> SESSION_MANAGEMENT": 4,
+      "DIRECT_PII_KEYS -> LOCATION_AND_DEMOGRAPHICS": 3,
+      "DEVICE_ENV -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "IDENTITY_TRACKING -> ID_SOLUTIONS_AND_EXCHANGES": 2,
+      "INFRASTRUCTURE -> TECHNICAL_PASSWORDS": 1,
+      "BEHAVIORAL_DATA -> INFRASTRUCTURE": 1,
+      "IDENTITY_TRACKING -> BEHAVIORAL_DATA": 2,
+      "APP_STATE_STORAGE -> BEHAVIORAL_DATA": 1,
+      "IDENTITY_TRACKING -> SECURITY_AND_BOT_MITIGATION": 1,
+      "BEHAVIORAL_DATA -> IDENTITY_TRACKING": 1,
+      "APP_STATE_STORAGE -> LOCATION_AND_DEMOGRAPHICS": 1,
+      "IDENTITY_TRACKING -> USER_PREFERENCES": 1,
+      "TECHNICAL_PASSWORDS -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "NAVIGATION_HISTORY -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "BEHAVIORAL_DATA -> USER_PREFERENCES": 1,
+      "ID_SOLUTIONS_AND_EXCHANGES -> USER_PREFERENCES": 1,
+      "DEVICE_ENV -> NAVIGATION_HISTORY": 1
+    },
+    "volatility_distribution": {
+      "stable": 311,
+      "moderate": 195,
+      "high": 205
+    },
+    "change_frequency": {
+      "avg_gap": 22.800696864111497,
+      "min_gap": 0,
+      "max_gap": 370
+    },
+    "frequent_changes": [
+      {
+        "key": "loyaltylion_temporary_data",
+        "avg_gap": 0.0,
+        "num_modifications": 3,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "__shopify_agent_context_events",
+        "avg_gap": 1.4550898203592815,
+        "num_modifications": 131,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "_shs_state",
+        "avg_gap": 1.6345514950166113,
+        "num_modifications": 170,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "tt_sessionId",
+        "avg_gap": 4.945652173913044,
+        "num_modifications": 9,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "tt_pixel_session_index",
+        "avg_gap": 5.034883720930233,
+        "num_modifications": 60,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "consentHeader",
+        "avg_gap": 5.170212765957447,
+        "num_modifications": 30,
+        "pii_category": "CONSENT_AND_PRIVACY"
+      },
+      {
+        "key": "klaviyoPagesVisitCountV2",
+        "avg_gap": 6.52054794520548,
+        "num_modifications": 34,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "tt_s_pixel_session_index",
+        "avg_gap": 6.7101449275362315,
+        "num_modifications": 30,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "__smile_rum_session__",
+        "avg_gap": 12.90625,
+        "num_modifications": 18,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "qab_previous_pathname",
+        "avg_gap": 17.333333333333332,
+        "num_modifications": 4,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "ZD-suid",
+        "avg_gap": 17.6,
+        "num_modifications": 6,
+        "pii_category": "ID_SOLUTIONS_AND_EXCHANGES"
+      },
+      {
+        "key": "noibu_referrer_url",
+        "avg_gap": 19.666666666666668,
+        "num_modifications": 4,
+        "pii_category": "NAVIGATION_HISTORY"
+      },
+      {
+        "key": "wpsStore",
+        "avg_gap": 21.5,
+        "num_modifications": 21,
+        "pii_category": "NAVIGATION_HISTORY"
+      },
+      {
+        "key": "klaviyoFormSubmit",
+        "avg_gap": 25.375,
+        "num_modifications": 1,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "set_page_counter",
+        "avg_gap": 27.0,
+        "num_modifications": 1,
+        "pii_category": "USER_PREFERENCES"
+      },
+      {
+        "key": "platform_app_1380b703-ce81-ff05-f115-39571d94dfcd_cfbe3b1e-4b01-476d-b6d1-439028ebf772",
+        "avg_gap": 29.25,
+        "num_modifications": 3,
+        "pii_category": "LOCATION_AND_DEMOGRAPHICS"
+      },
+      {
+        "key": "__rtbh.uid",
+        "avg_gap": 29.77777777777778,
+        "num_modifications": 8,
+        "pii_category": "ID_SOLUTIONS_AND_EXCHANGES"
+      },
+      {
+        "key": "shopify-chat-nudge-pages",
+        "avg_gap": 33.07142857142857,
+        "num_modifications": 3,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "shopify-chat-nudge-path",
+        "avg_gap": 33.07142857142857,
+        "num_modifications": 3,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "hjViewportId",
+        "avg_gap": 34.5,
+        "num_modifications": 3,
+        "pii_category": "DEVICE_ENV"
+      }
+    ],
+    "url_modifications": {
+      "www.onedamelane.com": 48,
+      "www.pamelascott.com": 44,
+      "stevemadden.eu": 28,
+      "zoneclothing.ie": 28,
+      "www.themanicurecompany.com": 27,
+      "www.nozomishoes.ie": 23,
+      "supersoilglobal.com": 22,
+      "www.cestaa.com": 19,
+      "www.interflora.ie": 18,
+      "www.euroauctions.com": 18
+    },
+    "pii_modification_patterns": {
+      "IDENTITY_TRACKING": {
+        "count": 5,
+        "avg_gap": 78.9
+      },
+      "BEHAVIORAL_DATA": {
+        "count": 74,
+        "avg_gap": 38.1437908496732
+      },
+      "NAVIGATION_HISTORY": {
+        "count": 33,
+        "avg_gap": 32.733333333333334
+      },
+      "UX_AND_PERFORMANCE_ANALYTICS": {
+        "count": 437,
+        "avg_gap": 4.030172413793103
+      },
+      "USER_PREFERENCES": {
+        "count": 5,
+        "avg_gap": 88.55555555555556
+      },
+      "ID_SOLUTIONS_AND_EXCHANGES": {
+        "count": 18,
+        "avg_gap": 34.666666666666664
+      },
+      "INFRASTRUCTURE": {
+        "count": 1,
+        "avg_gap": 152.0
+      },
+      "DEVICE_ENV": {
+        "count": 3,
+        "avg_gap": 34.5
+      },
+      "SECURITY_AND_BOT_MITIGATION": {
+        "count": 4,
+        "avg_gap": 35.333333333333336
+      },
+      "LOCATION_AND_DEMOGRAPHICS": {
+        "count": 3,
+        "avg_gap": 29.25
+      },
+      "CONSENT_AND_PRIVACY": {
+        "count": 30,
+        "avg_gap": 5.170212765957447
+      }
+    }
+  },
+  "num_timelines": 711
+}

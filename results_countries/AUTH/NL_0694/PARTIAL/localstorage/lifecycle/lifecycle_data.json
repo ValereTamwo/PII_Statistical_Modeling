@@ -1,0 +1,139 @@
+{
+  "storage_type": "localstorage",
+  "metrics": {
+    "total_items": 256,
+    "items_modified": 32,
+    "items_deleted": 188,
+    "entropy_increases": 42,
+    "entropy_decreases": 33,
+    "size_increases": 13,
+    "size_decreases": 9,
+    "pii_transitions": {
+      "APP_STATE_STORAGE -> USER_PREFERENCES": 3,
+      "IDENTITY_TRACKING -> ID_SOLUTIONS_AND_EXCHANGES": 2,
+      "BEHAVIORAL_DATA -> UX_AND_PERFORMANCE_ANALYTICS": 5,
+      "IDENTITY_TRACKING -> BEHAVIORAL_DATA": 13,
+      "ID_SOLUTIONS_AND_EXCHANGES -> UX_AND_PERFORMANCE_ANALYTICS": 5,
+      "BEHAVIORAL_DATA -> USER_PREFERENCES": 5,
+      "BEHAVIORAL_DATA -> IDENTITY_TRACKING": 7,
+      "CONSENT_AND_PRIVACY -> ID_SOLUTIONS_AND_EXCHANGES": 3,
+      "IDENTITY_TRACKING -> UX_AND_PERFORMANCE_ANALYTICS": 7,
+      "APP_STATE_STORAGE -> UX_AND_PERFORMANCE_ANALYTICS": 4,
+      "LOCATION_AND_DEMOGRAPHICS.general_loc -> USER_PREFERENCES": 1,
+      "CONSENT_AND_PRIVACY -> TECHNICAL_PASSWORDS": 2,
+      "CONSENT_AND_PRIVACY -> IDENTITY_TRACKING": 1,
+      "ID_SOLUTIONS_AND_EXCHANGES -> TECHNICAL_PASSWORDS": 2,
+      "DIRECT_PII -> USER_PREFERENCES": 1,
+      "IDENTITY_TRACKING -> USER_PREFERENCES": 1,
+      "BEHAVIORAL_DATA -> CONSENT_AND_PRIVACY": 1,
+      "LOCATION_AND_DEMOGRAPHICS -> USER_PREFERENCES": 1,
+      "IDENTITY_TRACKING -> DEVICE_ENV": 1,
+      "APP_STATE_STORAGE -> IDENTITY_TRACKING": 1,
+      "DEVICE_ENV -> TECHNICAL_PASSWORDS": 1,
+      "USER_PREFERENCES -> APP_STATE_STORAGE": 1,
+      "DIRECT_PII_KEYS -> LOCATION_AND_DEMOGRAPHICS": 1,
+      "APP_STATE_STORAGE -> ID_SOLUTIONS_AND_EXCHANGES": 1
+    },
+    "volatility_distribution": {
+      "high": 131,
+      "moderate": 76,
+      "stable": 49
+    },
+    "change_frequency": {
+      "avg_gap": 65.62052877138413,
+      "min_gap": 0,
+      "max_gap": 441
+    },
+    "frequent_changes": [
+      {
+        "key": "session_token_timestamp",
+        "avg_gap": 0.0,
+        "num_modifications": 2,
+        "pii_category": "TECHNICAL_PASSWORDS"
+      },
+      {
+        "key": "survi::dd2fbb10b875026230afd48e5f831cdc::VisitorStore::visitor",
+        "avg_gap": 0.0,
+        "num_modifications": 2,
+        "pii_category": "IDENTITY_TRACKING"
+      },
+      {
+        "key": "mopDeploy",
+        "avg_gap": 8.745098039215685,
+        "num_modifications": 23,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "expoints_external_pages_visited_counter",
+        "avg_gap": 31.11111111111111,
+        "num_modifications": 4,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "_gcl_ls",
+        "avg_gap": 36.6,
+        "num_modifications": 4,
+        "pii_category": "IDENTITY_TRACKING"
+      },
+      {
+        "key": "_grecaptcha",
+        "avg_gap": 36.714285714285715,
+        "num_modifications": 5,
+        "pii_category": "SECURITY_AND_BOT_MITIGATION"
+      },
+      {
+        "key": "popupLastShown",
+        "avg_gap": 38.0,
+        "num_modifications": 1,
+        "pii_category": "BEHAVIORAL_DATA"
+      }
+    ],
+    "url_modifications": {
+      "www.htm.nl": 15,
+      "www.ns.nl": 10,
+      "www.gemeentewestland.nl": 7,
+      "www.cbs.nl": 6,
+      "business.gov.nl": 6,
+      "esia.gosuslugi.ru": 6,
+      "www.ambtenarenlening.nl": 4,
+      "www.ttm.nl": 4,
+      "www.rijksoverheid.nl": 3,
+      "www.government.nl": 3
+    },
+    "pii_modification_patterns": {
+      "IDENTITY_TRACKING": {
+        "count": 24,
+        "avg_gap": 82.37931034482759
+      },
+      "BEHAVIORAL_DATA": {
+        "count": 32,
+        "avg_gap": 17.5
+      },
+      "UX_AND_PERFORMANCE_ANALYTICS": {
+        "count": 22,
+        "avg_gap": 106.65217391304348
+      },
+      "USER_PREFERENCES": {
+        "count": 2,
+        "avg_gap": 127.0
+      },
+      "TECHNICAL_PASSWORDS": {
+        "count": 2,
+        "avg_gap": 0.0
+      },
+      "NAVIGATION_HISTORY": {
+        "count": 1,
+        "avg_gap": 0
+      },
+      "ID_SOLUTIONS_AND_EXCHANGES": {
+        "count": 1,
+        "avg_gap": 0
+      },
+      "SECURITY_AND_BOT_MITIGATION": {
+        "count": 5,
+        "avg_gap": 36.714285714285715
+      }
+    }
+  },
+  "num_timelines": 256
+}

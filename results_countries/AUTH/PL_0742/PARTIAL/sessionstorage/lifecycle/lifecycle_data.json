@@ -1,0 +1,175 @@
+{
+  "storage_type": "sessionstorage",
+  "metrics": {
+    "total_items": 157,
+    "items_modified": 26,
+    "items_deleted": 82,
+    "entropy_increases": 14,
+    "entropy_decreases": 19,
+    "size_increases": 7,
+    "size_decreases": 7,
+    "pii_transitions": {
+      "BEHAVIORAL_DATA -> UX_AND_PERFORMANCE_ANALYTICS": 3,
+      "APP_STATE_STORAGE -> UX_AND_PERFORMANCE_ANALYTICS": 5,
+      "USER_PREFERENCES -> BEHAVIORAL_DATA": 2,
+      "APP_STATE_STORAGE -> SECURITY_AND_BOT_MITIGATION": 2,
+      "BEHAVIORAL_DATA -> NAVIGATION_HISTORY": 2,
+      "DIRECT_PII -> LOCATION_AND_DEMOGRAPHICS": 1,
+      "SESSION_MANAGEMENT -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "APP_STATE_STORAGE -> IDENTITY_TRACKING": 1,
+      "IDENTITY_TRACKING -> UX_AND_PERFORMANCE_ANALYTICS": 2,
+      "DEVICE_ENV -> IDENTITY_TRACKING": 1,
+      "CONSENT_AND_PRIVACY -> ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "BEHAVIORAL_DATA -> USER_PREFERENCES": 1,
+      "IDENTITY_TRACKING -> ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "ID_SOLUTIONS_AND_EXCHANGES -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "DEVICE_ENV -> NAVIGATION_HISTORY": 1,
+      "APP_STATE_STORAGE -> BEHAVIORAL_DATA": 1
+    },
+    "volatility_distribution": {
+      "high": 55,
+      "moderate": 39,
+      "stable": 63
+    },
+    "change_frequency": {
+      "avg_gap": 32.74481658692185,
+      "min_gap": 0,
+      "max_gap": 417
+    },
+    "frequent_changes": [
+      {
+        "key": "wc_fragments_f9cef47308ac14f060bb33ae6b488c26",
+        "avg_gap": 0.0,
+        "num_modifications": 2,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "__ecdp_visitor",
+        "avg_gap": 0.0,
+        "num_modifications": 3,
+        "pii_category": "ID_SOLUTIONS_AND_EXCHANGES"
+      },
+      {
+        "key": "wpsStore",
+        "avg_gap": 0.0,
+        "num_modifications": 5,
+        "pii_category": "NAVIGATION_HISTORY"
+      },
+      {
+        "key": "ecco-auth-form",
+        "avg_gap": 1.0,
+        "num_modifications": 16,
+        "pii_category": "LOCATION_AND_DEMOGRAPHICS"
+      },
+      {
+        "key": "tt_pixel_session_index",
+        "avg_gap": 3.307142857142857,
+        "num_modifications": 69,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "tt_sessionId",
+        "avg_gap": 5.935064935064935,
+        "num_modifications": 3,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "__rtbh.uid",
+        "avg_gap": 12.6,
+        "num_modifications": 10,
+        "pii_category": "ID_SOLUTIONS_AND_EXCHANGES"
+      },
+      {
+        "key": "store-cc234048-d005-40db-8b02-7968ef502684",
+        "avg_gap": 15.444444444444445,
+        "num_modifications": 10,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "__shopify_agent_context_events",
+        "avg_gap": 19.46153846153846,
+        "num_modifications": 4,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "__rtbh.lid",
+        "avg_gap": 20.045454545454547,
+        "num_modifications": 9,
+        "pii_category": "ID_SOLUTIONS_AND_EXCHANGES"
+      },
+      {
+        "key": "_shs_state",
+        "avg_gap": 23.846153846153847,
+        "num_modifications": 8,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "tt_s_pixel_session_index",
+        "avg_gap": 36.142857142857146,
+        "num_modifications": 2,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "wpEmojiSettingsSupports",
+        "avg_gap": 36.285714285714285,
+        "num_modifications": 2,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "store-chat-9bea5z67ys48xc3ai7s61zja38",
+        "avg_gap": 39.625,
+        "num_modifications": 9,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "gaUserPageSessionVisit",
+        "avg_gap": 42.0,
+        "num_modifications": 3,
+        "pii_category": "BEHAVIORAL_DATA"
+      }
+    ],
+    "url_modifications": {
+      "pl.ecco.com": 25,
+      "www.grecos.pl": 19,
+      "parkofpoland.com": 15,
+      "taranko.com": 11,
+      "www.willsoor.pl": 9,
+      "www.diabolique.com.pl": 9,
+      "www.lejdi.pl": 9,
+      "www.loberon.pl": 8,
+      "noblehealth.pl": 8,
+      "paypo.pl": 6
+    },
+    "pii_modification_patterns": {
+      "BEHAVIORAL_DATA": {
+        "count": 19,
+        "avg_gap": 72.53333333333333
+      },
+      "UX_AND_PERFORMANCE_ANALYTICS": {
+        "count": 107,
+        "avg_gap": 8.17910447761194
+      },
+      "ID_SOLUTIONS_AND_EXCHANGES": {
+        "count": 26,
+        "avg_gap": 24.317460317460316
+      },
+      "LOCATION_AND_DEMOGRAPHICS": {
+        "count": 16,
+        "avg_gap": 1.0
+      },
+      "CONSENT_AND_PRIVACY": {
+        "count": 3,
+        "avg_gap": 62.0
+      },
+      "IDENTITY_TRACKING": {
+        "count": 3,
+        "avg_gap": 66.25
+      },
+      "NAVIGATION_HISTORY": {
+        "count": 5,
+        "avg_gap": 0.0
+      }
+    }
+  },
+  "num_timelines": 157
+}

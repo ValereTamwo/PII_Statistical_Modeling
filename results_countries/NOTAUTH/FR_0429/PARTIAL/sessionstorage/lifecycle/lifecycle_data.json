@@ -10,25 +10,25 @@
     "size_decreases": 12,
     "pii_transitions": {
       "APP_STATE_STORAGE -> UX_AND_PERFORMANCE_ANALYTICS": 6,
-      "DIRECT_PII_KEYS -> UX_AND_PERFORMANCE_ANALYTICS": 1,
       "IDENTITY_TRACKING -> UX_AND_PERFORMANCE_ANALYTICS": 7,
-      "IDENTITY_TRACKING -> SESSION_MANAGEMENT": 1,
-      "APP_STATE_STORAGE -> BEHAVIORAL_DATA": 1,
+      "DIRECT_PII_KEYS -> UX_AND_PERFORMANCE_ANALYTICS": 1,
       "IDENTITY_TRACKING -> ID_SOLUTIONS_AND_EXCHANGES": 1,
-      "IDENTITY_TRACKING -> NAVIGATION_HISTORY": 1,
-      "ID_SOLUTIONS_AND_EXCHANGES -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "IDENTITY_TRACKING -> TECHNICAL_PASSWORDS": 1,
+      "SESSION_MANAGEMENT -> UX_AND_PERFORMANCE_ANALYTICS": 1,
       "ID_SOLUTIONS_AND_EXCHANGES -> SECURITY_AND_BOT_MITIGATION": 2,
       "APP_STATE_STORAGE -> USER_PREFERENCES": 2,
       "NAVIGATION_HISTORY -> UX_AND_PERFORMANCE_ANALYTICS": 1,
-      "SESSION_MANAGEMENT -> UX_AND_PERFORMANCE_ANALYTICS": 1,
       "DIRECT_PII -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "IDENTITY_TRACKING -> SESSION_MANAGEMENT": 1,
+      "ID_SOLUTIONS_AND_EXCHANGES -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "IDENTITY_TRACKING -> NAVIGATION_HISTORY": 1,
       "BEHAVIORAL_DATA -> UX_AND_PERFORMANCE_ANALYTICS": 1,
-      "IDENTITY_TRACKING -> TECHNICAL_PASSWORDS": 1
+      "APP_STATE_STORAGE -> BEHAVIORAL_DATA": 1
     },
     "volatility_distribution": {
       "stable": 57,
-      "high": 28,
-      "moderate": 24
+      "moderate": 24,
+      "high": 28
     },
     "change_frequency": {
       "avg_gap": 40.60117302052786,
@@ -37,16 +37,10 @@
     },
     "frequent_changes": [
       {
-        "key": "wpEmojiSettingsSupports",
+        "key": "ph_phc_nQp2LHBNr2FYxDzLpDmYVN7NraM2gjPZJtUTnSgCbX4L_session_registered_properties",
         "avg_gap": 0.0,
         "num_modifications": 2,
-        "pii_category": "BEHAVIORAL_DATA"
-      },
-      {
-        "key": "AMP_URL_INFO",
-        "avg_gap": 0.0,
-        "num_modifications": 2,
-        "pii_category": "NAVIGATION_HISTORY"
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
       },
       {
         "key": "4-fr_FR",
@@ -55,10 +49,16 @@
         "pii_category": "USER_PREFERENCES"
       },
       {
-        "key": "ph_phc_nQp2LHBNr2FYxDzLpDmYVN7NraM2gjPZJtUTnSgCbX4L_session_registered_properties",
+        "key": "AMP_URL_INFO",
         "avg_gap": 0.0,
         "num_modifications": 2,
-        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+        "pii_category": "NAVIGATION_HISTORY"
+      },
+      {
+        "key": "wpEmojiSettingsSupports",
+        "avg_gap": 0.0,
+        "num_modifications": 2,
+        "pii_category": "BEHAVIORAL_DATA"
       },
       {
         "key": "hbdbrk-ttl",
@@ -147,22 +147,18 @@
       "www.votreopinion.fr": 11,
       "www.terravita.fr": 9,
       "login.brevo.com": 9,
-      "www.soshape.com": 7,
       "www.gentside.com": 7,
+      "www.soshape.com": 7,
       "support.decathlon.fr": 6
     },
     "pii_modification_patterns": {
-      "UX_AND_PERFORMANCE_ANALYTICS": {
-        "count": 96,
-        "avg_gap": 22.294117647058822
-      },
       "BEHAVIORAL_DATA": {
         "count": 51,
         "avg_gap": 88.875
       },
-      "SESSION_MANAGEMENT": {
-        "count": 6,
-        "avg_gap": 55.2
+      "UX_AND_PERFORMANCE_ANALYTICS": {
+        "count": 96,
+        "avg_gap": 22.294117647058822
       },
       "ID_SOLUTIONS_AND_EXCHANGES": {
         "count": 6,
@@ -171,14 +167,6 @@
       "IDENTITY_TRACKING": {
         "count": 15,
         "avg_gap": 76.29411764705883
-      },
-      "NAVIGATION_HISTORY": {
-        "count": 2,
-        "avg_gap": 0.0
-      },
-      "USER_PREFERENCES": {
-        "count": 35,
-        "avg_gap": 11.818181818181818
       },
       "SECURITY_AND_BOT_MITIGATION": {
         "count": 2,
@@ -191,6 +179,18 @@
       "LOCATION_AND_DEMOGRAPHICS": {
         "count": 1,
         "avg_gap": 0
+      },
+      "USER_PREFERENCES": {
+        "count": 35,
+        "avg_gap": 11.818181818181818
+      },
+      "SESSION_MANAGEMENT": {
+        "count": 6,
+        "avg_gap": 55.2
+      },
+      "NAVIGATION_HISTORY": {
+        "count": 2,
+        "avg_gap": 0.0
       }
     }
   },

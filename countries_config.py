@@ -36,6 +36,12 @@ USERS = [
     "ES_0290",
     "DE_0018",
     "FR_0429",
+    "IE_0504",
+    "NL_0694",
+    "PL_0742",
+    "AT_0077",
+    "DK_0199",
+    "FI_0373",
 ]
 
 # Index of each user's block within regex_merged_v3.py's
@@ -48,6 +54,12 @@ USER_ID_TO_INDEX = {
     'ES_0290': 14,
     'DE_0018': 17,
     'FR_0429': 16,
+    'IE_0504': 3,
+    'NL_0694': 6,
+    'PL_0742': 7,
+    'AT_0077': 11,
+    'DK_0199': 13,
+    'FI_0373': 15,
 }
 
 AUTH_STATUSES = ["AUTH", "NOTAUTH"]

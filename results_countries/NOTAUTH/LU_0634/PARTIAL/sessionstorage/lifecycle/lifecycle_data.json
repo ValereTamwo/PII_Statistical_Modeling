@@ -9,19 +9,19 @@
     "size_increases": 8,
     "size_decreases": 11,
     "pii_transitions": {
-      "DEVICE_ENV -> NAVIGATION_HISTORY": 1,
-      "APP_STATE_STORAGE -> SECURITY_AND_BOT_MITIGATION": 3,
       "IDENTITY_TRACKING -> UX_AND_PERFORMANCE_ANALYTICS": 3,
-      "APP_STATE_STORAGE -> BEHAVIORAL_DATA": 1,
-      "BEHAVIORAL_DATA -> ID_SOLUTIONS_AND_EXCHANGES": 1,
-      "ID_SOLUTIONS_AND_EXCHANGES -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "APP_STATE_STORAGE -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "APP_STATE_STORAGE -> SECURITY_AND_BOT_MITIGATION": 3,
       "BEHAVIORAL_DATA -> DIRECT_PII_KEYS": 4,
-      "IDENTITY_TRACKING -> SESSION_MANAGEMENT": 1,
+      "DIRECT_PII_KEYS -> UX_AND_PERFORMANCE_ANALYTICS": 1,
       "NAVIGATION_HISTORY -> UX_AND_PERFORMANCE_ANALYTICS": 1,
       "IDENTITY_TRACKING -> NAVIGATION_HISTORY": 1,
       "ID_SOLUTIONS_AND_EXCHANGES -> SECURITY_AND_BOT_MITIGATION": 1,
-      "DIRECT_PII_KEYS -> UX_AND_PERFORMANCE_ANALYTICS": 1,
-      "APP_STATE_STORAGE -> UX_AND_PERFORMANCE_ANALYTICS": 1
+      "ID_SOLUTIONS_AND_EXCHANGES -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "DEVICE_ENV -> NAVIGATION_HISTORY": 1,
+      "IDENTITY_TRACKING -> SESSION_MANAGEMENT": 1,
+      "BEHAVIORAL_DATA -> ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "APP_STATE_STORAGE -> BEHAVIORAL_DATA": 1
     },
     "volatility_distribution": {
       "moderate": 22,
@@ -89,11 +89,11 @@
       "www.publico.pt": 7,
       "mediamarkt.lu": 7,
       "bilnet.lu.bil.com": 6,
-      "observador.pt": 5,
       "www.vdl.lu": 5,
+      "observador.pt": 5,
       "editalconcursosbrasil.com.br": 3,
-      "www.in.gr": 3,
-      "m.apkpure.com": 3
+      "www.noticiasaominuto.com": 3,
+      "www.in.gr": 3
     },
     "pii_modification_patterns": {
       "UX_AND_PERFORMANCE_ANALYTICS": {
@@ -103,10 +103,6 @@
       "BEHAVIORAL_DATA": {
         "count": 34,
         "avg_gap": 98.43333333333334
-      },
-      "NAVIGATION_HISTORY": {
-        "count": 11,
-        "avg_gap": 23.555555555555557
       },
       "ID_SOLUTIONS_AND_EXCHANGES": {
         "count": 3,
@@ -119,6 +115,10 @@
       "IDENTITY_TRACKING": {
         "count": 1,
         "avg_gap": 36.0
+      },
+      "NAVIGATION_HISTORY": {
+        "count": 11,
+        "avg_gap": 23.555555555555557
       }
     }
   },

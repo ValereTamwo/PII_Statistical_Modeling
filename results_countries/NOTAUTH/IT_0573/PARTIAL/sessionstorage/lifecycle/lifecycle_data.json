@@ -9,34 +9,34 @@
     "size_increases": 16,
     "size_decreases": 20,
     "pii_transitions": {
-      "DEVICE_ENV -> NAVIGATION_HISTORY": 1,
-      "LOCATION_AND_DEMOGRAPHICS -> USER_PREFERENCES": 1,
-      "IDENTITY_TRACKING -> UX_AND_PERFORMANCE_ANALYTICS": 8,
       "IDENTITY_TRACKING -> ID_SOLUTIONS_AND_EXCHANGES": 2,
-      "BEHAVIORAL_DATA -> USER_PREFERENCES": 2,
-      "APP_STATE_STORAGE -> UX_AND_PERFORMANCE_ANALYTICS": 6,
-      "CONSENT_AND_PRIVACY -> USER_PREFERENCES": 1,
-      "DEVICE_ENV -> LOCATION_AND_DEMOGRAPHICS": 1,
-      "IDENTITY_TRACKING -> USER_PREFERENCES": 1,
-      "APP_STATE_STORAGE -> SECURITY_AND_BOT_MITIGATION": 2,
-      "DIRECT_PII_KEYS -> LOCATION_AND_DEMOGRAPHICS": 1,
-      "DIRECT_PII -> UX_AND_PERFORMANCE_ANALYTICS": 1,
-      "ID_SOLUTIONS_AND_EXCHANGES -> UX_AND_PERFORMANCE_ANALYTICS": 2,
+      "IDENTITY_TRACKING -> UX_AND_PERFORMANCE_ANALYTICS": 8,
       "SESSION_MANAGEMENT -> UX_AND_PERFORMANCE_ANALYTICS": 3,
+      "APP_STATE_STORAGE -> SECURITY_AND_BOT_MITIGATION": 2,
+      "NAVIGATION_HISTORY -> UX_AND_PERFORMANCE_ANALYTICS": 2,
+      "CONSENT_AND_PRIVACY -> USER_PREFERENCES": 1,
+      "IDENTITY_TRACKING -> SESSION_MANAGEMENT": 1,
       "BEHAVIORAL_DATA -> UX_AND_PERFORMANCE_ANALYTICS": 3,
       "DIRECT_PII_KEYS -> USER_PREFERENCES": 1,
-      "DIRECT_PII -> LOCATION_AND_DEMOGRAPHICS": 1,
-      "IDENTITY_TRACKING -> BEHAVIORAL_DATA": 3,
-      "NAVIGATION_HISTORY -> UX_AND_PERFORMANCE_ANALYTICS": 2,
-      "IDENTITY_TRACKING -> TECHNICAL_PASSWORDS": 1,
+      "BEHAVIORAL_DATA -> USER_PREFERENCES": 2,
       "CONSENT_AND_PRIVACY -> UX_AND_PERFORMANCE_ANALYTICS": 2,
+      "IDENTITY_TRACKING -> BEHAVIORAL_DATA": 3,
+      "BEHAVIORAL_DATA -> DIRECT_PII_KEYS": 1,
+      "LOCATION_AND_DEMOGRAPHICS -> USER_PREFERENCES": 1,
+      "DIRECT_PII_KEYS -> LOCATION_AND_DEMOGRAPHICS": 1,
+      "APP_STATE_STORAGE -> UX_AND_PERFORMANCE_ANALYTICS": 6,
+      "DEVICE_ENV -> LOCATION_AND_DEMOGRAPHICS": 1,
       "APP_STATE_STORAGE -> BEHAVIORAL_DATA": 1,
-      "IDENTITY_TRACKING -> SESSION_MANAGEMENT": 1,
-      "BEHAVIORAL_DATA -> DIRECT_PII_KEYS": 1
+      "ID_SOLUTIONS_AND_EXCHANGES -> UX_AND_PERFORMANCE_ANALYTICS": 2,
+      "IDENTITY_TRACKING -> USER_PREFERENCES": 1,
+      "DIRECT_PII -> LOCATION_AND_DEMOGRAPHICS": 1,
+      "IDENTITY_TRACKING -> TECHNICAL_PASSWORDS": 1,
+      "DIRECT_PII -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "DEVICE_ENV -> NAVIGATION_HISTORY": 1
     },
     "volatility_distribution": {
-      "high": 36,
       "stable": 339,
+      "high": 36,
       "moderate": 71
     },
     "change_frequency": {
@@ -136,13 +136,13 @@
         "pii_category": "BEHAVIORAL_DATA"
       },
       {
-        "key": "omScrollHeight",
+        "key": "omSessionPageviews",
         "avg_gap": 25.5,
         "num_modifications": 2,
         "pii_category": "BEHAVIORAL_DATA"
       },
       {
-        "key": "omSessionPageviews",
+        "key": "omScrollHeight",
         "avg_gap": 25.5,
         "num_modifications": 2,
         "pii_category": "BEHAVIORAL_DATA"
@@ -172,52 +172,52 @@
       "www.glamood.com": 21,
       "www.lampadadiretta.it": 20,
       "www.stanhome.it": 20,
-      "www.trollbeads.it": 16,
       "it.victoriassecret.com": 16,
+      "www.trollbeads.it": 16,
       "www.bauzaar.it": 15,
       "www.figuredart.it": 15,
       "www.basko.it": 15
     },
     "pii_modification_patterns": {
-      "NAVIGATION_HISTORY": {
-        "count": 29,
-        "avg_gap": 32.696969696969695
-      },
-      "BEHAVIORAL_DATA": {
-        "count": 77,
-        "avg_gap": 74.55223880597015
-      },
       "ID_SOLUTIONS_AND_EXCHANGES": {
         "count": 10,
         "avg_gap": 17.90909090909091
-      },
-      "APP_STATE_STORAGE": {
-        "count": 4,
-        "avg_gap": 77.0
-      },
-      "IDENTITY_TRACKING": {
-        "count": 8,
-        "avg_gap": 118.4
-      },
-      "LOCATION_AND_DEMOGRAPHICS": {
-        "count": 6,
-        "avg_gap": 8.0
       },
       "UX_AND_PERFORMANCE_ANALYTICS": {
         "count": 231,
         "avg_gap": 12.375
       },
-      "CONSENT_AND_PRIVACY": {
-        "count": 32,
-        "avg_gap": 11.411764705882353
+      "BEHAVIORAL_DATA": {
+        "count": 77,
+        "avg_gap": 74.55223880597015
+      },
+      "APP_STATE_STORAGE": {
+        "count": 4,
+        "avg_gap": 77.0
       },
       "USER_PREFERENCES": {
         "count": 2,
         "avg_gap": 65.5
       },
+      "IDENTITY_TRACKING": {
+        "count": 8,
+        "avg_gap": 118.4
+      },
+      "NAVIGATION_HISTORY": {
+        "count": 29,
+        "avg_gap": 32.696969696969695
+      },
       "DIRECT_PII_KEYS": {
         "count": 3,
         "avg_gap": 16.375
+      },
+      "LOCATION_AND_DEMOGRAPHICS": {
+        "count": 6,
+        "avg_gap": 8.0
+      },
+      "CONSENT_AND_PRIVACY": {
+        "count": 32,
+        "avg_gap": 11.411764705882353
       }
     }
   },

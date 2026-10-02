@@ -1,0 +1,226 @@
+{
+  "storage_type": "localstorage",
+  "metrics": {
+    "total_items": 284,
+    "items_modified": 64,
+    "items_deleted": 124,
+    "entropy_increases": 26,
+    "entropy_decreases": 32,
+    "size_increases": 15,
+    "size_decreases": 8,
+    "pii_transitions": {
+      "ID_SOLUTIONS_AND_EXCHANGES -> LOCATION_AND_DEMOGRAPHICS": 1,
+      "ID_SOLUTIONS_AND_EXCHANGES -> TECHNICAL_PASSWORDS": 3,
+      "IDENTITY_TRACKING -> ID_SOLUTIONS_AND_EXCHANGES": 3,
+      "BEHAVIORAL_DATA -> UX_AND_PERFORMANCE_ANALYTICS": 6,
+      "APP_STATE_STORAGE -> UX_AND_PERFORMANCE_ANALYTICS": 7,
+      "ID_SOLUTIONS_AND_EXCHANGES -> UX_AND_PERFORMANCE_ANALYTICS": 8,
+      "BEHAVIORAL_DATA -> USER_PREFERENCES": 1,
+      "CONSENT_AND_PRIVACY -> ID_SOLUTIONS_AND_EXCHANGES": 4,
+      "IDENTITY_TRACKING -> UX_AND_PERFORMANCE_ANALYTICS": 2,
+      "BEHAVIORAL_DATA -> IDENTITY_TRACKING": 6,
+      "IDENTITY_TRACKING -> SESSION_MANAGEMENT": 1,
+      "CONSENT_AND_PRIVACY -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "LOCATION_AND_DEMOGRAPHICS -> LOCATION_AND_DEMOGRAPHICS.general_loc": 1,
+      "APP_STATE_STORAGE -> IDENTITY_TRACKING": 2,
+      "ID_SOLUTIONS_AND_EXCHANGES -> IDENTITY_TRACKING": 3,
+      "USER_PREFERENCES -> IDENTITY_TRACKING": 2,
+      "APP_STATE_STORAGE -> TECHNICAL_PASSWORDS": 1,
+      "IDENTITY_TRACKING -> ID_SOLUTIONS_AND_EXCHANGES.shared_id": 2,
+      "CONSENT_AND_PRIVACY -> TECHNICAL_PASSWORDS": 2,
+      "DIRECT_PII_KEYS -> LOCATION_AND_DEMOGRAPHICS": 2,
+      "BEHAVIORAL_DATA -> LOCATION_AND_DEMOGRAPHICS": 1,
+      "IDENTITY_TRACKING -> BEHAVIORAL_DATA": 1,
+      "LOCATION_AND_DEMOGRAPHICS -> USER_PREFERENCES": 1,
+      "IDENTITY_TRACKING -> SECURITY_AND_BOT_MITIGATION": 1,
+      "BEHAVIORAL_DATA -> CONSENT_AND_PRIVACY": 1,
+      "DEVICE_ENV -> TECHNICAL_PASSWORDS": 1,
+      "DIRECT_PII_KEYS -> TECHNICAL_PASSWORDS": 1,
+      "DEVICE_ENV -> ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "ID_SOLUTIONS_AND_EXCHANGES -> BEHAVIORAL_DATA": 1
+    },
+    "volatility_distribution": {
+      "moderate": 88,
+      "stable": 135,
+      "high": 61
+    },
+    "change_frequency": {
+      "avg_gap": 30.85304659498208,
+      "min_gap": 0,
+      "max_gap": 304
+    },
+    "frequent_changes": [
+      {
+        "key": "cookiefirst-consent",
+        "avg_gap": 0.0,
+        "num_modifications": 2,
+        "pii_category": "CONSENT_AND_PRIVACY"
+      },
+      {
+        "key": "id5id_v2_5148437886666650",
+        "avg_gap": 4.705882352941177,
+        "num_modifications": 6,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "id5id_v2_1469672954073807",
+        "avg_gap": 4.705882352941177,
+        "num_modifications": 6,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "id5id_v2_3241690840905202",
+        "avg_gap": 4.705882352941177,
+        "num_modifications": 6,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "id5id",
+        "avg_gap": 5.714285714285714,
+        "num_modifications": 5,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "kameleoonLegalConsent",
+        "avg_gap": 7.428571428571429,
+        "num_modifications": 4,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "mopDeploy",
+        "avg_gap": 8.0,
+        "num_modifications": 48,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "AMP_remote_config_32dd0337de",
+        "avg_gap": 13.75,
+        "num_modifications": 9,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "id5id_cached_consent_data_exp",
+        "avg_gap": 16.0,
+        "num_modifications": 2,
+        "pii_category": "ID_SOLUTIONS_AND_EXCHANGES"
+      },
+      {
+        "key": "_gcl_ls",
+        "avg_gap": 20.2,
+        "num_modifications": 7,
+        "pii_category": "IDENTITY_TRACKING"
+      },
+      {
+        "key": "ZD-suid",
+        "avg_gap": 22.0,
+        "num_modifications": 6,
+        "pii_category": "ID_SOLUTIONS_AND_EXCHANGES"
+      },
+      {
+        "key": "expoints_external_pages_visited_counter",
+        "avg_gap": 25.666666666666668,
+        "num_modifications": 8,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "kameleoonData-7mrohxmwmi",
+        "avg_gap": 28.5,
+        "num_modifications": 2,
+        "pii_category": "IDENTITY_TRACKING"
+      },
+      {
+        "key": "survi::dd2fbb10b875026230afd48e5f831cdc::VisitorStore::visitor",
+        "avg_gap": 30.2,
+        "num_modifications": 4,
+        "pii_category": "IDENTITY_TRACKING"
+      },
+      {
+        "key": "lastExternalReferrerTime",
+        "avg_gap": 32.30769230769231,
+        "num_modifications": 5,
+        "pii_category": "NAVIGATION_HISTORY"
+      },
+      {
+        "key": "i18nextLng",
+        "avg_gap": 33.4,
+        "num_modifications": 3,
+        "pii_category": "APP_STATE_STORAGE"
+      },
+      {
+        "key": "_grecaptcha",
+        "avg_gap": 37.75,
+        "num_modifications": 2,
+        "pii_category": "SECURITY_AND_BOT_MITIGATION"
+      },
+      {
+        "key": "id5id_privacy_exp",
+        "avg_gap": 40.0,
+        "num_modifications": 1,
+        "pii_category": "ID_SOLUTIONS_AND_EXCHANGES"
+      },
+      {
+        "key": "cto_bidid",
+        "avg_gap": 40.0,
+        "num_modifications": 1,
+        "pii_category": "ID_SOLUTIONS_AND_EXCHANGES"
+      },
+      {
+        "key": "id5id_396_nb_exp",
+        "avg_gap": 40.0,
+        "num_modifications": 1,
+        "pii_category": "ID_SOLUTIONS_AND_EXCHANGES"
+      }
+    ],
+    "url_modifications": {
+      "routenet.nl": 34,
+      "app.portal.get-e.com": 18,
+      "www.htm.nl": 16,
+      "mijn.uwv.nl": 10,
+      "www.ns.nl": 8,
+      "www.delft.nl": 8,
+      "www.werkenvoornederland.nl": 6,
+      "ind.nl": 6,
+      "www.denhaag.nl": 6,
+      "www.rotterdam.nl": 6
+    },
+    "pii_modification_patterns": {
+      "BEHAVIORAL_DATA": {
+        "count": 72,
+        "avg_gap": 42.69117647058823
+      },
+      "IDENTITY_TRACKING": {
+        "count": 36,
+        "avg_gap": 49.8
+      },
+      "UX_AND_PERFORMANCE_ANALYTICS": {
+        "count": 57,
+        "avg_gap": 22.275862068965516
+      },
+      "ID_SOLUTIONS_AND_EXCHANGES": {
+        "count": 20,
+        "avg_gap": 37.75
+      },
+      "NAVIGATION_HISTORY": {
+        "count": 6,
+        "avg_gap": 43.46666666666667
+      },
+      "USER_PREFERENCES": {
+        "count": 4,
+        "avg_gap": 56.0
+      },
+      "CONSENT_AND_PRIVACY": {
+        "count": 2,
+        "avg_gap": 0.0
+      },
+      "APP_STATE_STORAGE": {
+        "count": 3,
+        "avg_gap": 33.4
+      },
+      "SECURITY_AND_BOT_MITIGATION": {
+        "count": 2,
+        "avg_gap": 37.75
+      }
+    }
+  },
+  "num_timelines": 284
+}

@@ -1,0 +1,104 @@
+{
+  "storage_type": "sessionstorage",
+  "metrics": {
+    "total_items": 121,
+    "items_modified": 12,
+    "items_deleted": 90,
+    "entropy_increases": 14,
+    "entropy_decreases": 19,
+    "size_increases": 3,
+    "size_decreases": 11,
+    "pii_transitions": {
+      "BEHAVIORAL_DATA -> NAVIGATION_HISTORY": 3,
+      "APP_STATE_STORAGE -> SECURITY_AND_BOT_MITIGATION": 2,
+      "BEHAVIORAL_DATA -> ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "IDENTITY_TRACKING -> ID_SOLUTIONS_AND_EXCHANGES": 2,
+      "BEHAVIORAL_DATA -> IDENTITY_TRACKING": 2,
+      "APP_STATE_STORAGE -> UX_AND_PERFORMANCE_ANALYTICS": 6,
+      "IDENTITY_TRACKING -> NAVIGATION_HISTORY": 2,
+      "NAVIGATION_HISTORY -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "IDENTITY_TRACKING -> SESSION_MANAGEMENT": 1,
+      "IDENTITY_TRACKING -> UX_AND_PERFORMANCE_ANALYTICS": 4,
+      "APP_STATE_STORAGE -> LOCATION_AND_DEMOGRAPHICS": 2,
+      "SECURITY_AND_BOT_MITIGATION -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "NAVIGATION_HISTORY -> BEHAVIORAL_DATA": 2,
+      "BEHAVIORAL_DATA -> TECHNICAL_PASSWORDS": 1,
+      "DIRECT_PII -> SESSION_MANAGEMENT": 1,
+      "IDENTITY_TRACKING -> LOCATION_AND_DEMOGRAPHICS": 1,
+      "ID_SOLUTIONS_AND_EXCHANGES -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "IDENTITY_TRACKING -> TECHNICAL_PASSWORDS": 1,
+      "APP_STATE_STORAGE -> BEHAVIORAL_DATA": 1
+    },
+    "volatility_distribution": {
+      "moderate": 58,
+      "high": 34,
+      "stable": 29
+    },
+    "change_frequency": {
+      "avg_gap": 25.322429906542055,
+      "min_gap": 0,
+      "max_gap": 288
+    },
+    "frequent_changes": [
+      {
+        "key": "event_tracker_sid",
+        "avg_gap": 6.482142857142857,
+        "num_modifications": 45,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "truendo_data",
+        "avg_gap": 6.6976744186046515,
+        "num_modifications": 22,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "HITsessionId",
+        "avg_gap": 17.22222222222222,
+        "num_modifications": 4,
+        "pii_category": "SESSION_MANAGEMENT"
+      },
+      {
+        "key": "_cX_S",
+        "avg_gap": 19.80952380952381,
+        "num_modifications": 12,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      }
+    ],
+    "url_modifications": {
+      "media.portal.worldoftulo.com": 47,
+      "laura.fi": 22,
+      "hilla.portal.worldoftulo.com": 9,
+      "tilaa.media.fi": 5,
+      "uutisankka.com": 4,
+      "www.seiska.fi": 3,
+      "www.mtvuutiset.fi": 3,
+      "www.ytkpalvelut.fi": 2,
+      "tilaus.hymy.fi": 2,
+      "tili.otavamedia.fi": 2
+    },
+    "pii_modification_patterns": {
+      "BEHAVIORAL_DATA": {
+        "count": 6,
+        "avg_gap": 97.66666666666667
+      },
+      "UX_AND_PERFORMANCE_ANALYTICS": {
+        "count": 81,
+        "avg_gap": 9.975206611570249
+      },
+      "SESSION_MANAGEMENT": {
+        "count": 4,
+        "avg_gap": 17.22222222222222
+      },
+      "IDENTITY_TRACKING": {
+        "count": 5,
+        "avg_gap": 51.625
+      },
+      "ID_SOLUTIONS_AND_EXCHANGES": {
+        "count": 3,
+        "avg_gap": 53.5
+      }
+    }
+  },
+  "num_timelines": 121
+}

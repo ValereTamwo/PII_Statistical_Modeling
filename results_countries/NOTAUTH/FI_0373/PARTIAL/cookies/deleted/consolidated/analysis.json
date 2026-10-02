@@ -1,0 +1,2629 @@
+{
+  "total_cookies": 781,
+  "direct_pii_count": 2,
+  "other_count": 779,
+  "lifetime_distribution": {
+    "Session": 759,
+    "6-18 months": 14,
+    "<6 months": 8
+  },
+  "lifetime_by_pii": {
+    "city_encoded": {
+      "Session": 2
+    },
+    "APP_STATE_STORAGE": {
+      "6-18 months": 2,
+      "Session": 8
+    },
+    "BEHAVIORAL_DATA": {
+      "Session": 35
+    },
+    "CONSENT_AND_PRIVACY": {
+      "Session": 2,
+      "<6 months": 1
+    },
+    "IDENTITY_TRACKING": {
+      "Session": 231,
+      "6-18 months": 8,
+      "<6 months": 1
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "<6 months": 4,
+      "Session": 8
+    },
+    "INFRASTRUCTURE": {
+      "Session": 1
+    },
+    "LOCATION_AND_DEMOGRAPHICS": {
+      "Session": 2
+    },
+    "NAVIGATION_HISTORY": {
+      "Session": 7
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "Session": 155
+    },
+    "SESSION_MANAGEMENT": {
+      "Session": 36
+    },
+    "TECHNICAL_PASSWORDS": {
+      "Session": 17
+    },
+    "USER_PREFERENCES": {
+      "Session": 64
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "Session": 191,
+      "<6 months": 2,
+      "6-18 months": 4
+    }
+  },
+  "httponly_distribution": {
+    "False": 588,
+    "True": 193
+  },
+  "httponly_by_pii": {
+    "city_encoded": {
+      "False": 2
+    },
+    "APP_STATE_STORAGE": {
+      "False": 10
+    },
+    "BEHAVIORAL_DATA": {
+      "False": 33,
+      "True": 2
+    },
+    "CONSENT_AND_PRIVACY": {
+      "False": 3
+    },
+    "IDENTITY_TRACKING": {
+      "False": 206,
+      "True": 34
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "False": 10,
+      "True": 2
+    },
+    "INFRASTRUCTURE": {
+      "True": 1
+    },
+    "LOCATION_AND_DEMOGRAPHICS": {
+      "True": 2
+    },
+    "NAVIGATION_HISTORY": {
+      "False": 7
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "True": 140,
+      "False": 15
+    },
+    "SESSION_MANAGEMENT": {
+      "False": 28,
+      "True": 8
+    },
+    "TECHNICAL_PASSWORDS": {
+      "False": 17
+    },
+    "USER_PREFERENCES": {
+      "False": 63,
+      "True": 1
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "False": 194,
+      "True": 3
+    }
+  },
+  "secure_distribution": {
+    "False": 252,
+    "True": 529
+  },
+  "secure_by_pii": {
+    "city_encoded": {
+      "False": 2
+    },
+    "APP_STATE_STORAGE": {
+      "False": 2,
+      "True": 8
+    },
+    "BEHAVIORAL_DATA": {
+      "True": 29,
+      "False": 6
+    },
+    "CONSENT_AND_PRIVACY": {
+      "True": 2,
+      "False": 1
+    },
+    "IDENTITY_TRACKING": {
+      "False": 96,
+      "True": 144
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "True": 12
+    },
+    "INFRASTRUCTURE": {
+      "True": 1
+    },
+    "LOCATION_AND_DEMOGRAPHICS": {
+      "True": 2
+    },
+    "NAVIGATION_HISTORY": {
+      "False": 7
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "True": 155
+    },
+    "SESSION_MANAGEMENT": {
+      "True": 35,
+      "False": 1
+    },
+    "TECHNICAL_PASSWORDS": {
+      "False": 6,
+      "True": 11
+    },
+    "USER_PREFERENCES": {
+      "False": 56,
+      "True": 8
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "False": 75,
+      "True": 122
+    }
+  },
+  "samesite_distribution": {
+    "Lax": 361,
+    "Strict": 32,
+    "No Restriction": 388
+  },
+  "samesite_by_pii": {
+    "city_encoded": {
+      "Lax": 2
+    },
+    "APP_STATE_STORAGE": {
+      "Lax": 8,
+      "Strict": 2
+    },
+    "BEHAVIORAL_DATA": {
+      "No Restriction": 23,
+      "Lax": 12
+    },
+    "CONSENT_AND_PRIVACY": {
+      "No Restriction": 2,
+      "Lax": 1
+    },
+    "IDENTITY_TRACKING": {
+      "Lax": 131,
+      "No Restriction": 100,
+      "Strict": 9
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "No Restriction": 12
+    },
+    "INFRASTRUCTURE": {
+      "No Restriction": 1
+    },
+    "LOCATION_AND_DEMOGRAPHICS": {
+      "Lax": 2
+    },
+    "NAVIGATION_HISTORY": {
+      "Lax": 7
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "No Restriction": 139,
+      "Strict": 7,
+      "Lax": 9
+    },
+    "SESSION_MANAGEMENT": {
+      "No Restriction": 31,
+      "Lax": 5
+    },
+    "TECHNICAL_PASSWORDS": {
+      "Lax": 8,
+      "Strict": 6,
+      "No Restriction": 3
+    },
+    "USER_PREFERENCES": {
+      "Lax": 61,
+      "No Restriction": 1,
+      "Strict": 2
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "Lax": 115,
+      "No Restriction": 76,
+      "Strict": 6
+    }
+  },
+  "security_matrix": {
+    "(False, False)": 252,
+    "(False, True)": 336,
+    "(True, True)": 193
+  },
+  "security_by_pii": {
+    "city_encoded": {
+      "Lowly Secure": 2
+    },
+    "APP_STATE_STORAGE": {
+      "Lowly Secure": 2,
+      "Partially Secure": 8
+    },
+    "BEHAVIORAL_DATA": {
+      "Partially Secure": 27,
+      "Lowly Secure": 6,
+      "Secure": 2
+    },
+    "CONSENT_AND_PRIVACY": {
+      "Partially Secure": 2,
+      "Lowly Secure": 1
+    },
+    "IDENTITY_TRACKING": {
+      "Lowly Secure": 96,
+      "Secure": 34,
+      "Partially Secure": 110
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "Partially Secure": 10,
+      "Secure": 2
+    },
+    "INFRASTRUCTURE": {
+      "Secure": 1
+    },
+    "LOCATION_AND_DEMOGRAPHICS": {
+      "Secure": 2
+    },
+    "NAVIGATION_HISTORY": {
+      "Lowly Secure": 7
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "Secure": 140,
+      "Partially Secure": 15
+    },
+    "SESSION_MANAGEMENT": {
+      "Partially Secure": 27,
+      "Secure": 8,
+      "Lowly Secure": 1
+    },
+    "TECHNICAL_PASSWORDS": {
+      "Lowly Secure": 6,
+      "Partially Secure": 11
+    },
+    "USER_PREFERENCES": {
+      "Lowly Secure": 56,
+      "Partially Secure": 7,
+      "Secure": 1
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "Lowly Secure": 75,
+      "Partially Secure": 119,
+      "Secure": 3
+    }
+  },
+  "thirdparty_distribution": {
+    "Third-Party": 655,
+    "First-Party": 126
+  },
+  "thirdparty_by_pii": {
+    "city_encoded": {
+      "Third-Party": 2
+    },
+    "APP_STATE_STORAGE": {
+      "First-Party": 1,
+      "Third-Party": 9
+    },
+    "BEHAVIORAL_DATA": {
+      "Third-Party": 35
+    },
+    "CONSENT_AND_PRIVACY": {
+      "Third-Party": 2,
+      "First-Party": 1
+    },
+    "IDENTITY_TRACKING": {
+      "First-Party": 77,
+      "Third-Party": 163
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "Third-Party": 12
+    },
+    "INFRASTRUCTURE": {
+      "Third-Party": 1
+    },
+    "LOCATION_AND_DEMOGRAPHICS": {
+      "Third-Party": 2
+    },
+    "NAVIGATION_HISTORY": {
+      "Third-Party": 7
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "Third-Party": 155
+    },
+    "SESSION_MANAGEMENT": {
+      "Third-Party": 36
+    },
+    "TECHNICAL_PASSWORDS": {
+      "Third-Party": 17
+    },
+    "USER_PREFERENCES": {
+      "Third-Party": 63,
+      "First-Party": 1
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "First-Party": 46,
+      "Third-Party": 151
+    }
+  },
+  "thirdparty_httponly": {
+    "Third-Party_False": 462,
+    "First-Party_False": 126,
+    "Third-Party_True": 193
+  },
+  "thirdparty_secure": {
+    "Third-Party_False": 137,
+    "First-Party_False": 115,
+    "Third-Party_True": 518,
+    "First-Party_True": 11
+  },
+  "risk_levels": {
+    "High Risk": 252,
+    "Medium Risk": 492,
+    "Low Risk": 36,
+    "Critical Risk": 1
+  },
+  "risk_by_pii": {
+    "city_encoded": {
+      "High Risk": 2
+    },
+    "APP_STATE_STORAGE": {
+      "Medium Risk": 2,
+      "Low Risk": 8
+    },
+    "BEHAVIORAL_DATA": {
+      "Medium Risk": 35
+    },
+    "CONSENT_AND_PRIVACY": {
+      "Medium Risk": 3
+    },
+    "IDENTITY_TRACKING": {
+      "High Risk": 215,
+      "Medium Risk": 24,
+      "Critical Risk": 1
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "High Risk": 12
+    },
+    "INFRASTRUCTURE": {
+      "Low Risk": 1
+    },
+    "LOCATION_AND_DEMOGRAPHICS": {
+      "Low Risk": 2
+    },
+    "NAVIGATION_HISTORY": {
+      "Medium Risk": 4,
+      "High Risk": 3
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "Medium Risk": 148,
+      "Low Risk": 7
+    },
+    "SESSION_MANAGEMENT": {
+      "Medium Risk": 36
+    },
+    "TECHNICAL_PASSWORDS": {
+      "Medium Risk": 9,
+      "Low Risk": 8
+    },
+    "USER_PREFERENCES": {
+      "Medium Risk": 55,
+      "Low Risk": 9
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "Medium Risk": 176,
+      "High Risk": 20,
+      "Low Risk": 1
+    }
+  },
+  "keywords": {
+    "gtm": 90,
+    "hjsession": 60,
+    "amc": 58,
+    "59826532": 44,
+    "gravitosync": 36,
+    "sid": 31,
+    "session": 29,
+    "gat": 28,
+    "svref": 27,
+    "stripe": 24,
+    "lst": 19,
+    "ses": 19,
+    "19618746": 18,
+    "kndctr": 17,
+    "adobeorg": 17
+  },
+  "content_hierarchy": {
+    "complex_string": {
+      "city_encoded": 2,
+      "BEHAVIORAL_DATA": 6,
+      "CONSENT_AND_PRIVACY": 2,
+      "IDENTITY_TRACKING": 55,
+      "ID_SOLUTIONS_AND_EXCHANGES": 5,
+      "INFRASTRUCTURE": 1,
+      "NAVIGATION_HISTORY": 6,
+      "SECURITY_AND_BOT_MITIGATION": 137,
+      "SESSION_MANAGEMENT": 3,
+      "USER_PREFERENCES": 5,
+      "UX_AND_PERFORMANCE_ANALYTICS": 61
+    },
+    "token_id": {
+      "APP_STATE_STORAGE": 2,
+      "IDENTITY_TRACKING": 20,
+      "SECURITY_AND_BOT_MITIGATION": 6,
+      "SESSION_MANAGEMENT": 3,
+      "TECHNICAL_PASSWORDS": 6,
+      "UX_AND_PERFORMANCE_ANALYTICS": 7
+    },
+    "empty": {
+      "APP_STATE_STORAGE": 2,
+      "UX_AND_PERFORMANCE_ANALYTICS": 5
+    },
+    "json_structured": {
+      "APP_STATE_STORAGE": 5,
+      "BEHAVIORAL_DATA": 26,
+      "IDENTITY_TRACKING": 3,
+      "LOCATION_AND_DEMOGRAPHICS": 2,
+      "SECURITY_AND_BOT_MITIGATION": 3,
+      "SESSION_MANAGEMENT": 20,
+      "USER_PREFERENCES": 9,
+      "UX_AND_PERFORMANCE_ANALYTICS": 21
+    },
+    "number": {
+      "APP_STATE_STORAGE": 1,
+      "BEHAVIORAL_DATA": 1,
+      "IDENTITY_TRACKING": 38,
+      "SECURITY_AND_BOT_MITIGATION": 6,
+      "TECHNICAL_PASSWORDS": 1,
+      "UX_AND_PERFORMANCE_ANALYTICS": 2
+    },
+    "short_text": {
+      "BEHAVIORAL_DATA": 1,
+      "IDENTITY_TRACKING": 21,
+      "ID_SOLUTIONS_AND_EXCHANGES": 2,
+      "NAVIGATION_HISTORY": 1,
+      "SECURITY_AND_BOT_MITIGATION": 3,
+      "SESSION_MANAGEMENT": 8,
+      "TECHNICAL_PASSWORDS": 3,
+      "USER_PREFERENCES": 5,
+      "UX_AND_PERFORMANCE_ANALYTICS": 42
+    },
+    "boolean": {
+      "BEHAVIORAL_DATA": 1,
+      "CONSENT_AND_PRIVACY": 1,
+      "IDENTITY_TRACKING": 74,
+      "ID_SOLUTIONS_AND_EXCHANGES": 5,
+      "SESSION_MANAGEMENT": 2,
+      "TECHNICAL_PASSWORDS": 6,
+      "USER_PREFERENCES": 45,
+      "UX_AND_PERFORMANCE_ANALYTICS": 55
+    },
+    "uuid": {
+      "IDENTITY_TRACKING": 27,
+      "TECHNICAL_PASSWORDS": 1,
+      "UX_AND_PERFORMANCE_ANALYTICS": 4
+    },
+    "timestamp": {
+      "IDENTITY_TRACKING": 2
+    }
+  },
+  "content_types": {
+    "complex_string": 283,
+    "token_id": 44,
+    "empty": 7,
+    "json_structured": 89,
+    "number": 49,
+    "short_text": 86,
+    "boolean": 189,
+    "uuid": 32,
+    "timestamp": 2
+  },
+  "vendor_counts": {
+    "laura.fi": 6,
+    "hs.fi": 25,
+    "satakunnankansa.fi": 30,
+    "yliopistonapteekki.fi": 20,
+    "suomenakut.fi": 2,
+    "kauppalehti.fi": 18,
+    "qasa.com": 7,
+    "apu.fi": 12,
+    "terve.fi": 11,
+    "oomi.fi": 11,
+    "otavamedia.fi": 4,
+    "nordea.fi": 9,
+    "worldoftulo.com": 13,
+    "bidtheatre.com": 3,
+    "oikotie.fi": 2,
+    "dvv.fi": 9,
+    "keski-uusimaa.fi": 22,
+    "ksml.fi": 17,
+    "forssanlehti.fi": 16,
+    "ess.fi": 30,
+    "tamperelainen.fi": 18,
+    "bidswitch.net": 10,
+    "danskebank.fi": 2,
+    "banknorwegian.fi": 7,
+    "a-mo.net": 62,
+    "wilma.fi": 6,
+    "sahkonhinta.fi": 3,
+    "postimees.ee": 23,
+    "Microsoft": 13,
+    "ytkpalvelut.fi": 3,
+    "Google": 4,
+    "uutisvuoksi.fi": 23,
+    "sydan.fi": 4,
+    "lehtiluukku.fi": 8,
+    "aamuposti.fi": 22,
+    "kuvake.net": 11,
+    "userreport.com": 2,
+    "ytkkassa.fi": 1,
+    "netvisor.fi": 5,
+    "sanoma.fi": 6,
+    "playable.com": 4,
+    "diarium.fi": 9,
+    "saastopankki.fi": 5,
+    "nsaudience.pl": 19,
+    "etlehti.fi": 9,
+    "richaudience.com": 1,
+    "lahitapiola.fi": 4,
+    "PubMatic": 5,
+    "ladsp.com": 1,
+    "nordea.com": 6,
+    "omasp.fi": 2,
+    "maisa.fi": 1,
+    "op.fi": 4,
+    "hyvaterveys.fi": 5,
+    "indeed.com": 13,
+    "rakennuslehti.fi": 3,
+    "askelterveyteen.com": 4,
+    "aditrocloud.com": 3,
+    "igodigital.com": 4,
+    "cintnetworks.com": 2,
+    "lut.fi": 1,
+    "if.fi": 4,
+    "id5-sync.com": 2,
+    "Smart AdServer": 4,
+    "eyeota.net": 1,
+    "temu.com": 3,
+    "thl.fi": 3,
+    "Cloudflare": 8,
+    "Twitter": 4,
+    "hs-analytics.net": 6,
+    "usemessages.com": 4,
+    "hubspotusercontent-eu1.net": 1,
+    "hs-banner.com": 6,
+    "hsforms.com": 6,
+    "HubSpot": 6,
+    "Piano": 2,
+    "allermedia.se": 3,
+    "seiska.fi": 3,
+    "t.co": 1,
+    "openai.com": 2,
+    "hs-scripts.com": 5,
+    "vimeo.com": 3,
+    "autotalli.com": 1,
+    "nettix.fi": 2,
+    "x.com": 1,
+    "hsforms.net": 4,
+    "hsadspixel.net": 3,
+    "onesignal.com": 2,
+    "delfi.ee": 10,
+    "hsappstatic.net": 1,
+    "myfonts.net": 1,
+    "investis.com": 1,
+    "microsoftonline.com": 3,
+    "duunitori.fi": 2,
+    "theseus.fi": 2,
+    "salkunrakentaja.fi": 1,
+    "danskebank.com": 1,
+    "jobly.fi": 1,
+    "kanta.fi": 6,
+    "pihlajalinna.fi": 2,
+    "pirha.fi": 2,
+    "aalto.fi": 6,
+    "menoinfo.fi": 1,
+    "keskipohjanmaa.fi": 7,
+    "ilkkapohjalainen.fi": 8,
+    "hymy.fi": 6,
+    "koillissanomat.fi": 4,
+    "kaksplus.fi": 9,
+    "hillagroup.fi": 1,
+    "easor.com": 3,
+    "opiq.fi": 3,
+    "iltalehti.fi": 1,
+    "suomenpankki.fi": 1,
+    "dotomi.com": 2,
+    "tvohjelmat.com": 1
+  },
+  "category_vendor_flows": [
+    [
+      "city_encoded",
+      "laura.fi",
+      2
+    ],
+    [
+      "APP_STATE_STORAGE",
+      "hs.fi",
+      1
+    ],
+    [
+      "APP_STATE_STORAGE",
+      "satakunnankansa.fi",
+      1
+    ],
+    [
+      "APP_STATE_STORAGE",
+      "yliopistonapteekki.fi",
+      7
+    ],
+    [
+      "APP_STATE_STORAGE",
+      "suomenakut.fi",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "kauppalehti.fi",
+      3
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "hs.fi",
+      5
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "qasa.com",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "apu.fi",
+      3
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "terve.fi",
+      3
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "satakunnankansa.fi",
+      5
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "oomi.fi",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "otavamedia.fi",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "nordea.fi",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "worldoftulo.com",
+      2
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "bidtheatre.com",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "oikotie.fi",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "dvv.fi",
+      3
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "keski-uusimaa.fi",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "ksml.fi",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "forssanlehti.fi",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "ess.fi",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "tamperelainen.fi",
+      1
+    ],
+    [
+      "CONSENT_AND_PRIVACY",
+      "bidswitch.net",
+      2
+    ],
+    [
+      "CONSENT_AND_PRIVACY",
+      "danskebank.fi",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "keski-uusimaa.fi",
+      9
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "ess.fi",
+      12
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "banknorwegian.fi",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "forssanlehti.fi",
+      4
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "hs.fi",
+      7
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "a-mo.net",
+      48
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "worldoftulo.com",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "wilma.fi",
+      3
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "sahkonhinta.fi",
+      3
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "tamperelainen.fi",
+      6
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "postimees.ee",
+      3
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "Microsoft",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "qasa.com",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "oomi.fi",
+      4
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "oikotie.fi",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "ytkpalvelut.fi",
+      3
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "Google",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "uutisvuoksi.fi",
+      10
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "ksml.fi",
+      6
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "satakunnankansa.fi",
+      9
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "sydan.fi",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "lehtiluukku.fi",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "aamuposti.fi",
+      10
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "kuvake.net",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "userreport.com",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "ytkkassa.fi",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "netvisor.fi",
+      3
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "kauppalehti.fi",
+      6
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "sanoma.fi",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "playable.com",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "diarium.fi",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "saastopankki.fi",
+      4
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "nsaudience.pl",
+      19
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "bidswitch.net",
+      6
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "etlehti.fi",
+      5
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "richaudience.com",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "lahitapiola.fi",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "danskebank.fi",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "PubMatic",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "ladsp.com",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "nordea.com",
+      3
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "nordea.fi",
+      4
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "omasp.fi",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "maisa.fi",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "bidtheatre.com",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "op.fi",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "hyvaterveys.fi",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "indeed.com",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "rakennuslehti.fi",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "askelterveyteen.com",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "aditrocloud.com",
+      3
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "igodigital.com",
+      4
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "dvv.fi",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "cintnetworks.com",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "lut.fi",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "if.fi",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "suomenakut.fi",
+      1
+    ],
+    [
+      "ID_SOLUTIONS_AND_EXCHANGES",
+      "PubMatic",
+      4
+    ],
+    [
+      "ID_SOLUTIONS_AND_EXCHANGES",
+      "id5-sync.com",
+      2
+    ],
+    [
+      "ID_SOLUTIONS_AND_EXCHANGES",
+      "Google",
+      2
+    ],
+    [
+      "ID_SOLUTIONS_AND_EXCHANGES",
+      "Smart AdServer",
+      4
+    ],
+    [
+      "INFRASTRUCTURE",
+      "eyeota.net",
+      1
+    ],
+    [
+      "LOCATION_AND_DEMOGRAPHICS",
+      "nordea.com",
+      2
+    ],
+    [
+      "NAVIGATION_HISTORY",
+      "laura.fi",
+      2
+    ],
+    [
+      "NAVIGATION_HISTORY",
+      "worldoftulo.com",
+      5
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "temu.com",
+      3
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "thl.fi",
+      3
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "Microsoft",
+      12
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "Cloudflare",
+      8
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "Twitter",
+      4
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "hs-analytics.net",
+      6
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "usemessages.com",
+      4
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "hubspotusercontent-eu1.net",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "hs-banner.com",
+      6
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "wilma.fi",
+      3
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "hsforms.com",
+      6
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "HubSpot",
+      6
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "postimees.ee",
+      8
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "Piano",
+      2
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "allermedia.se",
+      3
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "seiska.fi",
+      3
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "t.co",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "openai.com",
+      2
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "qasa.com",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "oomi.fi",
+      2
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "hs-scripts.com",
+      5
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "vimeo.com",
+      3
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "autotalli.com",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "nettix.fi",
+      2
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "hs.fi",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "indeed.com",
+      11
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "x.com",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "sydan.fi",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "dvv.fi",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "lehtiluukku.fi",
+      2
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "hsforms.net",
+      4
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "hsadspixel.net",
+      3
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "diarium.fi",
+      2
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "onesignal.com",
+      2
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "delfi.ee",
+      10
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "hsappstatic.net",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "netvisor.fi",
+      2
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "sanoma.fi",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "yliopistonapteekki.fi",
+      4
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "myfonts.net",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "investis.com",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "microsoftonline.com",
+      3
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "duunitori.fi",
+      2
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "theseus.fi",
+      2
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "salkunrakentaja.fi",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "nordea.com",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "danskebank.com",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "jobly.fi",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "op.fi",
+      1
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "kauppalehti.fi",
+      3
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "banknorwegian.fi",
+      6
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "bidswitch.net",
+      2
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "hs.fi",
+      3
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "qasa.com",
+      1
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "apu.fi",
+      3
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "terve.fi",
+      3
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "satakunnankansa.fi",
+      5
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "yliopistonapteekki.fi",
+      4
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "oomi.fi",
+      1
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "kanta.fi",
+      3
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "otavamedia.fi",
+      1
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "pihlajalinna.fi",
+      1
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "pirha.fi",
+      1
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "qasa.com",
+      1
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "hs.fi",
+      1
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "sydan.fi",
+      1
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "lehtiluukku.fi",
+      2
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "kuvake.net",
+      2
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "yliopistonapteekki.fi",
+      2
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "sanoma.fi",
+      1
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "playable.com",
+      2
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "aalto.fi",
+      3
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "postimees.ee",
+      1
+    ],
+    [
+      "USER_PREFERENCES",
+      "keski-uusimaa.fi",
+      3
+    ],
+    [
+      "USER_PREFERENCES",
+      "ess.fi",
+      5
+    ],
+    [
+      "USER_PREFERENCES",
+      "menoinfo.fi",
+      1
+    ],
+    [
+      "USER_PREFERENCES",
+      "etlehti.fi",
+      1
+    ],
+    [
+      "USER_PREFERENCES",
+      "bidtheatre.com",
+      1
+    ],
+    [
+      "USER_PREFERENCES",
+      "forssanlehti.fi",
+      2
+    ],
+    [
+      "USER_PREFERENCES",
+      "postimees.ee",
+      5
+    ],
+    [
+      "USER_PREFERENCES",
+      "apu.fi",
+      3
+    ],
+    [
+      "USER_PREFERENCES",
+      "keskipohjanmaa.fi",
+      4
+    ],
+    [
+      "USER_PREFERENCES",
+      "ilkkapohjalainen.fi",
+      5
+    ],
+    [
+      "USER_PREFERENCES",
+      "uutisvuoksi.fi",
+      2
+    ],
+    [
+      "USER_PREFERENCES",
+      "satakunnankansa.fi",
+      1
+    ],
+    [
+      "USER_PREFERENCES",
+      "ksml.fi",
+      4
+    ],
+    [
+      "USER_PREFERENCES",
+      "tamperelainen.fi",
+      1
+    ],
+    [
+      "USER_PREFERENCES",
+      "aamuposti.fi",
+      3
+    ],
+    [
+      "USER_PREFERENCES",
+      "terve.fi",
+      2
+    ],
+    [
+      "USER_PREFERENCES",
+      "yliopistonapteekki.fi",
+      2
+    ],
+    [
+      "USER_PREFERENCES",
+      "askelterveyteen.com",
+      3
+    ],
+    [
+      "USER_PREFERENCES",
+      "hymy.fi",
+      6
+    ],
+    [
+      "USER_PREFERENCES",
+      "koillissanomat.fi",
+      1
+    ],
+    [
+      "USER_PREFERENCES",
+      "dvv.fi",
+      3
+    ],
+    [
+      "USER_PREFERENCES",
+      "otavamedia.fi",
+      1
+    ],
+    [
+      "USER_PREFERENCES",
+      "kaksplus.fi",
+      4
+    ],
+    [
+      "USER_PREFERENCES",
+      "hillagroup.fi",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "keski-uusimaa.fi",
+      9
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "ess.fi",
+      12
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "kauppalehti.fi",
+      6
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "etlehti.fi",
+      3
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "forssanlehti.fi",
+      9
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "pirha.fi",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "a-mo.net",
+      14
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "worldoftulo.com",
+      4
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "hs.fi",
+      7
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "easor.com",
+      3
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "tamperelainen.fi",
+      10
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "postimees.ee",
+      6
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "laura.fi",
+      2
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "lahitapiola.fi",
+      3
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "opiq.fi",
+      3
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "qasa.com",
+      2
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "apu.fi",
+      3
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "iltalehti.fi",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "keskipohjanmaa.fi",
+      3
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "uutisvuoksi.fi",
+      11
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "ksml.fi",
+      6
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "ilkkapohjalainen.fi",
+      3
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "terve.fi",
+      3
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "satakunnankansa.fi",
+      9
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "sydan.fi",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "lehtiluukku.fi",
+      2
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "aamuposti.fi",
+      9
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "diarium.fi",
+      6
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "op.fi",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "kuvake.net",
+      7
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "hyvaterveys.fi",
+      3
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "suomenpankki.fi",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "koillissanomat.fi",
+      3
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "oomi.fi",
+      3
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "rakennuslehti.fi",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "sanoma.fi",
+      2
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "kaksplus.fi",
+      5
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "aalto.fi",
+      3
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "kanta.fi",
+      3
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "yliopistonapteekki.fi",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "otavamedia.fi",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "dotomi.com",
+      2
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "saastopankki.fi",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "if.fi",
+      3
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "nordea.fi",
+      4
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "pihlajalinna.fi",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "tvohjelmat.com",
+      1
+    ]
+  ],
+  "entropy_by_pii": {
+    "city_encoded": [
+      4.462236773944321,
+      4.6776561274976105
+    ],
+    "APP_STATE_STORAGE": [
+      3.8582553926114844,
+      3.8582553926114844,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      2.873140679513133
+    ],
+    "BEHAVIORAL_DATA": [
+      4.995086988850051,
+      5.031818398374872,
+      5.069661935891484,
+      5.0176696510479415,
+      5.089477849037805,
+      5.007584932914518,
+      4.98649952907438,
+      5.0254950061537835,
+      5.024686350247197,
+      4.96025657623848,
+      4.949630980631779,
+      5.135042299454896,
+      4.950581320089033,
+      4.983546608971185,
+      5.042868885019465,
+      4.9566185534826905,
+      5.047570282327688,
+      5.007643006079266,
+      4.898600319544133,
+      5.093954840013854,
+      3.321928094887362,
+      0.0,
+      3.7303377974034158,
+      4.124093019931487,
+      1.8423709931771084,
+      0.0,
+      4.594962996063263,
+      2.589518302689536,
+      2.504800382982335,
+      2.5495234595978316,
+      4.626085059209684,
+      4.551423378008999,
+      4.595388330023726,
+      4.533986600983824,
+      4.572802839565066
+    ],
+    "CONSENT_AND_PRIVACY": [
+      3.11827533373458,
+      0.0,
+      4.26243448324845
+    ],
+    "IDENTITY_TRACKING": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      3.8582553926114844,
+      3.11827533373458,
+      0.0,
+      0.0,
+      1.0,
+      1.584962500721156,
+      1.584962500721156,
+      1.0,
+      3.11827533373458,
+      1.584962500721156,
+      1.0,
+      3.11827533373458,
+      1.584962500721156,
+      1.0,
+      3.11827533373458,
+      1.0,
+      3.11827533373458,
+      1.584962500721156,
+      3.11827533373458,
+      1.584962500721156,
+      1.0,
+      0.0,
+      0.0,
+      3.219470570797252,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      3.11827533373458,
+      1.584962500721156,
+      3.11827533373458,
+      3.11827533373458,
+      1.584962500721156,
+      1.584962500721156,
+      1.584962500721156,
+      1.0,
+      3.11827533373458,
+      1.0,
+      1.0,
+      0.0,
+      3.8535271731813627,
+      0.0,
+      0.0,
+      0.0,
+      2.9950849518197793,
+      3.715311532225102,
+      0.0,
+      2.521640636343318,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      3.6869447345539896,
+      0.0,
+      0.0,
+      3.8582553926114844,
+      0.0,
+      0.0,
+      3.7669683154813693,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      3.739319280749699,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      3.178688570451097,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      3.1932696895151085,
+      3.083587370023807,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      4.444773835029479,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      3.323074189428569,
+      4.420914521951841,
+      0.0,
+      0.0,
+      3.7310212915688235,
+      0.0,
+      0.0,
+      3.3532696895151086,
+      2.8731406795131336,
+      3.752715278979704,
+      3.814587363100417,
+      0.0,
+      3.266332639970623,
+      3.1132696895151084,
+      3.6143694458867563,
+      1.0,
+      3.11827533373458,
+      3.11827533373458,
+      1.584962500721156,
+      3.11827533373458,
+      0.0,
+      3.11827533373458,
+      1.0,
+      1.584962500721156,
+      1.584962500721156,
+      1.584962500721156,
+      1.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      2.521640636343318,
+      3.7735572622751845,
+      4.54799505257913,
+      0.0,
+      0.0,
+      3.0472103113389792,
+      0.0,
+      0.0,
+      3.085055102756477,
+      5.563844787672715,
+      3.7663326399706225,
+      3.0269868333592873,
+      5.7169306870113346,
+      3.826465890981193,
+      2.8731406795131336,
+      0.0,
+      5.063588669419882,
+      1.0,
+      2.6612262562697895,
+      3.9087621587440444,
+      2.663532754804255,
+      3.731746181697386,
+      3.0269868333592873,
+      3.6706425444690596,
+      5.03216396726728,
+      0.0,
+      0.0,
+      0.0,
+      3.5542292966721747,
+      5.638981159039778,
+      3.8054967936988744,
+      2.6031579868726,
+      3.4772170014624826,
+      2.6235166412180155,
+      3.8667292966721747,
+      2.873140679513133,
+      5.425787039707982,
+      0.0,
+      2.217413360817425,
+      2.7192945256669794,
+      3.5378447930488823,
+      3.760067015271104,
+      5.20407131895215,
+      3.75,
+      3.0269868333592873,
+      3.5860486123130375,
+      2.873140679513133,
+      3.6635327548042538,
+      5.396402774348749,
+      0.0,
+      2.8731406795131336,
+      3.749941238143319,
+      3.2671561695105478,
+      3.569548827786958,
+      0.0,
+      5.019386510616655,
+      3.710777084415067,
+      3.693223349810918,
+      1.9609640474436814,
+      3.563307235905091,
+      0.0,
+      3.752715278979704,
+      3.752715278979704,
+      3.101227480952956,
+      2.873140679513133,
+      2.6703397002311062,
+      2.9317206879810787,
+      3.4822892374933265,
+      2.7192945256669794,
+      2.2074041422132407,
+      3.7736843762620222,
+      3.9656508522403326,
+      3.7289721408610004,
+      3.0,
+      4.876975542194793,
+      2.5654483718208256,
+      2.6031579868726,
+      0.0,
+      3.781612320191272,
+      3.863826390090815,
+      3.2671561695105478,
+      3.752715278979704,
+      3.0220552088742,
+      3.752715278979704,
+      3.0269868333592873,
+      3.5164309060164665,
+      1.9609640474436814,
+      3.051601636871704,
+      4.027678094070437,
+      2.8150724101159437,
+      4.0,
+      3.731746181697386,
+      3.7181390622295662,
+      3.121928094887362,
+      3.7714370294611266,
+      0.0,
+      3.765319531114783,
+      3.8042292966721747,
+      4.539920988039896,
+      4.555827892263284,
+      3.2671561695105478,
+      2.7192945256669794,
+      3.7499412381433186
+    ],
+    "ID_SOLUTIONS_AND_EXCHANGES": [
+      1.584962500721156,
+      2.75,
+      3.8606371416880294,
+      2.75,
+      2.521640636343318,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      2.1556390622295662,
+      3.8606371416880294,
+      2.521640636343318
+    ],
+    "INFRASTRUCTURE": [
+      2.75
+    ],
+    "LOCATION_AND_DEMOGRAPHICS": [
+      5.647912279308256,
+      5.666070615634649
+    ],
+    "NAVIGATION_HISTORY": [
+      4.462236773944321,
+      3.5068905956085183,
+      1.584962500721156,
+      4.065079515030719,
+      3.8214419452073267,
+      2.449311833026446,
+      4.6776561274976105
+    ],
+    "SECURITY_AND_BOT_MITIGATION": [
+      5.685367652107053,
+      5.70403596301089,
+      5.781728706071495,
+      5.7601089052022045,
+      5.787076618858804,
+      5.72367277059751,
+      5.78197453087183,
+      5.820554008275681,
+      5.755926588160759,
+      5.697705509314715,
+      5.731714529981613,
+      5.791276115357772,
+      5.664371518519622,
+      5.61794644803497,
+      5.702536845772136,
+      5.7193713396432235,
+      5.616423839173484,
+      5.7088895293985935,
+      5.663094443138696,
+      5.72207977708929,
+      5.690337480562827,
+      5.755975422633901,
+      5.783430698170173,
+      5.730929872780106,
+      5.736148068156246,
+      5.697779116288094,
+      5.7120168808407525,
+      5.703018501187384,
+      5.629907853814542,
+      5.716020242409114,
+      5.7348850358119865,
+      5.731885033088822,
+      3.8535271731813627,
+      5.77703385773613,
+      5.66618952863993,
+      5.657855058239408,
+      5.730074998998577,
+      5.7454371236014845,
+      5.785964417904351,
+      5.6468011339166955,
+      5.789573253210484,
+      5.738700205132615,
+      5.794053063504537,
+      5.705565858421474,
+      3.6869447345539896,
+      5.644468328049677,
+      5.748385768932998,
+      5.711120935544648,
+      5.694704902069792,
+      5.728148199445907,
+      5.7073298460901665,
+      5.784651824095076,
+      5.712029525833008,
+      5.758908749636741,
+      3.7669683154813693,
+      5.783142734717608,
+      5.679124594141334,
+      3.739319280749699,
+      5.770906817792038,
+      5.75367672970685,
+      5.658669412150521,
+      5.6508463288450255,
+      5.743868757434846,
+      5.747352988780813,
+      5.77191049085847,
+      5.6494071943873125,
+      5.684763586309287,
+      5.707299953497005,
+      5.735234055294845,
+      5.678492950829413,
+      5.803615266984678,
+      5.708456660384085,
+      5.6709061417624405,
+      5.782788867925711,
+      5.818332789062169,
+      5.70805560063527,
+      5.588706404520332,
+      5.68385072503597,
+      5.732653629665933,
+      5.7843437198266585,
+      5.723540375755755,
+      5.758217288108515,
+      5.751249603661966,
+      5.6478194252837906,
+      5.720539543489004,
+      5.709004328602454,
+      5.719406893187449,
+      5.706398166686023,
+      5.707947012977084,
+      5.790934422479159,
+      5.75043428552497,
+      5.733344802211699,
+      5.736684882969688,
+      5.831078518551022,
+      5.694603566309454,
+      3.7310212915688235,
+      5.658697802351029,
+      5.766075016191483,
+      5.706018503910548,
+      5.785944442585622,
+      5.72222211716444,
+      3.814587363100417,
+      5.799320025917979,
+      5.6836821196671465,
+      1.0,
+      1.0,
+      1.0,
+      5.6745835282742965,
+      5.696354900709437,
+      5.712356644654339,
+      5.706275345187012,
+      5.701769003320613,
+      5.658908073607142,
+      5.6473860901271,
+      5.755436075496865,
+      5.695969082197852,
+      5.679415329874853,
+      5.753315497945556,
+      5.718205908078402,
+      5.761242385047347,
+      5.652672991671493,
+      5.73775606130003,
+      5.772213299646573,
+      5.727248884443715,
+      5.734688553312953,
+      5.753641787223297,
+      5.678492950829412,
+      5.685461905341539,
+      5.690971480259289,
+      5.851836585236393,
+      5.619629576122558,
+      5.597926348585149,
+      5.765667432892752,
+      5.677148910745704,
+      5.661277262561972,
+      5.669224795924865,
+      5.6532974147479065,
+      5.653804999454369,
+      5.741271689313487,
+      5.736503722154165,
+      5.64213993623705,
+      5.705271672120584,
+      0.0,
+      2.0,
+      2.584962500721156,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      3.6219888548058146,
+      3.6914280318460246,
+      3.8334185102328484,
+      0.0,
+      5.021858683297418,
+      0.0
+    ],
+    "SESSION_MANAGEMENT": [
+      4.995086988850051,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      3.4548223999466066,
+      5.031818398374872,
+      5.069661935891484,
+      5.0176696510479415,
+      0.0,
+      0.0,
+      5.089477849037805,
+      5.007584932914518,
+      4.98649952907438,
+      5.0254950061537835,
+      5.024686350247197,
+      3.4548223999466066,
+      4.96025657623848,
+      4.949630980631779,
+      2.0,
+      4.23890125660263,
+      5.135042299454896,
+      4.950581320089033,
+      4.836080318455742,
+      4.983546608971185,
+      2.0,
+      4.0748757755837675,
+      5.042868885019465,
+      4.9566185534826905,
+      5.047570282327688,
+      5.007643006079266,
+      4.898600319544133,
+      4.914075318551896,
+      5.093954840013854,
+      4.775101964004423,
+      4.741310040533733
+    ],
+    "TECHNICAL_PASSWORDS": [
+      0.0,
+      3.8535271731813627,
+      3.6869447345539896,
+      3.7669683154813693,
+      3.739319280749699,
+      0.0,
+      3.75,
+      3.7310212915688235,
+      0.0,
+      2.8731406795131336,
+      3.752715278979704,
+      3.814587363100417,
+      0.0,
+      3.75,
+      0.0,
+      3.7735572622751845,
+      0.0
+    ],
+    "USER_PREFERENCES": [
+      2.0,
+      2.0,
+      2.0,
+      2.721928094887362,
+      5.501553979429965,
+      0.0,
+      2.0,
+      2.0,
+      2.321928094887362,
+      2.0,
+      2.321928094887362,
+      2.0,
+      2.0,
+      2.0,
+      2.792481250360578,
+      5.557321176088225,
+      2.0,
+      2.0,
+      2.0,
+      2.858278308418045,
+      2.0,
+      2.0,
+      5.269124008468384,
+      2.792481250360578,
+      2.0,
+      2.0,
+      5.150382601667944,
+      2.0,
+      2.0,
+      2.0,
+      4.527681138773586,
+      2.0,
+      2.0,
+      5.348755484121023,
+      2.94770277922009,
+      2.0,
+      5.4708838328440486,
+      5.150382601667944,
+      2.0,
+      2.0,
+      2.0,
+      2.5216406363433186,
+      2.6384600665861555,
+      1.3787834934861753,
+      3.4472624994412104,
+      2.0,
+      2.0,
+      4.54374257498983,
+      2.0,
+      2.0,
+      2.321928094887362,
+      2.321928094887362,
+      2.321928094887362,
+      2.94770277922009,
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0
+    ],
+    "UX_AND_PERFORMANCE_ANALYTICS": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      2.75,
+      2.75,
+      4.319033011864008,
+      4.995086988850051,
+      0.0,
+      0.0,
+      2.0,
+      0.0,
+      0.0,
+      4.870159193946671,
+      0.0,
+      2.75,
+      3.11827533373458,
+      0.0,
+      0.0,
+      3.11827533373458,
+      3.11827533373458,
+      3.11827533373458,
+      3.11827533373458,
+      3.11827533373458,
+      0.0,
+      0.0,
+      5.031818398374872,
+      3.5684490031423746,
+      0.0,
+      0.0,
+      4.7867384298164914,
+      4.030436394851732,
+      0.0,
+      3.11827533373458,
+      3.11827533373458,
+      3.11827533373458,
+      3.11827533373458,
+      2.75,
+      4.462236773944321,
+      2.75,
+      3.3086949695628425,
+      2.449311833026446,
+      2.0,
+      4.334177320667443,
+      5.069661935891484,
+      3.8535271731813627,
+      0.0,
+      0.0,
+      5.0176696510479415,
+      4.825294416282573,
+      2.75,
+      2.75,
+      2.0,
+      0.0,
+      0.0,
+      3.6869447345539896,
+      2.0,
+      5.089477849037805,
+      2.75,
+      5.007584932914518,
+      0.0,
+      0.0,
+      4.98649952907438,
+      4.319033011864008,
+      5.0254950061537835,
+      0.0,
+      0.0,
+      2.75,
+      2.0,
+      5.024686350247197,
+      2.75,
+      3.7669683154813693,
+      0.0,
+      0.0,
+      0.0,
+      2.75,
+      3.739319280749699,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      3.7289721408610004,
+      3.8009190982438597,
+      0.0,
+      0.0,
+      4.80047094750916,
+      2.9151959937952423,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      2.75,
+      3.1932696895151085,
+      4.96025657623848,
+      0.0,
+      2.0,
+      2.75,
+      2.75,
+      4.949630980631779,
+      2.0,
+      2.0,
+      0.0,
+      4.446370130156179,
+      0.0,
+      0.0,
+      4.806002940296411,
+      0.0,
+      0.0,
+      3.3474393604706725,
+      2.75,
+      2.75,
+      0.0,
+      4.524372820753982,
+      4.1049034313963215,
+      5.135042299454896,
+      4.6776561274976105,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      2.0,
+      3.7310212915688235,
+      2.0,
+      0.0,
+      2.75,
+      0.0,
+      3.3532696895151086,
+      2.75,
+      2.75,
+      0.0,
+      2.0,
+      3.814587363100417,
+      0.0,
+      0.0,
+      2.0,
+      4.950581320089033,
+      0.0,
+      0.0,
+      3.627542017127577,
+      3.641604167868593,
+      4.836080318455742,
+      1.0,
+      4.983546608971185,
+      2.720582776146013,
+      3.2826072864064044,
+      0.0,
+      4.822922673493043,
+      3.9258922573912693,
+      2.0,
+      3.1555650133297184,
+      2.0,
+      3.11827533373458,
+      3.11827533373458,
+      3.11827533373458,
+      0.0,
+      3.11827533373458,
+      5.035176837840088,
+      4.747334960172391,
+      0.0,
+      0.0,
+      3.7178960129700496,
+      0.0,
+      5.042868885019465,
+      2.0,
+      4.438242691024846,
+      2.75,
+      3.7735572622751845,
+      0.0,
+      4.782158204685784,
+      4.4483674395583765,
+      4.113269689515107,
+      4.9566185534826905,
+      2.0,
+      2.75,
+      5.047570282327688,
+      5.007643006079266,
+      4.898600319544133,
+      4.914075318551896,
+      2.0,
+      4.496911625990797,
+      4.498410207780385,
+      3.693149802473812,
+      4.467314091014018,
+      5.093954840013854,
+      5.294218832180354,
+      4.775101964004423,
+      4.32488945173324,
+      4.741310040533733,
+      0.0,
+      0.0,
+      0.0,
+      2.75,
+      2.75,
+      3.797902689682947,
+      0.0
+    ]
+  },
+  "advanced_risk_levels": {
+    "High": 124,
+    "Low": 509,
+    "Medium": 148
+  }
+}

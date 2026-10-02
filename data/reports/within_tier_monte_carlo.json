@@ -1,0 +1,2677 @@
+{
+  "metadata": {
+    "analysis": "within_tier_monte_carlo_level1",
+    "n_per_scenario": 10000,
+    " ": 42,
+    "alphas": {
+      "id": 0.9,
+      "ato": 0.95,
+      "link": 0.85,
+      "loc": 0.75,
+      "prof": 0.7,
+      "env": 0.5
+    },
+    "n_items": 141761,
+    "n_rows": 3360,
+    "numpy": "2.1.3",
+    "python": "3.13.5"
+  },
+  "baseline": {
+    "M1_auth_unauth_equiv": {
+      "holds": true,
+      "margin": 0.04680000000000002
+    },
+    "M2_all_gt_none": {
+      "holds": true,
+      "margin": 0.006399999999999961
+    },
+    "M3_cookie_gt_ss": {
+      "holds": true,
+      "margin": 0.14280000000000004
+    },
+    "M4_cookie_gt_idb": {
+      "holds": true,
+      "margin": 0.05130000000000001
+    },
+    "M5_ls_equiv_cookie": {
+      "holds": true,
+      "margin": 0.06929999999999997
+    },
+    "M6_ls_gt_ss": {
+      "holds": true,
+      "margin": 0.1421
+    },
+    "M7_ls_gt_idb": {
+      "holds": true,
+      "margin": 0.05059999999999998
+    },
+    "D1_median_cookie_gt_ss": {
+      "holds": true,
+      "margin": 0.2636
+    },
+    "D2_idb_iqr_zero": {
+      "holds": true,
+      "margin": 5e-05
+    },
+    "D3_iqr_cookie_gt_ss": {
+      "holds": true,
+      "margin": 0.08410000000000001
+    },
+    "D4_median_mode_equiv": {
+      "holds": true,
+      "margin": 0.01
+    },
+    "D5_cookie_median_stable": {
+      "holds": true,
+      "margin": 0.02
+    },
+    "D6_median_ls_equiv_cookie": {
+      "holds": true,
+      "margin": 0.009300000000000003
+    },
+    "D7_iqr_ls_lt_cookie": {
+      "holds": true,
+      "margin": 0.14049999999999999
+    }
+  },
+  "scenarios": {
+    "within-tier": {
+      "spec": {
+        "W": [
+          0.1,
+          0.3
+        ],
+        "S": [
+          0.5,
+          0.7
+        ],
+        "A": [
+          0.0,
+          0.0
+        ],
+        "C": [
+          1.0,
+          1.0
+        ],
+        "gran": "tier"
+      },
+      "n_parameters": 2,
+      "acceptance_rate": 1.0,
+      "claims": {
+        "M1_auth_unauth_equiv": {
+          "label": "F6 : |mean_Auth - mean_UnAuth| < 0.05",
+          "level": "mean",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.04729999999999997,
+          "margin_p1": 0.047599999999999934,
+          "margin_median": 0.04890000000000001,
+          "margin_baseline": 0.04680000000000002,
+          "baseline_margin_percentile": 0.0
+        },
+        "M2_all_gt_none": {
+          "label": "F2 : mean_ALL >= mean_NONE",
+          "level": "mean",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.005900000000000016,
+          "margin_p1": 0.006099999999999994,
+          "margin_median": 0.007900000000000018,
+          "margin_baseline": 0.006399999999999961,
+          "baseline_margin_percentile": 0.0613
+        },
+        "M3_cookie_gt_ss": {
+          "label": "F1/F4 : mean_cookie > mean_sessionStorage",
+          "level": "mean",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.13390000000000002,
+          "margin_p1": 0.13510000000000005,
+          "margin_median": 0.14370000000000005,
+          "margin_baseline": 0.14280000000000004,
+          "baseline_margin_percentile": 0.4279
+        },
+        "M4_cookie_gt_idb": {
+          "label": "F1/F5 : mean_cookie > mean_IndexedDB",
+          "level": "mean",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.03159999999999996,
+          "margin_p1": 0.03260000000000007,
+          "margin_median": 0.04239999999999999,
+          "margin_baseline": 0.05130000000000001,
+          "baseline_margin_percentile": 0.9714
+        },
+        "M5_ls_equiv_cookie": {
+          "label": "F3 : |mean_localStorage - mean_cookie| < 0.07",
+          "level": "mean",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.06470000000000004,
+          "margin_p1": 0.06519999999999998,
+          "margin_median": 0.068,
+          "margin_baseline": 0.06929999999999997,
+          "baseline_margin_percentile": 0.7875
+        },
+        "M6_ls_gt_ss": {
+          "label": "F3/F4 : mean_localStorage > mean_sessionStorage",
+          "level": "mean",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.13329999999999997,
+          "margin_p1": 0.13439999999999996,
+          "margin_median": 0.1416,
+          "margin_baseline": 0.1421,
+          "baseline_margin_percentile": 0.5572
+        },
+        "M7_ls_gt_idb": {
+          "label": "F3/F5 : mean_localStorage > mean_IndexedDB",
+          "level": "mean",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.03269999999999995,
+          "margin_p1": 0.033399999999999985,
+          "margin_median": 0.0403,
+          "margin_baseline": 0.05059999999999998,
+          "baseline_margin_percentile": 1.0
+        },
+        "D1_median_cookie_gt_ss": {
+          "label": "F1/F4 : median_cookie > median_sessionStorage",
+          "level": "dist",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.24489999999999995,
+          "margin_p1": 0.24669999999999997,
+          "margin_median": 0.284,
+          "margin_baseline": 0.2636,
+          "baseline_margin_percentile": 0.129
+        },
+        "D2_idb_iqr_zero": {
+          "label": "F5 : IQR_IndexedDB = 0",
+          "level": "dist",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 5e-05,
+          "margin_p1": 5e-05,
+          "margin_median": 5e-05,
+          "margin_baseline": 5e-05,
+          "baseline_margin_percentile": 0.0
+        },
+        "D3_iqr_cookie_gt_ss": {
+          "label": "F1 : IQR_cookie > IQR_sessionStorage",
+          "level": "dist",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.060799999999999965,
+          "margin_p1": 0.06279999999999997,
+          "margin_median": 0.08000000000000002,
+          "margin_baseline": 0.08410000000000001,
+          "baseline_margin_percentile": 0.5482
+        },
+        "D4_median_mode_equiv": {
+          "label": "F6 : |median_Auth - median_UnAuth| < 0.01",
+          "level": "dist",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.01,
+          "margin_p1": 0.01,
+          "margin_median": 0.01,
+          "margin_baseline": 0.01,
+          "baseline_margin_percentile": 0.0
+        },
+        "D5_cookie_median_stable": {
+          "label": "F4 : |median_cookie_ALL - median_cookie_NONE| < 0.02",
+          "level": "dist",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.016456156761768242,
+          "margin_p1": 0.01646467145384951,
+          "margin_median": 0.02,
+          "margin_baseline": 0.02,
+          "baseline_margin_percentile": 0.1056
+        },
+        "D6_median_ls_equiv_cookie": {
+          "label": "F3 : |median_localStorage - median_cookie| < 0.09",
+          "level": "dist",
+          "n": 10000,
+          "holds": 3231,
+          "p_hat": 0.3231,
+          "wilson95": [
+            0.314003293382495,
+            0.3323325702321387
+          ],
+          "fail_bound_95": null,
+          "holds_at_baseline": true,
+          "margin_min": -0.031700000000000034,
+          "margin_p1": -0.031399999999999956,
+          "margin_median": -0.011700000000000016,
+          "margin_baseline": 0.009300000000000003,
+          "baseline_margin_percentile": 0.8375
+        },
+        "D7_iqr_ls_lt_cookie": {
+          "label": "F3 : IQR_localStorage < IQR_cookie",
+          "level": "dist",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.08329999999999999,
+          "margin_p1": 0.08590000000000003,
+          "margin_median": 0.1174,
+          "margin_baseline": 0.14049999999999999,
+          "baseline_margin_percentile": 0.9987
+        }
+      },
+      "drivers": {
+        "M1_auth_unauth_equiv": [
+          {
+            "param": "W",
+            "r": -0.339
+          },
+          {
+            "param": "S",
+            "r": 0.109
+          }
+        ],
+        "M2_all_gt_none": [
+          {
+            "param": "W",
+            "r": -0.982
+          },
+          {
+            "param": "S",
+            "r": -0.18
+          }
+        ],
+        "M3_cookie_gt_ss": [
+          {
+            "param": "W",
+            "r": 0.901
+          },
+          {
+            "param": "S",
+            "r": 0.43
+          }
+        ],
+        "M4_cookie_gt_idb": [
+          {
+            "param": "W",
+            "r": 0.972
+          },
+          {
+            "param": "S",
+            "r": -0.234
+          }
+        ],
+        "M5_ls_equiv_cookie": [
+          {
+            "param": "W",
+            "r": -0.913
+          },
+          {
+            "param": "S",
+            "r": 0.363
+          }
+        ],
+        "M6_ls_gt_ss": [
+          {
+            "param": "W",
+            "r": 0.712
+          },
+          {
+            "param": "S",
+            "r": 0.7
+          }
+        ],
+        "M7_ls_gt_idb": [
+          {
+            "param": "W",
+            "r": 0.983
+          },
+          {
+            "param": "S",
+            "r": -0.176
+          }
+        ],
+        "D1_median_cookie_gt_ss": [
+          {
+            "param": "S",
+            "r": -0.758
+          },
+          {
+            "param": "W",
+            "r": -0.45
+          }
+        ],
+        "D2_idb_iqr_zero": [],
+        "D3_iqr_cookie_gt_ss": [
+          {
+            "param": "W",
+            "r": -0.735
+          },
+          {
+            "param": "S",
+            "r": -0.532
+          }
+        ],
+        "D4_median_mode_equiv": [],
+        "D5_cookie_median_stable": [
+          {
+            "param": "S",
+            "r": 0.427
+          },
+          {
+            "param": "W",
+            "r": 0.37
+          }
+        ],
+        "D6_median_ls_equiv_cookie": [
+          {
+            "param": "S",
+            "r": 0.975
+          },
+          {
+            "param": "W",
+            "r": 0.048
+          }
+        ],
+        "D7_iqr_ls_lt_cookie": [
+          {
+            "param": "W",
+            "r": -0.613
+          },
+          {
+            "param": "S",
+            "r": 0.518
+          }
+        ]
+      }
+    },
+    "within-dim": {
+      "spec": {
+        "W": [
+          0.1,
+          0.3
+        ],
+        "S": [
+          0.5,
+          0.7
+        ],
+        "A": [
+          0.0,
+          0.0
+        ],
+        "C": [
+          1.0,
+          1.0
+        ],
+        "gran": "dim"
+      },
+      "n_parameters": 9,
+      "acceptance_rate": 1.0,
+      "claims": {
+        "M1_auth_unauth_equiv": {
+          "label": "F6 : |mean_Auth - mean_UnAuth| < 0.05",
+          "level": "mean",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.04390000000000001,
+          "margin_p1": 0.045399999999999954,
+          "margin_median": 0.048600000000000046,
+          "margin_baseline": 0.04680000000000002,
+          "baseline_margin_percentile": 0.1058
+        },
+        "M2_all_gt_none": {
+          "label": "F2 : mean_ALL >= mean_NONE",
+          "level": "mean",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.005299999999999971,
+          "margin_p1": 0.006099999999999994,
+          "margin_median": 0.007900000000000018,
+          "margin_baseline": 0.006399999999999961,
+          "baseline_margin_percentile": 0.0252
+        },
+        "M3_cookie_gt_ss": {
+          "label": "F1/F4 : mean_cookie > mean_sessionStorage",
+          "level": "mean",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.1351,
+          "margin_p1": 0.1372,
+          "margin_median": 0.14360000000000006,
+          "margin_baseline": 0.14280000000000004,
+          "baseline_margin_percentile": 0.3879
+        },
+        "M4_cookie_gt_idb": {
+          "label": "F1/F5 : mean_cookie > mean_IndexedDB",
+          "level": "mean",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.01880000000000004,
+          "margin_p1": 0.0252,
+          "margin_median": 0.04239999999999999,
+          "margin_baseline": 0.05130000000000001,
+          "baseline_margin_percentile": 0.8697
+        },
+        "M5_ls_equiv_cookie": {
+          "label": "F3 : |mean_localStorage - mean_cookie| < 0.07",
+          "level": "mean",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.05719999999999997,
+          "margin_p1": 0.060500000000000054,
+          "margin_median": 0.06719999999999998,
+          "margin_baseline": 0.06929999999999997,
+          "baseline_margin_percentile": 0.8566
+        },
+        "M6_ls_gt_ss": {
+          "label": "F3/F4 : mean_localStorage > mean_sessionStorage",
+          "level": "mean",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.13380000000000003,
+          "margin_p1": 0.1356,
+          "margin_median": 0.1416,
+          "margin_baseline": 0.1421,
+          "baseline_margin_percentile": 0.5643
+        },
+        "M7_ls_gt_idb": {
+          "label": "F3/F5 : mean_localStorage > mean_IndexedDB",
+          "level": "mean",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.02410000000000001,
+          "margin_p1": 0.028898999999999928,
+          "margin_median": 0.04039999999999999,
+          "margin_baseline": 0.05059999999999998,
+          "baseline_margin_percentile": 0.9801
+        },
+        "D1_median_cookie_gt_ss": {
+          "label": "F1/F4 : median_cookie > median_sessionStorage",
+          "level": "dist",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.24469999999999997,
+          "margin_p1": 0.2479,
+          "margin_median": 0.2801,
+          "margin_baseline": 0.2636,
+          "baseline_margin_percentile": 0.1169
+        },
+        "D2_idb_iqr_zero": {
+          "label": "F5 : IQR_IndexedDB = 0",
+          "level": "dist",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 5e-05,
+          "margin_p1": 5e-05,
+          "margin_median": 5e-05,
+          "margin_baseline": 5e-05,
+          "baseline_margin_percentile": 0.0
+        },
+        "D3_iqr_cookie_gt_ss": {
+          "label": "F1 : IQR_cookie > IQR_sessionStorage",
+          "level": "dist",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.05130000000000001,
+          "margin_p1": 0.05569899999999997,
+          "margin_median": 0.08460000000000001,
+          "margin_baseline": 0.08410000000000001,
+          "baseline_margin_percentile": 0.4937
+        },
+        "D4_median_mode_equiv": {
+          "label": "F6 : |median_Auth - median_UnAuth| < 0.01",
+          "level": "dist",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.01,
+          "margin_p1": 0.01,
+          "margin_median": 0.01,
+          "margin_baseline": 0.01,
+          "baseline_margin_percentile": 0.0
+        },
+        "D5_cookie_median_stable": {
+          "label": "F4 : |median_cookie_ALL - median_cookie_NONE| < 0.02",
+          "level": "dist",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.016398377562802362,
+          "margin_p1": 0.01640316555562868,
+          "margin_median": 0.02,
+          "margin_baseline": 0.02,
+          "baseline_margin_percentile": 0.1687
+        },
+        "D6_median_ls_equiv_cookie": {
+          "label": "F3 : |median_localStorage - median_cookie| < 0.09",
+          "level": "dist",
+          "n": 10000,
+          "holds": 2107,
+          "p_hat": 0.2107,
+          "wilson95": [
+            0.20281886526993997,
+            0.21880332434969574
+          ],
+          "fail_bound_95": null,
+          "holds_at_baseline": true,
+          "margin_min": -0.03659999999999994,
+          "margin_p1": -0.03330000000000008,
+          "margin_median": -0.009300000000000058,
+          "margin_baseline": 0.009300000000000003,
+          "baseline_margin_percentile": 0.9521
+        },
+        "D7_iqr_ls_lt_cookie": {
+          "label": "F3 : IQR_localStorage < IQR_cookie",
+          "level": "dist",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.06629999999999997,
+          "margin_p1": 0.07119999999999999,
+          "margin_median": 0.11645,
+          "margin_baseline": 0.14049999999999999,
+          "baseline_margin_percentile": 0.7726
+        }
+      },
+      "drivers": {
+        "M1_auth_unauth_equiv": [
+          {
+            "param": "S:LINK",
+            "r": 0.144
+          },
+          {
+            "param": "S:PROF",
+            "r": -0.082
+          },
+          {
+            "param": "W:LINK",
+            "r": -0.072
+          }
+        ],
+        "M2_all_gt_none": [
+          {
+            "param": "W:LINK",
+            "r": -0.728
+          },
+          {
+            "param": "S:PROF",
+            "r": -0.441
+          },
+          {
+            "param": "W:PROF",
+            "r": -0.356
+          }
+        ],
+        "M3_cookie_gt_ss": [
+          {
+            "param": "S:PROF",
+            "r": 0.595
+          },
+          {
+            "param": "W:LINK",
+            "r": 0.542
+          },
+          {
+            "param": "W:ATO",
+            "r": 0.541
+          }
+        ],
+        "M4_cookie_gt_idb": [
+          {
+            "param": "S:LINK",
+            "r": -0.737
+          },
+          {
+            "param": "S:PROF",
+            "r": 0.517
+          },
+          {
+            "param": "W:LINK",
+            "r": 0.365
+          }
+        ],
+        "M5_ls_equiv_cookie": [
+          {
+            "param": "S:LINK",
+            "r": 0.43
+          },
+          {
+            "param": "S:PROF",
+            "r": -0.311
+          },
+          {
+            "param": "W:ATO",
+            "r": -0.276
+          }
+        ],
+        "M6_ls_gt_ss": [
+          {
+            "param": "S:LINK",
+            "r": 0.755
+          },
+          {
+            "param": "W:PROF",
+            "r": 0.6
+          },
+          {
+            "param": "W:LINK",
+            "r": 0.216
+          }
+        ],
+        "M7_ls_gt_idb": [
+          {
+            "param": "S:LINK",
+            "r": -0.691
+          },
+          {
+            "param": "S:PROF",
+            "r": 0.452
+          },
+          {
+            "param": "W:PROF",
+            "r": 0.429
+          }
+        ],
+        "D1_median_cookie_gt_ss": [
+          {
+            "param": "W:LINK",
+            "r": -0.533
+          },
+          {
+            "param": "S:LINK",
+            "r": -0.448
+          },
+          {
+            "param": "S:PROF",
+            "r": -0.365
+          }
+        ],
+        "D2_idb_iqr_zero": [],
+        "D3_iqr_cookie_gt_ss": [
+          {
+            "param": "S:PROF",
+            "r": -0.685
+          },
+          {
+            "param": "W:LINK",
+            "r": -0.573
+          },
+          {
+            "param": "W:PROF",
+            "r": -0.139
+          }
+        ],
+        "D4_median_mode_equiv": [],
+        "D5_cookie_median_stable": [
+          {
+            "param": "S:LINK",
+            "r": 0.54
+          },
+          {
+            "param": "W:PROF",
+            "r": 0.33
+          },
+          {
+            "param": "S:PROF",
+            "r": -0.137
+          }
+        ],
+        "D6_median_ls_equiv_cookie": [
+          {
+            "param": "S:LINK",
+            "r": 0.751
+          },
+          {
+            "param": "S:ID",
+            "r": 0.632
+          },
+          {
+            "param": "S:PROF",
+            "r": 0.051
+          }
+        ],
+        "D7_iqr_ls_lt_cookie": [
+          {
+            "param": "S:PROF",
+            "r": -0.572
+          },
+          {
+            "param": "S:ID",
+            "r": 0.471
+          },
+          {
+            "param": "W:LINK",
+            "r": -0.452
+          }
+        ]
+      }
+    },
+    "within-cell": {
+      "spec": {
+        "W": [
+          0.1,
+          0.3
+        ],
+        "S": [
+          0.5,
+          0.7
+        ],
+        "A": [
+          0.0,
+          0.0
+        ],
+        "C": [
+          1.0,
+          1.0
+        ],
+        "gran": "cell"
+      },
+      "n_parameters": 36,
+      "acceptance_rate": 1.0,
+      "claims": {
+        "M1_auth_unauth_equiv": {
+          "label": "F6 : |mean_Auth - mean_UnAuth| < 0.05",
+          "level": "mean",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.044,
+          "margin_p1": 0.04570000000000003,
+          "margin_median": 0.048499999999999946,
+          "margin_baseline": 0.04680000000000002,
+          "baseline_margin_percentile": 0.0821
+        },
+        "M2_all_gt_none": {
+          "label": "F2 : mean_ALL >= mean_NONE",
+          "level": "mean",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.005300000000000082,
+          "margin_p1": 0.006199999999999983,
+          "margin_median": 0.007900000000000018,
+          "margin_baseline": 0.006399999999999961,
+          "baseline_margin_percentile": 0.0212
+        },
+        "M3_cookie_gt_ss": {
+          "label": "F1/F4 : mean_cookie > mean_sessionStorage",
+          "level": "mean",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.13439999999999996,
+          "margin_p1": 0.1371,
+          "margin_median": 0.14370000000000005,
+          "margin_baseline": 0.14280000000000004,
+          "baseline_margin_percentile": 0.379
+        },
+        "M4_cookie_gt_idb": {
+          "label": "F1/F5 : mean_cookie > mean_IndexedDB",
+          "level": "mean",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.021299999999999986,
+          "margin_p1": 0.026000000000000023,
+          "margin_median": 0.04249999999999998,
+          "margin_baseline": 0.05130000000000001,
+          "baseline_margin_percentile": 0.8418
+        },
+        "M5_ls_equiv_cookie": {
+          "label": "F3 : |mean_localStorage - mean_cookie| < 0.07",
+          "level": "mean",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.05760000000000004,
+          "margin_p1": 0.061298999999999965,
+          "margin_median": 0.06750000000000006,
+          "margin_baseline": 0.06929999999999997,
+          "baseline_margin_percentile": 0.8365
+        },
+        "M6_ls_gt_ss": {
+          "label": "F3/F4 : mean_localStorage > mean_sessionStorage",
+          "level": "mean",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.13240000000000002,
+          "margin_p1": 0.136,
+          "margin_median": 0.14199999999999996,
+          "margin_baseline": 0.1421,
+          "baseline_margin_percentile": 0.5164
+        },
+        "M7_ls_gt_idb": {
+          "label": "F3/F5 : mean_localStorage > mean_IndexedDB",
+          "level": "mean",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.02180000000000004,
+          "margin_p1": 0.026900000000000035,
+          "margin_median": 0.04070000000000007,
+          "margin_baseline": 0.05059999999999998,
+          "baseline_margin_percentile": 0.9345
+        },
+        "D1_median_cookie_gt_ss": {
+          "label": "F1/F4 : median_cookie > median_sessionStorage",
+          "level": "dist",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.2334,
+          "margin_p1": 0.23990000000000006,
+          "margin_median": 0.27809999999999996,
+          "margin_baseline": 0.2636,
+          "baseline_margin_percentile": 0.1607
+        },
+        "D2_idb_iqr_zero": {
+          "label": "F5 : IQR_IndexedDB = 0",
+          "level": "dist",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 5e-05,
+          "margin_p1": 5e-05,
+          "margin_median": 5e-05,
+          "margin_baseline": 5e-05,
+          "baseline_margin_percentile": 0.0
+        },
+        "D3_iqr_cookie_gt_ss": {
+          "label": "F1 : IQR_cookie > IQR_sessionStorage",
+          "level": "dist",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.04519999999999996,
+          "margin_p1": 0.0534,
+          "margin_median": 0.08829999999999999,
+          "margin_baseline": 0.08410000000000001,
+          "baseline_margin_percentile": 0.422
+        },
+        "D4_median_mode_equiv": {
+          "label": "F6 : |median_Auth - median_UnAuth| < 0.01",
+          "level": "dist",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.01,
+          "margin_p1": 0.01,
+          "margin_median": 0.01,
+          "margin_baseline": 0.01,
+          "baseline_margin_percentile": 0.0
+        },
+        "D5_cookie_median_stable": {
+          "label": "F4 : |median_cookie_ALL - median_cookie_NONE| < 0.02",
+          "level": "dist",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.008068756859323161,
+          "margin_p1": 0.016400163842327394,
+          "margin_median": 0.02,
+          "margin_baseline": 0.02,
+          "baseline_margin_percentile": 0.2093
+        },
+        "D6_median_ls_equiv_cookie": {
+          "label": "F3 : |median_localStorage - median_cookie| < 0.09",
+          "level": "dist",
+          "n": 10000,
+          "holds": 2852,
+          "p_hat": 0.2852,
+          "wilson95": [
+            0.27643421168183374,
+            0.29413076007861466
+          ],
+          "fail_bound_95": null,
+          "holds_at_baseline": true,
+          "margin_min": -0.03860000000000005,
+          "margin_p1": -0.02650100000000005,
+          "margin_median": -0.005199999999999955,
+          "margin_baseline": 0.009300000000000003,
+          "baseline_margin_percentile": 0.9256
+        },
+        "D7_iqr_ls_lt_cookie": {
+          "label": "F3 : IQR_localStorage < IQR_cookie",
+          "level": "dist",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.062399999999999956,
+          "margin_p1": 0.085199,
+          "margin_median": 0.13030000000000003,
+          "margin_baseline": 0.14049999999999999,
+          "baseline_margin_percentile": 0.6891
+        }
+      },
+      "drivers": {
+        "M1_auth_unauth_equiv": [
+          {
+            "param": "S:BEHAVIORAL_DATA.LINK",
+            "r": 0.239
+          },
+          {
+            "param": "S:USER_PREFERENCES.PROF",
+            "r": -0.051
+          },
+          {
+            "param": "S:CONSENT_AND_PRIVACY.LINK",
+            "r": -0.036
+          }
+        ],
+        "M2_all_gt_none": [
+          {
+            "param": "S:BEHAVIORAL_DATA.LINK",
+            "r": 0.779
+          },
+          {
+            "param": "S:USER_PREFERENCES.PROF",
+            "r": -0.303
+          },
+          {
+            "param": "S:CONSENT_AND_PRIVACY.LINK",
+            "r": -0.238
+          }
+        ],
+        "M3_cookie_gt_ss": [
+          {
+            "param": "S:IDENTITY_TRACKING.PROF",
+            "r": 0.496
+          },
+          {
+            "param": "S:CONSENT_AND_PRIVACY.LINK",
+            "r": 0.429
+          },
+          {
+            "param": "W:SECURITY_AND_BOT_MITIGATION.ATO",
+            "r": 0.364
+          }
+        ],
+        "M4_cookie_gt_idb": [
+          {
+            "param": "S:BEHAVIORAL_DATA.LINK",
+            "r": -0.902
+          },
+          {
+            "param": "S:IDENTITY_TRACKING.PROF",
+            "r": 0.234
+          },
+          {
+            "param": "S:CONSENT_AND_PRIVACY.LINK",
+            "r": 0.18
+          }
+        ],
+        "M5_ls_equiv_cookie": [
+          {
+            "param": "S:BEHAVIORAL_DATA.LINK",
+            "r": 0.297
+          },
+          {
+            "param": "S:IDENTITY_TRACKING.PROF",
+            "r": -0.249
+          },
+          {
+            "param": "W:APP_STATE_STORAGE.LINK",
+            "r": 0.239
+          }
+        ],
+        "M6_ls_gt_ss": [
+          {
+            "param": "S:CONSENT_AND_PRIVACY.LINK",
+            "r": 0.66
+          },
+          {
+            "param": "W:APP_STATE_STORAGE.LINK",
+            "r": 0.398
+          },
+          {
+            "param": "W:APP_STATE_STORAGE.PROF",
+            "r": 0.349
+          }
+        ],
+        "M7_ls_gt_idb": [
+          {
+            "param": "S:BEHAVIORAL_DATA.LINK",
+            "r": -0.887
+          },
+          {
+            "param": "S:CONSENT_AND_PRIVACY.LINK",
+            "r": 0.284
+          },
+          {
+            "param": "W:APP_STATE_STORAGE.LINK",
+            "r": 0.179
+          }
+        ],
+        "D1_median_cookie_gt_ss": [
+          {
+            "param": "S:UX_AND_PERFORMANCE_ANALYTICS.PROF",
+            "r": -0.514
+          },
+          {
+            "param": "W:UX_AND_PERFORMANCE_ANALYTICS.LINK",
+            "r": -0.456
+          },
+          {
+            "param": "S:IDENTITY_TRACKING.PROF",
+            "r": 0.375
+          }
+        ],
+        "D2_idb_iqr_zero": [],
+        "D3_iqr_cookie_gt_ss": [
+          {
+            "param": "S:USER_PREFERENCES.PROF",
+            "r": -0.436
+          },
+          {
+            "param": "S:UX_AND_PERFORMANCE_ANALYTICS.PROF",
+            "r": -0.349
+          },
+          {
+            "param": "W:USER_PREFERENCES.LINK",
+            "r": -0.34
+          }
+        ],
+        "D4_median_mode_equiv": [],
+        "D5_cookie_median_stable": [
+          {
+            "param": "S:DEVICE_ENV.LINK",
+            "r": 0.464
+          },
+          {
+            "param": "W:DEVICE_ENV.PROF",
+            "r": 0.301
+          },
+          {
+            "param": "S:IDENTITY_TRACKING.PROF",
+            "r": -0.22
+          }
+        ],
+        "D6_median_ls_equiv_cookie": [
+          {
+            "param": "S:IDENTITY_TRACKING.PROF",
+            "r": -0.493
+          },
+          {
+            "param": "S:USER_PREFERENCES.PROF",
+            "r": 0.441
+          },
+          {
+            "param": "S:DIRECT_PII_KEYS.ID",
+            "r": 0.425
+          }
+        ],
+        "D7_iqr_ls_lt_cookie": [
+          {
+            "param": "S:DIRECT_PII_KEYS.ID",
+            "r": 0.41
+          },
+          {
+            "param": "S:USER_PREFERENCES.PROF",
+            "r": -0.368
+          },
+          {
+            "param": "S:UX_AND_PERFORMANCE_ANALYTICS.PROF",
+            "r": -0.346
+          }
+        ]
+      }
+    },
+    "wide-tier": {
+      "spec": {
+        "W": [
+          0.05,
+          0.45
+        ],
+        "S": [
+          0.4,
+          0.9
+        ],
+        "A": [
+          0.0,
+          0.0
+        ],
+        "C": [
+          1.0,
+          1.0
+        ],
+        "gran": "tier"
+      },
+      "n_parameters": 2,
+      "acceptance_rate": 0.9926884695188223,
+      "claims": {
+        "M1_auth_unauth_equiv": {
+          "label": "F6 : |mean_Auth - mean_UnAuth| < 0.05",
+          "level": "mean",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.04390000000000001,
+          "margin_p1": 0.044400000000000064,
+          "margin_median": 0.048,
+          "margin_baseline": 0.04680000000000002,
+          "baseline_margin_percentile": 0.2241
+        },
+        "M2_all_gt_none": {
+          "label": "F2 : mean_ALL >= mean_NONE",
+          "level": "mean",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.0035999999999999366,
+          "margin_p1": 0.0037000000000000366,
+          "margin_median": 0.006900000000000017,
+          "margin_baseline": 0.006399999999999961,
+          "baseline_margin_percentile": 0.4211
+        },
+        "M3_cookie_gt_ss": {
+          "label": "F1/F4 : mean_cookie > mean_sessionStorage",
+          "level": "mean",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.12739999999999996,
+          "margin_p1": 0.12990000000000002,
+          "margin_median": 0.14839999999999995,
+          "margin_baseline": 0.14280000000000004,
+          "baseline_margin_percentile": 0.2681
+        },
+        "M4_cookie_gt_idb": {
+          "label": "F1/F5 : mean_cookie > mean_IndexedDB",
+          "level": "mean",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.024499999999999966,
+          "margin_p1": 0.02629999999999999,
+          "margin_median": 0.04520000000000002,
+          "margin_baseline": 0.05130000000000001,
+          "baseline_margin_percentile": 0.6925
+        },
+        "M5_ls_equiv_cookie": {
+          "label": "F3 : |mean_localStorage - mean_cookie| < 0.07",
+          "level": "mean",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.06109999999999999,
+          "margin_p1": 0.06170000000000003,
+          "margin_median": 0.0671000000000001,
+          "margin_baseline": 0.06929999999999997,
+          "baseline_margin_percentile": 0.8615
+        },
+        "M6_ls_gt_ss": {
+          "label": "F3/F4 : mean_localStorage > mean_sessionStorage",
+          "level": "mean",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.12680000000000002,
+          "margin_p1": 0.1291,
+          "margin_median": 0.14559999999999995,
+          "margin_baseline": 0.1421,
+          "baseline_margin_percentile": 0.3205
+        },
+        "M7_ls_gt_idb": {
+          "label": "F3/F5 : mean_localStorage > mean_IndexedDB",
+          "level": "mean",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.027799999999999936,
+          "margin_p1": 0.029100000000000015,
+          "margin_median": 0.04249999999999998,
+          "margin_baseline": 0.05059999999999998,
+          "baseline_margin_percentile": 0.8374
+        },
+        "D1_median_cookie_gt_ss": {
+          "label": "F1/F4 : median_cookie > median_sessionStorage",
+          "level": "dist",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.2373,
+          "margin_p1": 0.2398,
+          "margin_median": 0.2592,
+          "margin_baseline": 0.2636,
+          "baseline_margin_percentile": 0.5421
+        },
+        "D2_idb_iqr_zero": {
+          "label": "F5 : IQR_IndexedDB = 0",
+          "level": "dist",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 5e-05,
+          "margin_p1": 5e-05,
+          "margin_median": 5e-05,
+          "margin_baseline": 5e-05,
+          "baseline_margin_percentile": 0.0
+        },
+        "D3_iqr_cookie_gt_ss": {
+          "label": "F1 : IQR_cookie > IQR_sessionStorage",
+          "level": "dist",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.0126,
+          "margin_p1": 0.024997000000000026,
+          "margin_median": 0.07689999999999997,
+          "margin_baseline": 0.08410000000000001,
+          "baseline_margin_percentile": 0.65
+        },
+        "D4_median_mode_equiv": {
+          "label": "F6 : |median_Auth - median_UnAuth| < 0.01",
+          "level": "dist",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.01,
+          "margin_p1": 0.01,
+          "margin_median": 0.01,
+          "margin_baseline": 0.01,
+          "baseline_margin_percentile": 0.0
+        },
+        "D5_cookie_median_stable": {
+          "label": "F4 : |median_cookie_ALL - median_cookie_NONE| < 0.02",
+          "level": "dist",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.0007939513019419135,
+          "margin_p1": 0.007905838145456003,
+          "margin_median": 0.02,
+          "margin_baseline": 0.02,
+          "baseline_margin_percentile": 0.1743
+        },
+        "D6_median_ls_equiv_cookie": {
+          "label": "F3 : |median_localStorage - median_cookie| < 0.09",
+          "level": "dist",
+          "n": 10000,
+          "holds": 5820,
+          "p_hat": 0.582,
+          "wilson95": [
+            0.5723030047252233,
+            0.5916340172284229
+          ],
+          "fail_bound_95": null,
+          "holds_at_baseline": true,
+          "margin_min": -0.04100000000000001,
+          "margin_p1": -0.03890100000000002,
+          "margin_median": 0.006200000000000011,
+          "margin_baseline": 0.009300000000000003,
+          "baseline_margin_percentile": 0.535
+        },
+        "D7_iqr_ls_lt_cookie": {
+          "label": "F3 : IQR_localStorage < IQR_cookie",
+          "level": "dist",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.07550000000000001,
+          "margin_p1": 0.080599,
+          "margin_median": 0.12730000000000002,
+          "margin_baseline": 0.14049999999999999,
+          "baseline_margin_percentile": 0.715
+        }
+      },
+      "drivers": {
+        "M1_auth_unauth_equiv": [
+          {
+            "param": "W",
+            "r": -0.631
+          },
+          {
+            "param": "S",
+            "r": 0.218
+          }
+        ],
+        "M2_all_gt_none": [
+          {
+            "param": "W",
+            "r": -0.977
+          },
+          {
+            "param": "S",
+            "r": -0.192
+          }
+        ],
+        "M3_cookie_gt_ss": [
+          {
+            "param": "W",
+            "r": 0.844
+          },
+          {
+            "param": "S",
+            "r": 0.533
+          }
+        ],
+        "M4_cookie_gt_idb": [
+          {
+            "param": "W",
+            "r": 0.935
+          },
+          {
+            "param": "S",
+            "r": -0.34
+          }
+        ],
+        "M5_ls_equiv_cookie": [
+          {
+            "param": "W",
+            "r": -0.801
+          },
+          {
+            "param": "S",
+            "r": 0.394
+          }
+        ],
+        "M6_ls_gt_ss": [
+          {
+            "param": "S",
+            "r": 0.787
+          },
+          {
+            "param": "W",
+            "r": 0.616
+          }
+        ],
+        "M7_ls_gt_idb": [
+          {
+            "param": "W",
+            "r": 0.948
+          },
+          {
+            "param": "S",
+            "r": -0.292
+          }
+        ],
+        "D1_median_cookie_gt_ss": [
+          {
+            "param": "S",
+            "r": -0.607
+          },
+          {
+            "param": "W",
+            "r": -0.54
+          }
+        ],
+        "D2_idb_iqr_zero": [],
+        "D3_iqr_cookie_gt_ss": [
+          {
+            "param": "W",
+            "r": -0.758
+          },
+          {
+            "param": "S",
+            "r": -0.433
+          }
+        ],
+        "D4_median_mode_equiv": [],
+        "D5_cookie_median_stable": [
+          {
+            "param": "S",
+            "r": 0.527
+          },
+          {
+            "param": "W",
+            "r": 0.34
+          }
+        ],
+        "D6_median_ls_equiv_cookie": [
+          {
+            "param": "S",
+            "r": 0.852
+          },
+          {
+            "param": "W",
+            "r": 0.281
+          }
+        ],
+        "D7_iqr_ls_lt_cookie": [
+          {
+            "param": "W",
+            "r": -0.639
+          },
+          {
+            "param": "S",
+            "r": 0.52
+          }
+        ]
+      }
+    },
+    "wide-cell": {
+      "spec": {
+        "W": [
+          0.05,
+          0.45
+        ],
+        "S": [
+          0.4,
+          0.9
+        ],
+        "A": [
+          0.0,
+          0.0
+        ],
+        "C": [
+          1.0,
+          1.0
+        ],
+        "gran": "cell"
+      },
+      "n_parameters": 36,
+      "acceptance_rate": 0.38980097576086115,
+      "claims": {
+        "M1_auth_unauth_equiv": {
+          "label": "F6 : |mean_Auth - mean_UnAuth| < 0.05",
+          "level": "mean",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.0369,
+          "margin_p1": 0.039800000000000016,
+          "margin_median": 0.046500000000000055,
+          "margin_baseline": 0.04680000000000002,
+          "baseline_margin_percentile": 0.5328
+        },
+        "M2_all_gt_none": {
+          "label": "F2 : mean_ALL >= mean_NONE",
+          "level": "mean",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.0011999999999999789,
+          "margin_p1": 0.0030999999999999917,
+          "margin_median": 0.006900000000000017,
+          "margin_baseline": 0.006399999999999961,
+          "baseline_margin_percentile": 0.3964
+        },
+        "M3_cookie_gt_ss": {
+          "label": "F1/F4 : mean_cookie > mean_sessionStorage",
+          "level": "mean",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.12350000000000005,
+          "margin_p1": 0.13349999999999995,
+          "margin_median": 0.14839999999999998,
+          "margin_baseline": 0.14280000000000004,
+          "baseline_margin_percentile": 0.1948
+        },
+        "M4_cookie_gt_idb": {
+          "label": "F1/F5 : mean_cookie > mean_IndexedDB",
+          "level": "mean",
+          "n": 10000,
+          "holds": 9986,
+          "p_hat": 0.9986,
+          "wilson95": [
+            0.9976512170202092,
+            0.9991658457369621
+          ],
+          "fail_bound_95": null,
+          "holds_at_baseline": true,
+          "margin_min": -0.009699999999999931,
+          "margin_p1": 0.006999000000000007,
+          "margin_median": 0.04530000000000001,
+          "margin_baseline": 0.05130000000000001,
+          "baseline_margin_percentile": 0.6051
+        },
+        "M5_ls_equiv_cookie": {
+          "label": "F3 : |mean_localStorage - mean_cookie| < 0.07",
+          "level": "mean",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.047300000000000064,
+          "margin_p1": 0.05350000000000005,
+          "margin_median": 0.06539999999999996,
+          "margin_baseline": 0.06929999999999997,
+          "baseline_margin_percentile": 0.9077
+        },
+        "M6_ls_gt_ss": {
+          "label": "F3/F4 : mean_localStorage > mean_sessionStorage",
+          "level": "mean",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.12829999999999997,
+          "margin_p1": 0.13380000000000003,
+          "margin_median": 0.14640000000000003,
+          "margin_baseline": 0.1421,
+          "baseline_margin_percentile": 0.2296
+        },
+        "M7_ls_gt_idb": {
+          "label": "F3/F5 : mean_localStorage > mean_IndexedDB",
+          "level": "mean",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.00019999999999997797,
+          "margin_p1": 0.010700000000000041,
+          "margin_median": 0.04310000000000003,
+          "margin_baseline": 0.05059999999999998,
+          "baseline_margin_percentile": 0.6542
+        },
+        "D1_median_cookie_gt_ss": {
+          "label": "F1/F4 : median_cookie > median_sessionStorage",
+          "level": "dist",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.2229,
+          "margin_p1": 0.22840000000000005,
+          "margin_median": 0.2568,
+          "margin_baseline": 0.2636,
+          "baseline_margin_percentile": 0.6637
+        },
+        "D2_idb_iqr_zero": {
+          "label": "F5 : IQR_IndexedDB = 0",
+          "level": "dist",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 5e-05,
+          "margin_p1": 5e-05,
+          "margin_median": 5e-05,
+          "margin_baseline": 5e-05,
+          "baseline_margin_percentile": 0.0
+        },
+        "D3_iqr_cookie_gt_ss": {
+          "label": "F1 : IQR_cookie > IQR_sessionStorage",
+          "level": "dist",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.0042999999999999705,
+          "margin_p1": 0.024599000000000013,
+          "margin_median": 0.07269999999999999,
+          "margin_baseline": 0.08410000000000001,
+          "baseline_margin_percentile": 0.6905
+        },
+        "D4_median_mode_equiv": {
+          "label": "F6 : |median_Auth - median_UnAuth| < 0.01",
+          "level": "dist",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.01,
+          "margin_p1": 0.01,
+          "margin_median": 0.01,
+          "margin_baseline": 0.01,
+          "baseline_margin_percentile": 0.0
+        },
+        "D5_cookie_median_stable": {
+          "label": "F4 : |median_cookie_ALL - median_cookie_NONE| < 0.02",
+          "level": "dist",
+          "n": 10000,
+          "holds": 9958,
+          "p_hat": 0.9958,
+          "wilson95": [
+            0.9943280731304939,
+            0.9968911400965529
+          ],
+          "fail_bound_95": null,
+          "holds_at_baseline": true,
+          "margin_min": -0.005973378690856141,
+          "margin_p1": 0.007503235365921181,
+          "margin_median": 0.02,
+          "margin_baseline": 0.02,
+          "baseline_margin_percentile": 0.1651
+        },
+        "D6_median_ls_equiv_cookie": {
+          "label": "F3 : |median_localStorage - median_cookie| < 0.09",
+          "level": "dist",
+          "n": 10000,
+          "holds": 8353,
+          "p_hat": 0.8353,
+          "wilson95": [
+            0.8279016686182089,
+            0.8424408126142008
+          ],
+          "fail_bound_95": null,
+          "holds_at_baseline": true,
+          "margin_min": -0.051500000000000073,
+          "margin_p1": -0.02429999999999996,
+          "margin_median": 0.01599999999999993,
+          "margin_baseline": 0.009300000000000003,
+          "baseline_margin_percentile": 0.3408
+        },
+        "D7_iqr_ls_lt_cookie": {
+          "label": "F3 : IQR_localStorage < IQR_cookie",
+          "level": "dist",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.055900000000000005,
+          "margin_p1": 0.070499,
+          "margin_median": 0.122,
+          "margin_baseline": 0.14049999999999999,
+          "baseline_margin_percentile": 0.7508
+        }
+      },
+      "drivers": {
+        "M1_auth_unauth_equiv": [
+          {
+            "param": "S:BEHAVIORAL_DATA.LINK",
+            "r": 0.372
+          },
+          {
+            "param": "S:IDENTITY_TRACKING.PROF",
+            "r": -0.059
+          },
+          {
+            "param": "W:USER_PREFERENCES.LINK",
+            "r": -0.052
+          }
+        ],
+        "M2_all_gt_none": [
+          {
+            "param": "S:BEHAVIORAL_DATA.LINK",
+            "r": 0.806
+          },
+          {
+            "param": "S:USER_PREFERENCES.PROF",
+            "r": -0.305
+          },
+          {
+            "param": "S:CONSENT_AND_PRIVACY.LINK",
+            "r": -0.247
+          }
+        ],
+        "M3_cookie_gt_ss": [
+          {
+            "param": "S:IDENTITY_TRACKING.PROF",
+            "r": 0.568
+          },
+          {
+            "param": "S:CONSENT_AND_PRIVACY.LINK",
+            "r": 0.467
+          },
+          {
+            "param": "S:BEHAVIORAL_DATA.LINK",
+            "r": -0.333
+          }
+        ],
+        "M4_cookie_gt_idb": [
+          {
+            "param": "S:BEHAVIORAL_DATA.LINK",
+            "r": -0.907
+          },
+          {
+            "param": "S:IDENTITY_TRACKING.PROF",
+            "r": 0.265
+          },
+          {
+            "param": "S:CONSENT_AND_PRIVACY.LINK",
+            "r": 0.189
+          }
+        ],
+        "M5_ls_equiv_cookie": [
+          {
+            "param": "S:BEHAVIORAL_DATA.LINK",
+            "r": 0.209
+          },
+          {
+            "param": "S:IDENTITY_TRACKING.PROF",
+            "r": -0.186
+          },
+          {
+            "param": "W:APP_STATE_STORAGE.LINK",
+            "r": 0.152
+          }
+        ],
+        "M6_ls_gt_ss": [
+          {
+            "param": "S:CONSENT_AND_PRIVACY.LINK",
+            "r": 0.723
+          },
+          {
+            "param": "W:APP_STATE_STORAGE.LINK",
+            "r": 0.36
+          },
+          {
+            "param": "W:APP_STATE_STORAGE.PROF",
+            "r": 0.319
+          }
+        ],
+        "M7_ls_gt_idb": [
+          {
+            "param": "S:BEHAVIORAL_DATA.LINK",
+            "r": -0.9
+          },
+          {
+            "param": "S:CONSENT_AND_PRIVACY.LINK",
+            "r": 0.291
+          },
+          {
+            "param": "W:APP_STATE_STORAGE.LINK",
+            "r": 0.163
+          }
+        ],
+        "D1_median_cookie_gt_ss": [
+          {
+            "param": "S:IDENTITY_TRACKING.PROF",
+            "r": 0.625
+          },
+          {
+            "param": "S:UX_AND_PERFORMANCE_ANALYTICS.PROF",
+            "r": -0.5
+          },
+          {
+            "param": "W:UX_AND_PERFORMANCE_ANALYTICS.LINK",
+            "r": -0.281
+          }
+        ],
+        "D2_idb_iqr_zero": [],
+        "D3_iqr_cookie_gt_ss": [
+          {
+            "param": "S:BEHAVIORAL_DATA.LINK",
+            "r": 0.593
+          },
+          {
+            "param": "S:USER_PREFERENCES.PROF",
+            "r": -0.29
+          },
+          {
+            "param": "S:CONSENT_AND_PRIVACY.LINK",
+            "r": -0.286
+          }
+        ],
+        "D4_median_mode_equiv": [],
+        "D5_cookie_median_stable": [
+          {
+            "param": "S:DEVICE_ENV.LINK",
+            "r": 0.361
+          },
+          {
+            "param": "S:IDENTITY_TRACKING.PROF",
+            "r": -0.233
+          },
+          {
+            "param": "W:DEVICE_ENV.PROF",
+            "r": 0.218
+          }
+        ],
+        "D6_median_ls_equiv_cookie": [
+          {
+            "param": "S:IDENTITY_TRACKING.PROF",
+            "r": -0.666
+          },
+          {
+            "param": "S:DIRECT_PII_KEYS.ID",
+            "r": 0.365
+          },
+          {
+            "param": "S:DIRECT_PII_KEYS.LINK",
+            "r": 0.199
+          }
+        ],
+        "D7_iqr_ls_lt_cookie": [
+          {
+            "param": "S:BEHAVIORAL_DATA.LINK",
+            "r": 0.42
+          },
+          {
+            "param": "S:NAVIGATION_HISTORY.LINK",
+            "r": 0.335
+          },
+          {
+            "param": "S:IDENTITY_TRACKING.PROF",
+            "r": -0.305
+          }
+        ]
+      }
+    },
+    "extremes-cell": {
+      "spec": {
+        "W": [
+          0.1,
+          0.3
+        ],
+        "S": [
+          0.5,
+          0.7
+        ],
+        "A": [
+          0.0,
+          0.05
+        ],
+        "C": [
+          0.9,
+          1.0
+        ],
+        "gran": "cell"
+      },
+      "n_parameters": 120,
+      "acceptance_rate": 1.0,
+      "claims": {
+        "M1_auth_unauth_equiv": {
+          "label": "F6 : |mean_Auth - mean_UnAuth| < 0.05",
+          "level": "mean",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.04119999999999997,
+          "margin_p1": 0.04359899999999993,
+          "margin_median": 0.04820000000000009,
+          "margin_baseline": 0.04680000000000002,
+          "baseline_margin_percentile": 0.2114
+        },
+        "M2_all_gt_none": {
+          "label": "F2 : mean_ALL >= mean_NONE",
+          "level": "mean",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.0038000000000000256,
+          "margin_p1": 0.0048000000000000265,
+          "margin_median": 0.007000000000000006,
+          "margin_baseline": 0.006399999999999961,
+          "baseline_margin_percentile": 0.2712
+        },
+        "M3_cookie_gt_ss": {
+          "label": "F1/F4 : mean_cookie > mean_sessionStorage",
+          "level": "mean",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.12659999999999993,
+          "margin_p1": 0.13279999999999997,
+          "margin_median": 0.14309999999999995,
+          "margin_baseline": 0.14280000000000004,
+          "baseline_margin_percentile": 0.4789
+        },
+        "M4_cookie_gt_idb": {
+          "label": "F1/F5 : mean_cookie > mean_IndexedDB",
+          "level": "mean",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.006299999999999972,
+          "margin_p1": 0.01980000000000004,
+          "margin_median": 0.04259999999999997,
+          "margin_baseline": 0.05130000000000001,
+          "baseline_margin_percentile": 0.7725
+        },
+        "M5_ls_equiv_cookie": {
+          "label": "F3 : |mean_localStorage - mean_cookie| < 0.07",
+          "level": "mean",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.0539,
+          "margin_p1": 0.05939999999999995,
+          "margin_median": 0.06709999999999999,
+          "margin_baseline": 0.06929999999999997,
+          "baseline_margin_percentile": 0.8645
+        },
+        "M6_ls_gt_ss": {
+          "label": "F3/F4 : mean_localStorage > mean_sessionStorage",
+          "level": "mean",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.13310000000000005,
+          "margin_p1": 0.13580000000000003,
+          "margin_median": 0.14209999999999995,
+          "margin_baseline": 0.1421,
+          "baseline_margin_percentile": 0.5002
+        },
+        "M7_ls_gt_idb": {
+          "label": "F3/F5 : mean_localStorage > mean_IndexedDB",
+          "level": "mean",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.015000000000000013,
+          "margin_p1": 0.024698999999999947,
+          "margin_median": 0.04179999999999995,
+          "margin_baseline": 0.05059999999999998,
+          "baseline_margin_percentile": 0.8394
+        },
+        "D1_median_cookie_gt_ss": {
+          "label": "F1/F4 : median_cookie > median_sessionStorage",
+          "level": "dist",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.20830000000000004,
+          "margin_p1": 0.21859899999999996,
+          "margin_median": 0.25529999999999997,
+          "margin_baseline": 0.2636,
+          "baseline_margin_percentile": 0.6695
+        },
+        "D2_idb_iqr_zero": {
+          "label": "F5 : IQR_IndexedDB = 0",
+          "level": "dist",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 5e-05,
+          "margin_p1": 5e-05,
+          "margin_median": 5e-05,
+          "margin_baseline": 5e-05,
+          "baseline_margin_percentile": 0.0
+        },
+        "D3_iqr_cookie_gt_ss": {
+          "label": "F1 : IQR_cookie > IQR_sessionStorage",
+          "level": "dist",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.020499999999999963,
+          "margin_p1": 0.03789999999999999,
+          "margin_median": 0.0695,
+          "margin_baseline": 0.08410000000000001,
+          "baseline_margin_percentile": 0.8636
+        },
+        "D4_median_mode_equiv": {
+          "label": "F6 : |median_Auth - median_UnAuth| < 0.01",
+          "level": "dist",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.01,
+          "margin_p1": 0.01,
+          "margin_median": 0.01,
+          "margin_baseline": 0.01,
+          "baseline_margin_percentile": 0.0
+        },
+        "D5_cookie_median_stable": {
+          "label": "F4 : |median_cookie_ALL - median_cookie_NONE| < 0.02",
+          "level": "dist",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.010678817912517995,
+          "margin_p1": 0.01640560085125782,
+          "margin_median": 0.02,
+          "margin_baseline": 0.02,
+          "baseline_margin_percentile": 0.0735
+        },
+        "D6_median_ls_equiv_cookie": {
+          "label": "F3 : |median_localStorage - median_cookie| < 0.09",
+          "level": "dist",
+          "n": 10000,
+          "holds": 7456,
+          "p_hat": 0.7456,
+          "wilson95": [
+            0.7369705457879194,
+            0.7540408272830017
+          ],
+          "fail_bound_95": null,
+          "holds_at_baseline": true,
+          "margin_min": -0.034900000000000014,
+          "margin_p1": -0.019300999999999957,
+          "margin_median": 0.009500000000000036,
+          "margin_baseline": 0.009300000000000003,
+          "baseline_margin_percentile": 0.4924
+        },
+        "D7_iqr_ls_lt_cookie": {
+          "label": "F3 : IQR_localStorage < IQR_cookie",
+          "level": "dist",
+          "n": 10000,
+          "holds": 10000,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "holds_at_baseline": true,
+          "margin_min": 0.05830000000000002,
+          "margin_p1": 0.08209899999999995,
+          "margin_median": 0.11900000000000001,
+          "margin_baseline": 0.14049999999999999,
+          "baseline_margin_percentile": 0.9138
+        }
+      },
+      "drivers": {
+        "M1_auth_unauth_equiv": [
+          {
+            "param": "S:BEHAVIORAL_DATA.LINK",
+            "r": 0.418
+          },
+          {
+            "param": "C:BEHAVIORAL_DATA.PROF",
+            "r": 0.234
+          },
+          {
+            "param": "C:IDENTITY_TRACKING.LINK",
+            "r": -0.129
+          }
+        ],
+        "M2_all_gt_none": [
+          {
+            "param": "S:BEHAVIORAL_DATA.LINK",
+            "r": 0.704
+          },
+          {
+            "param": "C:BEHAVIORAL_DATA.PROF",
+            "r": 0.415
+          },
+          {
+            "param": "S:USER_PREFERENCES.PROF",
+            "r": -0.226
+          }
+        ],
+        "M3_cookie_gt_ss": [
+          {
+            "param": "C:IDENTITY_TRACKING.LINK",
+            "r": 0.689
+          },
+          {
+            "param": "S:IDENTITY_TRACKING.PROF",
+            "r": 0.387
+          },
+          {
+            "param": "S:CONSENT_AND_PRIVACY.LINK",
+            "r": 0.257
+          }
+        ],
+        "M4_cookie_gt_idb": [
+          {
+            "param": "S:BEHAVIORAL_DATA.LINK",
+            "r": -0.7
+          },
+          {
+            "param": "C:IDENTITY_TRACKING.LINK",
+            "r": 0.42
+          },
+          {
+            "param": "C:BEHAVIORAL_DATA.PROF",
+            "r": -0.415
+          }
+        ],
+        "M5_ls_equiv_cookie": [
+          {
+            "param": "C:IDENTITY_TRACKING.LINK",
+            "r": -0.166
+          },
+          {
+            "param": "S:BEHAVIORAL_DATA.LINK",
+            "r": 0.102
+          },
+          {
+            "param": "C:BEHAVIORAL_DATA.PROF",
+            "r": 0.075
+          }
+        ],
+        "M6_ls_gt_ss": [
+          {
+            "param": "S:CONSENT_AND_PRIVACY.LINK",
+            "r": 0.573
+          },
+          {
+            "param": "W:APP_STATE_STORAGE.LINK",
+            "r": 0.36
+          },
+          {
+            "param": "C:ID_SOLUTIONS_AND_EXCHANGES.LINK",
+            "r": 0.312
+          }
+        ],
+        "M7_ls_gt_idb": [
+          {
+            "param": "S:BEHAVIORAL_DATA.LINK",
+            "r": -0.736
+          },
+          {
+            "param": "C:BEHAVIORAL_DATA.PROF",
+            "r": -0.437
+          },
+          {
+            "param": "C:IDENTITY_TRACKING.LINK",
+            "r": 0.255
+          }
+        ],
+        "D1_median_cookie_gt_ss": [
+          {
+            "param": "C:IDENTITY_TRACKING.LINK",
+            "r": 0.567
+          },
+          {
+            "param": "S:UX_AND_PERFORMANCE_ANALYTICS.PROF",
+            "r": -0.498
+          },
+          {
+            "param": "W:UX_AND_PERFORMANCE_ANALYTICS.LINK",
+            "r": -0.391
+          }
+        ],
+        "D2_idb_iqr_zero": [],
+        "D3_iqr_cookie_gt_ss": [
+          {
+            "param": "S:BEHAVIORAL_DATA.LINK",
+            "r": 0.448
+          },
+          {
+            "param": "C:IDENTITY_TRACKING.LINK",
+            "r": -0.386
+          },
+          {
+            "param": "C:BEHAVIORAL_DATA.PROF",
+            "r": 0.255
+          }
+        ],
+        "D4_median_mode_equiv": [],
+        "D5_cookie_median_stable": [
+          {
+            "param": "S:DEVICE_ENV.LINK",
+            "r": 0.308
+          },
+          {
+            "param": "C:IDENTITY_TRACKING.LINK",
+            "r": -0.234
+          },
+          {
+            "param": "W:DEVICE_ENV.PROF",
+            "r": 0.184
+          }
+        ],
+        "D6_median_ls_equiv_cookie": [
+          {
+            "param": "C:IDENTITY_TRACKING.LINK",
+            "r": -0.732
+          },
+          {
+            "param": "S:IDENTITY_TRACKING.PROF",
+            "r": -0.38
+          },
+          {
+            "param": "S:DIRECT_PII_KEYS.ID",
+            "r": 0.194
+          }
+        ],
+        "D7_iqr_ls_lt_cookie": [
+          {
+            "param": "C:IDENTITY_TRACKING.LINK",
+            "r": -0.435
+          },
+          {
+            "param": "S:DIRECT_PII_KEYS.ID",
+            "r": 0.292
+          },
+          {
+            "param": "S:IDENTITY_TRACKING.PROF",
+            "r": -0.236
+          }
+        ]
+      }
+    }
+  }
+}

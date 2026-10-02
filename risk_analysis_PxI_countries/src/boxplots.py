@@ -120,7 +120,8 @@ def _render(
     group_labels: list,
     series: list,
     counts: list,
-    group_w=0.72, box_ratio=0.80
+    group_w=0.72, box_ratio=0.80,
+    x_label_rotation=0
 ):
     """
     Core rendering engine: Overlays grouped boxplots with frequency line plots.
@@ -165,7 +166,12 @@ def _render(
         ax.axvline(sep, color='#cccccc', lw=0.5, zorder=0)
 
     ax.set_xticks(np.arange(n_groups))
-    ax.set_xticklabels(group_labels)
+    # ax.set_xticklabels(group_labels)
+    ax.set_xticklabels(
+    group_labels,
+    rotation=x_label_rotation,
+    ha='right' if x_label_rotation else 'center'
+)
     ax.set_xlim(-0.55, n_groups - 0.45)
     ax.set_ylabel('Score [0, 1]')
     ax.set_ylim(-0.05, 1.15)
@@ -290,8 +296,8 @@ def plot_risk_by_country_and_mode(data_root: Path, output_dir: Path, policy: str
 
     fig, ax = plt.subplots(figsize=(9.0, 3.4))
     ax_r    = ax.twinx()
-    _render(ax, ax_r, users, series, counts_per_country)
-    ax.set_title(f"Risk score ($R_i$) distribution by country - AUTH vs NOTAUTH ({policy} policy)")
+    _render(ax, ax_r, [u.split('_')[0] for u in users], series, counts_per_country,x_label_rotation=0)
+    ax.set_title(f"Risk score ($R_i$) distribution by country - AUTH vs NOTAUTH ({"Essential Only"} policy)")
 
     _save(fig, output_dir, "f2_risk_by_country_and_mode")
 

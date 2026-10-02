@@ -9,24 +9,24 @@
     "size_increases": 5,
     "size_decreases": 4,
     "pii_transitions": {
-      "DIRECT_PII_KEYS -> NAVIGATION_HISTORY": 1,
-      "IDENTITY_TRACKING -> UX_AND_PERFORMANCE_ANALYTICS": 4,
-      "NAVIGATION_HISTORY -> UX_AND_PERFORMANCE_ANALYTICS": 1,
-      "IDENTITY_TRACKING -> SESSION_MANAGEMENT": 1,
-      "APP_STATE_STORAGE -> BEHAVIORAL_DATA": 1,
-      "BEHAVIORAL_DATA -> DIRECT_PII_KEYS": 1,
       "DEVICE_ENV -> NAVIGATION_HISTORY": 1,
-      "SESSION_MANAGEMENT -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "IDENTITY_TRACKING -> UX_AND_PERFORMANCE_ANALYTICS": 4,
       "IDENTITY_TRACKING -> ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "IDENTITY_TRACKING -> SESSION_MANAGEMENT": 1,
+      "SESSION_MANAGEMENT -> UX_AND_PERFORMANCE_ANALYTICS": 1,
       "DIRECT_PII -> ID_SOLUTIONS_AND_EXCHANGES": 1,
-      "DIRECT_PII_KEYS -> LOCATION_AND_DEMOGRAPHICS": 1,
-      "BEHAVIORAL_DATA -> IDENTITY_TRACKING": 1,
+      "ID_SOLUTIONS_AND_EXCHANGES -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "NAVIGATION_HISTORY -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "DIRECT_PII_KEYS -> NAVIGATION_HISTORY": 1,
+      "BEHAVIORAL_DATA -> DIRECT_PII_KEYS": 1,
       "IDENTITY_TRACKING -> NAVIGATION_HISTORY": 1,
-      "ID_SOLUTIONS_AND_EXCHANGES -> UX_AND_PERFORMANCE_ANALYTICS": 1
+      "APP_STATE_STORAGE -> BEHAVIORAL_DATA": 1,
+      "DIRECT_PII_KEYS -> LOCATION_AND_DEMOGRAPHICS": 1,
+      "BEHAVIORAL_DATA -> IDENTITY_TRACKING": 1
     },
     "volatility_distribution": {
-      "stable": 24,
       "moderate": 14,
+      "stable": 24,
       "high": 16
     },
     "change_frequency": {
@@ -80,36 +80,20 @@
     ],
     "url_modifications": {
       "www.manpower.se": 15,
-      "www.trygghansa.se": 8,
       "www.gjensidige.se": 8,
+      "www.trygghansa.se": 8,
       "artportalen.se": 4,
-      "se.jobtome.com": 3,
+      "app.bokio.se": 3,
       "thatsup.se": 3,
+      "se.jobtome.com": 3,
       "servicefinder.se": 3,
       "www.randstad.se": 3,
-      "app.bokio.se": 3,
       "www.saco.se": 3
     },
     "pii_modification_patterns": {
-      "NAVIGATION_HISTORY": {
-        "count": 22,
-        "avg_gap": 28.38095238095238
-      },
-      "UX_AND_PERFORMANCE_ANALYTICS": {
-        "count": 2,
-        "avg_gap": 32.5
-      },
-      "USER_PREFERENCES": {
-        "count": 1,
-        "avg_gap": 99.0
-      },
-      "SESSION_MANAGEMENT": {
-        "count": 6,
-        "avg_gap": 46.2
-      },
-      "DEVICE_ENV": {
-        "count": 3,
-        "avg_gap": 171.5
+      "IDENTITY_TRACKING": {
+        "count": 14,
+        "avg_gap": 40.4375
       },
       "BEHAVIORAL_DATA": {
         "count": 5,
@@ -119,9 +103,25 @@
         "count": 9,
         "avg_gap": 49.13333333333333
       },
-      "IDENTITY_TRACKING": {
-        "count": 14,
-        "avg_gap": 40.4375
+      "SESSION_MANAGEMENT": {
+        "count": 6,
+        "avg_gap": 46.2
+      },
+      "DEVICE_ENV": {
+        "count": 3,
+        "avg_gap": 171.5
+      },
+      "USER_PREFERENCES": {
+        "count": 1,
+        "avg_gap": 99.0
+      },
+      "NAVIGATION_HISTORY": {
+        "count": 22,
+        "avg_gap": 28.38095238095238
+      },
+      "UX_AND_PERFORMANCE_ANALYTICS": {
+        "count": 2,
+        "avg_gap": 32.5
       },
       "LOCATION_AND_DEMOGRAPHICS": {
         "count": 2,

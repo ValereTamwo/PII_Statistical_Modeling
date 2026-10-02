@@ -9,41 +9,41 @@
     "size_increases": 31,
     "size_decreases": 12,
     "pii_transitions": {
-      "BEHAVIORAL_DATA -> ID_SOLUTIONS_AND_EXCHANGES": 2,
-      "IDENTITY_TRACKING -> DEVICE_ENV": 1,
-      "USER_PREFERENCES -> CONSENT_AND_PRIVACY": 4,
-      "CONSENT_AND_PRIVACY -> UX_AND_PERFORMANCE_ANALYTICS": 8,
+      "DEVICE_ENV -> UX_AND_PERFORMANCE_ANALYTICS": 1,
       "IDENTITY_TRACKING -> ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "APP_STATE_STORAGE -> UX_AND_PERFORMANCE_ANALYTICS": 8,
+      "CONSENT_AND_PRIVACY -> UX_AND_PERFORMANCE_ANALYTICS": 8,
       "USER_PREFERENCES -> BEHAVIORAL_DATA": 1,
       "IDENTITY_TRACKING -> UX_AND_PERFORMANCE_ANALYTICS": 3,
-      "ID_SOLUTIONS_AND_EXCHANGES -> UX_AND_PERFORMANCE_ANALYTICS": 6,
-      "APP_STATE_STORAGE -> LOCATION_AND_DEMOGRAPHICS": 3,
-      "DIRECT_PII -> LOCATION_AND_DEMOGRAPHICS": 1,
-      "APP_STATE_STORAGE -> TECHNICAL_PASSWORDS": 1,
-      "DEVICE_ENV -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "DIRECT_PII -> DIRECT_PII_KEYS": 2,
       "DIRECT_PII -> UX_AND_PERFORMANCE_ANALYTICS": 2,
       "BEHAVIORAL_DATA -> UX_AND_PERFORMANCE_ANALYTICS": 3,
-      "BEHAVIORAL_DATA -> IDENTITY_TRACKING": 3,
-      "APP_STATE_STORAGE -> UX_AND_PERFORMANCE_ANALYTICS": 8,
-      "ID_SOLUTIONS_AND_EXCHANGES -> TECHNICAL_PASSWORDS": 2,
-      "IDENTITY_TRACKING -> BEHAVIORAL_DATA": 1,
-      "DIRECT_PII_KEYS -> UX_AND_PERFORMANCE_ANALYTICS": 1,
-      "DEVICE_ENV -> ID_SOLUTIONS_AND_EXCHANGES": 1,
-      "CONSENT_AND_PRIVACY -> ID_SOLUTIONS_AND_EXCHANGES": 1,
-      "CONSENT_AND_PRIVACY -> TECHNICAL_PASSWORDS": 2,
-      "DEVICE_ENV -> LOCATION_AND_DEMOGRAPHICS": 1,
-      "USER_PREFERENCES -> IDENTITY_TRACKING": 1,
-      "SECURITY_AND_BOT_MITIGATION -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "APP_STATE_STORAGE -> USER_PREFERENCES": 3,
+      "ID_SOLUTIONS_AND_EXCHANGES -> UX_AND_PERFORMANCE_ANALYTICS": 6,
+      "USER_PREFERENCES -> CONSENT_AND_PRIVACY": 4,
+      "DIRECT_PII -> LOCATION_AND_DEMOGRAPHICS": 1,
       "IDENTITY_TRACKING -> SESSION_MANAGEMENT": 1,
-      "USER_PREFERENCES -> UX_AND_PERFORMANCE_ANALYTICS": 1,
       "APP_STATE_STORAGE -> IDENTITY_TRACKING": 1,
-      "DIRECT_PII -> DIRECT_PII_KEYS": 2,
+      "BEHAVIORAL_DATA -> ID_SOLUTIONS_AND_EXCHANGES": 2,
+      "ID_SOLUTIONS_AND_EXCHANGES -> TECHNICAL_PASSWORDS": 2,
+      "CONSENT_AND_PRIVACY -> ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "APP_STATE_STORAGE -> TECHNICAL_PASSWORDS": 1,
+      "APP_STATE_STORAGE -> LOCATION_AND_DEMOGRAPHICS": 3,
+      "CONSENT_AND_PRIVACY -> TECHNICAL_PASSWORDS": 2,
       "BEHAVIORAL_DATA -> USER_PREFERENCES": 1,
-      "APP_STATE_STORAGE -> USER_PREFERENCES": 3
+      "DIRECT_PII_KEYS -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "BEHAVIORAL_DATA -> IDENTITY_TRACKING": 3,
+      "IDENTITY_TRACKING -> BEHAVIORAL_DATA": 1,
+      "USER_PREFERENCES -> IDENTITY_TRACKING": 1,
+      "IDENTITY_TRACKING -> DEVICE_ENV": 1,
+      "SECURITY_AND_BOT_MITIGATION -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "DEVICE_ENV -> LOCATION_AND_DEMOGRAPHICS": 1,
+      "DEVICE_ENV -> ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "USER_PREFERENCES -> UX_AND_PERFORMANCE_ANALYTICS": 1
     },
     "volatility_distribution": {
-      "high": 60,
       "stable": 82,
+      "high": 60,
       "moderate": 82
     },
     "change_frequency": {
@@ -119,6 +119,12 @@
         "pii_category": "LOCATION_AND_DEMOGRAPHICS"
       },
       {
+        "key": "tealium_va",
+        "avg_gap": 13.0,
+        "num_modifications": 4,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
         "key": "tealium_va_tryg_trygghansa-se-web",
         "avg_gap": 13.0,
         "num_modifications": 4,
@@ -129,12 +135,6 @@
         "avg_gap": 13.0,
         "num_modifications": 4,
         "pii_category": "ID_SOLUTIONS_AND_EXCHANGES"
-      },
-      {
-        "key": "tealium_va",
-        "avg_gap": 13.0,
-        "num_modifications": 4,
-        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
       },
       {
         "key": "intercom.intercom-state-i4sdpmxu",
@@ -180,23 +180,31 @@
       "www.trygghansa.se": 18,
       "www.abcnyheter.no": 17,
       "filmcafe.se": 17,
-      "tibia.fandom.com": 16,
       "kalender.se": 16,
+      "tibia.fandom.com": 16,
       "fa.wikipedia.org": 15,
       "sv.frwiki.wiki": 14
     },
     "pii_modification_patterns": {
-      "ID_SOLUTIONS_AND_EXCHANGES": {
-        "count": 14,
-        "avg_gap": 36.294117647058826
-      },
       "UX_AND_PERFORMANCE_ANALYTICS": {
         "count": 195,
         "avg_gap": 20.802419354838708
       },
+      "TECHNICAL_PASSWORDS": {
+        "count": 13,
+        "avg_gap": 16.416666666666668
+      },
+      "ID_SOLUTIONS_AND_EXCHANGES": {
+        "count": 14,
+        "avg_gap": 36.294117647058826
+      },
       "BEHAVIORAL_DATA": {
         "count": 20,
         "avg_gap": 84.17391304347827
+      },
+      "IDENTITY_TRACKING": {
+        "count": 21,
+        "avg_gap": 104.575
       },
       "DIRECT_PII": {
         "count": 1,
@@ -206,17 +214,13 @@
         "count": 21,
         "avg_gap": 14.681818181818182
       },
-      "IDENTITY_TRACKING": {
-        "count": 21,
-        "avg_gap": 104.575
-      },
       "USER_PREFERENCES": {
         "count": 33,
         "avg_gap": 40.935483870967744
       },
-      "TECHNICAL_PASSWORDS": {
-        "count": 13,
-        "avg_gap": 16.416666666666668
+      "SESSION_MANAGEMENT": {
+        "count": 4,
+        "avg_gap": 30.666666666666668
       },
       "NAVIGATION_HISTORY": {
         "count": 18,
@@ -225,10 +229,6 @@
       "APP_STATE_STORAGE": {
         "count": 20,
         "avg_gap": 27.772727272727273
-      },
-      "SESSION_MANAGEMENT": {
-        "count": 4,
-        "avg_gap": 30.666666666666668
       }
     }
   },

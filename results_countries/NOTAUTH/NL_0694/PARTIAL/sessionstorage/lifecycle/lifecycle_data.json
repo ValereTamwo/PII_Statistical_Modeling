@@ -1,0 +1,140 @@
+{
+  "storage_type": "sessionstorage",
+  "metrics": {
+    "total_items": 140,
+    "items_modified": 28,
+    "items_deleted": 36,
+    "entropy_increases": 25,
+    "entropy_decreases": 21,
+    "size_increases": 15,
+    "size_decreases": 8,
+    "pii_transitions": {
+      "BEHAVIORAL_DATA -> UX_AND_PERFORMANCE_ANALYTICS": 2,
+      "ID_SOLUTIONS_AND_EXCHANGES -> TECHNICAL_PASSWORDS": 1,
+      "CONSENT_AND_PRIVACY -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "IDENTITY_TRACKING -> ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "NAVIGATION_HISTORY -> UX_AND_PERFORMANCE_ANALYTICS": 2,
+      "APP_STATE_STORAGE -> UX_AND_PERFORMANCE_ANALYTICS": 2,
+      "IDENTITY_TRACKING -> UX_AND_PERFORMANCE_ANALYTICS": 7,
+      "BEHAVIORAL_DATA -> USER_PREFERENCES": 4,
+      "IDENTITY_TRACKING -> IDENTITY_TRACKING.user_id_key": 2,
+      "DIRECT_PII_KEYS -> INFRASTRUCTURE": 1,
+      "BEHAVIORAL_DATA -> IDENTITY_TRACKING": 2,
+      "DEVICE_ENV -> NAVIGATION_HISTORY": 1,
+      "DEVICE_ENV -> IDENTITY_TRACKING": 1,
+      "BEHAVIORAL_DATA -> DIRECT_PII_KEYS": 1,
+      "DIRECT_PII_KEYS -> LOCATION_AND_DEMOGRAPHICS": 1,
+      "IDENTITY_TRACKING -> SESSION_MANAGEMENT": 1,
+      "DIRECT_PII -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "ID_SOLUTIONS_AND_EXCHANGES -> LOCATION_AND_DEMOGRAPHICS": 1,
+      "APP_STATE_STORAGE -> BEHAVIORAL_DATA": 1
+    },
+    "volatility_distribution": {
+      "high": 27,
+      "stable": 88,
+      "moderate": 25
+    },
+    "change_frequency": {
+      "avg_gap": 20.48167539267016,
+      "min_gap": 0,
+      "max_gap": 374
+    },
+    "frequent_changes": [
+      {
+        "key": "cvco.window.connection.nl-formal",
+        "avg_gap": 0.0,
+        "num_modifications": 2,
+        "pii_category": "TECHNICAL_PASSWORDS"
+      },
+      {
+        "key": "route_cache",
+        "avg_gap": 0.0,
+        "num_modifications": 3,
+        "pii_category": "LOCATION_AND_DEMOGRAPHICS"
+      },
+      {
+        "key": "mopDeploy",
+        "avg_gap": 1.3496932515337423,
+        "num_modifications": 284,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "rxvt",
+        "avg_gap": 15.172413793103448,
+        "num_modifications": 12,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "History.store",
+        "avg_gap": 20.4,
+        "num_modifications": 2,
+        "pii_category": "ID_SOLUTIONS_AND_EXCHANGES"
+      },
+      {
+        "key": "iWasHere2",
+        "avg_gap": 30.0,
+        "num_modifications": 2,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "feedbackPageCounter",
+        "avg_gap": 30.0,
+        "num_modifications": 2,
+        "pii_category": "NAVIGATION_HISTORY"
+      },
+      {
+        "key": "bldSessionStatus",
+        "avg_gap": 39.333333333333336,
+        "num_modifications": 7,
+        "pii_category": "BEHAVIORAL_DATA"
+      }
+    ],
+    "url_modifications": {
+      "www.svb.nl": 45,
+      "kombijde.politie.nl": 32,
+      "ind.nl": 26,
+      "www.werkenvoornederland.nl": 25,
+      "www.rivm.nl": 24,
+      "www.ns.nl": 19,
+      "gemeente.groningen.nl": 16,
+      "www.cbs.nl": 16,
+      "opendata.cbs.nl": 16,
+      "www.ovpay.nl": 16
+    },
+    "pii_modification_patterns": {
+      "UX_AND_PERFORMANCE_ANALYTICS": {
+        "count": 311,
+        "avg_gap": 5.03551912568306
+      },
+      "BEHAVIORAL_DATA": {
+        "count": 18,
+        "avg_gap": 58.785714285714285
+      },
+      "TECHNICAL_PASSWORDS": {
+        "count": 2,
+        "avg_gap": 0.0
+      },
+      "ID_SOLUTIONS_AND_EXCHANGES": {
+        "count": 2,
+        "avg_gap": 20.4
+      },
+      "LOCATION_AND_DEMOGRAPHICS": {
+        "count": 5,
+        "avg_gap": 72.88888888888889
+      },
+      "USER_PREFERENCES": {
+        "count": 4,
+        "avg_gap": 102.0
+      },
+      "NAVIGATION_HISTORY": {
+        "count": 4,
+        "avg_gap": 52.75
+      },
+      "IDENTITY_TRACKING": {
+        "count": 11,
+        "avg_gap": 75.0
+      }
+    }
+  },
+  "num_timelines": 140
+}

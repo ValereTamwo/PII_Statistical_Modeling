@@ -1,0 +1,2324 @@
+{
+  "total_cookies": 798,
+  "direct_pii_count": 0,
+  "other_count": 798,
+  "lifetime_distribution": {
+    "Session": 793,
+    "6-18 months": 5
+  },
+  "lifetime_by_pii": {
+    "BEHAVIORAL_DATA": {
+      "Session": 10
+    },
+    "CONSENT_AND_PRIVACY": {
+      "Session": 6
+    },
+    "IDENTITY_TRACKING": {
+      "Session": 106,
+      "6-18 months": 5
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "Session": 9
+    },
+    "INFRASTRUCTURE": {
+      "Session": 3
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "Session": 61
+    },
+    "SESSION_MANAGEMENT": {
+      "Session": 25
+    },
+    "TECHNICAL_PASSWORDS": {
+      "Session": 192
+    },
+    "USER_PREFERENCES": {
+      "Session": 6
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "Session": 375
+    }
+  },
+  "httponly_distribution": {
+    "False": 678,
+    "True": 120
+  },
+  "httponly_by_pii": {
+    "BEHAVIORAL_DATA": {
+      "False": 10
+    },
+    "CONSENT_AND_PRIVACY": {
+      "False": 6
+    },
+    "IDENTITY_TRACKING": {
+      "False": 71,
+      "True": 40
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "False": 5,
+      "True": 4
+    },
+    "INFRASTRUCTURE": {
+      "True": 3
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "True": 48,
+      "False": 13
+    },
+    "SESSION_MANAGEMENT": {
+      "False": 8,
+      "True": 17
+    },
+    "TECHNICAL_PASSWORDS": {
+      "False": 192
+    },
+    "USER_PREFERENCES": {
+      "False": 6
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "False": 367,
+      "True": 8
+    }
+  },
+  "secure_distribution": {
+    "True": 566,
+    "False": 232
+  },
+  "secure_by_pii": {
+    "BEHAVIORAL_DATA": {
+      "True": 10
+    },
+    "CONSENT_AND_PRIVACY": {
+      "True": 6
+    },
+    "IDENTITY_TRACKING": {
+      "False": 38,
+      "True": 73
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "True": 8,
+      "False": 1
+    },
+    "INFRASTRUCTURE": {
+      "True": 3
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "False": 8,
+      "True": 53
+    },
+    "SESSION_MANAGEMENT": {
+      "True": 25
+    },
+    "TECHNICAL_PASSWORDS": {
+      "True": 140,
+      "False": 52
+    },
+    "USER_PREFERENCES": {
+      "True": 3,
+      "False": 3
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "True": 245,
+      "False": 130
+    }
+  },
+  "samesite_distribution": {
+    "No Restriction": 178,
+    "Lax": 499,
+    "Strict": 121
+  },
+  "samesite_by_pii": {
+    "BEHAVIORAL_DATA": {
+      "No Restriction": 7,
+      "Lax": 3
+    },
+    "CONSENT_AND_PRIVACY": {
+      "No Restriction": 6
+    },
+    "IDENTITY_TRACKING": {
+      "Lax": 67,
+      "No Restriction": 41,
+      "Strict": 3
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "Lax": 5,
+      "No Restriction": 4
+    },
+    "INFRASTRUCTURE": {
+      "Lax": 2,
+      "No Restriction": 1
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "Lax": 17,
+      "No Restriction": 44
+    },
+    "SESSION_MANAGEMENT": {
+      "No Restriction": 24,
+      "Lax": 1
+    },
+    "TECHNICAL_PASSWORDS": {
+      "Lax": 189,
+      "No Restriction": 3
+    },
+    "USER_PREFERENCES": {
+      "No Restriction": 3,
+      "Lax": 3
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "No Restriction": 45,
+      "Strict": 118,
+      "Lax": 212
+    }
+  },
+  "security_matrix": {
+    "(False, True)": 460,
+    "(False, False)": 218,
+    "(True, True)": 106,
+    "(True, False)": 14
+  },
+  "security_by_pii": {
+    "BEHAVIORAL_DATA": {
+      "Partially Secure": 10
+    },
+    "CONSENT_AND_PRIVACY": {
+      "Partially Secure": 6
+    },
+    "IDENTITY_TRACKING": {
+      "Lowly Secure": 34,
+      "Secure": 36,
+      "Partially Secure": 41
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "Partially Secure": 4,
+      "Secure": 4,
+      "Lowly Secure": 1
+    },
+    "INFRASTRUCTURE": {
+      "Secure": 3
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "Partially Secure": 17,
+      "Secure": 42,
+      "Lowly Secure": 2
+    },
+    "SESSION_MANAGEMENT": {
+      "Partially Secure": 8,
+      "Secure": 17
+    },
+    "TECHNICAL_PASSWORDS": {
+      "Partially Secure": 140,
+      "Lowly Secure": 52
+    },
+    "USER_PREFERENCES": {
+      "Partially Secure": 3,
+      "Lowly Secure": 3
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "Partially Secure": 245,
+      "Lowly Secure": 126,
+      "Secure": 4
+    }
+  },
+  "thirdparty_distribution": {
+    "Third-Party": 789,
+    "First-Party": 9
+  },
+  "thirdparty_by_pii": {
+    "BEHAVIORAL_DATA": {
+      "Third-Party": 10
+    },
+    "CONSENT_AND_PRIVACY": {
+      "Third-Party": 6
+    },
+    "IDENTITY_TRACKING": {
+      "Third-Party": 105,
+      "First-Party": 6
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "Third-Party": 9
+    },
+    "INFRASTRUCTURE": {
+      "Third-Party": 3
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "Third-Party": 61
+    },
+    "SESSION_MANAGEMENT": {
+      "Third-Party": 25
+    },
+    "TECHNICAL_PASSWORDS": {
+      "Third-Party": 192
+    },
+    "USER_PREFERENCES": {
+      "Third-Party": 6
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "Third-Party": 372,
+      "First-Party": 3
+    }
+  },
+  "thirdparty_httponly": {
+    "Third-Party_False": 669,
+    "Third-Party_True": 120,
+    "First-Party_False": 9
+  },
+  "thirdparty_secure": {
+    "Third-Party_True": 566,
+    "Third-Party_False": 223,
+    "First-Party_False": 9
+  },
+  "risk_levels": {
+    "Medium Risk": 543,
+    "High Risk": 108,
+    "Critical Risk": 3,
+    "Low Risk": 144
+  },
+  "risk_by_pii": {
+    "BEHAVIORAL_DATA": {
+      "Medium Risk": 10
+    },
+    "CONSENT_AND_PRIVACY": {
+      "Medium Risk": 6
+    },
+    "IDENTITY_TRACKING": {
+      "High Risk": 92,
+      "Medium Risk": 16,
+      "Critical Risk": 3
+    },
+    "ID_SOLUTIONS_AND_EXCHANGES": {
+      "High Risk": 9
+    },
+    "INFRASTRUCTURE": {
+      "Low Risk": 3
+    },
+    "SECURITY_AND_BOT_MITIGATION": {
+      "Medium Risk": 61
+    },
+    "SESSION_MANAGEMENT": {
+      "Medium Risk": 24,
+      "Low Risk": 1
+    },
+    "TECHNICAL_PASSWORDS": {
+      "Low Risk": 137,
+      "Medium Risk": 55
+    },
+    "USER_PREFERENCES": {
+      "Medium Risk": 6
+    },
+    "UX_AND_PERFORMANCE_ANALYTICS": {
+      "High Risk": 7,
+      "Medium Risk": 365,
+      "Low Risk": 3
+    }
+  },
+  "keywords": {
+    "ses": 386,
+    "stg": 118,
+    "traffic": 118,
+    "source": 118,
+    "priority": 118,
+    "session": 39,
+    "340a": 38,
+    "8bda5495": 26,
+    "3d5b": 26,
+    "40c3": 26,
+    "a4ac": 26,
+    "3636b5895400": 26,
+    "cdf7": 24,
+    "c5e9": 22,
+    "11e7": 22
+  },
+  "content_hierarchy": {
+    "json_structured": {
+      "BEHAVIORAL_DATA": 7,
+      "SESSION_MANAGEMENT": 7,
+      "UX_AND_PERFORMANCE_ANALYTICS": 7
+    },
+    "short_text": {
+      "BEHAVIORAL_DATA": 3,
+      "IDENTITY_TRACKING": 16,
+      "ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "SESSION_MANAGEMENT": 16,
+      "UX_AND_PERFORMANCE_ANALYTICS": 1
+    },
+    "number": {
+      "CONSENT_AND_PRIVACY": 6,
+      "IDENTITY_TRACKING": 5,
+      "UX_AND_PERFORMANCE_ANALYTICS": 25
+    },
+    "language_code": {
+      "IDENTITY_TRACKING": 1,
+      "USER_PREFERENCES": 3,
+      "UX_AND_PERFORMANCE_ANALYTICS": 3
+    },
+    "boolean": {
+      "IDENTITY_TRACKING": 8,
+      "TECHNICAL_PASSWORDS": 46,
+      "UX_AND_PERFORMANCE_ANALYTICS": 144
+    },
+    "complex_string": {
+      "IDENTITY_TRACKING": 74,
+      "ID_SOLUTIONS_AND_EXCHANGES": 8,
+      "INFRASTRUCTURE": 3,
+      "SECURITY_AND_BOT_MITIGATION": 61,
+      "SESSION_MANAGEMENT": 1,
+      "TECHNICAL_PASSWORDS": 146,
+      "USER_PREFERENCES": 3,
+      "UX_AND_PERFORMANCE_ANALYTICS": 193
+    },
+    "timestamp": {
+      "IDENTITY_TRACKING": 1
+    },
+    "token_id": {
+      "IDENTITY_TRACKING": 4,
+      "SESSION_MANAGEMENT": 1,
+      "UX_AND_PERFORMANCE_ANALYTICS": 1
+    },
+    "uuid": {
+      "IDENTITY_TRACKING": 2,
+      "UX_AND_PERFORMANCE_ANALYTICS": 1
+    }
+  },
+  "content_types": {
+    "json_structured": 21,
+    "short_text": 37,
+    "number": 36,
+    "language_code": 7,
+    "boolean": 198,
+    "complex_string": 489,
+    "timestamp": 1,
+    "token_id": 6,
+    "uuid": 3
+  },
+  "vendor_counts": {
+    "teso.nl": 3,
+    "ns.nl": 37,
+    "regionaalenergieloket.nl": 3,
+    "spaww.nl": 6,
+    "regiorivierenland.nl": 3,
+    "werkenvoornederland.nl": 12,
+    "cbs.nl": 21,
+    "ind.nl": 22,
+    "yieldmo.com": 5,
+    "consentmanager.net": 1,
+    "gosuslugi.ru": 11,
+    "Google": 5,
+    "digid.nl": 41,
+    "utrecht.nl": 3,
+    "nijmegen.nl": 1,
+    "prettigparkeren.nl": 2,
+    "werkeningelderland.nl": 3,
+    "ambtenarensalaris.nl": 2,
+    "htm.nl": 4,
+    "112fryslan.nl": 2,
+    "svb.nl": 42,
+    "daf.nl": 1,
+    "beequip.com": 1,
+    "a-mo.net": 16,
+    "Twitter": 6,
+    "overheid.nl": 66,
+    "netherlandsworldwide.nl": 7,
+    "amsterdam.nl": 39,
+    "rdw.nl": 17,
+    "denhaag.nl": 18,
+    "wozwaardeloket.nl": 18,
+    "mijnafvalwijzer.nl": 2,
+    "kadaster.nl": 33,
+    "protechts.net": 2,
+    "queue-it.net": 6,
+    "weeztix.com": 1,
+    "justis.nl": 11,
+    "bsgr.nl": 7,
+    "uwv.nl": 2,
+    "politie.nl": 18,
+    "bidtheatre.com": 1,
+    "bidswitch.net": 1,
+    "uwdeclaraties.nl": 9,
+    "spaarnelanden.nl": 3,
+    "gemeentehw.nl": 3,
+    "eyeota.net": 1,
+    "Microsoft": 8,
+    "vimeo.com": 6,
+    "x.com": 1,
+    "t.co": 3,
+    "hsforms.net": 1,
+    "hsforms.com": 2,
+    "fonts.net": 2,
+    "zuid-holland.nl": 3,
+    "myfonts.net": 1,
+    "waterschaplimburg.nl": 3,
+    "HubSpot": 1,
+    "hs-scripts.com": 1,
+    "hs-analytics.net": 1,
+    "hs-banner.com": 1,
+    "usemessages.com": 1,
+    "temu.com": 2,
+    "gemeentewestland.nl": 2,
+    "mijnkinddossier.nl": 2,
+    "get-e.com": 2,
+    "rechtspraak.nl": 9,
+    "rijkswaterstaat.nl": 3,
+    "rws.nl": 8,
+    "officielebekendmakingen.nl": 13,
+    "nationaalarchief.nl": 9,
+    "regelhulp.nl": 9,
+    "mijnpgb.nl": 6,
+    "gblt.nl": 8,
+    "rug.nl": 3,
+    "leiden.nl": 2,
+    "waterschaprivierenland.nl": 6,
+    "kiesraad.nl": 9,
+    "atlasleefomgeving.nl": 3,
+    "onderwijsinspectie.nl": 15,
+    "leeuwarden.nl": 10,
+    "europa.eu": 2,
+    "bigregister.nl": 6,
+    "om.nl": 12,
+    "waarismijnstemlokaal.nl": 6,
+    "hvcgroep.nl": 2,
+    "heerlen.nl": 8,
+    "inburgeren.nl": 6,
+    "cjib.nl": 9,
+    "koninklijkhuis.nl": 9,
+    "svhw.nl": 4,
+    "rijksoverheid.nl": 12,
+    "uabc.nl": 2,
+    "schadedoormijnbouw.nl": 9,
+    "nvwa.nl": 7,
+    "government.nl": 7,
+    "koopoverheid.nl": 3,
+    "rivm.nl": 3,
+    "s-hertogenbosch.nl": 4,
+    "rvo.nl": 4,
+    "verkiezingsuitslagen.nl": 3,
+    "gov.nl": 3,
+    "dotomi.com": 3
+  },
+  "category_vendor_flows": [
+    [
+      "BEHAVIORAL_DATA",
+      "teso.nl",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "ns.nl",
+      2
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "regionaalenergieloket.nl",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "spaww.nl",
+      2
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "regiorivierenland.nl",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "werkenvoornederland.nl",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "cbs.nl",
+      1
+    ],
+    [
+      "BEHAVIORAL_DATA",
+      "ind.nl",
+      1
+    ],
+    [
+      "CONSENT_AND_PRIVACY",
+      "yieldmo.com",
+      5
+    ],
+    [
+      "CONSENT_AND_PRIVACY",
+      "consentmanager.net",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "gosuslugi.ru",
+      10
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "Google",
+      3
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "digid.nl",
+      7
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "utrecht.nl",
+      3
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "nijmegen.nl",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "prettigparkeren.nl",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "werkeningelderland.nl",
+      3
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "ambtenarensalaris.nl",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "htm.nl",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "112fryslan.nl",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "svb.nl",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "daf.nl",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "beequip.com",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "a-mo.net",
+      12
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "Twitter",
+      3
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "overheid.nl",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "netherlandsworldwide.nl",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "amsterdam.nl",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "rdw.nl",
+      8
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "denhaag.nl",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "wozwaardeloket.nl",
+      6
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "mijnafvalwijzer.nl",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "ns.nl",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "ind.nl",
+      3
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "kadaster.nl",
+      12
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "protechts.net",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "queue-it.net",
+      3
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "weeztix.com",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "cbs.nl",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "justis.nl",
+      3
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "bsgr.nl",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "uwv.nl",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "politie.nl",
+      2
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "bidtheatre.com",
+      1
+    ],
+    [
+      "IDENTITY_TRACKING",
+      "bidswitch.net",
+      1
+    ],
+    [
+      "ID_SOLUTIONS_AND_EXCHANGES",
+      "uwdeclaraties.nl",
+      3
+    ],
+    [
+      "ID_SOLUTIONS_AND_EXCHANGES",
+      "spaarnelanden.nl",
+      1
+    ],
+    [
+      "ID_SOLUTIONS_AND_EXCHANGES",
+      "queue-it.net",
+      3
+    ],
+    [
+      "ID_SOLUTIONS_AND_EXCHANGES",
+      "gemeentehw.nl",
+      1
+    ],
+    [
+      "ID_SOLUTIONS_AND_EXCHANGES",
+      "Google",
+      1
+    ],
+    [
+      "INFRASTRUCTURE",
+      "werkenvoornederland.nl",
+      2
+    ],
+    [
+      "INFRASTRUCTURE",
+      "eyeota.net",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "ns.nl",
+      12
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "uwdeclaraties.nl",
+      3
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "denhaag.nl",
+      4
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "Microsoft",
+      8
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "vimeo.com",
+      6
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "x.com",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "Twitter",
+      3
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "t.co",
+      3
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "spaarnelanden.nl",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "gemeentehw.nl",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "hsforms.net",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "hsforms.com",
+      2
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "fonts.net",
+      2
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "zuid-holland.nl",
+      3
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "myfonts.net",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "waterschaplimburg.nl",
+      3
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "HubSpot",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "hs-scripts.com",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "hs-analytics.net",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "hs-banner.com",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "usemessages.com",
+      1
+    ],
+    [
+      "SECURITY_AND_BOT_MITIGATION",
+      "temu.com",
+      2
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "teso.nl",
+      1
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "svb.nl",
+      12
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "ns.nl",
+      2
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "regionaalenergieloket.nl",
+      1
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "spaww.nl",
+      2
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "regiorivierenland.nl",
+      1
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "gemeentewestland.nl",
+      2
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "htm.nl",
+      2
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "mijnkinddossier.nl",
+      1
+    ],
+    [
+      "SESSION_MANAGEMENT",
+      "get-e.com",
+      1
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "rechtspraak.nl",
+      3
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "svb.nl",
+      13
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "rijkswaterstaat.nl",
+      1
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "rws.nl",
+      3
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "overheid.nl",
+      26
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "officielebekendmakingen.nl",
+      4
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "digid.nl",
+      17
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "nationaalarchief.nl",
+      3
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "regelhulp.nl",
+      3
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "amsterdam.nl",
+      12
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "politie.nl",
+      6
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "mijnpgb.nl",
+      2
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "gblt.nl",
+      3
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "denhaag.nl",
+      2
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "rug.nl",
+      1
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "cbs.nl",
+      6
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "leiden.nl",
+      1
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "wozwaardeloket.nl",
+      4
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "werkenvoornederland.nl",
+      3
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "waterschaprivierenland.nl",
+      3
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "kiesraad.nl",
+      3
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "atlasleefomgeving.nl",
+      1
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "onderwijsinspectie.nl",
+      5
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "leeuwarden.nl",
+      3
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "europa.eu",
+      1
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "kadaster.nl",
+      7
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "bigregister.nl",
+      1
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "om.nl",
+      4
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "ind.nl",
+      7
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "waarismijnstemlokaal.nl",
+      3
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "hvcgroep.nl",
+      1
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "heerlen.nl",
+      4
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "bsgr.nl",
+      3
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "inburgeren.nl",
+      3
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "cjib.nl",
+      3
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "koninklijkhuis.nl",
+      3
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "svhw.nl",
+      2
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "rijksoverheid.nl",
+      4
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "justis.nl",
+      3
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "uabc.nl",
+      1
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "schadedoormijnbouw.nl",
+      3
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "nvwa.nl",
+      2
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "government.nl",
+      2
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "koopoverheid.nl",
+      1
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "rivm.nl",
+      1
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "s-hertogenbosch.nl",
+      2
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "rvo.nl",
+      2
+    ],
+    [
+      "TECHNICAL_PASSWORDS",
+      "netherlandsworldwide.nl",
+      1
+    ],
+    [
+      "USER_PREFERENCES",
+      "ns.nl",
+      3
+    ],
+    [
+      "USER_PREFERENCES",
+      "denhaag.nl",
+      3
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "teso.nl",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "rechtspraak.nl",
+      6
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "rws.nl",
+      5
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "svb.nl",
+      16
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "rijkswaterstaat.nl",
+      2
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "Google",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "ns.nl",
+      16
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "overheid.nl",
+      38
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "officielebekendmakingen.nl",
+      9
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "digid.nl",
+      17
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "netherlandsworldwide.nl",
+      4
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "nationaalarchief.nl",
+      6
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "regelhulp.nl",
+      6
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "amsterdam.nl",
+      25
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "politie.nl",
+      10
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "mijnpgb.nl",
+      4
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "gblt.nl",
+      5
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "denhaag.nl",
+      7
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "rug.nl",
+      2
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "verkiezingsuitslagen.nl",
+      3
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "cbs.nl",
+      12
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "gov.nl",
+      3
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "uwdeclaraties.nl",
+      3
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "government.nl",
+      5
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "leiden.nl",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "gosuslugi.ru",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "rdw.nl",
+      9
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "wozwaardeloket.nl",
+      8
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "werkenvoornederland.nl",
+      6
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "waterschaprivierenland.nl",
+      3
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "kiesraad.nl",
+      6
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "atlasleefomgeving.nl",
+      2
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "rijksoverheid.nl",
+      8
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "onderwijsinspectie.nl",
+      10
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "spaarnelanden.nl",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "leeuwarden.nl",
+      7
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "regionaalenergieloket.nl",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "europa.eu",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "kadaster.nl",
+      14
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "spaww.nl",
+      2
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "bigregister.nl",
+      5
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "om.nl",
+      8
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "ind.nl",
+      11
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "waarismijnstemlokaal.nl",
+      3
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "hvcgroep.nl",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "heerlen.nl",
+      4
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "gemeentehw.nl",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "bsgr.nl",
+      3
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "inburgeren.nl",
+      3
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "ambtenarensalaris.nl",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "regiorivierenland.nl",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "cjib.nl",
+      6
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "koninklijkhuis.nl",
+      6
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "svhw.nl",
+      2
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "justis.nl",
+      5
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "nvwa.nl",
+      5
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "uabc.nl",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "schadedoormijnbouw.nl",
+      6
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "koopoverheid.nl",
+      2
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "dotomi.com",
+      3
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "rivm.nl",
+      2
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "a-mo.net",
+      4
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "s-hertogenbosch.nl",
+      2
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "rvo.nl",
+      2
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "mijnkinddossier.nl",
+      1
+    ],
+    [
+      "UX_AND_PERFORMANCE_ANALYTICS",
+      "get-e.com",
+      1
+    ]
+  ],
+  "entropy_by_pii": {
+    "BEHAVIORAL_DATA": [
+      5.094285374711605,
+      5.013232054481604,
+      5.063721360203115,
+      4.982183012034673,
+      5.024578158145822,
+      4.922578256489471,
+      5.0088866611909975,
+      3.3027227528624894,
+      3.197159723424149,
+      3.30827083453526
+    ],
+    "CONSENT_AND_PRIVACY": [
+      2.6235166412180155,
+      2.6235166412180155,
+      2.6235166412180155,
+      2.6235166412180155,
+      2.6235166412180155,
+      1.0
+    ],
+    "IDENTITY_TRACKING": [
+      2.321928094887362,
+      0.0,
+      3.5306390622295662,
+      4.304229296672174,
+      4.25,
+      0.0,
+      3.8042292966721747,
+      0.0,
+      4.351409765557392,
+      0.0,
+      0.0,
+      3.8431390622295667,
+      3.6167292966721747,
+      4.638845117408379,
+      4.611563075468771,
+      3.3825680832760763,
+      0.0,
+      0.0,
+      3.3945520964893747,
+      3.819548827786958,
+      2.788320189106,
+      4.533055711981494,
+      0.0,
+      3.381789789550946,
+      3.381789789550946,
+      1.0,
+      1.584962500721156,
+      1.0,
+      1.584962500721156,
+      1.584962500721156,
+      1.0,
+      3.381789789550946,
+      3.381789789550946,
+      1.0,
+      1.584962500721156,
+      3.578626767019874,
+      2.521640636343318,
+      3.3816201079487347,
+      3.3816201079487347,
+      4.582118926162055,
+      4.077819531114783,
+      5.389670647189372,
+      5.962801612741637,
+      3.6525182662886326,
+      2.9219280948873623,
+      4.053508854797679,
+      4.334962500721156,
+      3.3050365325772657,
+      2.2516291673878226,
+      3.5724312513221195,
+      3.236617201725714,
+      3.1873885557758452,
+      4.017850038110964,
+      5.386892327956806,
+      3.638830127032208,
+      3.5731487943488665,
+      5.8542909441074675,
+      3.7491814593727466,
+      3.7749580855740357,
+      3.1419340103213,
+      4.323231428797621,
+      5.842659219715719,
+      3.4193819456463714,
+      3.874870364976638,
+      3.8910478238801027,
+      5.94703565383516,
+      3.8460733334291604,
+      3.7440133704744047,
+      4.265311532225101,
+      3.8920397834712377,
+      3.8596293531157175,
+      3.4613201402110083,
+      5.85894136501858,
+      4.775755604780808,
+      4.434183719779188,
+      3.239097917988786,
+      3.266332639970623,
+      3.8065212271721305,
+      3.8307980220350073,
+      5.443580425279662,
+      5.404446733605944,
+      3.9101544663549666,
+      3.900193259338674,
+      4.04296491100565,
+      3.086048612313038,
+      4.164735178725505,
+      3.912248728842957,
+      3.8113684851981073,
+      3.419381945646371,
+      5.820140034673564,
+      5.574413296941524,
+      3.9755327799546984,
+      5.4193649099889845,
+      5.444844341002772,
+      4.212814895472355,
+      3.9959271616135137,
+      3.169925001442312,
+      5.387491549376738,
+      3.806523290661801,
+      3.8591063033661372,
+      3.086048612313038,
+      3.7956366596311706,
+      3.935354621742511,
+      5.42102097852399,
+      5.420573305604793,
+      0.0,
+      4.991443355765329,
+      4.047762539815856,
+      5.530784896049282,
+      3.0588138903312014,
+      5.935715030165099
+    ],
+    "ID_SOLUTIONS_AND_EXCHANGES": [
+      5.533458980336858,
+      5.567417797101507,
+      4.690878398738591,
+      5.567357541548782,
+      4.719181508906826,
+      5.544424012975451,
+      5.588684127766573,
+      2.521640636343318,
+      4.7294214393641205
+    ],
+    "INFRASTRUCTURE": [
+      3.8814675746273544,
+      3.922711475873763,
+      2.75
+    ],
+    "SECURITY_AND_BOT_MITIGATION": [
+      5.786999065745481,
+      5.834044926879263,
+      5.750465529791396,
+      5.533458980336858,
+      5.8338710864420324,
+      5.860617373657083,
+      5.764972594208209,
+      5.6718293503514685,
+      5.779309406276775,
+      5.873016283429754,
+      5.665959226907602,
+      5.671407978295658,
+      5.567417797101507,
+      5.859527184851881,
+      5.859500337833126,
+      5.853580441147754,
+      5.8439050717098935,
+      5.687925347530846,
+      5.750058653945923,
+      5.567357541548782,
+      5.730343969944948,
+      5.641521143365836,
+      5.725637416254997,
+      5.743692323577071,
+      5.608141192035443,
+      5.677956390295558,
+      5.747560487755973,
+      5.6305761595021915,
+      5.871269013394264,
+      5.834229041222539,
+      5.706811905720867,
+      5.794196659040318,
+      5.753852058479408,
+      5.803283328308024,
+      5.754775267068432,
+      5.712370433411413,
+      5.736717664232962,
+      5.874247693013034,
+      5.805118752271818,
+      5.844052952804629,
+      5.838008839194772,
+      5.695593450618808,
+      5.718999309888718,
+      5.734302734801363,
+      5.71996994432862,
+      5.673951884962374,
+      5.700579191414034,
+      5.544424012975451,
+      5.746562137354884,
+      5.719909824000115,
+      5.74580915335599,
+      5.686711403208305,
+      5.729130025622405,
+      5.734951711532312,
+      5.723504822211532,
+      5.727740534044387,
+      5.588684127766573,
+      5.717085252445048,
+      5.725501151868266,
+      5.6651053910960965,
+      5.712016566619515
+    ],
+    "SESSION_MANAGEMENT": [
+      5.094285374711605,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      5.013232054481604,
+      5.063721360203115,
+      4.982183012034673,
+      5.024578158145822,
+      4.922578256489471,
+      0.0,
+      0.0,
+      5.0088866611909975,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      4.786502545299146,
+      5.522797768112099
+    ],
+    "TECHNICAL_PASSWORDS": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "USER_PREFERENCES": [
+      1.0,
+      3.217309017916162,
+      1.0,
+      3.24711187031652,
+      1.0,
+      3.2175062578712788
+    ],
+    "UX_AND_PERFORMANCE_ANALYTICS": [
+      5.094285374711605,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      5.983963484637927,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      4.381467880199448,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      3.217309017916162,
+      0.0,
+      0.0,
+      4.4692750707107125,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      5.750465529791396,
+      4.308438191111385,
+      0.0,
+      0.0,
+      0.0,
+      5.595848062760616,
+      0.0,
+      0.0,
+      3.638830127032208,
+      0.0,
+      0.0,
+      4.398562939644915,
+      0.0,
+      5.97742301747694,
+      5.8338710864420324,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      4.414621759735872,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      5.013232054481604,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      5.873016283429754,
+      4.308438191111385,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      5.539512985739476,
+      0.0,
+      0.0,
+      4.308438191111385,
+      5.063721360203115,
+      0.0,
+      5.859500337833126,
+      5.8439050717098935,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      4.982183012034673,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      4.205533250556852,
+      5.497047101538313,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      3.24711187031652,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      5.024578158145822,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      4.408367439558377,
+      0.0,
+      4.548758439731455,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      4.922578256489471,
+      0.0,
+      0.0,
+      5.834229041222539,
+      0.0,
+      0.0,
+      0.0,
+      4.273269689515107,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      4.414621759735872,
+      4.564372820753982,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      5.984875735194127,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      3.763243230376871,
+      0.0,
+      0.0,
+      4.273269689515109,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      5.0088866611909975,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      5.805118752271818,
+      5.838008839194772,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      4.3079764393853,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      5.5464443922409625,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      4.061467880199449,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      2.94770277922009,
+      0.0,
+      0.0,
+      3.381789789550946,
+      3.381789789550946,
+      3.381789789550946,
+      3.381789789550946,
+      0.0,
+      4.293340441068116,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      5.539837160123302,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      4.328367439558376,
+      0.0,
+      0.0,
+      2.9258530145612824,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      4.145979129983102,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      2.9053077763737467,
+      4.786502545299146,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      5.522797768112099,
+      0.0,
+      3.2175062578712788,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      4.463465189601647,
+      0.0,
+      0.0
+    ]
+  },
+  "advanced_risk_levels": {
+    "High": 86,
+    "Low": 630,
+    "Medium": 82
+  }
+}

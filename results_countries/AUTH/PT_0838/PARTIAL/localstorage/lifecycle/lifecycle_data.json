@@ -9,47 +9,47 @@
     "size_increases": 24,
     "size_decreases": 13,
     "pii_transitions": {
-      "ID_SOLUTIONS_AND_EXCHANGES -> SECURITY_AND_BOT_MITIGATION": 1,
-      "SESSION_MANAGEMENT -> IDENTITY_TRACKING": 1,
-      "IDENTITY_TRACKING -> UX_AND_PERFORMANCE_ANALYTICS": 9,
-      "ID_SOLUTIONS_AND_EXCHANGES -> UX_AND_PERFORMANCE_ANALYTICS": 16,
-      "IDENTITY_TRACKING -> TECHNICAL_PASSWORDS": 2,
-      "BEHAVIORAL_DATA -> ID_SOLUTIONS_AND_EXCHANGES": 3,
-      "DEVICE_ENV -> UX_AND_PERFORMANCE_ANALYTICS": 4,
-      "IDENTITY_TRACKING -> SESSION_MANAGEMENT": 1,
-      "LOCATION_AND_DEMOGRAPHICS -> USER_PREFERENCES": 1,
-      "CONSENT_AND_PRIVACY -> ID_SOLUTIONS_AND_EXCHANGES": 7,
-      "BEHAVIORAL_DATA -> UX_AND_PERFORMANCE_ANALYTICS": 13,
-      "USER_PREFERENCES -> BEHAVIORAL_DATA": 3,
-      "APP_STATE_STORAGE -> UX_AND_PERFORMANCE_ANALYTICS": 10,
-      "DIRECT_PII_KEYS -> USER_PREFERENCES": 1,
-      "NAVIGATION_HISTORY -> USER_PREFERENCES": 3,
       "ID_SOLUTIONS_AND_EXCHANGES -> NAVIGATION_HISTORY": 1,
-      "BEHAVIORAL_DATA -> USER_PREFERENCES": 4,
-      "APP_STATE_STORAGE -> LOCATION_AND_DEMOGRAPHICS": 1,
-      "IDENTITY_TRACKING -> USER_PREFERENCES": 3,
-      "APP_STATE_STORAGE -> USER_PREFERENCES": 1,
-      "IDENTITY_TRACKING -> BEHAVIORAL_DATA": 1,
-      "SESSION_MANAGEMENT -> UX_AND_PERFORMANCE_ANALYTICS": 1,
-      "ID_SOLUTIONS_AND_EXCHANGES -> LOCATION_AND_DEMOGRAPHICS": 1,
-      "CONSENT_AND_PRIVACY -> UX_AND_PERFORMANCE_ANALYTICS": 5,
-      "APP_STATE_STORAGE -> TECHNICAL_PASSWORDS": 1,
-      "INFRASTRUCTURE -> IDENTITY_TRACKING": 1,
-      "CONSENT_AND_PRIVACY -> USER_PREFERENCES": 3,
-      "APP_STATE_STORAGE -> DEVICE_ENV": 1,
-      "LOCATION_AND_DEMOGRAPHICS -> TECHNICAL_PASSWORDS": 2,
-      "IDENTITY_TRACKING -> ID_SOLUTIONS_AND_EXCHANGES": 2,
-      "CONSENT_AND_PRIVACY -> LOCATION_AND_DEMOGRAPHICS": 1,
-      "ID_SOLUTIONS_AND_EXCHANGES -> TECHNICAL_PASSWORDS": 2,
-      "DIRECT_PII_KEYS -> LOCATION_AND_DEMOGRAPHICS": 1,
-      "BEHAVIORAL_DATA -> CONSENT_AND_PRIVACY": 1,
+      "ID_SOLUTIONS_AND_EXCHANGES -> UX_AND_PERFORMANCE_ANALYTICS": 16,
+      "IDENTITY_TRACKING -> UX_AND_PERFORMANCE_ANALYTICS": 9,
+      "APP_STATE_STORAGE -> UX_AND_PERFORMANCE_ANALYTICS": 10,
       "IDENTITY_TRACKING -> LOCATION_AND_DEMOGRAPHICS": 1,
-      "USER_PREFERENCES -> UX_AND_PERFORMANCE_ANALYTICS": 1
+      "BEHAVIORAL_DATA -> UX_AND_PERFORMANCE_ANALYTICS": 13,
+      "CONSENT_AND_PRIVACY -> ID_SOLUTIONS_AND_EXCHANGES": 7,
+      "USER_PREFERENCES -> BEHAVIORAL_DATA": 3,
+      "DIRECT_PII_KEYS -> LOCATION_AND_DEMOGRAPHICS": 1,
+      "LOCATION_AND_DEMOGRAPHICS -> TECHNICAL_PASSWORDS": 2,
+      "IDENTITY_TRACKING -> USER_PREFERENCES": 3,
+      "ID_SOLUTIONS_AND_EXCHANGES -> TECHNICAL_PASSWORDS": 2,
+      "CONSENT_AND_PRIVACY -> USER_PREFERENCES": 3,
+      "BEHAVIORAL_DATA -> USER_PREFERENCES": 4,
+      "CONSENT_AND_PRIVACY -> UX_AND_PERFORMANCE_ANALYTICS": 5,
+      "IDENTITY_TRACKING -> BEHAVIORAL_DATA": 1,
+      "SESSION_MANAGEMENT -> IDENTITY_TRACKING": 1,
+      "APP_STATE_STORAGE -> DEVICE_ENV": 1,
+      "IDENTITY_TRACKING -> ID_SOLUTIONS_AND_EXCHANGES": 2,
+      "DEVICE_ENV -> UX_AND_PERFORMANCE_ANALYTICS": 4,
+      "ID_SOLUTIONS_AND_EXCHANGES -> SECURITY_AND_BOT_MITIGATION": 1,
+      "BEHAVIORAL_DATA -> CONSENT_AND_PRIVACY": 1,
+      "NAVIGATION_HISTORY -> USER_PREFERENCES": 3,
+      "SESSION_MANAGEMENT -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "BEHAVIORAL_DATA -> ID_SOLUTIONS_AND_EXCHANGES": 3,
+      "IDENTITY_TRACKING -> SESSION_MANAGEMENT": 1,
+      "INFRASTRUCTURE -> IDENTITY_TRACKING": 1,
+      "DIRECT_PII_KEYS -> USER_PREFERENCES": 1,
+      "IDENTITY_TRACKING -> TECHNICAL_PASSWORDS": 2,
+      "APP_STATE_STORAGE -> LOCATION_AND_DEMOGRAPHICS": 1,
+      "APP_STATE_STORAGE -> USER_PREFERENCES": 1,
+      "APP_STATE_STORAGE -> TECHNICAL_PASSWORDS": 1,
+      "USER_PREFERENCES -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "CONSENT_AND_PRIVACY -> LOCATION_AND_DEMOGRAPHICS": 1,
+      "LOCATION_AND_DEMOGRAPHICS -> USER_PREFERENCES": 1,
+      "ID_SOLUTIONS_AND_EXCHANGES -> LOCATION_AND_DEMOGRAPHICS": 1
     },
     "volatility_distribution": {
-      "high": 98,
       "moderate": 159,
-      "stable": 119
+      "stable": 119,
+      "high": 98
     },
     "change_frequency": {
       "avg_gap": 44.852401746724894,
@@ -57,12 +57,6 @@
       "max_gap": 448
     },
     "frequent_changes": [
-      {
-        "key": "z_session_id",
-        "avg_gap": 0.0,
-        "num_modifications": 3,
-        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
-      },
       {
         "key": "LaunchDarkly_S6eYwc4qOlEDkBuretXX87hyuE1CJbRzJV695jLhI04=_ContextIndex",
         "avg_gap": 0.0,
@@ -74,6 +68,12 @@
         "avg_gap": 0.0,
         "num_modifications": 2,
         "pii_category": "ID_SOLUTIONS_AND_EXCHANGES"
+      },
+      {
+        "key": "z_session_id",
+        "avg_gap": 0.0,
+        "num_modifications": 3,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
       },
       {
         "key": "auth-account-store",
@@ -185,35 +185,43 @@
       "www.temperaturadomar.pt": 25,
       "www.sociedademilitar.com.br": 24,
       "pt.casafari.com": 23,
-      "www.hyundai.pt": 14,
       "www.truck1.pt": 14,
+      "www.hyundai.pt": 14,
       "www.eurosender.com": 14,
       "www.milffinder.pt": 12
     },
     "pii_modification_patterns": {
-      "SECURITY_AND_BOT_MITIGATION": {
-        "count": 12,
-        "avg_gap": 25.82857142857143
-      },
-      "IDENTITY_TRACKING": {
-        "count": 61,
-        "avg_gap": 49.06481481481482
-      },
-      "ID_SOLUTIONS_AND_EXCHANGES": {
-        "count": 60,
-        "avg_gap": 63.89473684210526
-      },
-      "TECHNICAL_PASSWORDS": {
-        "count": 22,
-        "avg_gap": 42.02857142857143
+      "BEHAVIORAL_DATA": {
+        "count": 17,
+        "avg_gap": 95.44444444444444
       },
       "UX_AND_PERFORMANCE_ANALYTICS": {
         "count": 178,
         "avg_gap": 19.528384279475983
       },
-      "APP_STATE_STORAGE": {
+      "INFRASTRUCTURE": {
         "count": 3,
-        "avg_gap": 88.66666666666667
+        "avg_gap": 121.0
+      },
+      "TECHNICAL_PASSWORDS": {
+        "count": 22,
+        "avg_gap": 42.02857142857143
+      },
+      "ID_SOLUTIONS_AND_EXCHANGES": {
+        "count": 60,
+        "avg_gap": 63.89473684210526
+      },
+      "IDENTITY_TRACKING": {
+        "count": 61,
+        "avg_gap": 49.06481481481482
+      },
+      "LOCATION_AND_DEMOGRAPHICS": {
+        "count": 6,
+        "avg_gap": 37.8
+      },
+      "NAVIGATION_HISTORY": {
+        "count": 14,
+        "avg_gap": 19.761904761904763
       },
       "USER_PREFERENCES": {
         "count": 4,
@@ -223,21 +231,13 @@
         "count": 4,
         "avg_gap": 112.0
       },
-      "BEHAVIORAL_DATA": {
-        "count": 17,
-        "avg_gap": 95.44444444444444
-      },
-      "NAVIGATION_HISTORY": {
-        "count": 14,
-        "avg_gap": 19.761904761904763
-      },
-      "LOCATION_AND_DEMOGRAPHICS": {
-        "count": 6,
-        "avg_gap": 37.8
-      },
-      "INFRASTRUCTURE": {
+      "APP_STATE_STORAGE": {
         "count": 3,
-        "avg_gap": 121.0
+        "avg_gap": 88.66666666666667
+      },
+      "SECURITY_AND_BOT_MITIGATION": {
+        "count": 12,
+        "avg_gap": 25.82857142857143
       }
     }
   },

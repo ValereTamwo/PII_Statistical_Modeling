@@ -1,0 +1,82 @@
+{
+  "storage_type": "sessionstorage",
+  "metrics": {
+    "total_items": 184,
+    "items_modified": 12,
+    "items_deleted": 96,
+    "entropy_increases": 28,
+    "entropy_decreases": 27,
+    "size_increases": 7,
+    "size_decreases": 11,
+    "pii_transitions": {
+      "IDENTITY_TRACKING -> UX_AND_PERFORMANCE_ANALYTICS": 9,
+      "ID_SOLUTIONS_AND_EXCHANGES -> SECURITY_AND_BOT_MITIGATION": 2,
+      "BEHAVIORAL_DATA -> ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "APP_STATE_STORAGE -> SESSION_MANAGEMENT": 1,
+      "SESSION_MANAGEMENT -> UX_AND_PERFORMANCE_ANALYTICS": 2,
+      "BEHAVIORAL_DATA -> USER_PREFERENCES": 1,
+      "IDENTITY_TRACKING.user_id_key -> IDENTITY_TRACKING": 2,
+      "IDENTITY_TRACKING -> SESSION_MANAGEMENT": 3,
+      "APP_STATE_STORAGE -> USER_PREFERENCES": 2,
+      "BEHAVIORAL_DATA -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "APP_STATE_STORAGE -> UX_AND_PERFORMANCE_ANALYTICS": 4,
+      "NAVIGATION_HISTORY -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "ID_SOLUTIONS_AND_EXCHANGES -> UX_AND_PERFORMANCE_ANALYTICS": 3,
+      "APP_STATE_STORAGE -> ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "IDENTITY_TRACKING -> BEHAVIORAL_DATA": 2,
+      "IDENTITY_TRACKING -> SECURITY_AND_BOT_MITIGATION": 2,
+      "BEHAVIORAL_DATA -> DIRECT_PII_KEYS": 1,
+      "IDENTITY_TRACKING -> LOCATION_AND_DEMOGRAPHICS": 1,
+      "USER_PREFERENCES -> BEHAVIORAL_DATA": 1,
+      "BEHAVIORAL_DATA -> IDENTITY_TRACKING": 1,
+      "DEVICE_ENV -> NAVIGATION_HISTORY": 1,
+      "APP_STATE_STORAGE -> BEHAVIORAL_DATA": 1
+    },
+    "volatility_distribution": {
+      "moderate": 48,
+      "high": 58,
+      "stable": 78
+    },
+    "change_frequency": {
+      "avg_gap": 36.703448275862065,
+      "min_gap": 0,
+      "max_gap": 348
+    },
+    "frequent_changes": [
+      {
+        "key": "com.grafana.faro.session",
+        "avg_gap": 17.357142857142858,
+        "num_modifications": 9,
+        "pii_category": "SESSION_MANAGEMENT"
+      }
+    ],
+    "url_modifications": {
+      "hbdansk.systime.dk": 9,
+      "www.epson.dk": 8,
+      "www.wired.com": 2,
+      "connery.dk": 2,
+      "dk.jbl.com": 2,
+      "www.facebook.com": 2,
+      "techjob.dk": 1
+    },
+    "pii_modification_patterns": {
+      "BEHAVIORAL_DATA": {
+        "count": 7,
+        "avg_gap": 96.4
+      },
+      "UX_AND_PERFORMANCE_ANALYTICS": {
+        "count": 1,
+        "avg_gap": 114.0
+      },
+      "IDENTITY_TRACKING": {
+        "count": 9,
+        "avg_gap": 89.4
+      },
+      "SESSION_MANAGEMENT": {
+        "count": 9,
+        "avg_gap": 17.357142857142858
+      }
+    }
+  },
+  "num_timelines": 184
+}

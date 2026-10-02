@@ -1,0 +1,244 @@
+{
+  "storage_type": "localstorage",
+  "metrics": {
+    "total_items": 366,
+    "items_modified": 88,
+    "items_deleted": 170,
+    "entropy_increases": 64,
+    "entropy_decreases": 58,
+    "size_increases": 20,
+    "size_decreases": 24,
+    "pii_transitions": {
+      "BEHAVIORAL_DATA -> LOCATION_AND_DEMOGRAPHICS": 2,
+      "CONSENT_AND_PRIVACY -> TECHNICAL_PASSWORDS": 2,
+      "IDENTITY_TRACKING -> UX_AND_PERFORMANCE_ANALYTICS": 20,
+      "USER_PREFERENCES -> IDENTITY_TRACKING": 2,
+      "CONSENT_AND_PRIVACY -> UX_AND_PERFORMANCE_ANALYTICS": 11,
+      "APP_STATE_STORAGE -> SECURITY_AND_BOT_MITIGATION": 2,
+      "IDENTITY_TRACKING -> SECURITY_AND_BOT_MITIGATION": 1,
+      "ID_SOLUTIONS_AND_EXCHANGES -> UX_AND_PERFORMANCE_ANALYTICS": 4,
+      "IDENTITY_TRACKING -> SESSION_MANAGEMENT": 4,
+      "USER_PREFERENCES -> BEHAVIORAL_DATA": 9,
+      "DIRECT_PII -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "CONSENT_AND_PRIVACY -> USER_PREFERENCES": 5,
+      "NAVIGATION_HISTORY -> SECURITY_AND_BOT_MITIGATION": 2,
+      "CONSENT_AND_PRIVACY -> ID_SOLUTIONS_AND_EXCHANGES": 5,
+      "BEHAVIORAL_DATA -> UX_AND_PERFORMANCE_ANALYTICS": 7,
+      "IDENTITY_TRACKING -> ID_SOLUTIONS_AND_EXCHANGES": 5,
+      "BEHAVIORAL_DATA -> IDENTITY_TRACKING": 2,
+      "ID_SOLUTIONS_AND_EXCHANGES -> TECHNICAL_PASSWORDS": 2,
+      "ID_SOLUTIONS_AND_EXCHANGES -> LOCATION_AND_DEMOGRAPHICS": 4,
+      "ID_SOLUTIONS_AND_EXCHANGES -> SECURITY_AND_BOT_MITIGATION": 3,
+      "DIRECT_PII_KEYS -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "BEHAVIORAL_DATA -> NAVIGATION_HISTORY": 3,
+      "APP_STATE_STORAGE -> UX_AND_PERFORMANCE_ANALYTICS": 7,
+      "BEHAVIORAL_DATA -> ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "USER_PREFERENCES -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "IDENTITY_TRACKING -> BEHAVIORAL_DATA": 1,
+      "IDENTITY_TRACKING -> TECHNICAL_PASSWORDS": 1,
+      "LOCATION_AND_DEMOGRAPHICS -> UX_AND_PERFORMANCE_ANALYTICS": 4,
+      "IDENTITY_TRACKING -> NAVIGATION_HISTORY": 1,
+      "APP_STATE_STORAGE -> LOCATION_AND_DEMOGRAPHICS": 1,
+      "BEHAVIORAL_DATA -> CONSENT_AND_PRIVACY": 1,
+      "APP_STATE_STORAGE -> INFRASTRUCTURE": 1,
+      "ID_SOLUTIONS_AND_EXCHANGES -> USER_PREFERENCES": 1,
+      "DEVICE_ENV -> ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "IDENTITY_TRACKING -> USER_PREFERENCES": 2
+    },
+    "volatility_distribution": {
+      "high": 102,
+      "moderate": 117,
+      "stable": 147
+    },
+    "change_frequency": {
+      "avg_gap": 31.07811400422238,
+      "min_gap": 0,
+      "max_gap": 417
+    },
+    "frequent_changes": [
+      {
+        "key": "__cmpconsentx174965_expire_.nivea.pl",
+        "avg_gap": 0.0,
+        "num_modifications": 2,
+        "pii_category": "TECHNICAL_PASSWORDS"
+      },
+      {
+        "key": "analytics_data",
+        "avg_gap": 0.0,
+        "num_modifications": 3,
+        "pii_category": "LOCATION_AND_DEMOGRAPHICS"
+      },
+      {
+        "key": "_trbo_ud",
+        "avg_gap": 0.0,
+        "num_modifications": 5,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "__cmpconsentx174965_.nivea.pl",
+        "avg_gap": 0.0,
+        "num_modifications": 2,
+        "pii_category": "TECHNICAL_PASSWORDS"
+      },
+      {
+        "key": "jentis.consent.data",
+        "avg_gap": 0.0,
+        "num_modifications": 5,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "lcbx_ct_counts_v2",
+        "avg_gap": 0.0,
+        "num_modifications": 2,
+        "pii_category": "SECURITY_AND_BOT_MITIGATION"
+      },
+      {
+        "key": "ins-default-attributes",
+        "avg_gap": 3.0,
+        "num_modifications": 6,
+        "pii_category": "SECURITY_AND_BOT_MITIGATION"
+      },
+      {
+        "key": "_gcl_ls",
+        "avg_gap": 3.4680851063829787,
+        "num_modifications": 78,
+        "pii_category": "IDENTITY_TRACKING"
+      },
+      {
+        "key": "bt_s",
+        "avg_gap": 5.818181818181818,
+        "num_modifications": 4,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "mage-cache-storage",
+        "avg_gap": 6.676923076923077,
+        "num_modifications": 43,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "i18nextLng",
+        "avg_gap": 6.785714285714286,
+        "num_modifications": 18,
+        "pii_category": "APP_STATE_STORAGE"
+      },
+      {
+        "key": "lastExternalReferrerTime",
+        "avg_gap": 7.548387096774194,
+        "num_modifications": 12,
+        "pii_category": "NAVIGATION_HISTORY"
+      },
+      {
+        "key": "_smvc",
+        "avg_gap": 8.342857142857143,
+        "num_modifications": 9,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "lastExternalReferrer",
+        "avg_gap": 9.0,
+        "num_modifications": 2,
+        "pii_category": "NAVIGATION_HISTORY"
+      },
+      {
+        "key": "_grecaptcha",
+        "avg_gap": 11.853658536585366,
+        "num_modifications": 15,
+        "pii_category": "SECURITY_AND_BOT_MITIGATION"
+      },
+      {
+        "key": "__rtbh.uid",
+        "avg_gap": 12.6,
+        "num_modifications": 14,
+        "pii_category": "ID_SOLUTIONS_AND_EXCHANGES"
+      },
+      {
+        "key": "popup_v2_initialize_sid",
+        "avg_gap": 14.8,
+        "num_modifications": 6,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "ins-partner-name",
+        "avg_gap": 15.0,
+        "num_modifications": 2,
+        "pii_category": "ID_SOLUTIONS_AND_EXCHANGES"
+      },
+      {
+        "key": "ins-current-currency",
+        "avg_gap": 15.0,
+        "num_modifications": 2,
+        "pii_category": "USER_PREFERENCES"
+      },
+      {
+        "key": "ins-log-tracking-hit",
+        "avg_gap": 15.0,
+        "num_modifications": 2,
+        "pii_category": "BEHAVIORAL_DATA"
+      }
+    ],
+    "url_modifications": {
+      "pl.ecco.com": 47,
+      "parkofpoland.com": 43,
+      "www.willsoor.pl": 33,
+      "www.loberon.pl": 22,
+      "aniakruk.pl": 17,
+      "lamoda.pl": 17,
+      "panel.paypo.pl": 15,
+      "ekipatonosi.pl": 14,
+      "taranko.com": 13,
+      "zakladyboleslawiec.com": 12
+    },
+    "pii_modification_patterns": {
+      "TECHNICAL_PASSWORDS": {
+        "count": 12,
+        "avg_gap": 29.571428571428573
+      },
+      "ID_SOLUTIONS_AND_EXCHANGES": {
+        "count": 50,
+        "avg_gap": 23.431578947368422
+      },
+      "USER_PREFERENCES": {
+        "count": 7,
+        "avg_gap": 32.5
+      },
+      "IDENTITY_TRACKING": {
+        "count": 144,
+        "avg_gap": 14.105660377358491
+      },
+      "SECURITY_AND_BOT_MITIGATION": {
+        "count": 25,
+        "avg_gap": 13.706896551724139
+      },
+      "BEHAVIORAL_DATA": {
+        "count": 34,
+        "avg_gap": 57.093023255813954
+      },
+      "LOCATION_AND_DEMOGRAPHICS": {
+        "count": 9,
+        "avg_gap": 58.5
+      },
+      "UX_AND_PERFORMANCE_ANALYTICS": {
+        "count": 105,
+        "avg_gap": 13.298429319371728
+      },
+      "NAVIGATION_HISTORY": {
+        "count": 16,
+        "avg_gap": 9.675213675213675
+      },
+      "APP_STATE_STORAGE": {
+        "count": 27,
+        "avg_gap": 15.379310344827585
+      },
+      "CONSENT_AND_PRIVACY": {
+        "count": 3,
+        "avg_gap": 91.5
+      },
+      "SESSION_MANAGEMENT": {
+        "count": 2,
+        "avg_gap": 41.333333333333336
+      }
+    }
+  },
+  "num_timelines": 366
+}

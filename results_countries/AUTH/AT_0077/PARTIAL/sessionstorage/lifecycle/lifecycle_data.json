@@ -1,0 +1,155 @@
+{
+  "storage_type": "sessionstorage",
+  "metrics": {
+    "total_items": 255,
+    "items_modified": 28,
+    "items_deleted": 91,
+    "entropy_increases": 31,
+    "entropy_decreases": 26,
+    "size_increases": 14,
+    "size_decreases": 6,
+    "pii_transitions": {
+      "IDENTITY_TRACKING -> UX_AND_PERFORMANCE_ANALYTICS": 11,
+      "IDENTITY_TRACKING -> ID_SOLUTIONS_AND_EXCHANGES": 2,
+      "IDENTITY_TRACKING -> SESSION_MANAGEMENT": 7,
+      "APP_STATE_STORAGE -> LOCATION_AND_DEMOGRAPHICS": 1,
+      "APP_STATE_STORAGE -> UX_AND_PERFORMANCE_ANALYTICS": 2,
+      "INFRASTRUCTURE -> ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "NAVIGATION_HISTORY -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "APP_STATE_STORAGE -> SECURITY_AND_BOT_MITIGATION": 1,
+      "SESSION_MANAGEMENT -> UX_AND_PERFORMANCE_ANALYTICS": 2,
+      "DIRECT_PII_KEYS -> LOCATION_AND_DEMOGRAPHICS": 1,
+      "INFRASTRUCTURE -> BEHAVIORAL_DATA": 1,
+      "ID_SOLUTIONS_AND_EXCHANGES -> SECURITY_AND_BOT_MITIGATION": 2,
+      "BEHAVIORAL_DATA -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "DIRECT_PII_KEYS -> USER_PREFERENCES": 1,
+      "CONSENT_AND_PRIVACY -> TECHNICAL_PASSWORDS": 1,
+      "USER_PREFERENCES -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "APP_STATE_STORAGE -> SESSION_MANAGEMENT": 1,
+      "IDENTITY_TRACKING -> USER_PREFERENCES": 1,
+      "CONSENT_AND_PRIVACY -> IDENTITY_TRACKING": 1,
+      "ID_SOLUTIONS_AND_EXCHANGES -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "DEVICE_ENV -> NAVIGATION_HISTORY": 1,
+      "APP_STATE_STORAGE -> BEHAVIORAL_DATA": 1
+    },
+    "volatility_distribution": {
+      "high": 35,
+      "moderate": 75,
+      "stable": 145
+    },
+    "change_frequency": {
+      "avg_gap": 55.191823899371066,
+      "min_gap": 0,
+      "max_gap": 460
+    },
+    "frequent_changes": [
+      {
+        "key": "___nrbic",
+        "avg_gap": 7.434782608695652,
+        "num_modifications": 39,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "RetentionTime",
+        "avg_gap": 22.0,
+        "num_modifications": 3,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "statsig",
+        "avg_gap": 22.0,
+        "num_modifications": 3,
+        "pii_category": "IDENTITY_TRACKING"
+      },
+      {
+        "key": "gateSid",
+        "avg_gap": 22.0,
+        "num_modifications": 3,
+        "pii_category": "IDENTITY_TRACKING"
+      },
+      {
+        "key": "CriteoID_tealium",
+        "avg_gap": 22.0,
+        "num_modifications": 2,
+        "pii_category": "ID_SOLUTIONS_AND_EXCHANGES"
+      },
+      {
+        "key": "CriteoID",
+        "avg_gap": 22.0,
+        "num_modifications": 2,
+        "pii_category": "ID_SOLUTIONS_AND_EXCHANGES"
+      },
+      {
+        "key": "idz_pageId",
+        "avg_gap": 22.0,
+        "num_modifications": 2,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "tt_sessionId",
+        "avg_gap": 22.363636363636363,
+        "num_modifications": 6,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "__rtbh.uid",
+        "avg_gap": 29.428571428571427,
+        "num_modifications": 6,
+        "pii_category": "ID_SOLUTIONS_AND_EXCHANGES"
+      },
+      {
+        "key": "___nrbi",
+        "avg_gap": 38.0,
+        "num_modifications": 6,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "__ym_tab_guid",
+        "avg_gap": 43.42857142857143,
+        "num_modifications": 4,
+        "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "_GSD",
+        "avg_gap": 44.142857142857146,
+        "num_modifications": 7,
+        "pii_category": "BEHAVIORAL_DATA"
+      }
+    ],
+    "url_modifications": {
+      "accounts.moebelix.at": 29,
+      "www.runnersworld.de": 21,
+      "www.ntv.com.tr": 16,
+      "www.bike-magazin.de": 16,
+      "www.wingsforlifeworldrun.com": 8,
+      "www.jutarnji.hr": 8,
+      "topvintage.de": 5,
+      "www.reifendirekt.at": 3,
+      "wortguru.com": 3,
+      "www.moonsault.de": 3
+    },
+    "pii_modification_patterns": {
+      "UX_AND_PERFORMANCE_ANALYTICS": {
+        "count": 57,
+        "avg_gap": 19.173333333333332
+      },
+      "BEHAVIORAL_DATA": {
+        "count": 26,
+        "avg_gap": 78.6923076923077
+      },
+      "ID_SOLUTIONS_AND_EXCHANGES": {
+        "count": 21,
+        "avg_gap": 55.78260869565217
+      },
+      "IDENTITY_TRACKING": {
+        "count": 10,
+        "avg_gap": 81.84615384615384
+      },
+      "USER_PREFERENCES": {
+        "count": 7,
+        "avg_gap": 92.0
+      }
+    }
+  },
+  "num_timelines": 255
+}
