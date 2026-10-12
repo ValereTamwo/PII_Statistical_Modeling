@@ -4,16 +4,16 @@
   "user_id": "NL_0694",
   "policy": "PARTIAL",
   "summary": {
-    "total_items": 8796,
+    "total_items": 8792,
     "by_storage_type": {
       "cookies": 3944,
       "indexeddb": 3080,
       "localstorage": 899,
-      "sessionstorage": 873
+      "sessionstorage": 869
     },
     "by_category": {
       "ID_SOLUTIONS_AND_EXCHANGES": 318,
-      "LOCATION_AND_DEMOGRAPHICS": 82,
+      "LOCATION_AND_DEMOGRAPHICS": 78,
       "TECHNICAL_PASSWORDS": 745,
       "NAVIGATION_HISTORY": 169,
       "UX_AND_PERFORMANCE_ANALYTICS": 1675,
@@ -33,8 +33,8 @@
     },
     "by_lifecycle": {
       "added": 1682,
-      "modified": 2362,
-      "removed": 1672,
+      "modified": 2361,
+      "removed": 1669,
       "unknown": 3080
     },
     "uncategorized_by_storage_type": {
@@ -44,7 +44,7 @@
       "sessionstorage": 6
     },
     "uncategorized_items": 476,
-    "total_items_with_uncategorized": 9272,
+    "total_items_with_uncategorized": 9268,
     "cookie_security": {
       "total_cookies": 3944,
       "httponly_distribution": {
@@ -21578,36 +21578,8 @@
       {
         "storage_type": "sessionstorage",
         "lifecycle": "modified",
-        "key": "returnUrl",
-        "value": "/connect/authorize/callback?client_id=PortalClientId&redirect_uri=https%3A%2F%2Fportal.entreepgb.svb.nl%2Fsignin-oidc&response_type=id_token%20token&scope=openid%20profile%20portal%20api&max_age=900&response_mode=form_post&nonce=639263496365956872.OTU2ZTMxZTMtYThiZS00ZDFhLWI4YjUtYzJkZDY3Zjg0ZTVkN2UyMzhiNzgtNTdkMy00MmEyLWE0M2MtNDgyOTMyMGMyYzU5&state=CfDJ8EbNzRJEcx1HuvPRwgQN1jFYVQrQ-FOjAwQrrxodOxVpgFc90_uw1fqGB2qWVTtj62I9AjqIylR44rc6rKcJd3Us1h5HGiPmiU_GvOzM145e0wuhgX76mWmpqmearVmuUo7-vktZ5ipHn_s044pCLYFT56Tfq5KBln-EuzhnNOkTWc2zsKpaSdLOxt4JR0oxpJar77YXgpSJGymxN-xRtuYSBPzHJwMPjLWn5IKLvpM5CEMR2s6VU39ydbu_ONist2XaC0KBO7YgPx4nIDmoUFBHiRDM8l1rgQpO2a3ua2yX1PF4oGXo6GStF66Ou3cbxQ",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "sessionstorage",
-        "lifecycle": "modified",
         "key": "mopDeploy",
         "value": "{\"4SY3eu3lnsabvvsURfJLk6NYmijSK8pknzNEtj72\":{\"code\":200,\"OK\":true,\"global\":{\"service\":\"mopinion\",\"version\":\"18082023\",\"stats\":true},\"deployment\":{\"id\":\"4SY3eu3lnsabvvsURfJLk6NYmijSK8pknzNEtj72\",\"domain\":\"justis.mopinion.com\",\"name\":\"justis.nl\",\"published\":true,\"trail\":true,\"type\":\"web\",\"rules\":[{\"id\":\"nai1cvyye1walpdyp0k91zy7pa7t3vm5\",\"if\":[{\"trigger\":\"passive\",\"percentage\":null,\"time\":null,\"time_in_session\":null,\"location\":[],\"js\":[],\"cookie\":[],\"referrer\":[],\"scrollpos\":[],\"number_of_pages\":[],\"type\":null,\"devices\":[],\"session\":30,\"css_selector\":[],\"date\":[],\"clock\":[]}],\"then\":[{\"service\":\"mopinion\",\"args\":[\"0bb8f5983f13bc3ba9ba71a08a92e1154d114306\",\"justis.mopinion.com\",\"mopinion\"],\"disableMakeDiv\":true,\"useQuerySelectorAll\":false}]},{\"id\":\"0m4j7jrzfjcspz3k7dbc0ikefstiter2\",\"if\":[{\"trigger\":\"passive\",\"percentage\":null,\"time\":null,\"time_in_session\":null,\"location\":[[{\"value\":\"justis.nl/service-contact/contactmogelijkheden\",\"operator\":\"exists\",\"regex\":false},{\"value\":\"justis.nl/service-contact/contactmogelijkheden/bellen-met-justis\",\"operator\":\"does not exist\",\"regex\":false},{\"value\":\"justis.nl/service-contact/contactmogelijkheden/contactformulier\",\"operator\":\"does not exist\",\"regex\":false},{\"value\":\"justis.nl/service-contact/contactmogelijkheden/post-en-bezoekadres-justis\",\"operator\":\"does not exist\",\"regex\":false}]],\"js\":[],\"cookie\":[],\"referrer\":[],\"scrollpos\":[],\"number_of_pages\":[],\"type\":null,\"devices\":[],\"session\":\"50\",\"css_selector\":[],\"date\":{\"operator\":\"between\",\"date\":\"15/08/2024\",\"date2\":\"30/08/2024\"},\"clock\":[]}],\"then\":[{\"service\":\"mopinion\",\"args\":[\"50ecba52f17e53033fb3fd36ae1604d26d0d528f\",\"justis.mopinion.com\",\"surveyContent\"],\"disableMakeDiv\":false,\"useQuerySelectorAll\":false}]}]},\"time\":1790761447087},\"trail\":{\"current\":{\"url\":\"https://www.justis.nl/en/products/certificate-of-conduct\",\"title\":\"Certificate of Conduct | Justis\",\"timestamp\":\"2026-09-30T09:35:22.459Z\",\"events\":[{\"event\":\"click\",\"timestamp\":\"2026-09-30T09:35:36.281Z\",\"selector\":\"button.main-navigation__button.dropdown__toggle.possible-clickable-element\",\"text\":\"Open submenu for Service & Contact\",\"props\":{\"selector_hierarchy\":\"body > div.dialog-off-canvas-main-canvas > div.wrapper > header > div#navBar.page__navigation-main > div.container__wide.d-flex.space-between.align-center > div.main-navigation__container > div.main-navigation__wrapper > div.region.region--primary-menu > nav.main-navigation > ul.main-navigation__list > li.main-navigation__item > button.main-navigation__button.dropdown__toggle.possible-clickable-element\",\"element_disabled\":false,\"click_x\":642,\"click_y\":152,\"scroll_y\":0}}]},\"previous\":[{\"url\":\"https://www.justis.nl/\",\"title\":\"Justis | De screeningsautoriteit\",\"timestamp\":\"2026-09-30T09:34:06.730Z\",\"events\":[{\"event\":\"click\",\"timestamp\":\"2026-09-30T09:34:19.419Z\",\"selector\":\"button.button-as-link.search-button__link.dropdown__toggle.possible-clickable-element\",\"text\":\"Open \\n            Zoeken\",\"props\":{\"selector_hierarchy\":\"body > div.dialog-off-canvas-main-canvas > div.wrapper > header > div#navBar.page__navigation-main > div.container__wide.d-flex.space-between.align-center > button.button-as-link.search-button__link.dropdown__toggle.possible-clickable-element\",\"element_disabled\":false,\"click_x\":1532,\"click_y\":152,\"scroll_y\":0}},{\"event\":\"click\",\"timestamp\":\"2026-09-30T09:34:29.958Z\",\"selector\":\"a.language-link.possible-clickable-element\",\"text\":\"en\",\"props\":{\"selector_hierarchy\":\"body > div.dialog-off-canvas-main-canvas > div.wrapper > header > div#header.header > div.container__wide.d-flex > div.language-switch__wrapper > div.region.region--language-switch > div#block-taalkeuze.language-switcher-language-url.list-block > div.language-switch > ul.links > li.en > a.language-link.possible-clickable-element\",\"element_href\":\"https://www.justis.nl/en\",\"click_x\":1568,\"click_y\":80,\"scroll_y\":0}}]},{\"url\":\"https://www.justis.nl/en\",\"title\":\"Justis | The screening authority\",\"timestamp\":\"2026-09-30T09:34:30.784Z\",\"events\":[{\"event\":\"click\",\"timestamp\":\"2026-09-30T09:34:42.961Z\",\"selector\":\"button.main-navigation__button.dropdown__toggle.possible-clickable-element\",\"text\":\"Open submenu for Services\",\"props\":{\"selector_hierarchy\":\"body > div.dialog-off-canvas-main-canvas > div.wrapper > header > div#navBar.page__navigation-main > div.container__wide.d-flex.space-between.align-center > div.main-navigation__container > div.main-navigation__wrapper > div.region.region--primary-menu > nav.main-navigation > ul.main-navigation__list > li.main-navigation__item > button.main-navigation__button.dropdown__toggle.possible-clickable-element\",\"element_disabled\":false,\"click_x\":478,\"click_y\":152,\"scroll_y\":0}},{\"event\":\"click\",\"timestamp\":\"2026-09-30T09:34:58.047Z\",\"selector\":\"button.main-navigation__button.dropdown__toggle.possible-clickable-element\",\"text\":\"Open submenu for Service & Contact\",\"props\":{\"selector_hierarchy\":\"body > div.dialog-off-canvas-main-canvas > div.wrapper > header > div#navBar.page__navigation-main > div.container__wide.d-flex.space-between.align-center > div.main-navigation__container > div.main-navigation__wrapper > div.region.region--primary-menu > nav.main-navigation > ul.main-navigation__list > li.main-navigation__item > button.main-navigation__button.dropdown__toggle.possible-clickable-element\",\"element_disabled\":false,\"click_x\":649,\"click_y\":152,\"scroll_y\":0}},{\"event\":\"click\",\"timestamp\":\"2026-09-30T09:35:21.918Z\",\"selector\":\"a.streched-link.possible-clickable-element\",\"text\":\"Certificate of Conduct\",\"props\":{\"selector_hierarchy\":\"body > div.dialog-off-canvas-main-canvas > div.wrapper > div.container__wide.main-content-sidebars > main#content.main.main--homepage > div.region.region--content > div#block-justis-content.list-block > article > div > div.layout.layout--onecol > div.layout__region.layout__region--content > div.subject-buttons__wrapper > div.subject-buttons > div.subject-button > h3#certificate-of-conduct.subject-button__title > a.streched-link.possible-clickable-element\",\"element_href\":\"https://www.justis.nl/en/products/certificate-of-conduct\",\"click_x\":442,\"click_y\":931,\"scroll_y\":0}}]}]}}",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "sessionstorage",
-        "lifecycle": "removed",
-        "key": "returnUrl",
-        "value": "/connect/authorize/callback?client_id=PortalClientId&redirect_uri=https%3A%2F%2Fportal.entreepgb.svb.nl%2Fsignin-oidc&response_type=id_token%20token&scope=openid%20profile%20portal%20api&max_age=900&response_mode=form_post&nonce=639263621251746782.MTAxZGFhNTgtMmIwOS00YmZkLTg0ZDctN2RiNmMxYzdjYzFhNjJlOWU2YWItMjkyNC00NDEzLTk0NzMtOGQ4NWEzM2U5MzNm&state=CfDJ8EbNzRJEcx1HuvPRwgQN1jF4N7KFhPFVlrJZ1-hGkOOKqCquNqQmzqkxiEwU-KGHvGyS_xdj1d3yP5WZUPdAniL2gVSiW4QAXzF6dxJeA1UXNDiUjb10jAJ5OoydnaDyuBB9NmBvhK_CMFwsz2YNlgtk9fQdqoGsp34CTc8-_QJtgB66uPNsaUwMFSwzIKDOwVSNOInv5fqeiYLvoXAWJZMobue-qHIJ_qloqYKvw-pnzPG7fGQ-Mji_S_n1m1Az8HsdSxX1p88Nhki0rhB1MYke6-Cgy0JheI0Y-92lRMDYR9KDFq6bUGKWV2akZrs8GQ",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "sessionstorage",
-        "lifecycle": "removed",
-        "key": "saved-state",
-        "value": "{\"language\":\"nl\",\"lastVisited\":\"https://www.svb.nl/nl/\"}",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "sessionstorage",
-        "lifecycle": "removed",
-        "key": "returnUrl",
-        "value": "/connect/authorize/callback?client_id=PortalClientId&redirect_uri=https%3A%2F%2Fportal.entreepgb.svb.nl%2Fsignin-oidc&response_type=id_token%20token&scope=openid%20profile%20portal%20api&max_age=900&response_mode=form_post&nonce=639252171954822890.MzVhZjM5MDctYzliNS00YzA1LTkzZjEtMjM4NzI5ZTZiN2M2ZTlmZmJkNTYtNzVmNS00Mzg4LWFlYTUtYjA4Mzk4YTI5ZDU3&state=CfDJ8EbNzRJEcx1HuvPRwgQN1jFQbGvyAAmgqy2_nxkThMlZnNVUi_EdGiW7wUZiByxres975YQDEK2NyfMLKmK4NkgyZi8KH7W96OR5JDptBahidYXjOnWsA97ZT9PVUkbIlj-vi7I6QqIOfsFnF8nGU9c3IGxum7hXi5cWdgVxjUHjVCvEll4FEnq-oxxdHT67_zOkdhBZm9nuDHMEchrfbH6Brs5thLyAp5RWdRpUg5zZmCp0gRDA7c1U95NJfhoqW09KkaAEQ36r8AsNZhbUApBW3I8QWWJ0CiylbEBdVP_us8fuA5AE9ymeo6lSxqsVTQ",
         "category": "LOCATION_AND_DEMOGRAPHICS"
       }
     ],
@@ -42525,11 +42497,11 @@
         "persistence_ratio": 0.21468298109010012
       },
       "sessionstorage": {
-        "total_items": 873,
+        "total_items": 869,
         "added": 375,
-        "modified": 179,
-        "removed": 319,
-        "persistence_ratio": 0.6345933562428407
+        "modified": 178,
+        "removed": 316,
+        "persistence_ratio": 0.6363636363636364
       }
     },
     "by_category": {
@@ -42548,11 +42520,11 @@
         "persistence_ratio": 0.847457627118644
       },
       "LOCATION_AND_DEMOGRAPHICS": {
-        "total_items": 82,
+        "total_items": 78,
         "added": 16,
-        "modified": 60,
-        "removed": 6,
-        "persistence_ratio": 0.926829268292683
+        "modified": 59,
+        "removed": 3,
+        "persistence_ratio": 0.9615384615384616
       },
       "ID_SOLUTIONS_AND_EXCHANGES": {
         "total_items": 318,

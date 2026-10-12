@@ -4,19 +4,19 @@
   "user_id": "IT_0573",
   "policy": "PARTIAL",
   "summary": {
-    "total_items": 50831,
+    "total_items": 50740,
     "by_storage_type": {
-      "cookies": 4517,
-      "indexeddb": 43594,
-      "localstorage": 1789,
-      "sessionstorage": 931
+      "cookies": 4515,
+      "indexeddb": 43514,
+      "localstorage": 1782,
+      "sessionstorage": 929
     },
     "by_category": {
       "DIRECT_PII_KEYS": 307,
       "ID_SOLUTIONS_AND_EXCHANGES": 3098,
-      "LOCATION_AND_DEMOGRAPHICS": 157,
+      "LOCATION_AND_DEMOGRAPHICS": 63,
       "TECHNICAL_PASSWORDS": 177,
-      "NAVIGATION_HISTORY": 1008,
+      "NAVIGATION_HISTORY": 1011,
       "UX_AND_PERFORMANCE_ANALYTICS": 1226,
       "SECURITY_AND_BOT_MITIGATION": 413,
       "APP_STATE_STORAGE": 349,
@@ -35,10 +35,10 @@
       "SERVER_SIDE_TRACKING": 10
     },
     "by_lifecycle": {
-      "added": 1861,
-      "modified": 3069,
-      "removed": 2307,
-      "unknown": 43594
+      "added": 1859,
+      "modified": 3067,
+      "removed": 2300,
+      "unknown": 43514
     },
     "uncategorized_by_storage_type": {
       "cookies": 53,
@@ -47,28 +47,28 @@
       "sessionstorage": 21
     },
     "uncategorized_items": 11195,
-    "total_items_with_uncategorized": 62026,
+    "total_items_with_uncategorized": 61935,
     "cookie_security": {
-      "total_cookies": 4517,
+      "total_cookies": 4515,
       "httponly_distribution": {
         "False": 3250,
-        "True": 1267
+        "True": 1265
       },
       "secure_distribution": {
         "True": 2975,
-        "False": 1542
+        "False": 1540
       },
       "samesite_distribution": {
-        "Lax": 2238,
+        "Lax": 2236,
         "No Restriction": 2109,
         "Strict": 170
       },
       "thirdparty_distribution": {
-        "First-Party": 1864,
-        "Third-Party": 2653
+        "First-Party": 1863,
+        "Third-Party": 2652
       },
       "security_posture_distribution": {
-        "Partially Secure": 1830,
+        "Partially Secure": 1828,
         "Lowly Secure": 1481,
         "Secure": 1206
       },
@@ -112,20 +112,20 @@
           }
         },
         "LOCATION_AND_DEMOGRAPHICS": {
-          "total": 15,
-          "httponly_true": 3,
+          "total": 13,
+          "httponly_true": 1,
           "httponly_false": 12,
           "secure_true": 8,
-          "secure_false": 7,
-          "thirdparty_true": 4,
-          "thirdparty_false": 11,
+          "secure_false": 5,
+          "thirdparty_true": 3,
+          "thirdparty_false": 10,
           "samesite": {
-            "Lax": 12,
+            "Lax": 10,
             "No Restriction": 1,
             "Strict": 2
           },
           "security_posture": {
-            "Partially Secure": 9,
+            "Partially Secure": 7,
             "Secure": 1,
             "Lowly Secure": 5
           }
@@ -96213,6 +96213,27 @@
         "category": "NAVIGATION_HISTORY"
       },
       {
+        "storage_type": "indexeddb",
+        "lifecycle": "unknown",
+        "key": "origin",
+        "value": "https://www.glamsport.it",
+        "category": "NAVIGATION_HISTORY"
+      },
+      {
+        "storage_type": "indexeddb",
+        "lifecycle": "unknown",
+        "key": "origin",
+        "value": "https://www.ynot.it",
+        "category": "NAVIGATION_HISTORY"
+      },
+      {
+        "storage_type": "indexeddb",
+        "lifecycle": "unknown",
+        "key": "origin",
+        "value": "https://www.ynot.it",
+        "category": "NAVIGATION_HISTORY"
+      },
+      {
         "storage_type": "localstorage",
         "lifecycle": "added",
         "key": "lastExternalReferrer",
@@ -97562,19 +97583,6 @@
       {
         "storage_type": "cookies",
         "lifecycle": "modified",
-        "key": "x-amz-continuous-deployment-state",
-        "value": "AYABeLOqz6IwP+cjCrzqQO0u+noAPgACAAFEAB1kMnh5N2h0YTRnYnlzMi5jbG91ZGZyb250Lm5ldAABRwAVRzAxMDAxOTUzM0gyV05ETE5HRlRZAAEAAkNEABpDb29raWUAAACAAAAADO7IkyTk7UKd2mxPnAAwCRCxo%2FmsL6lweijJhFGMRd6fq5IT+NSMxNV0vvJmqoaktQPLbQaFmj71xxKQSb0%2FAgAAAAAMAAQAAAAAAAAAAAAAAAAAAMRKU8wF29Ej6MWmlU4Tiwr%2F%2F%2F%2F%2FAAAAAQAAAAAAAAAAAAAAAQAAAAxaZPIm2yZXQqrE1VehG8Pal2OFz624yQQUxlHt",
-        "category": "LOCATION_AND_DEMOGRAPHICS",
-        "domain": "www.1000farmacie.it",
-        "httpOnly": true,
-        "secure": false,
-        "sameSite": "Lax",
-        "thirdparty": "First-Party",
-        "security_posture": "Partially Secure"
-      },
-      {
-        "storage_type": "cookies",
-        "lifecycle": "modified",
         "key": "sbjs_session",
         "value": "pgs=2|||cpg=https://country-creations.it/account/",
         "category": "LOCATION_AND_DEMOGRAPHICS",
@@ -97640,19 +97648,6 @@
       {
         "storage_type": "cookies",
         "lifecycle": "removed",
-        "key": "x-amz-continuous-deployment-state",
-        "value": "AYABeLOqz6IwP+cjCrzqQO0u+noAPgACAAFEAB1kMnh5N2h0YTRnYnlzMi5jbG91ZGZyb250Lm5ldAABRwAVRzAxMDAxOTUzM0gyV05ETE5HRlRZAAEAAkNEABpDb29raWUAAACAAAAADO7IkyTk7UKd2mxPnAAwCRCxo%2FmsL6lweijJhFGMRd6fq5IT+NSMxNV0vvJmqoaktQPLbQaFmj71xxKQSb0%2FAgAAAAAMAAQAAAAAAAAAAAAAAAAAAMRKU8wF29Ej6MWmlU4Tiwr%2F%2F%2F%2F%2FAAAAAQAAAAAAAAAAAAAAAQAAAAxaZPIm2yZXQqrE1VehG8Pal2OFz624yQQUxlHt",
-        "category": "LOCATION_AND_DEMOGRAPHICS",
-        "domain": "www.1000farmacie.it",
-        "httpOnly": true,
-        "secure": false,
-        "sameSite": "Lax",
-        "thirdparty": "Third-Party",
-        "security_posture": "Partially Secure"
-      },
-      {
-        "storage_type": "cookies",
-        "lifecycle": "removed",
         "key": "ig-location",
         "value": "{\"country\":\"FR\",\"city\":\"Villeurbanne\",\"continent\":\"EU\",\"latitude\":\"45.77\",\"longitude\":\"4.88\",\"region\":\"Rhône-Alpes\",\"regionCode\":\"ARA\"}",
         "category": "LOCATION_AND_DEMOGRAPHICS",
@@ -97679,153 +97674,6 @@
       {
         "storage_type": "indexeddb",
         "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_END",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_END",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_END",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_END",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_END",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_END",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_END",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_END",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_END",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_END",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_END",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_END",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_END",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_END",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_END",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_END",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_END",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_END",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "origin",
-        "value": "https://www.glamsport.it",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "origin",
-        "value": "https://www.ynot.it",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "origin",
-        "value": "https://www.ynot.it",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
         "key": "countryCode",
         "value": "FR",
         "category": "LOCATION_AND_DEMOGRAPHICS"
@@ -97835,440 +97683,6 @@
         "lifecycle": "unknown",
         "key": "countryCode",
         "value": "FR",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Armenia",
-        "value": "Armenia",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Timorleste",
-        "value": "Timor Est",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "FrenchPolynesia",
-        "value": "Polinesia francese",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Ascension",
-        "value": "Ascensione",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Qatar",
-        "value": "Qatar",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "CapeVerde",
-        "value": "Capo Verde",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Togo",
-        "value": "Togo",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Colombia",
-        "value": "Colombia",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "BosniaandHerzegovina",
-        "value": "Bosnia ed Erzegovina",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Malaysia",
-        "value": "Malesia",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Antarctica",
-        "value": "Antartide",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "UnitedArabEmirates",
-        "value": "Emirati Arabi Uniti",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "SolomonIslands",
-        "value": "Isole Salomone",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Macao",
-        "value": "Macao",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Rwanda",
-        "value": "Ruanda",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Micronesiafederatedstatesof",
-        "value": "Stati Federati di Micronesia",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "NetherlandsAntilles",
-        "value": "Antille Olandesi",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Cambodia",
-        "value": "Cambogia",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Sweden",
-        "value": "Svezia",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Guinea",
-        "value": "Guinea",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Peru",
-        "value": "Perù",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Georgia",
-        "value": "Georgia",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Philippines",
-        "value": "Filippine",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Mauritius",
-        "value": "Mauritius",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "BouvetIsland",
-        "value": "Isola Bouvet",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Vietnam",
-        "value": "Vietnam",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Kenya",
-        "value": "Kenya",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Iceland",
-        "value": "Islanda",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Slovakia",
-        "value": "Slovacchia",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Macedoniatheformeryugoslavrepublicof",
-        "value": "Macedonia del Nord",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Dominica",
-        "value": "Dominica",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Liechtenstein",
-        "value": "Liechtenstein",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Switzerland",
-        "value": "Svizzera",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Bermuda",
-        "value": "Bermuda",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "TanzaniaUnitedRepublicOf",
-        "value": "Repubblica Unita di Tanzania",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "TrinidadandTobago",
-        "value": "Trinidad e Tobago",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Anguilla",
-        "value": "Anguilla",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "AntiguaandBarbuda",
-        "value": "Antigua e Barbuda",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Ireland",
-        "value": "Irlanda",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Estonia",
-        "value": "Estonia",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Pakistan",
-        "value": "Pakistan",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Gibraltar",
-        "value": "Gibilterra",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Iraq",
-        "value": "Iraq",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "TurksandCaicosIslands",
-        "value": "Turks e Caicos",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "SanMarino",
-        "value": "San Marino",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "SaintKittsandNevis",
-        "value": "Saint Kitts e Nevis",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Bolivia",
-        "value": "Bolivia",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Mexico",
-        "value": "Messico",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Belize",
-        "value": "Belize",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Botswana",
-        "value": "Botswana",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Albania",
-        "value": "Albania",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "CaribbeanNetherlands",
-        "value": "Caraibi olandesi",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "AlandIslands",
-        "value": "Isole Åland",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Zambia",
-        "value": "Zambia",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Greece",
-        "value": "Grecia",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Tajikistan",
-        "value": "Tagikistan",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Israel",
-        "value": "Israele",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "SaintVincentandtheGrenadines",
-        "value": "Saint Vincent e Grenadine",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Laopeoplesdemocraticrepublic",
-        "value": "Repubblica Popolare Democratica del Laos",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Moldovarepublicof",
-        "value": "Repubblica Moldova",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Montenegro",
-        "value": "Montenegro",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "Guam",
-        "value": "Guam",
         "category": "LOCATION_AND_DEMOGRAPHICS"
       },
       {
@@ -98276,13 +97690,6 @@
         "lifecycle": "added",
         "key": "countries_top_menu",
         "value": "[{\"id\":1,\"name\":\"Afghanistan\",\"iso_code_2\":\"AF\",\"currency_id\":2},{\"id\":2,\"name\":\"Albania\",\"iso_code_2\":\"AL\",\"currency_id\":2},{\"id\":3,\"name\":\"Algeria\",\"iso_code_2\":\"DZ\",\"currency_id\":2},{\"id\":4,\"name\":\"American Samoa\",\"iso_code_2\":\"AS\",\"currency_id\":2},{\"id\":5,\"name\":\"Andorra\",\"iso_code_2\":\"AD\",\"currency_id\":2},{\"id\":6,\"name\":\"Angola\",\"iso_code_2\":\"AO\",\"currency_id\":2},{\"id\":7,\"name\":\"Anguilla\",\"iso_code_2\":\"AI\",\"currency_id\":2},{\"id\":8,\"name\":\"Antarctica\",\"iso_code_2\":\"AQ\",\"currency_id\":2},{\"id\":9,\"name\":\"Antigua and Barbuda\",\"iso_code_2\":\"AG\",\"currency_id\":2},{\"id\":10,\"name\":\"Argentina\",\"iso_code_2\":\"AR\",\"currency_id\":2},{\"id\":11,\"name\":\"Armenia\",\"iso_code_2\":\"AM\",\"currency_id\":2},{\"id\":12,\"name\":\"Aruba\",\"iso_code_2\":\"AW\",\"currency_id\":2},{\"id\":13,\"name\":\"Australia\",\"iso_code_2\":\"AU\",\"currency_id\":11},{\"id\":14,\"name\":\"Austria\",\"iso_code_2\":\"AT\",\"currency_id\":2},{\"id\":15,\"name\":\"Azerbaijan\",\"iso_code_2\":\"AZ\",\"currency_id\":2},{\"id\":16,\"name\":\"Bahamas\",\"iso_code_2\":\"BS\",\"currency_id\":2},{\"id\":17,\"name\":\"Bahrain\",\"iso_code_2\":\"BH\",\"currency_id\":2},{\"id\":18,\"name\":\"Bangladesh\",\"iso_code_2\":\"BD\",\"currency_id\":2},{\"id\":19,\"name\":\"Barbados\",\"iso_code_2\":\"BB\",\"currency_id\":2},{\"id\":20,\"name\":\"Belarus\",\"iso_code_2\":\"BY\",\"currency_id\":2},{\"id\":21,\"name\":\"Belgium\",\"iso_code_2\":\"BE\",\"currency_id\":2},{\"id\":22,\"name\":\"Belize\",\"iso_code_2\":\"BZ\",\"currency_id\":2},{\"id\":23,\"name\":\"Benin\",\"iso_code_2\":\"BJ\",\"currency_id\":2},{\"id\":24,\"name\":\"Bermuda\",\"iso_code_2\":\"BM\",\"currency_id\":2},{\"id\":25,\"name\":\"Bhutan\",\"iso_code_2\":\"BT\",\"currency_id\":2},{\"id\":26,\"name\":\"Bolivia, Plurinational State of\",\"iso_code_2\":\"BO\",\"currency_id\":2},{\"id\":252,\"name\":\"Bonaire, Sint Eustatius and Saba\",\"iso_code_2\":\"BQ\",\"currency_id\":1},{\"id\":27,\"name\":\"Bosnia and Herzegowina\",\"iso_code_2\":\"BA\",\"currency_id\":2},{\"id\":28,\"name\":\"Botswana\",\"iso_code_2\":\"BW\",\"currency_id\":2},{\"id\":29,\"name\":\"Bouvet Island\",\"iso_code_2\":\"BV\",\"currency_id\":2},{\"id\":30,\"name\":\"Brazil\",\"iso_code_2\":\"BR\",\"currency_id\":2},{\"id\":31,\"name\":\"British Indian Ocean Territory\",\"iso_code_2\":\"IO\",\"currency_id\":2},{\"id\":32,\"name\":\"Brunei Darussalam\",\"iso_code_2\":\"BN\",\"currency_id\":2},{\"id\":33,\"name\":\"Bulgaria\",\"iso_code_2\":\"BG\",\"currency_id\":2},{\"id\":34,\"name\":\"Burkina Faso\",\"iso_code_2\":\"BF\",\"currency_id\":2},{\"id\":35,\"name\":\"Burundi\",\"iso_code_2\":\"BI\",\"currency_id\":2},{\"id\":36,\"name\":\"Cambodia\",\"iso_code_2\":\"KH\",\"currency_id\":2},{\"id\":37,\"name\":\"Cameroon\",\"iso_code_2\":\"CM\",\"currency_id\":2},{\"id\":38,\"name\":\"Canada\",\"iso_code_2\":\"CA\",\"currency_id\":10},{\"id\":39,\"name\":\"Cape Verde\",\"iso_code_2\":\"CV\",\"currency_id\":2},{\"id\":40,\"name\":\"Cayman Islands\",\"iso_code_2\":\"KY\",\"currency_id\":2},{\"id\":41,\"name\":\"Central African Republic\",\"iso_code_2\":\"CF\",\"currency_id\":2},{\"id\":42,\"name\":\"Chad\",\"iso_code_2\":\"TD\",\"currency_id\":2},{\"id\":43,\"name\":\"Chile\",\"iso_code_2\":\"CL\",\"currency_id\":2},{\"id\":44,\"name\":\"China\",\"iso_code_2\":\"CN\",\"currency_id\":15},{\"id\":45,\"name\":\"Christmas Island\",\"iso_code_2\":\"CX\",\"currency_id\":2},{\"id\":46,\"name\":\"Cocos (Keeling) Islands\",\"iso_code_2\":\"CC\",\"currency_id\":2},{\"id\":47,\"name\":\"Colombia\",\"iso_code_2\":\"CO\",\"currency_id\":2},{\"id\":48,\"name\":\"Comoros\",\"iso_code_2\":\"KM\",\"currency_id\":2},{\"id\":49,\"name\":\"Congo\",\"iso_code_2\":\"CG\",\"currency_id\":2},{\"id\":244,\"name\":\"Congo, The democratic republic of the\",\"iso_code_2\":\"CD\",\"currency_id\":2},{\"id\":50,\"name\":\"Cook Islands\",\"iso_code_2\":\"CK\",\"currency_id\":2},{\"id\":51,\"name\":\"Costa Rica\",\"iso_code_2\":\"CR\",\"currency_id\":2},{\"id\":52,\"name\":\"Côte d'Ivoire\",\"iso_code_2\":\"CI\",\"currency_id\":2},{\"id\":53,\"name\":\"Croatia\",\"iso_code_2\":\"HR\",\"currency_id\":2},{\"id\":54,\"name\":\"Cuba\",\"iso_code_2\":\"CU\",\"currency_id\":2},{\"id\":251,\"name\":\"Curaçao\",\"iso_code_2\":\"XC\",\"currency_id\":2},{\"id\":55,\"name\":\"Cyprus\",\"iso_code_2\":\"CY\",\"currency_id\":2},{\"id\":56,\"name\":\"Czech Republic\",\"iso_code_2\":\"CZ\",\"currency_id\":17},{\"id\":57,\"name\":\"Denmark\",\"iso_code_2\":\"DK\",\"currency_id\":8},{\"id\":58,\"name\":\"Djibouti\",\"iso_code_2\":\"DJ\",\"currency_id\":2},{\"id\":59,\"name\":\"Dominica\",\"iso_code_2\":\"DM\",\"currency_id\":2},{\"id\":60,\"name\":\"Dominican Republic\",\"iso_code_2\":\"DO\",\"currency_id\":2},{\"id\":62,\"name\":\"Ecuador\",\"iso_code_2\":\"EC\",\"currency_id\":1},{\"id\":63,\"name\":\"Egypt\",\"iso_code_2\":\"EG\",\"currency_id\":2},{\"id\":64,\"name\":\"El Salvador\",\"iso_code_2\":\"SV\",\"currency_id\":1},{\"id\":65,\"name\":\"Equatorial Guinea\",\"iso_code_2\":\"GQ\",\"currency_id\":2},{\"id\":66,\"name\":\"Eritrea\",\"iso_code_2\":\"ER\",\"currency_id\":2},{\"id\":67,\"name\":\"Estonia\",\"iso_code_2\":\"EE\",\"currency_id\":2},{\"id\":68,\"name\":\"Ethiopia\",\"iso_code_2\":\"ET\",\"currency_id\":2},{\"id\":69,\"name\":\"Falkland Islands (Malvinas)\",\"iso_code_2\":\"FK\",\"currency_id\":2},{\"id\":70,\"name\":\"Faroe Islands\",\"iso_code_2\":\"FO\",\"currency_id\":2},{\"id\":71,\"name\":\"Fiji\",\"iso_code_2\":\"FJ\",\"currency_id\":2},{\"id\":72,\"name\":\"Finland\",\"iso_code_2\":\"FI\",\"currency_id\":2},{\"id\":73,\"name\":\"France\",\"iso_code_2\":\"FR\",\"currency_id\":2},{\"id\":75,\"name\":\"French Guiana\",\"iso_code_2\":\"GF\",\"currency_id\":2},{\"id\":76,\"name\":\"French Polynesia\",\"iso_code_2\":\"PF\",\"currency_id\":2},{\"id\":77,\"name\":\"French Southern Territories\",\"iso_code_2\":\"TF\",\"currency_id\":2},{\"id\":78,\"name\":\"Gabon\",\"iso_code_2\":\"GA\",\"currency_id\":2},{\"id\":79,\"name\":\"Gambia\",\"iso_code_2\":\"GM\",\"currency_id\":2},{\"id\":80,\"name\":\"Georgia\",\"iso_code_2\":\"GE\",\"currency_id\":2},{\"id\":81,\"name\":\"Germany\",\"iso_code_2\":\"DE\",\"currency_id\":2},{\"id\":82,\"name\":\"Ghana\",\"iso_code_2\":\"GH\",\"currency_id\":2},{\"id\":83,\"name\":\"Gibraltar\",\"iso_code_2\":\"GI\",\"currency_id\":2},{\"id\":84,\"name\":\"Greece\",\"iso_code_2\":\"GR\",\"currency_id\":2},{\"id\":85,\"name\":\"Greenland\",\"iso_code_2\":\"GL\",\"currency_id\":2},{\"id\":86,\"name\":\"Grenada\",\"iso_code_2\":\"GD\",\"currency_id\":2},{\"id\":87,\"name\":\"Guadeloupe\",\"iso_code_2\":\"GP\",\"currency_id\":2},{\"id\":88,\"name\":\"Guam\",\"iso_code_2\":\"GU\",\"currency_id\":2},{\"id\":89,\"name\":\"Guatemala\",\"iso_code_2\":\"GT\",\"currency_id\":2},{\"id\":245,\"name\":\"Guernsey\",\"iso_code_2\":\"GG\",\"currency_id\":2},{\"id\":90,\"name\":\"Guinea\",\"iso_code_2\":\"GN\",\"currency_id\":2},{\"id\":91,\"name\":\"Guinea-Bissau\",\"iso_code_2\":\"GW\",\"currency_id\":2},{\"id\":92,\"name\":\"Guyana\",\"iso_code_2\":\"GY\",\"currency_id\":2},{\"id\":93,\"name\":\"Haiti\",\"iso_code_2\":\"HT\",\"currency_id\":2},{\"id\":94,\"name\":\"Heard and Mc Donald Islands\",\"iso_code_2\":\"HM\",\"currency_id\":11},{\"id\":228,\"name\":\"Holy See (Vatican City State)\",\"iso_code_2\":\"VA\",\"currency_id\":2},{\"id\":95,\"name\":\"Honduras\",\"iso_code_2\":\"HN\",\"currency_id\":2},{\"id\":96,\"name\":\"Hong Kong\",\"iso_code_2\":\"HK\",\"currency_id\":2},{\"id\":97,\"name\":\"Hungary\",\"iso_code_2\":\"HU\",\"currency_id\":2},{\"id\":98,\"name\":\"Iceland\",\"iso_code_2\":\"IS\",\"currency_id\":2},{\"id\":99,\"name\":\"India\",\"iso_code_2\":\"IN\",\"currency_id\":2},{\"id\":100,\"name\":\"Indonesia\",\"iso_code_2\":\"ID\",\"currency_id\":2},{\"id\":101,\"name\":\"Iran (Islamic Republic of)\",\"iso_code_2\":\"IR\",\"currency_id\":2},{\"id\":102,\"name\":\"Iraq\",\"iso_code_2\":\"IQ\",\"currency_id\":2},{\"id\":103,\"name\":\"Ireland\",\"iso_code_2\":\"IE\",\"currency_id\":2},{\"id\":104,\"name\":\"Israel\",\"iso_code_2\":\"IL\",\"currency_id\":2},{\"id\":105,\"name\":\"Italy\",\"iso_code_2\":\"IT\",\"currency_id\":2},{\"id\":106,\"name\":\"Jamaica\",\"iso_code_2\":\"JM\",\"currency_id\":2},{\"id\":107,\"name\":\"Japan\",\"iso_code_2\":\"JP\",\"currency_id\":14},{\"id\":247,\"name\":\"Jersey\",\"iso_code_2\":\"JE\",\"currency_id\":2},{\"id\":108,\"name\":\"Jordan\",\"iso_code_2\":\"JO\",\"currency_id\":2},{\"id\":109,\"name\":\"Kazakhstan\",\"iso_code_2\":\"KZ\",\"currency_id\":2},{\"id\":110,\"name\":\"Kenya\",\"iso_code_2\":\"KE\",\"currency_id\":2},{\"id\":111,\"name\":\"Kiribati\",\"iso_code_2\":\"KI\",\"currency_id\":2},{\"id\":112,\"name\":\"Korea, Democratic People's Republic of\",\"iso_code_2\":\"KP\",\"currency_id\":2},{\"id\":113,\"name\":\"Korea, Republic of\",\"iso_code_2\":\"KR\",\"currency_id\":2},{\"id\":257,\"name\":\"Kosovo\",\"iso_code_2\":\"XK\",\"currency_id\":2},{\"id\":114,\"name\":\"Kuwait\",\"iso_code_2\":\"KW\",\"currency_id\":2},{\"id\":115,\"name\":\"Kyrgyzstan\",\"iso_code_2\":\"KG\",\"currency_id\":16},{\"id\":116,\"name\":\"Lao People's Democratic Republic\",\"iso_code_2\":\"LA\",\"currency_id\":2},{\"id\":117,\"name\":\"Latvia\",\"iso_code_2\":\"LV\",\"currency_id\":2},{\"id\":118,\"name\":\"Lebanon\",\"iso_code_2\":\"LB\",\"currency_id\":2},{\"id\":119,\"name\":\"Lesotho\",\"iso_code_2\":\"LS\",\"currency_id\":2},{\"id\":120,\"name\":\"Liberia\",\"iso_code_2\":\"LR\",\"currency_id\":2},{\"id\":121,\"name\":\"Libya\",\"iso_code_2\":\"LY\",\"currency_id\":2},{\"id\":122,\"name\":\"Liechtenstein\",\"iso_code_2\":\"LI\",\"currency_id\":13},{\"id\":123,\"name\":\"Lithuania\",\"iso_code_2\":\"LT\",\"currency_id\":2},{\"id\":124,\"name\":\"Luxembourg\",\"iso_code_2\":\"LU\",\"currency_id\":2},{\"id\":125,\"name\":\"Macao\",\"iso_code_2\":\"MO\",\"currency_id\":2},{\"id\":126,\"name\":\"Macedonia, the former Yugoslav Republic of\",\"iso_code_2\":\"MK\",\"currency_id\":2},{\"id\":127,\"name\":\"Madagascar\",\"iso_code_2\":\"MG\",\"currency_id\":2},{\"id\":128,\"name\":\"Malawi\",\"iso_code_2\":\"MW\",\"currency_id\":2},{\"id\":129,\"name\":\"Malaysia\",\"iso_code_2\":\"MY\",\"currency_id\":2},{\"id\":130,\"name\":\"Maldives\",\"iso_code_2\":\"MV\",\"currency_id\":2},{\"id\":131,\"name\":\"Mali\",\"iso_code_2\":\"ML\",\"currency_id\":2},{\"id\":132,\"name\":\"Malta\",\"iso_code_2\":\"MT\",\"currency_id\":2},{\"id\":133,\"name\":\"Marshall Islands\",\"iso_code_2\":\"MH\",\"currency_id\":1},{\"id\":134,\"name\":\"Martinique\",\"iso_code_2\":\"MQ\",\"currency_id\":2},{\"id\":135,\"name\":\"Mauritania\",\"iso_code_2\":\"MR\",\"currency_id\":2},{\"id\":136,\"name\":\"Mauritius\",\"iso_code_2\":\"MU\",\"currency_id\":2},{\"id\":137,\"name\":\"Mayotte\",\"iso_code_2\":\"YT\",\"currency_id\":2},{\"id\":138,\"name\":\"Mexico\",\"iso_code_2\":\"MX\",\"currency_id\":2},{\"id\":139,\"name\":\"Micronesia, Federated States of\",\"iso_code_2\":\"FM\",\"currency_id\":1},{\"id\":140,\"name\":\"Moldova, Republic of\",\"iso_code_2\":\"MD\",\"currency_id\":2},{\"id\":141,\"name\":\"Monaco\",\"iso_code_2\":\"MC\",\"currency_id\":2},{\"id\":142,\"name\":\"Mongolia\",\"iso_code_2\":\"MN\",\"currency_id\":2},{\"id\":242,\"name\":\"Montenegro\",\"iso_code_2\":\"ME\",\"currency_id\":2},{\"id\":143,\"name\":\"Montserrat\",\"iso_code_2\":\"MS\",\"currency_id\":2},{\"id\":144,\"name\":\"Morocco\",\"iso_code_2\":\"MA\",\"currency_id\":2},{\"id\":145,\"name\":\"Mozambique\",\"iso_code_2\":\"MZ\",\"currency_id\":2},{\"id\":146,\"name\":\"Myanmar\",\"iso_code_2\":\"MM\",\"currency_id\":2},{\"id\":147,\"name\":\"Namibia\",\"iso_code_2\":\"NA\",\"currency_id\":2},{\"id\":148,\"name\":\"Nauru\",\"iso_code_2\":\"NR\",\"currency_id\":2},{\"id\":149,\"name\":\"Nepal\",\"iso_code_2\":\"NP\",\"currency_id\":2},{\"id\":150,\"name\":\"Netherlands\",\"iso_code_2\":\"NL\",\"currency_id\":2},{\"id\":256,\"name\":\"Netherlands Antilles\",\"iso_code_2\":\"AN\",\"currency_id\":2},{\"id\":152,\"name\":\"New Caledonia\",\"iso_code_2\":\"NC\",\"currency_id\":2},{\"id\":153,\"name\":\"New Zealand\",\"iso_code_2\":\"NZ\",\"currency_id\":12},{\"id\":154,\"name\":\"Nicaragua\",\"iso_code_2\":\"NI\",\"currency_id\":2},{\"id\":155,\"name\":\"Niger\",\"iso_code_2\":\"NE\",\"currency_id\":2},{\"id\":156,\"name\":\"Nigeria\",\"iso_code_2\":\"NG\",\"currency_id\":2},{\"id\":157,\"name\":\"Niue\",\"iso_code_2\":\"NU\",\"currency_id\":2},{\"id\":158,\"name\":\"Norfolk Island\",\"iso_code_2\":\"NF\",\"currency_id\":11},{\"id\":159,\"name\":\"Northern Mariana Islands\",\"iso_code_2\":\"MP\",\"currency_id\":2},{\"id\":160,\"name\":\"Norway\",\"iso_code_2\":\"NO\",\"currency_id\":9},{\"id\":161,\"name\":\"Oman\",\"iso_code_2\":\"OM\",\"currency_id\":2},{\"id\":162,\"name\":\"Pakistan\",\"iso_code_2\":\"PK\",\"currency_id\":2},{\"id\":163,\"name\":\"Palau\",\"iso_code_2\":\"PW\",\"currency_id\":1},{\"id\":240,\"name\":\"Palestine, State of\",\"iso_code_2\":\"PS\",\"currency_id\":2},{\"id\":164,\"name\":\"Panama\",\"iso_code_2\":\"PA\",\"currency_id\":1},{\"id\":165,\"name\":\"Papua New Guinea\",\"iso_code_2\":\"PG\",\"currency_id\":2},{\"id\":166,\"name\":\"Paraguay\",\"iso_code_2\":\"PY\",\"currency_id\":2},{\"id\":167,\"name\":\"Peru\",\"iso_code_2\":\"PE\",\"currency_id\":2},{\"id\":168,\"name\":\"Philippines\",\"iso_code_2\":\"PH\",\"currency_id\":2},{\"id\":169,\"name\":\"Pitcairn\",\"iso_code_2\":\"PN\",\"currency_id\":2},{\"id\":170,\"name\":\"Poland\",\"iso_code_2\":\"PL\",\"currency_id\":2},{\"id\":171,\"name\":\"Portugal\",\"iso_code_2\":\"PT\",\"currency_id\":2},{\"id\":172,\"name\":\"Puerto Rico\",\"iso_code_2\":\"PR\",\"currency_id\":1},{\"id\":173,\"name\":\"Qatar\",\"iso_code_2\":\"QA\",\"currency_id\":2},{\"id\":174,\"name\":\"Réunion\",\"iso_code_2\":\"RE\",\"currency_id\":2},{\"id\":175,\"name\":\"Romania\",\"iso_code_2\":\"RO\",\"currency_id\":2},{\"id\":176,\"name\":\"Russian Federation\",\"iso_code_2\":\"RU\",\"currency_id\":16},{\"id\":177,\"name\":\"Rwanda\",\"iso_code_2\":\"RW\",\"currency_id\":2},{\"id\":248,\"name\":\"Saint Barthélemy\",\"iso_code_2\":\"BL\",\"currency_id\":2},{\"id\":197,\"name\":\"Saint Helena, Ascension and Tristan da Cunha\",\"iso_code_2\":\"SH\",\"currency_id\":2},{\"id\":178,\"name\":\"Saint Kitts and Nevis\",\"iso_code_2\":\"KN\",\"currency_id\":2},{\"id\":179,\"name\":\"Saint Lucia\",\"iso_code_2\":\"LC\",\"currency_id\":2},{\"id\":250,\"name\":\"Saint Martin (French part)\",\"iso_code_2\":\"MF\",\"currency_id\":2},{\"id\":198,\"name\":\"Saint Pierre and Miquelon\",\"iso_code_2\":\"PM\",\"currency_id\":2},{\"id\":180,\"name\":\"Saint Vincent and the Grenadines\",\"iso_code_2\":\"VC\",\"currency_id\":2},{\"id\":181,\"name\":\"Samoa\",\"iso_code_2\":\"WS\",\"currency_id\":2},{\"id\":182,\"name\":\"San Marino\",\"iso_code_2\":\"SM\",\"currency_id\":2},{\"id\":183,\"name\":\"Sao Tome and Principe\",\"iso_code_2\":\"ST\",\"currency_id\":2},{\"id\":184,\"name\":\"Saudi Arabia\",\"iso_code_2\":\"SA\",\"currency_id\":2},{\"id\":185,\"name\":\"Senegal\",\"iso_code_2\":\"SN\",\"currency_id\":2},{\"id\":241,\"name\":\"Serbia\",\"iso_code_2\":\"RS\",\"currency_id\":2},{\"id\":186,\"name\":\"Seychelles\",\"iso_code_2\":\"SC\",\"currency_id\":2},{\"id\":187,\"name\":\"Sierra Leone\",\"iso_code_2\":\"SL\",\"currency_id\":2},{\"id\":188,\"name\":\"Singapore\",\"iso_code_2\":\"SG\",\"currency_id\":1},{\"id\":253,\"name\":\"Sint Maarten (Dutch part)\",\"iso_code_2\":\"SX\",\"currency_id\":2},{\"id\":189,\"name\":\"Slovakia\",\"iso_code_2\":\"SK\",\"currency_id\":2},{\"id\":190,\"name\":\"Slovenia\",\"iso_code_2\":\"SI\",\"currency_id\":2},{\"id\":191,\"name\":\"Solomon Islands\",\"iso_code_2\":\"SB\",\"currency_id\":2},{\"id\":192,\"name\":\"Somalia\",\"iso_code_2\":\"SO\",\"currency_id\":2},{\"id\":193,\"name\":\"South Africa\",\"iso_code_2\":\"ZA\",\"currency_id\":2},{\"id\":194,\"name\":\"South Georgia and the South Sandwich Islands\",\"iso_code_2\":\"GS\",\"currency_id\":2},{\"id\":254,\"name\":\"South Sudan\",\"iso_code_2\":\"SS\",\"currency_id\":2},{\"id\":195,\"name\":\"Spain\",\"iso_code_2\":\"ES\",\"currency_id\":2},{\"id\":196,\"name\":\"Sri Lanka\",\"iso_code_2\":\"LK\",\"currency_id\":2},{\"id\":199,\"name\":\"Sudan\",\"iso_code_2\":\"SD\",\"currency_id\":2},{\"id\":200,\"name\":\"Suriname\",\"iso_code_2\":\"SR\",\"currency_id\":2},{\"id\":201,\"name\":\"Svalbard and Jan Mayen\",\"iso_code_2\":\"SJ\",\"currency_id\":2},{\"id\":202,\"name\":\"Swaziland\",\"iso_code_2\":\"SZ\",\"currency_id\":2},{\"id\":203,\"name\":\"Sweden\",\"iso_code_2\":\"SE\",\"currency_id\":18},{\"id\":204,\"name\":\"Switzerland\",\"iso_code_2\":\"CH\",\"currency_id\":13},{\"id\":205,\"name\":\"Syrian Arab Republic\",\"iso_code_2\":\"SY\",\"currency_id\":2},{\"id\":206,\"name\":\"Taiwan\",\"iso_code_2\":\"TW\",\"currency_id\":2},{\"id\":207,\"name\":\"Tajikistan\",\"iso_code_2\":\"TJ\",\"currency_id\":2},{\"id\":208,\"name\":\"Tanzania, United Republic of\",\"iso_code_2\":\"TZ\",\"currency_id\":2},{\"id\":209,\"name\":\"Thailand\",\"iso_code_2\":\"TH\",\"currency_id\":2},{\"id\":61,\"name\":\"Timor-Leste\",\"iso_code_2\":\"TL\",\"currency_id\":1},{\"id\":210,\"name\":\"Togo\",\"iso_code_2\":\"TG\",\"currency_id\":2},{\"id\":211,\"name\":\"Tokelau\",\"iso_code_2\":\"TK\",\"currency_id\":2},{\"id\":212,\"name\":\"Tonga\",\"iso_code_2\":\"TO\",\"currency_id\":2},{\"id\":213,\"name\":\"Trinidad and Tobago\",\"iso_code_2\":\"TT\",\"currency_id\":2},{\"id\":214,\"name\":\"Tunisia\",\"iso_code_2\":\"TN\",\"currency_id\":2},{\"id\":215,\"name\":\"Turkey\",\"iso_code_2\":\"TR\",\"currency_id\":2},{\"id\":216,\"name\":\"Turkmenistan\",\"iso_code_2\":\"TM\",\"currency_id\":2},{\"id\":217,\"name\":\"Turks and Caicos Islands\",\"iso_code_2\":\"TC\",\"currency_id\":1},{\"id\":218,\"name\":\"Tuvalu\",\"iso_code_2\":\"TV\",\"currency_id\":2},{\"id\":219,\"name\":\"Uganda\",\"iso_code_2\":\"UG\",\"currency_id\":2},{\"id\":220,\"name\":\"Ukraine\",\"iso_code_2\":\"UA\",\"currency_id\":2},{\"id\":221,\"name\":\"United Arab Emirates\",\"iso_code_2\":\"AE\",\"currency_id\":2},{\"id\":222,\"name\":\"United Kingdom\",\"iso_code_2\":\"GB\",\"currency_id\":3},{\"id\":258,\"name\":\"United Kingdom - Northern Ireland\",\"iso_code_2\":\"XI\",\"currency_id\":3},{\"id\":223,\"name\":\"United States\",\"iso_code_2\":\"US\",\"currency_id\":1},{\"id\":224,\"name\":\"United States Minor Outlying Islands\",\"iso_code_2\":\"UM\",\"currency_id\":1},{\"id\":225,\"name\":\"Uruguay\",\"iso_code_2\":\"UY\",\"currency_id\":2},{\"id\":226,\"name\":\"Uzbekistan\",\"iso_code_2\":\"UZ\",\"currency_id\":2},{\"id\":227,\"name\":\"Vanuatu\",\"iso_code_2\":\"VU\",\"currency_id\":2},{\"id\":229,\"name\":\"Venezuela, Bolivarian Republic of\",\"iso_code_2\":\"VE\",\"currency_id\":2},{\"id\":230,\"name\":\"Viet Nam\",\"iso_code_2\":\"VN\",\"currency_id\":2},{\"id\":231,\"name\":\"Virgin Islands, British\",\"iso_code_2\":\"VG\",\"currency_id\":1},{\"id\":232,\"name\":\"Virgin Islands, U.S.\",\"iso_code_2\":\"VI\",\"currency_id\":1},{\"id\":233,\"name\":\"Wallis and Futuna\",\"iso_code_2\":\"WF\",\"currency_id\":2},{\"id\":234,\"name\":\"Western Sahara\",\"iso_code_2\":\"EH\",\"currency_id\":2},{\"id\":235,\"name\":\"Yemen\",\"iso_code_2\":\"YE\",\"currency_id\":2},{\"id\":238,\"name\":\"Zambia\",\"iso_code_2\":\"ZM\",\"currency_id\":2},{\"id\":239,\"name\":\"Zimbabwe\",\"iso_code_2\":\"ZW\",\"currency_id\":1}]",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "localstorage",
-        "lifecycle": "added",
-        "key": "location_ref",
-        "value": "https://coopfib2c.b2clogin.com/coopfib2c.onmicrosoft.com/B2C_1A_SIGNUP_SIGNIN/oauth2/v2.0/authorize?client_id=0ff7d325-85e0-435b-b7c7-dcee3b3de0e9&redirect_uri=https://prenotalaspesa.coopfirenze.it/on/demandware.store/Sites-CoopFi-Site/it_IT/Login-OAuthReentryAzure&response_type=code+id_token&response_mode=query&scope=0ff7d325-85e0-435b-b7c7-dcee3b3de0e9%20offline_access%20openid&state=1538607697&ope=signup",
         "category": "LOCATION_AND_DEMOGRAPHICS"
       },
       {
@@ -98414,8 +97821,8 @@
       {
         "storage_type": "localstorage",
         "lifecycle": "removed",
-        "key": "analytics_data",
-        "value": "{\"country\":\"FR\",\"state\":\"\",\"state_code\":\"\",\"device_type\":\"desktop\",\"timestamp\":1787233874,\"stored_at\":1787233874788}",
+        "key": "omega_market_context",
+        "value": "{\"handle\":\"it\",\"id\":21216067771,\"country\":\"IT\"}",
         "category": "LOCATION_AND_DEMOGRAPHICS"
       },
       {
@@ -98428,36 +97835,8 @@
       {
         "storage_type": "localstorage",
         "lifecycle": "removed",
-        "key": "b.check",
-        "value": "{\"state\":{\"state\":true,\"ts\":\"2026-08-20T14:47:57.387Z\"}}",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "localstorage",
-        "lifecycle": "removed",
         "key": "omega_market_context",
         "value": "{\"handle\":\"it\",\"id\":21216067771,\"country\":\"IT\"}",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "localstorage",
-        "lifecycle": "removed",
-        "key": "analytics_data",
-        "value": "{\"country\":\"FR\",\"state\":\"\",\"state_code\":\"\",\"device_type\":\"desktop\",\"timestamp\":1787233934,\"stored_at\":1787233934811}",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "localstorage",
-        "lifecycle": "removed",
-        "key": "omega_market_context",
-        "value": "{\"handle\":\"it\",\"id\":21216067771,\"country\":\"IT\"}",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "localstorage",
-        "lifecycle": "removed",
-        "key": "b.check",
-        "value": "{\"state\":{\"state\":true,\"ts\":\"2026-08-20T15:47:14.198Z\"},\"transition\":{\"prevState\":true,\"prevTs\":\"2026-08-20T14:47:57.387Z\",\"currState\":false,\"currTs\":\"2026-08-20T14:48:31.034Z\"}}",
         "category": "LOCATION_AND_DEMOGRAPHICS"
       },
       {
@@ -98479,20 +97858,6 @@
         "lifecycle": "removed",
         "key": "SeStatisticSession",
         "value": "{\"session_id\":\"a19f8d9e-a846-4ea3-8a8a-cc7f372e46ee\",\"started\":1787248852,\"updated\":1787248852,\"expires\":1787252452,\"state\":\"new\",\"times_updated\":0,\"end_point_reached\":false}",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "localstorage",
-        "lifecycle": "removed",
-        "key": "b.check",
-        "value": "{\"state\":{\"state\":true,\"ts\":\"2026-08-20T18:05:44.933Z\"},\"transition\":{\"prevState\":true,\"prevTs\":\"2026-08-20T15:47:14.198Z\",\"currState\":false,\"currTs\":\"2026-08-20T15:47:33.945Z\"}}",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "localstorage",
-        "lifecycle": "removed",
-        "key": "analytics_data",
-        "value": "{\"country\":\"FR\",\"state\":\"\",\"state_code\":\"\",\"device_type\":\"desktop\",\"timestamp\":1787239891,\"stored_at\":1787239891892}",
         "category": "LOCATION_AND_DEMOGRAPHICS"
       },
       {
@@ -98561,13 +97926,6 @@
       {
         "storage_type": "sessionstorage",
         "lifecycle": "added",
-        "key": "__atomic-event-state",
-        "value": "{\"domain\":\"identity_UL\",\"timeStamp\":1025,\"timeOrigin\":1787237337708.7,\"duration\":1025,\"path\":\"/signin\",\"status\":\"Ok\",\"viewName\":\"email_login\",\"uiState\":\"ready\",\"task\":\"render_first_page\",\"flow\":\"login\",\"events\":[]}",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "sessionstorage",
-        "lifecycle": "added",
         "key": "__atomic-event-state-history",
         "value": "[{\"uiState\":\"waiting\",\"domain\":\"identity_UL\",\"events\":[],\"intent\":\"FIRST_PAGE_LOAD\",\"intentType\":\"render\",\"task\":\"render_first_page\",\"flow\":\"login\",\"path\":\"/signin\",\"timeStamp\":0,\"timeOrigin\":1787237337708.7,\"interactionStartTime\":0,\"viewName\":\"email_login\"},{\"domain\":\"identity_UL\",\"timeStamp\":1025,\"timeOrigin\":1787237337708.7,\"duration\":1025,\"path\":\"/signin\",\"status\":\"Ok\",\"viewName\":\"email_login\",\"uiState\":\"ready\",\"task\":\"render_first_page\",\"flow\":\"login\",\"events\":[]}]",
         "category": "LOCATION_AND_DEMOGRAPHICS"
@@ -98577,13 +97935,6 @@
         "lifecycle": "added",
         "key": "mi.pageViewSent.gtm_pgv",
         "value": "https://www.paypal.com/signin?intent=connect&ctxId=connect%3A87d22bc3324a4ccda642b26ec6706532&returnUri=https%3A%2F%2Fwww.paypal.com%2Fidapps%2Fconnect%2Fconsent%3FctxId%3DAAHAHuy8FME8_zaI4AcEPyW6kdA5K1EHUaRks9HrDu7xC2DMjyulGhxnHkzGAqZ8z5g62AypgOxkHCQ5EJI8CGuK%26client_id%3DAYLeR0p6XgNDifXEk8SoBUtp4DKC7rX3Q5oS-_htlwdKU1LiuL2-q-XLGnRi5DCM3U3olMsQgUyTBDx1%26scope%3Dopenid%2Bprofile%2Bemail%2Baddress%26redirect_uri%3Dhttps%253A%252F%252Fwww.lafeltrinelli.it%252Fpaypal%252Flogin-return%26response_type%3Dcode&flowId=d7078e7c998f42039b78d60c7ae6c443&country.x=IT&locale.x=it_IT&langTgl=it",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "sessionstorage",
-        "lifecycle": "modified",
-        "key": "qm_last_page",
-        "value": "https://www.vistaprint.it/il-mio-account/completamento-account?data=eyJlbWFpbCI6ImNocmlzLm1hcnRpbi5nZHByQGdtYWlsLmNvbSIsImlzRXhwbGljaXRPcHRPdXRSZXF1aXJlZCI6ZmFsc2UsImNvbnNlbnRWYXJpYXRpb24iOiJFWFBMSUNJVCIsImZpcnN0TmFtZSI6IkNocmlzIiwibGFzdE5hbWUiOiJNYXJ0aW4iLCJyZWRpcmVjdFVybCI6Imh0dHBzOi8vd3d3LnZpc3RhcHJpbnQuaXQvIiwib3JpZ2luVXJsIjoiaHR0cHM6Ly93d3cudmlzdGFwcmludC5pdC8ifQ%3D%3D&redirect_uri=https%3A%2F%2Faccount.vista.com%2Fcontinue&site=vistaprint&state=hKFo2SByZDZJT25CMS1sVkk4UHktUVQxcmNWZlZacEZvclFUOKFuqHJlZGlyZWN0o3RpZNkgeDVwOHNNWmoxMEJ2cGdlbFVfTVdoODRwOWNrZDRiSEqjY2lk2SBZaFdpWFdOMTJ1RFNlWW82MkJZMnVEMzV2V0xlRVR4MQ&wauth=eyJzaXRlIjoiVmlzdGFwcmludCIsImFub25SZWZlcmVuY2VUb2tlbiI6InYxLnlaOHlLNzFhdEkyQW5NXzdLTmp5YVdLYTVHVWVkbWhFdVR2OEhvbm92cWY2TVJlUnVMYzZXWWxZU250OVdraEtHVGQ4Z0MtdzdxYk4tZEpRWDl3X0FDN200MFM2UjNJRlpaZWpQWXlDLUdtWEM4X0hIOEFwaDFxMHJpSDJVSnFZbG1PVmlxaTNMdF9yQ1g3aW5mWUxmQWNrem1jOUVNU2FQdk9kMjV1NU9lTjRkQzVOMWNTdnhWQl8zMmlidThfc1ZwMExQN09hT09aU1lNQlpnUmI4TGlJX1o3aWJFbnVrQTlZN0VncFFnSEg3UzVjbVhOZ21sWmFJa1J4LVNWZmx3bGRqbE41Z3NLMGdFcFFZUk1Ed0pXVmc1RWZZT3RDb1hUOVh2UkthbUwyMmxleml1MkFPNVBhZnB5NS12dEVyMjBUREQ3ckhZSFFZb3B5akxWVDlzUSIsImFub255bW91c0lkIjoiSjViTmd3UTAwbnVCWFMwNkdFZG9BYS1ZOUh3YWdwWTZpR3dxYlpvYjl2aW4xIiwib3B0aW1pemVseUlkIjoiX2JhMTJjYTA0LTk2ZTgtNGQ2Mi04NDY0LTJkZTdhNTc0OTk3NiIsImN1bHR1cmUiOiJpdC1JVCIsInJlZGlyZWN0VXJsIjoiaHR0cHM6Ly93d3cudmlzdGFwcmludC5pdC8iLCJvcmlnaW5VcmwiOiJodHRwczovL3d3dy52aXN0YXByaW50Lml0LyIsImdhIjoiR0ExLjEuMTAxOTM4NTU3Ny4xNzg3MjA5NDg2IiwidmlzaXQiOiIwMTMxZDY2My1hNDg0LTQ0ZGMtYTk5YS03ODUyODY4M2NlYTgifQ%3D%3D",
         "category": "LOCATION_AND_DEMOGRAPHICS"
       },
       {
@@ -299611,32 +298962,32 @@
   "persistence_metrics": {
     "by_storage_type": {
       "cookies": {
-        "total_items": 4517,
+        "total_items": 4515,
         "added": 1441,
-        "modified": 2371,
-        "removed": 705,
-        "persistence_ratio": 0.8439229577152978
+        "modified": 2370,
+        "removed": 704,
+        "persistence_ratio": 0.8440753045404208
       },
       "indexeddb": {
-        "total_items": 43594,
+        "total_items": 43514,
         "added": 0,
         "modified": 0,
         "removed": 0,
         "persistence_ratio": 0.0
       },
       "localstorage": {
-        "total_items": 1789,
-        "added": 263,
+        "total_items": 1782,
+        "added": 262,
         "modified": 459,
-        "removed": 1067,
-        "persistence_ratio": 0.40357741755170484
+        "removed": 1061,
+        "persistence_ratio": 0.4046015712682379
       },
       "sessionstorage": {
-        "total_items": 931,
-        "added": 157,
-        "modified": 239,
+        "total_items": 929,
+        "added": 156,
+        "modified": 238,
         "removed": 535,
-        "persistence_ratio": 0.4253490870032223
+        "persistence_ratio": 0.4241119483315393
       }
     },
     "by_category": {
@@ -299662,11 +299013,11 @@
         "persistence_ratio": 0.0
       },
       "LOCATION_AND_DEMOGRAPHICS": {
-        "total_items": 157,
-        "added": 16,
-        "modified": 24,
-        "removed": 32,
-        "persistence_ratio": 0.25477707006369427
+        "total_items": 63,
+        "added": 14,
+        "modified": 22,
+        "removed": 25,
+        "persistence_ratio": 0.5714285714285714
       },
       "ID_SOLUTIONS_AND_EXCHANGES": {
         "total_items": 3098,
@@ -299676,11 +299027,11 @@
         "persistence_ratio": 0.16785022595222723
       },
       "NAVIGATION_HISTORY": {
-        "total_items": 1008,
+        "total_items": 1011,
         "added": 44,
         "modified": 60,
         "removed": 124,
-        "persistence_ratio": 0.10317460317460317
+        "persistence_ratio": 0.10286844708209693
       },
       "BEHAVIORAL_DATA": {
         "total_items": 28246,

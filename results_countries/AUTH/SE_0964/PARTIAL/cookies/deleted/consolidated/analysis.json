@@ -1,9 +1,9 @@
 {
-  "total_cookies": 627,
+  "total_cookies": 623,
   "direct_pii_count": 0,
-  "other_count": 627,
+  "other_count": 623,
   "lifetime_distribution": {
-    "Session": 615,
+    "Session": 611,
     "<6 months": 2,
     "6-18 months": 10
   },
@@ -30,7 +30,7 @@
       "Session": 7
     },
     "LOCATION_AND_DEMOGRAPHICS": {
-      "Session": 5
+      "Session": 1
     },
     "NAVIGATION_HISTORY": {
       "Session": 7
@@ -53,7 +53,7 @@
   },
   "httponly_distribution": {
     "False": 390,
-    "True": 237
+    "True": 233
   },
   "httponly_by_pii": {
     "BEHAVIORAL_DATA": {
@@ -78,7 +78,6 @@
       "True": 7
     },
     "LOCATION_AND_DEMOGRAPHICS": {
-      "True": 4,
       "False": 1
     },
     "NAVIGATION_HISTORY": {
@@ -106,7 +105,7 @@
     }
   },
   "secure_distribution": {
-    "True": 486,
+    "True": 482,
     "False": 141
   },
   "secure_by_pii": {
@@ -132,7 +131,6 @@
       "True": 7
     },
     "LOCATION_AND_DEMOGRAPHICS": {
-      "True": 4,
       "False": 1
     },
     "NAVIGATION_HISTORY": {
@@ -159,7 +157,7 @@
   },
   "samesite_distribution": {
     "No Restriction": 408,
-    "Lax": 180,
+    "Lax": 176,
     "Strict": 39
   },
   "samesite_by_pii": {
@@ -187,7 +185,7 @@
       "Lax": 1
     },
     "LOCATION_AND_DEMOGRAPHICS": {
-      "Lax": 5
+      "Lax": 1
     },
     "NAVIGATION_HISTORY": {
       "Lax": 7
@@ -216,7 +214,7 @@
   },
   "security_matrix": {
     "(False, True)": 249,
-    "(True, True)": 237,
+    "(True, True)": 233,
     "(False, False)": 141
   },
   "security_by_pii": {
@@ -245,7 +243,6 @@
       "Secure": 7
     },
     "LOCATION_AND_DEMOGRAPHICS": {
-      "Secure": 4,
       "Lowly Secure": 1
     },
     "NAVIGATION_HISTORY": {
@@ -276,7 +273,7 @@
     }
   },
   "thirdparty_distribution": {
-    "Third-Party": 608,
+    "Third-Party": 604,
     "First-Party": 19
   },
   "thirdparty_by_pii": {
@@ -300,7 +297,7 @@
       "Third-Party": 7
     },
     "LOCATION_AND_DEMOGRAPHICS": {
-      "Third-Party": 5
+      "Third-Party": 1
     },
     "NAVIGATION_HISTORY": {
       "Third-Party": 7
@@ -324,12 +321,12 @@
   },
   "thirdparty_httponly": {
     "Third-Party_False": 373,
-    "Third-Party_True": 235,
+    "Third-Party_True": 231,
     "First-Party_False": 17,
     "First-Party_True": 2
   },
   "thirdparty_secure": {
-    "Third-Party_True": 481,
+    "Third-Party_True": 477,
     "Third-Party_False": 127,
     "First-Party_False": 14,
     "First-Party_True": 5
@@ -338,7 +335,7 @@
     "Medium Risk": 381,
     "High Risk": 206,
     "Critical Risk": 2,
-    "Low Risk": 38
+    "Low Risk": 34
   },
   "risk_by_pii": {
     "BEHAVIORAL_DATA": {
@@ -362,7 +359,6 @@
       "Low Risk": 7
     },
     "LOCATION_AND_DEMOGRAPHICS": {
-      "Low Risk": 4,
       "Medium Risk": 1
     },
     "NAVIGATION_HISTORY": {
@@ -400,10 +396,10 @@
     "cfdj8d3": 27,
     "hjsession": 21,
     "gat": 18,
-    "secure": 17,
     "utag": 16,
     "main": 16,
-    "next": 16
+    "networkprobelimit": 15,
+    "secure": 13
   },
   "content_hierarchy": {
     "json_structured": {
@@ -419,7 +415,6 @@
       "IDENTITY_TRACKING": 73,
       "ID_SOLUTIONS_AND_EXCHANGES": 6,
       "INFRASTRUCTURE": 2,
-      "LOCATION_AND_DEMOGRAPHICS": 4,
       "NAVIGATION_HISTORY": 4,
       "SECURITY_AND_BOT_MITIGATION": 148,
       "TECHNICAL_PASSWORDS": 9,
@@ -471,7 +466,7 @@
   },
   "content_types": {
     "json_structured": 24,
-    "complex_string": 348,
+    "complex_string": 344,
     "number": 24,
     "boolean": 80,
     "language_code": 5,
@@ -538,7 +533,6 @@
     "eyeota.net": 2,
     "sportadmin.se": 2,
     "wikipedia.org": 10,
-    "afaforsakring.se": 16,
     "iranianlawyer.info": 2,
     "wwf.se": 4,
     "majblomman.se": 2,
@@ -586,6 +580,7 @@
     "quora.com": 2,
     "visma.com": 5,
     "gislaved.se": 9,
+    "afaforsakring.se": 12,
     "svenskaportal.se": 6,
     "telge.se": 4,
     "alingsas.se": 4,
@@ -964,11 +959,6 @@
       "INFRASTRUCTURE",
       "bokio.se",
       1
-    ],
-    [
-      "LOCATION_AND_DEMOGRAPHICS",
-      "afaforsakring.se",
-      4
     ],
     [
       "LOCATION_AND_DEMOGRAPHICS",
@@ -1846,11 +1836,7 @@
       2.0
     ],
     "LOCATION_AND_DEMOGRAPHICS": [
-      5.835047559275627,
-      5.841374237515277,
-      5.875510586664675,
-      1.0,
-      5.819054862561478
+      1.0
     ],
     "NAVIGATION_HISTORY": [
       2.807354922057604,
@@ -2264,6 +2250,6 @@
   "advanced_risk_levels": {
     "High": 127,
     "Low": 321,
-    "Medium": 179
+    "Medium": 175
   }
 }

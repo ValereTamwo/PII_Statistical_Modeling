@@ -4,18 +4,18 @@
   "user_id": "DK_0199",
   "policy": "PARTIAL",
   "summary": {
-    "total_items": 14583,
+    "total_items": 14557,
     "by_storage_type": {
-      "cookies": 4221,
+      "cookies": 4217,
       "indexeddb": 7447,
-      "localstorage": 2151,
-      "sessionstorage": 764
+      "localstorage": 2133,
+      "sessionstorage": 760
     },
     "by_category": {
       "IDENTITY_TRACKING.vendor_adcalls_p2_expansion": 1,
       "DIRECT_PII_KEYS": 117,
       "ID_SOLUTIONS_AND_EXCHANGES": 1251,
-      "LOCATION_AND_DEMOGRAPHICS": 358,
+      "LOCATION_AND_DEMOGRAPHICS": 332,
       "IDENTITY_TRACKING.user_id_key": 7,
       "TECHNICAL_PASSWORDS": 398,
       "NAVIGATION_HISTORY": 239,
@@ -42,9 +42,9 @@
       "ID_SOLUTIONS_AND_EXCHANGES.shared_id": 1
     },
     "by_lifecycle": {
-      "added": 2962,
-      "modified": 2135,
-      "removed": 2039,
+      "added": 2957,
+      "modified": 2134,
+      "removed": 2019,
       "unknown": 7447
     },
     "uncategorized_by_storage_type": {
@@ -54,28 +54,28 @@
       "sessionstorage": 23
     },
     "uncategorized_items": 5174,
-    "total_items_with_uncategorized": 19757,
+    "total_items_with_uncategorized": 19731,
     "cookie_security": {
-      "total_cookies": 4221,
+      "total_cookies": 4217,
       "httponly_distribution": {
-        "False": 2734,
+        "False": 2730,
         "True": 1487
       },
       "secure_distribution": {
-        "True": 3209,
+        "True": 3205,
         "False": 1012
       },
       "samesite_distribution": {
         "No Restriction": 2447,
-        "Lax": 1560,
+        "Lax": 1556,
         "Strict": 214
       },
       "thirdparty_distribution": {
-        "Third-Party": 3001,
-        "First-Party": 1220
+        "Third-Party": 2998,
+        "First-Party": 1219
       },
       "security_posture_distribution": {
-        "Partially Secure": 1826,
+        "Partially Secure": 1822,
         "Lowly Secure": 960,
         "Secure": 1435
       },
@@ -133,20 +133,20 @@
           }
         },
         "LOCATION_AND_DEMOGRAPHICS": {
-          "total": 22,
+          "total": 18,
           "httponly_true": 2,
-          "httponly_false": 20,
-          "secure_true": 17,
+          "httponly_false": 16,
+          "secure_true": 13,
           "secure_false": 5,
-          "thirdparty_true": 12,
-          "thirdparty_false": 10,
+          "thirdparty_true": 9,
+          "thirdparty_false": 9,
           "samesite": {
-            "Lax": 14,
+            "Lax": 10,
             "No Restriction": 8
           },
           "security_posture": {
             "Lowly Secure": 4,
-            "Partially Secure": 17,
+            "Partially Secure": 13,
             "Secure": 1
           }
         },
@@ -56393,19 +56393,6 @@
       {
         "storage_type": "cookies",
         "lifecycle": "added",
-        "key": "gwxAuthCheck",
-        "value": "{\"isCDXSessionLoggedOut\":{\"state\":false%2C\"responseCode\":200%2C\"url\":\"https://www.sony.dk/pulse/displayname?_=1790749363144&appId=GWX-EW\"}%2C\"state\":\"logged-out\"}",
-        "category": "LOCATION_AND_DEMOGRAPHICS",
-        "domain": "www.sony.dk",
-        "httpOnly": false,
-        "secure": true,
-        "sameSite": "Lax",
-        "thirdparty": "Third-Party",
-        "security_posture": "Partially Secure"
-      },
-      {
-        "storage_type": "cookies",
-        "lifecycle": "added",
         "key": "aep_usuc_f",
         "value": "site=fra&c_tp=EUR&region=FR&b_locale=fr_FR",
         "category": "LOCATION_AND_DEMOGRAPHICS",
@@ -56471,19 +56458,6 @@
       {
         "storage_type": "cookies",
         "lifecycle": "added",
-        "key": "CookieInformationConsent",
-        "value": "{\"website_uuid\":\"34de0649-ba19-49e5-bf71-7e61257f381c\",\"timestamp\":\"2026-09-23T22:53:34.390Z\",\"consent_url\":\"https://auth.danlon.dk/auth/realms/danlon/protocol/openid-connect/auth?response_type=code&client_id=danlon&scope=openid+email&redirect_uri=https%3A%2F%2Fapp.danlon.dk%2Fapp%2Flog-ind&state=f2074dfa09e74a664c06875e51da7ac6ba682354\",\"consent_website\":\"danlon.dk\",\"consent_domain\":\"auth.danlon.dk\",\"user_uid\":\"de4244b2-5f37-43d7-bf1a-d1db4f394ed6\",\"consents_approved\":[\"cookie_cat_necessary\",\"cookie_cat_functional\"],\"consents_denied\":[],\"user_agent\":\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"}",
-        "category": "LOCATION_AND_DEMOGRAPHICS",
-        "domain": "app.danlon.dk",
-        "httpOnly": false,
-        "secure": true,
-        "sameSite": "Lax",
-        "thirdparty": "First-Party",
-        "security_posture": "Partially Secure"
-      },
-      {
-        "storage_type": "cookies",
-        "lifecycle": "added",
         "key": "locale",
         "value": "en",
         "category": "LOCATION_AND_DEMOGRAPHICS",
@@ -56530,32 +56504,6 @@
         "httpOnly": false,
         "secure": true,
         "sameSite": "No Restriction",
-        "thirdparty": "Third-Party",
-        "security_posture": "Partially Secure"
-      },
-      {
-        "storage_type": "cookies",
-        "lifecycle": "added",
-        "key": "CookieInformationConsent",
-        "value": "{\"website_uuid\":\"0ada6a3a-7294-4854-b676-9c734918cfec\",\"timestamp\":\"2026-10-01T08:30:49.624Z\",\"consent_url\":\"https://accounts.danfoss.com/u/login?state=hKFo2SBLNFN0Z2N1a0ctMXFfUHJWXzRBUU5EOHJtSUlja215Y6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIFY0dFIwXzdZY1JZVkJoR2JEYi1RVnZFS0IwQjZoRjVCo2NpZNkgd3NvR3doREpSV28za09WVGxYdEhTOUlGNEdRRHZZYWE#\",\"consent_website\":\"DCE - DIP prod\",\"consent_domain\":\"accounts.danfoss.com\",\"user_uid\":\"13ff80e7-980a-41f8-838b-1fbd0ef40b5b\",\"consents_approved\":[\"cookie_cat_necessary\",\"cookie_cat_functional\",\"cookie_cat_statistic\",\"cookie_cat_marketing\",\"cookie_cat_unclassified\"],\"consents_denied\":[],\"user_agent\":\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"}",
-        "category": "LOCATION_AND_DEMOGRAPHICS",
-        "domain": "accounts.danfoss.com",
-        "httpOnly": false,
-        "secure": true,
-        "sameSite": "Lax",
-        "thirdparty": "Third-Party",
-        "security_posture": "Partially Secure"
-      },
-      {
-        "storage_type": "cookies",
-        "lifecycle": "added",
-        "key": "CookieInformationConsent",
-        "value": "{\"website_uuid\":\"0ada6a3a-7294-4854-b676-9c734918cfec\",\"timestamp\":\"2026-10-01T08:30:49.624Z\",\"consent_url\":\"https://accounts.danfoss.com/u/login?state=hKFo2SBLNFN0Z2N1a0ctMXFfUHJWXzRBUU5EOHJtSUlja215Y6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIFY0dFIwXzdZY1JZVkJoR2JEYi1RVnZFS0IwQjZoRjVCo2NpZNkgd3NvR3doREpSV28za09WVGxYdEhTOUlGNEdRRHZZYWE#\",\"consent_website\":\"DCE - DIP prod\",\"consent_domain\":\"accounts.danfoss.com\",\"user_uid\":\"13ff80e7-980a-41f8-838b-1fbd0ef40b5b\",\"consents_approved\":[\"cookie_cat_necessary\",\"cookie_cat_functional\",\"cookie_cat_statistic\",\"cookie_cat_marketing\",\"cookie_cat_unclassified\"],\"consents_denied\":[],\"user_agent\":\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"}",
-        "category": "LOCATION_AND_DEMOGRAPHICS",
-        "domain": "my.danfoss.com",
-        "httpOnly": false,
-        "secure": true,
-        "sameSite": "Lax",
         "thirdparty": "Third-Party",
         "security_posture": "Partially Secure"
       },
@@ -58318,13 +58266,6 @@
       {
         "storage_type": "localstorage",
         "lifecycle": "added",
-        "key": "flight-search-form-state",
-        "value": "{\"timestamp\":1790797878092,\"tripType\":\"return\",\"airportDeparture\":\"Vágar FAE\",\"airportArrival\":\"\",\"airportDepartureMulti\":\"\",\"airportArrivalMulti\":\"\",\"departureDate\":null,\"returnDate\":null,\"multiDepartureDate\":null,\"manualGuests\":{\"adults\":1,\"children\":0,\"infants\":0},\"view\":\"manual\",\"familySelfChecked\":true,\"familySelectedContactIds\":[],\"searchSettings\":{\"directFlights\":false,\"promoCode\":\"\"}}",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "localstorage",
-        "lifecycle": "added",
         "key": "signals.nodals.ai",
         "value": "{\"createdAt\":1790804563627,\"data\":{\"facts\":{\"browser.name\":\"chrome\",\"device.type\":\"desktop\",\"device.os\":\"linux\",\"geo.country\":\"fr\"},\"schemaVersion\":1,\"meta\":{\"ttl\":3600},\"deps\":{\"1.121.0\":\"https://static.nodals.io/lib/prebid-rtd/1.121.0/engine.js\"},\"campaigns\":[{\"id\":\"c0fda60e\",\"type\":\"3\",\"ags\":[{\"id\":\"df0324a4\",\"rules\":{\"conditions\":{}},\"ads\":[{\"id\":\"6113f91e\",\"rules\":{\"conditions\":{\"ANY\":[]}}}]}],\"rules\":{\"conditions\":{}},\"aid\":\"3a380468\"},{\"id\":\"71d9700c\",\"type\":\"2\",\"ags\":[{\"id\":\"b56d830c\",\"rules\":{\"conditions\":{}},\"ads\":[{\"id\":\"9481c55f\",\"rules\":{\"conditions\":{\"ANY\":[]}}}]}],\"rules\":{\"conditions\":{}},\"aid\":\"3a380468\"},{\"id\":\"18ac5e48\",\"type\":\"4\",\"ags\":[{\"id\":\"3228ca21\",\"eid\":\"7358499089\",\"rules\":{\"conditions\":{\"ALL\":[{\"fact\":\"placement.adunit\",\"op\":\"anypath\",\"val\":[\"/10518929/tmnp.AndroidCentral\",\"/10518929/tmnp.iMore\",\"/10518929/tmnp.WPcentral\",\"/10518929/Tech_T3\",\"/10518929/Games_PC_Gamer\",\"/10518929/Games_GamesRadar\",\"/10518929/Tech_Whathifi\",\"/10518929/Tech_Toms_Hardware\",\"/10518929/Laptop_Mag\",\"/10518929/nexttv\"]},{\"fact\":\"geo.country\",\"op\":\"anyin\",\"val\":[\"us\"]},{\"fact\":\"page.kvs.IDS\",\"op\":\"in\",\"val\":\"0\"},{\"fact\":\"page.kvs.abs\",\"op\":\"in\",\"val\":\"51008758\"}],\"ANY\":[],\"NONE\":[{\"fact\":\"placement.adunit\",\"op\":\"anypath\",\"val\":[\"/10518929/Games_GamesRadar/amp_story\",\"/10518929/Games_PC_Gamer/amp_story\",\"/10518929/Games_PC_Gamer/email\",\"/10518929/Games_PC_Gamer/mail\",\"/10518929/Tech_T3/ee\",\"/10518929/Tech_T3/email\",\"/10518929/Tech_T3/halfords\",\"/10518929/Tech_T3/mail\",\"/10518929/Tech_T3/yourmobilelife\",\"/10518929/tmnp.AndroidCentral/fbia\",\"/10518929/tmnp.AndroidCentral/passback\",\"/10518929/tmnp.WPcentral/passback\",\"/10518929/tmnp.WPcentral/streamspread\",\"/10518929/tmnp.iMore/Newsletter_Test\",\"/10518929/tmnp.iMore/aserti\",\"/10518929/tmnp.iMore/passback\",\"/10518929/tmnp.iMore/streamspread\"]},{\"fact\":\"page.kvs.expected_bot_traffic\",\"op\":\"in\",\"val\":\"true\"},{\"fact\":\"page.kvs.adshield\",\"op\":\"in\",\"val\":\"adshield\"},{\"fact\":\"page.kvs.up_recovery\",\"op\":\"in\",\"val\":\"true\"}]}},\"ads\":[{\"id\":\"1afd79cb\",\"eid\":\"138565025280\",\"rules\":{\"conditions\":{\"ALL\":[{\"fact\":\"placement.sizes\",\"op\":\"anyin\",\"val\":[\"300x250\"]}],\"ANY\":[]}}},{\"id\":\"e23bb1ee\",\"eid\":\"138565025469\",\"rules\":{\"conditions\":{\"ALL\":[{\"fact\":\"placement.sizes\",\"op\":\"anyin\",\"val\":[\"320x50\"]}],\"ANY\":[]}}},{\"id\":\"c88891ec\",\"eid\":\"138565025487\",\"rules\":{\"conditions\":{\"ALL\":[{\"fact\":\"placement.sizes\",\"op\":\"anyin\",\"val\":[\"728x90\"]}],\"ANY\":[]}}},{\"id\":\"70f119aa\",\"eid\":\"138565998934\",\"rules\":{\"conditions\":{\"ALL\":[{\"fact\":\"placement.sizes\",\"op\":\"anyin\",\"val\":[\"300x600\"]}],\"ANY\":[]}}}]}],\"rules\":{\"conditions\":{}},\"bid\":256,\"aid\":\"8d448668\"},{\"id\":\"046c967c\",\"type\":\"4\",\"ags\":[{\"id\":\"17f7dc65\",\"eid\":\"7294012945\",\"rules\":{\"conditions\":{\"ALL\":[{\"fact\":\"placement.adunit\",\"op\":\"anypath\",\"val\":[\"/10518929/Real_Homes\",\"/10518929/livingetc\",\"/10518929/countrylife\",\"/10518929/goodtoknow\",\"/10518929/idealhome\",\"/10518929/womanandhome\",\"/10518929/homesandgardens\",\"/10518929/marieclairecom\",\"/10518929/whowhatwear\",\"/10518929/gardeningknowhow\"]},{\"fact\":\"geo.country\",\"op\":\"anyin\",\"val\":[\"us\"]}],\"ANY\":[],\"NONE\":[{\"fact\":\"placement.adunit\",\"op\":\"anypath\",\"val\":[\"/10518929/countrylife/competitions\",\"/10518929/countrylife/passback\",\"/10518929/goodtoknow/competition\",\"/10518929/goodtoknow/passback\",\"/10518929/homesandgardens/competition\",\"/10518929/homesandgardens/passback\",\"/10518929/idealhome/competition\",\"/10518929/idealhome/passback\",\"/10518929/livingetc/competition\",\"/10518929/livingetc/passback\",\"/10518929/marieclairecom/passback\",\"/10518929/womanandhome/passback\"]},{\"fact\":\"page.kvs.kw\",\"op\":\"in\",\"val\":\"force-ad-blanks\"},{\"fact\":\"page.kvs._slot_type\",\"op\":\"in\",\"val\":\"sponsored\"},{\"fact\":\"page.kvs.expected_bot_traffic\",\"op\":\"in\",\"val\":\"true\"},{\"fact\":\"page.kvs.IDS\",\"op\":\"in\",\"val\":\"1\"},{\"fact\":\"page.kvs.up_recovery\",\"op\":\"in\",\"val\":\"true\"},{\"fact\":\"page.kvs.adshield\",\"op\":\"in\",\"val\":\"adshield\"}]}},\"ads\":[{\"id\":\"c1a134b3\",\"eid\":\"138555394535\",\"rules\":{\"conditions\":{\"ALL\":[{\"fact\":\"placement.sizes\",\"op\":\"anyin\",\"val\":[\"970x250\"]}],\"ANY\":[]}}},{\"id\":\"4da9aabc\",\"eid\":\"138555512658\",\"rules\":{\"conditions\":{\"ALL\":[{\"fact\":\"placement.sizes\",\"op\":\"anyin\",\"val\":[\"320x50\"]}],\"ANY\":[]}}},{\"id\":\"a36c5c44\",\"eid\":\"138555708500\",\"rules\":{\"conditions\":{\"ALL\":[{\"fact\":\"placement.sizes\",\"op\":\"anyin\",\"val\":[\"728x90\"]}],\"ANY\":[]}}},{\"id\":\"19a1884e\",\"eid\":\"138555709544\",\"rules\":{\"conditions\":{\"ALL\":[{\"fact\":\"placement.sizes\",\"op\":\"anyin\",\"val\":[\"300x250\"]}],\"ANY\":[]}}},{\"id\":\"6f8999b7\",\"eid\":\"138556489228\",\"rules\":{\"conditions\":{\"ALL\":[{\"fact\":\"placement.sizes\",\"op\":\"anyin\",\"val\":[\"300x600\"]}],\"ANY\":[]}}},{\"id\":\"99a22fc8\",\"eid\":\"138615238151\",\"rules\":{\"conditions\":{\"ALL\":[{\"fact\":\"placement.sizes\",\"op\":\"anyin\",\"val\":[\"320x50\"]}],\"ANY\":[]}}},{\"id\":\"a56b3f20\",\"eid\":\"138615238154\",\"rules\":{\"conditions\":{\"ALL\":[{\"fact\":\"placement.sizes\",\"op\":\"anyin\",\"val\":[\"728x90\"]}],\"ANY\":[]}}},{\"id\":\"9cb3e247\",\"eid\":\"138615238925\",\"rules\":{\"conditions\":{\"ALL\":[{\"fact\":\"placement.sizes\",\"op\":\"anyin\",\"val\":[\"300x250\"]}],\"ANY\":[]}}},{\"id\":\"a768db2a\",\"eid\":\"138615240539\",\"rules\":{\"conditions\":{\"ALL\":[{\"fact\":\"placement.sizes\",\"op\":\"anyin\",\"val\":[\"970x250\"]}],\"ANY\":[]}}},{\"id\":\"addc5f7e\",\"eid\":\"138615240869\",\"rules\":{\"conditions\":{\"ALL\":[{\"fact\":\"placement.sizes\",\"op\":\"anyin\",\"val\":[\"320x50\"]}],\"ANY\":[]}}},{\"id\":\"fdd64ab6\",\"eid\":\"138615240881\",\"rules\":{\"conditions\":{\"ALL\":[{\"fact\":\"placement.sizes\",\"op\":\"anyin\",\"val\":[\"300x600\"]}],\"ANY\":[]}}},{\"id\":\"e606cfff\",\"eid\":\"138615983185\",\"rules\":{\"conditions\":{\"ALL\":[{\"fact\":\"placement.sizes\",\"op\":\"anyin\",\"val\":[\"300x250\"]}],\"ANY\":[]}}},{\"id\":\"268aef34\",\"eid\":\"138615984694\",\"rules\":{\"conditions\":{\"ALL\":[{\"fact\":\"placement.sizes\",\"op\":\"anyin\",\"val\":[\"300x600\"]}],\"ANY\":[]}}},{\"id\":\"9ef7ad87\",\"eid\":\"138615986293\",\"rules\":{\"conditions\":{\"ALL\":[{\"fact\":\"placement.sizes\",\"op\":\"anyin\",\"val\":[\"728x90\"]}],\"ANY\":[]}}}]}],\"rules\":{\"conditions\":{}},\"bid\":2773,\"aid\":\"a9a14835\"},{\"id\":\"393cf6d7\",\"type\":\"4\",\"ags\":[{\"id\":\"b3b672bf\",\"eid\":\"7214680513\",\"rules\":{\"conditions\":{\"ALL\":[{\"fact\":\"placement.adunit\",\"op\":\"anypath\",\"val\":[\"/10518929/tmnp.AndroidCentral\",\"/10518929/tmnp.iMore\",\"/10518929/tmnp.WPcentral\",\"/10518929/tmn.aat\",\"/10518929/Tech_TechRadar\",\"/10518929/Tech_T3\",\"/10518929/Tech_Whathifi\",\"/10518929/Tech_Toms_Guide\",\"/10518929/Tech_Toms_Hardware\",\"/10518929/Laptop_Mag\"]},{\"fact\":\"geo.country\",\"op\":\"anyin\",\"val\":[\"us\"]}],\"ANY\":[],\"NONE\":[{\"fact\":\"placement.adunit\",\"op\":\"anypath\",\"val\":[\"/10518929/Tech_T3/ee\",\"/10518929/Tech_T3/email\",\"/10518929/Tech_T3/halfords\",\"/10518929/Tech_T3/mail\",\"/10518929/Tech_T3/yourmobilelife\",\"/10518929/Tech_TechRadar/ee\",\"/10518929/Tech_TechRadar/email\",\"/10518929/Tech_TechRadar/halfords\",\"/10518929/Tech_TechRadar/hub\",\"/10518929/Tech_TechRadar/mail\",\"/10518929/Tech_TechRadar/trpro/email\",\"/10518929/Tech_TechRadar/trpro/mail\",\"/10518929/Tech_TechRadar/trproemail\",\"/10518929/Tech_TechRadar/trpromail\",\"/10518929/tmn.aat/eyeo\",\"/10518929/tmnp.AndroidCentral/fbia\",\"/10518929/tmnp.AndroidCentral/passback\",\"/10518929/tmnp.WPcentral/passback\",\"/10518929/tmnp.WPcentral/streamspread\",\"/10518929/tmnp.iMore/Newsletter_Test\",\"/10518929/tmnp.iMore/aserti\",\"/10518929/tmnp.iMore/passback\",\"/10518929/tmnp.iMore/streamspread\"]},{\"fact\":\"page.kvs.up_recovery\",\"op\":\"in\",\"val\":\"true\"},{\"fact\":\"page.kvs.adshield\",\"op\":\"in\",\"val\":\"adshield\"},{\"fact\":\"page.kvs.IDS\",\"op\":\"in\",\"val\":\"1\"}]}},\"ads\":[{\"id\":\"2d7ae88f\",\"eid\":\"138545420129\",\"rules\":{\"conditions\":{\"ALL\":[{\"fact\":\"placement.sizes\",\"op\":\"anyin\",\"val\":[\"320x50\"]}],\"ANY\":[]}}},{\"id\":\"46541e2b\",\"eid\":\"138546043609\",\"rules\":{\"conditions\":{\"ALL\":[{\"fact\":\"placement.sizes\",\"op\":\"anyin\",\"val\":[\"300x250\"]}],\"ANY\":[]}}},{\"id\":\"5d09cd40\",\"eid\":\"138546043846\",\"rules\":{\"conditions\":{\"ALL\":[{\"fact\":\"placement.sizes\",\"op\":\"anyin\",\"val\":[\"300x600\"]}],\"ANY\":[]}}},{\"id\":\"4a539177\",\"eid\":\"138546044071\",\"rules\":{\"conditions\":{\"ALL\":[{\"fact\":\"placement.sizes\",\"op\":\"anyin\",\"val\":[\"970x250\"]}],\"ANY\":[]}}}]}],\"rules\":{\"conditions\":{}},\"bid\":197,\"aid\":\"eb8e5704\"},{\"id\":\"8a90ea94\",\"type\":\"4\",\"ags\":[{\"id\":\"176a3d7b\",\"eid\":\"7393922552\",\"rules\":{\"conditions\":{\"ALL\":[{\"fact\":\"placement.adunit\",\"op\":\"anypath\",\"val\":[\"/10518929/Tech_Toms_Guide\",\"/10518929/Tech_TechRadar\",\"/10518929/tmnp.iMore\",\"/10518929/tmn.aat\",\"/10518929/Tech_T3\",\"/10518929/Tech_Toms_Hardware\",\"/10518929/Laptop_Mag\"]},{\"fact\":\"geo.country\",\"op\":\"anyin\",\"val\":[\"us\"]},{\"fact\":\"page.kvs.VLP\",\"op\":\"anyin\",\"val\":[\"10\",\"6\",\"9\",\"7\",\"8\"]}],\"ANY\":[],\"NONE\":[{\"fact\":\"placement.adunit\",\"op\":\"anypath\",\"val\":[\"/10518929/tmnp.AndroidCentral/Forums\",\"/10518929/Tech_Toms_Hardware/Forums\",\"/10518929/tmnp.WPcentral/Forums\",\"/10518929/Tech_Toms_Guide/Forums\",\"/10518929/tmnp.iMore/forums\",\"/10518929/Tech_Whathifi/forums/forums\",\"/10518929/tmnp.iMore/forum_thread\",\"/10518929/tmnp.AndroidCentral/forum_thread\",\"/10518929/tmnp.WPcentral/forum_thread\",\"/10518929/tmnp.AndroidCentral/forum_post\",\"/10518929/tmnp.iMore/forum_post\",\"/10518929/tmnp.WPcentral/forum_post\",\"/10518929/tmnp.WPcentral/forum_index\",\"/10518929/tmnp.AndroidCentral/forum_index\",\"/10518929/tmnp.iMore/forum_index\",\"/10518929/tmnp.techspot/forums/forum_home\",\"/10518929/tmnp.iMore/amp/forum\",\"/10518929/tmnp.AndroidCentral/amp/forum\",\"/10518929/Tech_T3/ee\",\"/10518929/Tech_T3/email\",\"/10518929/Tech_T3/halfords\",\"/10518929/Tech_T3/mail\",\"/10518929/Tech_T3/yourmobilelife\",\"/10518929/Tech_TechRadar/ee\",\"/10518929/Tech_TechRadar/email\",\"/10518929/Tech_TechRadar/halfords\",\"/10518929/Tech_TechRadar/hub\",\"/10518929/Tech_TechRadar/mail\",\"/10518929/Tech_TechRadar/trpro/email\",\"/10518929/Tech_TechRadar/trpro/mail\",\"/10518929/Tech_TechRadar/trproemail\",\"/10518929/Tech_TechRadar/trpromail\",\"/10518929/tmn.aat/eyeo\",\"/10518929/tmnp.iMore/Newsletter_Test\",\"/10518929/tmnp.iMore/aserti\",\"/10518929/tmnp.iMore/passback\",\"/10518929/tmnp.iMore/streamspread\"]},{\"fact\":\"page.kvs.adshield\",\"op\":\"in\",\"val\":\"adshield\"},{\"fact\":\"page.kvs.up_recovery\",\"op\":\"in\",\"val\":\"true\"}]}},\"ads\":[{\"id\":\"12315ba3\",\"eid\":\"138571086564\",\"rules\":{\"conditions\":{\"ALL\":[{\"fact\":\"placement.sizes\",\"op\":\"anyin\",\"val\":[\"300x600\"]}],\"ANY\":[]}}},{\"id\":\"89897030\",\"eid\":\"138571086600\",\"rules\":{\"conditions\":{\"ALL\":[{\"fact\":\"placement.sizes\",\"op\":\"anyin\",\"val\":[\"970x250\"]}],\"ANY\":[]}}},{\"id\":\"a7ec3cbd\",\"eid\":\"138571086618\",\"rules\":{\"conditions\":{\"ALL\":[{\"fact\":\"placement.sizes\",\"op\":\"anyin\",\"val\":[\"320x50\"]}],\"ANY\":[]}}},{\"id\":\"bca6c457\",\"eid\":\"138571196162\",\"rules\":{\"conditions\":{\"ALL\":[{\"fact\":\"placement.sizes\",\"op\":\"anyin\",\"val\":[\"728x90\"]}],\"ANY\":[]}}},{\"id\":\"defb1cb3\",\"eid\":\"138572073682\",\"rules\":{\"conditions\":{\"ALL\":[{\"fact\":\"placement.sizes\",\"op\":\"anyin\",\"val\":[\"300x250\"]}],\"ANY\":[]}}}]}],\"rules\":{\"conditions\":{}},\"bid\":4119,\"aid\":\"02759b4c\"},{\"id\":\"0f0979c2\",\"type\":\"4\",\"ags\":[{\"id\":\"77942060\",\"eid\":\"7380562551\",\"rules\":{\"conditions\":{\"ALL\":[{\"fact\":\"placement.adunit\",\"op\":\"anypath\",\"val\":[\"/10518929/Tech_TechRadar\",\"/10518929/Games_PC_Gamer\"]},{\"fact\":\"geo.country\",\"op\":\"anyin\",\"val\":[\"gb\"]},{\"fact\":\"page.kvs.permutive\",\"op\":\"anyin\",\"val\":[\"81746\",\"81997\"]}],\"ANY\":[],\"NONE\":[{\"fact\":\"placement.adunit\",\"op\":\"anypath\",\"val\":[\"/10518929/Games_PC_Gamer/amp_story\",\"/10518929/Games_PC_Gamer/email\",\"/10518929/Games_PC_Gamer/mail\",\"/10518929/Tech_TechRadar/ee\",\"/10518929/Tech_TechRadar/email\",\"/10518929/Tech_TechRadar/halfords\",\"/10518929/Tech_TechRadar/hub\",\"/10518929/Tech_TechRadar/mail\",\"/10518929/Tech_TechRadar/trpro/email\",\"/10518929/Tech_TechRadar/trpro/mail\",\"/10518929/Tech_TechRadar/trproemail\",\"/10518929/Tech_TechRadar/trpromail\"]},{\"fact\":\"page.kvs.adshield\",\"op\":\"in\",\"val\":\"adshield\"}]}},\"ads\":[{\"id\":\"c73a3112\",\"eid\":\"138565080769\",\"rules\":{\"conditions\":{\"ALL\":[{\"fact\":\"placement.sizes\",\"op\":\"anyin\",\"val\":[\"728x90\"]}],\"ANY\":[]}}},{\"id\":\"23163da9\",\"eid\":\"138565080772\",\"rules\":{\"conditions\":{\"ALL\":[{\"fact\":\"placement.sizes\",\"op\":\"anyin\",\"val\":[\"970x250\"]}],\"ANY\":[]}}},{\"id\":\"74521d2e\",\"eid\":\"138565080775\",\"rules\":{\"conditions\":{\"ALL\":[{\"fact\":\"placement.sizes\",\"op\":\"anyin\",\"val\":[\"300x250\"]}],\"ANY\":[]}}},{\"id\":\"6cbbafc4\",\"eid\":\"138565080778\",\"rules\":{\"conditions\":{\"ALL\":[{\"fact\":\"placement.sizes\",\"op\":\"anyin\",\"val\":[\"300x600\"]}],\"ANY\":[]}}},{\"id\":\"a35a4cd1\",\"eid\":\"138565080781\",\"rules\":{\"conditions\":{\"ALL\":[{\"fact\":\"placement.sizes\",\"op\":\"anyin\",\"val\":[\"320x50\"]}],\"ANY\":[]}}}]}],\"rules\":{\"conditions\":{}},\"bid\":15856,\"aid\":\"70aac7b0\"},{\"id\":\"352181ab\",\"type\":\"4\",\"ags\":[{\"id\":\"216463a1\",\"eid\":\"7313617617\",\"rules\":{\"conditions\":{\"ALL\":[{\"fact\":\"placement.adunit\",\"op\":\"anypath\",\"val\":[\"/10518929/Tech_5Gradar\",\"/10518929/Sport_CyclingNews\",\"/10518929/gardeningetc\",\"/10518929/marieclaire\",\"/10518929/moneyweek\",\"/10518929/whowhatwear\",\"/10518929/whatculture\",\"/10518929/pbo\",\"/10518929/goodtoknow\",\"/10518929/rugbyworld\",\"/10518929/mby\",\"/10518929/idealhome\",\"/10518929/Tech_TechRadar\",\"/10518929/FFT\",\"/10518929/yachtingmonthly\",\"/10518929/Music_GuitarPlayer\",\"/10518929/coach\",\"/10518929/Tech_Toms_Hardware\",\"/10518929/Craft_DigitalCameraWorld\",\"/10518929/cinemablend\",\"/10518929/fitandwell\",\"/10518929/thefield\",\"/10518929/golfmonthly\",\"/10518929/Tech_Toms_Guide\",\"/10518929/myimperfectlife\",\"/10518929/GuitarWorld\",\"/10518929/Know_Space\",\"/10518929/cyclingweekly\",\"/10518929/practicalcaravan\",\"/10518929/practicalmotorhome\",\"/10518929/tmn.aat\",\"/10518929/shortlist\",\"/10518929/tmnp.AndroidCentral\",\"/10518929/tmnp.iMore\",\"/10518929/theweek.com\",\"/10518929/Design_CreativeBloQ\",\"/10518929/countrylife\",\"/10518929/Real_Homes\",\"/10518929/Tech_Whathifi\",\"/10518929/Games_GamesRadar\",\"/10518929/gardeningknowhow\",\"/10518929/Music_LouderSound\",\"/10518929/Music_MusicRadar\",\"/10518929/Tech_T3\",\"/10518929/Homebuilding-Web\",\"/10518929/tmnp.WPcentral\",\"/10518929/homesandgardens\",\"/10518929/Plotfinder_new\",\"/10518929/womanandhome\",\"/10518929/horseandhound\",\"/10518929/Sport_BikePerfect\",\"/10518929/Laptop_Mag\",\"/10518929/ybw\",\"/10518929/yachtingworld\",\"/10518929/livingetc\",\"/10518929/Science_LiveScience\",\"/10518929/TopTenReviews\",\"/10518929/Games_PC_Gamer\"]},{\"fact\":\"geo.country\",\"op\":\"anyin\",\"val\":[\"gb\"]}],\"ANY\":[],\"NONE\":[{\"fact\":\"placement.adunit\",\"op\":\"anypath\",\"val\":[\"/10518929/Craft_DigitalCameraWorld/email\",\"/10518929/Craft_DigitalCameraWorld/mail\",\"/10518929/Design_CreativeBloQ/graphic-design/mail\",\"/10518929/Design_CreativeBloQ/mail\",\"/10518929/Design_CreativeBloQ/mail_3dw\",\"/10518929/Design_CreativeBloQ/mail_graphic-design\",\"/10518929/Design_CreativeBloQ/mail_web-design\",\"/10518929/Games_GamesRadar/amp_story\",\"/10518929/Games_PC_Gamer/amp_story\",\"/10518929/Games_PC_Gamer/email\",\"/10518929/Games_PC_Gamer/mail\",\"/10518929/Music_GuitarPlayer/passback\",\"/10518929/Music_MusicRadar/mail\",\"/10518929/Sport_CyclingNews/cycling-news-app\",\"/10518929/Tech_T3/ee\",\"/10518929/Tech_T3/email\",\"/10518929/Tech_T3/halfords\",\"/10518929/Tech_T3/mail\",\"/10518929/Tech_T3/yourmobilelife\",\"/10518929/Tech_TechRadar/ee\",\"/10518929/Tech_TechRadar/email\",\"/10518929/Tech_TechRadar/halfords\",\"/10518929/Tech_TechRadar/hub\",\"/10518929/Tech_TechRadar/mail\",\"/10518929/Tech_TechRadar/trpro/email\",\"/10518929/Tech_TechRadar/trpro/mail\",\"/10518929/Tech_TechRadar/trproemail\",\"/10518929/Tech_TechRadar/trpromail\",\"/10518929/cinemablend/passback\",\"/10518929/countrylife/competitions\",\"/10518929/countrylife/passback\",\"/10518929/cyclingweekly/competitions\",\"/10518929/cyclingweekly/passback\",\"/10518929/golfmonthly/competition\",\"/10518929/golfmonthly/competitions\",\"/10518929/goodtoknow/competition\",\"/10518929/goodtoknow/passback\",\"/10518929/homesandgardens/competition\",\"/10518929/homesandgardens/passback\",\"/10518929/horseandhound/classifieds\",\"/10518929/horseandhound/competitions\",\"/10518929/horseandhound/passback\",\"/10518929/idealhome/competitions\",\"/10518929/idealhome/passback\",\"/10518929/livingetc/competition\",\"/10518929/livingetc/passback\",\"/10518929/marieclaire/MarieClaire_Preroll_Competition_Page\",\"/10518929/marieclaire/MarieClaire_Preroll_Competition_Page_Test\",\"/10518929/marieclaire/competition\",\"/10518929/marieclaire/competitions\",\"/10518929/marieclaire/passback\",\"/10518929/moneyweek/reader_app\",\"/10518929/rugbyworld/competitions\",\"/10518929/rugbyworld/passback\",\"/10518929/thefield/competitions\",\"/10518929/tmn.aat/eyeo\",\"/10518929/tmnp.AndroidCentral/fbia\",\"/10518929/tmnp.AndroidCentral/passback\",\"/10518929/tmnp.WPcentral/passback\",\"/10518929/tmnp.WPcentral/streamspread\",\"/10518929/tmnp.iMore/Newsletter_Test\",\"/10518929/tmnp.iMore/aserti\",\"/10518929/tmnp.iMore/passback\",\"/10518929/tmnp.iMore/streamspread\",\"/10518929/womanandhome/passback\",\"/10518929/yachtingworld/competitions\",\"/10518929/ybw/competitions\"]},{\"fact\":\"browser.name\",\"op\":\"anyin\",\"val\":[\"chrome\"]},{\"fact\":\"page.kvs.up_recovery\",\"op\":\"in\",\"val\":\"true\"},{\"fact\":\"page.kvs.adshield\",\"op\":\"in\",\"val\":\"adshield\"}]}},\"ads\":[{\"id\":\"612876ee\",\"eid\":\"138580622730\",\"rules\":{\"conditions\":{\"ALL\":[{\"fact\":\"placement.sizes\",\"op\":\"anyin\",\"val\":[\"970x250\"]}],\"ANY\":[]}}},{\"id\":\"8e35b5c8\",\"eid\":\"138581778586\",\"rules\":{\"conditions\":{\"ALL\":[{\"fact\":\"placement.sizes\",\"op\":\"anyin\",\"val\":[\"320x50\"]}],\"ANY\":[]}}},{\"id\":\"81ccdfd8\",\"eid\":\"138581778868\",\"rules\":{\"conditions\":{\"ALL\":[{\"fact\":\"placement.sizes\",\"op\":\"anyin\",\"val\":[\"300x250\"]}],\"ANY\":[]}}},{\"id\":\"3eda804a\",\"eid\":\"138581778877\",\"rules\":{\"conditions\":{\"ALL\":[{\"fact\":\"placement.sizes\",\"op\":\"anyin\",\"val\":[\"300x600\"]}],\"ANY\":[]}}}]}],\"rules\":{\"conditions\":{}},\"bid\":5172,\"aid\":\"8b1a502a\"}],\"property\":{\"id\":\"14d7bd7d\",\"dlail\":[\"1\",\"101513689\",\"10518929\",\"14995849\",\"175633129\",\"4621732269\",\"4660377496\",\"4676654121\",\"4696665527\",\"4698242566\",\"4729320848\",\"4783417623\",\"4897283432\",\"4902486125\",\"4936480525\",\"4971039325\",\"5036670475\",\"5126634135\",\"5134095269\",\"5134096211\",\"5201647124\",\"5202138463\",\"5204506480\",\"5218999097\",\"5235651252\",\"5245666958\",\"5366409539\",\"5816857339\",\"6059594287\",\"6073202848\",\"6099334005\",\"95464729\"],\"ctslctrs\":\"body\",\"recfg\":{\"strictKeys\":[\"page.kvs.kw\",\"page.kvs.pagetype\",\"page.kvs.child_category\",\"page.kvs.vertical\"]},\"dcfg\":{\"v\":1,\"points\":[{\"key\":\"site\",\"type\":\"STRING\",\"source\":{\"type\":\"adserver_kv\",\"key\":\"site\"}},{\"key\":\"geo\",\"type\":\"STRING\",\"source\":{\"type\":\"adserver_kv\",\"key\":\"geo\"}},{\"key\":\"screen\",\"type\":\"STRING\",\"source\":{\"type\":\"adserver_kv\",\"key\":\"screen\"}},{\"key\":\"content_language\",\"type\":\"STRING\",\"source\":{\"type\":\"adserver_kv\",\"key\":\"content_language\"}},{\"key\":\"pagetype\",\"type\":\"STRING\",\"source\":{\"type\":\"adserver_kv\",\"key\":\"pagetype\"}},{\"key\":\"paywall\",\"type\":\"BOOLEAN\",\"source\":{\"type\":\"adserver_kv\",\"key\":\"paywall\"}},{\"key\":\"signed_in\",\"type\":\"BOOLEAN\",\"source\":{\"type\":\"adserver_kv\",\"key\":\"signedIn\"}},{\"key\":\"premium_user\",\"type\":\"BOOLEAN\",\"source\":{\"type\":\"adserver_kv\",\"key\":\"premiumUser\"}},{\"key\":\"jwplayer\",\"type\":\"BOOLEAN\",\"source\":{\"type\":\"adserver_kv\",\"key\":\"jwplayer\"}},{\"key\":\"any_id_present\",\"type\":\"BOOLEAN\",\"source\":{\"type\":\"adserver_kv\",\"key\":\"any_id_present\"}},{\"key\":\"gdpr_status\",\"type\":\"STRING\",\"source\":{\"type\":\"adserver_kv\",\"key\":\"_gdpr_status\"}},{\"key\":\"gpp_status\",\"type\":\"STRING\",\"source\":{\"type\":\"adserver_kv\",\"key\":\"_gpp_status\"}},{\"key\":\"category\",\"type\":\"STRING\",\"source\":{\"type\":\"adserver_kv\",\"key\":\"category\"}},{\"key\":\"child_category\",\"type\":\"STRING\",\"source\":{\"type\":\"adserver_kv\",\"key\":\"child_category\"}},{\"key\":\"author\",\"type\":\"STRING\",\"source\":{\"type\":\"adserver_kv\",\"key\":\"author\"}},{\"key\":\"template\",\"type\":\"STRING\",\"source\":{\"type\":\"adserver_kv\",\"key\":\"template\"}},{\"key\":\"grandchild_category\",\"type\":\"STRING\",\"source\":{\"type\":\"adserver_kv\",\"key\":\"grandchild_category\"}},{\"key\":\"article_id\",\"type\":\"STRING\",\"source\":{\"type\":\"adserver_kv\",\"key\":\"articleid\"}},{\"key\":\"sponsored\",\"type\":\"STRING\",\"source\":{\"type\":\"adserver_kv\",\"key\":\"sponsored\"}},{\"key\":\"brand\",\"type\":\"STRING\",\"source\":{\"type\":\"adserver_kv\",\"key\":\"brand\"}},{\"key\":\"site_platform\",\"type\":\"STRING\",\"source\":{\"type\":\"adserver_kv\",\"key\":\"sitePlatform\"}},{\"key\":\"page_view_type\",\"type\":\"STRING\",\"source\":{\"type\":\"adserver_kv\",\"key\":\"pageViewType\"}},{\"key\":\"uid\",\"type\":\"STRING\",\"source\":{\"type\":\"adserver_kv\",\"key\":\"TUUID\"}}]}}}}",
         "category": "LOCATION_AND_DEMOGRAPHICS"
@@ -58451,13 +58392,6 @@
       {
         "storage_type": "localstorage",
         "lifecycle": "modified",
-        "key": "intercom.intercom-state-i5ee0683",
-        "value": "{\"app\":{\"openConfig\":{\"unifiedStyling\":true,\"openTo\":\"conversation\",\"spaces\":[{\"type\":\"home\",\"label\":\"Hjem\",\"navigationLabel\":\"Hjem\",\"badge\":null},{\"type\":\"messages\",\"label\":\"Meddelelser\",\"navigationLabel\":\"Meddelelser\",\"badge\":{\"badgeType\":\"unread\",\"label\":1}},{\"type\":\"help\",\"label\":\"Hjælp\",\"navigationLabel\":\"Hjælp\",\"badge\":null}],\"userHasReceivedChecklists\":false,\"userHasLiveNewsfeed\":false,\"userHasTickets\":false},\"selfServeSuggestionsMatch\":false,\"name\":\"Intempus\",\"features\":{\"anonymousInboundMessages\":true,\"googleAnalytics\":false,\"hubspotInstalled\":false,\"inboundMessages\":true,\"marketoEnrichmentInstalled\":false,\"googleAnalytics4Integration\":true,\"improveOpenBehavior\":false,\"messengerErrorCallbacks\":false},\"helpCenterSiteUrl\":\"https://intercom.help/intempushelp\",\"inboundConversationsDisabled\":false,\"isDeveloperWorkspace\":false,\"customGoogleAnalyticsTrackerId\":null},\"launcher\":{\"isLauncherEnabled\":false},\"launcherDiscoveryMode\":{\"hasDiscoveredLauncher\":true},\"launcherSettings\":{\"alignment\":\"right\",\"color\":\"#2DC4B5\",\"colorDark\":\"#f8a909\",\"hasRequiredFeatures\":true,\"horizontalPadding\":20,\"instantBootEnabled\":false,\"launcherLogoUrl\":null,\"launcherLogoDarkUrl\":null,\"messengerLayout\":\"widget\",\"messengerModeSwitcherEnabled\":false,\"secondaryColor\":\"#2DC4B5\",\"secondaryColorDark\":\"#6BA39F\",\"showLauncher\":false,\"themeMode\":\"light\",\"updatedAt\":1790719353,\"verticalPadding\":20,\"isLoading\":false},\"user\":{\"id\":\"6abcd10883aee5fd9c51cc46\",\"role\":\"visitor\",\"locale\":\"da\",\"hasConversations\":true},\"message\":{},\"conversations\":{\"byId\":{\"215476179406377\":{\"fetchState\":\"partial\",\"dismissed\":false,\"read\":false}}},\"openOnBoot\":{\"type\":null,\"metadata\":{},\"lastOpenAtTimestamp\":1790799976614},\"operator\":{\"lastComposerEvent\":0},\"router\":{\"isInitialized\":true,\"navigationQueue\":[],\"action\":\"POP\",\"location\":{\"pathname\":\"/loading\",\"search\":\"\",\"hash\":\"\",\"state\":null,\"key\":\"default\"}}}",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "localstorage",
-        "lifecycle": "modified",
         "key": "intercom.intercom-state-jxjz1zs0",
         "value": "{\"app\":{\"openConfig\":{\"unifiedStyling\":true,\"openTo\":\"home\",\"spaces\":[{\"type\":\"home\",\"label\":\"Hjem\",\"navigationLabel\":\"Hjem\",\"badge\":null},{\"type\":\"messages\",\"label\":\"Meddelelser\",\"navigationLabel\":\"Meddelelser\",\"badge\":null},{\"type\":\"tasks\",\"label\":\"Opgaver\",\"navigationLabel\":\"Opgaver\",\"badge\":null},{\"type\":\"help\",\"label\":\"Hjælp\",\"navigationLabel\":\"Hjælp\",\"badge\":null}],\"userHasReceivedChecklists\":false,\"userHasLiveNewsfeed\":false,\"userHasTickets\":false},\"selfServeSuggestionsMatch\":false,\"name\":\"TurboSquid\",\"features\":{\"anonymousInboundMessages\":true,\"googleAnalytics\":true,\"hubspotInstalled\":false,\"inboundMessages\":true,\"marketoEnrichmentInstalled\":false,\"googleAnalytics4Integration\":true,\"improveOpenBehavior\":false,\"messengerErrorCallbacks\":false},\"helpCenterSiteUrl\":\"https://intercom.help/shutterstock-8af38795876b\",\"inboundConversationsDisabled\":false,\"isDeveloperWorkspace\":false,\"customGoogleAnalyticsTrackerId\":\"G-P9283SY7W9\"},\"launcher\":{\"isLauncherEnabled\":true},\"launcherDiscoveryMode\":{\"hasDiscoveredLauncher\":true},\"launcherSettings\":{\"alignment\":\"right\",\"color\":\"#FFC450\",\"colorDark\":\"#FFC450\",\"hasRequiredFeatures\":true,\"horizontalPadding\":20,\"instantBootEnabled\":false,\"launcherLogoUrl\":null,\"launcherLogoDarkUrl\":null,\"messengerLayout\":\"widget\",\"messengerModeSwitcherEnabled\":false,\"secondaryColor\":\"#ffffff\",\"secondaryColorDark\":\"#ffffff\",\"showLauncher\":true,\"themeMode\":\"light\",\"updatedAt\":1790774129,\"verticalPadding\":20,\"isLoading\":false},\"user\":{\"id\":\"6abcc256b73e9eeaf8e9b2eb\",\"role\":\"visitor\",\"locale\":\"da\",\"hasConversations\":false},\"message\":{},\"conversations\":{\"byId\":{}},\"openOnBoot\":{\"type\":null,\"metadata\":{},\"lastOpenAtTimestamp\":1790844211496},\"operator\":{\"lastComposerEvent\":0},\"router\":{\"isInitialized\":false,\"navigationQueue\":[]}}",
         "category": "LOCATION_AND_DEMOGRAPHICS"
@@ -58488,13 +58422,6 @@
         "lifecycle": "removed",
         "key": "autodesk-assistant-storage_v1.90.0|en-US",
         "value": "{\"state\":{\"isUserLoading\":false,\"userProfile\":null,\"entitlementData\":null,\"userEntitlementLevel\":\"Anonymous\",\"pendingLoginAfterLogout\":false,\"skill\":\"\",\"escalationPath\":\"\",\"plc\":\"\",\"release\":\"\",\"originApp\":\"estore-uhm\",\"theme\":\"\",\"externalContext\":null,\"escalationDesc\":null,\"isLoading\":false,\"loadingType\":\"typingDots\",\"ratingValue\":0,\"feedbackText\":\"\",\"feedbackFlow\":{\"step\":\"rating\",\"ratingValue\":0,\"feedbackText\":\"\"},\"isAssistantOpen\":false,\"showIcon\":true,\"showNudge\":false,\"isExpanded\":false,\"resizeWidth\":null,\"resizeHeight\":null,\"modalState\":\"none\",\"showPrivacyStatement\":true,\"showOutageAlert\":true,\"hideInput\":false,\"apiRequestedInputVisibility\":false,\"isTextInputOpen\":false,\"agentConnectButton\":{\"visible\":true,\"disabled\":false},\"messages\":[],\"layoutVersion\":1,\"humanAssistMessages\":[],\"sessionId\":\"8653f89d-32ce-4ec6-84f9-e4496aaa370d\",\"flowId\":\"6940d1e1-40e5-41a7-bef9-14b1720a663c\",\"currentRequestId\":\"\",\"turnCount\":0,\"hasShownWelcomeMessages\":false,\"originalWelcomeMessages\":[],\"agentSuggestChoices\":[],\"agentSuggestMessage\":\"\",\"conversationStart\":\"\",\"lastRequestId\":\"\",\"inputValue\":\"\",\"lastInputValue\":\"\",\"choices\":null,\"productReleases\":[],\"productSelector\":{\"selectedProduct\":null,\"inputValue\":\"\",\"showDropdown\":false,\"filteredItems\":[]},\"feedbackIcons\":{},\"refundInfo\":null,\"refundCaseStatus\":\"idle\"},\"version\":1}",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "localstorage",
-        "lifecycle": "removed",
-        "key": "IS_AUTHENTICATED_pIEfVI6iNWZjSZkAQlJegtRqjYuXPGfELGQA0RVJFJAd5U0m",
-        "value": "{\"state\":false,\"expiryTime\":1790749296628}",
         "category": "LOCATION_AND_DEMOGRAPHICS"
       },
       {
@@ -58584,13 +58511,6 @@
       {
         "storage_type": "localstorage",
         "lifecycle": "removed",
-        "key": "IS_AUTHENTICATED_pIEfVI6iNWZjSZkAQlJegtRqjYuXPGfELGQA0RVJFJAd5U0m",
-        "value": "{\"state\":false,\"expiryTime\":1790749296628}",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "localstorage",
-        "lifecycle": "removed",
         "key": "ADP:8714b50baff07013ea1b9ce347f728e6:anon_consent_copy",
         "value": "{\"country\":\"FR\",\"locale\":\"da_DK\",\"type\":\"web\",\"title\":\"Præferencer for cookies\",\"copies\":[{\"consentId\":\"ADSK_WEB_PREFERENCES_STRICTLY_NEEDED\",\"order\":1,\"consentName\":\"Strengt nødvendigt – nødvendigt for vores sides funktioner og for at tilbyde dig tjenesteydelser\",\"consentText\":\"Disse cookies giver os mulighed for at gemme dine præferencer eller logon-oplysninger, besvare dine anmodninger eller bekræfte elementer i din indkøbskurv.\",\"consentDesc\":null,\"display\":true,\"enabled\":false,\"required\":false,\"prechecked\":true},{\"consentId\":\"ADSK_WEB_PREFERENCES_IMPROVEMENT\",\"order\":2,\"consentName\":\"Gør din oplevelse bedre – lad os vise dig det, der er relevant for dig\",\"consentText\":\"Disse cookies giver os mulighed for at tilbyde forbedret funktionalitet og en personlig oplevelse. De kan være indstillet af os eller tredjepartsudbydere, hvis tjenesteydelser vi bruger til at levere oplysninger og oplevelser, der er tilpasset til dig. Hvis du ikke tillader disse cookies, vil nogle af eller alle disse tjenesteydelser måske ikke være tilgængelige for dig.\",\"consentDesc\":null,\"display\":true,\"enabled\":true,\"required\":false,\"prechecked\":false},{\"consentId\":\"ADSK_WEB_PREFERENCES_ADVERTISEMENT\",\"order\":3,\"consentName\":\"Tilpas dine reklamer – lad os tilbyde dig målrettede reklamer\",\"consentText\":\"Disse cookies indsamler data om dig baseret på dine aktiviteter og interesser for at kunne vise dig relevante reklamer og kontrollere deres effektivitet. Når vi indsamler disse data, bliver de annoncer, vi viser dig, mere tilpassede til dine interesser. Hvis du ikke tillader disse cookies, vil du opleve mindre målrettede reklamer.\",\"consentDesc\":null,\"display\":true,\"enabled\":true,\"required\":false,\"prechecked\":false}],\"i18n\":{\"dataPolicyLink1\":\"https://www.autodesk.com/dk/company/legal-notices-trademarks/privacy-statement/third-party-services\",\"dataPolicyDesc5\":\". Autodesks websteder registrerer også Global Privacy Control, der er tilgængelig i visse browsere, som en alternativ måde, hvorpå du kan fravælge salg eller deling.\",\"no\":\"Nej\",\"continueToSite\":\"FORTSÆT TIL WEBSTEDET\",\"Description\":\"Beskyttelse af dine personlige oplysninger er vigtig for os, og det samme er en optimal oplevelse. Som hjælp til at tilpasse oplysninger og bygge programmer indsamler vi data om din brug af dette websted.\",\"yes\":\"Ja\",\"dataPolicyLink2\":\"https://www.autodesk.com/dk/company/legal-notices-trademarks/privacy-statement\",\"Title\":\"Præferencer for cookies\",\"yesToAll\":\"JA TIL ALLE\",\"dataPolicyDesc1\":\"Få mere at vide om de\",\"dataPolicyDesc2\":\"Tredjepartstjenester\",\"dataPolicyDesc3\":\"vi bruger, og vores\",\"changeSettings\":\"Hvis du vil ændre indstillingerne senere, kan du klikke på Indstillinger for beskyttelse af personlige oplysninger nederst på enhver side.\",\"noToAll\":\"NEJ TIL ALLE\",\"dataPolicyDesc4\":\"Erklæring om beskyttelse af personlige oplysninger\",\"dataPolicyTitle\":\"Må vi indsamle og bruge dine data?\"}}",
         "category": "LOCATION_AND_DEMOGRAPHICS"
@@ -58598,22 +58518,8 @@
       {
         "storage_type": "localstorage",
         "lifecycle": "removed",
-        "key": "akp-analytics-userid-state",
-        "value": "\"fresh\"",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "localstorage",
-        "lifecycle": "removed",
         "key": "autodesk-assistant-storage_v1.90.0|en-US",
         "value": "{\"state\":{\"isUserLoading\":false,\"userProfile\":null,\"entitlementData\":null,\"userEntitlementLevel\":\"Anonymous\",\"pendingLoginAfterLogout\":false,\"skill\":\"\",\"escalationPath\":\"\",\"plc\":\"\",\"release\":\"\",\"originApp\":\"estore-uhm\",\"theme\":\"\",\"externalContext\":null,\"escalationDesc\":null,\"isLoading\":false,\"loadingType\":\"typingDots\",\"ratingValue\":0,\"feedbackText\":\"\",\"feedbackFlow\":{\"step\":\"rating\",\"ratingValue\":0,\"feedbackText\":\"\"},\"isAssistantOpen\":false,\"showIcon\":true,\"showNudge\":false,\"isExpanded\":false,\"resizeWidth\":null,\"resizeHeight\":null,\"modalState\":\"none\",\"showPrivacyStatement\":true,\"showOutageAlert\":true,\"hideInput\":false,\"apiRequestedInputVisibility\":false,\"isTextInputOpen\":false,\"agentConnectButton\":{\"visible\":true,\"disabled\":false},\"messages\":[],\"layoutVersion\":1,\"humanAssistMessages\":[],\"sessionId\":\"8653f89d-32ce-4ec6-84f9-e4496aaa370d\",\"flowId\":\"6940d1e1-40e5-41a7-bef9-14b1720a663c\",\"currentRequestId\":\"\",\"turnCount\":0,\"hasShownWelcomeMessages\":false,\"originalWelcomeMessages\":[],\"agentSuggestChoices\":[],\"agentSuggestMessage\":\"\",\"conversationStart\":\"\",\"lastRequestId\":\"\",\"inputValue\":\"\",\"lastInputValue\":\"\",\"choices\":null,\"productReleases\":[],\"productSelector\":{\"selectedProduct\":null,\"inputValue\":\"\",\"showDropdown\":false,\"filteredItems\":[]},\"feedbackIcons\":{},\"refundInfo\":null,\"refundCaseStatus\":\"idle\"},\"version\":1}",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "localstorage",
-        "lifecycle": "removed",
-        "key": "IS_AUTHENTICATED_uWlmiJuqQqVaAQjGdojc8Qxit4KVdorZ",
-        "value": "{\"state\":false,\"expiryTime\":1790796191894}",
         "category": "LOCATION_AND_DEMOGRAPHICS"
       },
       {
@@ -58640,13 +58546,6 @@
       {
         "storage_type": "localstorage",
         "lifecycle": "removed",
-        "key": "IS_AUTHENTICATED_pIEfVI6iNWZjSZkAQlJegtRqjYuXPGfELGQA0RVJFJAd5U0m",
-        "value": "{\"state\":false,\"expiryTime\":1790749296628}",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "localstorage",
-        "lifecycle": "removed",
         "key": "ADP:8714b50baff07013ea1b9ce347f728e6:anon_consent_copy",
         "value": "{\"country\":\"FR\",\"locale\":\"da_DK\",\"type\":\"web\",\"title\":\"Præferencer for cookies\",\"copies\":[{\"consentId\":\"ADSK_WEB_PREFERENCES_STRICTLY_NEEDED\",\"order\":1,\"consentName\":\"Strengt nødvendigt – nødvendigt for vores sides funktioner og for at tilbyde dig tjenesteydelser\",\"consentText\":\"Disse cookies giver os mulighed for at gemme dine præferencer eller logon-oplysninger, besvare dine anmodninger eller bekræfte elementer i din indkøbskurv.\",\"consentDesc\":null,\"display\":true,\"enabled\":false,\"required\":false,\"prechecked\":true},{\"consentId\":\"ADSK_WEB_PREFERENCES_IMPROVEMENT\",\"order\":2,\"consentName\":\"Gør din oplevelse bedre – lad os vise dig det, der er relevant for dig\",\"consentText\":\"Disse cookies giver os mulighed for at tilbyde forbedret funktionalitet og en personlig oplevelse. De kan være indstillet af os eller tredjepartsudbydere, hvis tjenesteydelser vi bruger til at levere oplysninger og oplevelser, der er tilpasset til dig. Hvis du ikke tillader disse cookies, vil nogle af eller alle disse tjenesteydelser måske ikke være tilgængelige for dig.\",\"consentDesc\":null,\"display\":true,\"enabled\":true,\"required\":false,\"prechecked\":false},{\"consentId\":\"ADSK_WEB_PREFERENCES_ADVERTISEMENT\",\"order\":3,\"consentName\":\"Tilpas dine reklamer – lad os tilbyde dig målrettede reklamer\",\"consentText\":\"Disse cookies indsamler data om dig baseret på dine aktiviteter og interesser for at kunne vise dig relevante reklamer og kontrollere deres effektivitet. Når vi indsamler disse data, bliver de annoncer, vi viser dig, mere tilpassede til dine interesser. Hvis du ikke tillader disse cookies, vil du opleve mindre målrettede reklamer.\",\"consentDesc\":null,\"display\":true,\"enabled\":true,\"required\":false,\"prechecked\":false}],\"i18n\":{\"dataPolicyLink1\":\"https://www.autodesk.com/dk/company/legal-notices-trademarks/privacy-statement/third-party-services\",\"dataPolicyDesc5\":\". Autodesks websteder registrerer også Global Privacy Control, der er tilgængelig i visse browsere, som en alternativ måde, hvorpå du kan fravælge salg eller deling.\",\"no\":\"Nej\",\"continueToSite\":\"FORTSÆT TIL WEBSTEDET\",\"Description\":\"Beskyttelse af dine personlige oplysninger er vigtig for os, og det samme er en optimal oplevelse. Som hjælp til at tilpasse oplysninger og bygge programmer indsamler vi data om din brug af dette websted.\",\"yes\":\"Ja\",\"dataPolicyLink2\":\"https://www.autodesk.com/dk/company/legal-notices-trademarks/privacy-statement\",\"Title\":\"Præferencer for cookies\",\"yesToAll\":\"JA TIL ALLE\",\"dataPolicyDesc1\":\"Få mere at vide om de\",\"dataPolicyDesc2\":\"Tredjepartstjenester\",\"dataPolicyDesc3\":\"vi bruger, og vores\",\"changeSettings\":\"Hvis du vil ændre indstillingerne senere, kan du klikke på Indstillinger for beskyttelse af personlige oplysninger nederst på enhver side.\",\"noToAll\":\"NEJ TIL ALLE\",\"dataPolicyDesc4\":\"Erklæring om beskyttelse af personlige oplysninger\",\"dataPolicyTitle\":\"Må vi indsamle og bruge dine data?\"}}",
         "category": "LOCATION_AND_DEMOGRAPHICS"
@@ -58654,22 +58553,8 @@
       {
         "storage_type": "localstorage",
         "lifecycle": "removed",
-        "key": "akp-analytics-userid-state",
-        "value": "\"fresh\"",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "localstorage",
-        "lifecycle": "removed",
         "key": "autodesk-assistant-storage_v1.90.0|en-US",
         "value": "{\"state\":{\"isUserLoading\":false,\"userProfile\":null,\"entitlementData\":null,\"userEntitlementLevel\":\"Anonymous\",\"pendingLoginAfterLogout\":false,\"skill\":\"\",\"escalationPath\":\"\",\"plc\":\"\",\"release\":\"\",\"originApp\":\"estore-uhm\",\"theme\":\"\",\"externalContext\":null,\"escalationDesc\":null,\"isLoading\":false,\"loadingType\":\"typingDots\",\"ratingValue\":0,\"feedbackText\":\"\",\"feedbackFlow\":{\"step\":\"rating\",\"ratingValue\":0,\"feedbackText\":\"\"},\"isAssistantOpen\":false,\"showIcon\":true,\"showNudge\":false,\"isExpanded\":false,\"resizeWidth\":null,\"resizeHeight\":null,\"modalState\":\"none\",\"showPrivacyStatement\":true,\"showOutageAlert\":true,\"hideInput\":false,\"apiRequestedInputVisibility\":false,\"isTextInputOpen\":false,\"agentConnectButton\":{\"visible\":true,\"disabled\":false},\"messages\":[],\"layoutVersion\":1,\"humanAssistMessages\":[],\"sessionId\":\"8653f89d-32ce-4ec6-84f9-e4496aaa370d\",\"flowId\":\"6940d1e1-40e5-41a7-bef9-14b1720a663c\",\"currentRequestId\":\"\",\"turnCount\":0,\"hasShownWelcomeMessages\":false,\"originalWelcomeMessages\":[],\"agentSuggestChoices\":[],\"agentSuggestMessage\":\"\",\"conversationStart\":\"\",\"lastRequestId\":\"\",\"inputValue\":\"\",\"lastInputValue\":\"\",\"choices\":null,\"productReleases\":[],\"productSelector\":{\"selectedProduct\":null,\"inputValue\":\"\",\"showDropdown\":false,\"filteredItems\":[]},\"feedbackIcons\":{},\"refundInfo\":null,\"refundCaseStatus\":\"idle\"},\"version\":1}",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "localstorage",
-        "lifecycle": "removed",
-        "key": "IS_AUTHENTICATED_uWlmiJuqQqVaAQjGdojc8Qxit4KVdorZ",
-        "value": "{\"state\":false,\"expiryTime\":1790801064382}",
         "category": "LOCATION_AND_DEMOGRAPHICS"
       },
       {
@@ -58717,27 +58602,6 @@
       {
         "storage_type": "localstorage",
         "lifecycle": "removed",
-        "key": "akp-analytics-userid-state",
-        "value": "\"fresh\"",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "localstorage",
-        "lifecycle": "removed",
-        "key": "IS_AUTHENTICATED_uWlmiJuqQqVaAQjGdojc8Qxit4KVdorZ",
-        "value": "{\"state\":false,\"expiryTime\":1790801064382}",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "localstorage",
-        "lifecycle": "removed",
-        "key": "IS_AUTHENTICATED_pIEfVI6iNWZjSZkAQlJegtRqjYuXPGfELGQA0RVJFJAd5U0m",
-        "value": "{\"state\":false,\"expiryTime\":1790816335617}",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "localstorage",
-        "lifecycle": "removed",
         "key": "ADP:8714b50baff07013ea1b9ce347f728e6:anon_consent_copy",
         "value": "{\"country\":\"FR\",\"locale\":\"en_US\",\"type\":\"web\",\"title\":\"Cookie Preferences\",\"copies\":[{\"consentId\":\"ADSK_WEB_PREFERENCES_STRICTLY_NEEDED\",\"order\":1,\"consentName\":\"Strictly necessary – required for our site to work and to provide services to you\",\"consentText\":\"These cookies allow us to record your preferences or login information, respond to your requests or fulfill items in your shopping cart.\",\"consentDesc\":null,\"display\":true,\"enabled\":false,\"required\":false,\"prechecked\":true},{\"consentId\":\"ADSK_WEB_PREFERENCES_IMPROVEMENT\",\"order\":2,\"consentName\":\"Improve your experience – allows us to show you what is relevant to you\",\"consentText\":\"These cookies enable us to provide enhanced functionality and personalization. They may be set by us or by third party providers whose services we use to deliver information and experiences tailored to you. If you do not allow these cookies, some or all of these services may not be available for you.\",\"consentDesc\":null,\"display\":true,\"enabled\":true,\"required\":false,\"prechecked\":false},{\"consentId\":\"ADSK_WEB_PREFERENCES_ADVERTISEMENT\",\"order\":3,\"consentName\":\"Customize your advertising – permits us to offer targeted advertising to you\",\"consentText\":\"These cookies collect data about you based on your activities and interests in order to show you relevant ads and to track effectiveness. By collecting this data, the ads you see will be more tailored to your interests. If you do not allow these cookies, you will experience less targeted advertising.\",\"consentDesc\":null,\"display\":true,\"enabled\":true,\"required\":false,\"prechecked\":false}],\"i18n\":{\"dataPolicyLink1\":\"https://www.autodesk.com/company/legal-notices-trademarks/privacy-statement/third-party-services\",\"dataPolicyDesc5\":\". Autodesk websites also recognize Global Privacy Control, available in some browsers, as an alternative way for you to opt out of sales or sharing.\",\"no\":\"No\",\"continueToSite\":\"CONTINUE TO SITE\",\"Description\":\"Your privacy is important to us and so is an optimal experience. To help us customise information and build applications, we collect data about your use of this site.\",\"yes\":\"Yes\",\"dataPolicyLink2\":\"https://www.autodesk.com/company/legal-notices-trademarks/privacy-statement\",\"Title\":\"Cookie Preferences\",\"yesToAll\":\"YES TO ALL\",\"dataPolicyDesc1\":\"Learn more about the\",\"dataPolicyDesc2\":\"Third-Party Services\",\"dataPolicyDesc3\":\"we use and our\",\"changeSettings\":\"To change your settings later, click Privacy Settings at the bottom of any page.\",\"noToAll\":\"NO TO ALL\",\"dataPolicyDesc4\":\"Privacy Statement\",\"dataPolicyTitle\":\"May we collect and use your data?\"}}",
         "category": "LOCATION_AND_DEMOGRAPHICS"
@@ -58747,27 +58611,6 @@
         "lifecycle": "removed",
         "key": "usi_session_data",
         "value": "{\"value\":\"{\\\"ip\\\":\\\"78.243.1.158\\\",\\\"country\\\":\\\"fr\\\"}\",\"usi_expires\":1790882585776}",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "localstorage",
-        "lifecycle": "removed",
-        "key": "IS_AUTHENTICATED_uWlmiJuqQqVaAQjGdojc8Qxit4KVdorZ",
-        "value": "{\"state\":false,\"expiryTime\":1790801064382}",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "localstorage",
-        "lifecycle": "removed",
-        "key": "IS_AUTHENTICATED_pIEfVI6iNWZjSZkAQlJegtRqjYuXPGfELGQA0RVJFJAd5U0m",
-        "value": "{\"state\":false,\"expiryTime\":1790843587787}",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "localstorage",
-        "lifecycle": "removed",
-        "key": "akp-analytics-userid-state",
-        "value": "\"fresh\"",
         "category": "LOCATION_AND_DEMOGRAPHICS"
       },
       {
@@ -58796,27 +58639,6 @@
         "lifecycle": "removed",
         "key": "usi_session_data",
         "value": "{\"value\":\"{\\\"ip\\\":\\\"78.243.1.158\\\",\\\"country\\\":\\\"fr\\\"}\",\"usi_expires\":1790882585776}",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "localstorage",
-        "lifecycle": "removed",
-        "key": "IS_AUTHENTICATED_uWlmiJuqQqVaAQjGdojc8Qxit4KVdorZ",
-        "value": "{\"state\":false,\"expiryTime\":1790845207959}",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "localstorage",
-        "lifecycle": "removed",
-        "key": "IS_AUTHENTICATED_pIEfVI6iNWZjSZkAQlJegtRqjYuXPGfELGQA0RVJFJAd5U0m",
-        "value": "{\"state\":false,\"expiryTime\":1790843587787}",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "localstorage",
-        "lifecycle": "removed",
-        "key": "akp-analytics-userid-state",
-        "value": "\"fresh\"",
         "category": "LOCATION_AND_DEMOGRAPHICS"
       },
       {
@@ -58941,13 +58763,6 @@
       {
         "storage_type": "sessionstorage",
         "lifecycle": "removed",
-        "key": "akp-analytics-userid-state",
-        "value": "\"fresh\"",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "sessionstorage",
-        "lifecycle": "removed",
         "key": "ADP:userConsentCopy:da-DK:web",
         "value": "{\"country\":\"FR\",\"locale\":\"da_DK\",\"type\":\"web\",\"title\":\"Præferencer for cookies\",\"copies\":[{\"consentId\":\"ADSK_WEB_PREFERENCES_STRICTLY_NEEDED\",\"order\":1,\"consentName\":\"Strengt nødvendigt – nødvendigt for vores sides funktioner og for at tilbyde dig tjenesteydelser\",\"consentText\":\"Disse cookies giver os mulighed for at gemme dine præferencer eller logon-oplysninger, besvare dine anmodninger eller bekræfte elementer i din indkøbskurv.\",\"consentDesc\":null,\"display\":true,\"enabled\":false,\"required\":false,\"prechecked\":true},{\"consentId\":\"ADSK_WEB_PREFERENCES_IMPROVEMENT\",\"order\":2,\"consentName\":\"Gør din oplevelse bedre – lad os vise dig det, der er relevant for dig\",\"consentText\":\"Disse cookies giver os mulighed for at tilbyde forbedret funktionalitet og en personlig oplevelse. De kan være indstillet af os eller tredjepartsudbydere, hvis tjenesteydelser vi bruger til at levere oplysninger og oplevelser, der er tilpasset til dig. Hvis du ikke tillader disse cookies, vil nogle af eller alle disse tjenesteydelser måske ikke være tilgængelige for dig.\",\"consentDesc\":null,\"display\":true,\"enabled\":true,\"required\":false,\"prechecked\":false},{\"consentId\":\"ADSK_WEB_PREFERENCES_ADVERTISEMENT\",\"order\":3,\"consentName\":\"Tilpas dine reklamer – lad os tilbyde dig målrettede reklamer\",\"consentText\":\"Disse cookies indsamler data om dig baseret på dine aktiviteter og interesser for at kunne vise dig relevante reklamer og kontrollere deres effektivitet. Når vi indsamler disse data, bliver de annoncer, vi viser dig, mere tilpassede til dine interesser. Hvis du ikke tillader disse cookies, vil du opleve mindre målrettede reklamer.\",\"consentDesc\":null,\"display\":true,\"enabled\":true,\"required\":false,\"prechecked\":false}],\"i18n\":{\"dataPolicyLink1\":\"https://www.autodesk.com/dk/company/legal-notices-trademarks/privacy-statement/third-party-services\",\"dataPolicyDesc5\":\". Autodesks websteder registrerer også Global Privacy Control, der er tilgængelig i visse browsere, som en alternativ måde, hvorpå du kan fravælge salg eller deling.\",\"no\":\"Nej\",\"continueToSite\":\"FORTSÆT TIL WEBSTEDET\",\"Description\":\"Beskyttelse af dine personlige oplysninger er vigtig for os, og det samme er en optimal oplevelse. Som hjælp til at tilpasse oplysninger og bygge programmer indsamler vi data om din brug af dette websted.\",\"yes\":\"Ja\",\"dataPolicyLink2\":\"https://www.autodesk.com/dk/company/legal-notices-trademarks/privacy-statement\",\"Title\":\"Præferencer for cookies\",\"yesToAll\":\"JA TIL ALLE\",\"dataPolicyDesc1\":\"Få mere at vide om de\",\"dataPolicyDesc2\":\"Tredjepartstjenester\",\"dataPolicyDesc3\":\"vi bruger, og vores\",\"changeSettings\":\"Hvis du vil ændre indstillingerne senere, kan du klikke på Indstillinger for beskyttelse af personlige oplysninger nederst på enhver side.\",\"noToAll\":\"NEJ TIL ALLE\",\"dataPolicyDesc4\":\"Erklæring om beskyttelse af personlige oplysninger\",\"dataPolicyTitle\":\"Må vi indsamle og bruge dine data?\"}}",
         "category": "LOCATION_AND_DEMOGRAPHICS"
@@ -58969,13 +58784,6 @@
       {
         "storage_type": "sessionstorage",
         "lifecycle": "removed",
-        "key": "akp-analytics-userid-state",
-        "value": "\"fresh\"",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "sessionstorage",
-        "lifecycle": "removed",
         "key": "ADP:userConsentCopy:da-DK:web",
         "value": "{\"country\":\"FR\",\"locale\":\"da_DK\",\"type\":\"web\",\"title\":\"Præferencer for cookies\",\"copies\":[{\"consentId\":\"ADSK_WEB_PREFERENCES_STRICTLY_NEEDED\",\"order\":1,\"consentName\":\"Strengt nødvendigt – nødvendigt for vores sides funktioner og for at tilbyde dig tjenesteydelser\",\"consentText\":\"Disse cookies giver os mulighed for at gemme dine præferencer eller logon-oplysninger, besvare dine anmodninger eller bekræfte elementer i din indkøbskurv.\",\"consentDesc\":null,\"display\":true,\"enabled\":false,\"required\":false,\"prechecked\":true},{\"consentId\":\"ADSK_WEB_PREFERENCES_IMPROVEMENT\",\"order\":2,\"consentName\":\"Gør din oplevelse bedre – lad os vise dig det, der er relevant for dig\",\"consentText\":\"Disse cookies giver os mulighed for at tilbyde forbedret funktionalitet og en personlig oplevelse. De kan være indstillet af os eller tredjepartsudbydere, hvis tjenesteydelser vi bruger til at levere oplysninger og oplevelser, der er tilpasset til dig. Hvis du ikke tillader disse cookies, vil nogle af eller alle disse tjenesteydelser måske ikke være tilgængelige for dig.\",\"consentDesc\":null,\"display\":true,\"enabled\":true,\"required\":false,\"prechecked\":false},{\"consentId\":\"ADSK_WEB_PREFERENCES_ADVERTISEMENT\",\"order\":3,\"consentName\":\"Tilpas dine reklamer – lad os tilbyde dig målrettede reklamer\",\"consentText\":\"Disse cookies indsamler data om dig baseret på dine aktiviteter og interesser for at kunne vise dig relevante reklamer og kontrollere deres effektivitet. Når vi indsamler disse data, bliver de annoncer, vi viser dig, mere tilpassede til dine interesser. Hvis du ikke tillader disse cookies, vil du opleve mindre målrettede reklamer.\",\"consentDesc\":null,\"display\":true,\"enabled\":true,\"required\":false,\"prechecked\":false}],\"i18n\":{\"dataPolicyLink1\":\"https://www.autodesk.com/dk/company/legal-notices-trademarks/privacy-statement/third-party-services\",\"dataPolicyDesc5\":\". Autodesks websteder registrerer også Global Privacy Control, der er tilgængelig i visse browsere, som en alternativ måde, hvorpå du kan fravælge salg eller deling.\",\"no\":\"Nej\",\"continueToSite\":\"FORTSÆT TIL WEBSTEDET\",\"Description\":\"Beskyttelse af dine personlige oplysninger er vigtig for os, og det samme er en optimal oplevelse. Som hjælp til at tilpasse oplysninger og bygge programmer indsamler vi data om din brug af dette websted.\",\"yes\":\"Ja\",\"dataPolicyLink2\":\"https://www.autodesk.com/dk/company/legal-notices-trademarks/privacy-statement\",\"Title\":\"Præferencer for cookies\",\"yesToAll\":\"JA TIL ALLE\",\"dataPolicyDesc1\":\"Få mere at vide om de\",\"dataPolicyDesc2\":\"Tredjepartstjenester\",\"dataPolicyDesc3\":\"vi bruger, og vores\",\"changeSettings\":\"Hvis du vil ændre indstillingerne senere, kan du klikke på Indstillinger for beskyttelse af personlige oplysninger nederst på enhver side.\",\"noToAll\":\"NEJ TIL ALLE\",\"dataPolicyDesc4\":\"Erklæring om beskyttelse af personlige oplysninger\",\"dataPolicyTitle\":\"Må vi indsamle og bruge dine data?\"}}",
         "category": "LOCATION_AND_DEMOGRAPHICS"
@@ -58997,22 +58805,8 @@
       {
         "storage_type": "sessionstorage",
         "lifecycle": "removed",
-        "key": "akp-analytics-userid-state",
-        "value": "\"fresh\"",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "sessionstorage",
-        "lifecycle": "removed",
         "key": "ADP:userConsentCopy:da-DK:web",
         "value": "{\"country\":\"FR\",\"locale\":\"da_DK\",\"type\":\"web\",\"title\":\"Præferencer for cookies\",\"copies\":[{\"consentId\":\"ADSK_WEB_PREFERENCES_STRICTLY_NEEDED\",\"order\":1,\"consentName\":\"Strengt nødvendigt – nødvendigt for vores sides funktioner og for at tilbyde dig tjenesteydelser\",\"consentText\":\"Disse cookies giver os mulighed for at gemme dine præferencer eller logon-oplysninger, besvare dine anmodninger eller bekræfte elementer i din indkøbskurv.\",\"consentDesc\":null,\"display\":true,\"enabled\":false,\"required\":false,\"prechecked\":true},{\"consentId\":\"ADSK_WEB_PREFERENCES_IMPROVEMENT\",\"order\":2,\"consentName\":\"Gør din oplevelse bedre – lad os vise dig det, der er relevant for dig\",\"consentText\":\"Disse cookies giver os mulighed for at tilbyde forbedret funktionalitet og en personlig oplevelse. De kan være indstillet af os eller tredjepartsudbydere, hvis tjenesteydelser vi bruger til at levere oplysninger og oplevelser, der er tilpasset til dig. Hvis du ikke tillader disse cookies, vil nogle af eller alle disse tjenesteydelser måske ikke være tilgængelige for dig.\",\"consentDesc\":null,\"display\":true,\"enabled\":true,\"required\":false,\"prechecked\":false},{\"consentId\":\"ADSK_WEB_PREFERENCES_ADVERTISEMENT\",\"order\":3,\"consentName\":\"Tilpas dine reklamer – lad os tilbyde dig målrettede reklamer\",\"consentText\":\"Disse cookies indsamler data om dig baseret på dine aktiviteter og interesser for at kunne vise dig relevante reklamer og kontrollere deres effektivitet. Når vi indsamler disse data, bliver de annoncer, vi viser dig, mere tilpassede til dine interesser. Hvis du ikke tillader disse cookies, vil du opleve mindre målrettede reklamer.\",\"consentDesc\":null,\"display\":true,\"enabled\":true,\"required\":false,\"prechecked\":false}],\"i18n\":{\"dataPolicyLink1\":\"https://www.autodesk.com/dk/company/legal-notices-trademarks/privacy-statement/third-party-services\",\"dataPolicyDesc5\":\". Autodesks websteder registrerer også Global Privacy Control, der er tilgængelig i visse browsere, som en alternativ måde, hvorpå du kan fravælge salg eller deling.\",\"no\":\"Nej\",\"continueToSite\":\"FORTSÆT TIL WEBSTEDET\",\"Description\":\"Beskyttelse af dine personlige oplysninger er vigtig for os, og det samme er en optimal oplevelse. Som hjælp til at tilpasse oplysninger og bygge programmer indsamler vi data om din brug af dette websted.\",\"yes\":\"Ja\",\"dataPolicyLink2\":\"https://www.autodesk.com/dk/company/legal-notices-trademarks/privacy-statement\",\"Title\":\"Præferencer for cookies\",\"yesToAll\":\"JA TIL ALLE\",\"dataPolicyDesc1\":\"Få mere at vide om de\",\"dataPolicyDesc2\":\"Tredjepartstjenester\",\"dataPolicyDesc3\":\"vi bruger, og vores\",\"changeSettings\":\"Hvis du vil ændre indstillingerne senere, kan du klikke på Indstillinger for beskyttelse af personlige oplysninger nederst på enhver side.\",\"noToAll\":\"NEJ TIL ALLE\",\"dataPolicyDesc4\":\"Erklæring om beskyttelse af personlige oplysninger\",\"dataPolicyTitle\":\"Må vi indsamle og bruge dine data?\"}}",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "sessionstorage",
-        "lifecycle": "removed",
-        "key": "cxone:5840:guide-state",
-        "value": "{\"lastModified\":1790206080581,\"portalButtonGuideOpen\":false,\"multiButtonGuideOpen\":false,\"guideVisible\":true,\"chatVisible\":false,\"preContactForm\":{},\"informationBridgeIds\":{}}",
         "category": "LOCATION_AND_DEMOGRAPHICS"
       }
     ],
@@ -83338,11 +83132,11 @@
   "persistence_metrics": {
     "by_storage_type": {
       "cookies": {
-        "total_items": 4221,
-        "added": 1699,
+        "total_items": 4217,
+        "added": 1695,
         "modified": 1866,
         "removed": 656,
-        "persistence_ratio": 0.8445865908552476
+        "persistence_ratio": 0.8444391747687929
       },
       "indexeddb": {
         "total_items": 7447,
@@ -83352,18 +83146,18 @@
         "persistence_ratio": 0.0
       },
       "localstorage": {
-        "total_items": 2151,
-        "added": 915,
-        "modified": 243,
-        "removed": 993,
-        "persistence_ratio": 0.5383542538354253
+        "total_items": 2133,
+        "added": 914,
+        "modified": 242,
+        "removed": 977,
+        "persistence_ratio": 0.5419596812001876
       },
       "sessionstorage": {
-        "total_items": 764,
+        "total_items": 760,
         "added": 348,
         "modified": 26,
-        "removed": 390,
-        "persistence_ratio": 0.4895287958115183
+        "removed": 386,
+        "persistence_ratio": 0.4921052631578947
       }
     },
     "by_category": {
@@ -83382,11 +83176,11 @@
         "persistence_ratio": 0.5384615384615384
       },
       "LOCATION_AND_DEMOGRAPHICS": {
-        "total_items": 358,
-        "added": 44,
-        "modified": 17,
-        "removed": 66,
-        "persistence_ratio": 0.17039106145251395
+        "total_items": 332,
+        "added": 39,
+        "modified": 16,
+        "removed": 46,
+        "persistence_ratio": 0.16566265060240964
       },
       "ID_SOLUTIONS_AND_EXCHANGES": {
         "total_items": 1251,

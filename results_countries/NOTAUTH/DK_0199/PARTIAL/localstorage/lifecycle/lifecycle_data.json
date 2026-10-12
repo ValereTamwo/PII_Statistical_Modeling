@@ -1,97 +1,67 @@
 {
   "storage_type": "localstorage",
   "metrics": {
-    "total_items": 388,
-    "items_modified": 152,
+    "total_items": 386,
+    "items_modified": 151,
     "items_deleted": 53,
-    "entropy_increases": 65,
+    "entropy_increases": 64,
     "entropy_decreases": 58,
     "size_increases": 39,
     "size_decreases": 13,
     "pii_transitions": {
-      "IDENTITY_TRACKING -> SESSION_MANAGEMENT": 6,
-      "APP_STATE_STORAGE -> UX_AND_PERFORMANCE_ANALYTICS": 8,
-      "IDENTITY_TRACKING -> ID_SOLUTIONS_AND_EXCHANGES": 5,
-      "BEHAVIORAL_DATA -> IDENTITY_TRACKING": 4,
-      "NAVIGATION_HISTORY -> UX_AND_PERFORMANCE_ANALYTICS": 2,
-      "APP_STATE_STORAGE -> USER_PREFERENCES": 7,
-      "DIRECT_PII_KEYS -> USER_PREFERENCES": 3,
+      "BEHAVIORAL_DATA -> UX_AND_PERFORMANCE_ANALYTICS": 12,
       "CONSENT_AND_PRIVACY -> UX_AND_PERFORMANCE_ANALYTICS": 4,
-      "ID_SOLUTIONS_AND_EXCHANGES -> UX_AND_PERFORMANCE_ANALYTICS": 6,
-      "DEVICE_ENV -> TECHNICAL_PASSWORDS": 1,
-      "IDENTITY_TRACKING -> TECHNICAL_PASSWORDS": 2,
-      "TECHNICAL_PASSWORDS -> UX_AND_PERFORMANCE_ANALYTICS": 6,
-      "APP_STATE_STORAGE -> ID_SOLUTIONS_AND_EXCHANGES": 2,
-      "BEHAVIORAL_DATA -> CONSENT_AND_PRIVACY": 1,
       "IDENTITY_TRACKING -> UX_AND_PERFORMANCE_ANALYTICS": 9,
       "CONSENT_AND_PRIVACY -> ID_SOLUTIONS_AND_EXCHANGES": 6,
-      "BEHAVIORAL_DATA -> UX_AND_PERFORMANCE_ANALYTICS": 12,
-      "ID_SOLUTIONS_AND_EXCHANGES -> TECHNICAL_PASSWORDS": 5,
-      "DIRECT_PII_KEYS -> LOCATION_AND_DEMOGRAPHICS": 1,
-      "IDENTITY_TRACKING -> SECURITY_AND_BOT_MITIGATION": 5,
-      "BEHAVIORAL_DATA -> USER_PREFERENCES": 2,
-      "USER_PREFERENCES -> BEHAVIORAL_DATA": 2,
-      "BEHAVIORAL_DATA -> INFRASTRUCTURE": 1,
-      "ID_SOLUTIONS_AND_EXCHANGES -> SECURITY_AND_BOT_MITIGATION": 2,
-      "BEHAVIORAL_DATA -> DEVICE_ENV": 1,
       "ID_SOLUTIONS_AND_EXCHANGES -> USER_PREFERENCES": 1,
-      "DEVICE_ENV -> UX_AND_PERFORMANCE_ANALYTICS": 3,
-      "DEVICE_ENV -> USER_PREFERENCES": 1,
-      "APP_STATE_STORAGE -> BEHAVIORAL_DATA": 1,
-      "BEHAVIORAL_DATA -> ID_SOLUTIONS_AND_EXCHANGES": 4,
+      "NAVIGATION_HISTORY -> UX_AND_PERFORMANCE_ANALYTICS": 2,
+      "TECHNICAL_PASSWORDS -> UX_AND_PERFORMANCE_ANALYTICS": 6,
+      "BEHAVIORAL_DATA -> USER_PREFERENCES": 2,
+      "BEHAVIORAL_DATA -> INFRASTRUCTURE": 1,
+      "APP_STATE_STORAGE -> USER_PREFERENCES": 7,
       "BEHAVIORAL_DATA -> SECURITY_AND_BOT_MITIGATION": 1,
+      "DIRECT_PII_KEYS -> USER_PREFERENCES": 3,
+      "IDENTITY_TRACKING -> SECURITY_AND_BOT_MITIGATION": 5,
+      "DEVICE_ENV -> TECHNICAL_PASSWORDS": 1,
+      "ID_SOLUTIONS_AND_EXCHANGES -> UX_AND_PERFORMANCE_ANALYTICS": 6,
+      "IDENTITY_TRACKING -> SESSION_MANAGEMENT": 6,
+      "APP_STATE_STORAGE -> UX_AND_PERFORMANCE_ANALYTICS": 8,
+      "BEHAVIORAL_DATA -> DEVICE_ENV": 1,
+      "IDENTITY_TRACKING -> TECHNICAL_PASSWORDS": 2,
+      "APP_STATE_STORAGE -> BEHAVIORAL_DATA": 1,
+      "USER_PREFERENCES -> BEHAVIORAL_DATA": 2,
+      "BEHAVIORAL_DATA -> IDENTITY_TRACKING": 4,
+      "DEVICE_ENV -> UX_AND_PERFORMANCE_ANALYTICS": 3,
+      "BEHAVIORAL_DATA -> ID_SOLUTIONS_AND_EXCHANGES": 4,
+      "DEVICE_ENV -> USER_PREFERENCES": 1,
       "DIRECT_PII -> UX_AND_PERFORMANCE_ANALYTICS": 1,
-      "APP_STATE_STORAGE -> SECURITY_AND_BOT_MITIGATION": 1,
-      "INFRASTRUCTURE -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "ID_SOLUTIONS_AND_EXCHANGES -> TECHNICAL_PASSWORDS": 5,
+      "IDENTITY_TRACKING -> ID_SOLUTIONS_AND_EXCHANGES": 5,
+      "BEHAVIORAL_DATA -> CONSENT_AND_PRIVACY": 1,
       "CONSENT_AND_PRIVACY -> IDENTITY_TRACKING": 1,
-      "BEHAVIORAL_DATA -> LOCATION_AND_DEMOGRAPHICS": 1
+      "DIRECT_PII_KEYS -> LOCATION_AND_DEMOGRAPHICS": 1,
+      "ID_SOLUTIONS_AND_EXCHANGES -> SECURITY_AND_BOT_MITIGATION": 2,
+      "BEHAVIORAL_DATA -> LOCATION_AND_DEMOGRAPHICS": 1,
+      "APP_STATE_STORAGE -> ID_SOLUTIONS_AND_EXCHANGES": 2,
+      "APP_STATE_STORAGE -> SECURITY_AND_BOT_MITIGATION": 1,
+      "INFRASTRUCTURE -> UX_AND_PERFORMANCE_ANALYTICS": 1
     },
     "volatility_distribution": {
-      "moderate": 94,
-      "high": 88,
-      "stable": 206
+      "high": 87,
+      "stable": 205,
+      "moderate": 94
     },
     "change_frequency": {
-      "avg_gap": 34.414857142857144,
+      "avg_gap": 34.35097813578826,
       "min_gap": 0,
       "max_gap": 389
     },
     "frequent_changes": [
       {
-        "key": "autodesk-assistant-storage_v1.90.0|en-US",
-        "avg_gap": 0.0,
-        "num_modifications": 4,
-        "pii_category": "SESSION_MANAGEMENT"
-      },
-      {
-        "key": "ay_phb",
-        "avg_gap": 0.0,
-        "num_modifications": 2,
-        "pii_category": "ID_SOLUTIONS_AND_EXCHANGES"
-      },
-      {
-        "key": "assistantSessionId",
-        "avg_gap": 0.0,
-        "num_modifications": 2,
-        "pii_category": "SESSION_MANAGEMENT"
-      },
-      {
         "key": "ADP:8714b50baff07013ea1b9ce347f728e6:anon_consent_copy",
         "avg_gap": 0.0,
         "num_modifications": 5,
         "pii_category": "USER_PREFERENCES"
-      },
-      {
-        "key": "product-store",
-        "avg_gap": 0.0,
-        "num_modifications": 5,
-        "pii_category": "USER_PREFERENCES"
-      },
-      {
-        "key": "recently_viewed_product",
-        "avg_gap": 0.0,
-        "num_modifications": 2,
-        "pii_category": "SECURITY_AND_BOT_MITIGATION"
       },
       {
         "key": "optimizely_data$$oeu1788684194115r0.9675944005458575$$a2201792135$$events",
@@ -100,10 +70,40 @@
         "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
       },
       {
+        "key": "assistantSessionId",
+        "avg_gap": 0.0,
+        "num_modifications": 2,
+        "pii_category": "SESSION_MANAGEMENT"
+      },
+      {
+        "key": "product-store",
+        "avg_gap": 0.0,
+        "num_modifications": 5,
+        "pii_category": "USER_PREFERENCES"
+      },
+      {
         "key": "product_data_storage",
         "avg_gap": 0.0,
         "num_modifications": 6,
         "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "autodesk-assistant-storage_v1.90.0|en-US",
+        "avg_gap": 0.0,
+        "num_modifications": 4,
+        "pii_category": "SESSION_MANAGEMENT"
+      },
+      {
+        "key": "recently_viewed_product",
+        "avg_gap": 0.0,
+        "num_modifications": 2,
+        "pii_category": "SECURITY_AND_BOT_MITIGATION"
+      },
+      {
+        "key": "ay_phb",
+        "avg_gap": 0.0,
+        "num_modifications": 2,
+        "pii_category": "ID_SOLUTIONS_AND_EXCHANGES"
       },
       {
         "key": "ReduxState",
@@ -130,16 +130,16 @@
         "pii_category": "ID_SOLUTIONS_AND_EXCHANGES"
       },
       {
-        "key": "intercom.intercom-state-jxjz1zs0",
-        "avg_gap": 9.0,
-        "num_modifications": 15,
-        "pii_category": "USER_PREFERENCES"
-      },
-      {
         "key": "id5id",
         "avg_gap": 9.0,
         "num_modifications": 10,
         "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "intercom.intercom-state-jxjz1zs0",
+        "avg_gap": 9.0,
+        "num_modifications": 15,
+        "pii_category": "USER_PREFERENCES"
       },
       {
         "key": "id5id_v2_2207596943538543",
@@ -179,7 +179,7 @@
       }
     ],
     "url_modifications": {
-      "www.autodesk.com": 102,
+      "www.autodesk.com": 98,
       "www.canon.dk": 71,
       "www.av-connection.dk": 54,
       "www.tomshardware.com": 38,
@@ -188,16 +188,12 @@
       "steelseries.com": 30,
       "global.techradar.com": 27,
       "connery.dk": 24,
-      "www.intempus.dk": 24
+      "deepai.org": 23
     },
     "pii_modification_patterns": {
-      "BEHAVIORAL_DATA": {
-        "count": 75,
-        "avg_gap": 74.05454545454545
-      },
-      "SESSION_MANAGEMENT": {
-        "count": 8,
-        "avg_gap": 4.285714285714286
+      "UX_AND_PERFORMANCE_ANALYTICS": {
+        "count": 219,
+        "avg_gap": 36.469026548672566
       },
       "ID_SOLUTIONS_AND_EXCHANGES": {
         "count": 60,
@@ -207,47 +203,51 @@
         "count": 137,
         "avg_gap": 40.357142857142854
       },
-      "UX_AND_PERFORMANCE_ANALYTICS": {
-        "count": 219,
-        "avg_gap": 36.469026548672566
-      },
       "USER_PREFERENCES": {
-        "count": 90,
-        "avg_gap": 14.2125
-      },
-      "TECHNICAL_PASSWORDS": {
-        "count": 19,
-        "avg_gap": 46.473684210526315
-      },
-      "NAVIGATION_HISTORY": {
-        "count": 31,
-        "avg_gap": 10.590909090909092
-      },
-      "SECURITY_AND_BOT_MITIGATION": {
-        "count": 8,
-        "avg_gap": 104.0
-      },
-      "APP_STATE_STORAGE": {
-        "count": 8,
-        "avg_gap": 60.166666666666664
+        "count": 88,
+        "avg_gap": 14.576923076923077
       },
       "INFRASTRUCTURE": {
         "count": 2,
         "avg_gap": 174.0
       },
+      "BEHAVIORAL_DATA": {
+        "count": 75,
+        "avg_gap": 74.05454545454545
+      },
+      "APP_STATE_STORAGE": {
+        "count": 8,
+        "avg_gap": 60.166666666666664
+      },
       "CONSENT_AND_PRIVACY": {
         "count": 3,
         "avg_gap": 47.0
+      },
+      "SESSION_MANAGEMENT": {
+        "count": 8,
+        "avg_gap": 4.285714285714286
       },
       "DEVICE_ENV": {
         "count": 6,
         "avg_gap": 52.4
       },
-      "LOCATION_AND_DEMOGRAPHICS": {
+      "TECHNICAL_PASSWORDS": {
+        "count": 19,
+        "avg_gap": 46.473684210526315
+      },
+      "SECURITY_AND_BOT_MITIGATION": {
         "count": 8,
-        "avg_gap": 43.125
+        "avg_gap": 104.0
+      },
+      "LOCATION_AND_DEMOGRAPHICS": {
+        "count": 4,
+        "avg_gap": 16.6
+      },
+      "NAVIGATION_HISTORY": {
+        "count": 31,
+        "avg_gap": 10.590909090909092
       }
     }
   },
-  "num_timelines": 388
+  "num_timelines": 386
 }

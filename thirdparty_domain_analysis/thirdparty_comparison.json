@@ -1,0 +1,2100 @@
+{
+  "generated_at": "2026-10-05T23:22:02",
+  "method": {
+    "category_proxy": "An IndexedDB item is third-party if its PII category is one of IDENTITY_TRACKING, ID_SOLUTIONS_AND_EXCHANGES, SERVER_SIDE_TRACKING, UX_AND_PERFORMANCE_ANALYTICS (current behaviour of items_vectorizer.py).",
+    "domain_method": "An IndexedDB item is third-party if the domain of its source_file is not one of the sites the persona was assigned to navigate to (data/user_sites/navigation_par_persona_final.json), compared with the same domain-suffix rule used for cookies in analysis/analyze_by_category.py's is_third_party().",
+    "newly_flagged_thirdparty_by_domain_method": "Items the category proxy called first-party but the domain method calls third-party - the third parties that get added by switching methods, which is what this file is primarily for.",
+    "newly_flagged_firstparty_by_domain_method": "Items the category proxy called third-party but the domain method calls first-party (the rarer, opposite disagreement)."
+  },
+  "clusters": {
+    "fr": {
+      "users": [
+        "FR_0417",
+        "FR_0446",
+        "FR_0458"
+      ],
+      "by_user": {
+        "FR_0417": {
+          "n_assigned_sites": 130,
+          "n_items": 77930,
+          "n_distinct_indexeddb_sites": 33,
+          "n_distinct_sites_flagged_thirdparty_by_domain": 16,
+          "category_proxy": {
+            "thirdparty_items": 6719,
+            "thirdparty_pct": 8.62
+          },
+          "domain_method": {
+            "thirdparty_items": 70492,
+            "thirdparty_pct": 90.46
+          },
+          "agreement_pct": 15.43,
+          "newly_flagged_thirdparty_by_domain_method": {
+            "total_items": 64838,
+            "pct_of_total_items": 83.2,
+            "top_domains": [
+              {
+                "domain": "youtube.com",
+                "items": 59181,
+                "pct_of_total_items": 75.94
+              },
+              {
+                "domain": "goodnite.gg",
+                "items": 3732,
+                "pct_of_total_items": 4.79
+              },
+              {
+                "domain": "linkedin.com",
+                "items": 874,
+                "pct_of_total_items": 1.12
+              },
+              {
+                "domain": "unibet.fr",
+                "items": 662,
+                "pct_of_total_items": 0.85
+              },
+              {
+                "domain": "faq.moncompte.lefigaro.fr",
+                "items": 275,
+                "pct_of_total_items": 0.35
+              },
+              {
+                "domain": "playvod.com",
+                "items": 84,
+                "pct_of_total_items": 0.11
+              },
+              {
+                "domain": "fr.xvideos.com",
+                "items": 12,
+                "pct_of_total_items": 0.02
+              },
+              {
+                "domain": "whitebit.com",
+                "items": 6,
+                "pct_of_total_items": 0.01
+              },
+              {
+                "domain": "armandthiery.fr",
+                "items": 4,
+                "pct_of_total_items": 0.01
+              },
+              {
+                "domain": "cache-cache.fr",
+                "items": 3,
+                "pct_of_total_items": 0.0
+              },
+              {
+                "domain": "dashboard.sunday.cloud",
+                "items": 2,
+                "pct_of_total_items": 0.0
+              },
+              {
+                "domain": "odysee.com",
+                "items": 2,
+                "pct_of_total_items": 0.0
+              },
+              {
+                "domain": "about.linkedin.com",
+                "items": 1,
+                "pct_of_total_items": 0.0
+              }
+            ]
+          },
+          "newly_flagged_firstparty_by_domain_method": {
+            "total_items": 1065,
+            "pct_of_total_items": 1.37,
+            "top_domains": [
+              {
+                "domain": "egora.fr",
+                "items": 500,
+                "pct_of_total_items": 0.64
+              },
+              {
+                "domain": "billetreduc.com",
+                "items": 188,
+                "pct_of_total_items": 0.24
+              },
+              {
+                "domain": "fr.windfinder.com",
+                "items": 142,
+                "pct_of_total_items": 0.18
+              },
+              {
+                "domain": "amoursucre.com",
+                "items": 60,
+                "pct_of_total_items": 0.08
+              },
+              {
+                "domain": "lespompeuses.com",
+                "items": 48,
+                "pct_of_total_items": 0.06
+              },
+              {
+                "domain": "docteur-fitness.com",
+                "items": 39,
+                "pct_of_total_items": 0.05
+              },
+              {
+                "domain": "toscane-boutique.fr",
+                "items": 36,
+                "pct_of_total_items": 0.05
+              },
+              {
+                "domain": "reseauinternational.net",
+                "items": 24,
+                "pct_of_total_items": 0.03
+              },
+              {
+                "domain": "livenation.fr",
+                "items": 9,
+                "pct_of_total_items": 0.01
+              },
+              {
+                "domain": "greenweez.com",
+                "items": 9,
+                "pct_of_total_items": 0.01
+              },
+              {
+                "domain": "sundayapp.io",
+                "items": 7,
+                "pct_of_total_items": 0.01
+              },
+              {
+                "domain": "aria.operadeparis.fr",
+                "items": 3,
+                "pct_of_total_items": 0.0
+              }
+            ]
+          }
+        },
+        "FR_0446": {
+          "n_assigned_sites": 130,
+          "n_items": 196546,
+          "n_distinct_indexeddb_sites": 35,
+          "n_distinct_sites_flagged_thirdparty_by_domain": 19,
+          "category_proxy": {
+            "thirdparty_items": 15704,
+            "thirdparty_pct": 7.99
+          },
+          "domain_method": {
+            "thirdparty_items": 167122,
+            "thirdparty_pct": 85.03
+          },
+          "agreement_pct": 21.61,
+          "newly_flagged_thirdparty_by_domain_method": {
+            "total_items": 152749,
+            "pct_of_total_items": 77.72,
+            "top_domains": [
+              {
+                "domain": "youtube.com",
+                "items": 150751,
+                "pct_of_total_items": 76.7
+              },
+              {
+                "domain": "cdiscount.com",
+                "items": 845,
+                "pct_of_total_items": 0.43
+              },
+              {
+                "domain": "fiverr.com",
+                "items": 657,
+                "pct_of_total_items": 0.33
+              },
+              {
+                "domain": "fr.pinterest.com",
+                "items": 261,
+                "pct_of_total_items": 0.13
+              },
+              {
+                "domain": "wchat.eu.freshchat.com",
+                "items": 72,
+                "pct_of_total_items": 0.04
+              },
+              {
+                "domain": "fnac.com",
+                "items": 42,
+                "pct_of_total_items": 0.02
+              },
+              {
+                "domain": "my-foncia.fonciamillenium.net",
+                "items": 31,
+                "pct_of_total_items": 0.02
+              },
+              {
+                "domain": "x.com",
+                "items": 26,
+                "pct_of_total_items": 0.01
+              },
+              {
+                "domain": "boutique-dalloz.fr",
+                "items": 20,
+                "pct_of_total_items": 0.01
+              },
+              {
+                "domain": "boutique.lefebvre-dalloz.fr",
+                "items": 19,
+                "pct_of_total_items": 0.01
+              },
+              {
+                "domain": "volotea.com",
+                "items": 13,
+                "pct_of_total_items": 0.01
+              },
+              {
+                "domain": "linkedin.com",
+                "items": 5,
+                "pct_of_total_items": 0.0
+              },
+              {
+                "domain": "sixt.fr",
+                "items": 4,
+                "pct_of_total_items": 0.0
+              },
+              {
+                "domain": "h.online-metrix.net",
+                "items": 3,
+                "pct_of_total_items": 0.0
+              }
+            ]
+          },
+          "newly_flagged_firstparty_by_domain_method": {
+            "total_items": 1331,
+            "pct_of_total_items": 0.68,
+            "top_domains": [
+              {
+                "domain": "fr.fiverr.com",
+                "items": 588,
+                "pct_of_total_items": 0.3
+              },
+              {
+                "domain": "vitisphere.com",
+                "items": 308,
+                "pct_of_total_items": 0.16
+              },
+              {
+                "domain": "sortiraparis.com",
+                "items": 172,
+                "pct_of_total_items": 0.09
+              },
+              {
+                "domain": "kanpai.fr",
+                "items": 122,
+                "pct_of_total_items": 0.06
+              },
+              {
+                "domain": "ouedkniss.com",
+                "items": 42,
+                "pct_of_total_items": 0.02
+              },
+              {
+                "domain": "hertz.fr",
+                "items": 34,
+                "pct_of_total_items": 0.02
+              },
+              {
+                "domain": "legalstart.fr",
+                "items": 18,
+                "pct_of_total_items": 0.01
+              },
+              {
+                "domain": "locservice.fr",
+                "items": 16,
+                "pct_of_total_items": 0.01
+              },
+              {
+                "domain": "dalloz.fr",
+                "items": 13,
+                "pct_of_total_items": 0.01
+              },
+              {
+                "domain": "liligo.fr",
+                "items": 10,
+                "pct_of_total_items": 0.01
+              },
+              {
+                "domain": "casamundo.fr",
+                "items": 6,
+                "pct_of_total_items": 0.0
+              },
+              {
+                "domain": "experiences.easyjet.com",
+                "items": 2,
+                "pct_of_total_items": 0.0
+              }
+            ]
+          }
+        },
+        "FR_0458": {
+          "n_assigned_sites": 130,
+          "n_items": 27867,
+          "n_distinct_indexeddb_sites": 46,
+          "n_distinct_sites_flagged_thirdparty_by_domain": 8,
+          "category_proxy": {
+            "thirdparty_items": 2504,
+            "thirdparty_pct": 8.99
+          },
+          "domain_method": {
+            "thirdparty_items": 10362,
+            "thirdparty_pct": 37.18
+          },
+          "agreement_pct": 59.86,
+          "newly_flagged_thirdparty_by_domain_method": {
+            "total_items": 9522,
+            "pct_of_total_items": 34.17,
+            "top_domains": [
+              {
+                "domain": "youtube.com",
+                "items": 7223,
+                "pct_of_total_items": 25.92
+              },
+              {
+                "domain": "franceinfo.fr",
+                "items": 1431,
+                "pct_of_total_items": 5.14
+              },
+              {
+                "domain": "france3-regions.franceinfo.fr",
+                "items": 768,
+                "pct_of_total_items": 2.76
+              },
+              {
+                "domain": "wordpress.com",
+                "items": 52,
+                "pct_of_total_items": 0.19
+              },
+              {
+                "domain": "lespompeuses.com",
+                "items": 42,
+                "pct_of_total_items": 0.15
+              },
+              {
+                "domain": "bmw.fr",
+                "items": 6,
+                "pct_of_total_items": 0.02
+              }
+            ]
+          },
+          "newly_flagged_firstparty_by_domain_method": {
+            "total_items": 1664,
+            "pct_of_total_items": 5.97,
+            "top_domains": [
+              {
+                "domain": "valeursactuelles.com",
+                "items": 391,
+                "pct_of_total_items": 1.4
+              },
+              {
+                "domain": "planet.fr",
+                "items": 275,
+                "pct_of_total_items": 0.99
+              },
+              {
+                "domain": "01net.com",
+                "items": 245,
+                "pct_of_total_items": 0.88
+              },
+              {
+                "domain": "vertbaudet.fr",
+                "items": 245,
+                "pct_of_total_items": 0.88
+              },
+              {
+                "domain": "assistance.bouyguestelecom.fr",
+                "items": 155,
+                "pct_of_total_items": 0.56
+              },
+              {
+                "domain": "abcbourse.com",
+                "items": 49,
+                "pct_of_total_items": 0.18
+              },
+              {
+                "domain": "willemsefrance.fr",
+                "items": 36,
+                "pct_of_total_items": 0.13
+              },
+              {
+                "domain": "laprovence.com",
+                "items": 32,
+                "pct_of_total_items": 0.11
+              },
+              {
+                "domain": "huffingtonpost.fr",
+                "items": 31,
+                "pct_of_total_items": 0.11
+              },
+              {
+                "domain": "boursier.com",
+                "items": 30,
+                "pct_of_total_items": 0.11
+              },
+              {
+                "domain": "republicain-lorrain.fr",
+                "items": 26,
+                "pct_of_total_items": 0.09
+              },
+              {
+                "domain": "mister-auto.com",
+                "items": 23,
+                "pct_of_total_items": 0.08
+              },
+              {
+                "domain": "francebleu.fr",
+                "items": 21,
+                "pct_of_total_items": 0.08
+              },
+              {
+                "domain": "dna.fr",
+                "items": 17,
+                "pct_of_total_items": 0.06
+              },
+              {
+                "domain": "nouvelobs.com",
+                "items": 17,
+                "pct_of_total_items": 0.06
+              }
+            ]
+          }
+        }
+      },
+      "totals": {
+        "n_items": 302343,
+        "category_proxy_thirdparty_pct": 8.24,
+        "domain_method_thirdparty_pct": 82.02,
+        "newly_flagged_thirdparty_pct": 75.12,
+        "newly_flagged_firstparty_pct": 1.34
+      }
+    },
+    "countries": {
+      "users": [
+        "IT_0573",
+        "LU_0634",
+        "PT_0838",
+        "SE_0964",
+        "ES_0290",
+        "DE_0018",
+        "FR_0429",
+        "IE_0504",
+        "NL_0694",
+        "PL_0742",
+        "AT_0077",
+        "DK_0199",
+        "FI_0373"
+      ],
+      "by_user": {
+        "IT_0573": {
+          "n_assigned_sites": 130,
+          "n_items": 110234,
+          "n_distinct_indexeddb_sites": 29,
+          "n_distinct_sites_flagged_thirdparty_by_domain": 15,
+          "category_proxy": {
+            "thirdparty_items": 22241,
+            "thirdparty_pct": 20.18
+          },
+          "domain_method": {
+            "thirdparty_items": 107179,
+            "thirdparty_pct": 97.23
+          },
+          "agreement_pct": 22.39,
+          "newly_flagged_thirdparty_by_domain_method": {
+            "total_items": 85243,
+            "pct_of_total_items": 77.33,
+            "top_domains": [
+              {
+                "domain": "youtube.com",
+                "items": 77848,
+                "pct_of_total_items": 70.62
+              },
+              {
+                "domain": "wchat.eu.freshchat.com",
+                "items": 4191,
+                "pct_of_total_items": 3.8
+              },
+              {
+                "domain": "nkd.com",
+                "items": 2832,
+                "pct_of_total_items": 2.57
+              },
+              {
+                "domain": "farmacie-687318471970694647-989d88264e8a53b17101840.freshchat.com",
+                "items": 330,
+                "pct_of_total_items": 0.3
+              },
+              {
+                "domain": "pinterest.com",
+                "items": 17,
+                "pct_of_total_items": 0.02
+              },
+              {
+                "domain": "h.online-metrix.net",
+                "items": 15,
+                "pct_of_total_items": 0.01
+              },
+              {
+                "domain": "pages.ebay.com",
+                "items": 4,
+                "pct_of_total_items": 0.0
+              },
+              {
+                "domain": "knowledge.workspace.google.com",
+                "items": 2,
+                "pct_of_total_items": 0.0
+              },
+              {
+                "domain": "player.vimeo.com",
+                "items": 2,
+                "pct_of_total_items": 0.0
+              },
+              {
+                "domain": "fr.victoriassecret.com",
+                "items": 1,
+                "pct_of_total_items": 0.0
+              },
+              {
+                "domain": "mondoconv.it",
+                "items": 1,
+                "pct_of_total_items": 0.0
+              }
+            ]
+          },
+          "newly_flagged_firstparty_by_domain_method": {
+            "total_items": 305,
+            "pct_of_total_items": 0.28,
+            "top_domains": [
+              {
+                "domain": "decarocalzature.com",
+                "items": 111,
+                "pct_of_total_items": 0.1
+              },
+              {
+                "domain": "glamsport.it",
+                "items": 71,
+                "pct_of_total_items": 0.06
+              },
+              {
+                "domain": "uwalls.it",
+                "items": 62,
+                "pct_of_total_items": 0.06
+              },
+              {
+                "domain": "ynot.it",
+                "items": 46,
+                "pct_of_total_items": 0.04
+              },
+              {
+                "domain": "garneroarredamenti.com",
+                "items": 13,
+                "pct_of_total_items": 0.01
+              },
+              {
+                "domain": "signup.ebay.it",
+                "items": 1,
+                "pct_of_total_items": 0.0
+              },
+              {
+                "domain": "signin.ebay.it",
+                "items": 1,
+                "pct_of_total_items": 0.0
+              }
+            ]
+          }
+        },
+        "LU_0634": {
+          "n_assigned_sites": 130,
+          "n_items": 47416,
+          "n_distinct_indexeddb_sites": 27,
+          "n_distinct_sites_flagged_thirdparty_by_domain": 12,
+          "category_proxy": {
+            "thirdparty_items": 13104,
+            "thirdparty_pct": 27.64
+          },
+          "domain_method": {
+            "thirdparty_items": 30503,
+            "thirdparty_pct": 64.33
+          },
+          "agreement_pct": 28.72,
+          "newly_flagged_thirdparty_by_domain_method": {
+            "total_items": 25598,
+            "pct_of_total_items": 53.99,
+            "top_domains": [
+              {
+                "domain": "youtube.com",
+                "items": 25295,
+                "pct_of_total_items": 53.35
+              },
+              {
+                "domain": "gamesnacks.com",
+                "items": 218,
+                "pct_of_total_items": 0.46
+              },
+              {
+                "domain": "bricommerce.com",
+                "items": 59,
+                "pct_of_total_items": 0.12
+              },
+              {
+                "domain": "olybet.fr",
+                "items": 13,
+                "pct_of_total_items": 0.03
+              },
+              {
+                "domain": "studio.tripo3d.ai",
+                "items": 5,
+                "pct_of_total_items": 0.01
+              },
+              {
+                "domain": "linkedin.com",
+                "items": 4,
+                "pct_of_total_items": 0.01
+              },
+              {
+                "domain": "eu.frcapi.com",
+                "items": 2,
+                "pct_of_total_items": 0.0
+              },
+              {
+                "domain": "vinted.fr",
+                "items": 1,
+                "pct_of_total_items": 0.0
+              },
+              {
+                "domain": "global.frcapi.com",
+                "items": 1,
+                "pct_of_total_items": 0.0
+              }
+            ]
+          },
+          "newly_flagged_firstparty_by_domain_method": {
+            "total_items": 8199,
+            "pct_of_total_items": 17.29,
+            "top_domains": [
+              {
+                "domain": "m.apkpure.com",
+                "items": 4996,
+                "pct_of_total_items": 10.54
+              },
+              {
+                "domain": "noticiasaominuto.com",
+                "items": 2606,
+                "pct_of_total_items": 5.5
+              },
+              {
+                "domain": "vdl.lu",
+                "items": 247,
+                "pct_of_total_items": 0.52
+              },
+              {
+                "domain": "g1.globo.com",
+                "items": 109,
+                "pct_of_total_items": 0.23
+              },
+              {
+                "domain": "abola.pt",
+                "items": 53,
+                "pct_of_total_items": 0.11
+              },
+              {
+                "domain": "iefimerida.gr",
+                "items": 53,
+                "pct_of_total_items": 0.11
+              },
+              {
+                "domain": "la-conjugaison.nouvelobs.com",
+                "items": 39,
+                "pct_of_total_items": 0.08
+              },
+              {
+                "domain": "upwork.com",
+                "items": 23,
+                "pct_of_total_items": 0.05
+              },
+              {
+                "domain": "sapo.pt",
+                "items": 22,
+                "pct_of_total_items": 0.05
+              },
+              {
+                "domain": "protothema.gr",
+                "items": 18,
+                "pct_of_total_items": 0.04
+              },
+              {
+                "domain": "web.vdl.lu",
+                "items": 11,
+                "pct_of_total_items": 0.02
+              },
+              {
+                "domain": "vinted.lu",
+                "items": 10,
+                "pct_of_total_items": 0.02
+              },
+              {
+                "domain": "sicnoticias.pt",
+                "items": 7,
+                "pct_of_total_items": 0.01
+              },
+              {
+                "domain": "wort.lu",
+                "items": 4,
+                "pct_of_total_items": 0.01
+              },
+              {
+                "domain": "in.gr",
+                "items": 1,
+                "pct_of_total_items": 0.0
+              }
+            ]
+          }
+        },
+        "PT_0838": {
+          "n_assigned_sites": 129,
+          "n_items": 48632,
+          "n_distinct_indexeddb_sites": 32,
+          "n_distinct_sites_flagged_thirdparty_by_domain": 22,
+          "category_proxy": {
+            "thirdparty_items": 13517,
+            "thirdparty_pct": 27.79
+          },
+          "domain_method": {
+            "thirdparty_items": 47147,
+            "thirdparty_pct": 96.95
+          },
+          "agreement_pct": 27.17,
+          "newly_flagged_thirdparty_by_domain_method": {
+            "total_items": 34524,
+            "pct_of_total_items": 70.99,
+            "top_domains": [
+              {
+                "domain": "youtube.com",
+                "items": 27134,
+                "pct_of_total_items": 55.79
+              },
+              {
+                "domain": "newaccount1642195083841.freshchat.com",
+                "items": 4833,
+                "pct_of_total_items": 9.94
+              },
+              {
+                "domain": "bwin.pt",
+                "items": 985,
+                "pct_of_total_items": 2.03
+              },
+              {
+                "domain": "pwcportugal.csod.com",
+                "items": 607,
+                "pct_of_total_items": 1.25
+              },
+              {
+                "domain": "player.vimeo.com",
+                "items": 350,
+                "pct_of_total_items": 0.72
+              },
+              {
+                "domain": "web.whatsapp.com",
+                "items": 262,
+                "pct_of_total_items": 0.54
+              },
+              {
+                "domain": "linkedin.com",
+                "items": 92,
+                "pct_of_total_items": 0.19
+              },
+              {
+                "domain": "betano.pt",
+                "items": 81,
+                "pct_of_total_items": 0.17
+              },
+              {
+                "domain": "e.issuu.com",
+                "items": 66,
+                "pct_of_total_items": 0.14
+              },
+              {
+                "domain": "wchat.eu.freshchat.com",
+                "items": 63,
+                "pct_of_total_items": 0.13
+              },
+              {
+                "domain": "feverup.com",
+                "items": 16,
+                "pct_of_total_items": 0.03
+              },
+              {
+                "domain": "h.online-metrix.net",
+                "items": 14,
+                "pct_of_total_items": 0.03
+              },
+              {
+                "domain": "truck1.eu",
+                "items": 6,
+                "pct_of_total_items": 0.01
+              },
+              {
+                "domain": "auth.uber.com",
+                "items": 4,
+                "pct_of_total_items": 0.01
+              },
+              {
+                "domain": "sixt.pt",
+                "items": 3,
+                "pct_of_total_items": 0.01
+              }
+            ]
+          },
+          "newly_flagged_firstparty_by_domain_method": {
+            "total_items": 894,
+            "pct_of_total_items": 1.84,
+            "top_domains": [
+              {
+                "domain": "opodo.pt",
+                "items": 845,
+                "pct_of_total_items": 1.74
+              },
+              {
+                "domain": "carout.pt",
+                "items": 28,
+                "pct_of_total_items": 0.06
+              },
+              {
+                "domain": "lisboasecreta.co",
+                "items": 14,
+                "pct_of_total_items": 0.03
+              },
+              {
+                "domain": "zapimoveis.com.br",
+                "items": 6,
+                "pct_of_total_items": 0.01
+              },
+              {
+                "domain": "edp.pt",
+                "items": 1,
+                "pct_of_total_items": 0.0
+              }
+            ]
+          }
+        },
+        "SE_0964": {
+          "n_assigned_sites": 127,
+          "n_items": 34786,
+          "n_distinct_indexeddb_sites": 16,
+          "n_distinct_sites_flagged_thirdparty_by_domain": 14,
+          "category_proxy": {
+            "thirdparty_items": 6372,
+            "thirdparty_pct": 18.32
+          },
+          "domain_method": {
+            "thirdparty_items": 32381,
+            "thirdparty_pct": 93.09
+          },
+          "agreement_pct": 18.82,
+          "newly_flagged_thirdparty_by_domain_method": {
+            "total_items": 27125,
+            "pct_of_total_items": 77.98,
+            "top_domains": [
+              {
+                "domain": "youtube.com",
+                "items": 25715,
+                "pct_of_total_items": 73.92
+              },
+              {
+                "domain": "play.radiojavan.com",
+                "items": 1157,
+                "pct_of_total_items": 3.33
+              },
+              {
+                "domain": "fandom.com",
+                "items": 95,
+                "pct_of_total_items": 0.27
+              },
+              {
+                "domain": "auth.fandom.com",
+                "items": 53,
+                "pct_of_total_items": 0.15
+              },
+              {
+                "domain": "biblio.app",
+                "items": 45,
+                "pct_of_total_items": 0.13
+              },
+              {
+                "domain": "storytel.com",
+                "items": 41,
+                "pct_of_total_items": 0.12
+              },
+              {
+                "domain": "help.trustpilot.com",
+                "items": 15,
+                "pct_of_total_items": 0.04
+              },
+              {
+                "domain": "hittapodd.se",
+                "items": 3,
+                "pct_of_total_items": 0.01
+              },
+              {
+                "domain": "aparat.com",
+                "items": 1,
+                "pct_of_total_items": 0.0
+              }
+            ]
+          },
+          "newly_flagged_firstparty_by_domain_method": {
+            "total_items": 1116,
+            "pct_of_total_items": 3.21,
+            "top_domains": [
+              {
+                "domain": "rodakorset.se",
+                "items": 1067,
+                "pct_of_total_items": 3.07
+              },
+              {
+                "domain": "tibia.fandom.com",
+                "items": 49,
+                "pct_of_total_items": 0.14
+              }
+            ]
+          }
+        },
+        "ES_0290": {
+          "n_assigned_sites": 129,
+          "n_items": 49148,
+          "n_distinct_indexeddb_sites": 63,
+          "n_distinct_sites_flagged_thirdparty_by_domain": 13,
+          "category_proxy": {
+            "thirdparty_items": 9325,
+            "thirdparty_pct": 18.97
+          },
+          "domain_method": {
+            "thirdparty_items": 43096,
+            "thirdparty_pct": 87.69
+          },
+          "agreement_pct": 19.46,
+          "newly_flagged_thirdparty_by_domain_method": {
+            "total_items": 36677,
+            "pct_of_total_items": 74.63,
+            "top_domains": [
+              {
+                "domain": "youtube.com",
+                "items": 29997,
+                "pct_of_total_items": 61.03
+              },
+              {
+                "domain": "primevideo.com",
+                "items": 5934,
+                "pct_of_total_items": 12.07
+              },
+              {
+                "domain": "e.issuu.com",
+                "items": 552,
+                "pct_of_total_items": 1.12
+              },
+              {
+                "domain": "marca.com",
+                "items": 113,
+                "pct_of_total_items": 0.23
+              },
+              {
+                "domain": "hero-wars.com",
+                "items": 42,
+                "pct_of_total_items": 0.09
+              },
+              {
+                "domain": "mediaset.es",
+                "items": 17,
+                "pct_of_total_items": 0.03
+              },
+              {
+                "domain": "abc.es",
+                "items": 7,
+                "pct_of_total_items": 0.01
+              },
+              {
+                "domain": "player.vimeo.com",
+                "items": 7,
+                "pct_of_total_items": 0.01
+              },
+              {
+                "domain": "xtb.com",
+                "items": 5,
+                "pct_of_total_items": 0.01
+              },
+              {
+                "domain": "pinterest.com",
+                "items": 3,
+                "pct_of_total_items": 0.01
+              }
+            ]
+          },
+          "newly_flagged_firstparty_by_domain_method": {
+            "total_items": 2906,
+            "pct_of_total_items": 5.91,
+            "top_domains": [
+              {
+                "domain": "fiftyoutlet.com",
+                "items": 721,
+                "pct_of_total_items": 1.47
+              },
+              {
+                "domain": "es.noracora.com",
+                "items": 349,
+                "pct_of_total_items": 0.71
+              },
+              {
+                "domain": "womensecret.com",
+                "items": 267,
+                "pct_of_total_items": 0.54
+              },
+              {
+                "domain": "parfois.com",
+                "items": 182,
+                "pct_of_total_items": 0.37
+              },
+              {
+                "domain": "diariodecadiz.es",
+                "items": 162,
+                "pct_of_total_items": 0.33
+              },
+              {
+                "domain": "elmundo.es",
+                "items": 127,
+                "pct_of_total_items": 0.26
+              },
+              {
+                "domain": "expansion.com",
+                "items": 108,
+                "pct_of_total_items": 0.22
+              },
+              {
+                "domain": "vertbaudet.es",
+                "items": 77,
+                "pct_of_total_items": 0.16
+              },
+              {
+                "domain": "malagahoy.es",
+                "items": 72,
+                "pct_of_total_items": 0.15
+              },
+              {
+                "domain": "dominospizza.es",
+                "items": 71,
+                "pct_of_total_items": 0.14
+              },
+              {
+                "domain": "mygls.gls-spain.es",
+                "items": 70,
+                "pct_of_total_items": 0.14
+              },
+              {
+                "domain": "lavanguardia.com",
+                "items": 70,
+                "pct_of_total_items": 0.14
+              },
+              {
+                "domain": "granadahoy.com",
+                "items": 56,
+                "pct_of_total_items": 0.11
+              },
+              {
+                "domain": "hobbyconsolas.com",
+                "items": 52,
+                "pct_of_total_items": 0.11
+              },
+              {
+                "domain": "lanacion.com.ar",
+                "items": 46,
+                "pct_of_total_items": 0.09
+              }
+            ]
+          }
+        },
+        "DE_0018": {
+          "n_assigned_sites": 130,
+          "n_items": 23988,
+          "n_distinct_indexeddb_sites": 31,
+          "n_distinct_sites_flagged_thirdparty_by_domain": 12,
+          "category_proxy": {
+            "thirdparty_items": 9644,
+            "thirdparty_pct": 40.2
+          },
+          "domain_method": {
+            "thirdparty_items": 19919,
+            "thirdparty_pct": 83.04
+          },
+          "agreement_pct": 48.13,
+          "newly_flagged_thirdparty_by_domain_method": {
+            "total_items": 11359,
+            "pct_of_total_items": 47.35,
+            "top_domains": [
+              {
+                "domain": "youtube.com",
+                "items": 7788,
+                "pct_of_total_items": 32.47
+              },
+              {
+                "domain": "services.sdiapi.com",
+                "items": 2824,
+                "pct_of_total_items": 11.77
+              },
+              {
+                "domain": "metaloop.com",
+                "items": 437,
+                "pct_of_total_items": 1.82
+              },
+              {
+                "domain": "de.zeelool.com",
+                "items": 245,
+                "pct_of_total_items": 1.02
+              },
+              {
+                "domain": "bmw.de",
+                "items": 41,
+                "pct_of_total_items": 0.17
+              },
+              {
+                "domain": "dm-jobs.de",
+                "items": 9,
+                "pct_of_total_items": 0.04
+              },
+              {
+                "domain": "h.online-metrix.net",
+                "items": 6,
+                "pct_of_total_items": 0.03
+              },
+              {
+                "domain": "handball.net",
+                "items": 6,
+                "pct_of_total_items": 0.03
+              },
+              {
+                "domain": "pages.ebay.com",
+                "items": 2,
+                "pct_of_total_items": 0.01
+              },
+              {
+                "domain": "bueromarkt-ag.de",
+                "items": 1,
+                "pct_of_total_items": 0.0
+              }
+            ]
+          },
+          "newly_flagged_firstparty_by_domain_method": {
+            "total_items": 1084,
+            "pct_of_total_items": 4.52,
+            "top_domains": [
+              {
+                "domain": "cocooncenter.de",
+                "items": 243,
+                "pct_of_total_items": 1.01
+              },
+              {
+                "domain": "engbers.com",
+                "items": 235,
+                "pct_of_total_items": 0.98
+              },
+              {
+                "domain": "bauknecht.de",
+                "items": 217,
+                "pct_of_total_items": 0.9
+              },
+              {
+                "domain": "shop.fck.de",
+                "items": 95,
+                "pct_of_total_items": 0.4
+              },
+              {
+                "domain": "webshop.burgerme.de",
+                "items": 70,
+                "pct_of_total_items": 0.29
+              },
+              {
+                "domain": "gls-pakete.de",
+                "items": 59,
+                "pct_of_total_items": 0.25
+              },
+              {
+                "domain": "holzprofi24.de",
+                "items": 48,
+                "pct_of_total_items": 0.2
+              },
+              {
+                "domain": "butlers.com",
+                "items": 47,
+                "pct_of_total_items": 0.2
+              },
+              {
+                "domain": "shirtinator.de",
+                "items": 39,
+                "pct_of_total_items": 0.16
+              },
+              {
+                "domain": "reviersport.de",
+                "items": 20,
+                "pct_of_total_items": 0.08
+              },
+              {
+                "domain": "kastner-oehler.de",
+                "items": 5,
+                "pct_of_total_items": 0.02
+              },
+              {
+                "domain": "michaelkors.de",
+                "items": 3,
+                "pct_of_total_items": 0.01
+              },
+              {
+                "domain": "eishockey.info",
+                "items": 2,
+                "pct_of_total_items": 0.01
+              },
+              {
+                "domain": "shop.vfb.de",
+                "items": 1,
+                "pct_of_total_items": 0.0
+              }
+            ]
+          }
+        },
+        "FR_0429": {
+          "n_assigned_sites": 130,
+          "n_items": 91049,
+          "n_distinct_indexeddb_sites": 25,
+          "n_distinct_sites_flagged_thirdparty_by_domain": 8,
+          "category_proxy": {
+            "thirdparty_items": 20243,
+            "thirdparty_pct": 22.23
+          },
+          "domain_method": {
+            "thirdparty_items": 84061,
+            "thirdparty_pct": 92.33
+          },
+          "agreement_pct": 24.32,
+          "newly_flagged_thirdparty_by_domain_method": {
+            "total_items": 66363,
+            "pct_of_total_items": 72.89,
+            "top_domains": [
+              {
+                "domain": "youtube.com",
+                "items": 65679,
+                "pct_of_total_items": 72.14
+              },
+              {
+                "domain": "app.brevo.com",
+                "items": 580,
+                "pct_of_total_items": 0.64
+              },
+              {
+                "domain": "ici.fr",
+                "items": 69,
+                "pct_of_total_items": 0.08
+              },
+              {
+                "domain": "myperfectfit.pampersrewards.com",
+                "items": 17,
+                "pct_of_total_items": 0.02
+              },
+              {
+                "domain": "aufeminin.com",
+                "items": 15,
+                "pct_of_total_items": 0.02
+              },
+              {
+                "domain": "surveymonkey.com",
+                "items": 3,
+                "pct_of_total_items": 0.0
+              }
+            ]
+          },
+          "newly_flagged_firstparty_by_domain_method": {
+            "total_items": 2545,
+            "pct_of_total_items": 2.8,
+            "top_domains": [
+              {
+                "domain": "tutoriels.oscaro.com",
+                "items": 1760,
+                "pct_of_total_items": 1.93
+              },
+              {
+                "domain": "idgarages.com",
+                "items": 334,
+                "pct_of_total_items": 0.37
+              },
+              {
+                "domain": "holissence.com",
+                "items": 296,
+                "pct_of_total_items": 0.33
+              },
+              {
+                "domain": "tendanceouest.com",
+                "items": 34,
+                "pct_of_total_items": 0.04
+              },
+              {
+                "domain": "avec.fr",
+                "items": 29,
+                "pct_of_total_items": 0.03
+              },
+              {
+                "domain": "l-echo-des-seniors.fr",
+                "items": 28,
+                "pct_of_total_items": 0.03
+              },
+              {
+                "domain": "iam.idgarages.com",
+                "items": 26,
+                "pct_of_total_items": 0.03
+              },
+              {
+                "domain": "jolie-bobine.fr",
+                "items": 10,
+                "pct_of_total_items": 0.01
+              },
+              {
+                "domain": "app.lepermislibre.fr",
+                "items": 9,
+                "pct_of_total_items": 0.01
+              },
+              {
+                "domain": "manuelnumeriquemax.belin.education",
+                "items": 7,
+                "pct_of_total_items": 0.01
+              },
+              {
+                "domain": "lecolefrancaise.fr",
+                "items": 6,
+                "pct_of_total_items": 0.01
+              },
+              {
+                "domain": "croq-kilos.com",
+                "items": 3,
+                "pct_of_total_items": 0.0
+              },
+              {
+                "domain": "sudouest.fr",
+                "items": 2,
+                "pct_of_total_items": 0.0
+              },
+              {
+                "domain": "huffingtonpost.fr",
+                "items": 1,
+                "pct_of_total_items": 0.0
+              }
+            ]
+          }
+        },
+        "IE_0504": {
+          "n_assigned_sites": 130,
+          "n_items": 13622,
+          "n_distinct_indexeddb_sites": 21,
+          "n_distinct_sites_flagged_thirdparty_by_domain": 14,
+          "category_proxy": {
+            "thirdparty_items": 5547,
+            "thirdparty_pct": 40.72
+          },
+          "domain_method": {
+            "thirdparty_items": 12833,
+            "thirdparty_pct": 94.21
+          },
+          "agreement_pct": 40.79,
+          "newly_flagged_thirdparty_by_domain_method": {
+            "total_items": 7676,
+            "pct_of_total_items": 56.35,
+            "top_domains": [
+              {
+                "domain": "harveynormanie-7afb620c09dfdea16784013.freshchat.com",
+                "items": 2771,
+                "pct_of_total_items": 20.34
+              },
+              {
+                "domain": "youtube.com",
+                "items": 2705,
+                "pct_of_total_items": 19.86
+              },
+              {
+                "domain": "in.pinterest.com",
+                "items": 1789,
+                "pct_of_total_items": 13.13
+              },
+              {
+                "domain": "katespade.eu",
+                "items": 194,
+                "pct_of_total_items": 1.42
+              },
+              {
+                "domain": "eventbrite.ie",
+                "items": 78,
+                "pct_of_total_items": 0.57
+              },
+              {
+                "domain": "linkedin.com",
+                "items": 64,
+                "pct_of_total_items": 0.47
+              },
+              {
+                "domain": "engage.wixapps.net",
+                "items": 58,
+                "pct_of_total_items": 0.43
+              },
+              {
+                "domain": "asos.com",
+                "items": 10,
+                "pct_of_total_items": 0.07
+              },
+              {
+                "domain": "player.vimeo.com",
+                "items": 3,
+                "pct_of_total_items": 0.02
+              },
+              {
+                "domain": "fr.aliexpress.com",
+                "items": 2,
+                "pct_of_total_items": 0.01
+              },
+              {
+                "domain": "tesco.ie",
+                "items": 2,
+                "pct_of_total_items": 0.01
+              }
+            ]
+          },
+          "newly_flagged_firstparty_by_domain_method": {
+            "total_items": 390,
+            "pct_of_total_items": 2.86,
+            "top_domains": [
+              {
+                "domain": "dunnesstores.com",
+                "items": 211,
+                "pct_of_total_items": 1.55
+              },
+              {
+                "domain": "220.lv",
+                "items": 75,
+                "pct_of_total_items": 0.55
+              },
+              {
+                "domain": "interflora.ie",
+                "items": 50,
+                "pct_of_total_items": 0.37
+              },
+              {
+                "domain": "themanicurecompany.com",
+                "items": 39,
+                "pct_of_total_items": 0.29
+              },
+              {
+                "domain": "zulily.com",
+                "items": 8,
+                "pct_of_total_items": 0.06
+              },
+              {
+                "domain": "target.com",
+                "items": 7,
+                "pct_of_total_items": 0.05
+              }
+            ]
+          }
+        },
+        "NL_0694": {
+          "n_assigned_sites": 129,
+          "n_items": 8604,
+          "n_distinct_indexeddb_sites": 9,
+          "n_distinct_sites_flagged_thirdparty_by_domain": 7,
+          "category_proxy": {
+            "thirdparty_items": 1629,
+            "thirdparty_pct": 18.93
+          },
+          "domain_method": {
+            "thirdparty_items": 8358,
+            "thirdparty_pct": 97.14
+          },
+          "agreement_pct": 16.17,
+          "newly_flagged_thirdparty_by_domain_method": {
+            "total_items": 6971,
+            "pct_of_total_items": 81.02,
+            "top_domains": [
+              {
+                "domain": "youtube.com",
+                "items": 6907,
+                "pct_of_total_items": 80.28
+              },
+              {
+                "domain": "linkedin.com",
+                "items": 46,
+                "pct_of_total_items": 0.53
+              },
+              {
+                "domain": "vk.ru",
+                "items": 8,
+                "pct_of_total_items": 0.09
+              },
+              {
+                "domain": "bsky.app",
+                "items": 5,
+                "pct_of_total_items": 0.06
+              },
+              {
+                "domain": "nl.linkedin.com",
+                "items": 4,
+                "pct_of_total_items": 0.05
+              },
+              {
+                "domain": "global.frcapi.com",
+                "items": 1,
+                "pct_of_total_items": 0.01
+              }
+            ]
+          },
+          "newly_flagged_firstparty_by_domain_method": {
+            "total_items": 242,
+            "pct_of_total_items": 2.81,
+            "top_domains": [
+              {
+                "domain": "amsterdam.nl",
+                "items": 240,
+                "pct_of_total_items": 2.79
+              },
+              {
+                "domain": "formulier.svhw.nl",
+                "items": 2,
+                "pct_of_total_items": 0.02
+              }
+            ]
+          }
+        },
+        "PL_0742": {
+          "n_assigned_sites": 130,
+          "n_items": 17257,
+          "n_distinct_indexeddb_sites": 30,
+          "n_distinct_sites_flagged_thirdparty_by_domain": 16,
+          "category_proxy": {
+            "thirdparty_items": 5284,
+            "thirdparty_pct": 30.62
+          },
+          "domain_method": {
+            "thirdparty_items": 12264,
+            "thirdparty_pct": 71.07
+          },
+          "agreement_pct": 31.68,
+          "newly_flagged_thirdparty_by_domain_method": {
+            "total_items": 9385,
+            "pct_of_total_items": 54.38,
+            "top_domains": [
+              {
+                "domain": "youtube.com",
+                "items": 7761,
+                "pct_of_total_items": 44.97
+              },
+              {
+                "domain": "pl.pinterest.com",
+                "items": 1184,
+                "pct_of_total_items": 6.86
+              },
+              {
+                "domain": "pinterest.com",
+                "items": 160,
+                "pct_of_total_items": 0.93
+              },
+              {
+                "domain": "tiktok.com",
+                "items": 89,
+                "pct_of_total_items": 0.52
+              },
+              {
+                "domain": "devicebind.ebay.pl",
+                "items": 72,
+                "pct_of_total_items": 0.42
+              },
+              {
+                "domain": "leonardo-hotels.pl",
+                "items": 52,
+                "pct_of_total_items": 0.3
+              },
+              {
+                "domain": "rynek-kolejowy.pl",
+                "items": 24,
+                "pct_of_total_items": 0.14
+              },
+              {
+                "domain": "pitbull.pl",
+                "items": 15,
+                "pct_of_total_items": 0.09
+              },
+              {
+                "domain": "h.online-metrix.net",
+                "items": 14,
+                "pct_of_total_items": 0.08
+              },
+              {
+                "domain": "devicebind.ebay.com",
+                "items": 4,
+                "pct_of_total_items": 0.02
+              },
+              {
+                "domain": "my.trstd.com",
+                "items": 4,
+                "pct_of_total_items": 0.02
+              },
+              {
+                "domain": "pages.ebay.com",
+                "items": 2,
+                "pct_of_total_items": 0.01
+              },
+              {
+                "domain": "signin.ebay.com",
+                "items": 2,
+                "pct_of_total_items": 0.01
+              },
+              {
+                "domain": "wroclaw.pl",
+                "items": 2,
+                "pct_of_total_items": 0.01
+              }
+            ]
+          },
+          "newly_flagged_firstparty_by_domain_method": {
+            "total_items": 2405,
+            "pct_of_total_items": 13.94,
+            "top_domains": [
+              {
+                "domain": "royal-stone.pl",
+                "items": 1434,
+                "pct_of_total_items": 8.31
+              },
+              {
+                "domain": "intimiti.pl",
+                "items": 635,
+                "pct_of_total_items": 3.68
+              },
+              {
+                "domain": "willsoor.pl",
+                "items": 132,
+                "pct_of_total_items": 0.76
+              },
+              {
+                "domain": "samanta.pl",
+                "items": 74,
+                "pct_of_total_items": 0.43
+              },
+              {
+                "domain": "uwalls.pl",
+                "items": 70,
+                "pct_of_total_items": 0.41
+              },
+              {
+                "domain": "pl.ecco.com",
+                "items": 32,
+                "pct_of_total_items": 0.19
+              },
+              {
+                "domain": "grecos.pl",
+                "items": 26,
+                "pct_of_total_items": 0.15
+              },
+              {
+                "domain": "signin.ebay.pl",
+                "items": 2,
+                "pct_of_total_items": 0.01
+              }
+            ]
+          }
+        },
+        "AT_0077": {
+          "n_assigned_sites": 130,
+          "n_items": 63305,
+          "n_distinct_indexeddb_sites": 35,
+          "n_distinct_sites_flagged_thirdparty_by_domain": 21,
+          "category_proxy": {
+            "thirdparty_items": 15977,
+            "thirdparty_pct": 25.24
+          },
+          "domain_method": {
+            "thirdparty_items": 54726,
+            "thirdparty_pct": 86.45
+          },
+          "agreement_pct": 31.44,
+          "newly_flagged_thirdparty_by_domain_method": {
+            "total_items": 41075,
+            "pct_of_total_items": 64.88,
+            "top_domains": [
+              {
+                "domain": "youtube.com",
+                "items": 37732,
+                "pct_of_total_items": 59.6
+              },
+              {
+                "domain": "issuu.com",
+                "items": 1332,
+                "pct_of_total_items": 2.1
+              },
+              {
+                "domain": "kooora.com",
+                "items": 514,
+                "pct_of_total_items": 0.81
+              },
+              {
+                "domain": "holzprofi24.de",
+                "items": 393,
+                "pct_of_total_items": 0.62
+              },
+              {
+                "domain": "player.vimeo.com",
+                "items": 376,
+                "pct_of_total_items": 0.59
+              },
+              {
+                "domain": "e.issuu.com",
+                "items": 261,
+                "pct_of_total_items": 0.41
+              },
+              {
+                "domain": "551c3c290021bfae185fe01a5c925274.safeframe.googlesyndication.com",
+                "items": 200,
+                "pct_of_total_items": 0.32
+              },
+              {
+                "domain": "blancheporte.fr",
+                "items": 149,
+                "pct_of_total_items": 0.24
+              },
+              {
+                "domain": "judotv.com",
+                "items": 37,
+                "pct_of_total_items": 0.06
+              },
+              {
+                "domain": "pinterest.com",
+                "items": 23,
+                "pct_of_total_items": 0.04
+              },
+              {
+                "domain": "xxx.dreemlov.com",
+                "items": 20,
+                "pct_of_total_items": 0.03
+              },
+              {
+                "domain": "boulanger.com",
+                "items": 12,
+                "pct_of_total_items": 0.02
+              },
+              {
+                "domain": "winamax.fr",
+                "items": 8,
+                "pct_of_total_items": 0.01
+              },
+              {
+                "domain": "novaplay.dnevnik.hr",
+                "items": 5,
+                "pct_of_total_items": 0.01
+              },
+              {
+                "domain": "feverup.com",
+                "items": 5,
+                "pct_of_total_items": 0.01
+              }
+            ]
+          },
+          "newly_flagged_firstparty_by_domain_method": {
+            "total_items": 2326,
+            "pct_of_total_items": 3.67,
+            "top_domains": [
+              {
+                "domain": "de.mydirtyhobby.com",
+                "items": 1741,
+                "pct_of_total_items": 2.75
+              },
+              {
+                "domain": "bike-magazin.de",
+                "items": 371,
+                "pct_of_total_items": 0.59
+              },
+              {
+                "domain": "spox.com",
+                "items": 68,
+                "pct_of_total_items": 0.11
+              },
+              {
+                "domain": "store.epicgames.com",
+                "items": 62,
+                "pct_of_total_items": 0.1
+              },
+              {
+                "domain": "reifendirekt.at",
+                "items": 34,
+                "pct_of_total_items": 0.05
+              },
+              {
+                "domain": "m.nogomania.com",
+                "items": 22,
+                "pct_of_total_items": 0.03
+              },
+              {
+                "domain": "holzprofi24.at",
+                "items": 12,
+                "pct_of_total_items": 0.02
+              },
+              {
+                "domain": "sportal.bg",
+                "items": 7,
+                "pct_of_total_items": 0.01
+              },
+              {
+                "domain": "gong.bg",
+                "items": 7,
+                "pct_of_total_items": 0.01
+              },
+              {
+                "domain": "kartenliebe.at",
+                "items": 2,
+                "pct_of_total_items": 0.0
+              }
+            ]
+          }
+        },
+        "DK_0199": {
+          "n_assigned_sites": 130,
+          "n_items": 18500,
+          "n_distinct_indexeddb_sites": 35,
+          "n_distinct_sites_flagged_thirdparty_by_domain": 20,
+          "category_proxy": {
+            "thirdparty_items": 8283,
+            "thirdparty_pct": 44.77
+          },
+          "domain_method": {
+            "thirdparty_items": 16320,
+            "thirdparty_pct": 88.22
+          },
+          "agreement_pct": 47.38,
+          "newly_flagged_thirdparty_by_domain_method": {
+            "total_items": 8886,
+            "pct_of_total_items": 48.03,
+            "top_domains": [
+              {
+                "domain": "wordpress.com",
+                "items": 4030,
+                "pct_of_total_items": 21.78
+              },
+              {
+                "domain": "services.sdiapi.com",
+                "items": 1517,
+                "pct_of_total_items": 8.2
+              },
+              {
+                "domain": "youtube.com",
+                "items": 1422,
+                "pct_of_total_items": 7.69
+              },
+              {
+                "domain": "web-modules-de-na1.niceincontact.com",
+                "items": 833,
+                "pct_of_total_items": 4.5
+              },
+              {
+                "domain": "techradar.com",
+                "items": 579,
+                "pct_of_total_items": 3.13
+              },
+              {
+                "domain": "tiktok.com",
+                "items": 172,
+                "pct_of_total_items": 0.93
+              },
+              {
+                "domain": "hero-wars.com",
+                "items": 77,
+                "pct_of_total_items": 0.42
+              },
+              {
+                "domain": "linkedin.com",
+                "items": 72,
+                "pct_of_total_items": 0.39
+              },
+              {
+                "domain": "atlassian.com",
+                "items": 69,
+                "pct_of_total_items": 0.37
+              },
+              {
+                "domain": "github.com",
+                "items": 64,
+                "pct_of_total_items": 0.35
+              },
+              {
+                "domain": "authenticate.trustpilot.com",
+                "items": 15,
+                "pct_of_total_items": 0.08
+              },
+              {
+                "domain": "power.dk",
+                "items": 10,
+                "pct_of_total_items": 0.05
+              },
+              {
+                "domain": "keyp.fo",
+                "items": 8,
+                "pct_of_total_items": 0.04
+              },
+              {
+                "domain": "tamigo.com",
+                "items": 8,
+                "pct_of_total_items": 0.04
+              },
+              {
+                "domain": "player.vimeo.com",
+                "items": 4,
+                "pct_of_total_items": 0.02
+              }
+            ]
+          },
+          "newly_flagged_firstparty_by_domain_method": {
+            "total_items": 849,
+            "pct_of_total_items": 4.59,
+            "top_domains": [
+              {
+                "domain": "autodesk.com",
+                "items": 284,
+                "pct_of_total_items": 1.54
+              },
+              {
+                "domain": "tomshardware.com",
+                "items": 254,
+                "pct_of_total_items": 1.37
+              },
+              {
+                "domain": "danfoss.com",
+                "items": 240,
+                "pct_of_total_items": 1.3
+              },
+              {
+                "domain": "gizchina.com",
+                "items": 32,
+                "pct_of_total_items": 0.17
+              },
+              {
+                "domain": "mouser.dk",
+                "items": 18,
+                "pct_of_total_items": 0.1
+              },
+              {
+                "domain": "wired.com",
+                "items": 11,
+                "pct_of_total_items": 0.06
+              },
+              {
+                "domain": "min.teoriundervisning.dk",
+                "items": 5,
+                "pct_of_total_items": 0.03
+              },
+              {
+                "domain": "autodoc.dk",
+                "items": 3,
+                "pct_of_total_items": 0.02
+              },
+              {
+                "domain": "dk.jbl.com",
+                "items": 2,
+                "pct_of_total_items": 0.01
+              }
+            ]
+          }
+        },
+        "FI_0373": {
+          "n_assigned_sites": 128,
+          "n_items": 17243,
+          "n_distinct_indexeddb_sites": 21,
+          "n_distinct_sites_flagged_thirdparty_by_domain": 8,
+          "category_proxy": {
+            "thirdparty_items": 14289,
+            "thirdparty_pct": 82.87
+          },
+          "domain_method": {
+            "thirdparty_items": 16853,
+            "thirdparty_pct": 97.74
+          },
+          "agreement_pct": 82.47,
+          "newly_flagged_thirdparty_by_domain_method": {
+            "total_items": 2793,
+            "pct_of_total_items": 16.2,
+            "top_domains": [
+              {
+                "domain": "youtube.com",
+                "items": 1668,
+                "pct_of_total_items": 9.67
+              },
+              {
+                "domain": "edusalo-my.sharepoint.com",
+                "items": 1122,
+                "pct_of_total_items": 6.51
+              },
+              {
+                "domain": "oomi.fi",
+                "items": 2,
+                "pct_of_total_items": 0.01
+              },
+              {
+                "domain": "almamedia.fi",
+                "items": 1,
+                "pct_of_total_items": 0.01
+              }
+            ]
+          },
+          "newly_flagged_firstparty_by_domain_method": {
+            "total_items": 229,
+            "pct_of_total_items": 1.33,
+            "top_domains": [
+              {
+                "domain": "keskustelu.kauppalehti.fi",
+                "items": 87,
+                "pct_of_total_items": 0.5
+              },
+              {
+                "domain": "apu.fi",
+                "items": 73,
+                "pct_of_total_items": 0.42
+              },
+              {
+                "domain": "kauppalehti.fi",
+                "items": 22,
+                "pct_of_total_items": 0.13
+              },
+              {
+                "domain": "hyvaterveys.fi",
+                "items": 18,
+                "pct_of_total_items": 0.1
+              },
+              {
+                "domain": "delfi.ee",
+                "items": 12,
+                "pct_of_total_items": 0.07
+              },
+              {
+                "domain": "iltalehti.fi",
+                "items": 8,
+                "pct_of_total_items": 0.05
+              },
+              {
+                "domain": "arileht.delfi.ee",
+                "items": 4,
+                "pct_of_total_items": 0.02
+              },
+              {
+                "domain": "terve.fi",
+                "items": 3,
+                "pct_of_total_items": 0.02
+              },
+              {
+                "domain": "sport.delfi.ee",
+                "items": 2,
+                "pct_of_total_items": 0.01
+              }
+            ]
+          }
+        }
+      },
+      "totals": {
+        "n_items": 543784,
+        "category_proxy_thirdparty_pct": 26.75,
+        "domain_method_thirdparty_pct": 89.31,
+        "newly_flagged_thirdparty_pct": 66.88,
+        "newly_flagged_firstparty_pct": 4.32
+      }
+    }
+  }
+}

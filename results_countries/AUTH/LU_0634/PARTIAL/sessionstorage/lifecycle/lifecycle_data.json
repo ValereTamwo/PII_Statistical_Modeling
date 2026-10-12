@@ -9,27 +9,27 @@
     "size_increases": 11,
     "size_decreases": 4,
     "pii_transitions": {
-      "IDENTITY_TRACKING -> UX_AND_PERFORMANCE_ANALYTICS": 8,
-      "IDENTITY_TRACKING -> ID_SOLUTIONS_AND_EXCHANGES": 1,
-      "APP_STATE_STORAGE -> UX_AND_PERFORMANCE_ANALYTICS": 3,
-      "APP_STATE_STORAGE -> SECURITY_AND_BOT_MITIGATION": 3,
-      "NAVIGATION_HISTORY -> UX_AND_PERFORMANCE_ANALYTICS": 2,
-      "SESSION_MANAGEMENT -> UX_AND_PERFORMANCE_ANALYTICS": 2,
       "USER_PREFERENCES -> BEHAVIORAL_DATA": 3,
-      "ID_SOLUTIONS_AND_EXCHANGES -> SECURITY_AND_BOT_MITIGATION": 3,
-      "IDENTITY_TRACKING -> SESSION_MANAGEMENT": 3,
-      "IDENTITY_TRACKING -> SECURITY_AND_BOT_MITIGATION": 1,
-      "IDENTITY_TRACKING -> TECHNICAL_PASSWORDS": 1,
-      "INFRASTRUCTURE -> USER_PREFERENCES": 1,
-      "IDENTITY_TRACKING -> BEHAVIORAL_DATA": 1,
-      "BEHAVIORAL_DATA -> CONSENT_AND_PRIVACY": 1,
       "IDENTITY_TRACKING -> NAVIGATION_HISTORY": 1,
+      "IDENTITY_TRACKING -> UX_AND_PERFORMANCE_ANALYTICS": 8,
       "ID_SOLUTIONS_AND_EXCHANGES -> UX_AND_PERFORMANCE_ANALYTICS": 1,
-      "APP_STATE_STORAGE -> BEHAVIORAL_DATA": 1
+      "NAVIGATION_HISTORY -> UX_AND_PERFORMANCE_ANALYTICS": 2,
+      "APP_STATE_STORAGE -> UX_AND_PERFORMANCE_ANALYTICS": 3,
+      "INFRASTRUCTURE -> USER_PREFERENCES": 1,
+      "ID_SOLUTIONS_AND_EXCHANGES -> SECURITY_AND_BOT_MITIGATION": 3,
+      "APP_STATE_STORAGE -> SECURITY_AND_BOT_MITIGATION": 3,
+      "IDENTITY_TRACKING -> SECURITY_AND_BOT_MITIGATION": 1,
+      "IDENTITY_TRACKING -> ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "IDENTITY_TRACKING -> SESSION_MANAGEMENT": 3,
+      "BEHAVIORAL_DATA -> CONSENT_AND_PRIVACY": 1,
+      "SESSION_MANAGEMENT -> UX_AND_PERFORMANCE_ANALYTICS": 2,
+      "APP_STATE_STORAGE -> BEHAVIORAL_DATA": 1,
+      "IDENTITY_TRACKING -> BEHAVIORAL_DATA": 1,
+      "IDENTITY_TRACKING -> TECHNICAL_PASSWORDS": 1
     },
     "volatility_distribution": {
-      "high": 42,
       "moderate": 62,
+      "high": 42,
       "stable": 47
     },
     "change_frequency": {
@@ -117,17 +117,13 @@
       "mediamarkt.lu": 6,
       "www.vdl.lu": 5,
       "bilnet.lu.bil.com": 5,
-      "www.vinted.fr": 3,
-      "www.in.gr": 3,
       "editalconcursosbrasil.com.br": 3,
-      "www.noticiasaominuto.com": 2,
-      "www.iefimerida.gr": 2
+      "www.in.gr": 3,
+      "www.vinted.fr": 3,
+      "www.seg-social.pt": 2,
+      "www.spuerkeess.lu": 2
     },
     "pii_modification_patterns": {
-      "UX_AND_PERFORMANCE_ANALYTICS": {
-        "count": 31,
-        "avg_gap": 29.75
-      },
       "BEHAVIORAL_DATA": {
         "count": 17,
         "avg_gap": 72.58823529411765
@@ -136,25 +132,29 @@
         "count": 7,
         "avg_gap": 90.76470588235294
       },
-      "DEVICE_ENV": {
-        "count": 1,
-        "avg_gap": 327.0
-      },
-      "ID_SOLUTIONS_AND_EXCHANGES": {
-        "count": 3,
-        "avg_gap": 45.57142857142857
+      "UX_AND_PERFORMANCE_ANALYTICS": {
+        "count": 31,
+        "avg_gap": 29.75
       },
       "LOCATION_AND_DEMOGRAPHICS": {
         "count": 1,
         "avg_gap": 13.0
       },
+      "CONSENT_AND_PRIVACY": {
+        "count": 6,
+        "avg_gap": 34.2
+      },
+      "ID_SOLUTIONS_AND_EXCHANGES": {
+        "count": 3,
+        "avg_gap": 45.57142857142857
+      },
       "SESSION_MANAGEMENT": {
         "count": 2,
         "avg_gap": 0.0
       },
-      "CONSENT_AND_PRIVACY": {
-        "count": 6,
-        "avg_gap": 34.2
+      "DEVICE_ENV": {
+        "count": 1,
+        "avg_gap": 327.0
       }
     }
   },

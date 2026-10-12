@@ -9,28 +9,28 @@
     "size_increases": 9,
     "size_decreases": 10,
     "pii_transitions": {
-      "DIRECT_PII_KEYS -> UX_AND_PERFORMANCE_ANALYTICS": 1,
-      "BEHAVIORAL_DATA -> ID_SOLUTIONS_AND_EXCHANGES": 1,
-      "DIRECT_PII_KEYS -> NAVIGATION_HISTORY": 1,
       "IDENTITY_TRACKING -> UX_AND_PERFORMANCE_ANALYTICS": 3,
-      "APP_STATE_STORAGE -> UX_AND_PERFORMANCE_ANALYTICS": 5,
-      "BEHAVIORAL_DATA -> LOCATION_AND_DEMOGRAPHICS": 1,
       "BEHAVIORAL_DATA -> USER_PREFERENCES": 3,
       "BEHAVIORAL_DATA -> UX_AND_PERFORMANCE_ANALYTICS": 2,
-      "USER_PREFERENCES -> BEHAVIORAL_DATA": 2,
-      "SESSION_MANAGEMENT -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "ID_SOLUTIONS_AND_EXCHANGES -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "ID_SOLUTIONS_AND_EXCHANGES -> SECURITY_AND_BOT_MITIGATION": 1,
       "APP_STATE_STORAGE -> USER_PREFERENCES": 1,
-      "CONSENT_AND_PRIVACY -> ID_SOLUTIONS_AND_EXCHANGES": 1,
       "SECURITY_AND_BOT_MITIGATION -> UX_AND_PERFORMANCE_ANALYTICS": 1,
-      "APP_STATE_STORAGE -> LOCATION_AND_DEMOGRAPHICS": 1,
       "BEHAVIORAL_DATA -> TECHNICAL_PASSWORDS": 1,
       "IDENTITY_TRACKING -> ID_SOLUTIONS_AND_EXCHANGES": 1,
-      "CONSENT_AND_PRIVACY -> TECHNICAL_PASSWORDS": 1,
+      "APP_STATE_STORAGE -> UX_AND_PERFORMANCE_ANALYTICS": 5,
+      "BEHAVIORAL_DATA -> IDENTITY_TRACKING": 1,
+      "APP_STATE_STORAGE -> LOCATION_AND_DEMOGRAPHICS": 1,
       "BEHAVIORAL_DATA -> NAVIGATION_HISTORY": 1,
-      "ID_SOLUTIONS_AND_EXCHANGES -> SECURITY_AND_BOT_MITIGATION": 1,
-      "ID_SOLUTIONS_AND_EXCHANGES -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "USER_PREFERENCES -> BEHAVIORAL_DATA": 2,
+      "SESSION_MANAGEMENT -> UX_AND_PERFORMANCE_ANALYTICS": 1,
       "DEVICE_ENV -> NAVIGATION_HISTORY": 1,
-      "APP_STATE_STORAGE -> BEHAVIORAL_DATA": 1
+      "DIRECT_PII_KEYS -> NAVIGATION_HISTORY": 1,
+      "DIRECT_PII_KEYS -> UX_AND_PERFORMANCE_ANALYTICS": 1,
+      "CONSENT_AND_PRIVACY -> TECHNICAL_PASSWORDS": 1,
+      "APP_STATE_STORAGE -> BEHAVIORAL_DATA": 1,
+      "BEHAVIORAL_DATA -> ID_SOLUTIONS_AND_EXCHANGES": 1,
+      "CONSENT_AND_PRIVACY -> ID_SOLUTIONS_AND_EXCHANGES": 1
     },
     "volatility_distribution": {
       "stable": 156,
@@ -38,7 +38,7 @@
       "high": 37
     },
     "change_frequency": {
-      "avg_gap": 24.974045801526717,
+      "avg_gap": 25.01223241590214,
       "min_gap": 0,
       "max_gap": 277
     },
@@ -104,18 +104,6 @@
         "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
       },
       {
-        "key": "arTimestamps",
-        "avg_gap": 24.0,
-        "num_modifications": 3,
-        "pii_category": "BEHAVIORAL_DATA"
-      },
-      {
-        "key": "pageviews",
-        "avg_gap": 24.0,
-        "num_modifications": 2,
-        "pii_category": "BEHAVIORAL_DATA"
-      },
-      {
         "key": "arLastUrl",
         "avg_gap": 24.0,
         "num_modifications": 3,
@@ -126,6 +114,18 @@
         "avg_gap": 24.0,
         "num_modifications": 16,
         "pii_category": "UX_AND_PERFORMANCE_ANALYTICS"
+      },
+      {
+        "key": "pageviews",
+        "avg_gap": 24.0,
+        "num_modifications": 2,
+        "pii_category": "BEHAVIORAL_DATA"
+      },
+      {
+        "key": "arTimestamps",
+        "avg_gap": 24.0,
+        "num_modifications": 3,
+        "pii_category": "BEHAVIORAL_DATA"
       },
       {
         "key": "fw_ads_spcfgpl",
@@ -174,24 +174,20 @@
       "www.r-gol.com": 17,
       "pl.ecco.com": 14,
       "paypo.pl": 12,
-      "triverna.pl": 12
+      "parkofpoland.com": 12
     },
     "pii_modification_patterns": {
-      "BEHAVIORAL_DATA": {
-        "count": 54,
-        "avg_gap": 61.88636363636363
-      },
       "USER_PREFERENCES": {
         "count": 10,
         "avg_gap": 59.0
       },
-      "ID_SOLUTIONS_AND_EXCHANGES": {
-        "count": 81,
-        "avg_gap": 18.861702127659573
-      },
       "UX_AND_PERFORMANCE_ANALYTICS": {
         "count": 291,
         "avg_gap": 9.779710144927536
+      },
+      "BEHAVIORAL_DATA": {
+        "count": 54,
+        "avg_gap": 61.88636363636363
       },
       "IDENTITY_TRACKING": {
         "count": 8,
@@ -201,17 +197,21 @@
         "count": 20,
         "avg_gap": 31.555555555555557
       },
+      "ID_SOLUTIONS_AND_EXCHANGES": {
+        "count": 81,
+        "avg_gap": 18.861702127659573
+      },
       "DEVICE_ENV": {
         "count": 1,
         "avg_gap": 194.0
       },
-      "SECURITY_AND_BOT_MITIGATION": {
-        "count": 3,
-        "avg_gap": 76.0
-      },
       "CONSENT_AND_PRIVACY": {
         "count": 5,
         "avg_gap": 44.5
+      },
+      "SECURITY_AND_BOT_MITIGATION": {
+        "count": 3,
+        "avg_gap": 76.0
       }
     }
   },

@@ -2,7 +2,7 @@
   "metadata": {
     "analysis": "within_tier_monte_carlo_level1",
     "n_per_scenario": 10000,
-    " ": 42,
+    "seed": 42,
     "alphas": {
       "id": 0.9,
       "ato": 0.95,
@@ -12,66 +12,82 @@
       "env": 0.5
     },
     "n_items": 141761,
-    "n_rows": 3360,
+    "n_rows": 3646,
+    "claims_from": "sensibility_analysis",
+    "conventions": {
+      "ref_policy": "ALL",
+      "tol": 0.001,
+      "robust_rate": 0.9,
+      "composition_share": 0.5
+    },
     "numpy": "2.1.3",
     "python": "3.13.5"
   },
   "baseline": {
-    "M1_auth_unauth_equiv": {
+    "O1": {
       "holds": true,
-      "margin": 0.04680000000000002
+      "margin": 0.04469999999999996,
+      "value": "0.724 > 0.679"
     },
-    "M2_all_gt_none": {
+    "O2": {
       "holds": true,
-      "margin": 0.006399999999999961
+      "margin": 0.07880000000000009,
+      "value": "0.697 > 0.618"
     },
-    "M3_cookie_gt_ss": {
+    "O3": {
       "holds": true,
-      "margin": 0.14280000000000004
+      "margin": 0.07120000000000004,
+      "value": "0.679 > 0.608"
     },
-    "M4_cookie_gt_idb": {
+    "O4": {
       "holds": true,
-      "margin": 0.05130000000000001
+      "margin": 0.0006999999999999229,
+      "value": "0.618 > 0.618"
     },
-    "M5_ls_equiv_cookie": {
+    "O5": {
       "holds": true,
-      "margin": 0.06929999999999997
+      "margin": 0.17629999999999996,
+      "value": "0.608 > 0.432"
     },
-    "M6_ls_gt_ss": {
+    "O6": {
       "holds": true,
-      "margin": 0.1421
+      "margin": 0.139,
+      "value": "0.618 > 0.479"
     },
-    "M7_ls_gt_idb": {
+    "D1": {
       "holds": true,
-      "margin": 0.05059999999999998
+      "margin": 0.0716,
+      "value": "0.356 > 0.284"
     },
-    "D1_median_cookie_gt_ss": {
+    "D2": {
       "holds": true,
-      "margin": 0.2636
+      "margin": 0.001,
+      "value": "0.000 / 0.000 / 0.000"
     },
-    "D2_idb_iqr_zero": {
+    "C1": {
       "holds": true,
-      "margin": 5e-05
+      "margin": 0.2043,
+      "value": "0.014 (cookie) < 0.219"
     },
-    "D3_iqr_cookie_gt_ss": {
+    "C2": {
       "holds": true,
-      "margin": 0.08410000000000001
+      "margin": 0.001,
+      "value": "0.000 / 0.000 / 0.000"
     },
-    "D4_median_mode_equiv": {
+    "C3": {
       "holds": true,
-      "margin": 0.01
+      "margin": 0.001,
+      "value": "0.000"
     },
-    "D5_cookie_median_stable": {
+    "S1": {
       "holds": true,
-      "margin": 0.02
+      "margin": 0.1751,
+      "value": "0.043 (IndexedDB) < 0.219"
     },
-    "D6_median_ls_equiv_cookie": {
+    "S2": {
       "holds": true,
-      "margin": 0.009300000000000003
-    },
-    "D7_iqr_ls_lt_cookie": {
-      "holds": true,
-      "margin": 0.14049999999999999
+      "margin": 0.04510000000000003,
+      "value": "55%"
     }
   },
   "scenarios": {
@@ -98,353 +114,363 @@
       "n_parameters": 2,
       "acceptance_rate": 1.0,
       "claims": {
-        "M1_auth_unauth_equiv": {
-          "label": "F6 : |mean_Auth - mean_UnAuth| < 0.05",
-          "level": "mean",
+        "O1": {
+          "finding": "F5",
+          "level": "ordinal",
+          "description": "median IDB > median cookie (ALL)",
           "n": 10000,
           "holds": 10000,
+          "excluded": 0,
           "p_hat": 1.0,
           "wilson95": [
             0.9996159875222334,
             0.9999999999999999
           ],
           "fail_bound_95": 0.0003,
+          "status": "Invariant",
           "holds_at_baseline": true,
-          "margin_min": 0.04729999999999997,
-          "margin_p1": 0.047599999999999934,
-          "margin_median": 0.04890000000000001,
-          "margin_baseline": 0.04680000000000002,
+          "margin_min": 0.04469999999999996,
+          "margin_p1": 0.04500000000000004,
+          "margin_median": 0.05909999999999993,
+          "margin_baseline": 0.04469999999999996,
           "baseline_margin_percentile": 0.0
         },
-        "M2_all_gt_none": {
-          "label": "F2 : mean_ALL >= mean_NONE",
-          "level": "mean",
+        "O2": {
+          "finding": "F5",
+          "level": "ordinal",
+          "description": "mean IDB > mean cookie (ALL)",
           "n": 10000,
           "holds": 10000,
+          "excluded": 0,
           "p_hat": 1.0,
           "wilson95": [
             0.9996159875222334,
             0.9999999999999999
           ],
           "fail_bound_95": 0.0003,
+          "status": "Invariant",
           "holds_at_baseline": true,
-          "margin_min": 0.005900000000000016,
-          "margin_p1": 0.006099999999999994,
-          "margin_median": 0.007900000000000018,
-          "margin_baseline": 0.006399999999999961,
-          "baseline_margin_percentile": 0.0613
+          "margin_min": 0.07640000000000002,
+          "margin_p1": 0.07850000000000001,
+          "margin_median": 0.0917,
+          "margin_baseline": 0.07880000000000009,
+          "baseline_margin_percentile": 0.0134
         },
-        "M3_cookie_gt_ss": {
-          "label": "F1/F4 : mean_cookie > mean_sessionStorage",
-          "level": "mean",
+        "O3": {
+          "finding": "F1/F3",
+          "level": "ordinal",
+          "description": "median cookie > median LS (ALL)",
           "n": 10000,
           "holds": 10000,
+          "excluded": 0,
           "p_hat": 1.0,
           "wilson95": [
             0.9996159875222334,
             0.9999999999999999
           ],
           "fail_bound_95": 0.0003,
+          "status": "Invariant",
           "holds_at_baseline": true,
-          "margin_min": 0.13390000000000002,
-          "margin_p1": 0.13510000000000005,
-          "margin_median": 0.14370000000000005,
-          "margin_baseline": 0.14280000000000004,
-          "baseline_margin_percentile": 0.4279
+          "margin_min": 0.07119999999999993,
+          "margin_p1": 0.07119999999999993,
+          "margin_median": 0.07200000000000006,
+          "margin_baseline": 0.07120000000000004,
+          "baseline_margin_percentile": 0.0141
         },
-        "M4_cookie_gt_idb": {
-          "label": "F1/F5 : mean_cookie > mean_IndexedDB",
-          "level": "mean",
+        "O4": {
+          "finding": "F1/F3",
+          "level": "ordinal",
+          "description": "mean cookie > mean LS (ALL)",
           "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
+          "holds": 9334,
+          "excluded": 0,
+          "p_hat": 0.9334,
           "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.03159999999999996,
-          "margin_p1": 0.03260000000000007,
-          "margin_median": 0.04239999999999999,
-          "margin_baseline": 0.05130000000000001,
-          "baseline_margin_percentile": 0.9714
-        },
-        "M5_ls_equiv_cookie": {
-          "label": "F3 : |mean_localStorage - mean_cookie| < 0.07",
-          "level": "mean",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.06470000000000004,
-          "margin_p1": 0.06519999999999998,
-          "margin_median": 0.068,
-          "margin_baseline": 0.06929999999999997,
-          "baseline_margin_percentile": 0.7875
-        },
-        "M6_ls_gt_ss": {
-          "label": "F3/F4 : mean_localStorage > mean_sessionStorage",
-          "level": "mean",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.13329999999999997,
-          "margin_p1": 0.13439999999999996,
-          "margin_median": 0.1416,
-          "margin_baseline": 0.1421,
-          "baseline_margin_percentile": 0.5572
-        },
-        "M7_ls_gt_idb": {
-          "label": "F3/F5 : mean_localStorage > mean_IndexedDB",
-          "level": "mean",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.03269999999999995,
-          "margin_p1": 0.033399999999999985,
-          "margin_median": 0.0403,
-          "margin_baseline": 0.05059999999999998,
-          "baseline_margin_percentile": 1.0
-        },
-        "D1_median_cookie_gt_ss": {
-          "label": "F1/F4 : median_cookie > median_sessionStorage",
-          "level": "dist",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.24489999999999995,
-          "margin_p1": 0.24669999999999997,
-          "margin_median": 0.284,
-          "margin_baseline": 0.2636,
-          "baseline_margin_percentile": 0.129
-        },
-        "D2_idb_iqr_zero": {
-          "label": "F5 : IQR_IndexedDB = 0",
-          "level": "dist",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 5e-05,
-          "margin_p1": 5e-05,
-          "margin_median": 5e-05,
-          "margin_baseline": 5e-05,
-          "baseline_margin_percentile": 0.0
-        },
-        "D3_iqr_cookie_gt_ss": {
-          "label": "F1 : IQR_cookie > IQR_sessionStorage",
-          "level": "dist",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.060799999999999965,
-          "margin_p1": 0.06279999999999997,
-          "margin_median": 0.08000000000000002,
-          "margin_baseline": 0.08410000000000001,
-          "baseline_margin_percentile": 0.5482
-        },
-        "D4_median_mode_equiv": {
-          "label": "F6 : |median_Auth - median_UnAuth| < 0.01",
-          "level": "dist",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.01,
-          "margin_p1": 0.01,
-          "margin_median": 0.01,
-          "margin_baseline": 0.01,
-          "baseline_margin_percentile": 0.0
-        },
-        "D5_cookie_median_stable": {
-          "label": "F4 : |median_cookie_ALL - median_cookie_NONE| < 0.02",
-          "level": "dist",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.016456156761768242,
-          "margin_p1": 0.01646467145384951,
-          "margin_median": 0.02,
-          "margin_baseline": 0.02,
-          "baseline_margin_percentile": 0.1056
-        },
-        "D6_median_ls_equiv_cookie": {
-          "label": "F3 : |median_localStorage - median_cookie| < 0.09",
-          "level": "dist",
-          "n": 10000,
-          "holds": 3231,
-          "p_hat": 0.3231,
-          "wilson95": [
-            0.314003293382495,
-            0.3323325702321387
+            0.9283448452411199,
+            0.938122292743152
           ],
           "fail_bound_95": null,
+          "status": "Robust",
           "holds_at_baseline": true,
-          "margin_min": -0.031700000000000034,
-          "margin_p1": -0.031399999999999956,
-          "margin_median": -0.011700000000000016,
-          "margin_baseline": 0.009300000000000003,
-          "baseline_margin_percentile": 0.8375
+          "margin_min": -0.0010000000000000009,
+          "margin_p1": -0.0006000000000000449,
+          "margin_median": 0.0018999999999999018,
+          "margin_baseline": 0.0006999999999999229,
+          "baseline_margin_percentile": 0.1799
         },
-        "D7_iqr_ls_lt_cookie": {
-          "label": "F3 : IQR_localStorage < IQR_cookie",
-          "level": "dist",
+        "O5": {
+          "finding": "F3/F4",
+          "level": "ordinal",
+          "description": "median LS > median SS (ALL)",
           "n": 10000,
           "holds": 10000,
+          "excluded": 0,
           "p_hat": 1.0,
           "wilson95": [
             0.9996159875222334,
             0.9999999999999999
           ],
           "fail_bound_95": 0.0003,
+          "status": "Invariant",
           "holds_at_baseline": true,
-          "margin_min": 0.08329999999999999,
-          "margin_p1": 0.08590000000000003,
-          "margin_median": 0.1174,
-          "margin_baseline": 0.14049999999999999,
-          "baseline_margin_percentile": 0.9987
+          "margin_min": 0.1658,
+          "margin_p1": 0.16650000000000004,
+          "margin_median": 0.18749999999999994,
+          "margin_baseline": 0.17629999999999996,
+          "baseline_margin_percentile": 0.0389
+        },
+        "O6": {
+          "finding": "F3/F4",
+          "level": "ordinal",
+          "description": "mean LS > mean SS (ALL)",
+          "n": 10000,
+          "holds": 10000,
+          "excluded": 0,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "status": "Invariant",
+          "holds_at_baseline": true,
+          "margin_min": 0.13530000000000003,
+          "margin_p1": 0.13610000000000005,
+          "margin_median": 0.14079999999999998,
+          "margin_baseline": 0.139,
+          "baseline_margin_percentile": 0.2293
+        },
+        "D1": {
+          "finding": "F1",
+          "level": "distributional",
+          "description": "IQR cookie > max IQR of other APIs (ALL)",
+          "n": 10000,
+          "holds": 10000,
+          "excluded": 0,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "status": "Invariant",
+          "holds_at_baseline": true,
+          "margin_min": 0.0942,
+          "margin_p1": 0.09439999999999998,
+          "margin_median": 0.11230000000000001,
+          "margin_baseline": 0.0716,
+          "baseline_margin_percentile": 0.0
+        },
+        "D2": {
+          "finding": "F5",
+          "level": "distributional",
+          "description": "IQR IDB = 0 (+-TOL) under ALL, PARTIAL, NONE",
+          "n": 10000,
+          "holds": 10000,
+          "excluded": 0,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "status": "Invariant",
+          "holds_at_baseline": true,
+          "margin_min": 0.001,
+          "margin_p1": 0.001,
+          "margin_median": 0.001,
+          "margin_baseline": 0.001,
+          "baseline_margin_percentile": 0.0
+        },
+        "C1": {
+          "finding": "F2",
+          "level": "consent",
+          "description": "max_s |mean_ALL - mean_NONE| < range of API means (ALL)",
+          "n": 10000,
+          "holds": 10000,
+          "excluded": 0,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "status": "Invariant",
+          "holds_at_baseline": true,
+          "margin_min": 0.2072,
+          "margin_p1": 0.2084,
+          "margin_median": 0.21889999999999998,
+          "margin_baseline": 0.2043,
+          "baseline_margin_percentile": 0.0
+        },
+        "C2": {
+          "finding": "F2",
+          "level": "consent",
+          "description": "median_ALL = median_NONE (+-TOL) for cookie, LS, IDB",
+          "n": 10000,
+          "holds": 9058,
+          "excluded": 0,
+          "p_hat": 0.9058,
+          "wilson95": [
+            0.8999178538596255,
+            0.9113704816134192
+          ],
+          "fail_bound_95": null,
+          "status": "Robust",
+          "holds_at_baseline": true,
+          "margin_min": -0.0025,
+          "margin_p1": -0.0025,
+          "margin_median": 0.001,
+          "margin_baseline": 0.001,
+          "baseline_margin_percentile": 0.1049
+        },
+        "C3": {
+          "finding": "F2",
+          "level": "consent",
+          "description": "Q3 cookie ALL = Q3 cookie NONE (+-TOL)",
+          "n": 10000,
+          "holds": 10000,
+          "excluded": 0,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "status": "Invariant",
+          "holds_at_baseline": true,
+          "margin_min": 0.001,
+          "margin_p1": 0.001,
+          "margin_median": 0.001,
+          "margin_baseline": 0.001,
+          "baseline_margin_percentile": 0.0
+        },
+        "S1": {
+          "finding": "F6",
+          "level": "session",
+          "description": "max_s |mean_Auth - mean_UnAuth| < range of API means (ALL)",
+          "n": 10000,
+          "holds": 10000,
+          "excluded": 0,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "status": "Invariant",
+          "holds_at_baseline": true,
+          "margin_min": 0.1745,
+          "margin_p1": 0.1749,
+          "margin_median": 0.1839,
+          "margin_baseline": 0.1751,
+          "baseline_margin_percentile": 0.0178
+        },
+        "S2": {
+          "finding": "F6",
+          "level": "session",
+          "description": "composition explains >= 50% of the Auth/UnAuth mean gap (ALL)",
+          "n": 10000,
+          "holds": 10000,
+          "excluded": 0,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "status": "Invariant",
+          "holds_at_baseline": true,
+          "margin_min": 0.03810000000000002,
+          "margin_p1": 0.03849999999999998,
+          "margin_median": 0.054200000000000026,
+          "margin_baseline": 0.04510000000000003,
+          "baseline_margin_percentile": 0.2119
         }
       },
       "drivers": {
-        "M1_auth_unauth_equiv": [
-          {
-            "param": "W",
-            "r": -0.339
-          },
+        "O1": [
           {
             "param": "S",
-            "r": 0.109
-          }
-        ],
-        "M2_all_gt_none": [
-          {
-            "param": "W",
-            "r": -0.982
-          },
-          {
-            "param": "S",
-            "r": -0.18
-          }
-        ],
-        "M3_cookie_gt_ss": [
-          {
-            "param": "W",
-            "r": 0.901
-          },
-          {
-            "param": "S",
-            "r": 0.43
-          }
-        ],
-        "M4_cookie_gt_idb": [
-          {
-            "param": "W",
-            "r": 0.972
-          },
-          {
-            "param": "S",
-            "r": -0.234
-          }
-        ],
-        "M5_ls_equiv_cookie": [
-          {
-            "param": "W",
-            "r": -0.913
-          },
-          {
-            "param": "S",
-            "r": 0.363
-          }
-        ],
-        "M6_ls_gt_ss": [
-          {
-            "param": "W",
-            "r": 0.712
-          },
-          {
-            "param": "S",
-            "r": 0.7
-          }
-        ],
-        "M7_ls_gt_idb": [
-          {
-            "param": "W",
-            "r": 0.983
-          },
-          {
-            "param": "S",
-            "r": -0.176
-          }
-        ],
-        "D1_median_cookie_gt_ss": [
-          {
-            "param": "S",
-            "r": -0.758
+            "r": 1.0
           },
           {
             "param": "W",
-            "r": -0.45
+            "r": -0.002
           }
         ],
-        "D2_idb_iqr_zero": [],
-        "D3_iqr_cookie_gt_ss": [
+        "O2": [
           {
             "param": "W",
-            "r": -0.735
+            "r": -0.8
           },
           {
             "param": "S",
-            "r": -0.532
+            "r": 0.6
           }
         ],
-        "D4_median_mode_equiv": [],
-        "D5_cookie_median_stable": [
+        "O3": [
+          {
+            "param": "S",
+            "r": 0.996
+          },
+          {
+            "param": "W",
+            "r": -0.002
+          }
+        ],
+        "O4": [
+          {
+            "param": "W",
+            "r": 0.82
+          },
+          {
+            "param": "S",
+            "r": -0.571
+          }
+        ],
+        "O5": [
+          {
+            "param": "W",
+            "r": -0.403
+          },
+          {
+            "param": "S",
+            "r": -0.093
+          }
+        ],
+        "O6": [
+          {
+            "param": "S",
+            "r": 0.81
+          },
+          {
+            "param": "W",
+            "r": 0.585
+          }
+        ],
+        "D1": [
+          {
+            "param": "S",
+            "r": -0.793
+          },
+          {
+            "param": "W",
+            "r": -0.489
+          }
+        ],
+        "D2": [],
+        "C1": [
+          {
+            "param": "S",
+            "r": 0.954
+          },
+          {
+            "param": "W",
+            "r": -0.302
+          }
+        ],
+        "C2": [
           {
             "param": "S",
             "r": 0.427
@@ -454,24 +480,25 @@
             "r": 0.37
           }
         ],
-        "D6_median_ls_equiv_cookie": [
+        "C3": [],
+        "S1": [
           {
             "param": "S",
-            "r": 0.975
+            "r": 1.0
           },
           {
             "param": "W",
-            "r": 0.048
+            "r": -0.025
           }
         ],
-        "D7_iqr_ls_lt_cookie": [
-          {
-            "param": "W",
-            "r": -0.613
-          },
+        "S2": [
           {
             "param": "S",
-            "r": 0.518
+            "r": 0.997
+          },
+          {
+            "param": "W",
+            "r": 0.064
           }
         ]
       }
@@ -499,389 +526,395 @@
       "n_parameters": 9,
       "acceptance_rate": 1.0,
       "claims": {
-        "M1_auth_unauth_equiv": {
-          "label": "F6 : |mean_Auth - mean_UnAuth| < 0.05",
-          "level": "mean",
+        "O1": {
+          "finding": "F5",
+          "level": "ordinal",
+          "description": "median IDB > median cookie (ALL)",
           "n": 10000,
           "holds": 10000,
+          "excluded": 0,
           "p_hat": 1.0,
           "wilson95": [
             0.9996159875222334,
             0.9999999999999999
           ],
           "fail_bound_95": 0.0003,
+          "status": "Invariant",
           "holds_at_baseline": true,
-          "margin_min": 0.04390000000000001,
-          "margin_p1": 0.045399999999999954,
-          "margin_median": 0.048600000000000046,
-          "margin_baseline": 0.04680000000000002,
-          "baseline_margin_percentile": 0.1058
+          "margin_min": 0.029200000000000004,
+          "margin_p1": 0.03300000000000003,
+          "margin_median": 0.05889999999999995,
+          "margin_baseline": 0.04469999999999996,
+          "baseline_margin_percentile": 0.1808
         },
-        "M2_all_gt_none": {
-          "label": "F2 : mean_ALL >= mean_NONE",
-          "level": "mean",
+        "O2": {
+          "finding": "F5",
+          "level": "ordinal",
+          "description": "mean IDB > mean cookie (ALL)",
           "n": 10000,
           "holds": 10000,
+          "excluded": 0,
           "p_hat": 1.0,
           "wilson95": [
             0.9996159875222334,
             0.9999999999999999
           ],
           "fail_bound_95": 0.0003,
+          "status": "Invariant",
           "holds_at_baseline": true,
-          "margin_min": 0.005299999999999971,
-          "margin_p1": 0.006099999999999994,
-          "margin_median": 0.007900000000000018,
-          "margin_baseline": 0.006399999999999961,
-          "baseline_margin_percentile": 0.0252
+          "margin_min": 0.06329999999999991,
+          "margin_p1": 0.07069899999999998,
+          "margin_median": 0.09140000000000004,
+          "margin_baseline": 0.07880000000000009,
+          "baseline_margin_percentile": 0.1108
         },
-        "M3_cookie_gt_ss": {
-          "label": "F1/F4 : mean_cookie > mean_sessionStorage",
-          "level": "mean",
+        "O3": {
+          "finding": "F1/F3",
+          "level": "ordinal",
+          "description": "median cookie > median LS (ALL)",
           "n": 10000,
           "holds": 10000,
+          "excluded": 0,
           "p_hat": 1.0,
           "wilson95": [
             0.9996159875222334,
             0.9999999999999999
           ],
           "fail_bound_95": 0.0003,
+          "status": "Invariant",
           "holds_at_baseline": true,
-          "margin_min": 0.1351,
-          "margin_p1": 0.1372,
-          "margin_median": 0.14360000000000006,
-          "margin_baseline": 0.14280000000000004,
-          "baseline_margin_percentile": 0.3879
+          "margin_min": 0.07119999999999993,
+          "margin_p1": 0.07119999999999993,
+          "margin_median": 0.07200000000000006,
+          "margin_baseline": 0.07120000000000004,
+          "baseline_margin_percentile": 0.0162
         },
-        "M4_cookie_gt_idb": {
-          "label": "F1/F5 : mean_cookie > mean_IndexedDB",
-          "level": "mean",
+        "O4": {
+          "finding": "F1/F3",
+          "level": "ordinal",
+          "description": "mean cookie > mean LS (ALL)",
           "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
+          "holds": 6795,
+          "excluded": 0,
+          "p_hat": 0.6795,
           "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.01880000000000004,
-          "margin_p1": 0.0252,
-          "margin_median": 0.04239999999999999,
-          "margin_baseline": 0.05130000000000001,
-          "baseline_margin_percentile": 0.8697
-        },
-        "M5_ls_equiv_cookie": {
-          "label": "F3 : |mean_localStorage - mean_cookie| < 0.07",
-          "level": "mean",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.05719999999999997,
-          "margin_p1": 0.060500000000000054,
-          "margin_median": 0.06719999999999998,
-          "margin_baseline": 0.06929999999999997,
-          "baseline_margin_percentile": 0.8566
-        },
-        "M6_ls_gt_ss": {
-          "label": "F3/F4 : mean_localStorage > mean_sessionStorage",
-          "level": "mean",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.13380000000000003,
-          "margin_p1": 0.1356,
-          "margin_median": 0.1416,
-          "margin_baseline": 0.1421,
-          "baseline_margin_percentile": 0.5643
-        },
-        "M7_ls_gt_idb": {
-          "label": "F3/F5 : mean_localStorage > mean_IndexedDB",
-          "level": "mean",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.02410000000000001,
-          "margin_p1": 0.028898999999999928,
-          "margin_median": 0.04039999999999999,
-          "margin_baseline": 0.05059999999999998,
-          "baseline_margin_percentile": 0.9801
-        },
-        "D1_median_cookie_gt_ss": {
-          "label": "F1/F4 : median_cookie > median_sessionStorage",
-          "level": "dist",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.24469999999999997,
-          "margin_p1": 0.2479,
-          "margin_median": 0.2801,
-          "margin_baseline": 0.2636,
-          "baseline_margin_percentile": 0.1169
-        },
-        "D2_idb_iqr_zero": {
-          "label": "F5 : IQR_IndexedDB = 0",
-          "level": "dist",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 5e-05,
-          "margin_p1": 5e-05,
-          "margin_median": 5e-05,
-          "margin_baseline": 5e-05,
-          "baseline_margin_percentile": 0.0
-        },
-        "D3_iqr_cookie_gt_ss": {
-          "label": "F1 : IQR_cookie > IQR_sessionStorage",
-          "level": "dist",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.05130000000000001,
-          "margin_p1": 0.05569899999999997,
-          "margin_median": 0.08460000000000001,
-          "margin_baseline": 0.08410000000000001,
-          "baseline_margin_percentile": 0.4937
-        },
-        "D4_median_mode_equiv": {
-          "label": "F6 : |median_Auth - median_UnAuth| < 0.01",
-          "level": "dist",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.01,
-          "margin_p1": 0.01,
-          "margin_median": 0.01,
-          "margin_baseline": 0.01,
-          "baseline_margin_percentile": 0.0
-        },
-        "D5_cookie_median_stable": {
-          "label": "F4 : |median_cookie_ALL - median_cookie_NONE| < 0.02",
-          "level": "dist",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.016398377562802362,
-          "margin_p1": 0.01640316555562868,
-          "margin_median": 0.02,
-          "margin_baseline": 0.02,
-          "baseline_margin_percentile": 0.1687
-        },
-        "D6_median_ls_equiv_cookie": {
-          "label": "F3 : |median_localStorage - median_cookie| < 0.09",
-          "level": "dist",
-          "n": 10000,
-          "holds": 2107,
-          "p_hat": 0.2107,
-          "wilson95": [
-            0.20281886526993997,
-            0.21880332434969574
+            0.6702858582928756,
+            0.6885762812276063
           ],
           "fail_bound_95": null,
+          "status": "Conditional",
           "holds_at_baseline": true,
-          "margin_min": -0.03659999999999994,
-          "margin_p1": -0.03330000000000008,
-          "margin_median": -0.009300000000000058,
-          "margin_baseline": 0.009300000000000003,
-          "baseline_margin_percentile": 0.9521
+          "margin_min": -0.009099999999999997,
+          "margin_p1": -0.006399999999999961,
+          "margin_median": 0.0018999999999999018,
+          "margin_baseline": 0.0006999999999999229,
+          "baseline_margin_percentile": 0.3772
         },
-        "D7_iqr_ls_lt_cookie": {
-          "label": "F3 : IQR_localStorage < IQR_cookie",
-          "level": "dist",
+        "O5": {
+          "finding": "F3/F4",
+          "level": "ordinal",
+          "description": "median LS > median SS (ALL)",
           "n": 10000,
           "holds": 10000,
+          "excluded": 0,
           "p_hat": 1.0,
           "wilson95": [
             0.9996159875222334,
             0.9999999999999999
           ],
           "fail_bound_95": 0.0003,
+          "status": "Invariant",
           "holds_at_baseline": true,
-          "margin_min": 0.06629999999999997,
-          "margin_p1": 0.07119999999999999,
-          "margin_median": 0.11645,
-          "margin_baseline": 0.14049999999999999,
-          "baseline_margin_percentile": 0.7726
+          "margin_min": 0.16550000000000004,
+          "margin_p1": 0.17019899999999996,
+          "margin_median": 0.1875,
+          "margin_baseline": 0.17629999999999996,
+          "baseline_margin_percentile": 0.0347
+        },
+        "O6": {
+          "finding": "F3/F4",
+          "level": "ordinal",
+          "description": "mean LS > mean SS (ALL)",
+          "n": 10000,
+          "holds": 10000,
+          "excluded": 0,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "status": "Invariant",
+          "holds_at_baseline": true,
+          "margin_min": 0.13419999999999999,
+          "margin_p1": 0.13579999999999998,
+          "margin_median": 0.14079999999999998,
+          "margin_baseline": 0.139,
+          "baseline_margin_percentile": 0.2411
+        },
+        "D1": {
+          "finding": "F1",
+          "level": "distributional",
+          "description": "IQR cookie > max IQR of other APIs (ALL)",
+          "n": 10000,
+          "holds": 10000,
+          "excluded": 0,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "status": "Invariant",
+          "holds_at_baseline": true,
+          "margin_min": 0.0943,
+          "margin_p1": 0.09580000000000005,
+          "margin_median": 0.11400000000000002,
+          "margin_baseline": 0.0716,
+          "baseline_margin_percentile": 0.0
+        },
+        "D2": {
+          "finding": "F5",
+          "level": "distributional",
+          "description": "IQR IDB = 0 (+-TOL) under ALL, PARTIAL, NONE",
+          "n": 10000,
+          "holds": 10000,
+          "excluded": 0,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "status": "Invariant",
+          "holds_at_baseline": true,
+          "margin_min": 0.001,
+          "margin_p1": 0.001,
+          "margin_median": 0.001,
+          "margin_baseline": 0.001,
+          "baseline_margin_percentile": 0.0
+        },
+        "C1": {
+          "finding": "F2",
+          "level": "consent",
+          "description": "max_s |mean_ALL - mean_NONE| < range of API means (ALL)",
+          "n": 10000,
+          "holds": 10000,
+          "excluded": 0,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "status": "Invariant",
+          "holds_at_baseline": true,
+          "margin_min": 0.19720000000000001,
+          "margin_p1": 0.2015,
+          "margin_median": 0.21860000000000002,
+          "margin_baseline": 0.2043,
+          "baseline_margin_percentile": 0.0437
+        },
+        "C2": {
+          "finding": "F2",
+          "level": "consent",
+          "description": "median_ALL = median_NONE (+-TOL) for cookie, LS, IDB",
+          "n": 10000,
+          "holds": 8435,
+          "excluded": 0,
+          "p_hat": 0.8435,
+          "wilson95": [
+            0.8362469946805761,
+            0.8504891887471983
+          ],
+          "fail_bound_95": null,
+          "status": "Conditional",
+          "holds_at_baseline": true,
+          "margin_min": -0.0026,
+          "margin_p1": -0.0026,
+          "margin_median": 0.001,
+          "margin_baseline": 0.001,
+          "baseline_margin_percentile": 0.1681
+        },
+        "C3": {
+          "finding": "F2",
+          "level": "consent",
+          "description": "Q3 cookie ALL = Q3 cookie NONE (+-TOL)",
+          "n": 10000,
+          "holds": 10000,
+          "excluded": 0,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "status": "Invariant",
+          "holds_at_baseline": true,
+          "margin_min": 0.001,
+          "margin_p1": 0.001,
+          "margin_median": 0.001,
+          "margin_baseline": 0.001,
+          "baseline_margin_percentile": 0.0
+        },
+        "S1": {
+          "finding": "F6",
+          "level": "session",
+          "description": "max_s |mean_Auth - mean_UnAuth| < range of API means (ALL)",
+          "n": 10000,
+          "holds": 10000,
+          "excluded": 0,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "status": "Invariant",
+          "holds_at_baseline": true,
+          "margin_min": 0.17099999999999999,
+          "margin_p1": 0.1724,
+          "margin_median": 0.1839,
+          "margin_baseline": 0.1751,
+          "baseline_margin_percentile": 0.0992
+        },
+        "S2": {
+          "finding": "F6",
+          "level": "session",
+          "description": "composition explains >= 50% of the Auth/UnAuth mean gap (ALL)",
+          "n": 10000,
+          "holds": 10000,
+          "excluded": 0,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "status": "Invariant",
+          "holds_at_baseline": true,
+          "margin_min": 0.024599999999999955,
+          "margin_p1": 0.031200000000000006,
+          "margin_median": 0.05400000000000005,
+          "margin_baseline": 0.04510000000000003,
+          "baseline_margin_percentile": 0.2604
         }
       },
       "drivers": {
-        "M1_auth_unauth_equiv": [
+        "O1": [
           {
             "param": "S:LINK",
-            "r": 0.144
+            "r": 0.943
           },
           {
             "param": "S:PROF",
-            "r": -0.082
+            "r": -0.327
           },
           {
-            "param": "W:LINK",
-            "r": -0.072
+            "param": "S:ID",
+            "r": 0.016
           }
         ],
-        "M2_all_gt_none": [
+        "O2": [
           {
-            "param": "W:LINK",
-            "r": -0.728
+            "param": "S:LINK",
+            "r": 0.843
           },
           {
             "param": "S:PROF",
-            "r": -0.441
+            "r": -0.423
+          },
+          {
+            "param": "W:LINK",
+            "r": -0.283
+          }
+        ],
+        "O3": [
+          {
+            "param": "S:PROF",
+            "r": 0.996
+          },
+          {
+            "param": "S:LOC",
+            "r": -0.02
           },
           {
             "param": "W:PROF",
-            "r": -0.356
+            "r": 0.013
           }
         ],
-        "M3_cookie_gt_ss": [
+        "O4": [
           {
-            "param": "S:PROF",
-            "r": 0.595
+            "param": "S:LINK",
+            "r": -0.684
           },
           {
-            "param": "W:LINK",
-            "r": 0.542
+            "param": "S:PROF",
+            "r": 0.5
           },
           {
             "param": "W:ATO",
-            "r": 0.541
+            "r": 0.356
           }
         ],
-        "M4_cookie_gt_idb": [
-          {
-            "param": "S:LINK",
-            "r": -0.737
-          },
-          {
-            "param": "S:PROF",
-            "r": 0.517
-          },
+        "O5": [
           {
             "param": "W:LINK",
-            "r": 0.365
-          }
-        ],
-        "M5_ls_equiv_cookie": [
-          {
-            "param": "S:LINK",
-            "r": 0.43
+            "r": -0.398
           },
           {
             "param": "S:PROF",
-            "r": -0.311
+            "r": -0.041
           },
           {
-            "param": "W:ATO",
-            "r": -0.276
+            "param": "S:LOC",
+            "r": 0.017
           }
         ],
-        "M6_ls_gt_ss": [
+        "O6": [
           {
             "param": "S:LINK",
-            "r": 0.755
+            "r": 0.818
           },
           {
             "param": "W:PROF",
-            "r": 0.6
-          },
-          {
-            "param": "W:LINK",
-            "r": 0.216
-          }
-        ],
-        "M7_ls_gt_idb": [
-          {
-            "param": "S:LINK",
-            "r": -0.691
+            "r": 0.528
           },
           {
             "param": "S:PROF",
-            "r": 0.452
-          },
-          {
-            "param": "W:PROF",
-            "r": 0.429
+            "r": -0.145
           }
         ],
-        "D1_median_cookie_gt_ss": [
+        "D1": [
+          {
+            "param": "S:PROF",
+            "r": -0.676
+          },
           {
             "param": "W:LINK",
-            "r": -0.533
+            "r": -0.555
           },
           {
             "param": "S:LINK",
-            "r": -0.448
+            "r": -0.287
+          }
+        ],
+        "D2": [],
+        "C1": [
+          {
+            "param": "S:LINK",
+            "r": 0.925
           },
           {
             "param": "S:PROF",
-            "r": -0.365
-          }
-        ],
-        "D2_idb_iqr_zero": [],
-        "D3_iqr_cookie_gt_ss": [
-          {
-            "param": "S:PROF",
-            "r": -0.685
+            "r": -0.321
           },
           {
             "param": "W:LINK",
-            "r": -0.573
-          },
-          {
-            "param": "W:PROF",
-            "r": -0.139
+            "r": -0.174
           }
         ],
-        "D4_median_mode_equiv": [],
-        "D5_cookie_median_stable": [
+        "C2": [
           {
             "param": "S:LINK",
             "r": 0.54
@@ -892,35 +925,36 @@
           },
           {
             "param": "S:PROF",
-            "r": -0.137
+            "r": -0.138
           }
         ],
-        "D6_median_ls_equiv_cookie": [
+        "C3": [],
+        "S1": [
           {
             "param": "S:LINK",
-            "r": 0.751
-          },
-          {
-            "param": "S:ID",
-            "r": 0.632
+            "r": 0.987
           },
           {
             "param": "S:PROF",
-            "r": 0.051
+            "r": -0.127
+          },
+          {
+            "param": "W:PROF",
+            "r": -0.069
           }
         ],
-        "D7_iqr_ls_lt_cookie": [
+        "S2": [
           {
-            "param": "S:PROF",
-            "r": -0.572
-          },
-          {
-            "param": "S:ID",
-            "r": 0.471
+            "param": "S:LINK",
+            "r": 0.944
           },
           {
             "param": "W:LINK",
-            "r": -0.452
+            "r": 0.236
+          },
+          {
+            "param": "W:PROF",
+            "r": -0.177
           }
         ]
       }
@@ -948,428 +982,435 @@
       "n_parameters": 36,
       "acceptance_rate": 1.0,
       "claims": {
-        "M1_auth_unauth_equiv": {
-          "label": "F6 : |mean_Auth - mean_UnAuth| < 0.05",
-          "level": "mean",
+        "O1": {
+          "finding": "F5",
+          "level": "ordinal",
+          "description": "median IDB > median cookie (ALL)",
           "n": 10000,
           "holds": 10000,
+          "excluded": 0,
           "p_hat": 1.0,
           "wilson95": [
             0.9996159875222334,
             0.9999999999999999
           ],
           "fail_bound_95": 0.0003,
+          "status": "Invariant",
           "holds_at_baseline": true,
-          "margin_min": 0.044,
-          "margin_p1": 0.04570000000000003,
-          "margin_median": 0.048499999999999946,
-          "margin_baseline": 0.04680000000000002,
-          "baseline_margin_percentile": 0.0821
+          "margin_min": 0.029300000000000104,
+          "margin_p1": 0.03279899999999994,
+          "margin_median": 0.05910000000000004,
+          "margin_baseline": 0.04469999999999996,
+          "baseline_margin_percentile": 0.1744
         },
-        "M2_all_gt_none": {
-          "label": "F2 : mean_ALL >= mean_NONE",
-          "level": "mean",
+        "O2": {
+          "finding": "F5",
+          "level": "ordinal",
+          "description": "mean IDB > mean cookie (ALL)",
           "n": 10000,
           "holds": 10000,
+          "excluded": 0,
           "p_hat": 1.0,
           "wilson95": [
             0.9996159875222334,
             0.9999999999999999
           ],
           "fail_bound_95": 0.0003,
+          "status": "Invariant",
           "holds_at_baseline": true,
-          "margin_min": 0.005300000000000082,
-          "margin_p1": 0.006199999999999983,
-          "margin_median": 0.007900000000000018,
-          "margin_baseline": 0.006399999999999961,
-          "baseline_margin_percentile": 0.0212
+          "margin_min": 0.06510000000000005,
+          "margin_p1": 0.07130000000000003,
+          "margin_median": 0.09149999999999991,
+          "margin_baseline": 0.07880000000000009,
+          "baseline_margin_percentile": 0.1329
         },
-        "M3_cookie_gt_ss": {
-          "label": "F1/F4 : mean_cookie > mean_sessionStorage",
-          "level": "mean",
+        "O3": {
+          "finding": "F1/F3",
+          "level": "ordinal",
+          "description": "median cookie > median LS (ALL)",
           "n": 10000,
           "holds": 10000,
+          "excluded": 0,
           "p_hat": 1.0,
           "wilson95": [
             0.9996159875222334,
             0.9999999999999999
           ],
           "fail_bound_95": 0.0003,
+          "status": "Invariant",
           "holds_at_baseline": true,
-          "margin_min": 0.13439999999999996,
-          "margin_p1": 0.1371,
-          "margin_median": 0.14370000000000005,
-          "margin_baseline": 0.14280000000000004,
-          "baseline_margin_percentile": 0.379
+          "margin_min": 0.057499999999999996,
+          "margin_p1": 0.06220000000000003,
+          "margin_median": 0.07199999999999995,
+          "margin_baseline": 0.07120000000000004,
+          "baseline_margin_percentile": 0.2209
         },
-        "M4_cookie_gt_idb": {
-          "label": "F1/F5 : mean_cookie > mean_IndexedDB",
-          "level": "mean",
+        "O4": {
+          "finding": "F1/F3",
+          "level": "ordinal",
+          "description": "mean cookie > mean LS (ALL)",
           "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
+          "holds": 6962,
+          "excluded": 0,
+          "p_hat": 0.6962,
           "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.021299999999999986,
-          "margin_p1": 0.026000000000000023,
-          "margin_median": 0.04249999999999998,
-          "margin_baseline": 0.05130000000000001,
-          "baseline_margin_percentile": 0.8418
-        },
-        "M5_ls_equiv_cookie": {
-          "label": "F3 : |mean_localStorage - mean_cookie| < 0.07",
-          "level": "mean",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.05760000000000004,
-          "margin_p1": 0.061298999999999965,
-          "margin_median": 0.06750000000000006,
-          "margin_baseline": 0.06929999999999997,
-          "baseline_margin_percentile": 0.8365
-        },
-        "M6_ls_gt_ss": {
-          "label": "F3/F4 : mean_localStorage > mean_sessionStorage",
-          "level": "mean",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.13240000000000002,
-          "margin_p1": 0.136,
-          "margin_median": 0.14199999999999996,
-          "margin_baseline": 0.1421,
-          "baseline_margin_percentile": 0.5164
-        },
-        "M7_ls_gt_idb": {
-          "label": "F3/F5 : mean_localStorage > mean_IndexedDB",
-          "level": "mean",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.02180000000000004,
-          "margin_p1": 0.026900000000000035,
-          "margin_median": 0.04070000000000007,
-          "margin_baseline": 0.05059999999999998,
-          "baseline_margin_percentile": 0.9345
-        },
-        "D1_median_cookie_gt_ss": {
-          "label": "F1/F4 : median_cookie > median_sessionStorage",
-          "level": "dist",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.2334,
-          "margin_p1": 0.23990000000000006,
-          "margin_median": 0.27809999999999996,
-          "margin_baseline": 0.2636,
-          "baseline_margin_percentile": 0.1607
-        },
-        "D2_idb_iqr_zero": {
-          "label": "F5 : IQR_IndexedDB = 0",
-          "level": "dist",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 5e-05,
-          "margin_p1": 5e-05,
-          "margin_median": 5e-05,
-          "margin_baseline": 5e-05,
-          "baseline_margin_percentile": 0.0
-        },
-        "D3_iqr_cookie_gt_ss": {
-          "label": "F1 : IQR_cookie > IQR_sessionStorage",
-          "level": "dist",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.04519999999999996,
-          "margin_p1": 0.0534,
-          "margin_median": 0.08829999999999999,
-          "margin_baseline": 0.08410000000000001,
-          "baseline_margin_percentile": 0.422
-        },
-        "D4_median_mode_equiv": {
-          "label": "F6 : |median_Auth - median_UnAuth| < 0.01",
-          "level": "dist",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.01,
-          "margin_p1": 0.01,
-          "margin_median": 0.01,
-          "margin_baseline": 0.01,
-          "baseline_margin_percentile": 0.0
-        },
-        "D5_cookie_median_stable": {
-          "label": "F4 : |median_cookie_ALL - median_cookie_NONE| < 0.02",
-          "level": "dist",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.008068756859323161,
-          "margin_p1": 0.016400163842327394,
-          "margin_median": 0.02,
-          "margin_baseline": 0.02,
-          "baseline_margin_percentile": 0.2093
-        },
-        "D6_median_ls_equiv_cookie": {
-          "label": "F3 : |median_localStorage - median_cookie| < 0.09",
-          "level": "dist",
-          "n": 10000,
-          "holds": 2852,
-          "p_hat": 0.2852,
-          "wilson95": [
-            0.27643421168183374,
-            0.29413076007861466
+            0.6871120849345594,
+            0.7051372285691649
           ],
           "fail_bound_95": null,
+          "status": "Conditional",
           "holds_at_baseline": true,
-          "margin_min": -0.03860000000000005,
-          "margin_p1": -0.02650100000000005,
-          "margin_median": -0.005199999999999955,
-          "margin_baseline": 0.009300000000000003,
-          "baseline_margin_percentile": 0.9256
+          "margin_min": -0.009800000000000031,
+          "margin_p1": -0.00550000000000006,
+          "margin_median": 0.0017000000000000348,
+          "margin_baseline": 0.0006999999999999229,
+          "baseline_margin_percentile": 0.3756
         },
-        "D7_iqr_ls_lt_cookie": {
-          "label": "F3 : IQR_localStorage < IQR_cookie",
-          "level": "dist",
+        "O5": {
+          "finding": "F3/F4",
+          "level": "ordinal",
+          "description": "median LS > median SS (ALL)",
           "n": 10000,
           "holds": 10000,
+          "excluded": 0,
           "p_hat": 1.0,
           "wilson95": [
             0.9996159875222334,
             0.9999999999999999
           ],
           "fail_bound_95": 0.0003,
+          "status": "Invariant",
           "holds_at_baseline": true,
-          "margin_min": 0.062399999999999956,
-          "margin_p1": 0.085199,
-          "margin_median": 0.13030000000000003,
-          "margin_baseline": 0.14049999999999999,
-          "baseline_margin_percentile": 0.6891
+          "margin_min": 0.16069999999999995,
+          "margin_p1": 0.16709899999999997,
+          "margin_median": 0.18829999999999997,
+          "margin_baseline": 0.17629999999999996,
+          "baseline_margin_percentile": 0.0576
+        },
+        "O6": {
+          "finding": "F3/F4",
+          "level": "ordinal",
+          "description": "mean LS > mean SS (ALL)",
+          "n": 10000,
+          "holds": 10000,
+          "excluded": 0,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "status": "Invariant",
+          "holds_at_baseline": true,
+          "margin_min": 0.13199999999999995,
+          "margin_p1": 0.13540000000000002,
+          "margin_median": 0.14100000000000007,
+          "margin_baseline": 0.139,
+          "baseline_margin_percentile": 0.2034
+        },
+        "D1": {
+          "finding": "F1",
+          "level": "distributional",
+          "description": "IQR cookie > max IQR of other APIs (ALL)",
+          "n": 10000,
+          "holds": 10000,
+          "excluded": 0,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "status": "Invariant",
+          "holds_at_baseline": true,
+          "margin_min": 0.06579999999999997,
+          "margin_p1": 0.07600000000000001,
+          "margin_median": 0.11160000000000002,
+          "margin_baseline": 0.0716,
+          "baseline_margin_percentile": 0.0028
+        },
+        "D2": {
+          "finding": "F5",
+          "level": "distributional",
+          "description": "IQR IDB = 0 (+-TOL) under ALL, PARTIAL, NONE",
+          "n": 10000,
+          "holds": 10000,
+          "excluded": 0,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "status": "Invariant",
+          "holds_at_baseline": true,
+          "margin_min": 0.001,
+          "margin_p1": 0.001,
+          "margin_median": 0.001,
+          "margin_baseline": 0.001,
+          "baseline_margin_percentile": 0.0
+        },
+        "C1": {
+          "finding": "F2",
+          "level": "consent",
+          "description": "max_s |mean_ALL - mean_NONE| < range of API means (ALL)",
+          "n": 10000,
+          "holds": 10000,
+          "excluded": 0,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "status": "Invariant",
+          "holds_at_baseline": true,
+          "margin_min": 0.1976,
+          "margin_p1": 0.202,
+          "margin_median": 0.21885,
+          "margin_baseline": 0.2043,
+          "baseline_margin_percentile": 0.0446
+        },
+        "C2": {
+          "finding": "F2",
+          "level": "consent",
+          "description": "median_ALL = median_NONE (+-TOL) for cookie, LS, IDB",
+          "n": 10000,
+          "holds": 6276,
+          "excluded": 0,
+          "p_hat": 0.6276,
+          "wilson95": [
+            0.6180771876051732,
+            0.6370248124105009
+          ],
+          "fail_bound_95": null,
+          "status": "Conditional",
+          "holds_at_baseline": true,
+          "margin_min": -0.012799999999999999,
+          "margin_p1": -0.008199999999999999,
+          "margin_median": 0.001,
+          "margin_baseline": 0.001,
+          "baseline_margin_percentile": 0.4336
+        },
+        "C3": {
+          "finding": "F2",
+          "level": "consent",
+          "description": "Q3 cookie ALL = Q3 cookie NONE (+-TOL)",
+          "n": 10000,
+          "holds": 10000,
+          "excluded": 0,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "status": "Invariant",
+          "holds_at_baseline": true,
+          "margin_min": 0.001,
+          "margin_p1": 0.001,
+          "margin_median": 0.001,
+          "margin_baseline": 0.001,
+          "baseline_margin_percentile": 0.0
+        },
+        "S1": {
+          "finding": "F6",
+          "level": "session",
+          "description": "max_s |mean_Auth - mean_UnAuth| < range of API means (ALL)",
+          "n": 10000,
+          "holds": 10000,
+          "excluded": 0,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "status": "Invariant",
+          "holds_at_baseline": true,
+          "margin_min": 0.1696,
+          "margin_p1": 0.171699,
+          "margin_median": 0.1841,
+          "margin_baseline": 0.1751,
+          "baseline_margin_percentile": 0.1188
+        },
+        "S2": {
+          "finding": "F6",
+          "level": "session",
+          "description": "composition explains >= 50% of the Auth/UnAuth mean gap (ALL)",
+          "n": 10000,
+          "holds": 10000,
+          "excluded": 0,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "status": "Invariant",
+          "holds_at_baseline": true,
+          "margin_min": 0.0032999999999999696,
+          "margin_p1": 0.016000000000000014,
+          "margin_median": 0.054200000000000026,
+          "margin_baseline": 0.04510000000000003,
+          "baseline_margin_percentile": 0.3161
         }
       },
       "drivers": {
-        "M1_auth_unauth_equiv": [
+        "O1": [
           {
             "param": "S:BEHAVIORAL_DATA.LINK",
-            "r": 0.239
-          },
-          {
-            "param": "S:USER_PREFERENCES.PROF",
-            "r": -0.051
-          },
-          {
-            "param": "S:CONSENT_AND_PRIVACY.LINK",
-            "r": -0.036
-          }
-        ],
-        "M2_all_gt_none": [
-          {
-            "param": "S:BEHAVIORAL_DATA.LINK",
-            "r": 0.779
-          },
-          {
-            "param": "S:USER_PREFERENCES.PROF",
-            "r": -0.303
-          },
-          {
-            "param": "S:CONSENT_AND_PRIVACY.LINK",
-            "r": -0.238
-          }
-        ],
-        "M3_cookie_gt_ss": [
-          {
-            "param": "S:IDENTITY_TRACKING.PROF",
-            "r": 0.496
-          },
-          {
-            "param": "S:CONSENT_AND_PRIVACY.LINK",
-            "r": 0.429
-          },
-          {
-            "param": "W:SECURITY_AND_BOT_MITIGATION.ATO",
-            "r": 0.364
-          }
-        ],
-        "M4_cookie_gt_idb": [
-          {
-            "param": "S:BEHAVIORAL_DATA.LINK",
-            "r": -0.902
+            "r": 0.943
           },
           {
             "param": "S:IDENTITY_TRACKING.PROF",
-            "r": 0.234
+            "r": -0.315
           },
           {
-            "param": "S:CONSENT_AND_PRIVACY.LINK",
-            "r": 0.18
+            "param": "S:DEVICE_ENV.LINK",
+            "r": 0.025
           }
         ],
-        "M5_ls_equiv_cookie": [
+        "O2": [
           {
             "param": "S:BEHAVIORAL_DATA.LINK",
-            "r": 0.297
+            "r": 0.944
           },
           {
             "param": "S:IDENTITY_TRACKING.PROF",
-            "r": -0.249
+            "r": -0.183
+          },
+          {
+            "param": "S:CONSENT_AND_PRIVACY.LINK",
+            "r": -0.127
+          }
+        ],
+        "O3": [
+          {
+            "param": "S:IDENTITY_TRACKING.PROF",
+            "r": 0.613
+          },
+          {
+            "param": "S:ID_SOLUTIONS_AND_EXCHANGES.PROF",
+            "r": -0.247
+          },
+          {
+            "param": "S:DIRECT_PII_KEYS.ID",
+            "r": -0.18
+          }
+        ],
+        "O4": [
+          {
+            "param": "S:BEHAVIORAL_DATA.LINK",
+            "r": -0.475
+          },
+          {
+            "param": "S:IDENTITY_TRACKING.PROF",
+            "r": 0.379
           },
           {
             "param": "W:APP_STATE_STORAGE.LINK",
-            "r": 0.239
+            "r": -0.352
           }
         ],
-        "M6_ls_gt_ss": [
+        "O5": [
           {
-            "param": "S:CONSENT_AND_PRIVACY.LINK",
-            "r": 0.66
+            "param": "W:USER_PREFERENCES.LINK",
+            "r": -0.362
           },
           {
-            "param": "W:APP_STATE_STORAGE.LINK",
-            "r": 0.398
-          },
-          {
-            "param": "W:APP_STATE_STORAGE.PROF",
-            "r": 0.349
-          }
-        ],
-        "M7_ls_gt_idb": [
-          {
-            "param": "S:BEHAVIORAL_DATA.LINK",
-            "r": -0.887
-          },
-          {
-            "param": "S:CONSENT_AND_PRIVACY.LINK",
-            "r": 0.284
-          },
-          {
-            "param": "W:APP_STATE_STORAGE.LINK",
-            "r": 0.179
-          }
-        ],
-        "D1_median_cookie_gt_ss": [
-          {
-            "param": "S:UX_AND_PERFORMANCE_ANALYTICS.PROF",
-            "r": -0.514
-          },
-          {
-            "param": "W:UX_AND_PERFORMANCE_ANALYTICS.LINK",
-            "r": -0.456
+            "param": "S:USER_PREFERENCES.PROF",
+            "r": -0.345
           },
           {
             "param": "S:IDENTITY_TRACKING.PROF",
-            "r": 0.375
+            "r": 0.181
           }
         ],
-        "D2_idb_iqr_zero": [],
-        "D3_iqr_cookie_gt_ss": [
+        "O6": [
+          {
+            "param": "S:CONSENT_AND_PRIVACY.LINK",
+            "r": 0.614
+          },
           {
             "param": "S:USER_PREFERENCES.PROF",
-            "r": -0.436
+            "r": -0.355
+          },
+          {
+            "param": "W:CONSENT_AND_PRIVACY.PROF",
+            "r": 0.311
+          }
+        ],
+        "D1": [
+          {
+            "param": "S:USER_PREFERENCES.PROF",
+            "r": -0.525
           },
           {
             "param": "S:UX_AND_PERFORMANCE_ANALYTICS.PROF",
-            "r": -0.349
+            "r": -0.37
+          },
+          {
+            "param": "S:DEVICE_ENV.LINK",
+            "r": -0.332
+          }
+        ],
+        "D2": [],
+        "C1": [
+          {
+            "param": "S:BEHAVIORAL_DATA.LINK",
+            "r": 0.973
+          },
+          {
+            "param": "S:USER_PREFERENCES.PROF",
+            "r": -0.147
           },
           {
             "param": "W:USER_PREFERENCES.LINK",
-            "r": -0.34
+            "r": -0.09
           }
         ],
-        "D4_median_mode_equiv": [],
-        "D5_cookie_median_stable": [
+        "C2": [
+          {
+            "param": "S:IDENTITY_TRACKING.PROF",
+            "r": 0.254
+          },
+          {
+            "param": "S:ID_SOLUTIONS_AND_EXCHANGES.PROF",
+            "r": -0.213
+          },
           {
             "param": "S:DEVICE_ENV.LINK",
-            "r": 0.464
-          },
-          {
-            "param": "W:DEVICE_ENV.PROF",
-            "r": 0.301
-          },
-          {
-            "param": "S:IDENTITY_TRACKING.PROF",
-            "r": -0.22
+            "r": 0.136
           }
         ],
-        "D6_median_ls_equiv_cookie": [
+        "C3": [],
+        "S1": [
           {
-            "param": "S:IDENTITY_TRACKING.PROF",
-            "r": -0.493
-          },
-          {
-            "param": "S:USER_PREFERENCES.PROF",
-            "r": 0.441
-          },
-          {
-            "param": "S:DIRECT_PII_KEYS.ID",
-            "r": 0.425
-          }
-        ],
-        "D7_iqr_ls_lt_cookie": [
-          {
-            "param": "S:DIRECT_PII_KEYS.ID",
-            "r": 0.41
-          },
-          {
-            "param": "S:USER_PREFERENCES.PROF",
-            "r": -0.368
+            "param": "S:BEHAVIORAL_DATA.LINK",
+            "r": 0.984
           },
           {
             "param": "S:UX_AND_PERFORMANCE_ANALYTICS.PROF",
-            "r": -0.346
+            "r": -0.066
+          },
+          {
+            "param": "W:UX_AND_PERFORMANCE_ANALYTICS.LINK",
+            "r": -0.065
+          }
+        ],
+        "S2": [
+          {
+            "param": "S:BEHAVIORAL_DATA.LINK",
+            "r": 0.811
+          },
+          {
+            "param": "S:USER_PREFERENCES.PROF",
+            "r": 0.333
+          },
+          {
+            "param": "W:USER_PREFERENCES.LINK",
+            "r": 0.275
           }
         ]
       }
@@ -1395,382 +1436,393 @@
         "gran": "tier"
       },
       "n_parameters": 2,
-      "acceptance_rate": 0.9926884695188223,
+      "acceptance_rate": 0.9925708699902248,
       "claims": {
-        "M1_auth_unauth_equiv": {
-          "label": "F6 : |mean_Auth - mean_UnAuth| < 0.05",
-          "level": "mean",
+        "O1": {
+          "finding": "F5",
+          "level": "ordinal",
+          "description": "median IDB > median cookie (ALL)",
           "n": 10000,
           "holds": 10000,
+          "excluded": 0,
           "p_hat": 1.0,
           "wilson95": [
             0.9996159875222334,
             0.9999999999999999
           ],
           "fail_bound_95": 0.0003,
+          "status": "Invariant",
           "holds_at_baseline": true,
-          "margin_min": 0.04390000000000001,
-          "margin_p1": 0.044400000000000064,
-          "margin_median": 0.048,
-          "margin_baseline": 0.04680000000000002,
-          "baseline_margin_percentile": 0.2241
+          "margin_min": 0.030299999999999994,
+          "margin_p1": 0.031099999999999905,
+          "margin_median": 0.06629999999999991,
+          "margin_baseline": 0.04469999999999996,
+          "baseline_margin_percentile": 0.1956
         },
-        "M2_all_gt_none": {
-          "label": "F2 : mean_ALL >= mean_NONE",
-          "level": "mean",
+        "O2": {
+          "finding": "F5",
+          "level": "ordinal",
+          "description": "mean IDB > mean cookie (ALL)",
           "n": 10000,
           "holds": 10000,
+          "excluded": 0,
           "p_hat": 1.0,
           "wilson95": [
             0.9996159875222334,
             0.9999999999999999
           ],
           "fail_bound_95": 0.0003,
+          "status": "Invariant",
           "holds_at_baseline": true,
-          "margin_min": 0.0035999999999999366,
-          "margin_p1": 0.0037000000000000366,
-          "margin_median": 0.006900000000000017,
-          "margin_baseline": 0.006399999999999961,
-          "baseline_margin_percentile": 0.4211
+          "margin_min": 0.06010000000000004,
+          "margin_p1": 0.0625,
+          "margin_median": 0.0917,
+          "margin_baseline": 0.07880000000000009,
+          "baseline_margin_percentile": 0.197
         },
-        "M3_cookie_gt_ss": {
-          "label": "F1/F4 : mean_cookie > mean_sessionStorage",
-          "level": "mean",
+        "O3": {
+          "finding": "F1/F3",
+          "level": "ordinal",
+          "description": "median cookie > median LS (ALL)",
           "n": 10000,
           "holds": 10000,
+          "excluded": 0,
           "p_hat": 1.0,
           "wilson95": [
             0.9996159875222334,
             0.9999999999999999
           ],
           "fail_bound_95": 0.0003,
+          "status": "Invariant",
           "holds_at_baseline": true,
-          "margin_min": 0.12739999999999996,
-          "margin_p1": 0.12990000000000002,
-          "margin_median": 0.14839999999999995,
-          "margin_baseline": 0.14280000000000004,
-          "baseline_margin_percentile": 0.2681
+          "margin_min": 0.05789999999999995,
+          "margin_p1": 0.06089899999999995,
+          "margin_median": 0.07189999999999996,
+          "margin_baseline": 0.07120000000000004,
+          "baseline_margin_percentile": 0.3188
         },
-        "M4_cookie_gt_idb": {
-          "label": "F1/F5 : mean_cookie > mean_IndexedDB",
-          "level": "mean",
+        "O4": {
+          "finding": "F1/F3",
+          "level": "ordinal",
+          "description": "mean cookie > mean LS (ALL)",
           "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
+          "holds": 7916,
+          "excluded": 0,
+          "p_hat": 0.7916,
           "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.024499999999999966,
-          "margin_p1": 0.02629999999999999,
-          "margin_median": 0.04520000000000002,
-          "margin_baseline": 0.05130000000000001,
-          "baseline_margin_percentile": 0.6925
-        },
-        "M5_ls_equiv_cookie": {
-          "label": "F3 : |mean_localStorage - mean_cookie| < 0.07",
-          "level": "mean",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.06109999999999999,
-          "margin_p1": 0.06170000000000003,
-          "margin_median": 0.0671000000000001,
-          "margin_baseline": 0.06929999999999997,
-          "baseline_margin_percentile": 0.8615
-        },
-        "M6_ls_gt_ss": {
-          "label": "F3/F4 : mean_localStorage > mean_sessionStorage",
-          "level": "mean",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.12680000000000002,
-          "margin_p1": 0.1291,
-          "margin_median": 0.14559999999999995,
-          "margin_baseline": 0.1421,
-          "baseline_margin_percentile": 0.3205
-        },
-        "M7_ls_gt_idb": {
-          "label": "F3/F5 : mean_localStorage > mean_IndexedDB",
-          "level": "mean",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.027799999999999936,
-          "margin_p1": 0.029100000000000015,
-          "margin_median": 0.04249999999999998,
-          "margin_baseline": 0.05059999999999998,
-          "baseline_margin_percentile": 0.8374
-        },
-        "D1_median_cookie_gt_ss": {
-          "label": "F1/F4 : median_cookie > median_sessionStorage",
-          "level": "dist",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.2373,
-          "margin_p1": 0.2398,
-          "margin_median": 0.2592,
-          "margin_baseline": 0.2636,
-          "baseline_margin_percentile": 0.5421
-        },
-        "D2_idb_iqr_zero": {
-          "label": "F5 : IQR_IndexedDB = 0",
-          "level": "dist",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 5e-05,
-          "margin_p1": 5e-05,
-          "margin_median": 5e-05,
-          "margin_baseline": 5e-05,
-          "baseline_margin_percentile": 0.0
-        },
-        "D3_iqr_cookie_gt_ss": {
-          "label": "F1 : IQR_cookie > IQR_sessionStorage",
-          "level": "dist",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.0126,
-          "margin_p1": 0.024997000000000026,
-          "margin_median": 0.07689999999999997,
-          "margin_baseline": 0.08410000000000001,
-          "baseline_margin_percentile": 0.65
-        },
-        "D4_median_mode_equiv": {
-          "label": "F6 : |median_Auth - median_UnAuth| < 0.01",
-          "level": "dist",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.01,
-          "margin_p1": 0.01,
-          "margin_median": 0.01,
-          "margin_baseline": 0.01,
-          "baseline_margin_percentile": 0.0
-        },
-        "D5_cookie_median_stable": {
-          "label": "F4 : |median_cookie_ALL - median_cookie_NONE| < 0.02",
-          "level": "dist",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.0007939513019419135,
-          "margin_p1": 0.007905838145456003,
-          "margin_median": 0.02,
-          "margin_baseline": 0.02,
-          "baseline_margin_percentile": 0.1743
-        },
-        "D6_median_ls_equiv_cookie": {
-          "label": "F3 : |median_localStorage - median_cookie| < 0.09",
-          "level": "dist",
-          "n": 10000,
-          "holds": 5820,
-          "p_hat": 0.582,
-          "wilson95": [
-            0.5723030047252233,
-            0.5916340172284229
+            0.783527942659663,
+            0.7994481012633036
           ],
           "fail_bound_95": null,
+          "status": "Conditional",
           "holds_at_baseline": true,
-          "margin_min": -0.04100000000000001,
-          "margin_p1": -0.03890100000000002,
-          "margin_median": 0.006200000000000011,
-          "margin_baseline": 0.009300000000000003,
-          "baseline_margin_percentile": 0.535
+          "margin_min": -0.0032999999999999696,
+          "margin_p1": -0.0027000000000000357,
+          "margin_median": 0.0020999999999999908,
+          "margin_baseline": 0.0006999999999999229,
+          "baseline_margin_percentile": 0.286
         },
-        "D7_iqr_ls_lt_cookie": {
-          "label": "F3 : IQR_localStorage < IQR_cookie",
-          "level": "dist",
+        "O5": {
+          "finding": "F3/F4",
+          "level": "ordinal",
+          "description": "median LS > median SS (ALL)",
           "n": 10000,
           "holds": 10000,
+          "excluded": 0,
           "p_hat": 1.0,
           "wilson95": [
             0.9996159875222334,
             0.9999999999999999
           ],
           "fail_bound_95": 0.0003,
+          "status": "Invariant",
           "holds_at_baseline": true,
-          "margin_min": 0.07550000000000001,
-          "margin_p1": 0.080599,
-          "margin_median": 0.12730000000000002,
-          "margin_baseline": 0.14049999999999999,
-          "baseline_margin_percentile": 0.715
+          "margin_min": 0.1627,
+          "margin_p1": 0.16429999999999995,
+          "margin_median": 0.18389999999999995,
+          "margin_baseline": 0.17629999999999996,
+          "baseline_margin_percentile": 0.3527
+        },
+        "O6": {
+          "finding": "F3/F4",
+          "level": "ordinal",
+          "description": "mean LS > mean SS (ALL)",
+          "n": 10000,
+          "holds": 10000,
+          "excluded": 0,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "status": "Invariant",
+          "holds_at_baseline": true,
+          "margin_min": 0.13109999999999994,
+          "margin_p1": 0.1325,
+          "margin_median": 0.14330000000000004,
+          "margin_baseline": 0.139,
+          "baseline_margin_percentile": 0.2183
+        },
+        "D1": {
+          "finding": "F1",
+          "level": "distributional",
+          "description": "IQR cookie > max IQR of other APIs (ALL)",
+          "n": 10000,
+          "holds": 9994,
+          "excluded": 0,
+          "p_hat": 0.9994,
+          "wilson95": [
+            0.9986914580593471,
+            0.9997249902778595
+          ],
+          "fail_bound_95": null,
+          "status": "Robust",
+          "holds_at_baseline": true,
+          "margin_min": -0.0020000000000000018,
+          "margin_p1": 0.014198999999999991,
+          "margin_median": 0.10070000000000001,
+          "margin_baseline": 0.0716,
+          "baseline_margin_percentile": 0.1781
+        },
+        "D2": {
+          "finding": "F5",
+          "level": "distributional",
+          "description": "IQR IDB = 0 (+-TOL) under ALL, PARTIAL, NONE",
+          "n": 10000,
+          "holds": 10000,
+          "excluded": 0,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "status": "Invariant",
+          "holds_at_baseline": true,
+          "margin_min": 0.001,
+          "margin_p1": 0.001,
+          "margin_median": 0.001,
+          "margin_baseline": 0.001,
+          "baseline_margin_percentile": 0.0
+        },
+        "C1": {
+          "finding": "F2",
+          "level": "consent",
+          "description": "max_s |mean_ALL - mean_NONE| < range of API means (ALL)",
+          "n": 10000,
+          "holds": 10000,
+          "excluded": 0,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "status": "Invariant",
+          "holds_at_baseline": true,
+          "margin_min": 0.1941,
+          "margin_p1": 0.19669899999999998,
+          "margin_median": 0.222,
+          "margin_baseline": 0.2043,
+          "baseline_margin_percentile": 0.0989
+        },
+        "C2": {
+          "finding": "F2",
+          "level": "consent",
+          "description": "median_ALL = median_NONE (+-TOL) for cookie, LS, IDB",
+          "n": 10000,
+          "holds": 6931,
+          "excluded": 0,
+          "p_hat": 0.6931,
+          "wilson95": [
+            0.6839876111582915,
+            0.702064083222795
+          ],
+          "fail_bound_95": null,
+          "status": "Conditional",
+          "holds_at_baseline": true,
+          "margin_min": -0.018199999999999997,
+          "margin_p1": -0.011099999999999999,
+          "margin_median": 0.001,
+          "margin_baseline": 0.001,
+          "baseline_margin_percentile": 0.3282
+        },
+        "C3": {
+          "finding": "F2",
+          "level": "consent",
+          "description": "Q3 cookie ALL = Q3 cookie NONE (+-TOL)",
+          "n": 10000,
+          "holds": 10000,
+          "excluded": 0,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "status": "Invariant",
+          "holds_at_baseline": true,
+          "margin_min": 0.001,
+          "margin_p1": 0.001,
+          "margin_median": 0.001,
+          "margin_baseline": 0.001,
+          "baseline_margin_percentile": 0.0
+        },
+        "S1": {
+          "finding": "F6",
+          "level": "session",
+          "description": "max_s |mean_Auth - mean_UnAuth| < range of API means (ALL)",
+          "n": 10000,
+          "holds": 10000,
+          "excluded": 0,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "status": "Invariant",
+          "holds_at_baseline": true,
+          "margin_min": 0.16499999999999998,
+          "margin_p1": 0.166,
+          "margin_median": 0.1885,
+          "margin_baseline": 0.1751,
+          "baseline_margin_percentile": 0.2066
+        },
+        "S2": {
+          "finding": "F6",
+          "level": "session",
+          "description": "composition explains >= 50% of the Auth/UnAuth mean gap (ALL)",
+          "n": 10000,
+          "holds": 10000,
+          "excluded": 0,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "status": "Invariant",
+          "holds_at_baseline": true,
+          "margin_min": 0.017800000000000038,
+          "margin_p1": 0.021100000000000008,
+          "margin_median": 0.06259999999999999,
+          "margin_baseline": 0.04510000000000003,
+          "baseline_margin_percentile": 0.278
         }
       },
       "drivers": {
-        "M1_auth_unauth_equiv": [
-          {
-            "param": "W",
-            "r": -0.631
-          },
+        "O1": [
           {
             "param": "S",
-            "r": 0.218
+            "r": 1.0
+          },
+          {
+            "param": "W",
+            "r": 0.001
           }
         ],
-        "M2_all_gt_none": [
-          {
-            "param": "W",
-            "r": -0.977
-          },
+        "O2": [
           {
             "param": "S",
-            "r": -0.192
+            "r": 0.722
+          },
+          {
+            "param": "W",
+            "r": -0.686
           }
         ],
-        "M3_cookie_gt_ss": [
+        "O3": [
           {
             "param": "W",
-            "r": 0.844
+            "r": -0.2
           },
           {
             "param": "S",
-            "r": 0.533
+            "r": -0.183
           }
         ],
-        "M4_cookie_gt_idb": [
+        "O4": [
           {
             "param": "W",
-            "r": 0.935
+            "r": 0.737
           },
           {
             "param": "S",
-            "r": -0.34
+            "r": -0.669
           }
         ],
-        "M5_ls_equiv_cookie": [
+        "O5": [
           {
             "param": "W",
-            "r": -0.801
+            "r": -0.525
           },
           {
             "param": "S",
-            "r": 0.394
+            "r": -0.325
           }
         ],
-        "M6_ls_gt_ss": [
+        "O6": [
           {
             "param": "S",
-            "r": 0.787
+            "r": 0.876
           },
           {
             "param": "W",
-            "r": 0.616
+            "r": 0.482
           }
         ],
-        "M7_ls_gt_idb": [
-          {
-            "param": "W",
-            "r": 0.948
-          },
+        "D1": [
           {
             "param": "S",
-            "r": -0.292
+            "r": -0.823
+          },
+          {
+            "param": "W",
+            "r": -0.493
           }
         ],
-        "D1_median_cookie_gt_ss": [
+        "D2": [],
+        "C1": [
           {
             "param": "S",
-            "r": -0.607
+            "r": 0.973
           },
           {
             "param": "W",
-            "r": -0.54
+            "r": -0.223
           }
         ],
-        "D2_idb_iqr_zero": [],
-        "D3_iqr_cookie_gt_ss": [
+        "C2": [
           {
             "param": "W",
-            "r": -0.758
+            "r": 0.244
           },
           {
             "param": "S",
-            "r": -0.433
+            "r": 0.076
           }
         ],
-        "D4_median_mode_equiv": [],
-        "D5_cookie_median_stable": [
+        "C3": [],
+        "S1": [
           {
             "param": "S",
-            "r": 0.527
+            "r": 1.0
           },
           {
             "param": "W",
-            "r": 0.34
+            "r": -0.017
           }
         ],
-        "D6_median_ls_equiv_cookie": [
+        "S2": [
           {
             "param": "S",
-            "r": 0.852
+            "r": 0.995
           },
           {
             "param": "W",
-            "r": 0.281
-          }
-        ],
-        "D7_iqr_ls_lt_cookie": [
-          {
-            "param": "W",
-            "r": -0.639
-          },
-          {
-            "param": "S",
-            "r": 0.52
+            "r": 0.072
           }
         ]
       }
@@ -1796,430 +1848,463 @@
         "gran": "cell"
       },
       "n_parameters": 36,
-      "acceptance_rate": 0.38980097576086115,
+      "acceptance_rate": 0.3900679117147708,
       "claims": {
-        "M1_auth_unauth_equiv": {
-          "label": "F6 : |mean_Auth - mean_UnAuth| < 0.05",
-          "level": "mean",
+        "O1": {
+          "finding": "F5",
+          "level": "ordinal",
+          "description": "median IDB > median cookie (ALL)",
           "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
+          "holds": 9961,
+          "excluded": 0,
+          "p_hat": 0.9961,
           "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.0369,
-          "margin_p1": 0.039800000000000016,
-          "margin_median": 0.046500000000000055,
-          "margin_baseline": 0.04680000000000002,
-          "baseline_margin_percentile": 0.5328
-        },
-        "M2_all_gt_none": {
-          "label": "F2 : mean_ALL >= mean_NONE",
-          "level": "mean",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.0011999999999999789,
-          "margin_p1": 0.0030999999999999917,
-          "margin_median": 0.006900000000000017,
-          "margin_baseline": 0.006399999999999961,
-          "baseline_margin_percentile": 0.3964
-        },
-        "M3_cookie_gt_ss": {
-          "label": "F1/F4 : mean_cookie > mean_sessionStorage",
-          "level": "mean",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.12350000000000005,
-          "margin_p1": 0.13349999999999995,
-          "margin_median": 0.14839999999999998,
-          "margin_baseline": 0.14280000000000004,
-          "baseline_margin_percentile": 0.1948
-        },
-        "M4_cookie_gt_idb": {
-          "label": "F1/F5 : mean_cookie > mean_IndexedDB",
-          "level": "mean",
-          "n": 10000,
-          "holds": 9986,
-          "p_hat": 0.9986,
-          "wilson95": [
-            0.9976512170202092,
-            0.9991658457369621
+            0.9946733274415094,
+            0.9971456553780504
           ],
           "fail_bound_95": null,
+          "status": "Robust",
           "holds_at_baseline": true,
-          "margin_min": -0.009699999999999931,
-          "margin_p1": 0.006999000000000007,
-          "margin_median": 0.04530000000000001,
-          "margin_baseline": 0.05130000000000001,
-          "baseline_margin_percentile": 0.6051
+          "margin_min": -0.008499999999999952,
+          "margin_p1": 0.0040999999999999925,
+          "margin_median": 0.06769999999999998,
+          "margin_baseline": 0.04469999999999996,
+          "baseline_margin_percentile": 0.2708
         },
-        "M5_ls_equiv_cookie": {
-          "label": "F3 : |mean_localStorage - mean_cookie| < 0.07",
-          "level": "mean",
+        "O2": {
+          "finding": "F5",
+          "level": "ordinal",
+          "description": "mean IDB > mean cookie (ALL)",
           "n": 10000,
           "holds": 10000,
+          "excluded": 0,
           "p_hat": 1.0,
           "wilson95": [
             0.9996159875222334,
             0.9999999999999999
           ],
           "fail_bound_95": 0.0003,
+          "status": "Invariant",
           "holds_at_baseline": true,
-          "margin_min": 0.047300000000000064,
-          "margin_p1": 0.05350000000000005,
-          "margin_median": 0.06539999999999996,
-          "margin_baseline": 0.06929999999999997,
-          "baseline_margin_percentile": 0.9077
+          "margin_min": 0.030399999999999983,
+          "margin_p1": 0.044300000000000006,
+          "margin_median": 0.09150000000000003,
+          "margin_baseline": 0.07880000000000009,
+          "baseline_margin_percentile": 0.3366
         },
-        "M6_ls_gt_ss": {
-          "label": "F3/F4 : mean_localStorage > mean_sessionStorage",
-          "level": "mean",
+        "O3": {
+          "finding": "F1/F3",
+          "level": "ordinal",
+          "description": "median cookie > median LS (ALL)",
           "n": 10000,
           "holds": 10000,
+          "excluded": 0,
           "p_hat": 1.0,
           "wilson95": [
             0.9996159875222334,
             0.9999999999999999
           ],
           "fail_bound_95": 0.0003,
+          "status": "Invariant",
           "holds_at_baseline": true,
-          "margin_min": 0.12829999999999997,
-          "margin_p1": 0.13380000000000003,
-          "margin_median": 0.14640000000000003,
-          "margin_baseline": 0.1421,
-          "baseline_margin_percentile": 0.2296
+          "margin_min": 0.029400000000000093,
+          "margin_p1": 0.04069999999999996,
+          "margin_median": 0.0714999999999999,
+          "margin_baseline": 0.07120000000000004,
+          "baseline_margin_percentile": 0.4826
         },
-        "M7_ls_gt_idb": {
-          "label": "F3/F5 : mean_localStorage > mean_IndexedDB",
-          "level": "mean",
+        "O4": {
+          "finding": "F1/F3",
+          "level": "ordinal",
+          "description": "mean cookie > mean LS (ALL)",
           "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
+          "holds": 5865,
+          "excluded": 0,
+          "p_hat": 0.5865,
           "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.00019999999999997797,
-          "margin_p1": 0.010700000000000041,
-          "margin_median": 0.04310000000000003,
-          "margin_baseline": 0.05059999999999998,
-          "baseline_margin_percentile": 0.6542
-        },
-        "D1_median_cookie_gt_ss": {
-          "label": "F1/F4 : median_cookie > median_sessionStorage",
-          "level": "dist",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.2229,
-          "margin_p1": 0.22840000000000005,
-          "margin_median": 0.2568,
-          "margin_baseline": 0.2636,
-          "baseline_margin_percentile": 0.6637
-        },
-        "D2_idb_iqr_zero": {
-          "label": "F5 : IQR_IndexedDB = 0",
-          "level": "dist",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 5e-05,
-          "margin_p1": 5e-05,
-          "margin_median": 5e-05,
-          "margin_baseline": 5e-05,
-          "baseline_margin_percentile": 0.0
-        },
-        "D3_iqr_cookie_gt_ss": {
-          "label": "F1 : IQR_cookie > IQR_sessionStorage",
-          "level": "dist",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.0042999999999999705,
-          "margin_p1": 0.024599000000000013,
-          "margin_median": 0.07269999999999999,
-          "margin_baseline": 0.08410000000000001,
-          "baseline_margin_percentile": 0.6905
-        },
-        "D4_median_mode_equiv": {
-          "label": "F6 : |median_Auth - median_UnAuth| < 0.01",
-          "level": "dist",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.01,
-          "margin_p1": 0.01,
-          "margin_median": 0.01,
-          "margin_baseline": 0.01,
-          "baseline_margin_percentile": 0.0
-        },
-        "D5_cookie_median_stable": {
-          "label": "F4 : |median_cookie_ALL - median_cookie_NONE| < 0.02",
-          "level": "dist",
-          "n": 10000,
-          "holds": 9958,
-          "p_hat": 0.9958,
-          "wilson95": [
-            0.9943280731304939,
-            0.9968911400965529
+            0.5768163453422923,
+            0.5961172204990541
           ],
           "fail_bound_95": null,
+          "status": "Conditional",
           "holds_at_baseline": true,
-          "margin_min": -0.005973378690856141,
-          "margin_p1": 0.007503235365921181,
-          "margin_median": 0.02,
-          "margin_baseline": 0.02,
-          "baseline_margin_percentile": 0.1651
+          "margin_min": -0.021399999999999975,
+          "margin_p1": -0.013399999999999967,
+          "margin_median": 0.0014999999999999458,
+          "margin_baseline": 0.0006999999999999229,
+          "baseline_margin_percentile": 0.4478
         },
-        "D6_median_ls_equiv_cookie": {
-          "label": "F3 : |median_localStorage - median_cookie| < 0.09",
-          "level": "dist",
-          "n": 10000,
-          "holds": 8353,
-          "p_hat": 0.8353,
-          "wilson95": [
-            0.8279016686182089,
-            0.8424408126142008
-          ],
-          "fail_bound_95": null,
-          "holds_at_baseline": true,
-          "margin_min": -0.051500000000000073,
-          "margin_p1": -0.02429999999999996,
-          "margin_median": 0.01599999999999993,
-          "margin_baseline": 0.009300000000000003,
-          "baseline_margin_percentile": 0.3408
-        },
-        "D7_iqr_ls_lt_cookie": {
-          "label": "F3 : IQR_localStorage < IQR_cookie",
-          "level": "dist",
+        "O5": {
+          "finding": "F3/F4",
+          "level": "ordinal",
+          "description": "median LS > median SS (ALL)",
           "n": 10000,
           "holds": 10000,
+          "excluded": 0,
           "p_hat": 1.0,
           "wilson95": [
             0.9996159875222334,
             0.9999999999999999
           ],
           "fail_bound_95": 0.0003,
+          "status": "Invariant",
           "holds_at_baseline": true,
-          "margin_min": 0.055900000000000005,
-          "margin_p1": 0.070499,
-          "margin_median": 0.122,
-          "margin_baseline": 0.14049999999999999,
-          "baseline_margin_percentile": 0.7508
+          "margin_min": 0.14470000000000005,
+          "margin_p1": 0.15700000000000003,
+          "margin_median": 0.18419999999999997,
+          "margin_baseline": 0.17629999999999996,
+          "baseline_margin_percentile": 0.2836
+        },
+        "O6": {
+          "finding": "F3/F4",
+          "level": "ordinal",
+          "description": "mean LS > mean SS (ALL)",
+          "n": 10000,
+          "holds": 10000,
+          "excluded": 0,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "status": "Invariant",
+          "holds_at_baseline": true,
+          "margin_min": 0.12670000000000003,
+          "margin_p1": 0.13190000000000002,
+          "margin_median": 0.1441,
+          "margin_baseline": 0.139,
+          "baseline_margin_percentile": 0.1767
+        },
+        "D1": {
+          "finding": "F1",
+          "level": "distributional",
+          "description": "IQR cookie > max IQR of other APIs (ALL)",
+          "n": 10000,
+          "holds": 9999,
+          "excluded": 0,
+          "p_hat": 0.9999,
+          "wilson95": [
+            0.9994337165442557,
+            0.999982347780473
+          ],
+          "fail_bound_95": null,
+          "status": "Robust",
+          "holds_at_baseline": true,
+          "margin_min": -0.0010999999999999899,
+          "margin_p1": 0.03799999999999998,
+          "margin_median": 0.0923,
+          "margin_baseline": 0.0716,
+          "baseline_margin_percentile": 0.209
+        },
+        "D2": {
+          "finding": "F5",
+          "level": "distributional",
+          "description": "IQR IDB = 0 (+-TOL) under ALL, PARTIAL, NONE",
+          "n": 10000,
+          "holds": 9070,
+          "excluded": 0,
+          "p_hat": 0.907,
+          "wilson95": [
+            0.901150178662336,
+            0.912537235180762
+          ],
+          "fail_bound_95": null,
+          "status": "Robust",
+          "holds_at_baseline": true,
+          "margin_min": -0.03,
+          "margin_p1": -0.0201,
+          "margin_median": 0.001,
+          "margin_baseline": 0.001,
+          "baseline_margin_percentile": 0.0998
+        },
+        "C1": {
+          "finding": "F2",
+          "level": "consent",
+          "description": "max_s |mean_ALL - mean_NONE| < range of API means (ALL)",
+          "n": 10000,
+          "holds": 10000,
+          "excluded": 0,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "status": "Invariant",
+          "holds_at_baseline": true,
+          "margin_min": 0.1758,
+          "margin_p1": 0.1832,
+          "margin_median": 0.2227,
+          "margin_baseline": 0.2043,
+          "baseline_margin_percentile": 0.2374
+        },
+        "C2": {
+          "finding": "F2",
+          "level": "consent",
+          "description": "median_ALL = median_NONE (+-TOL) for cookie, LS, IDB",
+          "n": 10000,
+          "holds": 4986,
+          "excluded": 0,
+          "p_hat": 0.4986,
+          "wilson95": [
+            0.4888024578532389,
+            0.5083986173816987
+          ],
+          "fail_bound_95": null,
+          "status": "Conditional",
+          "holds_at_baseline": true,
+          "margin_min": -0.036,
+          "margin_p1": -0.024500999999999995,
+          "margin_median": 0.0,
+          "margin_baseline": 0.001,
+          "baseline_margin_percentile": 0.5365
+        },
+        "C3": {
+          "finding": "F2",
+          "level": "consent",
+          "description": "Q3 cookie ALL = Q3 cookie NONE (+-TOL)",
+          "n": 10000,
+          "holds": 9099,
+          "excluded": 0,
+          "p_hat": 0.9099,
+          "wilson95": [
+            0.9041294939644942,
+            0.915355692606233
+          ],
+          "fail_bound_95": null,
+          "status": "Robust",
+          "holds_at_baseline": true,
+          "margin_min": -0.0195,
+          "margin_p1": -0.009899999999999999,
+          "margin_median": 0.001,
+          "margin_baseline": 0.001,
+          "baseline_margin_percentile": 0.1032
+        },
+        "S1": {
+          "finding": "F6",
+          "level": "session",
+          "description": "max_s |mean_Auth - mean_UnAuth| < range of API means (ALL)",
+          "n": 10000,
+          "holds": 10000,
+          "excluded": 0,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "status": "Invariant",
+          "holds_at_baseline": true,
+          "margin_min": 0.1538,
+          "margin_p1": 0.15999999999999998,
+          "margin_median": 0.19,
+          "margin_baseline": 0.1751,
+          "baseline_margin_percentile": 0.2283
+        },
+        "S2": {
+          "finding": "F6",
+          "level": "session",
+          "description": "composition explains >= 50% of the Auth/UnAuth mean gap (ALL)",
+          "n": 10000,
+          "holds": 9200,
+          "excluded": 0,
+          "p_hat": 0.92,
+          "wilson95": [
+            0.9145199431631448,
+            0.9251574863555314
+          ],
+          "fail_bound_95": null,
+          "status": "Robust",
+          "holds_at_baseline": true,
+          "margin_min": -0.08910000000000001,
+          "margin_p1": -0.03750599999999997,
+          "margin_median": 0.06389999999999996,
+          "margin_baseline": 0.04510000000000003,
+          "baseline_margin_percentile": 0.3362
         }
       },
       "drivers": {
-        "M1_auth_unauth_equiv": [
+        "O1": [
           {
             "param": "S:BEHAVIORAL_DATA.LINK",
-            "r": 0.372
+            "r": 0.942
           },
           {
             "param": "S:IDENTITY_TRACKING.PROF",
-            "r": -0.059
+            "r": -0.331
+          },
+          {
+            "param": "W:UX_AND_PERFORMANCE_ANALYTICS.LINK",
+            "r": 0.03
+          }
+        ],
+        "O2": [
+          {
+            "param": "S:BEHAVIORAL_DATA.LINK",
+            "r": 0.946
+          },
+          {
+            "param": "S:IDENTITY_TRACKING.PROF",
+            "r": -0.209
+          },
+          {
+            "param": "S:CONSENT_AND_PRIVACY.LINK",
+            "r": -0.134
+          }
+        ],
+        "O3": [
+          {
+            "param": "S:IDENTITY_TRACKING.PROF",
+            "r": 0.679
+          },
+          {
+            "param": "S:ID_SOLUTIONS_AND_EXCHANGES.PROF",
+            "r": -0.314
+          },
+          {
+            "param": "S:CONSENT_AND_PRIVACY.LINK",
+            "r": -0.213
+          }
+        ],
+        "O4": [
+          {
+            "param": "S:BEHAVIORAL_DATA.LINK",
+            "r": -0.521
+          },
+          {
+            "param": "S:IDENTITY_TRACKING.PROF",
+            "r": 0.431
+          },
+          {
+            "param": "W:APP_STATE_STORAGE.LINK",
+            "r": -0.312
+          }
+        ],
+        "O5": [
+          {
+            "param": "S:USER_PREFERENCES.PROF",
+            "r": -0.529
           },
           {
             "param": "W:USER_PREFERENCES.LINK",
-            "r": -0.052
+            "r": -0.28
+          },
+          {
+            "param": "S:ID_SOLUTIONS_AND_EXCHANGES.PROF",
+            "r": 0.237
           }
         ],
-        "M2_all_gt_none": [
+        "O6": [
           {
-            "param": "S:BEHAVIORAL_DATA.LINK",
-            "r": 0.806
+            "param": "S:CONSENT_AND_PRIVACY.LINK",
+            "r": 0.671
           },
           {
             "param": "S:USER_PREFERENCES.PROF",
-            "r": -0.305
+            "r": -0.376
           },
           {
-            "param": "S:CONSENT_AND_PRIVACY.LINK",
-            "r": -0.247
+            "param": "W:APP_STATE_STORAGE.LINK",
+            "r": 0.263
           }
         ],
-        "M3_cookie_gt_ss": [
+        "D1": [
+          {
+            "param": "S:USER_PREFERENCES.PROF",
+            "r": -0.477
+          },
+          {
+            "param": "S:DEVICE_ENV.LINK",
+            "r": -0.392
+          },
+          {
+            "param": "S:BEHAVIORAL_DATA.LINK",
+            "r": 0.342
+          }
+        ],
+        "D2": [
+          {
+            "param": "S:BEHAVIORAL_DATA.LINK",
+            "r": -0.391
+          },
           {
             "param": "S:IDENTITY_TRACKING.PROF",
-            "r": 0.568
+            "r": 0.297
           },
           {
-            "param": "S:CONSENT_AND_PRIVACY.LINK",
-            "r": 0.467
-          },
-          {
-            "param": "S:BEHAVIORAL_DATA.LINK",
-            "r": -0.333
+            "param": "S:UX_AND_PERFORMANCE_ANALYTICS.PROF",
+            "r": -0.025
           }
         ],
-        "M4_cookie_gt_idb": [
+        "C1": [
           {
             "param": "S:BEHAVIORAL_DATA.LINK",
-            "r": -0.907
+            "r": 0.977
           },
+          {
+            "param": "S:USER_PREFERENCES.PROF",
+            "r": -0.128
+          },
+          {
+            "param": "W:USER_PREFERENCES.LINK",
+            "r": -0.089
+          }
+        ],
+        "C2": [
           {
             "param": "S:IDENTITY_TRACKING.PROF",
-            "r": 0.265
+            "r": 0.334
           },
           {
-            "param": "S:CONSENT_AND_PRIVACY.LINK",
-            "r": 0.189
+            "param": "S:ID_SOLUTIONS_AND_EXCHANGES.PROF",
+            "r": -0.236
+          },
+          {
+            "param": "S:DIRECT_PII_KEYS.ID",
+            "r": -0.206
           }
         ],
-        "M5_ls_equiv_cookie": [
+        "C3": [
           {
-            "param": "S:BEHAVIORAL_DATA.LINK",
-            "r": 0.209
+            "param": "S:ID_SOLUTIONS_AND_EXCHANGES.PROF",
+            "r": 0.221
           },
           {
             "param": "S:IDENTITY_TRACKING.PROF",
             "r": -0.186
           },
           {
-            "param": "W:APP_STATE_STORAGE.LINK",
-            "r": 0.152
+            "param": "S:BEHAVIORAL_DATA.LINK",
+            "r": -0.18
           }
         ],
-        "M6_ls_gt_ss": [
-          {
-            "param": "S:CONSENT_AND_PRIVACY.LINK",
-            "r": 0.723
-          },
-          {
-            "param": "W:APP_STATE_STORAGE.LINK",
-            "r": 0.36
-          },
-          {
-            "param": "W:APP_STATE_STORAGE.PROF",
-            "r": 0.319
-          }
-        ],
-        "M7_ls_gt_idb": [
+        "S1": [
           {
             "param": "S:BEHAVIORAL_DATA.LINK",
-            "r": -0.9
-          },
-          {
-            "param": "S:CONSENT_AND_PRIVACY.LINK",
-            "r": 0.291
-          },
-          {
-            "param": "W:APP_STATE_STORAGE.LINK",
-            "r": 0.163
-          }
-        ],
-        "D1_median_cookie_gt_ss": [
-          {
-            "param": "S:IDENTITY_TRACKING.PROF",
-            "r": 0.625
+            "r": 0.988
           },
           {
             "param": "S:UX_AND_PERFORMANCE_ANALYTICS.PROF",
-            "r": -0.5
-          },
-          {
-            "param": "W:UX_AND_PERFORMANCE_ANALYTICS.LINK",
-            "r": -0.281
-          }
-        ],
-        "D2_idb_iqr_zero": [],
-        "D3_iqr_cookie_gt_ss": [
-          {
-            "param": "S:BEHAVIORAL_DATA.LINK",
-            "r": 0.593
+            "r": -0.062
           },
           {
             "param": "S:USER_PREFERENCES.PROF",
-            "r": -0.29
-          },
-          {
-            "param": "S:CONSENT_AND_PRIVACY.LINK",
-            "r": -0.286
+            "r": 0.06
           }
         ],
-        "D4_median_mode_equiv": [],
-        "D5_cookie_median_stable": [
-          {
-            "param": "S:DEVICE_ENV.LINK",
-            "r": 0.361
-          },
-          {
-            "param": "S:IDENTITY_TRACKING.PROF",
-            "r": -0.233
-          },
-          {
-            "param": "W:DEVICE_ENV.PROF",
-            "r": 0.218
-          }
-        ],
-        "D6_median_ls_equiv_cookie": [
-          {
-            "param": "S:IDENTITY_TRACKING.PROF",
-            "r": -0.666
-          },
-          {
-            "param": "S:DIRECT_PII_KEYS.ID",
-            "r": 0.365
-          },
-          {
-            "param": "S:DIRECT_PII_KEYS.LINK",
-            "r": 0.199
-          }
-        ],
-        "D7_iqr_ls_lt_cookie": [
+        "S2": [
           {
             "param": "S:BEHAVIORAL_DATA.LINK",
-            "r": 0.42
+            "r": 0.817
           },
           {
-            "param": "S:NAVIGATION_HISTORY.LINK",
-            "r": 0.335
+            "param": "S:USER_PREFERENCES.PROF",
+            "r": 0.348
           },
           {
             "param": "S:IDENTITY_TRACKING.PROF",
-            "r": -0.305
+            "r": -0.244
           }
         ]
       }
@@ -2247,428 +2332,461 @@
       "n_parameters": 120,
       "acceptance_rate": 1.0,
       "claims": {
-        "M1_auth_unauth_equiv": {
-          "label": "F6 : |mean_Auth - mean_UnAuth| < 0.05",
-          "level": "mean",
+        "O1": {
+          "finding": "F5",
+          "level": "ordinal",
+          "description": "median IDB > median cookie (ALL)",
           "n": 10000,
           "holds": 10000,
+          "excluded": 0,
           "p_hat": 1.0,
           "wilson95": [
             0.9996159875222334,
             0.9999999999999999
           ],
           "fail_bound_95": 0.0003,
+          "status": "Invariant",
           "holds_at_baseline": true,
-          "margin_min": 0.04119999999999997,
-          "margin_p1": 0.04359899999999993,
-          "margin_median": 0.04820000000000009,
-          "margin_baseline": 0.04680000000000002,
-          "baseline_margin_percentile": 0.2114
+          "margin_min": 0.008000000000000007,
+          "margin_p1": 0.022698999999999945,
+          "margin_median": 0.0676,
+          "margin_baseline": 0.04469999999999996,
+          "baseline_margin_percentile": 0.1318
         },
-        "M2_all_gt_none": {
-          "label": "F2 : mean_ALL >= mean_NONE",
-          "level": "mean",
+        "O2": {
+          "finding": "F5",
+          "level": "ordinal",
+          "description": "mean IDB > mean cookie (ALL)",
           "n": 10000,
           "holds": 10000,
+          "excluded": 0,
           "p_hat": 1.0,
           "wilson95": [
             0.9996159875222334,
             0.9999999999999999
           ],
           "fail_bound_95": 0.0003,
+          "status": "Invariant",
           "holds_at_baseline": true,
-          "margin_min": 0.0038000000000000256,
-          "margin_p1": 0.0048000000000000265,
-          "margin_median": 0.007000000000000006,
-          "margin_baseline": 0.006399999999999961,
-          "baseline_margin_percentile": 0.2712
+          "margin_min": 0.04999999999999993,
+          "margin_p1": 0.06020000000000003,
+          "margin_median": 0.09100000000000008,
+          "margin_baseline": 0.07880000000000009,
+          "baseline_margin_percentile": 0.2082
         },
-        "M3_cookie_gt_ss": {
-          "label": "F1/F4 : mean_cookie > mean_sessionStorage",
-          "level": "mean",
+        "O3": {
+          "finding": "F1/F3",
+          "level": "ordinal",
+          "description": "median cookie > median LS (ALL)",
           "n": 10000,
           "holds": 10000,
+          "excluded": 0,
           "p_hat": 1.0,
           "wilson95": [
             0.9996159875222334,
             0.9999999999999999
           ],
           "fail_bound_95": 0.0003,
+          "status": "Invariant",
           "holds_at_baseline": true,
-          "margin_min": 0.12659999999999993,
-          "margin_p1": 0.13279999999999997,
-          "margin_median": 0.14309999999999995,
-          "margin_baseline": 0.14280000000000004,
-          "baseline_margin_percentile": 0.4789
+          "margin_min": 0.03310000000000002,
+          "margin_p1": 0.043199000000000015,
+          "margin_median": 0.07030000000000003,
+          "margin_baseline": 0.07120000000000004,
+          "baseline_margin_percentile": 0.6469
         },
-        "M4_cookie_gt_idb": {
-          "label": "F1/F5 : mean_cookie > mean_IndexedDB",
-          "level": "mean",
+        "O4": {
+          "finding": "F1/F3",
+          "level": "ordinal",
+          "description": "mean cookie > mean LS (ALL)",
           "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
+          "holds": 5355,
+          "excluded": 0,
+          "p_hat": 0.5355,
           "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.006299999999999972,
-          "margin_p1": 0.01980000000000004,
-          "margin_median": 0.04259999999999997,
-          "margin_baseline": 0.05130000000000001,
-          "baseline_margin_percentile": 0.7725
-        },
-        "M5_ls_equiv_cookie": {
-          "label": "F3 : |mean_localStorage - mean_cookie| < 0.07",
-          "level": "mean",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.0539,
-          "margin_p1": 0.05939999999999995,
-          "margin_median": 0.06709999999999999,
-          "margin_baseline": 0.06929999999999997,
-          "baseline_margin_percentile": 0.8645
-        },
-        "M6_ls_gt_ss": {
-          "label": "F3/F4 : mean_localStorage > mean_sessionStorage",
-          "level": "mean",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.13310000000000005,
-          "margin_p1": 0.13580000000000003,
-          "margin_median": 0.14209999999999995,
-          "margin_baseline": 0.1421,
-          "baseline_margin_percentile": 0.5002
-        },
-        "M7_ls_gt_idb": {
-          "label": "F3/F5 : mean_localStorage > mean_IndexedDB",
-          "level": "mean",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.015000000000000013,
-          "margin_p1": 0.024698999999999947,
-          "margin_median": 0.04179999999999995,
-          "margin_baseline": 0.05059999999999998,
-          "baseline_margin_percentile": 0.8394
-        },
-        "D1_median_cookie_gt_ss": {
-          "label": "F1/F4 : median_cookie > median_sessionStorage",
-          "level": "dist",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.20830000000000004,
-          "margin_p1": 0.21859899999999996,
-          "margin_median": 0.25529999999999997,
-          "margin_baseline": 0.2636,
-          "baseline_margin_percentile": 0.6695
-        },
-        "D2_idb_iqr_zero": {
-          "label": "F5 : IQR_IndexedDB = 0",
-          "level": "dist",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 5e-05,
-          "margin_p1": 5e-05,
-          "margin_median": 5e-05,
-          "margin_baseline": 5e-05,
-          "baseline_margin_percentile": 0.0
-        },
-        "D3_iqr_cookie_gt_ss": {
-          "label": "F1 : IQR_cookie > IQR_sessionStorage",
-          "level": "dist",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.020499999999999963,
-          "margin_p1": 0.03789999999999999,
-          "margin_median": 0.0695,
-          "margin_baseline": 0.08410000000000001,
-          "baseline_margin_percentile": 0.8636
-        },
-        "D4_median_mode_equiv": {
-          "label": "F6 : |median_Auth - median_UnAuth| < 0.01",
-          "level": "dist",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.01,
-          "margin_p1": 0.01,
-          "margin_median": 0.01,
-          "margin_baseline": 0.01,
-          "baseline_margin_percentile": 0.0
-        },
-        "D5_cookie_median_stable": {
-          "label": "F4 : |median_cookie_ALL - median_cookie_NONE| < 0.02",
-          "level": "dist",
-          "n": 10000,
-          "holds": 10000,
-          "p_hat": 1.0,
-          "wilson95": [
-            0.9996159875222334,
-            0.9999999999999999
-          ],
-          "fail_bound_95": 0.0003,
-          "holds_at_baseline": true,
-          "margin_min": 0.010678817912517995,
-          "margin_p1": 0.01640560085125782,
-          "margin_median": 0.02,
-          "margin_baseline": 0.02,
-          "baseline_margin_percentile": 0.0735
-        },
-        "D6_median_ls_equiv_cookie": {
-          "label": "F3 : |median_localStorage - median_cookie| < 0.09",
-          "level": "dist",
-          "n": 10000,
-          "holds": 7456,
-          "p_hat": 0.7456,
-          "wilson95": [
-            0.7369705457879194,
-            0.7540408272830017
+            0.5257129672500821,
+            0.5452597678639964
           ],
           "fail_bound_95": null,
+          "status": "Conditional",
           "holds_at_baseline": true,
-          "margin_min": -0.034900000000000014,
-          "margin_p1": -0.019300999999999957,
-          "margin_median": 0.009500000000000036,
-          "margin_baseline": 0.009300000000000003,
-          "baseline_margin_percentile": 0.4924
+          "margin_min": -0.014700000000000046,
+          "margin_p1": -0.009499999999999955,
+          "margin_median": 0.00039999999999995595,
+          "margin_baseline": 0.0006999999999999229,
+          "baseline_margin_percentile": 0.5228
         },
-        "D7_iqr_ls_lt_cookie": {
-          "label": "F3 : IQR_localStorage < IQR_cookie",
-          "level": "dist",
+        "O5": {
+          "finding": "F3/F4",
+          "level": "ordinal",
+          "description": "median LS > median SS (ALL)",
           "n": 10000,
           "holds": 10000,
+          "excluded": 0,
           "p_hat": 1.0,
           "wilson95": [
             0.9996159875222334,
             0.9999999999999999
           ],
           "fail_bound_95": 0.0003,
+          "status": "Invariant",
           "holds_at_baseline": true,
-          "margin_min": 0.05830000000000002,
-          "margin_p1": 0.08209899999999995,
-          "margin_median": 0.11900000000000001,
-          "margin_baseline": 0.14049999999999999,
-          "baseline_margin_percentile": 0.9138
+          "margin_min": 0.14340000000000003,
+          "margin_p1": 0.1542,
+          "margin_median": 0.18180000000000002,
+          "margin_baseline": 0.17629999999999996,
+          "baseline_margin_percentile": 0.3572
+        },
+        "O6": {
+          "finding": "F3/F4",
+          "level": "ordinal",
+          "description": "mean LS > mean SS (ALL)",
+          "n": 10000,
+          "holds": 10000,
+          "excluded": 0,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "status": "Invariant",
+          "holds_at_baseline": true,
+          "margin_min": 0.13090000000000002,
+          "margin_p1": 0.13399899999999995,
+          "margin_median": 0.14000000000000007,
+          "margin_baseline": 0.139,
+          "baseline_margin_percentile": 0.3469
+        },
+        "D1": {
+          "finding": "F1",
+          "level": "distributional",
+          "description": "IQR cookie > max IQR of other APIs (ALL)",
+          "n": 10000,
+          "holds": 10000,
+          "excluded": 0,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "status": "Invariant",
+          "holds_at_baseline": true,
+          "margin_min": 0.032799999999999996,
+          "margin_p1": 0.056400000000000006,
+          "margin_median": 0.08970000000000003,
+          "margin_baseline": 0.0716,
+          "baseline_margin_percentile": 0.1124
+        },
+        "D2": {
+          "finding": "F5",
+          "level": "distributional",
+          "description": "IQR IDB = 0 (+-TOL) under ALL, PARTIAL, NONE",
+          "n": 10000,
+          "holds": 9852,
+          "excluded": 0,
+          "p_hat": 0.9852,
+          "wilson95": [
+            0.9826400750763967,
+            0.9873872792151784
+          ],
+          "fail_bound_95": null,
+          "status": "Robust",
+          "holds_at_baseline": true,
+          "margin_min": -0.0189,
+          "margin_p1": -0.0033,
+          "margin_median": 0.001,
+          "margin_baseline": 0.001,
+          "baseline_margin_percentile": 0.0169
+        },
+        "C1": {
+          "finding": "F2",
+          "level": "consent",
+          "description": "max_s |mean_ALL - mean_NONE| < range of API means (ALL)",
+          "n": 10000,
+          "holds": 10000,
+          "excluded": 0,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "status": "Invariant",
+          "holds_at_baseline": true,
+          "margin_min": 0.1834,
+          "margin_p1": 0.19190000000000002,
+          "margin_median": 0.2172,
+          "margin_baseline": 0.2043,
+          "baseline_margin_percentile": 0.1465
+        },
+        "C2": {
+          "finding": "F2",
+          "level": "consent",
+          "description": "median_ALL = median_NONE (+-TOL) for cookie, LS, IDB",
+          "n": 10000,
+          "holds": 5380,
+          "excluded": 0,
+          "p_hat": 0.538,
+          "wilson95": [
+            0.528215616414258,
+            0.5477551986374318
+          ],
+          "fail_bound_95": null,
+          "status": "Conditional",
+          "holds_at_baseline": true,
+          "margin_min": -0.034,
+          "margin_p1": -0.0234,
+          "margin_median": 0.0009,
+          "margin_baseline": 0.001,
+          "baseline_margin_percentile": 0.5017
+        },
+        "C3": {
+          "finding": "F2",
+          "level": "consent",
+          "description": "Q3 cookie ALL = Q3 cookie NONE (+-TOL)",
+          "n": 10000,
+          "holds": 9197,
+          "excluded": 0,
+          "p_hat": 0.9197,
+          "wilson95": [
+            0.9142109757301192,
+            0.9248666841960435
+          ],
+          "fail_bound_95": null,
+          "status": "Robust",
+          "holds_at_baseline": true,
+          "margin_min": -0.0093,
+          "margin_p1": -0.0044009999999999995,
+          "margin_median": 0.001,
+          "margin_baseline": 0.001,
+          "baseline_margin_percentile": 0.1134
+        },
+        "S1": {
+          "finding": "F6",
+          "level": "session",
+          "description": "max_s |mean_Auth - mean_UnAuth| < range of API means (ALL)",
+          "n": 10000,
+          "holds": 10000,
+          "excluded": 0,
+          "p_hat": 1.0,
+          "wilson95": [
+            0.9996159875222334,
+            0.9999999999999999
+          ],
+          "fail_bound_95": 0.0003,
+          "status": "Invariant",
+          "holds_at_baseline": true,
+          "margin_min": 0.16,
+          "margin_p1": 0.165399,
+          "margin_median": 0.1844,
+          "margin_baseline": 0.1751,
+          "baseline_margin_percentile": 0.1625
+        },
+        "S2": {
+          "finding": "F6",
+          "level": "session",
+          "description": "composition explains >= 50% of the Auth/UnAuth mean gap (ALL)",
+          "n": 10000,
+          "holds": 9951,
+          "excluded": 0,
+          "p_hat": 0.9951,
+          "wilson95": [
+            0.9935283587352335,
+            0.996291392109282
+          ],
+          "fail_bound_95": null,
+          "status": "Robust",
+          "holds_at_baseline": true,
+          "margin_min": -0.019100000000000006,
+          "margin_p1": 0.006198999999999984,
+          "margin_median": 0.06359999999999999,
+          "margin_baseline": 0.04510000000000003,
+          "baseline_margin_percentile": 0.2168
         }
       },
       "drivers": {
-        "M1_auth_unauth_equiv": [
+        "O1": [
           {
             "param": "S:BEHAVIORAL_DATA.LINK",
-            "r": 0.418
-          },
-          {
-            "param": "C:BEHAVIORAL_DATA.PROF",
-            "r": 0.234
+            "r": 0.68
           },
           {
             "param": "C:IDENTITY_TRACKING.LINK",
-            "r": -0.129
-          }
-        ],
-        "M2_all_gt_none": [
-          {
-            "param": "S:BEHAVIORAL_DATA.LINK",
-            "r": 0.704
+            "r": -0.507
           },
           {
             "param": "C:BEHAVIORAL_DATA.PROF",
-            "r": 0.415
-          },
-          {
-            "param": "S:USER_PREFERENCES.PROF",
-            "r": -0.226
+            "r": 0.407
           }
         ],
-        "M3_cookie_gt_ss": [
+        "O2": [
+          {
+            "param": "S:BEHAVIORAL_DATA.LINK",
+            "r": 0.75
+          },
+          {
+            "param": "C:BEHAVIORAL_DATA.PROF",
+            "r": 0.444
+          },
           {
             "param": "C:IDENTITY_TRACKING.LINK",
-            "r": 0.689
+            "r": -0.347
+          }
+        ],
+        "O3": [
+          {
+            "param": "C:IDENTITY_TRACKING.LINK",
+            "r": 0.615
           },
           {
             "param": "S:IDENTITY_TRACKING.PROF",
-            "r": 0.387
-          },
-          {
-            "param": "S:CONSENT_AND_PRIVACY.LINK",
-            "r": 0.257
-          }
-        ],
-        "M4_cookie_gt_idb": [
-          {
-            "param": "S:BEHAVIORAL_DATA.LINK",
-            "r": -0.7
-          },
-          {
-            "param": "C:IDENTITY_TRACKING.LINK",
-            "r": 0.42
-          },
-          {
-            "param": "C:BEHAVIORAL_DATA.PROF",
-            "r": -0.415
-          }
-        ],
-        "M5_ls_equiv_cookie": [
-          {
-            "param": "C:IDENTITY_TRACKING.LINK",
-            "r": -0.166
-          },
-          {
-            "param": "S:BEHAVIORAL_DATA.LINK",
-            "r": 0.102
-          },
-          {
-            "param": "C:BEHAVIORAL_DATA.PROF",
-            "r": 0.075
-          }
-        ],
-        "M6_ls_gt_ss": [
-          {
-            "param": "S:CONSENT_AND_PRIVACY.LINK",
-            "r": 0.573
-          },
-          {
-            "param": "W:APP_STATE_STORAGE.LINK",
-            "r": 0.36
+            "r": 0.391
           },
           {
             "param": "C:ID_SOLUTIONS_AND_EXCHANGES.LINK",
-            "r": 0.312
+            "r": -0.306
           }
         ],
-        "M7_ls_gt_idb": [
+        "O4": [
+          {
+            "param": "C:IDENTITY_TRACKING.LINK",
+            "r": 0.597
+          },
           {
             "param": "S:BEHAVIORAL_DATA.LINK",
-            "r": -0.736
+            "r": -0.371
           },
           {
-            "param": "C:BEHAVIORAL_DATA.PROF",
-            "r": -0.437
+            "param": "S:IDENTITY_TRACKING.PROF",
+            "r": 0.343
+          }
+        ],
+        "O5": [
+          {
+            "param": "S:USER_PREFERENCES.PROF",
+            "r": -0.47
+          },
+          {
+            "param": "W:USER_PREFERENCES.LINK",
+            "r": -0.394
           },
           {
             "param": "C:IDENTITY_TRACKING.LINK",
-            "r": 0.255
+            "r": 0.306
           }
         ],
-        "D1_median_cookie_gt_ss": [
+        "O6": [
           {
-            "param": "C:IDENTITY_TRACKING.LINK",
-            "r": 0.567
-          },
-          {
-            "param": "S:UX_AND_PERFORMANCE_ANALYTICS.PROF",
-            "r": -0.498
-          },
-          {
-            "param": "W:UX_AND_PERFORMANCE_ANALYTICS.LINK",
-            "r": -0.391
-          }
-        ],
-        "D2_idb_iqr_zero": [],
-        "D3_iqr_cookie_gt_ss": [
-          {
-            "param": "S:BEHAVIORAL_DATA.LINK",
-            "r": 0.448
+            "param": "S:CONSENT_AND_PRIVACY.LINK",
+            "r": 0.519
           },
           {
             "param": "C:IDENTITY_TRACKING.LINK",
-            "r": -0.386
+            "r": 0.346
           },
           {
-            "param": "C:BEHAVIORAL_DATA.PROF",
-            "r": 0.255
+            "param": "S:USER_PREFERENCES.PROF",
+            "r": -0.299
           }
         ],
-        "D4_median_mode_equiv": [],
-        "D5_cookie_median_stable": [
+        "D1": [
           {
             "param": "S:DEVICE_ENV.LINK",
-            "r": 0.308
+            "r": -0.467
           },
           {
-            "param": "C:IDENTITY_TRACKING.LINK",
-            "r": -0.234
+            "param": "S:USER_PREFERENCES.PROF",
+            "r": -0.428
           },
           {
-            "param": "W:DEVICE_ENV.PROF",
-            "r": 0.184
+            "param": "S:BEHAVIORAL_DATA.LINK",
+            "r": 0.328
           }
         ],
-        "D6_median_ls_equiv_cookie": [
+        "D2": [
+          {
+            "param": "S:BEHAVIORAL_DATA.LINK",
+            "r": -0.143
+          },
           {
             "param": "C:IDENTITY_TRACKING.LINK",
-            "r": -0.732
+            "r": 0.141
           },
           {
             "param": "S:IDENTITY_TRACKING.PROF",
-            "r": -0.38
-          },
-          {
-            "param": "S:DIRECT_PII_KEYS.ID",
-            "r": 0.194
+            "r": 0.118
           }
         ],
-        "D7_iqr_ls_lt_cookie": [
+        "C1": [
           {
-            "param": "C:IDENTITY_TRACKING.LINK",
-            "r": -0.435
+            "param": "S:BEHAVIORAL_DATA.LINK",
+            "r": 0.815
           },
           {
-            "param": "S:DIRECT_PII_KEYS.ID",
-            "r": 0.292
+            "param": "C:BEHAVIORAL_DATA.PROF",
+            "r": 0.482
+          },
+          {
+            "param": "C:IDENTITY_TRACKING.LINK",
+            "r": -0.136
+          }
+        ],
+        "C2": [
+          {
+            "param": "C:IDENTITY_TRACKING.LINK",
+            "r": 0.485
+          },
+          {
+            "param": "C:ID_SOLUTIONS_AND_EXCHANGES.LINK",
+            "r": -0.355
           },
           {
             "param": "S:IDENTITY_TRACKING.PROF",
-            "r": -0.236
+            "r": 0.324
+          }
+        ],
+        "C3": [
+          {
+            "param": "C:ID_SOLUTIONS_AND_EXCHANGES.LINK",
+            "r": 0.29
+          },
+          {
+            "param": "C:IDENTITY_TRACKING.LINK",
+            "r": -0.14
+          },
+          {
+            "param": "S:BEHAVIORAL_DATA.LINK",
+            "r": -0.135
+          }
+        ],
+        "S1": [
+          {
+            "param": "S:BEHAVIORAL_DATA.LINK",
+            "r": 0.825
+          },
+          {
+            "param": "C:BEHAVIORAL_DATA.PROF",
+            "r": 0.483
+          },
+          {
+            "param": "C:IDENTITY_TRACKING.LINK",
+            "r": -0.125
+          }
+        ],
+        "S2": [
+          {
+            "param": "S:BEHAVIORAL_DATA.LINK",
+            "r": 0.647
+          },
+          {
+            "param": "C:IDENTITY_TRACKING.LINK",
+            "r": -0.399
+          },
+          {
+            "param": "C:BEHAVIORAL_DATA.PROF",
+            "r": 0.382
           }
         ]
       }

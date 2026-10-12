@@ -22,750 +22,1557 @@
       "prof": 0.7,
       "env": 0.5
     },
-    "n_items": 141761
+    "n_items": 141761,
+    "claims_from": "sensibility_analysis",
+    "conventions": {
+      "ref_policy": "ALL",
+      "tol": 0.001,
+      "robust_rate": 0.9,
+      "composition_share": 0.5
+    }
   },
   "audit": {
-    "violations": []
+    "violations": [],
+    "missing_categories": []
+  },
+  "sanity": {
+    "checked": true,
+    "mismatches": []
+  },
+  "baseline_claims": {
+    "O1": {
+      "ok": true,
+      "value": "0.724 > 0.679",
+      "raw": {
+        "a": 0.7241,
+        "b": 0.6794
+      }
+    },
+    "O2": {
+      "ok": true,
+      "value": "0.697 > 0.618",
+      "raw": {
+        "a": 0.6971,
+        "b": 0.6183
+      }
+    },
+    "O3": {
+      "ok": true,
+      "value": "0.679 > 0.608",
+      "raw": {
+        "a": 0.6794,
+        "b": 0.6082
+      }
+    },
+    "O4": {
+      "ok": true,
+      "value": "0.618 > 0.618",
+      "raw": {
+        "a": 0.6183,
+        "b": 0.6176
+      }
+    },
+    "O5": {
+      "ok": true,
+      "value": "0.608 > 0.432",
+      "raw": {
+        "a": 0.6082,
+        "b": 0.4319
+      }
+    },
+    "O6": {
+      "ok": true,
+      "value": "0.618 > 0.479",
+      "raw": {
+        "a": 0.6176,
+        "b": 0.4786
+      }
+    },
+    "D1": {
+      "ok": true,
+      "value": "0.356 > 0.284",
+      "raw": {
+        "iqr_cookie": 0.3558,
+        "max_other": 0.2842
+      }
+    },
+    "D2": {
+      "ok": true,
+      "value": "0.000 / 0.000 / 0.000",
+      "raw": {
+        "ALL": 0.0,
+        "PARTIAL": 0.0,
+        "NONE": 0.0
+      }
+    },
+    "C1": {
+      "ok": true,
+      "value": "0.014 (cookie) < 0.219",
+      "raw": {
+        "max_consent_gap": 0.0142,
+        "api_range": 0.2185,
+        "min_adjacent_gap": 0.0007
+      }
+    },
+    "C2": {
+      "ok": true,
+      "value": "0.000 / 0.000 / 0.000",
+      "raw": {
+        "cookie": 0.0,
+        "localStorage": 0.0,
+        "IndexedDB": 0.0
+      }
+    },
+    "C3": {
+      "ok": true,
+      "value": "0.000",
+      "raw": {
+        "delta_q3": 0.0
+      }
+    },
+    "S1": {
+      "ok": true,
+      "value": "0.043 (IndexedDB) < 0.219",
+      "raw": {
+        "max_mode_gap": 0.0434,
+        "api_range": 0.2185,
+        "min_adjacent_gap": 0.0007
+      }
+    },
+    "S2": {
+      "ok": true,
+      "value": "55%",
+      "raw": {
+        "share": 0.5451,
+        "raw_gap": 0.0492,
+        "residual_gap": 0.0224
+      }
+    }
   },
   "configurations": {
     "zW=0.1_zS=0.5": {
       "z_W": 0.1,
       "z_S": 0.5,
-      "global_mean_ii": 0.7785,
-      "global_mean_ri": 0.5613,
+      "global_mean_ri": 0.6332,
       "mean_by_storage": {
-        "cookie": 0.5844,
-        "localStorage": 0.5837,
-        "sessionStorage": 0.4505,
-        "IndexedDB": 0.5497
+        "cookie": 0.5937,
+        "localStorage": 0.5925,
+        "sessionStorage": 0.4571,
+        "IndexedDB": 0.6883
       },
-      "mean_by_mode": {
-        "Auth": 0.56,
-        "UnAuth": 0.5619
-      },
-      "mean_by_policy": {
-        "ALL": 0.5665,
-        "PARTIAL": 0.5583,
-        "NONE": 0.5562
-      },
-      "dist_by_storage": {
-        "cookie": {
-          "n": 45783,
-          "mean": 0.5844,
-          "median": 0.6794,
-          "q1": 0.3821,
-          "q3": 0.8118,
-          "iqr": 0.4297
+      "claims": {
+        "O1": {
+          "ok": true,
+          "value": "0.724 > 0.679",
+          "raw": {
+            "a": 0.7241,
+            "b": 0.6794
+          }
         },
-        "localStorage": {
-          "n": 12921,
-          "mean": 0.5837,
-          "median": 0.5577,
-          "q1": 0.4937,
-          "q3": 0.7898,
-          "iqr": 0.2961
+        "O2": {
+          "ok": true,
+          "value": "0.688 > 0.594",
+          "raw": {
+            "a": 0.6883,
+            "b": 0.5937
+          }
         },
-        "sessionStorage": {
-          "n": 3937,
-          "mean": 0.4505,
-          "median": 0.3874,
-          "q1": 0.3874,
-          "q3": 0.6759,
-          "iqr": 0.2885
+        "O3": {
+          "ok": true,
+          "value": "0.679 > 0.608",
+          "raw": {
+            "a": 0.6794,
+            "b": 0.6082
+          }
         },
-        "IndexedDB": {
-          "n": 79120,
-          "mean": 0.5497,
-          "median": 0.5577,
-          "q1": 0.5577,
-          "q3": 0.5577,
-          "iqr": 0.0
+        "O4": {
+          "ok": true,
+          "value": "0.594 > 0.592",
+          "raw": {
+            "a": 0.5937,
+            "b": 0.5925
+          }
+        },
+        "O5": {
+          "ok": true,
+          "value": "0.608 > 0.422",
+          "raw": {
+            "a": 0.6082,
+            "b": 0.4225
+          }
+        },
+        "O6": {
+          "ok": true,
+          "value": "0.592 > 0.457",
+          "raw": {
+            "a": 0.5925,
+            "b": 0.4571
+          }
+        },
+        "D1": {
+          "ok": true,
+          "value": "0.421 > 0.232",
+          "raw": {
+            "iqr_cookie": 0.4206,
+            "max_other": 0.2324
+          }
+        },
+        "D2": {
+          "ok": true,
+          "value": "0.000 / 0.000 / 0.000",
+          "raw": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          }
+        },
+        "C1": {
+          "ok": true,
+          "value": "0.018 (cookie) < 0.231",
+          "raw": {
+            "max_consent_gap": 0.0179,
+            "api_range": 0.2312,
+            "min_adjacent_gap": 0.0013
+          }
+        },
+        "C2": {
+          "ok": false,
+          "value": "0.004 / 0.000 / 0.000",
+          "raw": {
+            "cookie": 0.0035,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          }
+        },
+        "C3": {
+          "ok": true,
+          "value": "0.000",
+          "raw": {
+            "delta_q3": 0.0
+          }
+        },
+        "S1": {
+          "ok": true,
+          "value": "0.056 (IndexedDB) < 0.231",
+          "raw": {
+            "max_mode_gap": 0.0561,
+            "api_range": 0.2312,
+            "min_adjacent_gap": 0.0013
+          }
+        },
+        "S2": {
+          "ok": true,
+          "value": "54%",
+          "raw": {
+            "share": 0.5382,
+            "raw_gap": 0.0595,
+            "residual_gap": 0.0275
+          }
         }
-      },
-      "findings": {
-        "M1_auth_unauth_equiv": true,
-        "M2_all_gt_none": true,
-        "M3_cookie_gt_ss": true,
-        "M4_cookie_gt_idb": true,
-        "M5_ls_equiv_cookie": true,
-        "M6_ls_gt_ss": true,
-        "M7_ls_gt_idb": true,
-        "D1_median_cookie_gt_ss": true,
-        "D2_idb_iqr_zero": true,
-        "D3_iqr_cookie_gt_ss": true,
-        "D4_median_mode_equiv": true,
-        "D5_cookie_median_stable": true,
-        "D6_median_ls_equiv_cookie": false,
-        "D7_iqr_ls_lt_cookie": true
       }
     },
     "zW=0.1_zS=0.6": {
       "z_W": 0.1,
       "z_S": 0.6,
-      "global_mean_ii": 0.8031,
-      "global_mean_ri": 0.5785,
+      "global_mean_ri": 0.6528,
       "mean_by_storage": {
-        "cookie": 0.6008,
-        "localStorage": 0.6011,
-        "sessionStorage": 0.4637,
-        "IndexedDB": 0.5676
+        "cookie": 0.6098,
+        "localStorage": 0.6098,
+        "sessionStorage": 0.4713,
+        "IndexedDB": 0.7102
       },
-      "mean_by_mode": {
-        "Auth": 0.5773,
-        "UnAuth": 0.5792
-      },
-      "mean_by_policy": {
-        "ALL": 0.5836,
-        "PARTIAL": 0.5756,
-        "NONE": 0.5737
-      },
-      "dist_by_storage": {
-        "cookie": {
-          "n": 45783,
-          "mean": 0.6008,
-          "median": 0.6873,
-          "q1": 0.4274,
-          "q3": 0.8212,
-          "iqr": 0.3939
+      "claims": {
+        "O1": {
+          "ok": true,
+          "value": "0.746 > 0.687",
+          "raw": {
+            "a": 0.7465,
+            "b": 0.6873
+          }
         },
-        "localStorage": {
-          "n": 12921,
-          "mean": 0.6011,
-          "median": 0.5858,
-          "q1": 0.5326,
-          "q3": 0.799,
-          "iqr": 0.2663
+        "O2": {
+          "ok": true,
+          "value": "0.710 > 0.610",
+          "raw": {
+            "a": 0.7102,
+            "b": 0.6098
+          }
         },
-        "sessionStorage": {
-          "n": 3937,
-          "mean": 0.4637,
-          "median": 0.4016,
-          "q1": 0.3993,
-          "q3": 0.6837,
-          "iqr": 0.2845
+        "O3": {
+          "ok": true,
+          "value": "0.687 > 0.615",
+          "raw": {
+            "a": 0.6873,
+            "b": 0.6153
+          }
         },
-        "IndexedDB": {
-          "n": 79120,
-          "mean": 0.5676,
-          "median": 0.5748,
-          "q1": 0.5748,
-          "q3": 0.5748,
-          "iqr": 0.0
+        "O4": {
+          "ok": true,
+          "value": "0.610 > 0.610",
+          "raw": {
+            "a": 0.6098,
+            "b": 0.6098
+          }
+        },
+        "O5": {
+          "ok": true,
+          "value": "0.615 > 0.427",
+          "raw": {
+            "a": 0.6153,
+            "b": 0.4274
+          }
+        },
+        "O6": {
+          "ok": true,
+          "value": "0.610 > 0.471",
+          "raw": {
+            "a": 0.6098,
+            "b": 0.4713
+          }
+        },
+        "D1": {
+          "ok": true,
+          "value": "0.394 > 0.243",
+          "raw": {
+            "iqr_cookie": 0.3939,
+            "max_other": 0.2432
+          }
+        },
+        "D2": {
+          "ok": true,
+          "value": "0.000 / 0.000 / 0.000",
+          "raw": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          }
+        },
+        "C1": {
+          "ok": true,
+          "value": "0.017 (cookie) < 0.239",
+          "raw": {
+            "max_consent_gap": 0.0172,
+            "api_range": 0.2389,
+            "min_adjacent_gap": 0.0001
+          }
+        },
+        "C2": {
+          "ok": true,
+          "value": "0.000 / 0.000 / 0.000",
+          "raw": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          }
+        },
+        "C3": {
+          "ok": true,
+          "value": "0.000",
+          "raw": {
+            "delta_q3": 0.0
+          }
+        },
+        "S1": {
+          "ok": true,
+          "value": "0.055 (IndexedDB) < 0.239",
+          "raw": {
+            "max_mode_gap": 0.0547,
+            "api_range": 0.2389,
+            "min_adjacent_gap": 0.0001
+          }
+        },
+        "S2": {
+          "ok": true,
+          "value": "55%",
+          "raw": {
+            "share": 0.5532,
+            "raw_gap": 0.0605,
+            "residual_gap": 0.027
+          }
         }
-      },
-      "findings": {
-        "M1_auth_unauth_equiv": true,
-        "M2_all_gt_none": true,
-        "M3_cookie_gt_ss": true,
-        "M4_cookie_gt_idb": true,
-        "M5_ls_equiv_cookie": true,
-        "M6_ls_gt_ss": true,
-        "M7_ls_gt_idb": true,
-        "D1_median_cookie_gt_ss": true,
-        "D2_idb_iqr_zero": true,
-        "D3_iqr_cookie_gt_ss": true,
-        "D4_median_mode_equiv": true,
-        "D5_cookie_median_stable": true,
-        "D6_median_ls_equiv_cookie": false,
-        "D7_iqr_ls_lt_cookie": true
       }
     },
     "zW=0.1_zS=0.7": {
       "z_W": 0.1,
       "z_S": 0.7,
-      "global_mean_ii": 0.8276,
-      "global_mean_ri": 0.5957,
+      "global_mean_ri": 0.6723,
       "mean_by_storage": {
-        "cookie": 0.6171,
-        "localStorage": 0.6182,
-        "sessionStorage": 0.4768,
-        "IndexedDB": 0.5855
+        "cookie": 0.6258,
+        "localStorage": 0.6268,
+        "sessionStorage": 0.4853,
+        "IndexedDB": 0.7321
       },
-      "mean_by_mode": {
-        "Auth": 0.5945,
-        "UnAuth": 0.5963
-      },
-      "mean_by_policy": {
-        "ALL": 0.6006,
-        "PARTIAL": 0.5927,
-        "NONE": 0.5912
-      },
-      "dist_by_storage": {
-        "cookie": {
-          "n": 45783,
-          "mean": 0.6171,
-          "median": 0.6952,
-          "q1": 0.4679,
-          "q3": 0.8307,
-          "iqr": 0.3628
+      "claims": {
+        "O1": {
+          "ok": true,
+          "value": "0.769 > 0.695",
+          "raw": {
+            "a": 0.7688,
+            "b": 0.6952
+          }
         },
-        "localStorage": {
-          "n": 12921,
-          "mean": 0.6182,
-          "median": 0.6193,
-          "q1": 0.58,
-          "q3": 0.8082,
-          "iqr": 0.2282
+        "O2": {
+          "ok": true,
+          "value": "0.732 > 0.626",
+          "raw": {
+            "a": 0.7321,
+            "b": 0.6258
+          }
         },
-        "sessionStorage": {
-          "n": 3937,
-          "mean": 0.4768,
-          "median": 0.4198,
-          "q1": 0.4112,
-          "q3": 0.6916,
-          "iqr": 0.2804
+        "O3": {
+          "ok": true,
+          "value": "0.695 > 0.622",
+          "raw": {
+            "a": 0.6952,
+            "b": 0.6223
+          }
         },
-        "IndexedDB": {
-          "n": 79120,
-          "mean": 0.5855,
-          "median": 0.592,
-          "q1": 0.592,
-          "q3": 0.592,
-          "iqr": 0.0
+        "O4": {
+          "ok": false,
+          "value": "0.626 > 0.627",
+          "raw": {
+            "a": 0.6258,
+            "b": 0.6268
+          }
+        },
+        "O5": {
+          "ok": true,
+          "value": "0.622 > 0.432",
+          "raw": {
+            "a": 0.6223,
+            "b": 0.4323
+          }
+        },
+        "O6": {
+          "ok": true,
+          "value": "0.627 > 0.485",
+          "raw": {
+            "a": 0.6268,
+            "b": 0.4853
+          }
+        },
+        "D1": {
+          "ok": true,
+          "value": "0.355 > 0.260",
+          "raw": {
+            "iqr_cookie": 0.3545,
+            "max_other": 0.2603
+          }
+        },
+        "D2": {
+          "ok": true,
+          "value": "0.000 / 0.000 / 0.000",
+          "raw": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          }
+        },
+        "C1": {
+          "ok": true,
+          "value": "0.017 (cookie) < 0.247",
+          "raw": {
+            "max_consent_gap": 0.0167,
+            "api_range": 0.2468,
+            "min_adjacent_gap": 0.001
+          }
+        },
+        "C2": {
+          "ok": true,
+          "value": "0.000 / 0.000 / 0.000",
+          "raw": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          }
+        },
+        "C3": {
+          "ok": true,
+          "value": "0.000",
+          "raw": {
+            "delta_q3": 0.0
+          }
+        },
+        "S1": {
+          "ok": true,
+          "value": "0.053 (IndexedDB) < 0.247",
+          "raw": {
+            "max_mode_gap": 0.0533,
+            "api_range": 0.2468,
+            "min_adjacent_gap": 0.001
+          }
+        },
+        "S2": {
+          "ok": true,
+          "value": "57%",
+          "raw": {
+            "share": 0.5676,
+            "raw_gap": 0.0617,
+            "residual_gap": 0.0267
+          }
         }
-      },
-      "findings": {
-        "M1_auth_unauth_equiv": true,
-        "M2_all_gt_none": true,
-        "M3_cookie_gt_ss": true,
-        "M4_cookie_gt_idb": true,
-        "M5_ls_equiv_cookie": true,
-        "M6_ls_gt_ss": true,
-        "M7_ls_gt_idb": true,
-        "D1_median_cookie_gt_ss": true,
-        "D2_idb_iqr_zero": true,
-        "D3_iqr_cookie_gt_ss": true,
-        "D4_median_mode_equiv": true,
-        "D5_cookie_median_stable": true,
-        "D6_median_ls_equiv_cookie": true,
-        "D7_iqr_ls_lt_cookie": true
       }
     },
     "zW=0.2_zS=0.5": {
       "z_W": 0.2,
       "z_S": 0.5,
-      "global_mean_ii": 0.7915,
-      "global_mean_ri": 0.5699,
+      "global_mean_ri": 0.6421,
       "mean_by_storage": {
-        "cookie": 0.5989,
-        "localStorage": 0.5958,
-        "sessionStorage": 0.4582,
-        "IndexedDB": 0.5545
+        "cookie": 0.6073,
+        "localStorage": 0.6042,
+        "sessionStorage": 0.4665,
+        "IndexedDB": 0.6925
       },
-      "mean_by_mode": {
-        "Auth": 0.5702,
-        "UnAuth": 0.5697
-      },
-      "mean_by_policy": {
-        "ALL": 0.5738,
-        "PARTIAL": 0.5685,
-        "NONE": 0.5655
-      },
-      "dist_by_storage": {
-        "cookie": {
-          "n": 45783,
-          "mean": 0.5989,
-          "median": 0.6794,
-          "q1": 0.4198,
-          "q3": 0.8118,
-          "iqr": 0.392
+      "claims": {
+        "O1": {
+          "ok": true,
+          "value": "0.724 > 0.679",
+          "raw": {
+            "a": 0.7241,
+            "b": 0.6794
+          }
         },
-        "localStorage": {
-          "n": 12921,
-          "mean": 0.5958,
-          "median": 0.5577,
-          "q1": 0.5073,
-          "q3": 0.7898,
-          "iqr": 0.2825
+        "O2": {
+          "ok": true,
+          "value": "0.692 > 0.607",
+          "raw": {
+            "a": 0.6925,
+            "b": 0.6073
+          }
         },
-        "sessionStorage": {
-          "n": 3937,
-          "mean": 0.4582,
-          "median": 0.3874,
-          "q1": 0.3874,
-          "q3": 0.6759,
-          "iqr": 0.2885
+        "O3": {
+          "ok": true,
+          "value": "0.679 > 0.608",
+          "raw": {
+            "a": 0.6794,
+            "b": 0.6082
+          }
         },
-        "IndexedDB": {
-          "n": 79120,
-          "mean": 0.5545,
-          "median": 0.5577,
-          "q1": 0.5577,
-          "q3": 0.5577,
-          "iqr": 0.0
+        "O4": {
+          "ok": true,
+          "value": "0.607 > 0.604",
+          "raw": {
+            "a": 0.6073,
+            "b": 0.6042
+          }
+        },
+        "O5": {
+          "ok": true,
+          "value": "0.608 > 0.422",
+          "raw": {
+            "a": 0.6082,
+            "b": 0.4225
+          }
+        },
+        "O6": {
+          "ok": true,
+          "value": "0.604 > 0.466",
+          "raw": {
+            "a": 0.6042,
+            "b": 0.4665
+          }
+        },
+        "D1": {
+          "ok": true,
+          "value": "0.389 > 0.232",
+          "raw": {
+            "iqr_cookie": 0.3893,
+            "max_other": 0.2324
+          }
+        },
+        "D2": {
+          "ok": true,
+          "value": "0.000 / 0.000 / 0.000",
+          "raw": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          }
+        },
+        "C1": {
+          "ok": true,
+          "value": "0.016 (cookie) < 0.226",
+          "raw": {
+            "max_consent_gap": 0.0158,
+            "api_range": 0.226,
+            "min_adjacent_gap": 0.0031
+          }
+        },
+        "C2": {
+          "ok": false,
+          "value": "0.002 / 0.000 / 0.000",
+          "raw": {
+            "cookie": 0.0023,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          }
+        },
+        "C3": {
+          "ok": true,
+          "value": "0.000",
+          "raw": {
+            "delta_q3": 0.0
+          }
+        },
+        "S1": {
+          "ok": true,
+          "value": "0.051 (IndexedDB) < 0.226",
+          "raw": {
+            "max_mode_gap": 0.0512,
+            "api_range": 0.226,
+            "min_adjacent_gap": 0.0031
+          }
+        },
+        "S2": {
+          "ok": true,
+          "value": "54%",
+          "raw": {
+            "share": 0.5382,
+            "raw_gap": 0.0545,
+            "residual_gap": 0.0252
+          }
         }
-      },
-      "findings": {
-        "M1_auth_unauth_equiv": true,
-        "M2_all_gt_none": true,
-        "M3_cookie_gt_ss": true,
-        "M4_cookie_gt_idb": true,
-        "M5_ls_equiv_cookie": true,
-        "M6_ls_gt_ss": true,
-        "M7_ls_gt_idb": true,
-        "D1_median_cookie_gt_ss": true,
-        "D2_idb_iqr_zero": true,
-        "D3_iqr_cookie_gt_ss": true,
-        "D4_median_mode_equiv": true,
-        "D5_cookie_median_stable": true,
-        "D6_median_ls_equiv_cookie": false,
-        "D7_iqr_ls_lt_cookie": true
       }
     },
     "zW=0.2_zS=0.6": {
       "z_W": 0.2,
       "z_S": 0.6,
-      "global_mean_ii": 0.8154,
-      "global_mean_ri": 0.5866,
+      "global_mean_ri": 0.6612,
       "mean_by_storage": {
-        "cookie": 0.6144,
-        "localStorage": 0.6124,
-        "sessionStorage": 0.4708,
-        "IndexedDB": 0.5721
+        "cookie": 0.6226,
+        "localStorage": 0.6207,
+        "sessionStorage": 0.48,
+        "IndexedDB": 0.7141
       },
-      "mean_by_mode": {
-        "Auth": 0.5868,
-        "UnAuth": 0.5865
-      },
-      "mean_by_policy": {
-        "ALL": 0.5904,
-        "PARTIAL": 0.5851,
-        "NONE": 0.5824
-      },
-      "dist_by_storage": {
-        "cookie": {
-          "n": 45783,
-          "mean": 0.6144,
-          "median": 0.6873,
-          "q1": 0.455,
-          "q3": 0.8212,
-          "iqr": 0.3663
+      "claims": {
+        "O1": {
+          "ok": true,
+          "value": "0.746 > 0.687",
+          "raw": {
+            "a": 0.7465,
+            "b": 0.6873
+          }
         },
-        "localStorage": {
-          "n": 12921,
-          "mean": 0.6124,
-          "median": 0.5858,
-          "q1": 0.5433,
-          "q3": 0.799,
-          "iqr": 0.2557
+        "O2": {
+          "ok": true,
+          "value": "0.714 > 0.623",
+          "raw": {
+            "a": 0.7141,
+            "b": 0.6226
+          }
         },
-        "sessionStorage": {
-          "n": 3937,
-          "mean": 0.4708,
-          "median": 0.4016,
-          "q1": 0.3993,
-          "q3": 0.6837,
-          "iqr": 0.2845
+        "O3": {
+          "ok": true,
+          "value": "0.687 > 0.615",
+          "raw": {
+            "a": 0.6873,
+            "b": 0.6153
+          }
         },
-        "IndexedDB": {
-          "n": 79120,
-          "mean": 0.5721,
-          "median": 0.5748,
-          "q1": 0.5748,
-          "q3": 0.5748,
-          "iqr": 0.0
+        "O4": {
+          "ok": true,
+          "value": "0.623 > 0.621",
+          "raw": {
+            "a": 0.6226,
+            "b": 0.6207
+          }
+        },
+        "O5": {
+          "ok": true,
+          "value": "0.615 > 0.427",
+          "raw": {
+            "a": 0.6153,
+            "b": 0.4274
+          }
+        },
+        "O6": {
+          "ok": true,
+          "value": "0.621 > 0.480",
+          "raw": {
+            "a": 0.6207,
+            "b": 0.48
+          }
+        },
+        "D1": {
+          "ok": true,
+          "value": "0.355 > 0.243",
+          "raw": {
+            "iqr_cookie": 0.3548,
+            "max_other": 0.2432
+          }
+        },
+        "D2": {
+          "ok": true,
+          "value": "0.000 / 0.000 / 0.000",
+          "raw": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          }
+        },
+        "C1": {
+          "ok": true,
+          "value": "0.015 (cookie) < 0.234",
+          "raw": {
+            "max_consent_gap": 0.0153,
+            "api_range": 0.2342,
+            "min_adjacent_gap": 0.0018
+          }
+        },
+        "C2": {
+          "ok": true,
+          "value": "0.000 / 0.000 / 0.000",
+          "raw": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          }
+        },
+        "C3": {
+          "ok": true,
+          "value": "0.000",
+          "raw": {
+            "delta_q3": 0.0
+          }
+        },
+        "S1": {
+          "ok": true,
+          "value": "0.050 (IndexedDB) < 0.234",
+          "raw": {
+            "max_mode_gap": 0.0501,
+            "api_range": 0.2342,
+            "min_adjacent_gap": 0.0018
+          }
+        },
+        "S2": {
+          "ok": true,
+          "value": "55%",
+          "raw": {
+            "share": 0.5542,
+            "raw_gap": 0.0559,
+            "residual_gap": 0.0249
+          }
         }
-      },
-      "findings": {
-        "M1_auth_unauth_equiv": true,
-        "M2_all_gt_none": true,
-        "M3_cookie_gt_ss": true,
-        "M4_cookie_gt_idb": true,
-        "M5_ls_equiv_cookie": true,
-        "M6_ls_gt_ss": true,
-        "M7_ls_gt_idb": true,
-        "D1_median_cookie_gt_ss": true,
-        "D2_idb_iqr_zero": true,
-        "D3_iqr_cookie_gt_ss": true,
-        "D4_median_mode_equiv": true,
-        "D5_cookie_median_stable": true,
-        "D6_median_ls_equiv_cookie": false,
-        "D7_iqr_ls_lt_cookie": true
       }
     },
     "zW=0.2_zS=0.7": {
       "z_W": 0.2,
       "z_S": 0.7,
-      "global_mean_ii": 0.8391,
-      "global_mean_ri": 0.6033,
+      "global_mean_ri": 0.6802,
       "mean_by_storage": {
-        "cookie": 0.6299,
-        "localStorage": 0.6287,
-        "sessionStorage": 0.4832,
-        "IndexedDB": 0.5897
+        "cookie": 0.6377,
+        "localStorage": 0.637,
+        "sessionStorage": 0.4932,
+        "IndexedDB": 0.7358
       },
-      "mean_by_mode": {
-        "Auth": 0.6033,
-        "UnAuth": 0.6032
-      },
-      "mean_by_policy": {
-        "ALL": 0.6069,
-        "PARTIAL": 0.6016,
-        "NONE": 0.5993
-      },
-      "dist_by_storage": {
-        "cookie": {
-          "n": 45783,
-          "mean": 0.6299,
-          "median": 0.6952,
-          "q1": 0.4762,
-          "q3": 0.8307,
-          "iqr": 0.3545
+      "claims": {
+        "O1": {
+          "ok": true,
+          "value": "0.769 > 0.695",
+          "raw": {
+            "a": 0.7688,
+            "b": 0.6952
+          }
         },
-        "localStorage": {
-          "n": 12921,
-          "mean": 0.6287,
-          "median": 0.6223,
-          "q1": 0.5871,
-          "q3": 0.8082,
-          "iqr": 0.2211
+        "O2": {
+          "ok": true,
+          "value": "0.736 > 0.638",
+          "raw": {
+            "a": 0.7358,
+            "b": 0.6377
+          }
         },
-        "sessionStorage": {
-          "n": 3937,
-          "mean": 0.4832,
-          "median": 0.4319,
-          "q1": 0.4112,
-          "q3": 0.6916,
-          "iqr": 0.2804
+        "O3": {
+          "ok": true,
+          "value": "0.695 > 0.622",
+          "raw": {
+            "a": 0.6952,
+            "b": 0.6223
+          }
         },
-        "IndexedDB": {
-          "n": 79120,
-          "mean": 0.5897,
-          "median": 0.592,
-          "q1": 0.592,
-          "q3": 0.592,
-          "iqr": 0.0
+        "O4": {
+          "ok": true,
+          "value": "0.638 > 0.637",
+          "raw": {
+            "a": 0.6377,
+            "b": 0.637
+          }
+        },
+        "O5": {
+          "ok": true,
+          "value": "0.622 > 0.432",
+          "raw": {
+            "a": 0.6223,
+            "b": 0.4323
+          }
+        },
+        "O6": {
+          "ok": true,
+          "value": "0.637 > 0.493",
+          "raw": {
+            "a": 0.637,
+            "b": 0.4932
+          }
+        },
+        "D1": {
+          "ok": true,
+          "value": "0.355 > 0.260",
+          "raw": {
+            "iqr_cookie": 0.3545,
+            "max_other": 0.2603
+          }
+        },
+        "D2": {
+          "ok": true,
+          "value": "0.000 / 0.000 / 0.000",
+          "raw": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          }
+        },
+        "C1": {
+          "ok": true,
+          "value": "0.015 (cookie) < 0.243",
+          "raw": {
+            "max_consent_gap": 0.0148,
+            "api_range": 0.2426,
+            "min_adjacent_gap": 0.0007
+          }
+        },
+        "C2": {
+          "ok": true,
+          "value": "0.000 / 0.000 / 0.000",
+          "raw": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          }
+        },
+        "C3": {
+          "ok": true,
+          "value": "0.000",
+          "raw": {
+            "delta_q3": 0.0
+          }
+        },
+        "S1": {
+          "ok": true,
+          "value": "0.049 (IndexedDB) < 0.243",
+          "raw": {
+            "max_mode_gap": 0.0492,
+            "api_range": 0.2426,
+            "min_adjacent_gap": 0.0007
+          }
+        },
+        "S2": {
+          "ok": true,
+          "value": "57%",
+          "raw": {
+            "share": 0.5694,
+            "raw_gap": 0.0574,
+            "residual_gap": 0.0247
+          }
         }
-      },
-      "findings": {
-        "M1_auth_unauth_equiv": true,
-        "M2_all_gt_none": true,
-        "M3_cookie_gt_ss": true,
-        "M4_cookie_gt_idb": true,
-        "M5_ls_equiv_cookie": true,
-        "M6_ls_gt_ss": true,
-        "M7_ls_gt_idb": true,
-        "D1_median_cookie_gt_ss": true,
-        "D2_idb_iqr_zero": true,
-        "D3_iqr_cookie_gt_ss": true,
-        "D4_median_mode_equiv": true,
-        "D5_cookie_median_stable": true,
-        "D6_median_ls_equiv_cookie": true,
-        "D7_iqr_ls_lt_cookie": true
       }
     },
     "zW=0.3_zS=0.5": {
       "z_W": 0.3,
       "z_S": 0.5,
-      "global_mean_ii": 0.8037,
-      "global_mean_ri": 0.5781,
+      "global_mean_ri": 0.6506,
       "mean_by_storage": {
-        "cookie": 0.6126,
-        "localStorage": 0.6073,
-        "sessionStorage": 0.4657,
-        "IndexedDB": 0.5589
+        "cookie": 0.6201,
+        "localStorage": 0.6153,
+        "sessionStorage": 0.4755,
+        "IndexedDB": 0.6964
       },
-      "mean_by_mode": {
-        "Auth": 0.5798,
-        "UnAuth": 0.5771
-      },
-      "mean_by_policy": {
-        "ALL": 0.5806,
-        "PARTIAL": 0.578,
-        "NONE": 0.5742
-      },
-      "dist_by_storage": {
-        "cookie": {
-          "n": 45783,
-          "mean": 0.6126,
-          "median": 0.6794,
-          "q1": 0.4525,
-          "q3": 0.8118,
-          "iqr": 0.3593
+      "claims": {
+        "O1": {
+          "ok": true,
+          "value": "0.724 > 0.679",
+          "raw": {
+            "a": 0.7241,
+            "b": 0.6794
+          }
         },
-        "localStorage": {
-          "n": 12921,
-          "mean": 0.6073,
-          "median": 0.5747,
-          "q1": 0.5208,
-          "q3": 0.7898,
-          "iqr": 0.2689
+        "O2": {
+          "ok": true,
+          "value": "0.696 > 0.620",
+          "raw": {
+            "a": 0.6964,
+            "b": 0.6201
+          }
         },
-        "sessionStorage": {
-          "n": 3937,
-          "mean": 0.4657,
-          "median": 0.3874,
-          "q1": 0.3874,
-          "q3": 0.6759,
-          "iqr": 0.2885
+        "O3": {
+          "ok": true,
+          "value": "0.679 > 0.608",
+          "raw": {
+            "a": 0.6794,
+            "b": 0.6082
+          }
         },
-        "IndexedDB": {
-          "n": 79120,
-          "mean": 0.5589,
-          "median": 0.5577,
-          "q1": 0.5577,
-          "q3": 0.5577,
-          "iqr": 0.0
+        "O4": {
+          "ok": true,
+          "value": "0.620 > 0.615",
+          "raw": {
+            "a": 0.6201,
+            "b": 0.6153
+          }
+        },
+        "O5": {
+          "ok": true,
+          "value": "0.608 > 0.422",
+          "raw": {
+            "a": 0.6082,
+            "b": 0.4225
+          }
+        },
+        "O6": {
+          "ok": true,
+          "value": "0.615 > 0.475",
+          "raw": {
+            "a": 0.6153,
+            "b": 0.4755
+          }
+        },
+        "D1": {
+          "ok": true,
+          "value": "0.353 > 0.232",
+          "raw": {
+            "iqr_cookie": 0.3534,
+            "max_other": 0.2324
+          }
+        },
+        "D2": {
+          "ok": true,
+          "value": "0.000 / 0.000 / 0.000",
+          "raw": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          }
+        },
+        "C1": {
+          "ok": true,
+          "value": "0.014 (cookie) < 0.221",
+          "raw": {
+            "max_consent_gap": 0.0139,
+            "api_range": 0.2209,
+            "min_adjacent_gap": 0.0048
+          }
+        },
+        "C2": {
+          "ok": true,
+          "value": "0.000 / 0.000 / 0.000",
+          "raw": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          }
+        },
+        "C3": {
+          "ok": true,
+          "value": "0.000",
+          "raw": {
+            "delta_q3": 0.0
+          }
+        },
+        "S1": {
+          "ok": true,
+          "value": "0.046 (IndexedDB) < 0.221",
+          "raw": {
+            "max_mode_gap": 0.0464,
+            "api_range": 0.2209,
+            "min_adjacent_gap": 0.0048
+          }
+        },
+        "S2": {
+          "ok": true,
+          "value": "54%",
+          "raw": {
+            "share": 0.5381,
+            "raw_gap": 0.0498,
+            "residual_gap": 0.023
+          }
         }
-      },
-      "findings": {
-        "M1_auth_unauth_equiv": true,
-        "M2_all_gt_none": true,
-        "M3_cookie_gt_ss": true,
-        "M4_cookie_gt_idb": true,
-        "M5_ls_equiv_cookie": true,
-        "M6_ls_gt_ss": true,
-        "M7_ls_gt_idb": true,
-        "D1_median_cookie_gt_ss": true,
-        "D2_idb_iqr_zero": true,
-        "D3_iqr_cookie_gt_ss": true,
-        "D4_median_mode_equiv": true,
-        "D5_cookie_median_stable": true,
-        "D6_median_ls_equiv_cookie": false,
-        "D7_iqr_ls_lt_cookie": true
       }
     },
     "zW=0.3_zS=0.6": {
       "z_W": 0.3,
       "z_S": 0.6,
-      "global_mean_ii": 0.8269,
-      "global_mean_ri": 0.5943,
+      "global_mean_ri": 0.6691,
       "mean_by_storage": {
-        "cookie": 0.6272,
-        "localStorage": 0.623,
-        "sessionStorage": 0.4776,
-        "IndexedDB": 0.5763
+        "cookie": 0.6345,
+        "localStorage": 0.6311,
+        "sessionStorage": 0.4882,
+        "IndexedDB": 0.7178
       },
-      "mean_by_mode": {
-        "Auth": 0.5958,
-        "UnAuth": 0.5934
-      },
-      "mean_by_policy": {
-        "ALL": 0.5968,
-        "PARTIAL": 0.5941,
-        "NONE": 0.5906
-      },
-      "dist_by_storage": {
-        "cookie": {
-          "n": 45783,
-          "mean": 0.6272,
-          "median": 0.6873,
-          "q1": 0.4707,
-          "q3": 0.8212,
-          "iqr": 0.3505
+      "claims": {
+        "O1": {
+          "ok": true,
+          "value": "0.746 > 0.687",
+          "raw": {
+            "a": 0.7465,
+            "b": 0.6873
+          }
         },
-        "localStorage": {
-          "n": 12921,
-          "mean": 0.623,
-          "median": 0.5858,
-          "q1": 0.5539,
-          "q3": 0.799,
-          "iqr": 0.2451
+        "O2": {
+          "ok": true,
+          "value": "0.718 > 0.635",
+          "raw": {
+            "a": 0.7178,
+            "b": 0.6345
+          }
         },
-        "sessionStorage": {
-          "n": 3937,
-          "mean": 0.4776,
-          "median": 0.4253,
-          "q1": 0.3993,
-          "q3": 0.6837,
-          "iqr": 0.2845
+        "O3": {
+          "ok": true,
+          "value": "0.687 > 0.615",
+          "raw": {
+            "a": 0.6873,
+            "b": 0.6153
+          }
         },
-        "IndexedDB": {
-          "n": 79120,
-          "mean": 0.5763,
-          "median": 0.5748,
-          "q1": 0.5748,
-          "q3": 0.5748,
-          "iqr": 0.0
+        "O4": {
+          "ok": true,
+          "value": "0.635 > 0.631",
+          "raw": {
+            "a": 0.6345,
+            "b": 0.6311
+          }
+        },
+        "O5": {
+          "ok": true,
+          "value": "0.615 > 0.427",
+          "raw": {
+            "a": 0.6153,
+            "b": 0.4274
+          }
+        },
+        "O6": {
+          "ok": true,
+          "value": "0.631 > 0.488",
+          "raw": {
+            "a": 0.6311,
+            "b": 0.4882
+          }
+        },
+        "D1": {
+          "ok": true,
+          "value": "0.351 > 0.243",
+          "raw": {
+            "iqr_cookie": 0.3505,
+            "max_other": 0.2432
+          }
+        },
+        "D2": {
+          "ok": true,
+          "value": "0.000 / 0.000 / 0.000",
+          "raw": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          }
+        },
+        "C1": {
+          "ok": true,
+          "value": "0.013 (cookie) < 0.230",
+          "raw": {
+            "max_consent_gap": 0.0135,
+            "api_range": 0.2296,
+            "min_adjacent_gap": 0.0035
+          }
+        },
+        "C2": {
+          "ok": true,
+          "value": "0.000 / 0.000 / 0.000",
+          "raw": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          }
+        },
+        "C3": {
+          "ok": true,
+          "value": "0.000",
+          "raw": {
+            "delta_q3": 0.0
+          }
+        },
+        "S1": {
+          "ok": true,
+          "value": "0.046 (IndexedDB) < 0.230",
+          "raw": {
+            "max_mode_gap": 0.0458,
+            "api_range": 0.2296,
+            "min_adjacent_gap": 0.0035
+          }
+        },
+        "S2": {
+          "ok": true,
+          "value": "56%",
+          "raw": {
+            "share": 0.5554,
+            "raw_gap": 0.0515,
+            "residual_gap": 0.0229
+          }
         }
-      },
-      "findings": {
-        "M1_auth_unauth_equiv": true,
-        "M2_all_gt_none": true,
-        "M3_cookie_gt_ss": true,
-        "M4_cookie_gt_idb": true,
-        "M5_ls_equiv_cookie": true,
-        "M6_ls_gt_ss": true,
-        "M7_ls_gt_idb": true,
-        "D1_median_cookie_gt_ss": true,
-        "D2_idb_iqr_zero": true,
-        "D3_iqr_cookie_gt_ss": true,
-        "D4_median_mode_equiv": true,
-        "D5_cookie_median_stable": true,
-        "D6_median_ls_equiv_cookie": false,
-        "D7_iqr_ls_lt_cookie": true
       }
     },
     "zW=0.3_zS=0.7": {
       "z_W": 0.3,
       "z_S": 0.7,
-      "global_mean_ii": 0.8499,
-      "global_mean_ri": 0.6104,
+      "global_mean_ri": 0.6876,
       "mean_by_storage": {
-        "cookie": 0.6418,
-        "localStorage": 0.6385,
-        "sessionStorage": 0.4893,
-        "IndexedDB": 0.5936
+        "cookie": 0.6489,
+        "localStorage": 0.6466,
+        "sessionStorage": 0.5008,
+        "IndexedDB": 0.7392
       },
-      "mean_by_mode": {
-        "Auth": 0.6117,
-        "UnAuth": 0.6097
-      },
-      "mean_by_policy": {
-        "ALL": 0.6129,
-        "PARTIAL": 0.61,
-        "NONE": 0.607
-      },
-      "dist_by_storage": {
-        "cookie": {
-          "n": 45783,
-          "mean": 0.6418,
-          "median": 0.6952,
-          "q1": 0.4762,
-          "q3": 0.8307,
-          "iqr": 0.3545
+      "claims": {
+        "O1": {
+          "ok": true,
+          "value": "0.769 > 0.695",
+          "raw": {
+            "a": 0.7688,
+            "b": 0.6952
+          }
         },
-        "localStorage": {
-          "n": 12921,
-          "mean": 0.6385,
-          "median": 0.6223,
-          "q1": 0.592,
-          "q3": 0.8082,
-          "iqr": 0.2161
+        "O2": {
+          "ok": true,
+          "value": "0.739 > 0.649",
+          "raw": {
+            "a": 0.7392,
+            "b": 0.6489
+          }
         },
-        "sessionStorage": {
-          "n": 3937,
-          "mean": 0.4893,
-          "median": 0.447,
-          "q1": 0.4112,
-          "q3": 0.6916,
-          "iqr": 0.2804
+        "O3": {
+          "ok": true,
+          "value": "0.695 > 0.622",
+          "raw": {
+            "a": 0.6952,
+            "b": 0.6223
+          }
         },
-        "IndexedDB": {
-          "n": 79120,
-          "mean": 0.5936,
-          "median": 0.592,
-          "q1": 0.592,
-          "q3": 0.592,
-          "iqr": 0.0
+        "O4": {
+          "ok": true,
+          "value": "0.649 > 0.647",
+          "raw": {
+            "a": 0.6489,
+            "b": 0.6466
+          }
+        },
+        "O5": {
+          "ok": true,
+          "value": "0.622 > 0.456",
+          "raw": {
+            "a": 0.6223,
+            "b": 0.4561
+          }
+        },
+        "O6": {
+          "ok": true,
+          "value": "0.647 > 0.501",
+          "raw": {
+            "a": 0.6466,
+            "b": 0.5008
+          }
+        },
+        "D1": {
+          "ok": true,
+          "value": "0.355 > 0.260",
+          "raw": {
+            "iqr_cookie": 0.3545,
+            "max_other": 0.2603
+          }
+        },
+        "D2": {
+          "ok": true,
+          "value": "0.000 / 0.000 / 0.000",
+          "raw": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          }
+        },
+        "C1": {
+          "ok": true,
+          "value": "0.013 (cookie) < 0.238",
+          "raw": {
+            "max_consent_gap": 0.013,
+            "api_range": 0.2384,
+            "min_adjacent_gap": 0.0023
+          }
+        },
+        "C2": {
+          "ok": true,
+          "value": "0.000 / 0.000 / 0.000",
+          "raw": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          }
+        },
+        "C3": {
+          "ok": true,
+          "value": "0.000",
+          "raw": {
+            "delta_q3": 0.0
+          }
+        },
+        "S1": {
+          "ok": true,
+          "value": "0.045 (IndexedDB) < 0.238",
+          "raw": {
+            "max_mode_gap": 0.0452,
+            "api_range": 0.2384,
+            "min_adjacent_gap": 0.0023
+          }
+        },
+        "S2": {
+          "ok": true,
+          "value": "57%",
+          "raw": {
+            "share": 0.5715,
+            "raw_gap": 0.0534,
+            "residual_gap": 0.0229
+          }
         }
-      },
-      "findings": {
-        "M1_auth_unauth_equiv": true,
-        "M2_all_gt_none": true,
-        "M3_cookie_gt_ss": true,
-        "M4_cookie_gt_idb": true,
-        "M5_ls_equiv_cookie": true,
-        "M6_ls_gt_ss": true,
-        "M7_ls_gt_idb": true,
-        "D1_median_cookie_gt_ss": true,
-        "D2_idb_iqr_zero": true,
-        "D3_iqr_cookie_gt_ss": true,
-        "D4_median_mode_equiv": true,
-        "D5_cookie_median_stable": true,
-        "D6_median_ls_equiv_cookie": true,
-        "D7_iqr_ls_lt_cookie": true
       }
     }
   },
   "robustness_summary": {
-    "M1_auth_unauth_equiv": {
-      "label": "F6 : |mean_Auth - mean_UnAuth| < 0.05",
-      "level": "mean",
+    "O1": {
+      "finding": "F5",
+      "level": "ordinal",
+      "description": "median IDB > median cookie (ALL)",
+      "latex": "$\\tilde{R}_{\\text{IDB}} > \\tilde{R}_{\\text{cookie}}$",
+      "baseline_ok": true,
+      "baseline_value": "0.724 > 0.679",
       "ok": 9,
       "total": 9,
-      "classification": "Invariant"
+      "excluded": 0,
+      "rate": 1.0,
+      "status": "Invariant",
+      "failing_configs": [],
+      "grid_range": {
+        "a": {
+          "min": 0.7241,
+          "max": 0.7688
+        },
+        "b": {
+          "min": 0.6794,
+          "max": 0.6952
+        }
+      }
     },
-    "M2_all_gt_none": {
-      "label": "F2 : mean_ALL >= mean_NONE",
-      "level": "mean",
+    "O2": {
+      "finding": "F5",
+      "level": "ordinal",
+      "description": "mean IDB > mean cookie (ALL)",
+      "latex": "$\\bar{R}_{\\text{IDB}} > \\bar{R}_{\\text{cookie}}$",
+      "baseline_ok": true,
+      "baseline_value": "0.697 > 0.618",
       "ok": 9,
       "total": 9,
-      "classification": "Invariant"
+      "excluded": 0,
+      "rate": 1.0,
+      "status": "Invariant",
+      "failing_configs": [],
+      "grid_range": {
+        "a": {
+          "min": 0.6883,
+          "max": 0.7392
+        },
+        "b": {
+          "min": 0.5937,
+          "max": 0.6489
+        }
+      }
     },
-    "M3_cookie_gt_ss": {
-      "label": "F1/F4 : mean_cookie > mean_sessionStorage",
-      "level": "mean",
+    "O3": {
+      "finding": "F1/F3",
+      "level": "ordinal",
+      "description": "median cookie > median LS (ALL)",
+      "latex": "$\\tilde{R}_{\\text{cookie}} > \\tilde{R}_{\\text{LS}}$",
+      "baseline_ok": true,
+      "baseline_value": "0.679 > 0.608",
       "ok": 9,
       "total": 9,
-      "classification": "Invariant"
+      "excluded": 0,
+      "rate": 1.0,
+      "status": "Invariant",
+      "failing_configs": [],
+      "grid_range": {
+        "a": {
+          "min": 0.6794,
+          "max": 0.6952
+        },
+        "b": {
+          "min": 0.6082,
+          "max": 0.6223
+        }
+      }
     },
-    "M4_cookie_gt_idb": {
-      "label": "F1/F5 : mean_cookie > mean_IndexedDB",
-      "level": "mean",
+    "O4": {
+      "finding": "F1/F3",
+      "level": "ordinal",
+      "description": "mean cookie > mean LS (ALL)",
+      "latex": "$\\bar{R}_{\\text{cookie}} > \\bar{R}_{\\text{LS}}$",
+      "baseline_ok": true,
+      "baseline_value": "0.618 > 0.618",
+      "ok": 8,
+      "total": 9,
+      "excluded": 0,
+      "rate": 0.8889,
+      "status": "Conditional",
+      "failing_configs": [
+        "(0.1,0.7)"
+      ],
+      "grid_range": {
+        "a": {
+          "min": 0.5937,
+          "max": 0.6489
+        },
+        "b": {
+          "min": 0.5925,
+          "max": 0.6466
+        }
+      }
+    },
+    "O5": {
+      "finding": "F3/F4",
+      "level": "ordinal",
+      "description": "median LS > median SS (ALL)",
+      "latex": "$\\tilde{R}_{\\text{LS}} > \\tilde{R}_{\\text{SS}}$",
+      "baseline_ok": true,
+      "baseline_value": "0.608 > 0.432",
       "ok": 9,
       "total": 9,
-      "classification": "Invariant"
+      "excluded": 0,
+      "rate": 1.0,
+      "status": "Invariant",
+      "failing_configs": [],
+      "grid_range": {
+        "a": {
+          "min": 0.6082,
+          "max": 0.6223
+        },
+        "b": {
+          "min": 0.4225,
+          "max": 0.4561
+        }
+      }
     },
-    "M5_ls_equiv_cookie": {
-      "label": "F3 : |mean_localStorage - mean_cookie| < 0.07",
-      "level": "mean",
+    "O6": {
+      "finding": "F3/F4",
+      "level": "ordinal",
+      "description": "mean LS > mean SS (ALL)",
+      "latex": "$\\bar{R}_{\\text{LS}} > \\bar{R}_{\\text{SS}}$",
+      "baseline_ok": true,
+      "baseline_value": "0.618 > 0.479",
       "ok": 9,
       "total": 9,
-      "classification": "Invariant"
+      "excluded": 0,
+      "rate": 1.0,
+      "status": "Invariant",
+      "failing_configs": [],
+      "grid_range": {
+        "a": {
+          "min": 0.5925,
+          "max": 0.6466
+        },
+        "b": {
+          "min": 0.4571,
+          "max": 0.5008
+        }
+      }
     },
-    "M6_ls_gt_ss": {
-      "label": "F3/F4 : mean_localStorage > mean_sessionStorage",
-      "level": "mean",
+    "D1": {
+      "finding": "F1",
+      "level": "distributional",
+      "description": "IQR cookie > max IQR of other APIs (ALL)",
+      "latex": "$\\mathrm{IQR}_{\\text{cookie}} > \\max_{s \\neq \\text{cookie}} \\mathrm{IQR}_s$",
+      "baseline_ok": true,
+      "baseline_value": "0.356 > 0.284",
       "ok": 9,
       "total": 9,
-      "classification": "Invariant"
+      "excluded": 0,
+      "rate": 1.0,
+      "status": "Invariant",
+      "failing_configs": [],
+      "grid_range": {
+        "iqr_cookie": {
+          "min": 0.3505,
+          "max": 0.4206
+        },
+        "max_other": {
+          "min": 0.2324,
+          "max": 0.2603
+        }
+      }
     },
-    "M7_ls_gt_idb": {
-      "label": "F3/F5 : mean_localStorage > mean_IndexedDB",
-      "level": "mean",
+    "D2": {
+      "finding": "F5",
+      "level": "distributional",
+      "description": "IQR IDB = 0 (+-TOL) under ALL, PARTIAL, NONE",
+      "latex": "$\\mathrm{IQR}_{\\text{IDB}} = 0$ under all policies",
+      "baseline_ok": true,
+      "baseline_value": "0.000 / 0.000 / 0.000",
       "ok": 9,
       "total": 9,
-      "classification": "Invariant"
+      "excluded": 0,
+      "rate": 1.0,
+      "status": "Invariant",
+      "failing_configs": [],
+      "grid_range": {
+        "ALL": {
+          "min": 0.0,
+          "max": 0.0
+        },
+        "PARTIAL": {
+          "min": 0.0,
+          "max": 0.0
+        },
+        "NONE": {
+          "min": 0.0,
+          "max": 0.0
+        }
+      }
     },
-    "D1_median_cookie_gt_ss": {
-      "label": "F1/F4 : median_cookie > median_sessionStorage",
-      "level": "dist",
+    "C1": {
+      "finding": "F2",
+      "level": "consent",
+      "description": "max_s |mean_ALL - mean_NONE| < range of API means (ALL)",
+      "latex": "$\\max_s |\\bar{R}_{s,\\text{ALL}} - \\bar{R}_{s,\\text{NONE}}| < \\max_s \\bar{R}_s - \\min_s \\bar{R}_s$",
+      "baseline_ok": true,
+      "baseline_value": "0.014 (cookie) < 0.219",
       "ok": 9,
       "total": 9,
-      "classification": "Invariant"
+      "excluded": 0,
+      "rate": 1.0,
+      "status": "Invariant",
+      "failing_configs": [],
+      "grid_range": {
+        "max_consent_gap": {
+          "min": 0.013,
+          "max": 0.0179
+        },
+        "api_range": {
+          "min": 0.2209,
+          "max": 0.2468
+        },
+        "min_adjacent_gap": {
+          "min": 0.0001,
+          "max": 0.0048
+        }
+      }
     },
-    "D2_idb_iqr_zero": {
-      "label": "F5 : IQR_IndexedDB = 0",
-      "level": "dist",
+    "C2": {
+      "finding": "F2",
+      "level": "consent",
+      "description": "median_ALL = median_NONE (+-TOL) for cookie, LS, IDB",
+      "latex": "$\\tilde{R}_{s,\\text{ALL}} = \\tilde{R}_{s,\\text{NONE}}$, $s \\in \\{\\text{cookie, LS, IDB}\\}$",
+      "baseline_ok": true,
+      "baseline_value": "0.000 / 0.000 / 0.000",
+      "ok": 7,
+      "total": 9,
+      "excluded": 0,
+      "rate": 0.7778,
+      "status": "Conditional",
+      "failing_configs": [
+        "(0.1,0.5)",
+        "(0.2,0.5)"
+      ],
+      "grid_range": {
+        "cookie": {
+          "min": 0.0,
+          "max": 0.0035
+        },
+        "localStorage": {
+          "min": 0.0,
+          "max": 0.0
+        },
+        "IndexedDB": {
+          "min": 0.0,
+          "max": 0.0
+        }
+      }
+    },
+    "C3": {
+      "finding": "F2",
+      "level": "consent",
+      "description": "Q3 cookie ALL = Q3 cookie NONE (+-TOL)",
+      "latex": "$Q_{3,\\text{ALL}}^{\\text{cookie}} = Q_{3,\\text{NONE}}^{\\text{cookie}}$",
+      "baseline_ok": true,
+      "baseline_value": "0.000",
       "ok": 9,
       "total": 9,
-      "classification": "Invariant"
+      "excluded": 0,
+      "rate": 1.0,
+      "status": "Invariant",
+      "failing_configs": [],
+      "grid_range": {
+        "delta_q3": {
+          "min": 0.0,
+          "max": 0.0
+        }
+      }
     },
-    "D3_iqr_cookie_gt_ss": {
-      "label": "F1 : IQR_cookie > IQR_sessionStorage",
-      "level": "dist",
+    "S1": {
+      "finding": "F6",
+      "level": "session",
+      "description": "max_s |mean_Auth - mean_UnAuth| < range of API means (ALL)",
+      "latex": "$\\max_s |\\bar{R}^{\\text{Auth}}_s - \\bar{R}^{\\text{UnAuth}}_s| < \\max_s \\bar{R}_s - \\min_s \\bar{R}_s$",
+      "baseline_ok": true,
+      "baseline_value": "0.043 (IndexedDB) < 0.219",
       "ok": 9,
       "total": 9,
-      "classification": "Invariant"
+      "excluded": 0,
+      "rate": 1.0,
+      "status": "Invariant",
+      "failing_configs": [],
+      "grid_range": {
+        "max_mode_gap": {
+          "min": 0.0452,
+          "max": 0.0561
+        },
+        "api_range": {
+          "min": 0.2209,
+          "max": 0.2468
+        },
+        "min_adjacent_gap": {
+          "min": 0.0001,
+          "max": 0.0048
+        }
+      }
     },
-    "D4_median_mode_equiv": {
-      "label": "F6 : |median_Auth - median_UnAuth| < 0.01",
-      "level": "dist",
+    "S2": {
+      "finding": "F6",
+      "level": "session",
+      "description": "composition explains >= 50% of the Auth/UnAuth mean gap (ALL)",
+      "latex": "Composition explains $\\geq 50\\%$ of $|\\bar{R}^{\\text{Auth}} - \\bar{R}^{\\text{UnAuth}}|$",
+      "baseline_ok": true,
+      "baseline_value": "55%",
       "ok": 9,
       "total": 9,
-      "classification": "Invariant"
-    },
-    "D5_cookie_median_stable": {
-      "label": "F4 : |median_cookie_ALL - median_cookie_NONE| < 0.02",
-      "level": "dist",
-      "ok": 9,
-      "total": 9,
-      "classification": "Invariant"
-    },
-    "D6_median_ls_equiv_cookie": {
-      "label": "F3 : |median_localStorage - median_cookie| < 0.09",
-      "level": "dist",
-      "ok": 3,
-      "total": 9,
-      "classification": "Sensitive"
-    },
-    "D7_iqr_ls_lt_cookie": {
-      "label": "F3 : IQR_localStorage < IQR_cookie",
-      "level": "dist",
-      "ok": 9,
-      "total": 9,
-      "classification": "Invariant"
+      "excluded": 0,
+      "rate": 1.0,
+      "status": "Invariant",
+      "failing_configs": [],
+      "grid_range": {
+        "share": {
+          "min": 0.5381,
+          "max": 0.5715
+        },
+        "raw_gap": {
+          "min": 0.0498,
+          "max": 0.0617
+        },
+        "residual_gap": {
+          "min": 0.0229,
+          "max": 0.0275
+        }
+      }
     }
   }
 }

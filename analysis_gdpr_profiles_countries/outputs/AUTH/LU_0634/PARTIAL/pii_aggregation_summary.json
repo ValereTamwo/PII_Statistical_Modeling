@@ -4,17 +4,17 @@
   "user_id": "LU_0634",
   "policy": "PARTIAL",
   "summary": {
-    "total_items": 29376,
+    "total_items": 29330,
     "by_storage_type": {
-      "cookies": 5185,
-      "indexeddb": 21609,
+      "cookies": 5178,
+      "indexeddb": 21570,
       "localstorage": 2080,
       "sessionstorage": 502
     },
     "by_category": {
       "DIRECT_PII_KEYS": 310,
       "ID_SOLUTIONS_AND_EXCHANGES": 1770,
-      "LOCATION_AND_DEMOGRAPHICS": 119,
+      "LOCATION_AND_DEMOGRAPHICS": 73,
       "TECHNICAL_PASSWORDS": 314,
       "NAVIGATION_HISTORY": 843,
       "UX_AND_PERFORMANCE_ANALYTICS": 1887,
@@ -36,10 +36,10 @@
       "SERVER_SIDE_TRACKING": 5
     },
     "by_lifecycle": {
-      "added": 2374,
+      "added": 2370,
       "modified": 2879,
-      "removed": 2514,
-      "unknown": 21609
+      "removed": 2511,
+      "unknown": 21570
     },
     "uncategorized_by_storage_type": {
       "cookies": 46,
@@ -48,30 +48,30 @@
       "sessionstorage": 12
     },
     "uncategorized_items": 63212,
-    "total_items_with_uncategorized": 92588,
+    "total_items_with_uncategorized": 92542,
     "cookie_security": {
-      "total_cookies": 5185,
+      "total_cookies": 5178,
       "httponly_distribution": {
         "True": 1501,
-        "False": 3684
+        "False": 3677
       },
       "secure_distribution": {
-        "True": 3618,
-        "False": 1567
+        "True": 3612,
+        "False": 1566
       },
       "samesite_distribution": {
         "No Restriction": 2970,
-        "Lax": 2160,
+        "Lax": 2153,
         "Strict": 55
       },
       "thirdparty_distribution": {
-        "Third-Party": 3815,
-        "First-Party": 1370
+        "Third-Party": 3811,
+        "First-Party": 1367
       },
       "security_posture_distribution": {
         "Secure": 1417,
-        "Partially Secure": 2285,
-        "Lowly Secure": 1483
+        "Partially Secure": 2279,
+        "Lowly Secure": 1482
       },
       "by_category": {
         "DIRECT_PII_KEYS": {
@@ -111,21 +111,21 @@
           }
         },
         "LOCATION_AND_DEMOGRAPHICS": {
-          "total": 27,
+          "total": 20,
           "httponly_true": 15,
-          "httponly_false": 12,
-          "secure_true": 25,
-          "secure_false": 2,
-          "thirdparty_true": 23,
-          "thirdparty_false": 4,
+          "httponly_false": 5,
+          "secure_true": 19,
+          "secure_false": 1,
+          "thirdparty_true": 19,
+          "thirdparty_false": 1,
           "samesite": {
             "No Restriction": 15,
-            "Lax": 12
+            "Lax": 5
           },
           "security_posture": {
             "Secure": 15,
-            "Partially Secure": 10,
-            "Lowly Secure": 2
+            "Partially Secure": 4,
+            "Lowly Secure": 1
           }
         },
         "TECHNICAL_PASSWORDS": {
@@ -83573,19 +83573,6 @@
       {
         "storage_type": "cookies",
         "lifecycle": "added",
-        "key": "RESTART_URL",
-        "value": "https://goidc.globo.com/auth/realms/globo.com/protocol/openid-connect/auth?response_type=code&client_id=header%40apps.globoid&redirect_uri=https%3A%2F%2Fg1.globo.com%2Flogin-callback.ghtml&scope=openid+profile&state=AVHUXyEk4xLZN26wqZ4EEg&nonce=M2u5pTNGGPuz7SMjRAJLYg&code_challenge=nuLjEFGamLdJpoa2r06pxJcQ9ers2IDKnxyoBf2f08s&code_challenge_method=S256",
-        "category": "LOCATION_AND_DEMOGRAPHICS",
-        "domain": ".globo.com",
-        "httpOnly": false,
-        "secure": true,
-        "sameSite": "Lax",
-        "thirdparty": "First-Party",
-        "security_posture": "Partially Secure"
-      },
-      {
-        "storage_type": "cookies",
-        "lifecycle": "added",
         "key": "Country",
         "value": "FR",
         "category": "LOCATION_AND_DEMOGRAPHICS",
@@ -83612,19 +83599,6 @@
       {
         "storage_type": "cookies",
         "lifecycle": "added",
-        "key": "RESTART_URL",
-        "value": "https://goidc.globo.com/auth/realms/globo.com/protocol/openid-connect/auth?response_type=code&client_id=header%40apps.globoid&redirect_uri=https%3A%2F%2Fg1.globo.com%2Flogin-callback.ghtml&scope=openid+profile&state=4ltMN0IxJJngZJ5tHUTELw&nonce=GxDr0SyKwFC5lMXTmcghBg&code_challenge=qs8mIQAxUsTkkTPycfHkXCRgHBdkSSqbcfi2t2hV_r0&code_challenge_method=S256",
-        "category": "LOCATION_AND_DEMOGRAPHICS",
-        "domain": ".globo.com",
-        "httpOnly": false,
-        "secure": true,
-        "sameSite": "Lax",
-        "thirdparty": "First-Party",
-        "security_posture": "Partially Secure"
-      },
-      {
-        "storage_type": "cookies",
-        "lifecycle": "added",
         "key": "CookieConsent",
         "value": "{stamp:'VtN6BLWutOORMAklxYo5H6sM2qZPAmjNOLZpSvy6Rq34VHHMwczFEg==',necessary:true,preferences:true,statistics:true,marketing:true,method:'explicit',ver:1,utc:1787225937307,region:'fr'}",
         "category": "LOCATION_AND_DEMOGRAPHICS",
@@ -83646,32 +83620,6 @@
         "secure": true,
         "sameSite": "Lax",
         "thirdparty": "Third-Party",
-        "security_posture": "Partially Secure"
-      },
-      {
-        "storage_type": "cookies",
-        "lifecycle": "added",
-        "key": "preExtAuthParams",
-        "value": "hl=fr&co=FR&continue=https://secure.indeed.com/oauth/v2/authorize?response_type=code&client_id=f1b34f4ec61ae39f92b6e41a827bf31c642d674b150a0bf8f9cc18bbc80a1404&scope=openid+offline_access+glassdoor.account.merge+job_seeker&state=0ca4aa35-4db3-4f88-aaf4-af81da337eb7%7CHEADER_SIGNIN_LINK&redirect_uri=https%3A%2F%2Fwww.glassdoor.fr%2Fauth%2Flogin%2Foauth2%2Fcode%2Findeed&code_challenge=-H52E78Ej3jea66NFYRO9xrFVHyUa7lE4QD0rOiAyIc&code_challenge_method=S256&auth_provider=google&from=HEADER_SIGNIN_LINK&hl=fr&co=FR&login_hint=chris.martin.gdpr%40gmail.com&originationURL=https%3A%2F%2Fwww.glassdoor.fr%2Findex.htm%3FcountryRedirect%3Dtrue&login_attempted=1&from=HEADER_SIGNIN_LINK&relyingParty=glassdoor",
-        "category": "LOCATION_AND_DEMOGRAPHICS",
-        "domain": "secure.indeed.com",
-        "httpOnly": false,
-        "secure": false,
-        "sameSite": "Lax",
-        "thirdparty": "Third-Party",
-        "security_posture": "Lowly Secure"
-      },
-      {
-        "storage_type": "cookies",
-        "lifecycle": "added",
-        "key": "RESTART_URL",
-        "value": "https://goidc.globo.com/auth/realms/globo.com/protocol/openid-connect/auth?response_type=code&client_id=header%40apps.globoid&redirect_uri=https%3A%2F%2Fg1.globo.com%2Flogin-callback.ghtml&scope=openid+profile&state=BsYLrxrc47v_oMyWUrk94Q&nonce=BBVZlc11fOwsbn6LuSVVpg&code_challenge=2Zm-GLBTcnaH1poo2DmeacFfDbCVi_U9bL-jqbMT4c4&code_challenge_method=S256",
-        "category": "LOCATION_AND_DEMOGRAPHICS",
-        "domain": ".globo.com",
-        "httpOnly": false,
-        "secure": true,
-        "sameSite": "Lax",
-        "thirdparty": "First-Party",
         "security_posture": "Partially Secure"
       },
       {
@@ -83868,318 +83816,6 @@
         "sameSite": "Lax",
         "thirdparty": "Third-Party",
         "security_posture": "Secure"
-      },
-      {
-        "storage_type": "cookies",
-        "lifecycle": "removed",
-        "key": "RESTART_URL",
-        "value": "https://goidc.globo.com/auth/realms/globo.com/protocol/openid-connect/auth?response_type=code&client_id=header%40apps.globoid&redirect_uri=https%3A%2F%2Fg1.globo.com%2Flogin-callback.ghtml&scope=openid+profile&state=AVHUXyEk4xLZN26wqZ4EEg&nonce=M2u5pTNGGPuz7SMjRAJLYg&code_challenge=nuLjEFGamLdJpoa2r06pxJcQ9ers2IDKnxyoBf2f08s&code_challenge_method=S256",
-        "category": "LOCATION_AND_DEMOGRAPHICS",
-        "domain": ".globo.com",
-        "httpOnly": false,
-        "secure": true,
-        "sameSite": "Lax",
-        "thirdparty": "Third-Party",
-        "security_posture": "Partially Secure"
-      },
-      {
-        "storage_type": "cookies",
-        "lifecycle": "removed",
-        "key": "RESTART_URL",
-        "value": "https://goidc.globo.com/auth/realms/globo.com/protocol/openid-connect/auth?response_type=code&client_id=header%40apps.globoid&redirect_uri=https%3A%2F%2Fg1.globo.com%2Flogin-callback.ghtml&scope=openid+profile&state=4ltMN0IxJJngZJ5tHUTELw&nonce=GxDr0SyKwFC5lMXTmcghBg&code_challenge=qs8mIQAxUsTkkTPycfHkXCRgHBdkSSqbcfi2t2hV_r0&code_challenge_method=S256",
-        "category": "LOCATION_AND_DEMOGRAPHICS",
-        "domain": ".globo.com",
-        "httpOnly": false,
-        "secure": true,
-        "sameSite": "Lax",
-        "thirdparty": "Third-Party",
-        "security_posture": "Partially Secure"
-      },
-      {
-        "storage_type": "cookies",
-        "lifecycle": "removed",
-        "key": "RESTART_URL",
-        "value": "https://goidc.globo.com/auth/realms/globo.com/protocol/openid-connect/auth?response_type=code&client_id=header%40apps.globoid&redirect_uri=https%3A%2F%2Fg1.globo.com%2Flogin-callback.ghtml&scope=openid+profile&state=BsYLrxrc47v_oMyWUrk94Q&nonce=BBVZlc11fOwsbn6LuSVVpg&code_challenge=2Zm-GLBTcnaH1poo2DmeacFfDbCVi_U9bL-jqbMT4c4&code_challenge_method=S256",
-        "category": "LOCATION_AND_DEMOGRAPHICS",
-        "domain": ".globo.com",
-        "httpOnly": false,
-        "secure": true,
-        "sameSite": "Lax",
-        "thirdparty": "Third-Party",
-        "security_posture": "Partially Secure"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_END",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_START",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_START",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_END",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_START",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_START",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_START",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_END",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_START",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_START",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_END",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_END",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_END",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_START",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_END",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_START",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_END",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_START",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_END",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_END",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_START",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_START",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_END",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_START",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_START",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_START",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_END",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_START",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_START",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_END",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_END",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_END",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_START",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_END",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_START",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_END",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_START",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "state",
-        "value": "SLI_STATE_END",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
-        "key": "region",
-        "value": "eu-central-2",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
       },
       {
         "storage_type": "indexeddb",
@@ -165755,14 +165391,14 @@
   "persistence_metrics": {
     "by_storage_type": {
       "cookies": {
-        "total_items": 5185,
-        "added": 1792,
+        "total_items": 5178,
+        "added": 1788,
         "modified": 2531,
-        "removed": 862,
-        "persistence_ratio": 0.8337512054001929
+        "removed": 859,
+        "persistence_ratio": 0.8341058323677095
       },
       "indexeddb": {
-        "total_items": 21609,
+        "total_items": 21570,
         "added": 0,
         "modified": 0,
         "removed": 0,
@@ -165806,11 +165442,11 @@
         "persistence_ratio": 0.0
       },
       "LOCATION_AND_DEMOGRAPHICS": {
-        "total_items": 119,
-        "added": 18,
+        "total_items": 73,
+        "added": 14,
         "modified": 18,
-        "removed": 40,
-        "persistence_ratio": 0.3025210084033613
+        "removed": 37,
+        "persistence_ratio": 0.4383561643835616
       },
       "ID_SOLUTIONS_AND_EXCHANGES": {
         "total_items": 1770,

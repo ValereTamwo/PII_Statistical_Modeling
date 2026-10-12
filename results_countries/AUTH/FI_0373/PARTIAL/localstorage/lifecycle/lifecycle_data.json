@@ -9,46 +9,46 @@
     "size_increases": 31,
     "size_decreases": 29,
     "pii_transitions": {
-      "CONSENT_AND_PRIVACY -> USER_PREFERENCES": 1,
-      "CONSENT_AND_PRIVACY -> UX_AND_PERFORMANCE_ANALYTICS": 13,
       "ID_SOLUTIONS_AND_EXCHANGES -> UX_AND_PERFORMANCE_ANALYTICS": 91,
-      "APP_STATE_STORAGE -> SECURITY_AND_BOT_MITIGATION": 2,
+      "UX_AND_PERFORMANCE_ANALYTICS -> USER_PREFERENCES": 1,
+      "CONSENT_AND_PRIVACY -> UX_AND_PERFORMANCE_ANALYTICS": 13,
+      "CONSENT_AND_PRIVACY -> USER_PREFERENCES": 1,
       "IDENTITY_TRACKING -> UX_AND_PERFORMANCE_ANALYTICS": 28,
-      "CONSENT_AND_PRIVACY -> ID_SOLUTIONS_AND_EXCHANGES": 6,
       "APP_STATE_STORAGE -> UX_AND_PERFORMANCE_ANALYTICS": 11,
-      "BEHAVIORAL_DATA -> UX_AND_PERFORMANCE_ANALYTICS": 3,
+      "TECHNICAL_PASSWORDS -> UX_AND_PERFORMANCE_ANALYTICS": 2,
+      "INFRASTRUCTURE -> USER_PREFERENCES": 1,
+      "IDENTITY_TRACKING -> SECURITY_AND_BOT_MITIGATION": 1,
       "INFRASTRUCTURE -> BEHAVIORAL_DATA": 2,
-      "APP_STATE_STORAGE -> TECHNICAL_PASSWORDS": 1,
+      "CONSENT_AND_PRIVACY -> ID_SOLUTIONS_AND_EXCHANGES": 6,
+      "IDENTITY_TRACKING -> ID_SOLUTIONS_AND_EXCHANGES": 5,
+      "ID_SOLUTIONS_AND_EXCHANGES -> BEHAVIORAL_DATA": 1,
+      "ID_SOLUTIONS_AND_EXCHANGES -> IDENTITY_TRACKING": 2,
+      "IDENTITY_TRACKING -> SESSION_MANAGEMENT": 2,
+      "IDENTITY_TRACKING -> BEHAVIORAL_DATA": 2,
+      "DEVICE_ENV -> UX_AND_PERFORMANCE_ANALYTICS": 3,
+      "BEHAVIORAL_DATA -> UX_AND_PERFORMANCE_ANALYTICS": 3,
       "BEHAVIORAL_DATA -> IDENTITY_TRACKING": 1,
       "USER_PREFERENCES -> CONSENT_AND_PRIVACY": 2,
-      "IDENTITY_TRACKING -> ID_SOLUTIONS_AND_EXCHANGES": 5,
-      "APP_STATE_STORAGE -> USER_PREFERENCES": 1,
-      "DEVICE_ENV -> UX_AND_PERFORMANCE_ANALYTICS": 3,
-      "APP_STATE_STORAGE -> LOCATION_AND_DEMOGRAPHICS": 2,
-      "ID_SOLUTIONS_AND_EXCHANGES -> IDENTITY_TRACKING": 2,
-      "IDENTITY_TRACKING -> USER_PREFERENCES": 2,
-      "IDENTITY_TRACKING -> BEHAVIORAL_DATA": 2,
-      "BEHAVIORAL_DATA -> ID_SOLUTIONS_AND_EXCHANGES": 6,
-      "TECHNICAL_PASSWORDS -> UX_AND_PERFORMANCE_ANALYTICS": 2,
       "APP_STATE_STORAGE -> DEVICE_ENV": 1,
-      "IDENTITY_TRACKING -> SESSION_MANAGEMENT": 2,
-      "IDENTITY_TRACKING -> SECURITY_AND_BOT_MITIGATION": 1,
-      "ID_SOLUTIONS_AND_EXCHANGES -> BEHAVIORAL_DATA": 1,
-      "BEHAVIORAL_DATA -> NAVIGATION_HISTORY": 1,
-      "ID_SOLUTIONS_AND_EXCHANGES -> TECHNICAL_PASSWORDS": 2,
-      "INFRASTRUCTURE -> USER_PREFERENCES": 1,
-      "INFRASTRUCTURE -> IDENTITY_TRACKING": 2,
-      "UX_AND_PERFORMANCE_ANALYTICS -> USER_PREFERENCES": 1,
       "DIRECT_PII_KEYS -> SECURITY_AND_BOT_MITIGATION": 1,
-      "BEHAVIORAL_DATA -> DIRECT_PII_KEYS": 1,
-      "IDENTITY_TRACKING -> CONSENT_AND_PRIVACY": 1,
+      "BEHAVIORAL_DATA -> ID_SOLUTIONS_AND_EXCHANGES": 6,
+      "APP_STATE_STORAGE -> SECURITY_AND_BOT_MITIGATION": 2,
+      "ID_SOLUTIONS_AND_EXCHANGES -> TECHNICAL_PASSWORDS": 2,
+      "INFRASTRUCTURE -> IDENTITY_TRACKING": 2,
       "LOCATION_AND_DEMOGRAPHICS -> USER_PREFERENCES": 1,
-      "DEVICE_ENV -> LOCATION_AND_DEMOGRAPHICS": 1
+      "BEHAVIORAL_DATA -> DIRECT_PII_KEYS": 1,
+      "DEVICE_ENV -> LOCATION_AND_DEMOGRAPHICS": 1,
+      "APP_STATE_STORAGE -> LOCATION_AND_DEMOGRAPHICS": 2,
+      "BEHAVIORAL_DATA -> NAVIGATION_HISTORY": 1,
+      "APP_STATE_STORAGE -> TECHNICAL_PASSWORDS": 1,
+      "APP_STATE_STORAGE -> USER_PREFERENCES": 1,
+      "IDENTITY_TRACKING -> USER_PREFERENCES": 2,
+      "IDENTITY_TRACKING -> CONSENT_AND_PRIVACY": 1
     },
     "volatility_distribution": {
-      "high": 248,
       "moderate": 206,
-      "stable": 88
+      "stable": 88,
+      "high": 248
     },
     "change_frequency": {
       "avg_gap": 26.114835948644792,
@@ -93,13 +93,13 @@
         "pii_category": "TECHNICAL_PASSWORDS"
       },
       {
-        "key": "lastExternalReferrerTime",
+        "key": "lastExternalReferrer",
         "avg_gap": 10.676470588235293,
         "num_modifications": 14,
         "pii_category": "NAVIGATION_HISTORY"
       },
       {
-        "key": "lastExternalReferrer",
+        "key": "lastExternalReferrerTime",
         "avg_gap": 10.676470588235293,
         "num_modifications": 14,
         "pii_category": "NAVIGATION_HISTORY"
@@ -159,16 +159,16 @@
         "pii_category": "BEHAVIORAL_DATA"
       },
       {
-        "key": "sa-cdp-timestamp",
-        "avg_gap": 33.30769230769231,
-        "num_modifications": 5,
-        "pii_category": "BEHAVIORAL_DATA"
-      },
-      {
         "key": "sa-ecid",
         "avg_gap": 33.30769230769231,
         "num_modifications": 5,
         "pii_category": "IDENTITY_TRACKING"
+      },
+      {
+        "key": "sa-cdp-timestamp",
+        "avg_gap": 33.30769230769231,
+        "num_modifications": 5,
+        "pii_category": "BEHAVIORAL_DATA"
       },
       {
         "key": "sas_euconsent_v2",
@@ -183,40 +183,32 @@
       "www.rakennuslehti.fi": 11,
       "oma.media.fi": 8,
       "tilaa.media.fi": 7,
-      "www.seiska.fi": 5,
-      "www.diarium.fi": 5,
       "fi.indeed.com": 5,
       "secure.indeed.com": 5,
+      "www.seiska.fi": 5,
+      "www.diarium.fi": 5,
       "laakeinfo.fi": 4
     },
     "pii_modification_patterns": {
-      "UX_AND_PERFORMANCE_ANALYTICS": {
-        "count": 44,
-        "avg_gap": 10.895705521472392
-      },
-      "ID_SOLUTIONS_AND_EXCHANGES": {
-        "count": 7,
-        "avg_gap": 19.166666666666668
+      "USER_PREFERENCES": {
+        "count": 20,
+        "avg_gap": 21.86046511627907
       },
       "NAVIGATION_HISTORY": {
         "count": 28,
         "avg_gap": 10.676470588235293
       },
+      "UX_AND_PERFORMANCE_ANALYTICS": {
+        "count": 44,
+        "avg_gap": 10.895705521472392
+      },
       "BEHAVIORAL_DATA": {
         "count": 47,
         "avg_gap": 22.81021897810219
       },
-      "TECHNICAL_PASSWORDS": {
-        "count": 3,
-        "avg_gap": 10.0
-      },
       "IDENTITY_TRACKING": {
         "count": 22,
         "avg_gap": 27.17142857142857
-      },
-      "USER_PREFERENCES": {
-        "count": 20,
-        "avg_gap": 21.86046511627907
       },
       "CONSENT_AND_PRIVACY": {
         "count": 8,
@@ -225,6 +217,14 @@
       "APP_STATE_STORAGE": {
         "count": 5,
         "avg_gap": 4.4523809523809526
+      },
+      "ID_SOLUTIONS_AND_EXCHANGES": {
+        "count": 7,
+        "avg_gap": 19.166666666666668
+      },
+      "TECHNICAL_PASSWORDS": {
+        "count": 3,
+        "avg_gap": 10.0
       }
     }
   },

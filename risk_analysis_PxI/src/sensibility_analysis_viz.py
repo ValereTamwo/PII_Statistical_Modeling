@@ -83,6 +83,18 @@ MODE_MARKERS= {'Auth':'o','UnAuth':'s'}
 # ════════════════════════════════════════════════════════════
 # UTILITAIRES
 # ════════════════════════════════════════════════════════════
+#
+# JSON schema produced by sensibility_analysis.py (current version):
+#   sens['oat']    -> {'curves': {dim: {str(val): {'global_mean', 'mean_by_storage', 'mean_by_mode'}}},
+#                       'delta_global': {dim: float}, 'active_dims': [...],
+#                       'delta_storage': {storage: {dim: float}}, 'delta_mode': {mode: {dim: float}}}
+#   sens['bounds'] -> {'MIN'|'DEFAULT'|'MAX': {'alphas', 'global_mean',
+#                       'ref_policy': {storage: {n,mean,median,q1,q3,iqr}},
+#                       'pooled':     {storage: {n,mean,median,q1,q3,iqr}}}}
+#   sens['claims'] -> {'default': {cid: {...}}, 'summary': {cid: {...}}, 'per_config': [...]}
+#   sens['sobol']  -> {'global'|storage: {'indices', 'S2_link_prof', ...}, 'n_evaluations'}
+# (No 'sensitivity_1d' / 'sensitivity_range' / 'drivers_by_storage' anymore.)
+
 
 def _save(fig, out_dir: Path, stem: str):
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -94,8 +106,20 @@ def _save(fig, out_dir: Path, stem: str):
 
 def _get_series(sens: dict, dim: str, field: str, sub: str) -> list:
     """Série de valeurs sur la grille alpha pour un champ donné."""
-    return [sens['sensitivity_1d']['dimensions'][dim][str(v)][field][sub]
+    return [sens['oat']['curves'][dim][str(v)][field][sub]
             for v in ALPHA_GRID]
+
+
+def _default_point(sens: dict, field: str, sub: str):
+    """
+    Recovers the full DEFAULT-calibration value from the OAT grid: OAT only
+    ever perturbs one dimension at a time (the rest stay at DEFAULT_ALPHAS),
+    so curves['id'][str(DEFAULT_ALPHAS['id'])] *is* the default-calibration
+    row for every field - 'id' is used because 0.90 is the only default
+    value that lands exactly on the 0.1-spaced ALPHA_GRID.
+    """
+    key = str(DEFAULT_ALPHAS['id'])
+    return sens['oat']['curves']['id'][key][field][sub]
 
 
 def _shared_dim_legend(fig, ncol=6, y=-0.06):
@@ -141,11 +165,12 @@ def _plot_6dim_curves(ax, sens, field, sub_key, ref_val,
                 markeredgecolor=DIM_COLORS[dim],
                 markeredgewidth=0.7,
                 label=DIM_LABELS[dim])
-        # Marqueur valeur par défaut
+        # Marqueur valeur par défaut (seuls id/prof/env tombent sur la
+        # grille 0.1 - ato/link/loc n'auront simplement pas de marqueur)
         dv = DEFAULT_ALPHAS[dim]
         dv_key = str(round(dv, 1))
-        if dv_key in sens['sensitivity_1d']['dimensions'][dim]:
-            dy = sens['sensitivity_1d']['dimensions'][dim][dv_key][field][sub_key]
+        if dv_key in sens['oat']['curves'][dim]:
+            dy = sens['oat']['curves'][dim][dv_key][field][sub_key]
             ax.scatter([dv], [dy],
                        color=DIM_COLORS[dim], s=18, zorder=6,
                        marker='D', alpha=alp)
@@ -164,12 +189,7 @@ def plot_fig_a0_delta_summary(sens: dict, out_dir: Path):
     Bar chart : Delta_k = mean_Ri(alpha=1.0) - mean_Ri(alpha=0.1)
     pour chaque dimension. Ligne seuil à 0.05.
     """
-    dims_data = sens['sensitivity_1d']['dimensions']
-    deltas = {}
-    for dim in ALPHA_KEYS:
-        ys = [dims_data[dim][str(v)]['global_mean_ri'] for v in ALPHA_GRID]
-        # deltas[dim] = round(max(ys) - min(ys), 4)
-        deltas[dim] = round(dims_data[dim]['1.0']['global_mean_ri'] - dims_data[dim]['0.1']['global_mean_ri'], 4)
+    deltas = sens['oat']['delta_global']
 
     fig, ax = plt.subplots(figsize=(5.0, 2.8))
     xs     = np.arange(len(ALPHA_KEYS))
@@ -203,7 +223,7 @@ def plot_fig_a1_by_storage(sens: dict, out_dir: Path):
     4 figures séparées — une par storage (publication-ready).
     """
 
-    ref_storage = sens['sensitivity_1d']['reference']['aggregated']['mean_by_storage']
+    ref_storage = {st: _default_point(sens, 'mean_by_storage', st) for st in STORAGES}
 
     for st, st_label in zip(STORAGES, STORAGE_LABELS):
 
@@ -216,10 +236,6 @@ def plot_fig_a1_by_storage(sens: dict, out_dir: Path):
             sub_key=st,
             ref_val=ref_storage[st]
         )
-
-        # ax.set_title(st_label, pad=2.5,
-        #              color=ST_COLORS[st],
-        #              fontweight='normal')
 
         ax.set_xlabel(r'$\alpha_k$')
         ax.set_ylabel(r'$\overline{R}_i$')
@@ -279,55 +295,11 @@ def plot_fig_a1_by_storage(sens: dict, out_dir: Path):
 # FIG A2 — 2 subplots par MODE, 6 courbes dim
 # ════════════════════════════════════════════════════════════
 
-# def plot_fig_a2_by_mode(sens: dict, out_dir: Path):
-#     """
-   
-#     """
-#     ref_mode = sens['sensitivity_1d']['reference']['aggregated'] \
-#                    ['mean_by_mode']
-
-#     fig, axes = plt.subplots(1, 2, figsize=(7.0, 3.0),
-#                               gridspec_kw={'wspace': 0.30})
-
-#     for ax, mode in zip(axes, MODES):
-#         _plot_6dim_curves(ax, sens,
-#                           field='mean_by_mode',
-#                           sub_key=mode,
-#                           ref_val=ref_mode[mode])
-
-#         # ax.set_title(f'Session mode: {mode}',
-#         #              pad=3, color=MODE_COLORS[mode],
-#         #              fontweight='bold')
-#         ax.set_xlabel(r'$\alpha_k$ ')
-#         ax.set_ylabel(r'Mean $\overline{R}_i$')
-#         ax.set_xticks(ALPHA_GRID)
-#         ax.set_xticklabels([str(v) for v in ALPHA_GRID])
-#         ax.set_xlim(0.05, 1.05)
-#         ax.yaxis.grid(True)
-#         ax.set_axisbelow(True)
-
-#         # Annotation Δ pour link et prof
-#         for i, dim in enumerate(['link', 'prof']):
-#             ys = _get_series(sens, dim, 'mean_by_mode', mode)
-#             delta = max(ys) - min(ys)
-#             ax.text(0.98, 0.05 + i * 0.10,
-#                     f'{DIM_LABELS[dim]} $\\Delta={delta:.3f}$',
-#                     transform=ax.transAxes,
-#                     ha='right', va='bottom', fontsize=5.5,
-#                     color=DIM_COLORS[dim])
-
-#     # # Note mode-invariance
-#     # fig.text(0.5, -0.01,
-#     #          r'$\alpha_k$ sensitivity is invariant to session mode.',
-#     #          ha='center', fontsize=6.5, style='italic', color='#555555')
-
-#     _shared_dim_legend(fig, ncol=6, y=-0.14)
-#     _save(fig, out_dir, 'appendix_A2_by_mode')
 def plot_fig_a2_by_mode(sens: dict, out_dir: Path):
     """
     """
 
-    ref_mode = sens['sensitivity_1d']['reference']['aggregated']['mean_by_mode']
+    ref_mode = {m: _default_point(sens, 'mean_by_mode', m) for m in MODES}
 
     for mode in MODES:
 
@@ -394,77 +366,171 @@ def plot_fig_a2_by_mode(sens: dict, out_dir: Path):
         stem = f'appendix_A2_{mode}'
         _save(fig, out_dir, stem)
 
+
 # ════════════════════════════════════════════════════════════
-# TAB A1 — Heatmap ranking stability
+# STEP 4 — Heatmap driver intensity par storage x dimension
 # ════════════════════════════════════════════════════════════
 
-def plot_tab_a1_ranking_stability(sens: dict, out_dir: Path):
-    rankings_def = {
-        'UnAuth $>$ Auth': 'unauth_gt_auth',
-        'ALL $>$ NONE':    'all_gt_none',
-        'IDB $>$ Cookie':  'idb_gt_cookie',
-    }
+def plot_step4_drivers(sens: dict, out_dir: Path):
+    """
+    Heatmap Delta = mean_Ri(alpha=1.0) - mean_Ri(alpha=0.1) par storage x
+    dimension (sens['oat']['delta_storage']). Met en évidence le driver
+    principal de chaque storage.
+    """
+    delta_storage = sens['oat']['delta_storage']
 
-    details = []
-    for dim in ALPHA_KEYS:
-        for val in ALPHA_GRID:
-            d  = sens['sensitivity_1d']['dimensions'][dim][str(val)]
-            r1 = d['by_mode'].get('UnAuth',0)    >= d['by_mode'].get('Auth',0)
-            r2 = d['by_policy'].get('ALL',0)      >= d['by_policy'].get('NONE',0)
-            r3 = d['by_storage'].get('IndexedDB',0) >= d['by_storage'].get('cookie',0)
-            details.append({'dim':dim,'alpha':val,
-                             'unauth_gt_auth':r1,
-                             'all_gt_none':r2,
-                             'idb_gt_cookie':r3})
+    fig, ax = plt.subplots(figsize=(5.5, 3.0))
 
-    # CSV
-    out_dir.mkdir(parents=True, exist_ok=True)
-    with open(out_dir/'appendix_ranking_stability.csv','w') as f:
-        f.write('dimension,alpha,UnAuth>Auth,ALL>NONE,IDB>Cookie\n')
-        for r in details:
-            f.write(f"{r['dim']},{r['alpha']},"
-                    f"{r['unauth_gt_auth']},{r['all_gt_none']},"
-                    f"{r['idb_gt_cookie']}\n")
+    matrix = np.zeros((len(STORAGES), len(ALPHA_KEYS)))
+    for i, st in enumerate(STORAGES):
+        for j, dim in enumerate(ALPHA_KEYS):
+            matrix[i, j] = delta_storage[st][dim]
 
-    n = len(details)
-    print(f'\n  RANKING STABILITY — {n} configurations')
-    print(f'  {"Ranking":<22} {"Y":>5}  {"N":>5}  {"rate":>6}')
-    print('  '+'-'*40)
-    for name, key in rankings_def.items():
-        ok = sum(r[key] for r in details)
-        print(f'  {name:<22} {ok:>5}  {n-ok:>5}  {ok/n*100:>5.1f}%')
+    im = ax.imshow(matrix, cmap='Reds', vmin=0., vmax=matrix.max(), aspect='auto')
+    plt.colorbar(im, ax=ax, fraction=0.046, pad=0.04,
+                 label=r'$\Delta\,\overline{R}_i$ (max$-$min)')
 
-    # Heatmap 3 × (6×10)
-    fig, axes = plt.subplots(1, 3, figsize=(7.0, 2.8),
+    ax.set_xticks(range(len(ALPHA_KEYS)))
+    ax.set_xticklabels([DIM_LABELS[d] for d in ALPHA_KEYS], fontsize=7)
+    ax.set_yticks(range(len(STORAGES)))
+    ax.set_yticklabels(STORAGE_LABELS, fontsize=7)
+    ax.set_title(r'Risk driver intensity $\Delta$ per storage $\times$ dimension',
+                 fontsize=7.5, pad=4)
+
+    for i, st in enumerate(STORAGES):
+        main = max(ALPHA_KEYS, key=lambda d: delta_storage[st][d])
+        for j, dim in enumerate(ALPHA_KEYS):
+            val = matrix[i, j]
+            weight = 'bold' if dim == main else 'normal'
+            border = '[ ' if dim == main else ''
+            border_r= ' ]' if dim == main else ''
+            ax.text(j, i, f'{border}{val:.3f}{border_r}',
+                    ha='center', va='center', fontsize=6,
+                    fontweight=weight,
+                    color='white' if val > 0.2 else 'black')
+
+    _save(fig, out_dir, 'appendix_step4_drivers')
+
+
+# ════════════════════════════════════════════════════════════
+# STEP 2 — Heatmap mean_Ri / IQR par storage x scénario MIN/DEFAULT/MAX
+# ════════════════════════════════════════════════════════════
+
+def plot_step2_distributions(sens: dict, out_dir: Path):
+    """
+    Figure : heatmap mean_Ri par storage × scénario (MIN/DEFAULT/MAX),
+    pris sur la distribution "pooled" (toutes policies confondues, comme
+    l'ancien mean_by_storage/dist_by_storage).
+    + tableau IQR en annotation.
+    """
+    scenarios = ['MIN', 'DEFAULT', 'MAX']
+    sc_labels = ['MIN\n(all α=0.1)', 'DEFAULT\n(calibrated)', 'MAX\n(all α=1.0)']
+    bounds = sens.get('bounds', {})
+    if not bounds:
+        print('  [Step2] bounds not found in JSON — skipping')
+        return
+
+    fig, axes = plt.subplots(1, 2, figsize=(7.0, 3.0),
                               gridspec_kw={'wspace': 0.45})
 
-    for ax, (name, key) in zip(axes, rankings_def.items()):
-        matrix = np.zeros((len(ALPHA_KEYS), len(ALPHA_GRID)))
-        for i, dim in enumerate(ALPHA_KEYS):
-            for j in range(len(ALPHA_GRID)):
-                matrix[i,j] = 1.0 if details[i*len(ALPHA_GRID)+j][key] else 0.0
+    # Subplot 1 : mean_Ri par storage × scénario
+    ax = axes[0]
+    matrix = np.zeros((len(STORAGES), len(scenarios)))
+    for j, sc in enumerate(scenarios):
+        pooled = bounds.get(sc, {}).get('pooled', {})
+        for i, st in enumerate(STORAGES):
+            matrix[i, j] = pooled.get(st, {}).get('mean') or 0.
 
-        ax.imshow(matrix, cmap='RdYlGn', vmin=0, vmax=1, aspect='auto')
+    im = ax.imshow(matrix, cmap='YlOrRd', vmin=0.0, vmax=1.0, aspect='auto')
+    plt.colorbar(im, ax=ax, fraction=0.046, pad=0.04, label=r'Mean $\overline{R}_i$')
+    ax.set_xticks(range(len(scenarios)))
+    ax.set_xticklabels(sc_labels, fontsize=6.5)
+    ax.set_yticks(range(len(STORAGES)))
+    ax.set_yticklabels(STORAGE_LABELS, fontsize=7)
+    ax.set_title(r'Mean $\overline{R}_i$ by storage $\times$ scenario', fontsize=7.5, pad=4)
+    for i in range(len(STORAGES)):
+        for j in range(len(scenarios)):
+            ax.text(j, i, f'{matrix[i,j]:.3f}',
+                    ha='center', va='center', fontsize=6.5,
+                    color='white' if matrix[i,j] > 0.65 else 'black')
 
-        for i in range(len(ALPHA_KEYS)):
-            for j in range(len(ALPHA_GRID)):
-                ax.text(j, i, 'Y' if matrix[i,j] else 'N',
-                        ha='center', va='center', fontsize=6,
-                        color='#0d3d0d' if matrix[i,j] else 'white',
-                        fontweight='bold' if matrix[i,j] else 'normal')
+    # Subplot 2 : IQR pooled par storage × scénario
+    ax2 = axes[1]
+    iqr_matrix = np.zeros((len(STORAGES), len(scenarios)))
+    for j, sc in enumerate(scenarios):
+        pooled = bounds.get(sc, {}).get('pooled', {})
+        for i, st in enumerate(STORAGES):
+            iqr_matrix[i, j] = pooled.get(st, {}).get('iqr') or 0.
 
-        ax.set_xticks(range(len(ALPHA_GRID)))
-        ax.set_xticklabels([str(v) for v in ALPHA_GRID], fontsize=5.5)
-        ax.set_yticks(range(len(ALPHA_KEYS)))
-        ax.set_yticklabels([DIM_LABELS[d] for d in ALPHA_KEYS], fontsize=6)
-        ax.set_xlabel(r'$\alpha_k$', fontsize=7)
-        total = int(matrix.sum())
-        ax.set_title(f'{name}\n({total}/{n})', fontsize=6.5, pad=3)
+    im2 = ax2.imshow(iqr_matrix, cmap='Blues', vmin=0.0, vmax=0.5, aspect='auto')
+    plt.colorbar(im2, ax=ax2, fraction=0.046, pad=0.04, label='IQR')
+    ax2.set_xticks(range(len(scenarios)))
+    ax2.set_xticklabels(sc_labels, fontsize=6.5)
+    ax2.set_yticks(range(len(STORAGES)))
+    ax2.set_yticklabels(STORAGE_LABELS, fontsize=7)
+    ax2.set_title('IQR (pooled) by storage $\\times$ scenario', fontsize=7.5, pad=4)
+    for i in range(len(STORAGES)):
+        for j in range(len(scenarios)):
+            ax2.text(j, i, f'{iqr_matrix[i,j]:.3f}',
+                     ha='center', va='center', fontsize=6.5,
+                     color='white' if iqr_matrix[i,j] > 0.35 else 'black')
 
-    fig.suptitle('Ranking stability across all 60 sensitivity configurations',
-                 fontsize=7.5, y=1.04)
-    _save(fig, out_dir, 'appendix_A1_ranking_heatmap')
+    _save(fig, out_dir, 'appendix_step2_distributions')
 
+
+# ════════════════════════════════════════════════════════════
+# TAB A1 — Heatmap robustness of the 13 RQ4 claims (replaces the old
+# 3-ranking heatmap: unauth>auth / all>none / idb>cookie no longer exist
+# as standalone fields - sens['claims'] now carries all of RQ4's claims)
+# ════════════════════════════════════════════════════════════
+
+def plot_tab_a1_claims_stability(sens: dict, out_dir: Path):
+    claims     = sens['claims']
+    per_config = claims['per_config']          # 60 configs, dim-major order
+    summary    = claims['summary']             # preserves CLAIMS insertion order
+    claim_ids  = list(summary.keys())
+    n          = len(per_config)
+
+    print(f'\n  RQ4 CLAIMS STABILITY — {n} configurations')
+    print(f'  {"Claim":<5}{"Finding":<8}{"ok/total":>10}  {"rate":>6}  status')
+    print('  ' + '-' * 50)
+    for cid in claim_ids:
+        c = summary[cid]
+        rate = f'{c["rate"]*100:.1f}%' if c['rate'] is not None else 'n/a'
+        print(f'  {cid:<5}{c["finding"]:<8}{c["ok"]:>4}/{c["total"]:<5}{rate:>6}  {c["status"]}')
+
+    # CSV (one row per OAT configuration, one column per claim)
+    out_dir.mkdir(parents=True, exist_ok=True)
+    with open(out_dir / 'appendix_claims_stability.csv', 'w') as f:
+        f.write('dim,alpha,' + ','.join(claim_ids) + '\n')
+        for r in per_config:
+            f.write(f"{r['dim']},{r['alpha']}," +
+                    ','.join(str(r.get(cid)) for cid in claim_ids) + '\n')
+
+    # Heatmap: rows = claims, columns = 60 configs (dim-major, 10 per dim)
+    matrix = np.zeros((len(claim_ids), n))
+    for i, cid in enumerate(claim_ids):
+        for j, r in enumerate(per_config):
+            v = r.get(cid)
+            matrix[i, j] = 1.0 if v else (0.5 if v is None else 0.0)
+
+    fig, ax = plt.subplots(figsize=(8.0, 0.32 * len(claim_ids) + 1.2))
+    ax.imshow(matrix, cmap='RdYlGn', vmin=0, vmax=1, aspect='auto')
+
+    # Column groups: one block of len(ALPHA_GRID) per dimension
+    for i, dim in enumerate(ALPHA_KEYS):
+        if i > 0:
+            ax.axvline(i * len(ALPHA_GRID) - 0.5, color='white', lw=1.0)
+    xt = [i * len(ALPHA_GRID) + len(ALPHA_GRID) / 2 - 0.5 for i in range(len(ALPHA_KEYS))]
+    ax.set_xticks(xt)
+    ax.set_xticklabels([DIM_LABELS[d] for d in ALPHA_KEYS], fontsize=7)
+
+    ax.set_yticks(range(len(claim_ids)))
+    ax.set_yticklabels(claim_ids, fontsize=7)
+    ax.set_title('RQ4 claims robustness across the 60 OAT configurations',
+                 fontsize=8, pad=6)
+
+    _save(fig, out_dir, 'appendix_A1_claims_heatmap')
 
 
 def main():
@@ -492,132 +558,17 @@ def main():
     print('\n  [A2] Curves by mode (2 subplots × 6 dims)...')
     plot_fig_a2_by_mode(sens, out_dir)
 
-    print('\n  [Tab A1] Ranking stability heatmap...')
-    plot_tab_a1_ranking_stability(sens, out_dir)
+    print('\n  [Step4] Driver intensity heatmap (storage × dimension)...')
+    plot_step4_drivers(sens, out_dir)
+
+    print('\n  [Step2] Bounds distributions (MIN/DEFAULT/MAX)...')
+    plot_step2_distributions(sens, out_dir)
+
+    print('\n  [Tab A1] RQ4 claims robustness heatmap...')
+    plot_tab_a1_claims_stability(sens, out_dir)
 
     print(f'\n  Done. Output: {out_dir}')
 
 
 if __name__ == '__main__':
     main()
-
-
-
-
-def plot_step2_distributions(sens: dict, out_dir: Path):
-    """
-    Figure : heatmap mean_Ri par storage × scénario (MIN/DEFAULT/MAX).
-    + tableau IQR en annotation.
-    """
-    import matplotlib.pyplot as plt
-    import numpy as np
-
-    scenarios = ['alphas_min', 'alphas_default', 'alphas_max']
-    sc_labels = ['MIN\n(all α=0.1)', 'DEFAULT\n(calibrated)', 'MAX\n(all α=1.0)']
-    sr = sens.get('sensitivity_range', {})
-    if not sr:
-        print('  [Step2] sensitivity_range not found in JSON — skipping')
-        return
-
-    fig, axes = plt.subplots(1, 2, figsize=(7.0, 3.0),
-                              gridspec_kw={'wspace': 0.45})
-
-    # Subplot 1 : mean_Ri par storage × scénario
-    ax = axes[0]
-    matrix = np.zeros((len(STORAGES), len(scenarios)))
-    for j, sc in enumerate(scenarios):
-        for i, st in enumerate(STORAGES):
-            val = sr.get(sc, {}).get('mean_by_storage', {}).get(st, 0.)
-            matrix[i, j] = val
-
-    im = ax.imshow(matrix, cmap='YlOrRd', vmin=0.0, vmax=1.0, aspect='auto')
-    plt.colorbar(im, ax=ax, fraction=0.046, pad=0.04, label=r'Mean $\overline{R}_i$')
-    ax.set_xticks(range(len(scenarios)))
-    ax.set_xticklabels(sc_labels, fontsize=6.5)
-    ax.set_yticks(range(len(STORAGES)))
-    ax.set_yticklabels(STORAGE_LABELS, fontsize=7)
-    ax.set_title(r'Mean $\overline{R}_i$ by storage $\times$ scenario', fontsize=7.5, pad=4)
-    for i in range(len(STORAGES)):
-        for j in range(len(scenarios)):
-            ax.text(j, i, f'{matrix[i,j]:.3f}',
-                    ha='center', va='center', fontsize=6.5,
-                    color='white' if matrix[i,j] > 0.65 else 'black')
-
-    # Subplot 2 : IQR item-level par storage × scénario
-    ax2 = axes[1]
-    iqr_matrix = np.zeros((len(STORAGES), len(scenarios)))
-    for j, sc in enumerate(scenarios):
-        dist = sr.get(sc, {}).get('dist_by_storage', {})
-        for i, st in enumerate(STORAGES):
-            iqr_matrix[i, j] = dist.get(st, {}).get('iqr') or 0.
-
-    im2 = ax2.imshow(iqr_matrix, cmap='Blues', vmin=0.0, vmax=0.5, aspect='auto')
-    plt.colorbar(im2, ax=ax2, fraction=0.046, pad=0.04, label='IQR')
-    ax2.set_xticks(range(len(scenarios)))
-    ax2.set_xticklabels(sc_labels, fontsize=6.5)
-    ax2.set_yticks(range(len(STORAGES)))
-    ax2.set_yticklabels(STORAGE_LABELS, fontsize=7)
-    ax2.set_title('IQR item-level by storage $\\times$ scenario', fontsize=7.5, pad=4)
-    for i in range(len(STORAGES)):
-        for j in range(len(scenarios)):
-            ax2.text(j, i, f'{iqr_matrix[i,j]:.3f}',
-                     ha='center', va='center', fontsize=6.5,
-                     color='white' if iqr_matrix[i,j] > 0.35 else 'black')
-
-    _save(fig, out_dir, 'appendix_step2_distributions')
-
-
-
-def plot_step4_drivers(sens: dict, out_dir: Path):
-    """
-    Heatmap Δ = mean_Ri(max) - mean_Ri(min) par storage × dimension.
-    Met en évidence le driver principal de chaque storage.
-    """
-    import matplotlib.pyplot as plt
-    import numpy as np
-
-    drivers = sens.get('drivers_by_storage')
-    if not drivers:
-        # Calculer depuis sensitivity_1d
-        dims_data = sens['sensitivity_1d']['dimensions']
-        drivers = {}
-        for st in STORAGES:
-            drivers[st] = {}
-            for dim in ALPHA_KEYS:
-                ys = [dims_data[dim][str(v)]['mean_by_storage'][st]
-                      for v in ALPHA_GRID]
-                drivers[st][dim] = {'delta': round(max(ys)-min(ys), 4)}
-            main = max(ALPHA_KEYS, key=lambda d: drivers[st][d]['delta'])
-            drivers[st]['_main_driver'] = main
-
-    fig, ax = plt.subplots(figsize=(5.5, 3.0))
-
-    matrix = np.zeros((len(STORAGES), len(ALPHA_KEYS)))
-    for i, st in enumerate(STORAGES):
-        for j, dim in enumerate(ALPHA_KEYS):
-            matrix[i, j] = drivers[st].get(dim, {}).get('delta', 0.)
-
-    im = ax.imshow(matrix, cmap='Reds', vmin=0., vmax=matrix.max(), aspect='auto')
-    plt.colorbar(im, ax=ax, fraction=0.046, pad=0.04,
-                 label=r'$\Delta\,\overline{R}_i$ (max$-$min)')
-
-    ax.set_xticks(range(len(ALPHA_KEYS)))
-    ax.set_xticklabels([DIM_LABELS[d] for d in ALPHA_KEYS], fontsize=7)
-    ax.set_yticks(range(len(STORAGES)))
-    ax.set_yticklabels(STORAGE_LABELS, fontsize=7)
-    ax.set_title(r'Risk driver intensity $\Delta$ per storage $\times$ dimension',
-                 fontsize=7.5, pad=4)
-
-    for i, st in enumerate(STORAGES):
-        main = drivers[st].get('_main_driver')
-        for j, dim in enumerate(ALPHA_KEYS):
-            val = matrix[i, j]
-            weight = 'bold' if dim == main else 'normal'
-            border = '[ ' if dim == main else ''
-            border_r= ' ]' if dim == main else ''
-            ax.text(j, i, f'{border}{val:.3f}{border_r}',
-                    ha='center', va='center', fontsize=6,
-                    fontweight=weight,
-                    color='white' if val > 0.2 else 'black')
-
-    _save(fig, out_dir, 'appendix_step4_drivers')

@@ -25,6 +25,8 @@ from analyze_by_category import is_third_party, calculate_lifetime_category
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[3]))
 from countries_config import add_users_arg, resolve_users
+from thirdparty_domain_analysis.vendor_lookup import lookup_vendor_for_key
+from thirdparty_domain_analysis.navigation_domains import get_assigned_domains, is_assigned_domain
 
 
 AUTH_STATUSES = ["AUTH", "NOTAUTH"]
@@ -33,13 +35,6 @@ POLICIES      = ["PARTIAL"]
 COOKIE_LIFECYCLES  = ["added", "modified", "removed"]
 STORAGE_LIFECYCLES = ["added", "modified", "removed"]
 IDB_LIFECYCLE      = "static"
-
-THIRD_PARTY_CATEGORIES = {
-    "ID_SOLUTIONS_AND_EXCHANGES",
-    "IDENTITY_TRACKING",
-    "SERVER_SIDE_TRACKING",
-    "UX_AND_PERFORMANCE_ANALYTICS",
-}
 
 
 
@@ -241,7 +236,8 @@ def vectorize_localstorage(item: Dict, category: str, lifecycle: str, idx: int,
 
     key   = item.get("key") or item.get("name")
     value = item.get("value", "") if lifecycle == "added" or lifecycle == "removed" else item.get("value_to", "")
-    tp = 1 if category in THIRD_PARTY_CATEGORIES else 0
+    vendor_match = lookup_vendor_for_key(key)
+    tp = 1 if vendor_match else 0
 
     xi = {
         "js_accessible"         : 1,
@@ -263,6 +259,7 @@ def vectorize_localstorage(item: Dict, category: str, lifecycle: str, idx: int,
         "lifecycle"   : lifecycle,
         "category"    : category,
         "initial_url" : item.get("initial_url", ""),
+        "vendor"      : vendor_match["vendor"] if vendor_match else None,
         "xi"          : xi,
     }
 
@@ -272,7 +269,8 @@ def vectorize_sessionstorage(item: Dict, category: str, lifecycle: str, idx: int
 
     key   = item.get("key") or item.get("name")
     value = item.get("value", "") if lifecycle == "added" or lifecycle == "removed" else item.get("value_to", "")
-    tp = 1 if category in THIRD_PARTY_CATEGORIES else 0
+    vendor_match = lookup_vendor_for_key(key)
+    tp = 1 if vendor_match else 0
 
     xi = {
         "js_accessible"         : 1,
@@ -294,19 +292,21 @@ def vectorize_sessionstorage(item: Dict, category: str, lifecycle: str, idx: int
         "lifecycle"   : lifecycle,
         "category"    : category,
         "initial_url" : item.get("initial_url", ""),
+        "vendor"      : vendor_match["vendor"] if vendor_match else None,
         "xi"          : xi,
     }
 
 
 def vectorize_indexeddb(item: Dict, category: str, idx: int,
-                         cross_values: set, nb_entries: int = 1,
+                         cross_values: set, user: str, nb_entries: int = 1,
                          k: int = 1) -> Dict:
 
     key         = item.get("name") or item.get("key")
     value       = item.get("value", "")
     source_file = item.get("source_file", "")
     domain      = _extract_domain_from_source_file(source_file) or ""
-    tp          = 1 if category in THIRD_PARTY_CATEGORIES else 0
+    assigned    = get_assigned_domains(user)
+    tp          = 0 if is_assigned_domain(domain, assigned) else 1
     store_density = round(nb_entries / (nb_entries + k), 4)
 
     xi = {
@@ -450,7 +450,7 @@ def vectorize_user_policy(data_root: Path, auth_status: str, user: str,
     for category, path in _iter_category_files(idb_dir):
         items = _load_json(path)
         for idx, item in enumerate(items):
-            v = vectorize_indexeddb(item, category, idx, cross_values, idb_store_counts.get(item.get("source_file", ""), 1), k_idb)
+            v = vectorize_indexeddb(item, category, idx, cross_values, user, idb_store_counts.get(item.get("source_file", ""), 1), k_idb)
             pid = (v['task_id'], v['storage_type'], v['name'], str(v['value']))
             if pid not in physical_items:
                 v['categories'] = [v.pop('category')]

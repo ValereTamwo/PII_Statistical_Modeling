@@ -1,0 +1,20 @@
+\multicolumn{5}{@{}l}{\textit{Ordinal claims (storage ranking)}} \\[2pt]
+F5 & $\tilde{R}_{\text{IDB}} > \tilde{R}_{\text{cookie}}$ & 0.724 > 0.679 & 54/60 & Robust \\  % failures: alpha_link >= 1.0; alpha_prof <= 0.5
+F5 & $\bar{R}_{\text{IDB}} > \bar{R}_{\text{cookie}}$ & 0.697 > 0.618 & 56/60 & Robust \\  % failures: alpha_prof <= 0.4
+F1/F3 & $\tilde{R}_{\text{cookie}} > \tilde{R}_{\text{LS}}$ & 0.679 > 0.608 & 56/60 & Robust \\  % failures: alpha_link in [0.2, 0.3, 0.4, 0.5]
+F1/F3 & $\bar{R}_{\text{cookie}} > \bar{R}_{\text{LS}}$ & 0.618 > 0.618 & 41/60 & Conditional \\  % failures: alpha_ato <= 0.8; alpha_link <= 0.8; alpha_prof >= 0.8
+F3/F4 & $\tilde{R}_{\text{LS}} > \tilde{R}_{\text{SS}}$ & 0.608 > 0.432 & 60/60 & Invariant \\
+F3/F4 & $\bar{R}_{\text{LS}} > \bar{R}_{\text{SS}}$ & 0.618 > 0.479 & 60/60 & Invariant \\
+\midrule
+\multicolumn{5}{@{}l}{\textit{Distributional claims}} \\[2pt]
+F1 & $\mathrm{IQR}_{\text{cookie}} > \max_{s \neq \text{cookie}} \mathrm{IQR}_s$ & 0.356 > 0.284 & 57/60 & Robust \\  % failures: alpha_link <= 0.1; alpha_prof <= 0.2
+F5 & $\mathrm{IQR}_{\text{IDB}} = 0$ under all policies & 0.000 / 0.000 / 0.000 & 52/60 & Conditional \\  % failures: alpha_link <= 0.6; alpha_prof >= 0.9
+\midrule
+\multicolumn{5}{@{}l}{\textit{Consent invariance (ALL vs.\ NONE)}} \\[2pt]
+F2 & $\max_s |\bar{R}_{s,\text{ALL}} - \bar{R}_{s,\text{NONE}}| < \max_s \bar{R}_s - \min_s \bar{R}_s$ & 0.014 (cookie) < 0.219 & 60/60 & Invariant \\
+F2 & $\tilde{R}_{s,\text{ALL}} = \tilde{R}_{s,\text{NONE}}$, $s \in \{\text{cookie, LS, IDB}\}$ & 0.000 / 0.000 / 0.000 & 40/60 & Conditional \\  % failures: alpha_id <= 0.2; alpha_ato <= 0.8; alpha_link in [0.3, 0.4, 1.0]; alpha_prof <= 0.5; alpha_env <= 0.2
+F2 & $Q_{3,\text{ALL}}^{\text{cookie}} = Q_{3,\text{NONE}}^{\text{cookie}}$ & 0.000 & 49/60 & Conditional \\  % failures: alpha_ato <= 0.7; alpha_link in [0.1, 0.2, 0.3, 1.0]
+\midrule
+\multicolumn{5}{@{}l}{\textit{Session mode (ALL policy)}} \\[2pt]
+F6 & $\max_s |\bar{R}^{\text{Auth}}_s - \bar{R}^{\text{UnAuth}}_s| < \max_s \bar{R}_s - \min_s \bar{R}_s$ & 0.043 (IndexedDB) < 0.219 & 60/60 & Invariant \\
+F6 & Composition explains $\geq 50\%$ of $|\bar{R}^{\text{Auth}} - \bar{R}^{\text{UnAuth}}|$ & 55\% & 53/60 & Conditional \\  % failures: alpha_link >= 1.0; alpha_prof <= 0.6

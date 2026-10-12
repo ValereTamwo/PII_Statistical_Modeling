@@ -1,0 +1,85 @@
+﻿Platform,Category,Domain,regex,tier,source_url,source_verifiee_le,notes,preuve_existence_editeur
+AB Tasty,UX_Analytics,abtasty.com,^(ABTasty|ABT_|ABTIs|abTasty),doc_editeur,https://docs.abtasty.com/client-side/tag/tag-cookies,2026-10-08,"Doc AB Tasty : ABTastyUA, ABTastyGeoloc, ABTastyWidgets, ABTastyEngagementLevel, ABT_IS_DATALAYER_CHECKED (sessionStorage) ; autres ABT_* par extension",https://docs.abtasty.com/client-side/tag/tag-cookies
+Dynatrace,Analytics,dynatrace.com,^(rxVisitor|rxvt|rxvisitid|dtCookie|dtSa|dtPC)[a-z0-9]*$,doc_editeur,https://docs.dynatrace.com/docs/manage/data-privacy-and-security/data-privacy/rum-cookies-and-web-storage,2026-10-08,Doc Dynatrace : sauvegardes sessionStorage <nom><suffixe-environnement>,https://docs.dynatrace.com/docs/manage/data-privacy-and-security/data-privacy/rum-cookies-and-web-storage
+Dynatrace,Analytics,dynatrace.com,^dtTAB_,doc_editeur,https://docs.dynatrace.com/docs/manage/data-privacy-and-security/data-privacy/rum-cookies-and-web-storage,2026-10-08,Doc Dynatrace : dtTAB_<environmentID> identifie l'onglet (sessionStorage),https://docs.dynatrace.com/docs/manage/data-privacy-and-security/data-privacy/rum-cookies-and-web-storage
+Dynatrace,Analytics,dynatrace.com,^dtsrTID,doc_editeur,https://docs.dynatrace.com/docs/manage/data-privacy-and-security/data-privacy/rum-cookies-and-web-storage,2026-10-08,"Doc Dynatrace : ID d'onglet Session Replay (dtsrTID, dtsrTIDrSt)",https://docs.dynatrace.com/docs/manage/data-privacy-and-security/data-privacy/rum-cookies-and-web-storage
+Dynatrace,Analytics,dynatrace.com,^dtTabUnload$,doc_editeur,https://docs.dynatrace.com/docs/manage/data-privacy-and-security/data-privacy/rum-cookies-and-web-storage,2026-10-08,Doc Dynatrace : état de chargement de l'onglet (sessionStorage),https://docs.dynatrace.com/docs/manage/data-privacy-and-security/data-privacy/rum-cookies-and-web-storage
+Kameleoon,UX_Analytics,kameleoon.com,^kameleoon,doc_editeur,https://docs.kameleoon.com/developer-docs/privacy-and-compliance/data-collection-client-side,2026-10-08,"Doc Kameleoon : kameleoonTabId, kameleoonActiveScript, kameleoonAnalyticsTrackingTimes en sessionStorage",https://docs.kameleoon.com/developer-docs/privacy-and-compliance/data-collection-client-side
+Marfeel,UX_Analytics,marfeel.com,"^_{1,3}nrbic?(_\d+)?$",doc_editeur,https://www.marfeel.com/docs/analytics/sdk-integrations/cookies-used-by-marfeel,2026-10-08,"Doc Marfeel : _nrbi / _nrbic. Forme à 3 underscores non documentée, mais structure de valeur identique (firstVisit/userId ; currentVisitStarted/sessionId)",https://www.marfeel.com/docs/analytics/sdk-integrations/cookies-used-by-marfeel
+Marfeel,UX_Analytics,marfeel.com,^compass_(rfv_\d+|sid|uid)$,doc_editeur,https://www.marfeel.com/docs/analytics/sdk-integrations/cookies-used-by-marfeel,2026-10-08,"Doc Marfeel : compass_sid, compass_uid, compass_rfv_$ACCOUNT_ID",https://www.marfeel.com/docs/analytics/sdk-integrations/cookies-used-by-marfeel
+Marfeel,UX_Analytics,marfeel.com,^marfeel\-sdk\-store$,doc_editeur,https://www.marfeel.com/docs/analytics/sdk-integrations/cookies-used-by-marfeel,2026-10-08,Doc Marfeel : entrée localStorage (persistante),https://www.marfeel.com/docs/analytics/sdk-integrations/cookies-used-by-marfeel
+Microsoft,Analytics,microsoft.com,^AI_(sent)?[Bb]uffer(_\d+)?$,doc_editeur,https://github.com/microsoft/ApplicationInsights-JS/issues/1377,2026-10-08,Application Insights JS : AI_buffer / AI_sentBuffer en sessionStorage,https://github.com/microsoft/ApplicationInsights-JS/issues/1377
+Mopinion,Analytics,mopinion.com,^mopDeploy$,doc_editeur,https://mopinion.atlassian.net/wiki/spaces/KB/pages/509313286,2026-10-08,"Doc Mopinion : mopDeploy (déclaré en localStorage, observé ici en sessionStorage)",https://mopinion.atlassian.net/wiki/spaces/KB/pages/509313286
+OneSignal,Marketing,onesignal.com,^(onesignal|ONESIGNAL),doc_editeur,https://documentation.onesignal.com/docs/data-collected-by-the-onesignal-sdk,2026-10-08,"Doc OneSignal : onesignal-pageview-count, ONESIGNAL_HTTP_PROMPT_SHOWN (Session Storage)",https://documentation.onesignal.com/docs/data-collected-by-the-onesignal-sdk
+Pendo,Analytics,pendo.io,^(pendo[_-]|previous_page_loads$),doc_editeur,https://web-sdk.pendo.io/cookies/sessionstorage,2026-10-08,"Doc Pendo : pendo_tabId, pendo_srId, pendo_cd, previous_page_loads...",https://web-sdk.pendo.io/cookies/sessionstorage
+Qualtrics,Analytics,qualtrics.com,^QSI_,doc_editeur,https://www.qualtrics.com/support/website-app-feedback/getting-started-with-website-app-feedback/website-app-feedback-browser-cookies/,2026-10-08,"Doc Qualtrics : QSI_HistorySession (stockage de session), autres QSI_*",https://www.qualtrics.com/support/website-app-feedback/getting-started-with-website-app-feedback/website-app-feedback-browser-cookies/
+TagCommander,Marketing,commandersact.com,^tc_vars$,doc_editeur,https://github.com/TagCommander/angular-tag-commander,2026-10-08,Data layer TagCommander (Commanders Act),https://github.com/TagCommander/angular-tag-commander
+Microsoft,UX_Analytics,clarity.microsoft.com,^_cltk$,declaration_tierce,https://captaincompliance.com/education/_cltk/,2026-10-08,"Microsoft Clarity ; la source parle d'un cookie de session, observé ici en sessionStorage",https://captaincompliance.com/education/_cltk/
+TikTok,Marketing,tiktok.com,^(tt_(sessionId|appInfo|pixel_|s_pixel_)|_ttq$),declaration_tierce,https://www.consentstack.io/vendors/tiktok,2026-10-08,"Pixel TikTok : tt_sessionId, tt_appInfo, tt_pixel_session_index documentés",https://www.consentstack.io/vendors/tiktok
+Zendesk,Functional,zendesk.com,^ZD\-,declaration_tierce,https://www.iubenda.com/app/privacy-policy/8182290/cookie-policy,2026-10-08,"ZD-suid, ZD-buid, ZD-widgetOpen... widget Zendesk",https://www.iubenda.com/app/privacy-policy/8182290/cookie-policy
+Adobe,Analytics,adobe.com,^s_sq$,doc_partielle,https://experienceleague.adobe.com/en/docs/analytics/implementation/vars/config-vars/uselinktracksessionstorage,2026-10-08,AppMeasurement : s_sq en session storage si useLinkTrackSessionStorage,https://experienceleague.adobe.com/en/docs/analytics/implementation/vars/config-vars/uselinktracksessionstorage
+Datadog,Analytics,datadoghq.com,^_dd_,doc_partielle,https://github.com/DataDog/browser-sdk/pull/4184,2026-10-08,"Le PR officiel documente un tab id persisté en sessionStorage, sans nommer la clé",https://github.com/DataDog/browser-sdk/pull/4184
+Grafana Labs,Analytics,grafana.com,^com\.grafana\.faro\.,doc_partielle,https://grafana.com/docs/grafana-cloud/monitor-applications/frontend-observability/instrument/session-tracking,2026-10-08,"Doc Faro : session stockée en sessionStorage (mode volatile), nom de clé non cité",https://grafana.com/docs/grafana-cloud/monitor-applications/frontend-observability/instrument/session-tracking
+Klarna,Functional,klarna.com,^__klarna_sdk_,doc_partielle,https://docs.klarna.com/acquirer/klarna-direct/on-site-messaging/integration-prerequisites/,2026-10-08,Klarna Web SDK : famille __klarna_sdk_* (strictement nécessaire selon Klarna),https://docs.klarna.com/acquirer/klarna-direct/on-site-messaging/integration-prerequisites/
+Meta,Functional,facebook.com,^fbssls_,doc_partielle,https://developers.facebook.com/docs/javascript/reference/FB.init,2026-10-08,État de login du SDK JS Facebook ; plutôt authentification que marketing,https://developers.facebook.com/docs/javascript/reference/FB.init
+PostHog,Analytics,posthog.com,^ph_phc_,doc_partielle,https://posthog.com/docs/libraries/js/persistence,2026-10-08,"Clés ph_<token projet>_* (posthog, window_id, session props...)",https://posthog.com/docs/libraries/js/persistence
+AdRoll,Marketing,adroll.com,^adroll_,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://www.adroll.com
+Adlook,Marketing,adlook.com,^__adlook\.,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://adlook.com
+Adobe,Analytics,adobe.com,^com\.adobe\.reactor\.,nom_dans_cle,,,Source externe (doc éditeur ou déclaration tierce),https://github.com/adobe/alloy
+Adobe,Analytics,adobe.com,^com\.adobe\.alloy\.,nom_dans_cle,,,Source externe (doc éditeur ou déclaration tierce),https://github.com/adobe/alloy
+Adyen,Functional,adyen.com,^adyen\-checkout__,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://github.com/Adyen/adyen-web
+Air360,UX_Analytics,air360.io,^_air360_,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://www.air360.io
+Analyzify,Analytics,analyzify.com,^(analyzify_|azfy_),nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://analyzify.com
+Boost.ai,Functional,boost.ai,^boostai\.,nom_dans_cle,,,Source externe (doc éditeur ou déclaration tierce),https://docs.tealium.com/client-side-tags/boostai-tag/
+Braze,Marketing,braze.com,^braze_,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://www.braze.com/docs/user_guide/getting_started/web_sdk
+CartSee,Marketing,cartsee.com,^_cartsee_,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://cartsee.com
+Clerk.io,Functional,clerk.io,^__clerk_,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://clerk.io
+CleverPush,Marketing,cleverpush.com,^cleverpush,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://cleverpush.com
+Constructor.io,Functional,constructor.io,^_constructorio_,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://constructor.com/
+Descope,Functional,descope.com,^descope\-,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://www.descope.com
+EcomSend,Marketing,ecomsend.com,^ecomsend_,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://apps.shopify.com/ecomsend
+Exit Bee,Marketing,exitbee.com,^Exitbee,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://www.exitbee.com
+FastCMP,ConsentManagers,fastcmp.com,^fastCMP,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://corporate.fastcmp.com/
+Gorgias,Functional,gorgias.com,^gorgias\.,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://www.gorgias.com
+Humany (Telia ACE),Functional,humany.com,^humany_,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://www.humany.com
+Imbox,Functional,imbox.se,^imbox\-,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://imbox.se/en/chat/
+Incomaker,Marketing,incomaker.com,^incomaker,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://www.incomaker.com
+Intuit,Marketing,intuit.com,^intuit_pixel_sdk,nom_dans_cle,,,Source externe (doc éditeur ou déclaration tierce),https://www.consentstack.io/vendors/intuit
+Kimonix,Functional,kimonix.com,^kimonix_,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://www.kimonix.com
+Klaviyo,Marketing,klaviyo.com,^(klaviyo|__kla_),nom_dans_cle,,,Source externe (doc éditeur ou déclaration tierce),https://help.klaviyo.com/hc/es-es/articles/360034666712-About-Cookies-in-Klaviyo
+Klevu,Functional,klevu.com,^klv_filter(Collapse|ShowMore)_klevu-\d+_keys$,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://www.klevu.com
+Kwai,Marketing,kwai.com,^kwai_,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://www.kwai.com
+LoyaltyLion,Marketing,loyaltylion.com,^loyaltylion,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://loyaltylion.com
+Luigi's Box,Functional,luigisbox.com,^luigisbox_enabled$,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://www.luigisbox.com
+Mixpanel,Analytics,mixpanel.com,^mp_(gen_new_)?tab_id_mixpanel_|^mp_.*_mixpanel,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://docs.mixpanel.com/docs/tracking-methods/sdks/javascript
+NPAW (Youbora),Analytics,npaw.com,^(youbora\.|npaw\.),nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://npaw.com
+Ninchat,Functional,ninchat.com,^ninchat_,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://ninchat.com
+Noibu,Analytics,noibu.com,^noibu_,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://www.noibu.com
+Nosto,Marketing,nosto.com,^nosto:,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://www.nosto.com
+Oct8ne,Functional,oct8ne.com,^oct8ne,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://oct8ne.com
+Pandectes,ConsentManagers,pandectes.io,^pandectes,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://pandectes.io
+Permutive,Marketing,permutive.com,^__permutive,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://permutive.com
+Poptin,Marketing,poptin.com,^poptin_,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://www.poptin.com
+PowerReviews,Functional,powerreviews.com,^powerreviews$,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://www.powerreviews.com
+PushOwl,Marketing,pushowl.com,^pushowl_,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://pushowl.com
+Qikify,Functional,qikify.com,^qikify_,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://qikify.com
+Saiz,Functional,saiz.io,^saiz_,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://apps.shopify.com/saiz-1
+Scalapay,Functional,scalapay.com,^scalapay_,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://developers.scalapay.com/docs/how-to-install-the-widget
+Sentry,Analytics,sentry.io,^sentry,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://docs.sentry.io/product/explore/session-replay/web/
+Shopify,Analytics,shopify.com,^(__shopify|shopify-chat-|shopify-agent-),nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://www.shopify.com/blog/shopify-inbox
+Shoplift,UX_Analytics,shoplift.ai,^Shoplift_,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://apps.shopify.com/shoplift
+Sleeknote,Marketing,sleeknote.com,^SleekNote$,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://sleeknote.com/popup-maker
+Snowplow,Analytics,snowplow.io,^spBeaconPreflight_snowplow,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://docs.snowplow.io/docs/collecting-data/collecting-from-own-applications/javascript-tracker/
+StarApps,Functional,starapps.studio,^starapps_,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://www.g2.com/products/starapps-studio/discuss
+Storyly,Marketing,storyly.io,^Storyly,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://docs.storyly.io/docs/initial-web-sdk-setup
+Symplr,Marketing,symplr.de,^symplr_,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://trends.builtwith.com/ar/ads/symplr-Publisher
+Thulium,Functional,thulium.com,^thulium_widget_,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://www.trustradius.com/products/thulium
+Triptease,Marketing,triptease.com,^triptease,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://triptease.com/en/about/
+Truendo,ConsentManagers,truendo.com,^truendo,nom_dans_cle,,,Source externe (doc éditeur ou déclaration tierce),https://docs.truendo.com/en/1.0/getting-started/get-to-know-truendo
+Wisepops,Marketing,wisepops.com,^wisepops,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://wordpress.org/plugins/wisepops-popups/
+econda,Analytics,econda.de,^econda\.,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://www.econda.de/en/products/customer-stories/
+edrone,Marketing,edrone.me,^edrone,nom_dans_cle,,,Source externe (doc éditeur ou déclaration tierce),https://docs.edrone.me/visitors.html
+giosg,Functional,giosg.com,^GIOSG_,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://giosg.com/en/products/live-chat
+mediarithmics,Marketing,mediarithmics.com,^(_mediarithmics|mcssids)$,nom_dans_cle,,,Nom de l'éditeur présent dans la clé,https://www.g2.com/products/mediarithmics/discuss
+Mouseflow,UX_Analytics,mouseflow.com,^mf_transmitQueue$,domaine_dans_valeur,,,Domaine mouseflow.com présent dans la valeur,https://www.optimizely.com/partners/tech/mouseflow
+Trusted Shops,Functional,trustedshops.com,^trstd\-csp\-probe$,domaine_dans_valeur,,,Domaine trustedshops.com présent dans la valeur,https://help.etrusted.com/hc/en-gb/articles/23970807909138-What-is-the-difference-between-the-Trustmark-and-the-Trustbadge

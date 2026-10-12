@@ -1,10 +1,10 @@
 {
-  "total_cookies": 913,
+  "total_cookies": 910,
   "direct_pii_count": 0,
-  "other_count": 913,
+  "other_count": 910,
   "lifetime_distribution": {
     "6-18 months": 467,
-    "<6 months": 383,
+    "<6 months": 380,
     "Session": 63
   },
   "lifetime_by_pii": {
@@ -40,8 +40,7 @@
       "<6 months": 9
     },
     "LOCATION_AND_DEMOGRAPHICS": {
-      "6-18 months": 3,
-      "<6 months": 3
+      "6-18 months": 3
     },
     "NAVIGATION_HISTORY": {
       "<6 months": 7
@@ -73,7 +72,7 @@
   },
   "httponly_distribution": {
     "False": 719,
-    "True": 194
+    "True": 191
   },
   "httponly_by_pii": {
     "APP_STATE_STORAGE": {
@@ -105,8 +104,7 @@
       "False": 9
     },
     "LOCATION_AND_DEMOGRAPHICS": {
-      "False": 3,
-      "True": 3
+      "False": 3
     },
     "NAVIGATION_HISTORY": {
       "False": 7
@@ -132,7 +130,7 @@
     }
   },
   "secure_distribution": {
-    "True": 426,
+    "True": 423,
     "False": 487
   },
   "secure_by_pii": {
@@ -166,7 +164,7 @@
       "False": 3
     },
     "LOCATION_AND_DEMOGRAPHICS": {
-      "True": 6
+      "True": 3
     },
     "NAVIGATION_HISTORY": {
       "False": 7
@@ -194,7 +192,7 @@
   },
   "samesite_distribution": {
     "No Restriction": 262,
-    "Lax": 617,
+    "Lax": 614,
     "Strict": 34
   },
   "samesite_by_pii": {
@@ -232,7 +230,7 @@
       "Lax": 3
     },
     "LOCATION_AND_DEMOGRAPHICS": {
-      "Lax": 6
+      "Lax": 3
     },
     "NAVIGATION_HISTORY": {
       "Lax": 7
@@ -264,7 +262,7 @@
   "security_matrix": {
     "(False, True)": 241,
     "(False, False)": 478,
-    "(True, True)": 185,
+    "(True, True)": 182,
     "(True, False)": 9
   },
   "security_by_pii": {
@@ -302,8 +300,7 @@
       "Lowly Secure": 3
     },
     "LOCATION_AND_DEMOGRAPHICS": {
-      "Partially Secure": 3,
-      "Secure": 3
+      "Partially Secure": 3
     },
     "NAVIGATION_HISTORY": {
       "Lowly Secure": 7
@@ -333,7 +330,7 @@
   },
   "thirdparty_distribution": {
     "Third-Party": 300,
-    "First-Party": 613
+    "First-Party": 610
   },
   "thirdparty_by_pii": {
     "APP_STATE_STORAGE": {
@@ -368,7 +365,7 @@
       "First-Party": 7
     },
     "LOCATION_AND_DEMOGRAPHICS": {
-      "First-Party": 6
+      "First-Party": 3
     },
     "NAVIGATION_HISTORY": {
       "First-Party": 7
@@ -397,17 +394,17 @@
     "Third-Party_False": 173,
     "First-Party_False": 546,
     "Third-Party_True": 127,
-    "First-Party_True": 67
+    "First-Party_True": 64
   },
   "thirdparty_secure": {
     "Third-Party_True": 227,
     "First-Party_False": 414,
-    "First-Party_True": 199,
+    "First-Party_True": 196,
     "Third-Party_False": 73
   },
   "risk_levels": {
     "Medium Risk": 403,
-    "Low Risk": 109,
+    "Low Risk": 106,
     "High Risk": 345,
     "Critical Risk": 56
   },
@@ -447,7 +444,7 @@
     },
     "LOCATION_AND_DEMOGRAPHICS": {
       "Medium Risk": 2,
-      "Low Risk": 4
+      "Low Risk": 1
     },
     "NAVIGATION_HISTORY": {
       "Medium Risk": 7
@@ -475,7 +472,7 @@
     }
   },
   "keywords": {
-    "secure": 92,
+    "secure": 89,
     "session": 70,
     "token": 50,
     "utag": 47,
@@ -489,7 +486,7 @@
     "fbp": 18,
     "optimizelyenduserid": 18,
     "fccdcf": 17,
-    "auth": 17
+    "uid": 16
   },
   "content_hierarchy": {
     "complex_string": {
@@ -500,7 +497,7 @@
       "IDENTITY_TRACKING": 225,
       "ID_SOLUTIONS_AND_EXCHANGES": 34,
       "INFRASTRUCTURE": 8,
-      "LOCATION_AND_DEMOGRAPHICS": 4,
+      "LOCATION_AND_DEMOGRAPHICS": 1,
       "NAVIGATION_HISTORY": 4,
       "SECURITY_AND_BOT_MITIGATION": 27,
       "SESSION_MANAGEMENT": 11,
@@ -570,7 +567,7 @@
     }
   },
   "content_types": {
-    "complex_string": 550,
+    "complex_string": 547,
     "json_structured": 90,
     "number": 36,
     "short_text": 41,
@@ -670,12 +667,12 @@
     "zopim.com": 2,
     "ingka.com": 9,
     "str.se": 1,
-    "afaforsakring.se": 12,
     "wwf.se": 6,
     "temu.com": 3,
     "Cloudflare": 1,
     "storytel.com": 6,
     "testfreaks.com": 6,
+    "afaforsakring.se": 9,
     "auth0.com": 6,
     "varbi.com": 3,
     "saco.se": 3,
@@ -1350,11 +1347,6 @@
       "LOCATION_AND_DEMOGRAPHICS",
       "fieldly.com",
       2
-    ],
-    [
-      "LOCATION_AND_DEMOGRAPHICS",
-      "afaforsakring.se",
-      3
     ],
     [
       "LOCATION_AND_DEMOGRAPHICS",
@@ -2324,11 +2316,8 @@
     ],
     "LOCATION_AND_DEMOGRAPHICS": [
       1.0,
-      5.842702424147907,
       5.1361830166023985,
-      5.838420769319384,
-      1.0,
-      5.845887090376917
+      1.0
     ],
     "NAVIGATION_HISTORY": [
       2.807354922057604,
@@ -2710,6 +2699,6 @@
   "advanced_risk_levels": {
     "High": 296,
     "Low": 455,
-    "Medium": 162
+    "Medium": 159
   }
 }

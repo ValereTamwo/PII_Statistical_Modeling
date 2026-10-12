@@ -4,19 +4,19 @@
   "user_id": "DE_0018",
   "policy": "PARTIAL",
   "summary": {
-    "total_items": 11265,
+    "total_items": 11259,
     "by_storage_type": {
-      "cookies": 2757,
+      "cookies": 2755,
       "indexeddb": 6752,
       "localstorage": 1388,
-      "sessionstorage": 368
+      "sessionstorage": 364
     },
     "by_category": {
       "DIRECT_PII_KEYS": 44,
       "ID_SOLUTIONS_AND_EXCHANGES": 897,
-      "LOCATION_AND_DEMOGRAPHICS": 88,
+      "LOCATION_AND_DEMOGRAPHICS": 81,
       "TECHNICAL_PASSWORDS": 204,
-      "NAVIGATION_HISTORY": 111,
+      "NAVIGATION_HISTORY": 112,
       "LOCATION_AND_DEMOGRAPHICS.general_loc": 1,
       "UX_AND_PERFORMANCE_ANALYTICS": 736,
       "SECURITY_AND_BOT_MITIGATION": 191,
@@ -34,9 +34,9 @@
       "SERVER_SIDE_TRACKING": 3
     },
     "by_lifecycle": {
-      "added": 1117,
+      "added": 1115,
       "modified": 1909,
-      "removed": 1487,
+      "removed": 1483,
       "unknown": 6752
     },
     "uncategorized_by_storage_type": {
@@ -46,30 +46,30 @@
       "sessionstorage": 21
     },
     "uncategorized_items": 3725,
-    "total_items_with_uncategorized": 14990,
+    "total_items_with_uncategorized": 14984,
     "cookie_security": {
-      "total_cookies": 2757,
+      "total_cookies": 2755,
       "httponly_distribution": {
         "False": 2108,
-        "True": 649
+        "True": 647
       },
       "secure_distribution": {
-        "True": 2019,
+        "True": 2017,
         "False": 738
       },
       "samesite_distribution": {
         "Strict": 61,
         "Lax": 1160,
-        "No Restriction": 1536
+        "No Restriction": 1534
       },
       "thirdparty_distribution": {
         "First-Party": 846,
-        "Third-Party": 1911
+        "Third-Party": 1909
       },
       "security_posture_distribution": {
         "Partially Secure": 1426,
         "Lowly Secure": 710,
-        "Secure": 621
+        "Secure": 619
       },
       "by_category": {
         "DIRECT_PII_KEYS": {
@@ -111,20 +111,20 @@
           }
         },
         "LOCATION_AND_DEMOGRAPHICS": {
-          "total": 28,
-          "httponly_true": 7,
+          "total": 26,
+          "httponly_true": 5,
           "httponly_false": 21,
-          "secure_true": 26,
+          "secure_true": 24,
           "secure_false": 2,
-          "thirdparty_true": 13,
+          "thirdparty_true": 11,
           "thirdparty_false": 15,
           "samesite": {
-            "No Restriction": 8,
-            "Lax": 20
+            "Lax": 20,
+            "No Restriction": 6
           },
           "security_posture": {
-            "Secure": 7,
             "Partially Secure": 19,
+            "Secure": 5,
             "Lowly Secure": 2
           }
         },
@@ -33595,6 +33595,13 @@
         "category": "NAVIGATION_HISTORY"
       },
       {
+        "storage_type": "indexeddb",
+        "lifecycle": "unknown",
+        "key": "origin",
+        "value": "https://shop.fck.de",
+        "category": "NAVIGATION_HISTORY"
+      },
+      {
         "storage_type": "localstorage",
         "lifecycle": "added",
         "key": "lastExternalReferrer",
@@ -33977,19 +33984,6 @@
       {
         "storage_type": "cookies",
         "lifecycle": "added",
-        "key": "shiroSavedRequest",
-        "value": "/oauth2/authz/tende/btv?redirect_uri=https://www.btv.de/.oauth&response_type=code&client_id=fb3231da-f2f5-4f8c-bfbe-88b9cf11d764&scope=profile&state=h72004m5p26qip38p2epagjtoq",
-        "category": "LOCATION_AND_DEMOGRAPHICS",
-        "domain": "tende-id.liga.nu",
-        "httpOnly": true,
-        "secure": true,
-        "sameSite": "No Restriction",
-        "thirdparty": "Third-Party",
-        "security_posture": "Secure"
-      },
-      {
-        "storage_type": "cookies",
-        "lifecycle": "added",
         "key": "CookieConsent",
         "value": "{stamp:'qQ+6x7BYsxno2amSTSQA9sH1RYuQh0seUI8WQTAex0sM00CT6O4PoQ==',necessary:true,preferences:true,statistics:true,marketing:true,method:'explicit',ver:1,utc:1788081432041,region:'fr'}",
         "category": "LOCATION_AND_DEMOGRAPHICS",
@@ -34051,19 +34045,6 @@
         "sameSite": "Lax",
         "thirdparty": "Third-Party",
         "security_posture": "Partially Secure"
-      },
-      {
-        "storage_type": "cookies",
-        "lifecycle": "added",
-        "key": "shiroSavedRequest",
-        "value": "/oauth2/authz/tende/btv?redirect_uri=https%3A%2F%2Fwww.btv.de%2F.oauth&response_type=code&client_id=fb3231da-f2f5-4f8c-bfbe-88b9cf11d764&scope=profile&state=3b0abrq6mr2rni3kbfo3e3s9hq",
-        "category": "LOCATION_AND_DEMOGRAPHICS",
-        "domain": "tende-id.liga.nu",
-        "httpOnly": true,
-        "secure": true,
-        "sameSite": "No Restriction",
-        "thirdparty": "Third-Party",
-        "security_posture": "Secure"
       },
       {
         "storage_type": "cookies",
@@ -34537,13 +34518,6 @@
       {
         "storage_type": "indexeddb",
         "lifecycle": "unknown",
-        "key": "origin",
-        "value": "https://shop.fck.de",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "indexeddb",
-        "lifecycle": "unknown",
         "key": "[598]",
         "value": "\",\"geocoding\":{\"lat\":51.52705,\"lng\":9.93835},\"isDefault\":false}[{\"id\":61,\"daysForPreorder\":7,\"preOrderInterval\":15,\"minDeliveryTime\":10,\"useRealOpeningTimeStart\":false,\"autoChargeSmallQuantities\":false,\"useBoxes\":false,\"webShopDoNotSaveCustomer\":false,\"defaultMinOrderPrice\":5.99,\"autoSelectPayment\":false,\"externalShopUrl\":\"\",\"externalAppUrl\":\"\",\"contactLessDelivery\":0,\"restaurantChooseInHouse\":1,\"toppingCreditMode\":0,\"webShopDisableDelivery\":false,\"webShopDisableTakeaway\":false,\"timePickerUseSlots\":false,\"disableDeliveryImmediately\":false,\"hasPreOrderLimits\":true}[{\"monday\":false,\"tuesday\":false,\"wednesday\":false,\"thursday\":false,\"friday\":false,\"saturday\":false,\"sunday\":false,\"realDate\":\"2019-10-31\",\"timeFrom\":\"12:00\",\"timeUntil\":\"22:30\",\"invalid\":false,\"comment\":\"Reformationstag\"},{\"monday\":false,\"tuesday\":false,\"wednesday\":false,\"thursday\":false,\"friday\":false,\"saturday\":false,\"sunday\":false,\"realDate\":\"2021-01-01\",\"timeFrom\":\"12:00\",\"timeUntil\":\"22:30\",\"invalid\":false,\"comment\":\"\"},{\"monday\":false,\"tuesday\":false,\"wednesday\":false,\"thursday\":false,\"friday\":false,\"saturday\":false,\"sunday\":false,\"realDate\":\"2021-02-07\",\"timeFrom\":\"00:00\",\"timeUntil\":\"23:59\",\"invalid\":true,\"comment\":\"Aufgrund der besonderen Wetterlage haben wir heute geschlossen!!\"},{\"monday\":false,\"tuesday\":false,\"wednesday\":false,\"thursday\":false,\"friday\":false,\"saturday\":false,\"sunday\":false,\"realDate\":\"2021-02-09\",\"timeFrom\":\"00:00\",\"timeUntil\":\"23:59\",\"invalid\":true,\"comment\":\"Aufgrund der besonderen Wetterlage haben wir auch heute geschlossen!!\"},{\"monday\":false,\"tuesday\":false,\"wednesday\":false,\"thursday\":false,\"friday\":false,\"saturday\":false,\"sunday\":false,\"realDate\":\"2021-02-11\",\"timeFrom\":\"11:00\",\"timeUntil\":\"20:00\",\"invalid\":false,\"comment\":\"\"},{\"monday\":false,\"tuesday\":false,\"wednesday\":false,\"thursday\":false,\"friday\":false,\"saturday\":false,\"sunday\":false,\"realDate\":\"2021-02-12\",\"timeFrom\":\"11:00\",\"timeUntil\":\"20:00\",\"invalid\":false,\"comment\":\"\"},{\"monday\":false,\"tuesday\":false,\"wednesday\":false,\"thursday\":false,\"friday\":false,\"saturday\":false,\"sunday\":false,\"realDate\":\"2021-02-14\",\"timeFrom\":\"11:00\",\"timeUntil\":\"20:00\",\"invalid\":false,\"comment\":\"\"},{\"monday\":false,\"tuesday\":false,\"wednesday\":false,\"thursday\":false,\"friday\":false,\"saturday\":false,\"sunday\":false,\"realDate\":\"2021-04-02\",\"timeFrom\":\"12:00\",\"timeUntil\":\"22:30\",\"invalid\":false,\"comment\":\"\"},{\"monday\":false,\"tuesday\":false,\"wednesday\":false,\"thursday\":false,\"friday\":false,\"saturday\":false,\"sunday\":false,\"realDate\":\"2021-04-05\",\"timeFrom\":\"12:00\",\"timeUntil\":\"22:30\",\"invalid\":false,\"comment\":\"\"},{\"monday\":false,\"tuesday\":false,\"wednesday\":false,\"thursday\":false,\"friday\":false,\"saturday\":false,\"sunday\":false,\"realDate\":\"2021-05-13\",\"timeFrom\":\"12:00\",\"timeUntil\":\"22:30\",\"invalid\":false,\"comment\":\"\"},{\"monday\":false,\"tuesday\":false,\"wednesday\":false,\"thursday\":false,\"friday\":false,\"saturday\":false,\"sunday\":false,\"realDate\":\"2021-05-24\",\"timeFrom\":\"12:00\",\"timeUntil\":\"22:30\",\"invalid\":false,\"comment\":\"\"},{\"monday\":false,\"tuesday\":false,\"wednesday\":false,\"thursday\":false,\"friday\":false,\"satu\\x00\\x00\\x00\\xCF\\x81\\x83>+\\x1A\\x00-?\\x84}\\x01\\x88\\x03\\x08\\x81\\xEBi\\x839\\x11\\x11\\x00\\x0D\\x13\\x00\\x08\\x08\\x08\\x8A\\x05M\\xC3\\xBCnchen Giesingburgerme M\\xC3\\xBCnchen Giesing{\"id\":891229,\"country\":{\"id\":2,\"name\":\"Deutschland\",\"abbreviation\":\"DE\",\"zipCodeLength\":5,\"isoCode\":\"\",\"flagLink\":\"/img/countryflags/germany.png\",\"isDefault\":false},\"street\":\"Schlierseestra\\xC3\\x9Fe\",\"streetNumber\":\"33\",\"zip\":\"81539\",\"city\":\"M\\xC3\\xBCnchen\",\"geocoding\":{\"lat\":48.1145603,\"lng\":11.5929706},\"isDefault\":false}\\{\"id\":59,\"daysForPreorder\":7,\"preOrderInterval\":15,\"minDeliveryTime\":10,\"useRealOpeningTimeStart\":false,\"autoChargeSmallQuantities\":false,\"useBoxes\":false,\"webShopDoNotSaveCustomer\":false,\"defaultMinOrderPrice\":6.99,\"autoSelectPayment\":false,\"externalShopUrl\":\"\",\"externalAppUrl\":\"\",\"contactLessDelivery\":0,\"restaurantChooseInHouse\":1,\"toppingCreditMode\":0,\"webShopDisableDelivery\":false,\"webShopDisableTakeaway\":false,\"timePickerUseSlots\":false,\"disableDeliveryImmediately\":false,\"hasPreOrderLimits\":false}[{\"monday\":false,\"tuesday\":false,\"wednesday\":false,\"thursday\":false,\"friday\":false,\"saturday\":false,\"sunday\":false,\"\\x00\\x00\\x00\\xCC",
         "category": "LOCATION_AND_DEMOGRAPHICS"
@@ -34712,36 +34686,8 @@
       {
         "storage_type": "sessionstorage",
         "lifecycle": "removed",
-        "key": "state",
-        "value": "ESlUujEMR3xK1yb2fPAtPklIbvnCl7yRI7ZDC4aMsL6H3ZeBr3k8l7xBxLAdh7CH",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "sessionstorage",
-        "lifecycle": "removed",
         "key": "parcel-form-store",
         "value": "{\"state\":{\"size\":\"M\",\"dimensions\":{\"length\":45,\"width\":30,\"height\":20},\"dimensionsErrors\":{\"width\":false,\"length\":false,\"height\":false},\"allowsRecipientEmail\":true,\"isSizeUserSelected\":false},\"version\":0}",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "sessionstorage",
-        "lifecycle": "removed",
-        "key": "state",
-        "value": "thrrfst2IkGFVdfDm4EQFd02FItgTXEwOOjP6hVGyMQ5IU9vMpc4kDM4MVemBalo",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "sessionstorage",
-        "lifecycle": "removed",
-        "key": "state",
-        "value": "PItFnMHUgkCBbaxoA7fBl7bpvabtbwNQVy4kycs0ZBYqKdaR5sKgI5tiu9KbtEjS",
-        "category": "LOCATION_AND_DEMOGRAPHICS"
-      },
-      {
-        "storage_type": "sessionstorage",
-        "lifecycle": "removed",
-        "key": "cc-consent-drawer-state",
-        "value": "{\"bmw_germany_family\":{}}",
         "category": "LOCATION_AND_DEMOGRAPHICS"
       },
       {
@@ -66741,11 +66687,11 @@
   "persistence_metrics": {
     "by_storage_type": {
       "cookies": {
-        "total_items": 2757,
-        "added": 844,
+        "total_items": 2755,
+        "added": 842,
         "modified": 1507,
         "removed": 406,
-        "persistence_ratio": 0.8527384838592673
+        "persistence_ratio": 0.8526315789473684
       },
       "indexeddb": {
         "total_items": 6752,
@@ -66762,11 +66708,11 @@
         "persistence_ratio": 0.39481268011527376
       },
       "sessionstorage": {
-        "total_items": 368,
+        "total_items": 364,
         "added": 71,
         "modified": 56,
-        "removed": 241,
-        "persistence_ratio": 0.3451086956521739
+        "removed": 237,
+        "persistence_ratio": 0.3489010989010989
       }
     },
     "by_category": {
@@ -66792,11 +66738,11 @@
         "persistence_ratio": 0.0
       },
       "LOCATION_AND_DEMOGRAPHICS": {
-        "total_items": 88,
-        "added": 11,
+        "total_items": 81,
+        "added": 9,
         "modified": 24,
-        "removed": 21,
-        "persistence_ratio": 0.3977272727272727
+        "removed": 17,
+        "persistence_ratio": 0.4074074074074074
       },
       "ID_SOLUTIONS_AND_EXCHANGES": {
         "total_items": 897,
@@ -66806,11 +66752,11 @@
         "persistence_ratio": 0.5518394648829431
       },
       "NAVIGATION_HISTORY": {
-        "total_items": 111,
+        "total_items": 112,
         "added": 16,
         "modified": 14,
         "removed": 35,
-        "persistence_ratio": 0.2702702702702703
+        "persistence_ratio": 0.26785714285714285
       },
       "BEHAVIORAL_DATA": {
         "total_items": 4443,

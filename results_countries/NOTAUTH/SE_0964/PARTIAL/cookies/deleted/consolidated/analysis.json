@@ -1,9 +1,9 @@
 {
-  "total_cookies": 373,
+  "total_cookies": 370,
   "direct_pii_count": 0,
-  "other_count": 373,
+  "other_count": 370,
   "lifetime_distribution": {
-    "Session": 369,
+    "Session": 366,
     "6-18 months": 3,
     "<6 months": 1
   },
@@ -24,9 +24,6 @@
     },
     "INFRASTRUCTURE": {
       "Session": 5
-    },
-    "LOCATION_AND_DEMOGRAPHICS": {
-      "Session": 3
     },
     "NAVIGATION_HISTORY": {
       "Session": 10
@@ -49,7 +46,7 @@
   },
   "httponly_distribution": {
     "False": 221,
-    "True": 152
+    "True": 149
   },
   "httponly_by_pii": {
     "BEHAVIORAL_DATA": {
@@ -68,9 +65,6 @@
     },
     "INFRASTRUCTURE": {
       "True": 5
-    },
-    "LOCATION_AND_DEMOGRAPHICS": {
-      "True": 3
     },
     "NAVIGATION_HISTORY": {
       "False": 10
@@ -96,7 +90,7 @@
     }
   },
   "secure_distribution": {
-    "True": 229,
+    "True": 226,
     "False": 144
   },
   "secure_by_pii": {
@@ -117,9 +111,6 @@
     },
     "INFRASTRUCTURE": {
       "True": 5
-    },
-    "LOCATION_AND_DEMOGRAPHICS": {
-      "True": 3
     },
     "NAVIGATION_HISTORY": {
       "False": 10
@@ -145,7 +136,7 @@
   },
   "samesite_distribution": {
     "No Restriction": 198,
-    "Lax": 172,
+    "Lax": 169,
     "Strict": 3
   },
   "samesite_by_pii": {
@@ -166,9 +157,6 @@
     },
     "INFRASTRUCTURE": {
       "No Restriction": 5
-    },
-    "LOCATION_AND_DEMOGRAPHICS": {
-      "Lax": 3
     },
     "NAVIGATION_HISTORY": {
       "Lax": 10
@@ -195,7 +183,7 @@
   "security_matrix": {
     "(False, True)": 78,
     "(False, False)": 143,
-    "(True, True)": 151,
+    "(True, True)": 148,
     "(True, False)": 1
   },
   "security_by_pii": {
@@ -218,9 +206,6 @@
     },
     "INFRASTRUCTURE": {
       "Secure": 5
-    },
-    "LOCATION_AND_DEMOGRAPHICS": {
-      "Secure": 3
     },
     "NAVIGATION_HISTORY": {
       "Lowly Secure": 10
@@ -248,7 +233,7 @@
     }
   },
   "thirdparty_distribution": {
-    "Third-Party": 366,
+    "Third-Party": 363,
     "First-Party": 7
   },
   "thirdparty_by_pii": {
@@ -267,9 +252,6 @@
     },
     "INFRASTRUCTURE": {
       "Third-Party": 5
-    },
-    "LOCATION_AND_DEMOGRAPHICS": {
-      "Third-Party": 3
     },
     "NAVIGATION_HISTORY": {
       "Third-Party": 10
@@ -292,11 +274,11 @@
   },
   "thirdparty_httponly": {
     "Third-Party_False": 214,
-    "Third-Party_True": 152,
+    "Third-Party_True": 149,
     "First-Party_False": 7
   },
   "thirdparty_secure": {
-    "Third-Party_True": 228,
+    "Third-Party_True": 225,
     "Third-Party_False": 138,
     "First-Party_False": 6,
     "First-Party_True": 1
@@ -305,7 +287,7 @@
     "Medium Risk": 267,
     "High Risk": 84,
     "Critical Risk": 2,
-    "Low Risk": 20
+    "Low Risk": 17
   },
   "risk_by_pii": {
     "BEHAVIORAL_DATA": {
@@ -324,9 +306,6 @@
     },
     "INFRASTRUCTURE": {
       "Low Risk": 5
-    },
-    "LOCATION_AND_DEMOGRAPHICS": {
-      "Low Risk": 3
     },
     "NAVIGATION_HISTORY": {
       "Medium Risk": 10
@@ -357,15 +336,15 @@
     "main": 20,
     "networkprobelimit": 18,
     "utmb": 12,
-    "secure": 12,
-    "next": 12,
-    "auth": 12,
     "sbjs": 12,
     "gat": 10,
     "openidconnect": 10,
     "nonce": 10,
     "source": 10,
-    "aaw": 9
+    "aaw": 9,
+    "sid": 9,
+    "secure": 9,
+    "next": 9
   },
   "content_hierarchy": {
     "json_structured": {
@@ -393,7 +372,6 @@
       "IDENTITY_TRACKING": 27,
       "ID_SOLUTIONS_AND_EXCHANGES": 4,
       "INFRASTRUCTURE": 1,
-      "LOCATION_AND_DEMOGRAPHICS": 3,
       "NAVIGATION_HISTORY": 6,
       "SECURITY_AND_BOT_MITIGATION": 107,
       "TECHNICAL_PASSWORDS": 7,
@@ -426,7 +404,7 @@
     "json_structured": 11,
     "boolean": 51,
     "number": 7,
-    "complex_string": 247,
+    "complex_string": 244,
     "uuid": 19,
     "token_id": 13,
     "short_text": 21,
@@ -472,7 +450,6 @@
     "merinfo.se": 6,
     "eyeota.net": 1,
     "sportadmin.se": 2,
-    "afaforsakring.se": 12,
     "iraniandoctor.org": 2,
     "iranianpsychologist.org": 2,
     "wwf.se": 4,
@@ -514,6 +491,7 @@
     "visma.com": 2,
     "slu.se": 6,
     "alingsas.se": 6,
+    "afaforsakring.se": 9,
     "kb.se": 1,
     "svenskaportal.se": 4,
     "gislaved.se": 6,
@@ -760,11 +738,6 @@
       "INFRASTRUCTURE",
       "elib.se",
       1
-    ],
-    [
-      "LOCATION_AND_DEMOGRAPHICS",
-      "afaforsakring.se",
-      3
     ],
     [
       "NAVIGATION_HISTORY",
@@ -1375,11 +1348,6 @@
       2.0,
       2.0
     ],
-    "LOCATION_AND_DEMOGRAPHICS": [
-      5.842702424147907,
-      5.838420769319384,
-      5.845887090376917
-    ],
     "NAVIGATION_HISTORY": [
       2.807354922057604,
       4.3759698855399645,
@@ -1664,6 +1632,6 @@
   "advanced_risk_levels": {
     "High": 59,
     "Low": 180,
-    "Medium": 134
+    "Medium": 131
   }
 }

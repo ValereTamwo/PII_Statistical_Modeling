@@ -20,7 +20,7 @@ single hardcoded mode/policy example):
 - A new F2: Ri distribution across the 6 countries, AUTH vs NOTAUTH
   (all storage types pooled per country) - the FR pipeline has no
   country axis to plot this against, so there is no equivalent figure
-  to adapt from; this one is new.
+  to adapt from; this one is new. 
 """
 
 import json

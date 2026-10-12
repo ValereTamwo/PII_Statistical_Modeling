@@ -1,0 +1,20 @@
+\multicolumn{5}{@{}l}{\textit{Ordinal claims (storage ranking)}} \\[2pt]
+F5 & $\tilde{R}_{\text{IDB}} > \tilde{R}_{\text{cookie}}$ & 0.724 > 0.679 & 9/9 & Invariant \\
+F5 & $\bar{R}_{\text{IDB}} > \bar{R}_{\text{cookie}}$ & 0.697 > 0.618 & 9/9 & Invariant \\
+F1/F3 & $\tilde{R}_{\text{cookie}} > \tilde{R}_{\text{LS}}$ & 0.679 > 0.608 & 9/9 & Invariant \\
+F1/F3 & $\bar{R}_{\text{cookie}} > \bar{R}_{\text{LS}}$ & 0.618 > 0.618 & 8/9 & Conditional \\  % fails at (z_W,z_S) = (0.1,0.7)
+F3/F4 & $\tilde{R}_{\text{LS}} > \tilde{R}_{\text{SS}}$ & 0.608 > 0.432 & 9/9 & Invariant \\
+F3/F4 & $\bar{R}_{\text{LS}} > \bar{R}_{\text{SS}}$ & 0.618 > 0.479 & 9/9 & Invariant \\
+\midrule
+\multicolumn{5}{@{}l}{\textit{Distributional claims}} \\[2pt]
+F1 & $\mathrm{IQR}_{\text{cookie}} > \max_{s \neq \text{cookie}} \mathrm{IQR}_s$ & 0.356 > 0.284 & 9/9 & Invariant \\
+F5 & $\mathrm{IQR}_{\text{IDB}} = 0$ under all policies & 0.000 / 0.000 / 0.000 & 9/9 & Invariant \\
+\midrule
+\multicolumn{5}{@{}l}{\textit{Consent invariance (ALL vs.\ NONE)}} \\[2pt]
+F2 & $\max_s |\bar{R}_{s,\text{ALL}} - \bar{R}_{s,\text{NONE}}| < \max_s \bar{R}_s - \min_s \bar{R}_s$ & 0.014 (cookie) < 0.219 & 9/9 & Invariant \\
+F2 & $\tilde{R}_{s,\text{ALL}} = \tilde{R}_{s,\text{NONE}}$, $s \in \{\text{cookie, LS, IDB}\}$ & 0.000 / 0.000 / 0.000 & 7/9 & Conditional \\  % fails at (z_W,z_S) = (0.1,0.5), (0.2,0.5)
+F2 & $Q_{3,\text{ALL}}^{\text{cookie}} = Q_{3,\text{NONE}}^{\text{cookie}}$ & 0.000 & 9/9 & Invariant \\
+\midrule
+\multicolumn{5}{@{}l}{\textit{Session mode (ALL policy)}} \\[2pt]
+F6 & $\max_s |\bar{R}^{\text{Auth}}_s - \bar{R}^{\text{UnAuth}}_s| < \max_s \bar{R}_s - \min_s \bar{R}_s$ & 0.043 (IndexedDB) < 0.219 & 9/9 & Invariant \\
+F6 & Composition explains $\geq 50\%$ of $|\bar{R}^{\text{Auth}} - \bar{R}^{\text{UnAuth}}|$ & 55\% & 9/9 & Invariant \\

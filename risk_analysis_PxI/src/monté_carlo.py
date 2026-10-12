@@ -8,9 +8,10 @@ What it adds
 The 9-point grid gives ONE value to every cell of a tier. The real baseline Z(0) is
 heterogeneous inside a tier (e.g. W cells are 0.1, 0.2 or 0.3). Here the value of every
 non-boundary cell is DRAWN at random inside an interval, N times, the ordinal structure
-(which cell belongs to which tier) being kept fixed. For each draw the 14 claims are
-re-evaluated, and we report how often each one holds, with a confidence interval, and
-HOW FAR from its threshold it stays (margin).
+(which cell belongs to which tier) being kept fixed. For each draw the 13 RQ4 claims
+(O1-O6, D1-D2, C1-C3, S1-S2) are re-evaluated with EXACTLY the same code as the alpha_k
+and grid analyses (imported, not copied). We report how often each claim holds, with a
+Wilson 95% interval, and how far from its threshold it stays (margin).
 
 Scenarios (name = <ranges>-<granularity>)
     granularity  tier : one value for all W cells, one for all S cells    (2 parameters)
@@ -22,8 +23,15 @@ Scenarios (name = <ranges>-<granularity>)
     A draw is kept only if the ordinal order is respected: max(A)<min(W)<=max(W)<min(S)
     <=max(S)<min(C) over all cells. The acceptance rate is reported.
 
+Margins (margin > 0  <=>  claim holds), computed from the audited values of each claim:
+    O1-O6  a - b                              D1  IQR_cookie - max other IQR
+    D2     TOL - max IQR_IDB over policies    C1  API range - max consent effect
+    C2     TOL - max |median ALL - NONE|      C3  TOL - |Q3 cookie ALL - NONE|
+    S1     API range - max session effect     S2  composition share - 0.5
+    (audited values are rounded to 1e-4, so margins have a 1e-4 resolution)
+
 Usage
-    python within_tier_monte_carlo.py --selftest              # check vs reference code
+    python within_tier_monte_carlo.py --selftest              # fast evaluator vs reference code
     python within_tier_monte_carlo.py --n 500                 # quick run
     python within_tier_monte_carlo.py --n 10000 --seed 42     # full run
     python within_tier_monte_carlo.py --scenarios within-cell wide-cell
@@ -40,26 +48,35 @@ from pathlib import Path
 
 import numpy as np
 
+# ── Shared code: claims (alpha_k script) and tier map / loader (grid script) ──
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from within_tier_analysis import (  # noqa: E402
-    MODES, POLICIES, STORAGES, ALPHA_KEYS, DEFAULT_ALPHAS,
-    PII_TIER_MAP, PII_IMPACT_MAP_BASELINE, FINDING_LABELS,
-    load_all_items,
-    _z_composite, _calculate_ii, _aggregate, _describe_storage, _evaluate_findings,
-)
+try:
+    import sensitivity_analysis as sa
+except ImportError:
+    import sensibility_analysis as sa
+try:
+    import within_tier_robustness as wt
+except ImportError:
+    import within_tier_analysis as wt
+
+MODES, POLICIES, STORAGES = sa.MODES, sa.POLICIES, sa.STORAGES
+ALPHA_KEYS, DEFAULT_ALPHAS = sa.ALPHA_KEYS, sa.DEFAULT_ALPHAS
+REF_POLICY, TOL, COMPOSITION_SHARE = sa.REF_POLICY, sa.TOL, sa.COMPOSITION_SHARE
+CLAIM_IDS = [c[0] for c in sa.CLAIMS]
+CLAIM_META = {c[0]: dict(finding=c[1], level=c[2], description=c[3]) for c in sa.CLAIMS}
 
 # ════════════════════════════════════════════════════════════
 # CONSTANTS
 # ════════════════════════════════════════════════════════════
 
-CATEGORIES = list(PII_TIER_MAP)
+CATEGORIES = list(wt.PII_TIER_MAP)
 NCAT, NDIM = len(CATEGORIES), 6
 DIMS = ['ID', 'ATO', 'LINK', 'LOC', 'PROF', 'ENV']
 TIER_NAME = 'AWSC'
 _CODE = {'A': 0, 'W': 1, 'S': 2, 'C': 3}
-T = np.array([[_CODE[t] for t in PII_TIER_MAP[c]] for c in CATEGORIES])   # (NCAT, 6)
+T = np.array([[_CODE[t] for t in wt.PII_TIER_MAP[c]] for c in CATEGORIES])   # (NCAT, 6)
 ALPHA = np.array([DEFAULT_ALPHAS[k] for k in ALPHA_KEYS])
-KEYS = list(FINDING_LABELS)
+Z_BASELINE = np.array([wt.PII_IMPACT_MAP_BASELINE[c] for c in CATEGORIES], dtype=float)
 
 _WITHIN = dict(W=(0.10, 0.30), S=(0.50, 0.70), A=(0.0, 0.0), C=(1.0, 1.0))
 _WIDE = dict(W=(0.05, 0.45), S=(0.40, 0.90), A=(0.0, 0.0), C=(1.0, 1.0))
@@ -77,59 +94,51 @@ SCENARIOS = {
 
 # ════════════════════════════════════════════════════════════
 # ITEMS -> COMPACT TABLE
-# An item's impact depends only on its SET of categories (max-pooling), so items are
-# grouped by (mode, policy, storage, category-set, pi). Each row carries a count.
+# An item's risk depends only on (P_i, category set), so items are grouped by
+# (mode, policy, storage, category set, P_i); each row carries a count.
 # ════════════════════════════════════════════════════════════
 
 class Compiled:
     pass
 
 
-def compile_items(items: list) -> Compiled:
-    cat_idx = {c: i for i, c in enumerate(CATEGORIES)}
-    st_idx = {s.lower(): i for i, s in enumerate(STORAGES)}
-    md_idx = {m: i for i, m in enumerate(MODES)}
-    pl_idx = {p: i for i, p in enumerate(POLICIES)}
-    sig_ids, sigs = {}, []
-    rows = np.empty((len(items), 5))
-    for n, it in enumerate(items):
-        sig = tuple(sorted({cat_idx[c] for c in it['_cats'] if c in cat_idx}))
-        sid = sig_ids.get(sig)
-        if sid is None:
-            sid = sig_ids[sig] = len(sigs)
-            sigs.append(sig)
-        rows[n] = (md_idx[it['_mode']], pl_idx[it['_policy']],
-                   st_idx.get(it.get('storage_type', '').lower(), -1),
-                   sid, it['pi_exposure'])
+def compile_rows(ds, cat_sets: list) -> Compiled:
+    st_i = {s: i for i, s in enumerate(STORAGES)}
+    sto = np.array([st_i.get(s, -1) for s in ds.storage])
+    mode = np.array([MODES.index(m) for m in ds.mode])
+    pol = np.array([POLICIES.index(p) for p in ds.policy])
+    rows = np.column_stack([mode, pol, sto, ds.z_inv, ds.P])
     uniq, counts = np.unique(rows, axis=0, return_counts=True)
 
     C = Compiled()
-    C.n_items, C.n_rows, C.n_sigs = len(items), len(uniq), len(sigs)
+    C.n_items, C.n_rows, C.n_sigs = int(ds.n), len(uniq), len(cat_sets)
     C.w = counts.astype(np.int64)
     C.pi = uniq[:, 4].copy()
     C.sig = uniq[:, 3].astype(int)
-    lmax = max(1, max((len(s) for s in sigs), default=1))
-    C.sigcat = np.full((len(sigs), lmax), NCAT, dtype=int)      # NCAT = padding -> zero row
-    for s, cats in enumerate(sigs):
-        C.sigcat[s, :len(cats)] = cats
+    cat_idx = {c: i for i, c in enumerate(CATEGORIES)}
+    lmax = max(1, max((len(s) for s in cat_sets), default=1))
+    C.sigcat = np.full((len(cat_sets), lmax), NCAT, dtype=int)      # NCAT -> zero row
+    for s, cats in enumerate(cat_sets):
+        known = [cat_idx[c] for c in cats if c in cat_idx]
+        C.sigcat[s, :len(known)] = known
 
-    mode, pol, sto = uniq[:, 0].astype(int), uniq[:, 1].astype(int), uniq[:, 2].astype(int)
+    m_, p_, s_ = uniq[:, 0].astype(int), uniq[:, 1].astype(int), uniq[:, 2].astype(int)
 
     def sub(mask):
         ix = np.flatnonzero(mask)
         return ix, C.w[ix], int(C.w[ix].sum())
 
-    C.by_mode = {m: sub(mode == i) for i, m in enumerate(MODES)}
-    C.by_policy = {p: sub(pol == i) for i, p in enumerate(POLICIES)}
-    C.by_storage = {s: sub(sto == i) for i, s in enumerate(STORAGES)}
-    ck = STORAGES.index('cookie')
-    C.ck_all = sub((sto == ck) & (pol == POLICIES.index('ALL')))
-    C.ck_none = sub((sto == ck) & (pol == POLICIES.index('NONE')))
+    # Only the subsets the claims read (see sa.evaluate_claims / sa.composition_share)
+    C.sp = {f"{s}|{p}": sub((s_ == si) & (p_ == pi))
+            for si, s in enumerate(STORAGES) for pi, p in enumerate(POLICIES)}
+    rp = POLICIES.index(REF_POLICY)
+    C.spm = {f"{s}|{REF_POLICY}|{m}": sub((s_ == si) & (p_ == rp) & (m_ == mi))
+             for si, s in enumerate(STORAGES) for mi, m in enumerate(MODES)}
     return C
 
 
 # ════════════════════════════════════════════════════════════
-# IMPACT: Z (cells) -> I per category-set -> R per row
+# IMPACT: Z (cells) -> I per category set -> R per row
 # ════════════════════════════════════════════════════════════
 
 def impacts(Z: np.ndarray, C: Compiled) -> np.ndarray:
@@ -140,30 +149,14 @@ def impacts(Z: np.ndarray, C: Compiled) -> np.ndarray:
 
 
 # ════════════════════════════════════════════════════════════
-# STATISTICS ON A WEIGHTED SAMPLE (same conventions as numpy on the expanded sample)
+# WEIGHTED STATISTICS (identical to np.percentile 'linear' on the expanded sample)
 # ════════════════════════════════════════════════════════════
-
-def _wmean(R, sub):
-    ix, w, tot = sub
-    return round(float(np.dot(w, R[ix])) / tot, 4) if tot else 0.0
-
-
-def _sorted(R, sub):
-    ix, w, tot = sub
-    if tot == 0:
-        return None
-    v = R[ix]
-    o = np.argsort(v, kind='stable')
-    return v[o], np.cumsum(w[o]), tot
-
 
 def _kth(vs, cum, k):
     return vs[np.searchsorted(cum, k, side='right')]
 
 
-def _percentile(sw, q):
-    """np.percentile(..., q) with the default 'linear' method."""
-    vs, cum, n = sw
+def _percentile(vs, cum, n, q):
     pos = (n - 1) * (q / 100.0)
     lo = int(math.floor(pos))
     hi = min(lo + 1, n - 1)
@@ -172,89 +165,54 @@ def _percentile(sw, q):
     return float(b - d * (1 - t)) if t >= 0.5 else float(a + d * t)
 
 
-def _median(sw):
-    """np.median."""
-    vs, cum, n = sw
-    if n % 2:
-        return float(_kth(vs, cum, n // 2))
-    return float((_kth(vs, cum, n // 2 - 1) + _kth(vs, cum, n // 2)) / 2.0)
+def _wdescribe(R, sub):
+    """Same fields as sa.describe(), computed on the weighted rows."""
+    ix, w, tot = sub
+    if tot == 0:
+        return None
+    v = R[ix]
+    o = np.argsort(v, kind='stable')
+    vs, cum = v[o], np.cumsum(w[o])
+    q1, med, q3 = (_percentile(vs, cum, tot, q) for q in (25, 50, 75))
+    return {'n': tot, 'mean': float(np.dot(w, v)) / tot, 'median': med,
+            'q1': q1, 'q3': q3, 'iqr': q3 - q1, 'max': float(vs[-1])}
+
+
+def lean_summary(R, C: Compiled) -> dict:
+    """The part of sa.summarize() that sa.evaluate_claims() reads."""
+    return {'storage_policy': {k: _wdescribe(R, s) for k, s in C.sp.items()},
+            'storage_policy_mode': {k: _wdescribe(R, s) for k, s in C.spm.items()}}
 
 
 # ════════════════════════════════════════════════════════════
-# CLAIMS  (same predicates as _evaluate_findings; margin > 0  <=>  claim holds)
+# CLAIMS + MARGINS
 # ════════════════════════════════════════════════════════════
 
-def evaluate(R: np.ndarray, C: Compiled):
-    """R: (n_rows,) risk of each row for ONE draw. Returns (stats, findings, margins)."""
-    mm = {m: _wmean(R, C.by_mode[m]) for m in MODES}
-    mp = {p: _wmean(R, C.by_policy[p]) for p in POLICIES}
-    ms = {s: _wmean(R, C.by_storage[s]) for s in STORAGES}
-
-    dist = {}
-    for s in STORAGES:
-        sw = _sorted(R, C.by_storage[s])
-        if sw is None:
-            dist[s] = dict(median=None, iqr=None, iqr_raw=None)
-            continue
-        q1, med, q3 = _percentile(sw, 25), _percentile(sw, 50), _percentile(sw, 75)
-        dist[s] = dict(median=round(med, 4), iqr=round(q3 - q1, 4), iqr_raw=q3 - q1)
-
-    def med_of(sub):
-        sw = _sorted(R, sub)
-        return _median(sw) if sw is not None else None
-
-    med_auth, med_unauth = med_of(C.by_mode['Auth']), med_of(C.by_mode['UnAuth'])
-    med_ck_all, med_ck_none = med_of(C.ck_all), med_of(C.ck_none)
-
+def margins_from(res: dict) -> dict:
+    """margin > 0 <=> claim holds (NaN when the claim is undefined)."""
     nan = float('nan')
-    ck, ss, ls, idb = 'cookie', 'sessionStorage', 'localStorage', 'IndexedDB'
-    f, g = {}, {}
+    g = {}
+    for cid in ('O1', 'O2', 'O3', 'O4', 'O5', 'O6'):
+        g[cid] = res[cid]['raw']['a'] - res[cid]['raw']['b']
+    r = res['D1']['raw'];  g['D1'] = r['iqr_cookie'] - r['max_other']
+    g['D2'] = TOL - max(res['D2']['raw'].values())
+    r = res['C1']['raw'];  g['C1'] = r['api_range'] - r['max_consent_gap']
+    g['C2'] = TOL - max(res['C2']['raw'].values())
+    g['C3'] = TOL - res['C3']['raw']['delta_q3']
+    r = res['S1']['raw'];  g['S1'] = r['api_range'] - r['max_mode_gap']
+    share = res['S2']['raw']['share']
+    g['S2'] = nan if share is None else share - COMPOSITION_SHARE
+    return g
 
-    d = abs(mm.get('Auth', 0) - mm.get('UnAuth', 0))
-    f['M1_auth_unauth_equiv'], g['M1_auth_unauth_equiv'] = bool(d < 0.05), 0.05 - d
-    f['M2_all_gt_none'] = bool(mp.get('ALL', 0) >= mp.get('NONE', 0))
-    g['M2_all_gt_none'] = mp.get('ALL', 0) - mp.get('NONE', 0)
-    f['M3_cookie_gt_ss'], g['M3_cookie_gt_ss'] = bool(ms[ck] > ms[ss]), ms[ck] - ms[ss]
-    f['M4_cookie_gt_idb'], g['M4_cookie_gt_idb'] = bool(ms[ck] > ms[idb]), ms[ck] - ms[idb]
-    d = abs(ms[ck] - ms[ls])
-    f['M5_ls_equiv_cookie'], g['M5_ls_equiv_cookie'] = bool(d < 0.07), 0.07 - d
-    f['M6_ls_gt_ss'], g['M6_ls_gt_ss'] = bool(ms[ls] > ms[ss]), ms[ls] - ms[ss]
-    f['M7_ls_gt_idb'], g['M7_ls_gt_idb'] = bool(ms[ls] > ms[idb]), ms[ls] - ms[idb]
 
-    mc, mss, mls = dist[ck]['median'], dist[ss]['median'], dist[ls]['median']
-    ic, iss, ils, iidb = dist[ck]['iqr'], dist[ss]['iqr'], dist[ls]['iqr'], dist[idb]['iqr']
-
-    f['D1_median_cookie_gt_ss'] = bool(mc is not None and mss is not None and mc > mss)
-    g['D1_median_cookie_gt_ss'] = (mc - mss) if (mc is not None and mss is not None) else nan
-    f['D2_idb_iqr_zero'] = bool(iidb is not None and iidb == 0.0)
-    g['D2_idb_iqr_zero'] = (5e-5 - dist[idb]['iqr_raw']) if iidb is not None else nan
-    f['D3_iqr_cookie_gt_ss'] = bool(ic is not None and iss is not None and ic > iss)
-    g['D3_iqr_cookie_gt_ss'] = (ic - iss) if (ic is not None and iss is not None) else nan
-    ok4 = med_auth is not None and med_unauth is not None
-    f['D4_median_mode_equiv'] = bool(ok4 and abs(med_auth - med_unauth) < 0.01)
-    g['D4_median_mode_equiv'] = (0.01 - abs(med_auth - med_unauth)) if ok4 else nan
-    if med_ck_all is not None and med_ck_none is not None:
-        f['D5_cookie_median_stable'] = bool(abs(med_ck_all - med_ck_none) < 0.02)
-        g['D5_cookie_median_stable'] = 0.02 - abs(med_ck_all - med_ck_none)
-    else:
-        f['D5_cookie_median_stable'], g['D5_cookie_median_stable'] = None, nan
-    ok6 = mls is not None and mc is not None
-    f['D6_median_ls_equiv_cookie'] = bool(ok6 and abs(mc - mls) < 0.09)
-    g['D6_median_ls_equiv_cookie'] = (0.09 - abs(mc - mls)) if ok6 else nan
-    ok7 = ils is not None and ic is not None
-    f['D7_iqr_ls_lt_cookie'] = bool(ok7 and ils < ic)
-    g['D7_iqr_ls_lt_cookie'] = (ic - ils) if ok7 else nan
-
-    stats = dict(mean_by_mode=mm, mean_by_policy=mp, mean_by_storage=ms, dist=dist,
-                 med_auth=med_auth, med_unauth=med_unauth,
-                 med_ck_all=med_ck_all, med_ck_none=med_ck_none)
-    return stats, f, g
+def evaluate_R(R, C: Compiled):
+    res = sa.evaluate_claims(lean_summary(R, C))
+    return {cid: res[cid]['ok'] for cid in CLAIM_IDS}, margins_from(res), res
 
 
 def evaluate_Z(Z: np.ndarray, C: Compiled):
-    """Evaluate ONE impact map Z (NCAT, 6)."""
     I = impacts(Z[None], C)[0]
-    return evaluate(C.pi * I[C.sig], C)
+    return evaluate_R(C.pi * I[C.sig], C)
 
 
 # ════════════════════════════════════════════════════════════
@@ -317,13 +275,15 @@ def top_drivers(P: np.ndarray, names: list, margins: dict, k: int = 3) -> dict:
     """Pearson r between each drawn parameter and each claim's margin."""
     Pz = (P - P.mean(0)) / (P.std(0) + 1e-12)
     out = {}
-    for key, m in margins.items():
+    for cid, m in margins.items():
         m = np.asarray(m, float)
-        if np.isnan(m).any() or m.std() < 1e-12:
-            out[key] = []
+        keep = ~np.isnan(m)
+        if keep.sum() < 3 or m[keep].std() < 1e-12:
+            out[cid] = []
             continue
-        r = Pz.T @ ((m - m.mean()) / m.std()) / len(m)
-        out[key] = [{'param': names[i], 'r': round(float(r[i]), 3)}
+        mz = (m[keep] - m[keep].mean()) / m[keep].std()
+        r = Pz[keep].T @ mz / keep.sum()
+        out[cid] = [{'param': names[i], 'r': round(float(r[i]), 3)}
                     for i in np.argsort(-np.abs(r))[:k]]
     return out
 
@@ -334,8 +294,8 @@ def run_scenario(name, spec, C, n, seed, batch_budget=6e7, verbose=True):
     per_draw = max(1, C.n_sigs * C.sigcat.shape[1] * NDIM * 8)
     B = int(max(8, min(512, batch_budget // per_draw)))
 
-    truth = {k: [] for k in KEYS}
-    marg = {k: [] for k in KEYS}
+    truth = {k: [] for k in CLAIM_IDS}
+    marg = {k: [] for k in CLAIM_IDS}
     Ps = []
     drawn = valid_seen = accepted = 0
     t0, next_print = time.time(), 0.1
@@ -352,8 +312,8 @@ def run_scenario(name, spec, C, n, seed, batch_budget=6e7, verbose=True):
         P, Z = P[ok][:take], Z[ok][:take]
         I = impacts(Z, C)
         for b in range(take):
-            _, f, g = evaluate(C.pi * I[b][C.sig], C)
-            for k in KEYS:
+            f, g, _ = evaluate_R(C.pi * I[b][C.sig], C)
+            for k in CLAIM_IDS:
                 truth[k].append(f[k])
                 marg[k].append(g[k])
         Ps.append(P)
@@ -367,84 +327,56 @@ def run_scenario(name, spec, C, n, seed, batch_budget=6e7, verbose=True):
 
 def summarize(res: dict, base_f: dict, base_g: dict) -> dict:
     claims = {}
-    for key, (level, label) in FINDING_LABELS.items():
-        t = [x for x in res['truth'][key] if x is not None]
+    for cid in CLAIM_IDS:
+        t = [x for x in res['truth'][cid] if x is not None]
         n, k = len(t), int(sum(t))
         lo, hi = wilson(k, n)
-        m = np.asarray(res['marg'][key], float)
+        m = np.asarray(res['marg'][cid], float)
         m = m[~np.isnan(m)]
-        entry = dict(label=label, level=level, n=n, holds=k,
+        entry = dict(**CLAIM_META[cid], n=n, holds=k, excluded=len(res['truth'][cid]) - n,
                      p_hat=(k / n if n else None),
                      wilson95=([lo, hi] if n else None),
-                     fail_bound_95=(3.0 / n if (n and k == n) else None),
-                     holds_at_baseline=base_f[key])
+                     fail_bound_95=(3.0 / n if (n and k == n) else None),   # rule of three
+                     status=sa.status_of(k, n),
+                     holds_at_baseline=base_f[cid])
         if len(m):
-            bm = base_g[key]
+            bm = base_g[cid]
             has_bm = not (isinstance(bm, float) and math.isnan(bm))
             entry.update(margin_min=float(m.min()), margin_p1=float(np.percentile(m, 1)),
                          margin_median=float(np.median(m)),
                          margin_baseline=(float(bm) if has_bm else None),
                          baseline_margin_percentile=(float((m < bm).mean()) if has_bm else None))
-        claims[key] = entry
+        claims[cid] = entry
     return claims
 
 
 def print_scenario(name, spec, res, claims):
     print(f"\n  ── {name}  (granularity={spec['gran']}, {len(res['L']['names'])} parameters, "
           f"acceptance={res['acceptance']:.1%}, {res['seconds']:.0f}s)")
-    print(f"  {'claim':<58}{'holds':>15}{'p_hat':>8}{'Wilson 95%':>20}{'min margin':>12}")
-    print(f"  {'-' * 113}")
-    for key, c in claims.items():
+    print(f"  {'ID':<4}{'Finding':<8}{'holds':>15}{'p_hat':>8}{'Wilson 95%':>20}"
+          f"{'min margin':>12}{'baseline':>10}  Status")
+    print(f"  {'-' * 92}")
+    for cid, c in claims.items():
         if c['n'] == 0:
-            print(f"  {c['label']:<58}{'n/a (undefined on this data)':>55}")
+            print(f"  {cid:<4}{c['finding']:<8}{'n/a (undefined in every draw)':>45}")
             continue
         w = f"[{c['wilson95'][0]:.4f},{c['wilson95'][1]:.4f}]"
-        mn = f"{c['margin_min']:+.5f}" if 'margin_min' in c else "n/a"
-        print(f"  {c['label']:<58}{c['holds']:>7,}/{c['n']:<7,}{c['p_hat']:>8.4f}{w:>20}{mn:>12}")
+        mn = f"{c['margin_min']:+.4f}" if 'margin_min' in c else "n/a"
+        bm = f"{c['margin_baseline']:+.4f}" if c.get('margin_baseline') is not None else "n/a"
+        print(f"  {cid:<4}{c['finding']:<8}{c['holds']:>7,}/{c['n']:<7,}{c['p_hat']:>8.4f}"
+              f"{w:>20}{mn:>12}{bm:>10}  {c['status']}")
 
 
 # ════════════════════════════════════════════════════════════
-# SELF-TEST: fast implementation vs. reference code of within_tier_analysis.py
+# SELF-TEST: fast evaluator vs reference code (full sa.summarize on every item)
 # ════════════════════════════════════════════════════════════
 
-def _synthetic_items(n=4000, seed=7):
-    rng = np.random.default_rng(seed)
-    pool = CATEGORIES + ['NOT_IN_MAP']
-    st_names = ['cookie', 'localStorage', 'sessionStorage', 'IndexedDB', 'Cookie', 'other']
-    items = []
-    for _ in range(n):
-        k = int(rng.choice([0, 1, 1, 2, 3]))
-        items.append({
-            '_cats': [str(c) for c in rng.choice(pool, size=k, replace=False)] if k else [],
-            'pi_exposure': float(rng.choice([0.4681, 0.6739, 0.7528, 0.8751, 0.95])),
-            '_mode': str(rng.choice(MODES)), '_policy': str(rng.choice(POLICIES)),
-            'storage_type': str(rng.choice(st_names)),
-        })
-    return items
+def selftest(ds, cat_sets, C, n_random=12) -> bool:
+    def reference(Z):
+        wt.set_impact_map(ds, cat_sets, {c: list(Z[i]) for i, c in enumerate(CATEGORIES)})
+        return sa.evaluate_claims(sa.summarize(ds, ds.risk(DEFAULT_ALPHAS)))
 
-
-def selftest(n_random=30) -> bool:
-    items = _synthetic_items()
-    C = compile_items(items)
-    print(f"  [selftest] {C.n_items:,} synthetic items -> {C.n_rows:,} rows, {C.n_sigs} category-sets")
-
-    def reference(Zmap):
-        impact = {c: [float(x) for x in Zmap[i]] for i, c in enumerate(CATEGORIES)}
-        for it in items:
-            it['_z'] = _z_composite(it['_cats'], impact)
-            it['_ii'] = _calculate_ii(it['_z'], DEFAULT_ALPHAS)
-            it['_risk_i'] = it['pi_exposure'] * it['_ii']
-        agg, dist = _aggregate(items), _describe_storage(items)
-        f = _evaluate_findings(agg, dist, items)
-        med = lambda sel: float(np.median([i['_risk_i'] for i in items if sel(i)]))  # noqa: E731
-        extra = dict(
-            med_auth=med(lambda i: i['_mode'] == 'Auth'),
-            med_unauth=med(lambda i: i['_mode'] == 'UnAuth'),
-            med_ck_all=med(lambda i: i['storage_type'].lower() == 'cookie' and i['_policy'] == 'ALL'),
-            med_ck_none=med(lambda i: i['storage_type'].lower() == 'cookie' and i['_policy'] == 'NONE'))
-        return agg, dist, f, extra
-
-    cases = [('baseline Z(0)', np.array([PII_IMPACT_MAP_BASELINE[c] for c in CATEGORIES]))]
+    cases = [('baseline Z(0)', Z_BASELINE)]
     for zw, zs in [(0.1, 0.5), (0.3, 0.7), (0.2, 0.6)]:
         tv = {0: 0.0, 1: zw, 2: zs, 3: 1.0}
         cases.append((f"grid ({zw},{zs})", np.vectorize(tv.get)(T).astype(float)))
@@ -460,26 +392,20 @@ def selftest(n_random=30) -> bool:
 
     bad = 0
     for label, Z in cases:
-        agg, dist, f_ref, extra = reference(Z)
-        stats, f_fast, _ = evaluate_Z(Z, C)
+        ref = reference(Z)
+        _, _, fast = evaluate_Z(Z, C)
         problems = []
-        for grp, key in (('mean_by_mode', MODES), ('mean_by_policy', POLICIES), ('mean_by_storage', STORAGES)):
-            for x in key:
-                if agg[grp][x] != stats[grp][x]:
-                    problems.append(f"{grp}[{x}] {agg[grp][x]} != {stats[grp][x]}")
-        for s in STORAGES:
-            for fld in ('median', 'iqr'):
-                if dist[s][fld] != stats['dist'][s][fld]:
-                    problems.append(f"dist[{s}].{fld} {dist[s][fld]} != {stats['dist'][s][fld]}")
-        for k, v in extra.items():
-            if abs(v - stats[k]) > 1e-12:
-                problems.append(f"{k} {v} != {stats[k]}")
-        for k in KEYS:
-            if f_ref[k] != f_fast[k]:
-                problems.append(f"claim {k}: ref={f_ref[k]} fast={f_fast[k]}")
+        for cid in CLAIM_IDS:
+            if ref[cid]['ok'] != fast[cid]['ok']:
+                problems.append(f"{cid}: ok ref={ref[cid]['ok']} fast={fast[cid]['ok']}")
+            for k, v in ref[cid]['raw'].items():
+                u = fast[cid]['raw'][k]
+                if (v is None) != (u is None) or (v is not None and abs(v - u) > 1.5e-4):
+                    problems.append(f"{cid}.{k}: ref={v} fast={u}")
         if problems:
             bad += 1
             print(f"  [selftest] MISMATCH on {label}: {problems[:4]}")
+    wt.set_impact_map(ds, cat_sets, wt.PII_IMPACT_MAP_BASELINE)   # restore
     print(f"  [selftest] {len(cases) - bad}/{len(cases)} cases identical to the reference code "
           f"({'PASS' if bad == 0 else 'FAIL'})")
     return bad == 0
@@ -488,6 +414,15 @@ def selftest(n_random=30) -> bool:
 # ════════════════════════════════════════════════════════════
 # MAIN
 # ════════════════════════════════════════════════════════════
+
+class _Enc(json.JSONEncoder):
+    def default(self, o):
+        if isinstance(o, np.bool_):    return bool(o)
+        if isinstance(o, np.integer):  return int(o)
+        if isinstance(o, np.floating): return float(o)
+        if isinstance(o, np.ndarray):  return o.tolist()
+        return super().default(o)
+
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -501,9 +436,6 @@ def main():
     ap.add_argument('--selftest', action='store_true', help='compare with the reference code and exit')
     a = ap.parse_args()
 
-    if a.selftest:
-        sys.exit(0 if selftest() else 1)
-
     if a.data_root is None:
         try:
             a.data_root = Path(__file__).resolve().parents[2] / 'data'
@@ -514,28 +446,35 @@ def main():
     print('=' * 72)
     print('  WITHIN-TIER ROBUSTNESS -- MONTE CARLO  (Level 1: cardinal, fixed order)')
     print(f'  N={a.n:,} draws/scenario   seed={a.seed}   scenarios={len(a.scenarios)}')
+    print(f'  Claims: {", ".join(CLAIM_IDS)} (shared with {sa.__name__})')
     print('=' * 72)
 
     print('\n  [Load] Reading vectorized items...')
-    items = load_all_items(a.data_root)
-    if not items:
+    ds, cat_sets = wt.load_dataset(a.data_root)
+    if ds.n == 0:
         sys.exit('  ERROR: no items loaded. Check --data-root.')
-    C = compile_items(items)
-    print(f'  {C.n_items:,} items -> {C.n_rows:,} distinct rows, {C.n_sigs} category-sets')
+    C = compile_rows(ds, cat_sets)
+    print(f'  {C.n_items:,} items -> {C.n_rows:,} distinct rows, {C.n_sigs} category sets')
 
     print('\n  [Check] Fast evaluator vs reference code...')
-    if not selftest(n_random=15):
+    if not selftest(ds, cat_sets, C):
         sys.exit('  Aborting: fast evaluator does not reproduce the reference code.')
+    if a.selftest:
+        sys.exit(0)
 
-    Zb = np.array([PII_IMPACT_MAP_BASELINE[c] for c in CATEGORIES])
-    _, base_f, base_g = evaluate_Z(Zb, C)
-    print('\n  [Baseline Z(0), heterogeneous within tiers] claims that hold: '
-          f"{sum(1 for v in base_f.values() if v)}/{len(base_f)}")
+    base_f, base_g, base_res = evaluate_Z(Z_BASELINE, C)
+    print(f"\n  [Baseline Z(0)] claims that hold: {sum(1 for v in base_f.values() if v)}/{len(base_f)}  "
+          f"(must match the default column of the alpha_k table)")
 
     out = {'metadata': dict(analysis='within_tier_monte_carlo_level1', n_per_scenario=a.n, seed=a.seed,
                             alphas=DEFAULT_ALPHAS, n_items=C.n_items, n_rows=C.n_rows,
+                            claims_from=sa.__name__,
+                            conventions=dict(ref_policy=REF_POLICY, tol=TOL,
+                                             robust_rate=sa.ROBUST_RATE,
+                                             composition_share=COMPOSITION_SHARE),
                             numpy=np.__version__, python=platform.python_version()),
-           'baseline': {k: dict(holds=base_f[k], margin=base_g[k]) for k in KEYS},
+           'baseline': {k: dict(holds=base_f[k], margin=base_g[k], value=base_res[k]['value'])
+                        for k in CLAIM_IDS},
            'scenarios': {}}
     for name in a.scenarios:
         spec = SCENARIOS[name]
@@ -544,10 +483,10 @@ def main():
         claims = summarize(res, base_f, base_g)
         print_scenario(name, spec, res, claims)
         drivers = top_drivers(res['P'], res['L']['names'], res['marg'])
-        for key, c in claims.items():
-            if c['n'] and c['holds'] < c['n'] and drivers.get(key):
-                d = ', '.join(f"{x['param']} (r={x['r']:+.2f})" for x in drivers[key])
-                print(f"     ⚠ [{c['label']}] fails in {1 - c['p_hat']:.2%} of draws; main drivers: {d}")
+        for cid, c in claims.items():
+            if c['n'] and c['holds'] < c['n'] and drivers.get(cid):
+                d = ', '.join(f"{x['param']} (r={x['r']:+.2f})" for x in drivers[cid])
+                print(f"     ! [{cid}] fails in {1 - c['p_hat']:.2%} of draws; main drivers: {d}")
         out['scenarios'][name] = dict(spec={k: v for k, v in spec.items()},
                                       n_parameters=len(res['L']['names']),
                                       acceptance_rate=res['acceptance'],
@@ -556,13 +495,13 @@ def main():
             out_path.parent.mkdir(parents=True, exist_ok=True)
             np.savez_compressed(out_path.with_name(f'within_tier_mc_draws_{name}.npz'),
                                 params=res['P'], param_names=np.array(res['L']['names']),
-                                **{f'margin_{k}': np.asarray(res['marg'][k], float) for k in KEYS},
+                                **{f'margin_{k}': np.asarray(res['marg'][k], float) for k in CLAIM_IDS},
                                 **{f'truth_{k}': np.array([-1 if x is None else int(x) for x in res['truth'][k]],
-                                                          dtype=np.int8) for k in KEYS})
+                                                          dtype=np.int8) for k in CLAIM_IDS})
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
     with open(out_path, 'w', encoding='utf-8') as f:
-        json.dump(out, f, indent=2, ensure_ascii=False)
+        json.dump(out, f, indent=2, ensure_ascii=False, cls=_Enc)
     print(f'\n  Saved -> {out_path}')
     print('=' * 72)
 

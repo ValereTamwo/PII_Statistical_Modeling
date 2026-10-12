@@ -1,9 +1,9 @@
 {
-  "total_cookies": 527,
+  "total_cookies": 525,
   "direct_pii_count": 3,
-  "other_count": 524,
+  "other_count": 522,
   "lifetime_distribution": {
-    "<6 months": 267,
+    "<6 months": 265,
     "6-18 months": 157,
     "Session": 103
   },
@@ -54,7 +54,7 @@
       "Session": 3
     },
     "LOCATION_AND_DEMOGRAPHICS": {
-      "<6 months": 5,
+      "<6 months": 3,
       "6-18 months": 1
     },
     "NAVIGATION_HISTORY": {
@@ -88,7 +88,7 @@
   },
   "httponly_distribution": {
     "True": 145,
-    "False": 382
+    "False": 380
   },
   "httponly_by_pii": {
     "email_username": {
@@ -130,7 +130,7 @@
       "False": 3
     },
     "LOCATION_AND_DEMOGRAPHICS": {
-      "False": 6
+      "False": 4
     },
     "NAVIGATION_HISTORY": {
       "False": 4
@@ -158,7 +158,7 @@
   },
   "secure_distribution": {
     "True": 305,
-    "False": 222
+    "False": 220
   },
   "secure_by_pii": {
     "email_username": {
@@ -200,7 +200,7 @@
       "False": 3
     },
     "LOCATION_AND_DEMOGRAPHICS": {
-      "False": 5,
+      "False": 3,
       "True": 1
     },
     "NAVIGATION_HISTORY": {
@@ -228,7 +228,7 @@
     }
   },
   "samesite_distribution": {
-    "Lax": 310,
+    "Lax": 308,
     "No Restriction": 203,
     "Strict": 14
   },
@@ -276,7 +276,7 @@
       "Lax": 3
     },
     "LOCATION_AND_DEMOGRAPHICS": {
-      "Lax": 6
+      "Lax": 4
     },
     "NAVIGATION_HISTORY": {
       "Lax": 4
@@ -306,7 +306,7 @@
   },
   "security_matrix": {
     "(True, True)": 135,
-    "(False, False)": 212,
+    "(False, False)": 210,
     "(True, False)": 10,
     "(False, True)": 170
   },
@@ -355,7 +355,7 @@
       "Lowly Secure": 3
     },
     "LOCATION_AND_DEMOGRAPHICS": {
-      "Lowly Secure": 5,
+      "Lowly Secure": 3,
       "Partially Secure": 1
     },
     "NAVIGATION_HISTORY": {
@@ -387,7 +387,7 @@
     }
   },
   "thirdparty_distribution": {
-    "First-Party": 189,
+    "First-Party": 187,
     "Third-Party": 338
   },
   "thirdparty_by_pii": {
@@ -431,7 +431,7 @@
       "Third-Party": 3
     },
     "LOCATION_AND_DEMOGRAPHICS": {
-      "First-Party": 5,
+      "First-Party": 3,
       "Third-Party": 1
     },
     "NAVIGATION_HISTORY": {
@@ -461,20 +461,20 @@
   },
   "thirdparty_httponly": {
     "First-Party_True": 12,
-    "First-Party_False": 177,
+    "First-Party_False": 175,
     "Third-Party_True": 133,
     "Third-Party_False": 205
   },
   "thirdparty_secure": {
     "First-Party_True": 43,
-    "First-Party_False": 146,
+    "First-Party_False": 144,
     "Third-Party_False": 76,
     "Third-Party_True": 262
   },
   "risk_levels": {
     "Medium Risk": 202,
     "High Risk": 237,
-    "Low Risk": 56,
+    "Low Risk": 54,
     "Critical Risk": 32
   },
   "risk_by_pii": {
@@ -520,7 +520,7 @@
       "Medium Risk": 3
     },
     "LOCATION_AND_DEMOGRAPHICS": {
-      "Low Risk": 5,
+      "Low Risk": 3,
       "Medium Risk": 1
     },
     "NAVIGATION_HISTORY": {
@@ -607,7 +607,6 @@
       "BEHAVIORAL_DATA": 1,
       "IDENTITY_TRACKING": 17,
       "ID_SOLUTIONS_AND_EXCHANGES": 6,
-      "LOCATION_AND_DEMOGRAPHICS": 2,
       "SECURITY_AND_BOT_MITIGATION": 1,
       "SESSION_MANAGEMENT": 5,
       "TECHNICAL_PASSWORDS": 3,
@@ -654,7 +653,7 @@
     "language_code": 13,
     "json_structured": 40,
     "number": 27,
-    "token_id": 41,
+    "token_id": 39,
     "short_text": 76,
     "boolean": 57,
     "uuid": 26,
@@ -667,7 +666,7 @@
     "kanalpodroze.pl": 15,
     "paypo.pl": 8,
     "wroclaw.pl": 19,
-    "polskikoszyk.pl": 11,
+    "polskikoszyk.pl": 10,
     "willsoor.pl": 24,
     "Cloudflare": 43,
     "yanosik.pl": 15,
@@ -748,7 +747,6 @@
     "rtmark.net": 1,
     "crwdcntrl.net": 2,
     "bricks-co.com": 1,
-    "formyca.pl": 2,
     "w3.org": 3,
     "elementor.com": 1,
     "openai.com": 4,
@@ -774,7 +772,8 @@
     "pitbull.pl": 1,
     "shopify.com": 1,
     "cxense.com": 1,
-    "tofivet.pl": 1
+    "tofivet.pl": 1,
+    "formyca.pl": 1
   },
   "category_vendor_flows": [
     [
@@ -1395,16 +1394,6 @@
     [
       "LOCATION_AND_DEMOGRAPHICS",
       "Cloudflare",
-      1
-    ],
-    [
-      "LOCATION_AND_DEMOGRAPHICS",
-      "polskikoszyk.pl",
-      1
-    ],
-    [
-      "LOCATION_AND_DEMOGRAPHICS",
-      "formyca.pl",
       1
     ],
     [
@@ -2193,9 +2182,7 @@
       0.9182958340544896,
       2.321928094887362,
       0.9182958340544896,
-      0.9182958340544896,
-      3.9370927129710718,
-      3.781230285518311
+      0.9182958340544896
     ],
     "NAVIGATION_HISTORY": [
       2.584962500721156,
@@ -2396,7 +2383,7 @@
   "advanced_risk_levels": {
     "Medium": 98,
     "High": 101,
-    "Low": 307,
+    "Low": 305,
     "Critical": 21
   }
 }

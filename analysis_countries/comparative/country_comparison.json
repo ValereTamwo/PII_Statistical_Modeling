@@ -4,9 +4,9 @@
     "category_prevalence": {
       "DIRECT_PII_KEYS": 934,
       "ID_SOLUTIONS_AND_EXCHANGES": 10466,
-      "LOCATION_AND_DEMOGRAPHICS": 763,
+      "LOCATION_AND_DEMOGRAPHICS": 165,
       "TECHNICAL_PASSWORDS": 345,
-      "NAVIGATION_HISTORY": 2548,
+      "NAVIGATION_HISTORY": 2554,
       "UX_AND_PERFORMANCE_ANALYTICS": 2256,
       "SECURITY_AND_BOT_MITIGATION": 1548,
       "APP_STATE_STORAGE": 808,
@@ -31,24 +31,24 @@
     },
     "auth_vs_notauth": {
       "total_items_by_auth": {
-        "AUTH": 50831,
-        "NOTAUTH": 75636
+        "AUTH": 50740,
+        "NOTAUTH": 75135
       },
       "uncategorized_items_by_auth": {
         "AUTH": 11195,
         "NOTAUTH": 26497
       },
       "total_items_with_uncategorized_by_auth": {
-        "AUTH": 62026,
-        "NOTAUTH": 102133
+        "AUTH": 61935,
+        "NOTAUTH": 101632
       }
     },
     "cookie_lifetime_and_provenance": {
-      "total_cookies": 8391,
+      "total_cookies": 8387,
       "lifetime_distribution": {
-        "<6 months": 3228,
+        "<6 months": 3226,
         "6-18 months": 3467,
-        "Session": 1696
+        "Session": 1694
       },
       "lifetime_by_pii": {
         "email_username": {
@@ -119,8 +119,8 @@
         },
         "LOCATION_AND_DEMOGRAPHICS": {
           "6-18 months": 9,
-          "<6 months": 22,
-          "Session": 9
+          "<6 months": 20,
+          "Session": 7
         },
         "NAVIGATION_HISTORY": {
           "<6 months": 59,
@@ -168,8 +168,8 @@
         }
       },
       "thirdparty_distribution": {
-        "First-Party": 4113,
-        "Third-Party": 4278
+        "First-Party": 4111,
+        "Third-Party": 4276
       },
       "thirdparty_by_pii": {
         "email_username": {
@@ -231,8 +231,8 @@
           "First-Party": 53
         },
         "LOCATION_AND_DEMOGRAPHICS": {
-          "First-Party": 26,
-          "Third-Party": 14
+          "First-Party": 24,
+          "Third-Party": 12
         },
         "NAVIGATION_HISTORY": {
           "First-Party": 56,
@@ -554,7 +554,7 @@
         "alextheory.it": 61,
         "letapparelle.com": 43,
         "murripatrizia.it": 16,
-        "1000farmacie.it": 26,
+        "1000farmacie.it": 22,
         "gnoceitalia.com": 17,
         "manilagrace.com": 27,
         "programmaticx.ai": 1,
@@ -681,26 +681,26 @@
       }
     },
     "cookie_security": {
-      "total_cookies": 8391,
+      "total_cookies": 8387,
       "httponly_distribution": {
         "False": 6313,
-        "True": 2078
+        "True": 2074
       },
       "secure_distribution": {
         "True": 5149,
-        "False": 3242
+        "False": 3238
       },
       "samesite_distribution": {
-        "Lax": 4701,
+        "Lax": 4697,
         "No Restriction": 3384,
         "Strict": 306
       },
       "thirdparty_distribution": {
-        "First-Party": 4113,
-        "Third-Party": 4278
+        "First-Party": 4111,
+        "Third-Party": 4276
       },
       "security_posture_distribution": {
-        "Partially Secure": 3327,
+        "Partially Secure": 3323,
         "Lowly Secure": 3114,
         "Secure": 1950
       },
@@ -744,20 +744,20 @@
           }
         },
         "LOCATION_AND_DEMOGRAPHICS": {
-          "total": 40,
-          "httponly_true": 6,
+          "total": 36,
+          "httponly_true": 2,
           "httponly_false": 34,
           "secure_true": 17,
-          "secure_false": 23,
-          "thirdparty_true": 14,
-          "thirdparty_false": 26,
+          "secure_false": 19,
+          "thirdparty_true": 12,
+          "thirdparty_false": 24,
           "samesite": {
-            "Lax": 33,
+            "Lax": 29,
             "No Restriction": 3,
             "Strict": 4
           },
           "security_posture": {
-            "Partially Secure": 19,
+            "Partially Secure": 15,
             "Secure": 2,
             "Lowly Secure": 19
           }
@@ -1122,7 +1122,7 @@
     },
     "by_storage_type": {
       "localstorage": {
-        "total_items": 4342,
+        "total_items": 4330,
         "pii_by_category": {
           "DIRECT_PII": {
             "unknown": 35
@@ -1149,7 +1149,7 @@
             "ID_SOLUTIONS_AND_EXCHANGES": 373
           },
           "LOCATION_AND_DEMOGRAPHICS": {
-            "LOCATION_AND_DEMOGRAPHICS": 74
+            "LOCATION_AND_DEMOGRAPHICS": 62
           },
           "NAVIGATION_HISTORY": {
             "NAVIGATION_HISTORY": 320
@@ -1180,7 +1180,7 @@
           }
         },
         "persistence_distribution": {
-          "Persistent": 4342
+          "Persistent": 4330
         },
         "vendor_counts": {
           "tuscanyleather.it": 11,
@@ -1210,9 +1210,9 @@
           "casadelprofumo.it": 55,
           "bauzaar.it": 681,
           "robinsonpetshop.it": 32,
-          "coopfirenze.it": 17,
+          "coopfirenze.it": 14,
           "stanhome.it": 50,
-          "lafeltrinelli.it": 51,
+          "lafeltrinelli.it": 45,
           "dondisalotti.com": 10,
           "tavolla.com": 55,
           "victoriassecret.com": 58,
@@ -1267,7 +1267,7 @@
           "farmaeurope.eu": 81,
           "lookfantastic.it": 106,
           "ragno.eu": 66,
-          "uwalls.it": 47,
+          "uwalls.it": 44,
           "pacopetshop.it": 3,
           "pescaloccasione.it": 7,
           "nerogiardini.it": 25,
@@ -1295,7 +1295,7 @@
         }
       },
       "sessionstorage": {
-        "total_items": 1965,
+        "total_items": 1963,
         "pii_by_category": {
           "DIRECT_PII": {
             "unknown": 7
@@ -1319,7 +1319,7 @@
             "ID_SOLUTIONS_AND_EXCHANGES": 158
           },
           "LOCATION_AND_DEMOGRAPHICS": {
-            "LOCATION_AND_DEMOGRAPHICS": 40
+            "LOCATION_AND_DEMOGRAPHICS": 38
           },
           "NAVIGATION_HISTORY": {
             "NAVIGATION_HISTORY": 88
@@ -1353,12 +1353,12 @@
           }
         },
         "persistence_distribution": {
-          "Session": 1965
+          "Session": 1963
         },
         "vendor_counts": {
           "ebay.it": 18,
           "victoriassecret.com": 120,
-          "lafeltrinelli.it": 23,
+          "lafeltrinelli.it": 22,
           "maxidi.it": 25,
           "betfair.it": 4,
           "miaspesa.it": 12,
@@ -1391,7 +1391,7 @@
           "lampadadiretta.it": 46,
           "boleco.it": 10,
           "interflora.it": 22,
-          "vistaprint.it": 8,
+          "vistaprint.it": 7,
           "pescaloccasione.it": 5,
           "letapparelle.com": 5,
           "hobbyland.eu": 16,
@@ -1444,7 +1444,7 @@
         }
       },
       "indexeddb": {
-        "total_items": 111769,
+        "total_items": 111195,
         "pii_by_category": {
           "DIRECT_PII": {
             "ip_address": 30,
@@ -1480,10 +1480,10 @@
             "INTERNAL_IDB_KEYS": 913
           },
           "LOCATION_AND_DEMOGRAPHICS": {
-            "LOCATION_AND_DEMOGRAPHICS": 609
+            "LOCATION_AND_DEMOGRAPHICS": 29
           },
           "NAVIGATION_HISTORY": {
-            "NAVIGATION_HISTORY": 2031
+            "NAVIGATION_HISTORY": 2037
           },
           "TECHNICAL_PASSWORDS": {
             "TECHNICAL_PASSWORDS": 94
@@ -1502,13 +1502,13 @@
           }
         },
         "persistence_distribution": {
-          "Persistent": 111769
+          "Persistent": 111195
         },
         "vendor_counts": {
           "ynot.it": 973,
           "glamsport.it": 1163,
-          "decarocalzature.com": 993,
-          "Google": 91862,
+          "decarocalzature.com": 790,
+          "Google": 91836,
           "victoriassecret.com": 5,
           "nkd.com": 7296,
           "online-metrix.net": 17,
@@ -1530,8 +1530,7 @@
           "leastedisoha.com": 8,
           "mondoconv.it": 2,
           "garneroarredamenti.com": 19,
-          "gommenuove.com": 2,
-          "greentheory.it": 345
+          "gommenuove.com": 2
         }
       }
     },
@@ -1542,7 +1541,7 @@
     "category_prevalence": {
       "DIRECT_PII_KEYS": 586,
       "ID_SOLUTIONS_AND_EXCHANGES": 2739,
-      "LOCATION_AND_DEMOGRAPHICS": 144,
+      "LOCATION_AND_DEMOGRAPHICS": 98,
       "TECHNICAL_PASSWORDS": 471,
       "NAVIGATION_HISTORY": 1862,
       "UX_AND_PERFORMANCE_ANALYTICS": 3563,
@@ -1567,7 +1566,7 @@
     },
     "auth_vs_notauth": {
       "total_items_by_auth": {
-        "AUTH": 29376,
+        "AUTH": 29330,
         "NOTAUTH": 30615
       },
       "uncategorized_items_by_auth": {
@@ -1575,16 +1574,16 @@
         "NOTAUTH": 19895
       },
       "total_items_with_uncategorized_by_auth": {
-        "AUTH": 92588,
+        "AUTH": 92542,
         "NOTAUTH": 50510
       }
     },
     "cookie_lifetime_and_provenance": {
-      "total_cookies": 8126,
+      "total_cookies": 8119,
       "lifetime_distribution": {
-        "<6 months": 2882,
+        "<6 months": 2878,
         "6-18 months": 3311,
-        "Session": 1933
+        "Session": 1930
       },
       "lifetime_by_pii": {
         "email_username": {
@@ -1633,8 +1632,8 @@
           "6-18 months": 3
         },
         "LOCATION_AND_DEMOGRAPHICS": {
-          "<6 months": 22,
-          "Session": 5,
+          "<6 months": 18,
+          "Session": 2,
           "6-18 months": 7
         },
         "NAVIGATION_HISTORY": {
@@ -1674,8 +1673,8 @@
         }
       },
       "thirdparty_distribution": {
-        "Third-Party": 5489,
-        "First-Party": 2637
+        "Third-Party": 5485,
+        "First-Party": 2634
       },
       "thirdparty_by_pii": {
         "email_username": {
@@ -1717,8 +1716,8 @@
           "Third-Party": 84
         },
         "LOCATION_AND_DEMOGRAPHICS": {
-          "Third-Party": 28,
-          "First-Party": 6
+          "Third-Party": 24,
+          "First-Party": 3
         },
         "NAVIGATION_HISTORY": {
           "Third-Party": 18,
@@ -1752,7 +1751,7 @@
         }
       },
       "vendor_counts": {
-        "indeed.com": 59,
+        "indeed.com": 58,
         "lequotidien.lu": 57,
         "loopme.me": 22,
         "postrelease.com": 2,
@@ -1860,7 +1859,7 @@
         "services-publics.lu": 20,
         "x.com": 16,
         "Twitter": 33,
-        "globo.com": 97,
+        "globo.com": 91,
         "hybrid.ai": 1,
         "amspbs.com": 3,
         "Taboola": 18,
@@ -2155,28 +2154,28 @@
       }
     },
     "cookie_security": {
-      "total_cookies": 8126,
+      "total_cookies": 8119,
       "httponly_distribution": {
         "True": 2220,
-        "False": 5906
+        "False": 5899
       },
       "secure_distribution": {
-        "True": 5380,
-        "False": 2746
+        "True": 5374,
+        "False": 2745
       },
       "samesite_distribution": {
         "No Restriction": 4313,
-        "Lax": 3716,
+        "Lax": 3709,
         "Strict": 97
       },
       "thirdparty_distribution": {
-        "Third-Party": 5489,
-        "First-Party": 2637
+        "Third-Party": 5485,
+        "First-Party": 2634
       },
       "security_posture_distribution": {
         "Secure": 2090,
-        "Partially Secure": 3420,
-        "Lowly Secure": 2616
+        "Partially Secure": 3414,
+        "Lowly Secure": 2615
       },
       "by_category": {
         "DIRECT_PII_KEYS": {
@@ -2217,21 +2216,21 @@
           }
         },
         "LOCATION_AND_DEMOGRAPHICS": {
-          "total": 34,
+          "total": 27,
           "httponly_true": 17,
-          "httponly_false": 17,
-          "secure_true": 31,
-          "secure_false": 3,
-          "thirdparty_true": 28,
-          "thirdparty_false": 6,
+          "httponly_false": 10,
+          "secure_true": 25,
+          "secure_false": 2,
+          "thirdparty_true": 24,
+          "thirdparty_false": 3,
           "samesite": {
             "No Restriction": 18,
-            "Lax": 16
+            "Lax": 9
           },
           "security_posture": {
             "Secure": 17,
-            "Partially Secure": 14,
-            "Lowly Secure": 3
+            "Partially Secure": 8,
+            "Lowly Secure": 2
           }
         },
         "TECHNICAL_PASSWORDS": {
@@ -2494,7 +2493,7 @@
       "missing_both_flags_by_category": {
         "DIRECT_PII_KEYS": 0,
         "ID_SOLUTIONS_AND_EXCHANGES": 127,
-        "LOCATION_AND_DEMOGRAPHICS": 3,
+        "LOCATION_AND_DEMOGRAPHICS": 2,
         "TECHNICAL_PASSWORDS": 225,
         "NAVIGATION_HISTORY": 17,
         "UX_AND_PERFORMANCE_ANALYTICS": 559,
@@ -2766,7 +2765,7 @@
         }
       },
       "indexeddb": {
-        "total_items": 47881,
+        "total_items": 47842,
         "pii_by_category": {
           "DIRECT_PII": {
             "email_username": 2,
@@ -2805,7 +2804,7 @@
             "INTERNAL_IDB_KEYS": 45
           },
           "LOCATION_AND_DEMOGRAPHICS": {
-            "LOCATION_AND_DEMOGRAPHICS": 45
+            "LOCATION_AND_DEMOGRAPHICS": 6
           },
           "NAVIGATION_HISTORY": {
             "NAVIGATION_HISTORY": 1681
@@ -2833,17 +2832,17 @@
           }
         },
         "persistence_distribution": {
-          "Persistent": 47881
+          "Persistent": 47842
         },
         "vendor_counts": {
           "abola.pt": 99,
           "apkpure.com": 13073,
-          "Google": 30182,
+          "Google": 30144,
           "gamesnacks.com": 265,
           "tripo3d.ai": 13,
           "globo.com": 487,
           "iefimerida.gr": 453,
-          "olybet.fr": 15,
+          "olybet.fr": 14,
           "vdl.lu": 355,
           "nouvelobs.com": 44,
           "sapo.pt": 25,
@@ -2873,7 +2872,7 @@
     "category_prevalence": {
       "DIRECT_PII_KEYS": 798,
       "ID_SOLUTIONS_AND_EXCHANGES": 7745,
-      "LOCATION_AND_DEMOGRAPHICS": 243,
+      "LOCATION_AND_DEMOGRAPHICS": 168,
       "TECHNICAL_PASSWORDS": 444,
       "NAVIGATION_HISTORY": 967,
       "LOCATION_AND_DEMOGRAPHICS.general_loc": 14,
@@ -2897,24 +2896,24 @@
     },
     "auth_vs_notauth": {
       "total_items_by_auth": {
-        "AUTH": 28512,
-        "NOTAUTH": 33573
+        "AUTH": 28499,
+        "NOTAUTH": 33511
       },
       "uncategorized_items_by_auth": {
         "AUTH": 4986,
         "NOTAUTH": 99486
       },
       "total_items_with_uncategorized_by_auth": {
-        "AUTH": 33498,
-        "NOTAUTH": 133059
+        "AUTH": 33485,
+        "NOTAUTH": 132997
       }
     },
     "cookie_lifetime_and_provenance": {
-      "total_cookies": 9222,
+      "total_cookies": 9215,
       "lifetime_distribution": {
         "6-18 months": 3866,
-        "Session": 1812,
-        "<6 months": 3544
+        "Session": 1808,
+        "<6 months": 3541
       },
       "lifetime_by_pii": {
         "email_username": {
@@ -2969,8 +2968,8 @@
         },
         "LOCATION_AND_DEMOGRAPHICS": {
           "6-18 months": 9,
-          "<6 months": 15,
-          "Session": 5
+          "<6 months": 12,
+          "Session": 1
         },
         "NAVIGATION_HISTORY": {
           "<6 months": 13,
@@ -3021,8 +3020,8 @@
         }
       },
       "thirdparty_distribution": {
-        "First-Party": 3529,
-        "Third-Party": 5693
+        "First-Party": 3526,
+        "Third-Party": 5689
       },
       "thirdparty_by_pii": {
         "email_username": {
@@ -3069,8 +3068,8 @@
           "First-Party": 5
         },
         "LOCATION_AND_DEMOGRAPHICS": {
-          "First-Party": 15,
-          "Third-Party": 14
+          "First-Party": 12,
+          "Third-Party": 10
         },
         "NAVIGATION_HISTORY": {
           "Third-Party": 31,
@@ -3437,7 +3436,7 @@
         "mfadsrvr.com": 11,
         "smilewanted.com": 7,
         "imoguia.com": 3,
-        "uber.com": 54,
+        "uber.com": 47,
         "marphezis.com": 1,
         "condominio-moderno.net": 13,
         "flashtalking.com": 1,
@@ -3579,26 +3578,26 @@
       }
     },
     "cookie_security": {
-      "total_cookies": 9222,
+      "total_cookies": 9215,
       "httponly_distribution": {
-        "True": 2444,
+        "True": 2437,
         "False": 6778
       },
       "secure_distribution": {
-        "True": 5812,
+        "True": 5805,
         "False": 3410
       },
       "samesite_distribution": {
         "No Restriction": 4808,
-        "Lax": 4234,
+        "Lax": 4227,
         "Strict": 180
       },
       "thirdparty_distribution": {
-        "Third-Party": 5693,
-        "First-Party": 3529
+        "Third-Party": 5689,
+        "First-Party": 3526
       },
       "security_posture_distribution": {
-        "Secure": 2280,
+        "Secure": 2273,
         "Lowly Secure": 3246,
         "Partially Secure": 3696
       },
@@ -3640,20 +3639,20 @@
           }
         },
         "LOCATION_AND_DEMOGRAPHICS": {
-          "total": 29,
-          "httponly_true": 13,
+          "total": 22,
+          "httponly_true": 6,
           "httponly_false": 16,
-          "secure_true": 24,
+          "secure_true": 17,
           "secure_false": 5,
-          "thirdparty_true": 14,
-          "thirdparty_false": 15,
+          "thirdparty_true": 10,
+          "thirdparty_false": 12,
           "samesite": {
-            "Lax": 24,
+            "Lax": 17,
             "No Restriction": 5
           },
           "security_posture": {
             "Partially Secure": 11,
-            "Secure": 13,
+            "Secure": 6,
             "Lowly Secure": 5
           }
         },
@@ -4007,7 +4006,7 @@
     },
     "by_storage_type": {
       "localstorage": {
-        "total_items": 2802,
+        "total_items": 2799,
         "pii_by_category": {
           "DIRECT_PII": {
             "unknown": 10
@@ -4037,7 +4036,7 @@
             "INFRASTRUCTURE": 22
           },
           "LOCATION_AND_DEMOGRAPHICS": {
-            "LOCATION_AND_DEMOGRAPHICS": 58
+            "LOCATION_AND_DEMOGRAPHICS": 55
           },
           "NAVIGATION_HISTORY": {
             "NAVIGATION_HISTORY": 179
@@ -4062,7 +4061,7 @@
           }
         },
         "persistence_distribution": {
-          "Persistent": 2802
+          "Persistent": 2799
         },
         "vendor_counts": {
           "hyundai.pt": 60,
@@ -4074,7 +4073,7 @@
           "mybesthotel.eu": 2,
           "airbnb.pt": 4,
           "bus-lisboa.com": 10,
-          "temperaturadomar.pt": 107,
+          "temperaturadomar.pt": 106,
           "europcar.pt": 88,
           "lisboasecreta.co": 116,
           "carout.pt": 24,
@@ -4108,7 +4107,7 @@
           "predimed.pt": 3,
           "walkmeguide.com": 4,
           "carris.pt": 7,
-          "remax.pt": 25,
+          "remax.pt": 24,
           "edp.pt": 73,
           "endesa.pt": 92,
           "androidgeek.pt": 13,
@@ -4150,7 +4149,7 @@
           "luximos.pt": 9,
           "egorealestate.com": 1,
           "trovit.pt": 29,
-          "bwin.pt": 17,
+          "bwin.pt": 16,
           "dhlexpress.pt": 6,
           "momondo.pt": 19,
           "topatlantico.pt": 5,
@@ -4165,7 +4164,7 @@
         }
       },
       "sessionstorage": {
-        "total_items": 886,
+        "total_items": 878,
         "pii_by_category": {
           "APP_STATE_STORAGE": {
             "APP_STATE_STORAGE": 27
@@ -4183,7 +4182,7 @@
             "ID_SOLUTIONS_AND_EXCHANGES": 62
           },
           "LOCATION_AND_DEMOGRAPHICS": {
-            "LOCATION_AND_DEMOGRAPHICS": 28
+            "LOCATION_AND_DEMOGRAPHICS": 20
           },
           "NAVIGATION_HISTORY": {
             "NAVIGATION_HISTORY": 40
@@ -4223,7 +4222,7 @@
           }
         },
         "persistence_distribution": {
-          "Session": 886
+          "Session": 878
         },
         "vendor_counts": {
           "lisboasecreta.co": 36,
@@ -4241,7 +4240,7 @@
           "vilagale.com": 4,
           "truck1.pt": 29,
           "portadafrente.com": 13,
-          "kayak.pt": 33,
+          "kayak.pt": 27,
           "pwc.pt": 28,
           "carris.pt": 5,
           "comprarcasa.pt": 7,
@@ -4268,13 +4267,13 @@
           "era.pt": 13,
           "uber.com": 2,
           "tnt.com": 6,
-          "estorilsolcasinos.pt": 17,
+          "estorilsolcasinos.pt": 16,
           "betano.com": 15,
           "daikin.pt": 49,
           "maisconsultores.pt": 1,
           "momondo.pt": 20,
           "bolt.eu": 10,
-          "bwin.pt": 6,
+          "bwin.pt": 5,
           "dhlexpress.pt": 5,
           "elevensports.pt": 8,
           "unl.pt": 2,
@@ -4289,7 +4288,7 @@
         }
       },
       "indexeddb": {
-        "total_items": 49175,
+        "total_items": 49118,
         "pii_by_category": {
           "DIRECT_PII": {
             "ai_correction_pass": 10,
@@ -4317,7 +4316,7 @@
             "INTERNAL_IDB_KEYS": 71
           },
           "LOCATION_AND_DEMOGRAPHICS": {
-            "LOCATION_AND_DEMOGRAPHICS": 128
+            "LOCATION_AND_DEMOGRAPHICS": 71
           },
           "NAVIGATION_HISTORY": {
             "NAVIGATION_HISTORY": 705
@@ -4345,13 +4344,13 @@
           }
         },
         "persistence_distribution": {
-          "Persistent": 49175
+          "Persistent": 49118
         },
         "vendor_counts": {
           "csod.com": 1125,
           "Meta": 278,
           "opodo.pt": 1357,
-          "Google": 32846,
+          "Google": 32802,
           "uber.com": 5,
           "fertagus.pt": 6,
           "walkmeguide.com": 26,
@@ -4373,7 +4372,7 @@
           "issuu.com": 119,
           "bwin.pt": 2688,
           "Pinterest": 13,
-          "betano.pt": 107,
+          "betano.pt": 94,
           "sixt.pt": 7,
           "spinbetterpt1a.com": 1,
           "booking.com": 7,
@@ -4391,7 +4390,7 @@
     "category_prevalence": {
       "DIRECT_PII_KEYS": 240,
       "ID_SOLUTIONS_AND_EXCHANGES": 3240,
-      "LOCATION_AND_DEMOGRAPHICS": 888,
+      "LOCATION_AND_DEMOGRAPHICS": 825,
       "TECHNICAL_PASSWORDS": 255,
       "NAVIGATION_HISTORY": 504,
       "UX_AND_PERFORMANCE_ANALYTICS": 1497,
@@ -4411,24 +4410,24 @@
     },
     "auth_vs_notauth": {
       "total_items_by_auth": {
-        "AUTH": 17482,
-        "NOTAUTH": 25816
+        "AUTH": 17461,
+        "NOTAUTH": 25774
       },
       "uncategorized_items_by_auth": {
         "AUTH": 2088,
         "NOTAUTH": 9401
       },
       "total_items_with_uncategorized_by_auth": {
-        "AUTH": 19570,
-        "NOTAUTH": 35217
+        "AUTH": 19549,
+        "NOTAUTH": 35175
       }
     },
     "cookie_lifetime_and_provenance": {
-      "total_cookies": 5912,
+      "total_cookies": 5900,
       "lifetime_distribution": {
-        "<6 months": 2227,
-        "Session": 1564,
-        "6-18 months": 2121
+        "<6 months": 2223,
+        "Session": 1557,
+        "6-18 months": 2120
       },
       "lifetime_by_pii": {
         "ip_address": {
@@ -4485,9 +4484,9 @@
           "6-18 months": 2
         },
         "LOCATION_AND_DEMOGRAPHICS": {
-          "6-18 months": 32,
-          "Session": 12,
-          "<6 months": 10
+          "6-18 months": 31,
+          "Session": 5,
+          "<6 months": 6
         },
         "NAVIGATION_HISTORY": {
           "<6 months": 19,
@@ -4520,8 +4519,8 @@
         }
       },
       "thirdparty_distribution": {
-        "Third-Party": 4140,
-        "First-Party": 1772
+        "Third-Party": 4131,
+        "First-Party": 1769
       },
       "thirdparty_by_pii": {
         "ip_address": {
@@ -4569,8 +4568,8 @@
           "First-Party": 12
         },
         "LOCATION_AND_DEMOGRAPHICS": {
-          "Third-Party": 32,
-          "First-Party": 22
+          "Third-Party": 23,
+          "First-Party": 19
         },
         "NAVIGATION_HISTORY": {
           "Third-Party": 22,
@@ -4644,7 +4643,7 @@
         "quora.com": 60,
         "Cloudflare": 3,
         "sensorforsakring.se": 24,
-        "b2clogin.com": 13,
+        "b2clogin.com": 12,
         "manpower.se": 17,
         "avima.se": 4,
         "randstad.se": 16,
@@ -4824,7 +4823,7 @@
         "bidr.io": 4,
         "gumgum.com": 1,
         "artportalen.se": 8,
-        "afaforsakring.se": 47,
+        "afaforsakring.se": 36,
         "trustedstack.com": 1,
         "zeotap.com": 1,
         "sonobi.com": 1,
@@ -4977,27 +4976,27 @@
       }
     },
     "cookie_security": {
-      "total_cookies": 5912,
+      "total_cookies": 5900,
       "httponly_distribution": {
-        "True": 1904,
-        "False": 4008
+        "True": 1893,
+        "False": 4007
       },
       "secure_distribution": {
-        "True": 3981,
+        "True": 3969,
         "False": 1931
       },
       "samesite_distribution": {
-        "No Restriction": 3192,
-        "Lax": 2519,
+        "No Restriction": 3191,
+        "Lax": 2508,
         "Strict": 201
       },
       "thirdparty_distribution": {
-        "Third-Party": 4140,
-        "First-Party": 1772
+        "Third-Party": 4131,
+        "First-Party": 1769
       },
       "security_posture_distribution": {
-        "Secure": 1845,
-        "Partially Secure": 2195,
+        "Secure": 1834,
+        "Partially Secure": 2194,
         "Lowly Secure": 1872
       },
       "by_category": {
@@ -5039,21 +5038,21 @@
           }
         },
         "LOCATION_AND_DEMOGRAPHICS": {
-          "total": 54,
-          "httponly_true": 14,
-          "httponly_false": 40,
-          "secure_true": 46,
+          "total": 42,
+          "httponly_true": 3,
+          "httponly_false": 39,
+          "secure_true": 34,
           "secure_false": 8,
-          "thirdparty_true": 32,
-          "thirdparty_false": 22,
+          "thirdparty_true": 23,
+          "thirdparty_false": 19,
           "samesite": {
-            "Lax": 47,
-            "No Restriction": 7
+            "Lax": 36,
+            "No Restriction": 6
           },
           "security_posture": {
-            "Partially Secure": 32,
+            "Partially Secure": 31,
             "Lowly Secure": 8,
-            "Secure": 14
+            "Secure": 3
           }
         },
         "TECHNICAL_PASSWORDS": {
@@ -5315,7 +5314,7 @@
     },
     "by_storage_type": {
       "localstorage": {
-        "total_items": 1989,
+        "total_items": 1969,
         "pii_by_category": {
           "DIRECT_PII": {
             "unknown": 33
@@ -5342,7 +5341,7 @@
             "ID_SOLUTIONS_AND_EXCHANGES": 247
           },
           "LOCATION_AND_DEMOGRAPHICS": {
-            "LOCATION_AND_DEMOGRAPHICS": 51
+            "LOCATION_AND_DEMOGRAPHICS": 31
           },
           "NAVIGATION_HISTORY": {
             "NAVIGATION_HISTORY": 73
@@ -5367,7 +5366,7 @@
           }
         },
         "persistence_distribution": {
-          "Persistent": 1989
+          "Persistent": 1969
         },
         "vendor_counts": {
           "bruksanvisni.ng": 178,
@@ -5381,8 +5380,8 @@
           "idha.com": 5,
           "xtian.nu": 19,
           "onlineklocka.se": 22,
-          "fandom.com": 181,
-          "wikipedia.org": 110,
+          "fandom.com": 180,
+          "wikipedia.org": 97,
           "kalender.se": 70,
           "raddabarnen.se": 4,
           "kalkyleramera.se": 18,
@@ -5404,7 +5403,7 @@
           "sysav.se": 8,
           "axa.se": 3,
           "skolon.com": 13,
-          "bokio.se": 25,
+          "bokio.se": 23,
           "varbi.com": 18,
           "ri.se": 19,
           "svenskaportal.se": 3,
@@ -5431,7 +5430,7 @@
           "sharepoint.com": 1,
           "jonkoping.se": 3,
           "srvatervinning.se": 3,
-          "fieldly.com": 27,
+          "fieldly.com": 23,
           "nextory.se": 12,
           "temadagar.se": 13,
           "laget.se": 3,
@@ -5461,7 +5460,7 @@
         }
       },
       "sessionstorage": {
-        "total_items": 464,
+        "total_items": 463,
         "pii_by_category": {
           "DIRECT_PII": {
             "unknown": 4
@@ -5487,9 +5486,6 @@
           "ID_SOLUTIONS_AND_EXCHANGES": {
             "ID_SOLUTIONS_AND_EXCHANGES": 54
           },
-          "LOCATION_AND_DEMOGRAPHICS": {
-            "LOCATION_AND_DEMOGRAPHICS": 8
-          },
           "NAVIGATION_HISTORY": {
             "NAVIGATION_HISTORY": 33
           },
@@ -5513,10 +5509,13 @@
           },
           "INFRASTRUCTURE": {
             "INFRASTRUCTURE": 1
+          },
+          "LOCATION_AND_DEMOGRAPHICS": {
+            "LOCATION_AND_DEMOGRAPHICS": 7
           }
         },
         "persistence_distribution": {
-          "Session": 464
+          "Session": 463
         },
         "vendor_counts": {
           "gooya.com": 35,
@@ -5535,7 +5534,6 @@
           "fub.se": 1,
           "kalender.se": 26,
           "wikipedia.org": 3,
-          "raddabarnen.se": 1,
           "missatsamtal.se": 2,
           "quora.com": 1,
           "jobtome.com": 6,
@@ -5572,7 +5570,7 @@
         }
       },
       "indexeddb": {
-        "total_items": 34933,
+        "total_items": 34903,
         "pii_by_category": {
           "DIRECT_PII": {
             "email_username": 4,
@@ -5605,7 +5603,7 @@
             "INTERNAL_IDB_KEYS": 74
           },
           "LOCATION_AND_DEMOGRAPHICS": {
-            "LOCATION_AND_DEMOGRAPHICS": 775
+            "LOCATION_AND_DEMOGRAPHICS": 745
           },
           "NAVIGATION_HISTORY": {
             "NAVIGATION_HISTORY": 362
@@ -5630,11 +5628,11 @@
           }
         },
         "persistence_distribution": {
-          "Persistent": 34933
+          "Persistent": 34903
         },
         "vendor_counts": {
           "storytel.com": 53,
-          "Google": 30302,
+          "Google": 30272,
           "rodakorset.se": 1643,
           "fandom.com": 996,
           "easydmp.net": 2,
@@ -5658,9 +5656,9 @@
     "category_prevalence": {
       "DIRECT_PII_KEYS": 736,
       "ID_SOLUTIONS_AND_EXCHANGES": 8484,
-      "LOCATION_AND_DEMOGRAPHICS": 386,
+      "LOCATION_AND_DEMOGRAPHICS": 304,
       "TECHNICAL_PASSWORDS": 1128,
-      "NAVIGATION_HISTORY": 1463,
+      "NAVIGATION_HISTORY": 1467,
       "LOCATION_AND_DEMOGRAPHICS.general_loc": 33,
       "UX_AND_PERFORMANCE_ANALYTICS": 5210,
       "SECURITY_AND_BOT_MITIGATION": 1531,
@@ -5692,16 +5690,16 @@
     },
     "auth_vs_notauth": {
       "total_items_by_auth": {
-        "AUTH": 38653,
-        "NOTAUTH": 44073
+        "AUTH": 38646,
+        "NOTAUTH": 44002
       },
       "uncategorized_items_by_auth": {
         "AUTH": 9517,
         "NOTAUTH": 12351
       },
       "total_items_with_uncategorized_by_auth": {
-        "AUTH": 48170,
-        "NOTAUTH": 56424
+        "AUTH": 48163,
+        "NOTAUTH": 56353
       }
     },
     "cookie_lifetime_and_provenance": {
@@ -6859,7 +6857,7 @@
     },
     "by_storage_type": {
       "localstorage": {
-        "total_items": 9391,
+        "total_items": 9390,
         "pii_by_category": {
           "DIRECT_PII": {
             "unknown": 62
@@ -6898,7 +6896,7 @@
             "LOCATION_AND_DEMOGRAPHICS.general_loc": 16
           },
           "LOCATION_AND_DEMOGRAPHICS": {
-            "LOCATION_AND_DEMOGRAPHICS": 107
+            "LOCATION_AND_DEMOGRAPHICS": 106
           },
           "NAVIGATION_HISTORY": {
             "NAVIGATION_HISTORY": 236
@@ -6953,7 +6951,7 @@
           }
         },
         "persistence_distribution": {
-          "Persistent": 9391
+          "Persistent": 9390
         },
         "vendor_counts": {
           "primor.eu": 127,
@@ -7001,7 +6999,7 @@
           "diariodecadiz.es": 150,
           "wikiloc.com": 11,
           "laverdad.es": 361,
-          "infolibre.es": 20,
+          "infolibre.es": 19,
           "tvguia.es": 65,
           "recetasderechupete.com": 116,
           "lavozdealmeria.com": 30,
@@ -7076,7 +7074,7 @@
         }
       },
       "sessionstorage": {
-        "total_items": 2939,
+        "total_items": 2932,
         "pii_by_category": {
           "DIRECT_PII": {
             "unknown": 15
@@ -7105,9 +7103,6 @@
           "INFRASTRUCTURE": {
             "INFRASTRUCTURE": 2
           },
-          "LOCATION_AND_DEMOGRAPHICS": {
-            "LOCATION_AND_DEMOGRAPHICS": 32
-          },
           "NAVIGATION_HISTORY": {
             "NAVIGATION_HISTORY": 219
           },
@@ -7129,6 +7124,9 @@
           "UX_AND_PERFORMANCE_ANALYTICS": {
             "UX_AND_PERFORMANCE_ANALYTICS": 533
           },
+          "LOCATION_AND_DEMOGRAPHICS": {
+            "LOCATION_AND_DEMOGRAPHICS": 25
+          },
           "FINGERPRINTING_ADVANCED": {
             "FINGERPRINTING_ADVANCED": 1
           },
@@ -7137,7 +7135,7 @@
           }
         },
         "persistence_distribution": {
-          "Session": 2939
+          "Session": 2932
         },
         "vendor_counts": {
           "bancosantander.es": 67,
@@ -7151,8 +7149,8 @@
           "elmundo.es": 77,
           "moncloa.com": 16,
           "merkal.com": 35,
-          "noracora.com": 127,
-          "bbva.es": 105,
+          "noracora.com": 124,
+          "bbva.es": 101,
           "parfois.com": 51,
           "endesa.com": 79,
           "pequerecetas.com": 40,
@@ -7247,7 +7245,7 @@
         }
       },
       "indexeddb": {
-        "total_items": 50904,
+        "total_items": 50834,
         "pii_by_category": {
           "DIRECT_PII": {
             "city_encoded": 1,
@@ -7286,10 +7284,10 @@
             "INTERNAL_IDB_KEYS": 230
           },
           "LOCATION_AND_DEMOGRAPHICS": {
-            "LOCATION_AND_DEMOGRAPHICS": 155
+            "LOCATION_AND_DEMOGRAPHICS": 81
           },
           "NAVIGATION_HISTORY": {
-            "NAVIGATION_HISTORY": 954
+            "NAVIGATION_HISTORY": 958
           },
           "SECURITY_AND_BOT_MITIGATION": {
             "SECURITY_AND_BOT_MITIGATION": 342
@@ -7308,7 +7306,7 @@
           }
         },
         "persistence_distribution": {
-          "Persistent": 50904
+          "Persistent": 50834
         },
         "vendor_counts": {
           "directoalpaladar.com": 73,
@@ -7316,7 +7314,7 @@
           "primevideo.com": 6040,
           "diariodecadiz.es": 256,
           "ecartelera.com": 10,
-          "Google": 35659,
+          "Google": 35589,
           "noracora.com": 889,
           "fiftyoutlet.com": 1605,
           "hero-wars.com": 120,
@@ -7382,9 +7380,9 @@
     "category_prevalence": {
       "DIRECT_PII_KEYS": 204,
       "ID_SOLUTIONS_AND_EXCHANGES": 6981,
-      "LOCATION_AND_DEMOGRAPHICS": 443,
+      "LOCATION_AND_DEMOGRAPHICS": 426,
       "TECHNICAL_PASSWORDS": 496,
-      "NAVIGATION_HISTORY": 318,
+      "NAVIGATION_HISTORY": 319,
       "LOCATION_AND_DEMOGRAPHICS.general_loc": 6,
       "UX_AND_PERFORMANCE_ANALYTICS": 2088,
       "SECURITY_AND_BOT_MITIGATION": 643,
@@ -7409,24 +7407,24 @@
     },
     "auth_vs_notauth": {
       "total_items_by_auth": {
-        "AUTH": 11265,
-        "NOTAUTH": 24364
+        "AUTH": 11259,
+        "NOTAUTH": 24354
       },
       "uncategorized_items_by_auth": {
         "AUTH": 3725,
         "NOTAUTH": 19285
       },
       "total_items_with_uncategorized_by_auth": {
-        "AUTH": 14990,
-        "NOTAUTH": 43649
+        "AUTH": 14984,
+        "NOTAUTH": 43639
       }
     },
     "cookie_lifetime_and_provenance": {
-      "total_cookies": 7059,
+      "total_cookies": 7055,
       "lifetime_distribution": {
-        "<6 months": 2820,
+        "<6 months": 2819,
         "6-18 months": 2768,
-        "Session": 1471
+        "Session": 1468
       },
       "lifetime_by_pii": {
         "ai_refined": {
@@ -7478,9 +7476,9 @@
           "Session": 3
         },
         "LOCATION_AND_DEMOGRAPHICS": {
-          "Session": 8,
           "6-18 months": 22,
-          "<6 months": 42
+          "<6 months": 41,
+          "Session": 5
         },
         "NAVIGATION_HISTORY": {
           "Session": 12,
@@ -7540,8 +7538,8 @@
         }
       },
       "thirdparty_distribution": {
-        "Third-Party": 4217,
-        "First-Party": 2842
+        "Third-Party": 4214,
+        "First-Party": 2841
       },
       "thirdparty_by_pii": {
         "ai_refined": {
@@ -7585,8 +7583,8 @@
           "First-Party": 2
         },
         "LOCATION_AND_DEMOGRAPHICS": {
-          "Third-Party": 30,
-          "First-Party": 42
+          "First-Party": 41,
+          "Third-Party": 27
         },
         "NAVIGATION_HISTORY": {
           "Third-Party": 9,
@@ -7679,7 +7677,7 @@
         "bikeexchange.de": 18,
         "Google": 257,
         "90min.de": 143,
-        "liga.nu": 43,
+        "liga.nu": 40,
         "Taboola": 46,
         "schneehoehen.de": 9,
         "PubMatic": 119,
@@ -7738,7 +7736,7 @@
         "yotpo.com": 1,
         "street-one.com": 3,
         "cecil.com": 3,
-        "cecil.de": 23,
+        "cecil.de": 22,
         "smadex.com": 1,
         "missena.io": 2,
         "marphezis.com": 1,
@@ -8053,28 +8051,28 @@
       }
     },
     "cookie_security": {
-      "total_cookies": 7059,
+      "total_cookies": 7055,
       "httponly_distribution": {
         "False": 5633,
-        "True": 1426
+        "True": 1422
       },
       "secure_distribution": {
-        "True": 4747,
+        "True": 4743,
         "False": 2312
       },
       "samesite_distribution": {
         "Strict": 182,
-        "Lax": 3462,
-        "No Restriction": 3415
+        "Lax": 3461,
+        "No Restriction": 3412
       },
       "thirdparty_distribution": {
-        "First-Party": 2842,
-        "Third-Party": 4217
+        "First-Party": 2841,
+        "Third-Party": 4214
       },
       "security_posture_distribution": {
         "Partially Secure": 3453,
         "Lowly Secure": 2246,
-        "Secure": 1360
+        "Secure": 1356
       },
       "by_category": {
         "DIRECT_PII_KEYS": {
@@ -8116,20 +8114,20 @@
           }
         },
         "LOCATION_AND_DEMOGRAPHICS": {
-          "total": 72,
-          "httponly_true": 12,
+          "total": 68,
+          "httponly_true": 8,
           "httponly_false": 60,
-          "secure_true": 64,
+          "secure_true": 60,
           "secure_false": 8,
-          "thirdparty_true": 30,
-          "thirdparty_false": 42,
+          "thirdparty_true": 27,
+          "thirdparty_false": 41,
           "samesite": {
-            "No Restriction": 13,
-            "Lax": 59
+            "Lax": 58,
+            "No Restriction": 10
           },
           "security_posture": {
-            "Secure": 12,
             "Partially Secure": 52,
+            "Secure": 8,
             "Lowly Secure": 8
           }
         },
@@ -8494,7 +8492,7 @@
     },
     "by_storage_type": {
       "localstorage": {
-        "total_items": 3404,
+        "total_items": 3401,
         "pii_by_category": {
           "APP_STATE_STORAGE": {
             "APP_STATE_STORAGE": 242
@@ -8515,7 +8513,7 @@
             "ID_SOLUTIONS_AND_EXCHANGES": 448
           },
           "LOCATION_AND_DEMOGRAPHICS": {
-            "LOCATION_AND_DEMOGRAPHICS": 35
+            "LOCATION_AND_DEMOGRAPHICS": 32
           },
           "NAVIGATION_HISTORY": {
             "NAVIGATION_HISTORY": 136
@@ -8552,7 +8550,7 @@
           }
         },
         "persistence_distribution": {
-          "Persistent": 3404
+          "Persistent": 3401
         },
         "vendor_counts": {
           "michaelkors.de": 92,
@@ -8624,7 +8622,7 @@
           "mainova.de": 27,
           "sportdeal24.de": 21,
           "esbgforum.de": 135,
-          "schrott24.de": 54,
+          "schrott24.de": 52,
           "bfv.de": 25,
           "mein-freiburgmarathon.de": 9,
           "burnhard.de": 35,
@@ -8637,7 +8635,7 @@
           "union-zeughaus.de": 16,
           "street-one.de": 3,
           "gls-pakete.de": 17,
-          "hvw-online.org": 10,
+          "hvw-online.org": 9,
           "vfb.de": 27,
           "liga-db.de": 9,
           "airliners.de": 35,
@@ -8667,7 +8665,7 @@
         }
       },
       "sessionstorage": {
-        "total_items": 974,
+        "total_items": 965,
         "pii_by_category": {
           "DIRECT_PII": {
             "unknown": 1
@@ -8694,7 +8692,7 @@
             "ID_SOLUTIONS_AND_EXCHANGES": 101
           },
           "LOCATION_AND_DEMOGRAPHICS": {
-            "LOCATION_AND_DEMOGRAPHICS": 45
+            "LOCATION_AND_DEMOGRAPHICS": 36
           },
           "NAVIGATION_HISTORY": {
             "NAVIGATION_HISTORY": 46
@@ -8719,7 +8717,7 @@
           }
         },
         "persistence_distribution": {
-          "Session": 974
+          "Session": 965
         },
         "vendor_counts": {
           "jack-wolfskin.de": 23,
@@ -8730,13 +8728,13 @@
           "michaelkors.de": 50,
           "kastner-oehler.de": 4,
           "rbleipzig.com": 5,
-          "shopdisney.de": 12,
+          "shopdisney.de": 11,
           "reviersport.de": 7,
           "tischtennis.de": 2,
           "technikboerse.com": 2,
           "evlfans.de": 3,
           "sportpirate.com": 12,
-          "bmw.de": 78,
+          "bmw.de": 77,
           "lookfantastic.de": 8,
           "btv.de": 4,
           "handyvertrag.de": 7,
@@ -8745,7 +8743,7 @@
           "wirkaufendeinauto.de": 7,
           "proplanta.de": 1,
           "kopp-verlag.de": 34,
-          "dm.de": 17,
+          "dm.de": 11,
           "vfb.de": 5,
           "anpfiff.info": 2,
           "asphaltgold.com": 24,
@@ -8761,7 +8759,7 @@
           "paprika-shopping.de": 6,
           "burnhard.de": 11,
           "graefin-von-zeppelin.de": 13,
-          "mainova.de": 6,
+          "mainova.de": 5,
           "bettwaren-shop.de": 22,
           "butlers.com": 6,
           "poloniamarket.de": 7,
@@ -8840,10 +8838,10 @@
             "INTERNAL_IDB_KEYS": 121
           },
           "LOCATION_AND_DEMOGRAPHICS": {
-            "LOCATION_AND_DEMOGRAPHICS": 291
+            "LOCATION_AND_DEMOGRAPHICS": 290
           },
           "NAVIGATION_HISTORY": {
-            "NAVIGATION_HISTORY": 116
+            "NAVIGATION_HISTORY": 117
           },
           "SECURITY_AND_BOT_MITIGATION": {
             "SECURITY_AND_BOT_MITIGATION": 86
@@ -8911,9 +8909,9 @@
     "category_prevalence": {
       "DIRECT_PII_KEYS": 2666,
       "ID_SOLUTIONS_AND_EXCHANGES": 4044,
-      "LOCATION_AND_DEMOGRAPHICS": 794,
+      "LOCATION_AND_DEMOGRAPHICS": 138,
       "TECHNICAL_PASSWORDS": 578,
-      "NAVIGATION_HISTORY": 717,
+      "NAVIGATION_HISTORY": 720,
       "LOCATION_AND_DEMOGRAPHICS.general_loc": 4,
       "UX_AND_PERFORMANCE_ANALYTICS": 2322,
       "SECURITY_AND_BOT_MITIGATION": 631,
@@ -8934,16 +8932,16 @@
     },
     "auth_vs_notauth": {
       "total_items_by_auth": {
-        "AUTH": 21362,
-        "NOTAUTH": 81034
+        "AUTH": 20993,
+        "NOTAUTH": 80750
       },
       "uncategorized_items_by_auth": {
         "AUTH": 14696,
         "NOTAUTH": 32580
       },
       "total_items_with_uncategorized_by_auth": {
-        "AUTH": 36058,
-        "NOTAUTH": 113614
+        "AUTH": 35689,
+        "NOTAUTH": 113330
       }
     },
     "cookie_lifetime_and_provenance": {
@@ -9946,7 +9944,7 @@
     },
     "by_storage_type": {
       "localstorage": {
-        "total_items": 2397,
+        "total_items": 2366,
         "pii_by_category": {
           "DIRECT_PII": {
             "unknown": 9
@@ -9973,7 +9971,7 @@
             "INFRASTRUCTURE": 13
           },
           "LOCATION_AND_DEMOGRAPHICS": {
-            "LOCATION_AND_DEMOGRAPHICS": 102
+            "LOCATION_AND_DEMOGRAPHICS": 71
           },
           "NAVIGATION_HISTORY": {
             "NAVIGATION_HISTORY": 124
@@ -10007,11 +10005,11 @@
           }
         },
         "persistence_distribution": {
-          "Persistent": 2397
+          "Persistent": 2366
         },
         "vendor_counts": {
           "univ-grenoble-alpes.fr": 8,
-          "avec.fr": 26,
+          "avec.fr": 25,
           "pasteur.fr": 44,
           "surveymonkey.com": 16,
           "fichier-pdf.fr": 27,
@@ -10049,7 +10047,7 @@
           "yourketo.diet": 21,
           "mesdepanneurs.fr": 47,
           "pass-education.fr": 9,
-          "soshape.com": 54,
+          "soshape.com": 25,
           "ramsayservices.fr": 22,
           "caf.fr": 16,
           "forumconstruire.com": 11,
@@ -10059,7 +10057,7 @@
           "logicrdv.fr": 2,
           "monepi.fr": 2,
           "universites-numeriques.fr": 3,
-          "sudouest.fr": 135,
+          "sudouest.fr": 134,
           "sips-services.com": 3,
           "cartegriseminute.fr": 16,
           "onisep.fr": 6,
@@ -10225,7 +10223,7 @@
         }
       },
       "indexeddb": {
-        "total_items": 91726,
+        "total_items": 91104,
         "pii_by_category": {
           "DIRECT_PII": {
             "ip_address": 40,
@@ -10259,10 +10257,10 @@
             "INTERNAL_IDB_KEYS": 22
           },
           "LOCATION_AND_DEMOGRAPHICS": {
-            "LOCATION_AND_DEMOGRAPHICS": 643
+            "LOCATION_AND_DEMOGRAPHICS": 18
           },
           "NAVIGATION_HISTORY": {
-            "NAVIGATION_HISTORY": 545
+            "NAVIGATION_HISTORY": 548
           },
           "SECURITY_AND_BOT_MITIGATION": {
             "SECURITY_AND_BOT_MITIGATION": 125
@@ -10281,20 +10279,19 @@
           }
         },
         "persistence_distribution": {
-          "Persistent": 91726
+          "Persistent": 91104
         },
         "vendor_counts": {
           "idgarages.com": 2007,
           "avec.fr": 155,
           "brevo.com": 758,
-          "oscaro.com": 3218,
+          "oscaro.com": 3018,
           "croq-kilos.com": 119,
-          "Google": 83317,
+          "Google": 83133,
           "lepermislibre.fr": 36,
           "votreopinion.fr": 28,
           "belin.education": 7,
           "easydmp.net": 35,
-          "soshape.com": 238,
           "surveymonkey.com": 8,
           "l-echo-des-seniors.fr": 236,
           "holissence.com": 1130,
@@ -10319,7 +10316,7 @@
     "category_prevalence": {
       "DIRECT_PII_KEYS": 625,
       "ID_SOLUTIONS_AND_EXCHANGES": 5490,
-      "LOCATION_AND_DEMOGRAPHICS": 744,
+      "LOCATION_AND_DEMOGRAPHICS": 484,
       "TECHNICAL_PASSWORDS": 511,
       "NAVIGATION_HISTORY": 1670,
       "LOCATION_AND_DEMOGRAPHICS.general_loc": 3,
@@ -10341,16 +10338,16 @@
     },
     "auth_vs_notauth": {
       "total_items_by_auth": {
-        "AUTH": 22218,
-        "NOTAUTH": 17145
+        "AUTH": 22053,
+        "NOTAUTH": 17050
       },
       "uncategorized_items_by_auth": {
         "AUTH": 4484,
         "NOTAUTH": 643
       },
       "total_items_with_uncategorized_by_auth": {
-        "AUTH": 26702,
-        "NOTAUTH": 17788
+        "AUTH": 26537,
+        "NOTAUTH": 17693
       }
     },
     "cookie_lifetime_and_provenance": {
@@ -11302,7 +11299,7 @@
     },
     "by_storage_type": {
       "localstorage": {
-        "total_items": 6375,
+        "total_items": 6284,
         "pii_by_category": {
           "DIRECT_PII": {
             "unknown": 24
@@ -11332,7 +11329,7 @@
             "INFRASTRUCTURE": 42
           },
           "LOCATION_AND_DEMOGRAPHICS": {
-            "LOCATION_AND_DEMOGRAPHICS": 265
+            "LOCATION_AND_DEMOGRAPHICS": 174
           },
           "NAVIGATION_HISTORY": {
             "NAVIGATION_HISTORY": 525
@@ -11360,16 +11357,16 @@
           }
         },
         "persistence_distribution": {
-          "Persistent": 6375
+          "Persistent": 6284
         },
         "vendor_counts": {
           "barebyvogue.com": 61,
           "onedamelane.com": 96,
           "dogdeals.ie": 21,
-          "stevemadden.eu": 321,
+          "stevemadden.eu": 319,
           "watchfinder.ie": 71,
           "xlmoto.ie": 65,
-          "seedsireland.ie": 155,
+          "seedsireland.ie": 114,
           "therapyboutique.ie": 17,
           "cheap-workwear.com": 44,
           "halfords.ie": 166,
@@ -11377,18 +11374,18 @@
           "discounthealthstore.ie": 91,
           "quooker.ie": 13,
           "jdfurniture.ie": 3,
-          "nordicprostore.com": 31,
+          "nordicprostore.com": 30,
           "appliancesdelivered.ie": 136,
           "mossbros.ie": 39,
           "tesco.ie": 32,
-          "themanicurecompany.com": 82,
+          "themanicurecompany.com": 80,
           "dunnesstores.com": 67,
           "tonykealys.com": 37,
           "whytes.ie": 33,
           "coopsuperstores.ie": 44,
           "airsoftguns.ie": 6,
           "iherb.com": 96,
-          "pamelascott.com": 141,
+          "pamelascott.com": 108,
           "centra.ie": 18,
           "countrylife.ie": 17,
           "hirehere.ie": 4,
@@ -11411,7 +11408,7 @@
           "ivorylane.ie": 26,
           "truckelectrics.com": 31,
           "mcgautostyling.com": 12,
-          "snickersdirect.ie": 105,
+          "snickersdirect.ie": 100,
           "220.lv": 102,
           "supersoil.ie": 21,
           "fabiani.ie": 118,
@@ -11433,14 +11430,14 @@
           "mvihazel.com": 9,
           "com.br": 115,
           "zulily.com": 235,
-          "woodfloorstore.ie": 110,
+          "woodfloorstore.ie": 107,
           "littleones.ie": 108,
           "pittman.ie": 301,
           "woodworkers.ie": 25,
           "grassmen.com": 121,
           "ease.ie": 164,
           "harveynorman.ie": 59,
-          "schoolbooks.ie": 134,
+          "schoolbooks.ie": 130,
           "omearacamping.com": 34,
           "bookinghawk.com": 1,
           "shopgireland.com": 2,
@@ -11477,7 +11474,7 @@
         }
       },
       "sessionstorage": {
-        "total_items": 7640,
+        "total_items": 7636,
         "pii_by_category": {
           "APP_STATE_STORAGE": {
             "APP_STATE_STORAGE": 94
@@ -11501,7 +11498,7 @@
             "ID_SOLUTIONS_AND_EXCHANGES": 889
           },
           "LOCATION_AND_DEMOGRAPHICS": {
-            "LOCATION_AND_DEMOGRAPHICS": 52
+            "LOCATION_AND_DEMOGRAPHICS": 48
           },
           "NAVIGATION_HISTORY": {
             "NAVIGATION_HISTORY": 296
@@ -11535,7 +11532,7 @@
           }
         },
         "persistence_distribution": {
-          "Session": 7640
+          "Session": 7636
         },
         "vendor_counts": {
           "hirehere.ie": 4,
@@ -11595,7 +11592,7 @@
           "divine.ie": 9,
           "canellalane.ie": 54,
           "lavishalice.com": 40,
-          "zulily.com": 135,
+          "zulily.com": 131,
           "folkster.com": 20,
           "ganlys.ie": 21,
           "passenger-clothing.com": 25,
@@ -11638,7 +11635,7 @@
         }
       },
       "indexeddb": {
-        "total_items": 13803,
+        "total_items": 13638,
         "pii_by_category": {
           "DIRECT_PII": {
             "ai_context_aware": 8,
@@ -11663,7 +11660,7 @@
             "INFRASTRUCTURE": 16
           },
           "LOCATION_AND_DEMOGRAPHICS": {
-            "LOCATION_AND_DEMOGRAPHICS": 356
+            "LOCATION_AND_DEMOGRAPHICS": 191
           },
           "NAVIGATION_HISTORY": {
             "NAVIGATION_HISTORY": 684
@@ -11685,24 +11682,23 @@
           }
         },
         "persistence_distribution": {
-          "Persistent": 13803
+          "Persistent": 13638
         },
         "vendor_counts": {
           "Pinterest": 2869,
-          "target.com": 113,
+          "target.com": 88,
           "dunnesstores.com": 428,
-          "Google": 3140,
+          "Google": 3136,
           "freshchat.com": 6180,
           "themanicurecompany.com": 63,
           "interflora.ie": 58,
-          "pamelascott.com": 58,
+          "pamelascott.com": 14,
           "wixapps.net": 146,
           "220.lv": 111,
           "tesco.ie": 42,
           "aliexpress.com": 3,
           "quooker.com": 15,
           "vimeo.com": 15,
-          "seedsireland.ie": 92,
           "Microsoft": 64,
           "zulily.com": 31,
           "katespade.eu": 216,
@@ -11719,7 +11715,7 @@
     "user_id": "NL_0694",
     "category_prevalence": {
       "ID_SOLUTIONS_AND_EXCHANGES": 806,
-      "LOCATION_AND_DEMOGRAPHICS": 127,
+      "LOCATION_AND_DEMOGRAPHICS": 112,
       "TECHNICAL_PASSWORDS": 1459,
       "NAVIGATION_HISTORY": 398,
       "UX_AND_PERFORMANCE_ANALYTICS": 3462,
@@ -11742,16 +11738,16 @@
     },
     "auth_vs_notauth": {
       "total_items_by_auth": {
-        "AUTH": 8796,
-        "NOTAUTH": 11427
+        "AUTH": 8792,
+        "NOTAUTH": 11416
       },
       "uncategorized_items_by_auth": {
         "AUTH": 476,
         "NOTAUTH": 1272
       },
       "total_items_with_uncategorized_by_auth": {
-        "AUTH": 9272,
-        "NOTAUTH": 12699
+        "AUTH": 9268,
+        "NOTAUTH": 12688
       }
     },
     "cookie_lifetime_and_provenance": {
@@ -12771,7 +12767,7 @@
         }
       },
       "sessionstorage": {
-        "total_items": 1777,
+        "total_items": 1764,
         "pii_by_category": {
           "DIRECT_PII": {
             "unknown": 20
@@ -12798,7 +12794,7 @@
             "ID_SOLUTIONS_AND_EXCHANGES": 164
           },
           "LOCATION_AND_DEMOGRAPHICS": {
-            "LOCATION_AND_DEMOGRAPHICS": 39
+            "LOCATION_AND_DEMOGRAPHICS": 26
           },
           "NAVIGATION_HISTORY": {
             "NAVIGATION_HISTORY": 139
@@ -12829,7 +12825,7 @@
           }
         },
         "persistence_distribution": {
-          "Session": 1777
+          "Session": 1764
         },
         "vendor_counts": {
           "bwbrabant.nl": 27,
@@ -12852,11 +12848,11 @@
           "codd15.ru": 2,
           "spaww.nl": 13,
           "alphenaandenrijn.nl": 5,
-          "svb.nl": 126,
+          "svb.nl": 114,
           "ambtenarensalaris.nl": 4,
           "rijksoverheid.nl": 30,
           "nvwa.nl": 33,
-          "netherlandsworldwide.nl": 46,
+          "netherlandsworldwide.nl": 45,
           "justis.nl": 28,
           "cbs.nl": 63,
           "government.nl": 39,
@@ -12896,7 +12892,7 @@
         }
       },
       "indexeddb": {
-        "total_items": 8633,
+        "total_items": 8631,
         "pii_by_category": {
           "DIRECT_PII": {
             "gender": 2,
@@ -12934,7 +12930,7 @@
             "UX_AND_PERFORMANCE_ANALYTICS": 1
           },
           "LOCATION_AND_DEMOGRAPHICS": {
-            "LOCATION_AND_DEMOGRAPHICS": 3
+            "LOCATION_AND_DEMOGRAPHICS": 1
           },
           "TECHNICAL_PASSWORDS": {
             "TECHNICAL_PASSWORDS": 2
@@ -12944,12 +12940,12 @@
           }
         },
         "persistence_distribution": {
-          "Persistent": 8633
+          "Persistent": 8631
         },
         "vendor_counts": {
           "amsterdam.nl": 250,
           "vk.ru": 60,
-          "Google": 8241,
+          "Google": 8239,
           "youtube-nocookie.com": 4,
           "svhw.nl": 2,
           "Microsoft": 50,
@@ -12968,7 +12964,7 @@
     "category_prevalence": {
       "DIRECT_PII_KEYS": 656,
       "ID_SOLUTIONS_AND_EXCHANGES": 4031,
-      "LOCATION_AND_DEMOGRAPHICS": 608,
+      "LOCATION_AND_DEMOGRAPHICS": 118,
       "TECHNICAL_PASSWORDS": 358,
       "NAVIGATION_HISTORY": 600,
       "LOCATION_AND_DEMOGRAPHICS.general_loc": 3,
@@ -12990,24 +12986,24 @@
     },
     "auth_vs_notauth": {
       "total_items_by_auth": {
-        "AUTH": 12143,
-        "NOTAUTH": 22136
+        "AUTH": 11923,
+        "NOTAUTH": 21866
       },
       "uncategorized_items_by_auth": {
         "AUTH": 13150,
         "NOTAUTH": 10999
       },
       "total_items_with_uncategorized_by_auth": {
-        "AUTH": 25293,
-        "NOTAUTH": 33135
+        "AUTH": 25073,
+        "NOTAUTH": 32865
       }
     },
     "cookie_lifetime_and_provenance": {
-      "total_cookies": 11026,
+      "total_cookies": 11022,
       "lifetime_distribution": {
-        "<6 months": 4799,
-        "6-18 months": 4344,
-        "Session": 1883
+        "<6 months": 4797,
+        "6-18 months": 4343,
+        "Session": 1882
       },
       "lifetime_by_pii": {
         "email_username": {
@@ -13062,9 +13058,9 @@
           "Session": 3
         },
         "LOCATION_AND_DEMOGRAPHICS": {
-          "<6 months": 27,
-          "6-18 months": 13,
-          "Session": 11
+          "<6 months": 25,
+          "6-18 months": 12,
+          "Session": 10
         },
         "NAVIGATION_HISTORY": {
           "Session": 29,
@@ -13115,8 +13111,8 @@
         }
       },
       "thirdparty_distribution": {
-        "First-Party": 5180,
-        "Third-Party": 5846
+        "First-Party": 5177,
+        "Third-Party": 5845
       },
       "thirdparty_by_pii": {
         "email_username": {
@@ -13162,8 +13158,8 @@
           "Third-Party": 3
         },
         "LOCATION_AND_DEMOGRAPHICS": {
-          "First-Party": 33,
-          "Third-Party": 18
+          "First-Party": 30,
+          "Third-Party": 17
         },
         "NAVIGATION_HISTORY": {
           "First-Party": 38,
@@ -13212,7 +13208,7 @@
         "kanalpodroze.pl": 23,
         "paypo.pl": 161,
         "wroclaw.pl": 55,
-        "polskikoszyk.pl": 68,
+        "polskikoszyk.pl": 67,
         "willsoor.pl": 127,
         "Cloudflare": 165,
         "yanosik.pl": 79,
@@ -13293,7 +13289,6 @@
         "rtmark.net": 1,
         "crwdcntrl.net": 5,
         "bricks-co.com": 32,
-        "formyca.pl": 51,
         "w3.org": 7,
         "elementor.com": 2,
         "openai.com": 12,
@@ -13319,7 +13314,8 @@
         "pitbull.pl": 213,
         "shopify.com": 2,
         "cxense.com": 5,
-        "tofivet.pl": 84,
+        "tofivet.pl": 83,
+        "formyca.pl": 49,
         "freedisc.pl": 42,
         "smilewanted.com": 4,
         "com.pl": 184,
@@ -13595,28 +13591,28 @@
       }
     },
     "cookie_security": {
-      "total_cookies": 11026,
+      "total_cookies": 11022,
       "httponly_distribution": {
-        "False": 9133,
+        "False": 9129,
         "True": 1893
       },
       "secure_distribution": {
-        "False": 4732,
-        "True": 6294
+        "False": 4729,
+        "True": 6293
       },
       "samesite_distribution": {
-        "Lax": 5934,
+        "Lax": 5930,
         "No Restriction": 4862,
         "Strict": 230
       },
       "thirdparty_distribution": {
-        "First-Party": 5180,
-        "Third-Party": 5846
+        "First-Party": 5177,
+        "Third-Party": 5845
       },
       "security_posture_distribution": {
-        "Lowly Secure": 4647,
+        "Lowly Secure": 4644,
         "Secure": 1808,
-        "Partially Secure": 4571
+        "Partially Secure": 4570
       },
       "by_category": {
         "DIRECT_PII_KEYS": {
@@ -13658,20 +13654,20 @@
           }
         },
         "LOCATION_AND_DEMOGRAPHICS": {
-          "total": 51,
+          "total": 47,
           "httponly_true": 3,
-          "httponly_false": 48,
-          "secure_true": 33,
-          "secure_false": 18,
-          "thirdparty_true": 18,
-          "thirdparty_false": 33,
+          "httponly_false": 44,
+          "secure_true": 32,
+          "secure_false": 15,
+          "thirdparty_true": 17,
+          "thirdparty_false": 30,
           "samesite": {
-            "Lax": 48,
+            "Lax": 44,
             "Strict": 3
           },
           "security_posture": {
-            "Lowly Secure": 18,
-            "Partially Secure": 30,
+            "Lowly Secure": 15,
+            "Partially Secure": 29,
             "Secure": 3
           }
         },
@@ -13968,7 +13964,7 @@
       "missing_both_flags_by_category": {
         "DIRECT_PII_KEYS": 38,
         "ID_SOLUTIONS_AND_EXCHANGES": 74,
-        "LOCATION_AND_DEMOGRAPHICS": 18,
+        "LOCATION_AND_DEMOGRAPHICS": 15,
         "TECHNICAL_PASSWORDS": 43,
         "NAVIGATION_HISTORY": 57,
         "LOCATION_AND_DEMOGRAPHICS.general_loc": 3,
@@ -13989,7 +13985,7 @@
     },
     "by_storage_type": {
       "localstorage": {
-        "total_items": 3865,
+        "total_items": 3812,
         "pii_by_category": {
           "DIRECT_PII": {
             "unknown": 13
@@ -14016,7 +14012,7 @@
             "ID_SOLUTIONS_AND_EXCHANGES": 460
           },
           "LOCATION_AND_DEMOGRAPHICS": {
-            "LOCATION_AND_DEMOGRAPHICS": 82
+            "LOCATION_AND_DEMOGRAPHICS": 29
           },
           "NAVIGATION_HISTORY": {
             "NAVIGATION_HISTORY": 391
@@ -14041,11 +14037,11 @@
           }
         },
         "persistence_distribution": {
-          "Persistent": 3865
+          "Persistent": 3812
         },
         "vendor_counts": {
-          "yanosik.pl": 96,
-          "visitwroclaw.eu": 55,
+          "yanosik.pl": 94,
+          "visitwroclaw.eu": 54,
           "freedisc.pl": 37,
           "nutridome.pl": 148,
           "aniakruk.pl": 162,
@@ -14058,7 +14054,7 @@
           "zartex.pl": 21,
           "willsoor.pl": 90,
           "arturo-obuwie.pl": 22,
-          "ecco.com": 164,
+          "ecco.com": 159,
           "snajper.net": 8,
           "wimdu.pl": 45,
           "com.pl": 96,
@@ -14070,18 +14066,18 @@
           "europodroze.pl": 21,
           "adrenaline.pl": 6,
           "xgsm.pl": 11,
-          "noblehealth.pl": 104,
           "lento.pl": 58,
           "paypo.pl": 48,
           "zakladyboleslawiec.com": 136,
           "bankmillennium.pl": 6,
           "loberon.pl": 90,
+          "noblehealth.pl": 68,
           "ekipatonosi.pl": 18,
           "ebay.pl": 15,
           "taranko.com": 42,
           "mynaszlaku.pl": 8,
           "parkofpoland.com": 85,
-          "uwalls.pl": 22,
+          "uwalls.pl": 21,
           "aboutyou.pl": 69,
           "intimiti.pl": 50,
           "modnyportfel.pl": 21,
@@ -14094,8 +14090,8 @@
           "grecos.pl": 17,
           "locobox.pl": 24,
           "technika-grzewcza-sklep.pl": 9,
-          "fabrykabodziakow.pl": 50,
-          "friser.pl": 53,
+          "fabrykabodziakow.pl": 49,
+          "friser.pl": 52,
           "kokardka.pl": 6,
           "bartekwpodrozy.pl": 29,
           "abud.pl": 31,
@@ -14122,7 +14118,7 @@
           "kasastefczyka.pl": 30,
           "infonumer.pl": 3,
           "pitbullcity.pl": 160,
-          "kross.eu": 139,
+          "kross.eu": 134,
           "proizolacje.pl": 1,
           "visitukraine.today": 16,
           "holidaypark.pl": 17,
@@ -14130,7 +14126,7 @@
           "formyca.pl": 22,
           "trivago.pl": 62,
           "eprezenty.pl": 9,
-          "taniebuty24.pl": 19,
+          "taniebuty24.pl": 18,
           "superbutelki.pl": 52,
           "ladnefelgi.pl": 15,
           "slodyczowo.pl": 26,
@@ -14157,7 +14153,7 @@
         }
       },
       "sessionstorage": {
-        "total_items": 1648,
+        "total_items": 1646,
         "pii_by_category": {
           "DIRECT_PII": {
             "unknown": 3
@@ -14183,9 +14179,6 @@
           "ID_SOLUTIONS_AND_EXCHANGES": {
             "ID_SOLUTIONS_AND_EXCHANGES": 151
           },
-          "LOCATION_AND_DEMOGRAPHICS": {
-            "LOCATION_AND_DEMOGRAPHICS": 14
-          },
           "NAVIGATION_HISTORY": {
             "NAVIGATION_HISTORY": 39
           },
@@ -14204,12 +14197,15 @@
           "UX_AND_PERFORMANCE_ANALYTICS": {
             "UX_AND_PERFORMANCE_ANALYTICS": 289
           },
+          "LOCATION_AND_DEMOGRAPHICS": {
+            "LOCATION_AND_DEMOGRAPHICS": 12
+          },
           "TECHNICAL_PASSWORDS": {
             "TECHNICAL_PASSWORDS": 3
           }
         },
         "persistence_distribution": {
-          "Session": 1648
+          "Session": 1646
         },
         "vendor_counts": {
           "yanosik.pl": 18,
@@ -14235,7 +14231,7 @@
           "bartekwpodrozy.pl": 22,
           "paypo.pl": 43,
           "com.pl": 41,
-          "visitwroclaw.eu": 13,
+          "visitwroclaw.eu": 12,
           "e-dewocjonalia.eu": 4,
           "ekipatonosi.pl": 16,
           "polskikoszyk.pl": 3,
@@ -14282,7 +14278,7 @@
           "umebluje.pl": 3,
           "superbutelki.pl": 15,
           "slodyczowo.pl": 10,
-          "allsale.pl": 3,
+          "allsale.pl": 2,
           "locobox.pl": 3,
           "taniebuty24.pl": 4,
           "cake-land.pl": 13,
@@ -14301,7 +14297,7 @@
         }
       },
       "indexeddb": {
-        "total_items": 17740,
+        "total_items": 17309,
         "pii_by_category": {
           "DIRECT_PII": {
             "gender": 64,
@@ -14333,9 +14329,6 @@
           "INFRASTRUCTURE": {
             "INFRASTRUCTURE": 52
           },
-          "LOCATION_AND_DEMOGRAPHICS": {
-            "LOCATION_AND_DEMOGRAPHICS": 461
-          },
           "NAVIGATION_HISTORY": {
             "NAVIGATION_HISTORY": 95
           },
@@ -14351,15 +14344,18 @@
           "UX_AND_PERFORMANCE_ANALYTICS": {
             "UX_AND_PERFORMANCE_ANALYTICS": 308
           },
+          "LOCATION_AND_DEMOGRAPHICS": {
+            "LOCATION_AND_DEMOGRAPHICS": 30
+          },
           "TELEMETRY_AND_ERRORS": {
             "TELEMETRY_AND_ERRORS": 4
           }
         },
         "persistence_distribution": {
-          "Persistent": 17740
+          "Persistent": 17309
         },
         "vendor_counts": {
-          "samanta.pl": 893,
+          "samanta.pl": 720,
           "intimiti.pl": 1360,
           "Pinterest": 2177,
           "foodsbyann.com": 40,
@@ -14382,7 +14378,6 @@
           "online-metrix.net": 16,
           "lamoda.pl": 10,
           "europodroze.pl": 4,
-          "noblehealth.pl": 258,
           "rynek-kolejowy.pl": 24,
           "leonardo-hotels.pl": 460,
           "willsoor.pl": 258,
@@ -14398,9 +14393,9 @@
     "category_prevalence": {
       "DIRECT_PII_KEYS": 1514,
       "ID_SOLUTIONS_AND_EXCHANGES": 4942,
-      "LOCATION_AND_DEMOGRAPHICS": 11791,
+      "LOCATION_AND_DEMOGRAPHICS": 3606,
       "TECHNICAL_PASSWORDS": 470,
-      "NAVIGATION_HISTORY": 649,
+      "NAVIGATION_HISTORY": 651,
       "LOCATION_AND_DEMOGRAPHICS.general_loc": 11,
       "UX_AND_PERFORMANCE_ANALYTICS": 3379,
       "SECURITY_AND_BOT_MITIGATION": 1102,
@@ -14421,24 +14416,24 @@
     },
     "auth_vs_notauth": {
       "total_items_by_auth": {
-        "AUTH": 49734,
-        "NOTAUTH": 38586
+        "AUTH": 44176,
+        "NOTAUTH": 35961
       },
       "uncategorized_items_by_auth": {
         "AUTH": 17555,
         "NOTAUTH": 15916
       },
       "total_items_with_uncategorized_by_auth": {
-        "AUTH": 67289,
-        "NOTAUTH": 54502
+        "AUTH": 61731,
+        "NOTAUTH": 51877
       }
     },
     "cookie_lifetime_and_provenance": {
-      "total_cookies": 10201,
+      "total_cookies": 10187,
       "lifetime_distribution": {
-        "<6 months": 4082,
-        "6-18 months": 4222,
-        "Session": 1897
+        "<6 months": 4081,
+        "6-18 months": 4221,
+        "Session": 1885
       },
       "lifetime_by_pii": {
         "ip_address": {
@@ -14496,9 +14491,9 @@
           "6-18 months": 2
         },
         "LOCATION_AND_DEMOGRAPHICS": {
-          "Session": 16,
-          "6-18 months": 10,
-          "<6 months": 26
+          "Session": 4,
+          "6-18 months": 9,
+          "<6 months": 25
         },
         "NAVIGATION_HISTORY": {
           "<6 months": 8,
@@ -14542,8 +14537,8 @@
         }
       },
       "thirdparty_distribution": {
-        "First-Party": 2858,
-        "Third-Party": 7343
+        "First-Party": 2854,
+        "Third-Party": 7333
       },
       "thirdparty_by_pii": {
         "ip_address": {
@@ -14592,8 +14587,8 @@
           "First-Party": 7
         },
         "LOCATION_AND_DEMOGRAPHICS": {
-          "Third-Party": 36,
-          "First-Party": 16
+          "Third-Party": 26,
+          "First-Party": 12
         },
         "NAVIGATION_HISTORY": {
           "Third-Party": 11,
@@ -14708,7 +14703,7 @@
         "the-ozone-project.com": 4,
         "lngtd.com": 3,
         "faphouse.com": 22,
-        "liga.nu": 30,
+        "liga.nu": 20,
         "clixtell.com": 1,
         "gemini.google": 6,
         "disneylandparis.com": 1,
@@ -14722,7 +14717,7 @@
         "nogomania.com": 26,
         "gonis.de": 25,
         "jagledam.online": 13,
-        "bike-magazin.de": 157,
+        "bike-magazin.de": 156,
         "suvw.at": 2,
         "superporn.com": 23,
         "handy-sextreffen.info": 2,
@@ -14844,7 +14839,7 @@
         "wohnen-im-waldviertel.at": 8,
         "sparteo.com": 16,
         "anonm.io": 8,
-        "immosuchmaschine.at": 9,
+        "immosuchmaschine.at": 6,
         "t.me": 1,
         "oddsportal.com": 26,
         "shop.app": 2,
@@ -15159,28 +15154,28 @@
       }
     },
     "cookie_security": {
-      "total_cookies": 10201,
+      "total_cookies": 10187,
       "httponly_distribution": {
-        "False": 7469,
-        "True": 2732
+        "False": 7465,
+        "True": 2722
       },
       "secure_distribution": {
-        "False": 2924,
-        "True": 7277
+        "False": 2921,
+        "True": 7266
       },
       "samesite_distribution": {
-        "Lax": 3675,
-        "No Restriction": 6314,
+        "Lax": 3671,
+        "No Restriction": 6304,
         "Strict": 212
       },
       "thirdparty_distribution": {
-        "Third-Party": 7343,
-        "First-Party": 2858
+        "Third-Party": 7333,
+        "First-Party": 2854
       },
       "security_posture_distribution": {
-        "Lowly Secure": 2778,
-        "Partially Secure": 4837,
-        "Secure": 2586
+        "Lowly Secure": 2775,
+        "Partially Secure": 4836,
+        "Secure": 2576
       },
       "by_category": {
         "DIRECT_PII_KEYS": {
@@ -15221,21 +15216,21 @@
           }
         },
         "LOCATION_AND_DEMOGRAPHICS": {
-          "total": 52,
-          "httponly_true": 27,
-          "httponly_false": 25,
-          "secure_true": 39,
-          "secure_false": 13,
-          "thirdparty_true": 36,
-          "thirdparty_false": 16,
+          "total": 38,
+          "httponly_true": 17,
+          "httponly_false": 21,
+          "secure_true": 28,
+          "secure_false": 10,
+          "thirdparty_true": 26,
+          "thirdparty_false": 12,
           "samesite": {
-            "Lax": 26,
-            "No Restriction": 26
+            "Lax": 22,
+            "No Restriction": 16
           },
           "security_posture": {
-            "Lowly Secure": 13,
-            "Secure": 27,
-            "Partially Secure": 12
+            "Lowly Secure": 10,
+            "Secure": 17,
+            "Partially Secure": 11
           }
         },
         "TECHNICAL_PASSWORDS": {
@@ -15532,7 +15527,7 @@
       "missing_both_flags_by_category": {
         "DIRECT_PII_KEYS": 7,
         "ID_SOLUTIONS_AND_EXCHANGES": 166,
-        "LOCATION_AND_DEMOGRAPHICS": 13,
+        "LOCATION_AND_DEMOGRAPHICS": 10,
         "TECHNICAL_PASSWORDS": 103,
         "NAVIGATION_HISTORY": 12,
         "LOCATION_AND_DEMOGRAPHICS.general_loc": 4,
@@ -15553,7 +15548,7 @@
     },
     "by_storage_type": {
       "localstorage": {
-        "total_items": 3751,
+        "total_items": 3730,
         "pii_by_category": {
           "DIRECT_PII": {
             "unknown": 9
@@ -15583,7 +15578,7 @@
             "INFRASTRUCTURE": 13
           },
           "LOCATION_AND_DEMOGRAPHICS": {
-            "LOCATION_AND_DEMOGRAPHICS": 69
+            "LOCATION_AND_DEMOGRAPHICS": 48
           },
           "NAVIGATION_HISTORY": {
             "NAVIGATION_HISTORY": 138
@@ -15608,10 +15603,10 @@
           }
         },
         "persistence_distribution": {
-          "Persistent": 3751
+          "Persistent": 3730
         },
         "vendor_counts": {
-          "bike-magazin.de": 408,
+          "bike-magazin.de": 402,
           "nefisyemektarifleri.com": 56,
           "medikamio.com": 2,
           "wortguru.com": 343,
@@ -15644,7 +15639,7 @@
           "ebike-mtb.com": 25,
           "heimwerkertools.com": 86,
           "reiseuhu.de": 38,
-          "topvintage.at": 60,
+          "topvintage.at": 45,
           "heavy-tuned.de": 6,
           "gong.bg": 94,
           "veziporno.com": 1,
@@ -15712,7 +15707,7 @@
         }
       },
       "sessionstorage": {
-        "total_items": 995,
+        "total_items": 987,
         "pii_by_category": {
           "APP_STATE_STORAGE": {
             "APP_STATE_STORAGE": 25
@@ -15734,9 +15729,6 @@
           },
           "ID_SOLUTIONS_AND_EXCHANGES": {
             "ID_SOLUTIONS_AND_EXCHANGES": 93
-          },
-          "LOCATION_AND_DEMOGRAPHICS": {
-            "LOCATION_AND_DEMOGRAPHICS": 15
           },
           "NAVIGATION_HISTORY": {
             "NAVIGATION_HISTORY": 29
@@ -15762,12 +15754,15 @@
           "INFRASTRUCTURE": {
             "INFRASTRUCTURE": 4
           },
+          "LOCATION_AND_DEMOGRAPHICS": {
+            "LOCATION_AND_DEMOGRAPHICS": 7
+          },
           "DIRECT_PII": {
             "unknown": 3
           }
         },
         "persistence_distribution": {
-          "Session": 995
+          "Session": 987
         },
         "vendor_counts": {
           "onepiece-drip.net": 36,
@@ -15775,11 +15770,11 @@
           "wortguru.com": 24,
           "moebelix.at": 97,
           "paulmann.com": 8,
-          "sportal.bg": 14,
+          "sportal.bg": 13,
           "villeroy-boch.at": 3,
           "spox.com": 80,
           "kooora.com": 3,
-          "heimwerkertools.com": 48,
+          "heimwerkertools.com": 46,
           "reiseuhu.de": 13,
           "haas-fertigbau.at": 8,
           "holzprofi24.at": 16,
@@ -15803,19 +15798,19 @@
           "flashscore.at": 5,
           "amateri.com": 4,
           "runnersworld.de": 26,
-          "fcbayern.com": 21,
+          "fcbayern.com": 19,
           "mydirtyhobby.com": 3,
           "oddsportal.com": 4,
           "tnaflix.com": 2,
           "srbijasport.net": 9,
-          "bike-magazin.de": 38,
+          "bike-magazin.de": 37,
           "ijf.org": 5,
           "reifendirekt.at": 4,
           "com.tr": 26,
           "jutarnji.hr": 23,
           "bmwfans.info": 2,
           "moonsault.de": 6,
-          "dragonball-drip.com": 47,
+          "dragonball-drip.com": 45,
           "epicgames.com": 42,
           "adobe.com": 23,
           "webaslan.com": 2,
@@ -15834,7 +15829,7 @@
         }
       },
       "indexeddb": {
-        "total_items": 73373,
+        "total_items": 65233,
         "pii_by_category": {
           "DIRECT_PII": {
             "gender": 97,
@@ -15869,10 +15864,10 @@
             "INFRASTRUCTURE": 1928
           },
           "LOCATION_AND_DEMOGRAPHICS": {
-            "LOCATION_AND_DEMOGRAPHICS": 11655
+            "LOCATION_AND_DEMOGRAPHICS": 3513
           },
           "NAVIGATION_HISTORY": {
-            "NAVIGATION_HISTORY": 460
+            "NAVIGATION_HISTORY": 462
           },
           "SECURITY_AND_BOT_MITIGATION": {
             "SECURITY_AND_BOT_MITIGATION": 438
@@ -15888,12 +15883,12 @@
           }
         },
         "persistence_distribution": {
-          "Persistent": 73373
+          "Persistent": 65233
         },
         "vendor_counts": {
-          "mydirtyhobby.com": 13674,
+          "mydirtyhobby.com": 5899,
           "judotv.com": 67,
-          "Google": 49766,
+          "Google": 49494,
           "vimeo.com": 690,
           "spox.com": 386,
           "dnevnik.hr": 28,
@@ -15912,7 +15907,6 @@
           "frcapi.com": 7,
           "nogomania.rs": 2,
           "adobe.com": 8,
-          "topvintage.de": 93,
           "issuu.com": 2962,
           "barcawelt.de": 83,
           "sofascore.com": 15,
@@ -15936,7 +15930,7 @@
       "IDENTITY_TRACKING.vendor_adcalls_p2_expansion": 1,
       "DIRECT_PII_KEYS": 216,
       "ID_SOLUTIONS_AND_EXCHANGES": 2902,
-      "LOCATION_AND_DEMOGRAPHICS": 458,
+      "LOCATION_AND_DEMOGRAPHICS": 418,
       "IDENTITY_TRACKING.user_id_key": 10,
       "TECHNICAL_PASSWORDS": 647,
       "NAVIGATION_HISTORY": 533,
@@ -15967,24 +15961,24 @@
     },
     "auth_vs_notauth": {
       "total_items_by_auth": {
-        "AUTH": 14583,
-        "NOTAUTH": 17087
+        "AUTH": 14557,
+        "NOTAUTH": 17073
       },
       "uncategorized_items_by_auth": {
         "AUTH": 5174,
         "NOTAUTH": 16350
       },
       "total_items_with_uncategorized_by_auth": {
-        "AUTH": 19757,
-        "NOTAUTH": 33437
+        "AUTH": 19731,
+        "NOTAUTH": 33423
       }
     },
     "cookie_lifetime_and_provenance": {
-      "total_cookies": 8386,
+      "total_cookies": 8377,
       "lifetime_distribution": {
-        "<6 months": 3492,
-        "Session": 1902,
-        "6-18 months": 2992
+        "<6 months": 3487,
+        "Session": 1900,
+        "6-18 months": 2990
       },
       "lifetime_by_pii": {
         "ip_address": {
@@ -16056,9 +16050,9 @@
           "<6 months": 1
         },
         "LOCATION_AND_DEMOGRAPHICS": {
-          "<6 months": 22,
-          "Session": 3,
-          "6-18 months": 23
+          "<6 months": 17,
+          "6-18 months": 21,
+          "Session": 1
         },
         "NAVIGATION_HISTORY": {
           "Session": 34,
@@ -16112,8 +16106,8 @@
         }
       },
       "thirdparty_distribution": {
-        "First-Party": 2602,
-        "Third-Party": 5784
+        "First-Party": 2599,
+        "Third-Party": 5778
       },
       "thirdparty_by_pii": {
         "ip_address": {
@@ -16175,8 +16169,8 @@
           "Third-Party": 11
         },
         "LOCATION_AND_DEMOGRAPHICS": {
-          "First-Party": 28,
-          "Third-Party": 20
+          "First-Party": 25,
+          "Third-Party": 14
         },
         "NAVIGATION_HISTORY": {
           "Third-Party": 16,
@@ -16231,7 +16225,7 @@
         "teslarati.com": 43,
         "ml314.com": 10,
         "agroid.dk": 60,
-        "danfoss.com": 116,
+        "danfoss.com": 114,
         "intempus.dk": 91,
         "amukurs.dk": 35,
         "studieskolen.dk": 74,
@@ -16245,7 +16239,7 @@
         "vimeo.com": 25,
         "turbosquid.com": 83,
         "ing.dk": 23,
-        "sony.dk": 18,
+        "sony.dk": 17,
         "steelseries.com": 159,
         "ahrefs.com": 11,
         "ug.dk": 5,
@@ -16257,7 +16251,7 @@
         "ucnbib.dk": 8,
         "twoday.com": 14,
         "wired.com": 44,
-        "danlon.dk": 26,
+        "danlon.dk": 23,
         "dagrofa.dk": 1,
         "xn--grnbalance-1cb.dk": 5,
         "dagrofa-logistik.dk": 1,
@@ -16585,7 +16579,7 @@
         "egsoftware.com": 6,
         "e-conomic.dk": 8,
         "hr-manager.net": 3,
-        "systime.dk": 2,
+        "systime.dk": 1,
         "valdemarsro.dk": 9,
         "connectad.io": 6,
         "pricerunner.dk": 6,
@@ -16619,7 +16613,7 @@
         "zdbb.net": 2,
         "protechts.net": 4,
         "hrmts.net": 1,
-        "ibog.dk": 4,
+        "ibog.dk": 2,
         "goadservices.com": 2,
         "dxtech.ai": 1,
         "avads.net": 2,
@@ -16666,28 +16660,28 @@
       }
     },
     "cookie_security": {
-      "total_cookies": 8386,
+      "total_cookies": 8377,
       "httponly_distribution": {
-        "False": 5858,
-        "True": 2528
+        "False": 5852,
+        "True": 2525
       },
       "secure_distribution": {
-        "True": 6110,
+        "True": 6101,
         "False": 2276
       },
       "samesite_distribution": {
-        "No Restriction": 4709,
-        "Lax": 3256,
+        "No Restriction": 4708,
+        "Lax": 3248,
         "Strict": 421
       },
       "thirdparty_distribution": {
-        "Third-Party": 5784,
-        "First-Party": 2602
+        "Third-Party": 5778,
+        "First-Party": 2599
       },
       "security_posture_distribution": {
-        "Partially Secure": 3750,
+        "Partially Secure": 3744,
         "Lowly Secure": 2192,
-        "Secure": 2444
+        "Secure": 2441
       },
       "by_category": {
         "IDENTITY_TRACKING.vendor_adcalls_p2_expansion": {
@@ -16744,22 +16738,22 @@
           }
         },
         "LOCATION_AND_DEMOGRAPHICS": {
-          "total": 48,
-          "httponly_true": 5,
-          "httponly_false": 43,
-          "secure_true": 32,
+          "total": 39,
+          "httponly_true": 2,
+          "httponly_false": 37,
+          "secure_true": 23,
           "secure_false": 16,
-          "thirdparty_true": 20,
-          "thirdparty_false": 28,
+          "thirdparty_true": 14,
+          "thirdparty_false": 25,
           "samesite": {
-            "Lax": 36,
-            "No Restriction": 11,
+            "Lax": 28,
+            "No Restriction": 10,
             "Strict": 1
           },
           "security_posture": {
             "Lowly Secure": 15,
-            "Partially Secure": 29,
-            "Secure": 4
+            "Partially Secure": 23,
+            "Secure": 1
           }
         },
         "IDENTITY_TRACKING.user_id_key": {
@@ -17196,7 +17190,7 @@
     },
     "by_storage_type": {
       "localstorage": {
-        "total_items": 3414,
+        "total_items": 3388,
         "pii_by_category": {
           "DIRECT_PII": {
             "unknown": 23
@@ -17241,7 +17235,7 @@
             "LOCATION_AND_DEMOGRAPHICS.general_loc": 7
           },
           "LOCATION_AND_DEMOGRAPHICS": {
-            "LOCATION_AND_DEMOGRAPHICS": 116
+            "LOCATION_AND_DEMOGRAPHICS": 90
           },
           "NAVIGATION_HISTORY": {
             "NAVIGATION_HISTORY": 152
@@ -17266,11 +17260,11 @@
           }
         },
         "persistence_distribution": {
-          "Persistent": 3414
+          "Persistent": 3388
         },
         "vendor_counts": {
           "telerepair.dk": 24,
-          "vp.fo": 29,
+          "vp.fo": 28,
           "tamigo.com": 13,
           "technologijos.lt": 97,
           "gizchina.com": 76,
@@ -17292,7 +17286,7 @@
           "kb.dk": 4,
           "teslarati.com": 76,
           "Meta": 25,
-          "intempus.dk": 51,
+          "intempus.dk": 48,
           "turbosquid.com": 48,
           "flatpanels.dk": 78,
           "steelseries.com": 195,
@@ -17324,8 +17318,8 @@
           "eg.dk": 5,
           "hardwareonline.dk": 3,
           "epson.dk": 12,
-          "autodesk.dk": 248,
-          "autodesk.com": 201,
+          "autodesk.dk": 236,
+          "autodesk.com": 192,
           "temponizer.dk": 3,
           "mitid.dk": 3,
           "dk-hostmaster.dk": 2,
@@ -17367,7 +17361,7 @@
           "dao.as": 10,
           "praxis.dk": 39,
           "deepai.org": 71,
-          "visma.dk": 12,
+          "visma.dk": 11,
           "silkeborgdata.dk": 1,
           "canon.dk": 77,
           "Google": 10,
@@ -17377,7 +17371,7 @@
         }
       },
       "sessionstorage": {
-        "total_items": 1226,
+        "total_items": 1221,
         "pii_by_category": {
           "APP_STATE_STORAGE": {
             "APP_STATE_STORAGE": 70
@@ -17407,7 +17401,7 @@
             "LOCATION_AND_DEMOGRAPHICS.general_loc": 2
           },
           "LOCATION_AND_DEMOGRAPHICS": {
-            "LOCATION_AND_DEMOGRAPHICS": 33
+            "LOCATION_AND_DEMOGRAPHICS": 28
           },
           "NAVIGATION_HISTORY": {
             "NAVIGATION_HISTORY": 52
@@ -17435,7 +17429,7 @@
           }
         },
         "persistence_distribution": {
-          "Session": 1226
+          "Session": 1221
         },
         "vendor_counts": {
           "techradar.com": 138,
@@ -17484,19 +17478,19 @@
           "autodesk.com": 66,
           "steelseries.com": 99,
           "aarsnorm.dk": 6,
-          "autodesk.dk": 90,
+          "autodesk.dk": 87,
           "wordpress.org": 8,
           "praxis.dk": 27,
           "pytorch.org": 2,
           "gizchina.com": 42,
           "dao.as": 10,
           "amukurs.dk": 3,
-          "mouser.dk": 5,
+          "mouser.dk": 4,
           "meta.com": 5,
           "via.dk": 13,
           "callme.dk": 15,
           "monta.com": 5,
-          "apple.com": 9,
+          "apple.com": 8,
           "teoriundervisning.dk": 1,
           "msi.com": 8,
           "collectia.dk": 5,
@@ -17614,7 +17608,7 @@
     "category_prevalence": {
       "DIRECT_PII_KEYS": 228,
       "ID_SOLUTIONS_AND_EXCHANGES": 14502,
-      "LOCATION_AND_DEMOGRAPHICS": 289,
+      "LOCATION_AND_DEMOGRAPHICS": 277,
       "TECHNICAL_PASSWORDS": 407,
       "NAVIGATION_HISTORY": 333,
       "UX_AND_PERFORMANCE_ANALYTICS": 3427,
@@ -17633,23 +17627,23 @@
     },
     "auth_vs_notauth": {
       "total_items_by_auth": {
-        "AUTH": 25429,
-        "NOTAUTH": 9208
+        "AUTH": 25423,
+        "NOTAUTH": 9202
       },
       "uncategorized_items_by_auth": {
         "AUTH": 30006,
         "NOTAUTH": 1160
       },
       "total_items_with_uncategorized_by_auth": {
-        "AUTH": 55435,
-        "NOTAUTH": 10368
+        "AUTH": 55429,
+        "NOTAUTH": 10362
       }
     },
     "cookie_lifetime_and_provenance": {
-      "total_cookies": 9961,
+      "total_cookies": 9958,
       "lifetime_distribution": {
-        "<6 months": 3612,
-        "Session": 2508,
+        "<6 months": 3610,
+        "Session": 2507,
         "6-18 months": 3841
       },
       "lifetime_by_pii": {
@@ -17702,9 +17696,9 @@
           "6-18 months": 3
         },
         "LOCATION_AND_DEMOGRAPHICS": {
-          "Session": 19,
+          "Session": 18,
           "6-18 months": 21,
-          "<6 months": 8
+          "<6 months": 6
         },
         "NAVIGATION_HISTORY": {
           "Session": 38,
@@ -17744,7 +17738,7 @@
         }
       },
       "thirdparty_distribution": {
-        "Third-Party": 7016,
+        "Third-Party": 7013,
         "First-Party": 2945
       },
       "thirdparty_by_pii": {
@@ -17787,7 +17781,7 @@
           "First-Party": 42
         },
         "LOCATION_AND_DEMOGRAPHICS": {
-          "Third-Party": 33,
+          "Third-Party": 30,
           "First-Party": 15
         },
         "NAVIGATION_HISTORY": {
@@ -17824,7 +17818,7 @@
       "vendor_counts": {
         "sanoma.fi": 303,
         "audrte.com": 8,
-        "laura.fi": 68,
+        "laura.fi": 65,
         "otavamedia.fi": 83,
         "Teads": 4,
         "terveystalo.com": 74,
@@ -18190,28 +18184,28 @@
       }
     },
     "cookie_security": {
-      "total_cookies": 9961,
+      "total_cookies": 9958,
       "httponly_distribution": {
         "False": 7375,
-        "True": 2586
+        "True": 2583
       },
       "secure_distribution": {
-        "True": 7178,
+        "True": 7175,
         "False": 2783
       },
       "samesite_distribution": {
         "No Restriction": 5341,
-        "Lax": 4234,
+        "Lax": 4231,
         "Strict": 386
       },
       "thirdparty_distribution": {
-        "Third-Party": 7016,
+        "Third-Party": 7013,
         "First-Party": 2945
       },
       "security_posture_distribution": {
         "Partially Secure": 4744,
         "Lowly Secure": 2707,
-        "Secure": 2510
+        "Secure": 2507
       },
       "by_category": {
         "DIRECT_PII_KEYS": {
@@ -18252,20 +18246,20 @@
           }
         },
         "LOCATION_AND_DEMOGRAPHICS": {
-          "total": 48,
-          "httponly_true": 17,
+          "total": 45,
+          "httponly_true": 14,
           "httponly_false": 31,
-          "secure_true": 42,
+          "secure_true": 39,
           "secure_false": 6,
-          "thirdparty_true": 33,
+          "thirdparty_true": 30,
           "thirdparty_false": 15,
           "samesite": {
             "No Restriction": 17,
-            "Lax": 31
+            "Lax": 28
           },
           "security_posture": {
             "Partially Secure": 25,
-            "Secure": 17,
+            "Secure": 14,
             "Lowly Secure": 6
           }
         },
@@ -18551,7 +18545,7 @@
     },
     "by_storage_type": {
       "localstorage": {
-        "total_items": 6098,
+        "total_items": 6095,
         "pii_by_category": {
           "DIRECT_PII": {
             "unknown": 21
@@ -18578,7 +18572,7 @@
             "ID_SOLUTIONS_AND_EXCHANGES": 1212
           },
           "LOCATION_AND_DEMOGRAPHICS": {
-            "LOCATION_AND_DEMOGRAPHICS": 94
+            "LOCATION_AND_DEMOGRAPHICS": 91
           },
           "NAVIGATION_HISTORY": {
             "NAVIGATION_HISTORY": 178
@@ -18603,7 +18597,7 @@
           }
         },
         "persistence_distribution": {
-          "Persistent": 6098
+          "Persistent": 6095
         },
         "vendor_counts": {
           "terve.fi": 580,
@@ -18636,7 +18630,7 @@
           "banknorwegian.fi": 4,
           "if.fi": 2,
           "rekrytointi.com": 6,
-          "delfi.ee": 66,
+          "delfi.ee": 63,
           "op.fi": 3,
           "seiska.fi": 38,
           "ess.fi": 200,
@@ -18693,7 +18687,7 @@
         }
       },
       "sessionstorage": {
-        "total_items": 1027,
+        "total_items": 1021,
         "pii_by_category": {
           "APP_STATE_STORAGE": {
             "APP_STATE_STORAGE": 58
@@ -18720,7 +18714,7 @@
             "INFRASTRUCTURE": 12
           },
           "LOCATION_AND_DEMOGRAPHICS": {
-            "LOCATION_AND_DEMOGRAPHICS": 24
+            "LOCATION_AND_DEMOGRAPHICS": 18
           },
           "NAVIGATION_HISTORY": {
             "NAVIGATION_HISTORY": 57
@@ -18748,12 +18742,12 @@
           }
         },
         "persistence_distribution": {
-          "Session": 1027
+          "Session": 1021
         },
         "vendor_counts": {
           "ksml.fi": 10,
           "aamuposti.fi": 24,
-          "iltalehti.fi": 28,
+          "iltalehti.fi": 27,
           "inschool.fi": 16,
           "tampere.fi": 11,
           "hymy.fi": 48,
@@ -18765,7 +18759,7 @@
           "ess.fi": 37,
           "bookbeat.fi": 3,
           "opintopolku.fi": 1,
-          "oikotie.fi": 13,
+          "oikotie.fi": 12,
           "terve.fi": 10,
           "apu.fi": 6,
           "postimees.ee": 9,
@@ -18793,7 +18787,7 @@
           "koillissanomat.fi": 12,
           "alueviesti.fi": 4,
           "diarium.fi": 4,
-          "danskebank.fi": 24,
+          "danskebank.fi": 20,
           "sydan.fi": 2,
           "lahitapiola.fi": 27,
           "talenom.fi": 5,

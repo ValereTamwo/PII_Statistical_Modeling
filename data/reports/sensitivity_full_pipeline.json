@@ -1,0 +1,6448 @@
+{
+  "config": {
+    "ref_policy": "ALL",
+    "tol": 0.001,
+    "activity_threshold": 0.05,
+    "robust_rate": 0.9,
+    "composition_share": 0.5,
+    "default_alphas": {
+      "id": 0.9,
+      "ato": 0.95,
+      "link": 0.85,
+      "loc": 0.75,
+      "prof": 0.7,
+      "env": 0.5
+    },
+    "alpha_grid": [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ]
+  },
+  "sanity": {
+    "checked": true,
+    "mismatches": []
+  },
+  "oat": {
+    "curves": {
+      "id": {
+        "0.1": {
+          "global_mean": 0.6493,
+          "mean_by_storage": {
+            "cookie": 0.6093,
+            "localStorage": 0.6057,
+            "sessionStorage": 0.4702,
+            "IndexedDB": 0.6885
+          },
+          "mean_by_mode": {
+            "Auth": 0.6323,
+            "UnAuth": 0.6587
+          }
+        },
+        "0.2": {
+          "global_mean": 0.6495,
+          "mean_by_storage": {
+            "cookie": 0.6095,
+            "localStorage": 0.6062,
+            "sessionStorage": 0.4708,
+            "IndexedDB": 0.6886
+          },
+          "mean_by_mode": {
+            "Auth": 0.6325,
+            "UnAuth": 0.6589
+          }
+        },
+        "0.3": {
+          "global_mean": 0.6497,
+          "mean_by_storage": {
+            "cookie": 0.6097,
+            "localStorage": 0.6067,
+            "sessionStorage": 0.4714,
+            "IndexedDB": 0.6887
+          },
+          "mean_by_mode": {
+            "Auth": 0.6327,
+            "UnAuth": 0.659
+          }
+        },
+        "0.4": {
+          "global_mean": 0.6498,
+          "mean_by_storage": {
+            "cookie": 0.6099,
+            "localStorage": 0.6072,
+            "sessionStorage": 0.4721,
+            "IndexedDB": 0.6888
+          },
+          "mean_by_mode": {
+            "Auth": 0.6329,
+            "UnAuth": 0.6592
+          }
+        },
+        "0.5": {
+          "global_mean": 0.65,
+          "mean_by_storage": {
+            "cookie": 0.61,
+            "localStorage": 0.6077,
+            "sessionStorage": 0.4727,
+            "IndexedDB": 0.6888
+          },
+          "mean_by_mode": {
+            "Auth": 0.633,
+            "UnAuth": 0.6593
+          }
+        },
+        "0.6": {
+          "global_mean": 0.6502,
+          "mean_by_storage": {
+            "cookie": 0.6102,
+            "localStorage": 0.6082,
+            "sessionStorage": 0.4733,
+            "IndexedDB": 0.6889
+          },
+          "mean_by_mode": {
+            "Auth": 0.6332,
+            "UnAuth": 0.6595
+          }
+        },
+        "0.7": {
+          "global_mean": 0.6504,
+          "mean_by_storage": {
+            "cookie": 0.6104,
+            "localStorage": 0.6088,
+            "sessionStorage": 0.474,
+            "IndexedDB": 0.689
+          },
+          "mean_by_mode": {
+            "Auth": 0.6334,
+            "UnAuth": 0.6597
+          }
+        },
+        "0.8": {
+          "global_mean": 0.6505,
+          "mean_by_storage": {
+            "cookie": 0.6106,
+            "localStorage": 0.6093,
+            "sessionStorage": 0.4746,
+            "IndexedDB": 0.6891
+          },
+          "mean_by_mode": {
+            "Auth": 0.6336,
+            "UnAuth": 0.6598
+          }
+        },
+        "0.9": {
+          "global_mean": 0.6507,
+          "mean_by_storage": {
+            "cookie": 0.6107,
+            "localStorage": 0.6098,
+            "sessionStorage": 0.4752,
+            "IndexedDB": 0.6892
+          },
+          "mean_by_mode": {
+            "Auth": 0.6338,
+            "UnAuth": 0.66
+          }
+        },
+        "1.0": {
+          "global_mean": 0.6509,
+          "mean_by_storage": {
+            "cookie": 0.6109,
+            "localStorage": 0.6103,
+            "sessionStorage": 0.4759,
+            "IndexedDB": 0.6893
+          },
+          "mean_by_mode": {
+            "Auth": 0.634,
+            "UnAuth": 0.6602
+          }
+        }
+      },
+      "ato": {
+        "0.1": {
+          "global_mean": 0.6424,
+          "mean_by_storage": {
+            "cookie": 0.5936,
+            "localStorage": 0.5995,
+            "sessionStorage": 0.4632,
+            "IndexedDB": 0.6866
+          },
+          "mean_by_mode": {
+            "Auth": 0.6237,
+            "UnAuth": 0.6528
+          }
+        },
+        "0.2": {
+          "global_mean": 0.6434,
+          "mean_by_storage": {
+            "cookie": 0.5956,
+            "localStorage": 0.6007,
+            "sessionStorage": 0.4646,
+            "IndexedDB": 0.6869
+          },
+          "mean_by_mode": {
+            "Auth": 0.6249,
+            "UnAuth": 0.6536
+          }
+        },
+        "0.3": {
+          "global_mean": 0.6444,
+          "mean_by_storage": {
+            "cookie": 0.5976,
+            "localStorage": 0.6019,
+            "sessionStorage": 0.466,
+            "IndexedDB": 0.6872
+          },
+          "mean_by_mode": {
+            "Auth": 0.6261,
+            "UnAuth": 0.6545
+          }
+        },
+        "0.4": {
+          "global_mean": 0.6453,
+          "mean_by_storage": {
+            "cookie": 0.5996,
+            "localStorage": 0.6031,
+            "sessionStorage": 0.4674,
+            "IndexedDB": 0.6875
+          },
+          "mean_by_mode": {
+            "Auth": 0.6273,
+            "UnAuth": 0.6553
+          }
+        },
+        "0.5": {
+          "global_mean": 0.6463,
+          "mean_by_storage": {
+            "cookie": 0.6016,
+            "localStorage": 0.6043,
+            "sessionStorage": 0.4688,
+            "IndexedDB": 0.6879
+          },
+          "mean_by_mode": {
+            "Auth": 0.6284,
+            "UnAuth": 0.6562
+          }
+        },
+        "0.6": {
+          "global_mean": 0.6473,
+          "mean_by_storage": {
+            "cookie": 0.6037,
+            "localStorage": 0.6055,
+            "sessionStorage": 0.4703,
+            "IndexedDB": 0.6882
+          },
+          "mean_by_mode": {
+            "Auth": 0.6296,
+            "UnAuth": 0.657
+          }
+        },
+        "0.7": {
+          "global_mean": 0.6483,
+          "mean_by_storage": {
+            "cookie": 0.6057,
+            "localStorage": 0.6067,
+            "sessionStorage": 0.4717,
+            "IndexedDB": 0.6885
+          },
+          "mean_by_mode": {
+            "Auth": 0.6308,
+            "UnAuth": 0.6579
+          }
+        },
+        "0.8": {
+          "global_mean": 0.6492,
+          "mean_by_storage": {
+            "cookie": 0.6077,
+            "localStorage": 0.6079,
+            "sessionStorage": 0.4731,
+            "IndexedDB": 0.6888
+          },
+          "mean_by_mode": {
+            "Auth": 0.632,
+            "UnAuth": 0.6587
+          }
+        },
+        "0.9": {
+          "global_mean": 0.6502,
+          "mean_by_storage": {
+            "cookie": 0.6097,
+            "localStorage": 0.6092,
+            "sessionStorage": 0.4745,
+            "IndexedDB": 0.6891
+          },
+          "mean_by_mode": {
+            "Auth": 0.6332,
+            "UnAuth": 0.6596
+          }
+        },
+        "1.0": {
+          "global_mean": 0.6512,
+          "mean_by_storage": {
+            "cookie": 0.6118,
+            "localStorage": 0.6104,
+            "sessionStorage": 0.4759,
+            "IndexedDB": 0.6894
+          },
+          "mean_by_mode": {
+            "Auth": 0.6344,
+            "UnAuth": 0.6604
+          }
+        }
+      },
+      "link": {
+        "0.1": {
+          "global_mean": 0.4707,
+          "mean_by_storage": {
+            "cookie": 0.335,
+            "localStorage": 0.4001,
+            "sessionStorage": 0.3488,
+            "IndexedDB": 0.5668
+          },
+          "mean_by_mode": {
+            "Auth": 0.4399,
+            "UnAuth": 0.4877
+          }
+        },
+        "0.2": {
+          "global_mean": 0.4947,
+          "mean_by_storage": {
+            "cookie": 0.3717,
+            "localStorage": 0.428,
+            "sessionStorage": 0.3657,
+            "IndexedDB": 0.5832
+          },
+          "mean_by_mode": {
+            "Auth": 0.4658,
+            "UnAuth": 0.5106
+          }
+        },
+        "0.3": {
+          "global_mean": 0.5187,
+          "mean_by_storage": {
+            "cookie": 0.4085,
+            "localStorage": 0.456,
+            "sessionStorage": 0.3825,
+            "IndexedDB": 0.5995
+          },
+          "mean_by_mode": {
+            "Auth": 0.4916,
+            "UnAuth": 0.5336
+          }
+        },
+        "0.4": {
+          "global_mean": 0.5427,
+          "mean_by_storage": {
+            "cookie": 0.4453,
+            "localStorage": 0.4839,
+            "sessionStorage": 0.3994,
+            "IndexedDB": 0.6158
+          },
+          "mean_by_mode": {
+            "Auth": 0.5175,
+            "UnAuth": 0.5566
+          }
+        },
+        "0.5": {
+          "global_mean": 0.5667,
+          "mean_by_storage": {
+            "cookie": 0.482,
+            "localStorage": 0.5119,
+            "sessionStorage": 0.4162,
+            "IndexedDB": 0.6321
+          },
+          "mean_by_mode": {
+            "Auth": 0.5433,
+            "UnAuth": 0.5796
+          }
+        },
+        "0.6": {
+          "global_mean": 0.5907,
+          "mean_by_storage": {
+            "cookie": 0.5188,
+            "localStorage": 0.5399,
+            "sessionStorage": 0.4331,
+            "IndexedDB": 0.6484
+          },
+          "mean_by_mode": {
+            "Auth": 0.5692,
+            "UnAuth": 0.6026
+          }
+        },
+        "0.7": {
+          "global_mean": 0.6147,
+          "mean_by_storage": {
+            "cookie": 0.5556,
+            "localStorage": 0.5678,
+            "sessionStorage": 0.4499,
+            "IndexedDB": 0.6648
+          },
+          "mean_by_mode": {
+            "Auth": 0.595,
+            "UnAuth": 0.6255
+          }
+        },
+        "0.8": {
+          "global_mean": 0.6387,
+          "mean_by_storage": {
+            "cookie": 0.5924,
+            "localStorage": 0.5958,
+            "sessionStorage": 0.4668,
+            "IndexedDB": 0.6811
+          },
+          "mean_by_mode": {
+            "Auth": 0.6209,
+            "UnAuth": 0.6485
+          }
+        },
+        "0.9": {
+          "global_mean": 0.6627,
+          "mean_by_storage": {
+            "cookie": 0.6291,
+            "localStorage": 0.6237,
+            "sessionStorage": 0.4837,
+            "IndexedDB": 0.6974
+          },
+          "mean_by_mode": {
+            "Auth": 0.6468,
+            "UnAuth": 0.6715
+          }
+        },
+        "1.0": {
+          "global_mean": 0.6867,
+          "mean_by_storage": {
+            "cookie": 0.6659,
+            "localStorage": 0.6517,
+            "sessionStorage": 0.5005,
+            "IndexedDB": 0.7137
+          },
+          "mean_by_mode": {
+            "Auth": 0.6726,
+            "UnAuth": 0.6945
+          }
+        }
+      },
+      "loc": {
+        "0.1": {
+          "global_mean": 0.6503,
+          "mean_by_storage": {
+            "cookie": 0.6104,
+            "localStorage": 0.6087,
+            "sessionStorage": 0.4745,
+            "IndexedDB": 0.6889
+          },
+          "mean_by_mode": {
+            "Auth": 0.6333,
+            "UnAuth": 0.6597
+          }
+        },
+        "0.2": {
+          "global_mean": 0.6503,
+          "mean_by_storage": {
+            "cookie": 0.6104,
+            "localStorage": 0.6089,
+            "sessionStorage": 0.4746,
+            "IndexedDB": 0.6889
+          },
+          "mean_by_mode": {
+            "Auth": 0.6333,
+            "UnAuth": 0.6597
+          }
+        },
+        "0.3": {
+          "global_mean": 0.6504,
+          "mean_by_storage": {
+            "cookie": 0.6105,
+            "localStorage": 0.6091,
+            "sessionStorage": 0.4747,
+            "IndexedDB": 0.689
+          },
+          "mean_by_mode": {
+            "Auth": 0.6334,
+            "UnAuth": 0.6598
+          }
+        },
+        "0.4": {
+          "global_mean": 0.6505,
+          "mean_by_storage": {
+            "cookie": 0.6105,
+            "localStorage": 0.6092,
+            "sessionStorage": 0.4749,
+            "IndexedDB": 0.6891
+          },
+          "mean_by_mode": {
+            "Auth": 0.6335,
+            "UnAuth": 0.6598
+          }
+        },
+        "0.5": {
+          "global_mean": 0.6505,
+          "mean_by_storage": {
+            "cookie": 0.6106,
+            "localStorage": 0.6094,
+            "sessionStorage": 0.475,
+            "IndexedDB": 0.6891
+          },
+          "mean_by_mode": {
+            "Auth": 0.6336,
+            "UnAuth": 0.6599
+          }
+        },
+        "0.6": {
+          "global_mean": 0.6506,
+          "mean_by_storage": {
+            "cookie": 0.6107,
+            "localStorage": 0.6095,
+            "sessionStorage": 0.4751,
+            "IndexedDB": 0.6892
+          },
+          "mean_by_mode": {
+            "Auth": 0.6337,
+            "UnAuth": 0.6599
+          }
+        },
+        "0.7": {
+          "global_mean": 0.6507,
+          "mean_by_storage": {
+            "cookie": 0.6107,
+            "localStorage": 0.6097,
+            "sessionStorage": 0.4752,
+            "IndexedDB": 0.6892
+          },
+          "mean_by_mode": {
+            "Auth": 0.6338,
+            "UnAuth": 0.66
+          }
+        },
+        "0.8": {
+          "global_mean": 0.6507,
+          "mean_by_storage": {
+            "cookie": 0.6108,
+            "localStorage": 0.6098,
+            "sessionStorage": 0.4753,
+            "IndexedDB": 0.6893
+          },
+          "mean_by_mode": {
+            "Auth": 0.6339,
+            "UnAuth": 0.66
+          }
+        },
+        "0.9": {
+          "global_mean": 0.6508,
+          "mean_by_storage": {
+            "cookie": 0.6108,
+            "localStorage": 0.61,
+            "sessionStorage": 0.4754,
+            "IndexedDB": 0.6893
+          },
+          "mean_by_mode": {
+            "Auth": 0.634,
+            "UnAuth": 0.6601
+          }
+        },
+        "1.0": {
+          "global_mean": 0.6509,
+          "mean_by_storage": {
+            "cookie": 0.6109,
+            "localStorage": 0.6101,
+            "sessionStorage": 0.4755,
+            "IndexedDB": 0.6894
+          },
+          "mean_by_mode": {
+            "Auth": 0.634,
+            "UnAuth": 0.6601
+          }
+        }
+      },
+      "prof": {
+        "0.1": {
+          "global_mean": 0.473,
+          "mean_by_storage": {
+            "cookie": 0.543,
+            "localStorage": 0.5045,
+            "sessionStorage": 0.3798,
+            "IndexedDB": 0.4319
+          },
+          "mean_by_mode": {
+            "Auth": 0.4795,
+            "UnAuth": 0.4693
+          }
+        },
+        "0.2": {
+          "global_mean": 0.5026,
+          "mean_by_storage": {
+            "cookie": 0.5543,
+            "localStorage": 0.5221,
+            "sessionStorage": 0.3957,
+            "IndexedDB": 0.4748
+          },
+          "mean_by_mode": {
+            "Auth": 0.5052,
+            "UnAuth": 0.5011
+          }
+        },
+        "0.3": {
+          "global_mean": 0.5322,
+          "mean_by_storage": {
+            "cookie": 0.5656,
+            "localStorage": 0.5396,
+            "sessionStorage": 0.4116,
+            "IndexedDB": 0.5177
+          },
+          "mean_by_mode": {
+            "Auth": 0.531,
+            "UnAuth": 0.5329
+          }
+        },
+        "0.4": {
+          "global_mean": 0.5618,
+          "mean_by_storage": {
+            "cookie": 0.5769,
+            "localStorage": 0.5571,
+            "sessionStorage": 0.4275,
+            "IndexedDB": 0.5606
+          },
+          "mean_by_mode": {
+            "Auth": 0.5567,
+            "UnAuth": 0.5647
+          }
+        },
+        "0.5": {
+          "global_mean": 0.5915,
+          "mean_by_storage": {
+            "cookie": 0.5882,
+            "localStorage": 0.5747,
+            "sessionStorage": 0.4434,
+            "IndexedDB": 0.6035
+          },
+          "mean_by_mode": {
+            "Auth": 0.5824,
+            "UnAuth": 0.5964
+          }
+        },
+        "0.6": {
+          "global_mean": 0.6211,
+          "mean_by_storage": {
+            "cookie": 0.5995,
+            "localStorage": 0.5922,
+            "sessionStorage": 0.4593,
+            "IndexedDB": 0.6464
+          },
+          "mean_by_mode": {
+            "Auth": 0.6081,
+            "UnAuth": 0.6282
+          }
+        },
+        "0.7": {
+          "global_mean": 0.6507,
+          "mean_by_storage": {
+            "cookie": 0.6107,
+            "localStorage": 0.6098,
+            "sessionStorage": 0.4752,
+            "IndexedDB": 0.6892
+          },
+          "mean_by_mode": {
+            "Auth": 0.6338,
+            "UnAuth": 0.66
+          }
+        },
+        "0.8": {
+          "global_mean": 0.6803,
+          "mean_by_storage": {
+            "cookie": 0.622,
+            "localStorage": 0.6273,
+            "sessionStorage": 0.4911,
+            "IndexedDB": 0.7321
+          },
+          "mean_by_mode": {
+            "Auth": 0.6595,
+            "UnAuth": 0.6918
+          }
+        },
+        "0.9": {
+          "global_mean": 0.71,
+          "mean_by_storage": {
+            "cookie": 0.6333,
+            "localStorage": 0.6448,
+            "sessionStorage": 0.5071,
+            "IndexedDB": 0.775
+          },
+          "mean_by_mode": {
+            "Auth": 0.6853,
+            "UnAuth": 0.7236
+          }
+        },
+        "1.0": {
+          "global_mean": 0.7396,
+          "mean_by_storage": {
+            "cookie": 0.6446,
+            "localStorage": 0.6624,
+            "sessionStorage": 0.523,
+            "IndexedDB": 0.8179
+          },
+          "mean_by_mode": {
+            "Auth": 0.711,
+            "UnAuth": 0.7553
+          }
+        }
+      },
+      "env": {
+        "0.1": {
+          "global_mean": 0.6478,
+          "mean_by_storage": {
+            "cookie": 0.6077,
+            "localStorage": 0.6068,
+            "sessionStorage": 0.4721,
+            "IndexedDB": 0.6864
+          },
+          "mean_by_mode": {
+            "Auth": 0.6309,
+            "UnAuth": 0.6571
+          }
+        },
+        "0.2": {
+          "global_mean": 0.6485,
+          "mean_by_storage": {
+            "cookie": 0.6085,
+            "localStorage": 0.6075,
+            "sessionStorage": 0.4729,
+            "IndexedDB": 0.6871
+          },
+          "mean_by_mode": {
+            "Auth": 0.6316,
+            "UnAuth": 0.6578
+          }
+        },
+        "0.3": {
+          "global_mean": 0.6492,
+          "mean_by_storage": {
+            "cookie": 0.6092,
+            "localStorage": 0.6083,
+            "sessionStorage": 0.4737,
+            "IndexedDB": 0.6878
+          },
+          "mean_by_mode": {
+            "Auth": 0.6324,
+            "UnAuth": 0.6585
+          }
+        },
+        "0.4": {
+          "global_mean": 0.65,
+          "mean_by_storage": {
+            "cookie": 0.61,
+            "localStorage": 0.609,
+            "sessionStorage": 0.4745,
+            "IndexedDB": 0.6885
+          },
+          "mean_by_mode": {
+            "Auth": 0.6331,
+            "UnAuth": 0.6593
+          }
+        },
+        "0.5": {
+          "global_mean": 0.6507,
+          "mean_by_storage": {
+            "cookie": 0.6107,
+            "localStorage": 0.6098,
+            "sessionStorage": 0.4752,
+            "IndexedDB": 0.6892
+          },
+          "mean_by_mode": {
+            "Auth": 0.6338,
+            "UnAuth": 0.66
+          }
+        },
+        "0.6": {
+          "global_mean": 0.6514,
+          "mean_by_storage": {
+            "cookie": 0.6115,
+            "localStorage": 0.6105,
+            "sessionStorage": 0.476,
+            "IndexedDB": 0.69
+          },
+          "mean_by_mode": {
+            "Auth": 0.6346,
+            "UnAuth": 0.6607
+          }
+        },
+        "0.7": {
+          "global_mean": 0.6522,
+          "mean_by_storage": {
+            "cookie": 0.6122,
+            "localStorage": 0.6112,
+            "sessionStorage": 0.4768,
+            "IndexedDB": 0.6907
+          },
+          "mean_by_mode": {
+            "Auth": 0.6353,
+            "UnAuth": 0.6615
+          }
+        },
+        "0.8": {
+          "global_mean": 0.6529,
+          "mean_by_storage": {
+            "cookie": 0.613,
+            "localStorage": 0.612,
+            "sessionStorage": 0.4776,
+            "IndexedDB": 0.6914
+          },
+          "mean_by_mode": {
+            "Auth": 0.636,
+            "UnAuth": 0.6622
+          }
+        },
+        "0.9": {
+          "global_mean": 0.6536,
+          "mean_by_storage": {
+            "cookie": 0.6137,
+            "localStorage": 0.6127,
+            "sessionStorage": 0.4783,
+            "IndexedDB": 0.6921
+          },
+          "mean_by_mode": {
+            "Auth": 0.6368,
+            "UnAuth": 0.6629
+          }
+        },
+        "1.0": {
+          "global_mean": 0.6544,
+          "mean_by_storage": {
+            "cookie": 0.6145,
+            "localStorage": 0.6134,
+            "sessionStorage": 0.4791,
+            "IndexedDB": 0.6928
+          },
+          "mean_by_mode": {
+            "Auth": 0.6375,
+            "UnAuth": 0.6637
+          }
+        }
+      }
+    },
+    "delta_global": {
+      "id": 0.0016,
+      "ato": 0.0088,
+      "link": 0.216,
+      "loc": 0.0006,
+      "prof": 0.2666,
+      "env": 0.0066
+    },
+    "active_dims": [
+      "link",
+      "prof"
+    ],
+    "delta_storage": {
+      "cookie": {
+        "id": 0.0016,
+        "ato": 0.0182,
+        "link": 0.3309,
+        "loc": 0.0005,
+        "prof": 0.1016,
+        "env": 0.0068
+      },
+      "localStorage": {
+        "id": 0.0046,
+        "ato": 0.0109,
+        "link": 0.2516,
+        "loc": 0.0014,
+        "prof": 0.1579,
+        "env": 0.0066
+      },
+      "sessionStorage": {
+        "id": 0.0057,
+        "ato": 0.0127,
+        "link": 0.1517,
+        "loc": 0.001,
+        "prof": 0.1432,
+        "env": 0.007
+      },
+      "IndexedDB": {
+        "id": 0.0008,
+        "ato": 0.0028,
+        "link": 0.1469,
+        "loc": 0.0005,
+        "prof": 0.386,
+        "env": 0.0064
+      }
+    },
+    "delta_mode": {
+      "Auth": {
+        "id": 0.0017,
+        "ato": 0.0107,
+        "link": 0.2327,
+        "loc": 0.0007,
+        "prof": 0.2315,
+        "env": 0.0066
+      },
+      "UnAuth": {
+        "id": 0.0015,
+        "ato": 0.0076,
+        "link": 0.2068,
+        "loc": 0.0004,
+        "prof": 0.286,
+        "env": 0.0066
+      }
+    }
+  },
+  "bounds": {
+    "MIN": {
+      "alphas": {
+        "id": 0.1,
+        "ato": 0.1,
+        "link": 0.1,
+        "loc": 0.1,
+        "prof": 0.1,
+        "env": 0.1
+      },
+      "global_mean": 0.111,
+      "ref_policy": {
+        "cookie": {
+          "n": 17385.0,
+          "mean": 0.0998,
+          "median": 0.1092,
+          "q1": 0.0706,
+          "q3": 0.1304,
+          "iqr": 0.0598
+        },
+        "localStorage": {
+          "n": 5113.0,
+          "mean": 0.108,
+          "median": 0.0977,
+          "q1": 0.0977,
+          "q3": 0.1269,
+          "iqr": 0.0292
+        },
+        "sessionStorage": {
+          "n": 1419.0,
+          "mean": 0.0873,
+          "median": 0.0679,
+          "q1": 0.0679,
+          "q3": 0.1086,
+          "iqr": 0.0407
+        },
+        "IndexedDB": {
+          "n": 37806.0,
+          "mean": 0.1214,
+          "median": 0.1269,
+          "q1": 0.1269,
+          "q3": 0.1269,
+          "iqr": 0.0
+        }
+      },
+      "pooled": {
+        "cookie": {
+          "n": 45783.0,
+          "mean": 0.0987,
+          "median": 0.1092,
+          "q1": 0.0679,
+          "q3": 0.1304,
+          "iqr": 0.0626
+        },
+        "localStorage": {
+          "n": 12921.0,
+          "mean": 0.1071,
+          "median": 0.0977,
+          "q1": 0.0977,
+          "q3": 0.1269,
+          "iqr": 0.0292
+        },
+        "sessionStorage": {
+          "n": 3937.0,
+          "mean": 0.087,
+          "median": 0.0679,
+          "q1": 0.0679,
+          "q3": 0.1086,
+          "iqr": 0.0407
+        },
+        "IndexedDB": {
+          "n": 79120.0,
+          "mean": 0.1199,
+          "median": 0.1269,
+          "q1": 0.1269,
+          "q3": 0.1269,
+          "iqr": 0.0
+        }
+      }
+    },
+    "DEFAULT": {
+      "alphas": {
+        "id": 0.9,
+        "ato": 0.95,
+        "link": 0.85,
+        "loc": 0.75,
+        "prof": 0.7,
+        "env": 0.5
+      },
+      "global_mean": 0.6507,
+      "ref_policy": {
+        "cookie": {
+          "n": 17385.0,
+          "mean": 0.6183,
+          "median": 0.6794,
+          "q1": 0.456,
+          "q3": 0.8118,
+          "iqr": 0.3558
+        },
+        "localStorage": {
+          "n": 5113.0,
+          "mean": 0.6176,
+          "median": 0.6082,
+          "q1": 0.5577,
+          "q3": 0.7898,
+          "iqr": 0.2321
+        },
+        "sessionStorage": {
+          "n": 1419.0,
+          "mean": 0.4786,
+          "median": 0.4319,
+          "q1": 0.3874,
+          "q3": 0.6716,
+          "iqr": 0.2842
+        },
+        "IndexedDB": {
+          "n": 37806.0,
+          "mean": 0.6971,
+          "median": 0.7241,
+          "q1": 0.7241,
+          "q3": 0.7241,
+          "iqr": 0.0
+        }
+      },
+      "pooled": {
+        "cookie": {
+          "n": 45783.0,
+          "mean": 0.6107,
+          "median": 0.6794,
+          "q1": 0.4392,
+          "q3": 0.8118,
+          "iqr": 0.3726
+        },
+        "localStorage": {
+          "n": 12921.0,
+          "mean": 0.6098,
+          "median": 0.6082,
+          "q1": 0.5577,
+          "q3": 0.7898,
+          "iqr": 0.2321
+        },
+        "sessionStorage": {
+          "n": 3937.0,
+          "mean": 0.4752,
+          "median": 0.4319,
+          "q1": 0.3874,
+          "q3": 0.6197,
+          "iqr": 0.2324
+        },
+        "IndexedDB": {
+          "n": 79120.0,
+          "mean": 0.6892,
+          "median": 0.7241,
+          "q1": 0.7241,
+          "q3": 0.7241,
+          "iqr": 0.0
+        }
+      }
+    },
+    "MAX": {
+      "alphas": {
+        "id": 1.0,
+        "ato": 1.0,
+        "link": 1.0,
+        "loc": 1.0,
+        "prof": 1.0,
+        "env": 1.0
+      },
+      "global_mean": 0.7633,
+      "ref_policy": {
+        "cookie": {
+          "n": 17385.0,
+          "mean": 0.6985,
+          "median": 0.7528,
+          "q1": 0.5156,
+          "q3": 0.8995,
+          "iqr": 0.3839
+        },
+        "localStorage": {
+          "n": 5113.0,
+          "mean": 0.7039,
+          "median": 0.6739,
+          "q1": 0.6739,
+          "q3": 0.8751,
+          "iqr": 0.2012
+        },
+        "sessionStorage": {
+          "n": 1419.0,
+          "mean": 0.5451,
+          "median": 0.4681,
+          "q1": 0.4681,
+          "q3": 0.7489,
+          "iqr": 0.2808
+        },
+        "IndexedDB": {
+          "n": 37806.0,
+          "mean": 0.837,
+          "median": 0.8751,
+          "q1": 0.8751,
+          "q3": 0.8751,
+          "iqr": 0.0
+        }
+      },
+      "pooled": {
+        "cookie": {
+          "n": 45783.0,
+          "mean": 0.6906,
+          "median": 0.7528,
+          "q1": 0.5156,
+          "q3": 0.8995,
+          "iqr": 0.3839
+        },
+        "localStorage": {
+          "n": 12921.0,
+          "mean": 0.6948,
+          "median": 0.6739,
+          "q1": 0.6739,
+          "q3": 0.8751,
+          "iqr": 0.2012
+        },
+        "sessionStorage": {
+          "n": 3937.0,
+          "mean": 0.5423,
+          "median": 0.4681,
+          "q1": 0.4681,
+          "q3": 0.7489,
+          "iqr": 0.2808
+        },
+        "IndexedDB": {
+          "n": 79120.0,
+          "mean": 0.8276,
+          "median": 0.8751,
+          "q1": 0.8751,
+          "q3": 0.8751,
+          "iqr": 0.0
+        }
+      }
+    }
+  },
+  "claims": {
+    "default": {
+      "O1": {
+        "ok": true,
+        "value": "0.724 > 0.679",
+        "raw": {
+          "a": 0.7241,
+          "b": 0.6794
+        }
+      },
+      "O2": {
+        "ok": true,
+        "value": "0.697 > 0.618",
+        "raw": {
+          "a": 0.6971,
+          "b": 0.6183
+        }
+      },
+      "O3": {
+        "ok": true,
+        "value": "0.679 > 0.608",
+        "raw": {
+          "a": 0.6794,
+          "b": 0.6082
+        }
+      },
+      "O4": {
+        "ok": true,
+        "value": "0.618 > 0.618",
+        "raw": {
+          "a": 0.6183,
+          "b": 0.6176
+        }
+      },
+      "O5": {
+        "ok": true,
+        "value": "0.608 > 0.432",
+        "raw": {
+          "a": 0.6082,
+          "b": 0.4319
+        }
+      },
+      "O6": {
+        "ok": true,
+        "value": "0.618 > 0.479",
+        "raw": {
+          "a": 0.6176,
+          "b": 0.4786
+        }
+      },
+      "D1": {
+        "ok": true,
+        "value": "0.356 > 0.284",
+        "raw": {
+          "iqr_cookie": 0.3558,
+          "max_other": 0.2842
+        }
+      },
+      "D2": {
+        "ok": true,
+        "value": "0.000 / 0.000 / 0.000",
+        "raw": {
+          "ALL": 0.0,
+          "PARTIAL": 0.0,
+          "NONE": 0.0
+        }
+      },
+      "C1": {
+        "ok": true,
+        "value": "0.014 (cookie) < 0.219",
+        "raw": {
+          "max_consent_gap": 0.0142,
+          "api_range": 0.2185,
+          "min_adjacent_gap": 0.0007
+        }
+      },
+      "C2": {
+        "ok": true,
+        "value": "0.000 / 0.000 / 0.000",
+        "raw": {
+          "cookie": 0.0,
+          "localStorage": 0.0,
+          "IndexedDB": 0.0
+        }
+      },
+      "C3": {
+        "ok": true,
+        "value": "0.000",
+        "raw": {
+          "delta_q3": 0.0
+        }
+      },
+      "S1": {
+        "ok": true,
+        "value": "0.043 (IndexedDB) < 0.219",
+        "raw": {
+          "max_mode_gap": 0.0434,
+          "api_range": 0.2185,
+          "min_adjacent_gap": 0.0007
+        }
+      },
+      "S2": {
+        "ok": true,
+        "value": "55%",
+        "raw": {
+          "share": 0.5451,
+          "raw_gap": 0.0492,
+          "residual_gap": 0.0224
+        }
+      }
+    },
+    "summary": {
+      "O1": {
+        "finding": "F5",
+        "level": "ordinal",
+        "description": "median IDB > median cookie (ALL)",
+        "latex": "$\\tilde{R}_{\\text{IDB}} > \\tilde{R}_{\\text{cookie}}$",
+        "default_ok": true,
+        "default_value": "0.724 > 0.679",
+        "ok": 54,
+        "total": 60,
+        "excluded": 0,
+        "rate": 0.9,
+        "status": "Robust",
+        "failures": {
+          "link": [
+            1.0
+          ],
+          "prof": [
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.5
+          ]
+        },
+        "failure_region": "alpha_link >= 1.0; alpha_prof <= 0.5",
+        "grid_range": {
+          "a": {
+            "min": 0.4222,
+            "max": 0.8751
+          },
+          "b": {
+            "min": 0.3641,
+            "max": 0.7528
+          }
+        }
+      },
+      "O2": {
+        "finding": "F5",
+        "level": "ordinal",
+        "description": "mean IDB > mean cookie (ALL)",
+        "latex": "$\\bar{R}_{\\text{IDB}} > \\bar{R}_{\\text{cookie}}$",
+        "default_ok": true,
+        "default_value": "0.697 > 0.618",
+        "ok": 56,
+        "total": 60,
+        "excluded": 0,
+        "rate": 0.9333,
+        "status": "Robust",
+        "failures": {
+          "prof": [
+            0.1,
+            0.2,
+            0.3,
+            0.4
+          ]
+        },
+        "failure_region": "alpha_prof <= 0.4",
+        "grid_range": {
+          "a": {
+            "min": 0.4353,
+            "max": 0.828
+          },
+          "b": {
+            "min": 0.3358,
+            "max": 0.6748
+          }
+        }
+      },
+      "O3": {
+        "finding": "F1/F3",
+        "level": "ordinal",
+        "description": "median cookie > median LS (ALL)",
+        "latex": "$\\tilde{R}_{\\text{cookie}} > \\tilde{R}_{\\text{LS}}$",
+        "default_ok": true,
+        "default_value": "0.679 > 0.608",
+        "ok": 56,
+        "total": 60,
+        "excluded": 0,
+        "rate": 0.9333,
+        "status": "Robust",
+        "failures": {
+          "link": [
+            0.2,
+            0.3,
+            0.4,
+            0.5
+          ]
+        },
+        "failure_region": "alpha_link in [0.2, 0.3, 0.4, 0.5]",
+        "grid_range": {
+          "a": {
+            "min": 0.3641,
+            "max": 0.7528
+          },
+          "b": {
+            "min": 0.3632,
+            "max": 0.6739
+          }
+        }
+      },
+      "O4": {
+        "finding": "F1/F3",
+        "level": "ordinal",
+        "description": "mean cookie > mean LS (ALL)",
+        "latex": "$\\bar{R}_{\\text{cookie}} > \\bar{R}_{\\text{LS}}$",
+        "default_ok": true,
+        "default_value": "0.618 > 0.618",
+        "ok": 41,
+        "total": 60,
+        "excluded": 0,
+        "rate": 0.6833,
+        "status": "Conditional",
+        "failures": {
+          "ato": [
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.5,
+            0.6,
+            0.7,
+            0.8
+          ],
+          "link": [
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.5,
+            0.6,
+            0.7,
+            0.8
+          ],
+          "prof": [
+            0.8,
+            0.9,
+            1.0
+          ]
+        },
+        "failure_region": "alpha_ato <= 0.8; alpha_link <= 0.8; alpha_prof >= 0.8",
+        "grid_range": {
+          "a": {
+            "min": 0.3358,
+            "max": 0.6748
+          },
+          "b": {
+            "min": 0.4023,
+            "max": 0.671
+          }
+        }
+      },
+      "O5": {
+        "finding": "F3/F4",
+        "level": "ordinal",
+        "description": "median LS > median SS (ALL)",
+        "latex": "$\\tilde{R}_{\\text{LS}} > \\tilde{R}_{\\text{SS}}$",
+        "default_ok": true,
+        "default_value": "0.608 > 0.432",
+        "ok": 60,
+        "total": 60,
+        "excluded": 0,
+        "rate": 1.0,
+        "status": "Invariant",
+        "failures": {},
+        "failure_region": "",
+        "grid_range": {
+          "a": {
+            "min": 0.3632,
+            "max": 0.6739
+          },
+          "b": {
+            "min": 0.3347,
+            "max": 0.4681
+          }
+        }
+      },
+      "O6": {
+        "finding": "F3/F4",
+        "level": "ordinal",
+        "description": "mean LS > mean SS (ALL)",
+        "latex": "$\\bar{R}_{\\text{LS}} > \\bar{R}_{\\text{SS}}$",
+        "default_ok": true,
+        "default_value": "0.618 > 0.479",
+        "ok": 60,
+        "total": 60,
+        "excluded": 0,
+        "rate": 1.0,
+        "status": "Invariant",
+        "failures": {},
+        "failure_region": "",
+        "grid_range": {
+          "a": {
+            "min": 0.4023,
+            "max": 0.671
+          },
+          "b": {
+            "min": 0.3432,
+            "max": 0.5236
+          }
+        }
+      },
+      "D1": {
+        "finding": "F1",
+        "level": "distributional",
+        "description": "IQR cookie > max IQR of other APIs (ALL)",
+        "latex": "$\\mathrm{IQR}_{\\text{cookie}} > \\max_{s \\neq \\text{cookie}} \\mathrm{IQR}_s$",
+        "default_ok": true,
+        "default_value": "0.356 > 0.284",
+        "ok": 57,
+        "total": 60,
+        "excluded": 0,
+        "rate": 0.95,
+        "status": "Robust",
+        "failures": {
+          "link": [
+            0.1
+          ],
+          "prof": [
+            0.1,
+            0.2
+          ]
+        },
+        "failure_region": "alpha_link <= 0.1; alpha_prof <= 0.2",
+        "grid_range": {
+          "iqr_cookie": {
+            "min": 0.1337,
+            "max": 0.4081
+          },
+          "max_other": {
+            "min": 0.137,
+            "max": 0.4252
+          }
+        }
+      },
+      "D2": {
+        "finding": "F5",
+        "level": "distributional",
+        "description": "IQR IDB = 0 (+-TOL) under ALL, PARTIAL, NONE",
+        "latex": "$\\mathrm{IQR}_{\\text{IDB}} = 0$ under all policies",
+        "default_ok": true,
+        "default_value": "0.000 / 0.000 / 0.000",
+        "ok": 52,
+        "total": 60,
+        "excluded": 0,
+        "rate": 0.8667,
+        "status": "Conditional",
+        "failures": {
+          "link": [
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.5,
+            0.6
+          ],
+          "prof": [
+            0.9,
+            1.0
+          ]
+        },
+        "failure_region": "alpha_link <= 0.6; alpha_prof >= 0.9",
+        "grid_range": {
+          "ALL": {
+            "min": 0.0,
+            "max": 0.0
+          },
+          "PARTIAL": {
+            "min": 0.0,
+            "max": 0.1499
+          },
+          "NONE": {
+            "min": 0.0,
+            "max": 0.0656
+          }
+        }
+      },
+      "C1": {
+        "finding": "F2",
+        "level": "consent",
+        "description": "max_s |mean_ALL - mean_NONE| < range of API means (ALL)",
+        "latex": "$\\max_s |\\bar{R}_{s,\\text{ALL}} - \\bar{R}_{s,\\text{NONE}}| < \\max_s \\bar{R}_s - \\min_s \\bar{R}_s$",
+        "default_ok": true,
+        "default_value": "0.014 (cookie) < 0.219",
+        "ok": 60,
+        "total": 60,
+        "excluded": 0,
+        "rate": 1.0,
+        "status": "Invariant",
+        "failures": {},
+        "failure_region": "",
+        "grid_range": {
+          "max_consent_gap": {
+            "min": 0.0112,
+            "max": 0.0178
+          },
+          "api_range": {
+            "min": 0.1513,
+            "max": 0.3044
+          },
+          "min_adjacent_gap": {
+            "min": 0.0003,
+            "max": 0.0403
+          }
+        }
+      },
+      "C2": {
+        "finding": "F2",
+        "level": "consent",
+        "description": "median_ALL = median_NONE (+-TOL) for cookie, LS, IDB",
+        "latex": "$\\tilde{R}_{s,\\text{ALL}} = \\tilde{R}_{s,\\text{NONE}}$, $s \\in \\{\\text{cookie, LS, IDB}\\}$",
+        "default_ok": true,
+        "default_value": "0.000 / 0.000 / 0.000",
+        "ok": 40,
+        "total": 60,
+        "excluded": 0,
+        "rate": 0.6667,
+        "status": "Conditional",
+        "failures": {
+          "id": [
+            0.1,
+            0.2
+          ],
+          "ato": [
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.5,
+            0.6,
+            0.7,
+            0.8
+          ],
+          "link": [
+            0.3,
+            0.4,
+            1.0
+          ],
+          "prof": [
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.5
+          ],
+          "env": [
+            0.1,
+            0.2
+          ]
+        },
+        "failure_region": "alpha_id <= 0.2; alpha_ato <= 0.8; alpha_link in [0.3, 0.4, 1.0]; alpha_prof <= 0.5; alpha_env <= 0.2",
+        "grid_range": {
+          "cookie": {
+            "min": 0.0,
+            "max": 0.0371
+          },
+          "localStorage": {
+            "min": 0.0,
+            "max": 0.0416
+          },
+          "IndexedDB": {
+            "min": 0.0,
+            "max": 0.0
+          }
+        }
+      },
+      "C3": {
+        "finding": "F2",
+        "level": "consent",
+        "description": "Q3 cookie ALL = Q3 cookie NONE (+-TOL)",
+        "latex": "$Q_{3,\\text{ALL}}^{\\text{cookie}} = Q_{3,\\text{NONE}}^{\\text{cookie}}$",
+        "default_ok": true,
+        "default_value": "0.000",
+        "ok": 49,
+        "total": 60,
+        "excluded": 0,
+        "rate": 0.8167,
+        "status": "Conditional",
+        "failures": {
+          "ato": [
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.5,
+            0.6,
+            0.7
+          ],
+          "link": [
+            0.1,
+            0.2,
+            0.3,
+            1.0
+          ]
+        },
+        "failure_region": "alpha_ato <= 0.7; alpha_link in [0.1, 0.2, 0.3, 1.0]",
+        "grid_range": {
+          "delta_q3": {
+            "min": 0.0,
+            "max": 0.02
+          }
+        }
+      },
+      "S1": {
+        "finding": "F6",
+        "level": "session",
+        "description": "max_s |mean_Auth - mean_UnAuth| < range of API means (ALL)",
+        "latex": "$\\max_s |\\bar{R}^{\\text{Auth}}_s - \\bar{R}^{\\text{UnAuth}}_s| < \\max_s \\bar{R}_s - \\min_s \\bar{R}_s$",
+        "default_ok": true,
+        "default_value": "0.043 (IndexedDB) < 0.219",
+        "ok": 60,
+        "total": 60,
+        "excluded": 0,
+        "rate": 1.0,
+        "status": "Invariant",
+        "failures": {},
+        "failure_region": "",
+        "grid_range": {
+          "max_mode_gap": {
+            "min": 0.0213,
+            "max": 0.0544
+          },
+          "api_range": {
+            "min": 0.1513,
+            "max": 0.3044
+          },
+          "min_adjacent_gap": {
+            "min": 0.0003,
+            "max": 0.0403
+          }
+        }
+      },
+      "S2": {
+        "finding": "F6",
+        "level": "session",
+        "description": "composition explains >= 50% of the Auth/UnAuth mean gap (ALL)",
+        "latex": "Composition explains $\\geq 50\\%$ of $|\\bar{R}^{\\text{Auth}} - \\bar{R}^{\\text{UnAuth}}|$",
+        "default_ok": true,
+        "default_value": "55%",
+        "ok": 53,
+        "total": 60,
+        "excluded": 0,
+        "rate": 0.8833,
+        "status": "Conditional",
+        "failures": {
+          "link": [
+            1.0
+          ],
+          "prof": [
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.5,
+            0.6
+          ]
+        },
+        "failure_region": "alpha_link >= 1.0; alpha_prof <= 0.6",
+        "grid_range": {
+          "share": {
+            "min": -3.5009,
+            "max": 0.7774
+          },
+          "raw_gap": {
+            "min": 0.0032,
+            "max": 0.084
+          },
+          "residual_gap": {
+            "min": 0.0126,
+            "max": 0.0273
+          }
+        }
+      }
+    },
+    "per_config": [
+      {
+        "dim": "id",
+        "alpha": 0.1,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": true,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": false,
+        "C3": true,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7241,
+            "b": 0.6794
+          },
+          "O2": {
+            "a": 0.6968,
+            "b": 0.6171
+          },
+          "O3": {
+            "a": 0.6794,
+            "b": 0.6082
+          },
+          "O4": {
+            "a": 0.6171,
+            "b": 0.6139
+          },
+          "O5": {
+            "a": 0.6082,
+            "b": 0.4319
+          },
+          "O6": {
+            "a": 0.6139,
+            "b": 0.4732
+          },
+          "D1": {
+            "iqr_cookie": 0.364,
+            "max_other": 0.2732
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0147,
+            "api_range": 0.2236,
+            "min_adjacent_gap": 0.0031
+          },
+          "C2": {
+            "cookie": 0.0035,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.0441,
+            "api_range": 0.2236,
+            "min_adjacent_gap": 0.0031
+          },
+          "S2": {
+            "share": 0.5452,
+            "raw_gap": 0.0501,
+            "residual_gap": 0.0228
+          }
+        }
+      },
+      {
+        "dim": "id",
+        "alpha": 0.2,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": true,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": false,
+        "C3": true,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7241,
+            "b": 0.6794
+          },
+          "O2": {
+            "a": 0.6968,
+            "b": 0.6172
+          },
+          "O3": {
+            "a": 0.6794,
+            "b": 0.6082
+          },
+          "O4": {
+            "a": 0.6172,
+            "b": 0.6144
+          },
+          "O5": {
+            "a": 0.6082,
+            "b": 0.4319
+          },
+          "O6": {
+            "a": 0.6144,
+            "b": 0.4739
+          },
+          "D1": {
+            "iqr_cookie": 0.3572,
+            "max_other": 0.283
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0146,
+            "api_range": 0.2229,
+            "min_adjacent_gap": 0.0028
+          },
+          "C2": {
+            "cookie": 0.0035,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.044,
+            "api_range": 0.2229,
+            "min_adjacent_gap": 0.0028
+          },
+          "S2": {
+            "share": 0.5452,
+            "raw_gap": 0.05,
+            "residual_gap": 0.0227
+          }
+        }
+      },
+      {
+        "dim": "id",
+        "alpha": 0.3,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": true,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7241,
+            "b": 0.6794
+          },
+          "O2": {
+            "a": 0.6969,
+            "b": 0.6174
+          },
+          "O3": {
+            "a": 0.6794,
+            "b": 0.6082
+          },
+          "O4": {
+            "a": 0.6174,
+            "b": 0.6149
+          },
+          "O5": {
+            "a": 0.6082,
+            "b": 0.4319
+          },
+          "O6": {
+            "a": 0.6149,
+            "b": 0.4746
+          },
+          "D1": {
+            "iqr_cookie": 0.3572,
+            "max_other": 0.2842
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0146,
+            "api_range": 0.2223,
+            "min_adjacent_gap": 0.0025
+          },
+          "C2": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.0439,
+            "api_range": 0.2223,
+            "min_adjacent_gap": 0.0025
+          },
+          "S2": {
+            "share": 0.5452,
+            "raw_gap": 0.0499,
+            "residual_gap": 0.0227
+          }
+        }
+      },
+      {
+        "dim": "id",
+        "alpha": 0.4,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": true,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7241,
+            "b": 0.6794
+          },
+          "O2": {
+            "a": 0.6969,
+            "b": 0.6175
+          },
+          "O3": {
+            "a": 0.6794,
+            "b": 0.6082
+          },
+          "O4": {
+            "a": 0.6175,
+            "b": 0.6153
+          },
+          "O5": {
+            "a": 0.6082,
+            "b": 0.4319
+          },
+          "O6": {
+            "a": 0.6153,
+            "b": 0.4752
+          },
+          "D1": {
+            "iqr_cookie": 0.3558,
+            "max_other": 0.2842
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0145,
+            "api_range": 0.2217,
+            "min_adjacent_gap": 0.0022
+          },
+          "C2": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.0438,
+            "api_range": 0.2217,
+            "min_adjacent_gap": 0.0022
+          },
+          "S2": {
+            "share": 0.5452,
+            "raw_gap": 0.0498,
+            "residual_gap": 0.0226
+          }
+        }
+      },
+      {
+        "dim": "id",
+        "alpha": 0.5,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": true,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7241,
+            "b": 0.6794
+          },
+          "O2": {
+            "a": 0.6969,
+            "b": 0.6177
+          },
+          "O3": {
+            "a": 0.6794,
+            "b": 0.6082
+          },
+          "O4": {
+            "a": 0.6177,
+            "b": 0.6158
+          },
+          "O5": {
+            "a": 0.6082,
+            "b": 0.4319
+          },
+          "O6": {
+            "a": 0.6158,
+            "b": 0.4759
+          },
+          "D1": {
+            "iqr_cookie": 0.3558,
+            "max_other": 0.2842
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0145,
+            "api_range": 0.221,
+            "min_adjacent_gap": 0.0019
+          },
+          "C2": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.0437,
+            "api_range": 0.221,
+            "min_adjacent_gap": 0.0019
+          },
+          "S2": {
+            "share": 0.5452,
+            "raw_gap": 0.0497,
+            "residual_gap": 0.0226
+          }
+        }
+      },
+      {
+        "dim": "id",
+        "alpha": 0.6,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": true,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7241,
+            "b": 0.6794
+          },
+          "O2": {
+            "a": 0.697,
+            "b": 0.6179
+          },
+          "O3": {
+            "a": 0.6794,
+            "b": 0.6082
+          },
+          "O4": {
+            "a": 0.6179,
+            "b": 0.6162
+          },
+          "O5": {
+            "a": 0.6082,
+            "b": 0.4319
+          },
+          "O6": {
+            "a": 0.6162,
+            "b": 0.4766
+          },
+          "D1": {
+            "iqr_cookie": 0.3558,
+            "max_other": 0.2842
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0144,
+            "api_range": 0.2204,
+            "min_adjacent_gap": 0.0016
+          },
+          "C2": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.0436,
+            "api_range": 0.2204,
+            "min_adjacent_gap": 0.0016
+          },
+          "S2": {
+            "share": 0.5451,
+            "raw_gap": 0.0495,
+            "residual_gap": 0.0225
+          }
+        }
+      },
+      {
+        "dim": "id",
+        "alpha": 0.7,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": true,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7241,
+            "b": 0.6794
+          },
+          "O2": {
+            "a": 0.697,
+            "b": 0.618
+          },
+          "O3": {
+            "a": 0.6794,
+            "b": 0.6082
+          },
+          "O4": {
+            "a": 0.618,
+            "b": 0.6167
+          },
+          "O5": {
+            "a": 0.6082,
+            "b": 0.4319
+          },
+          "O6": {
+            "a": 0.6167,
+            "b": 0.4772
+          },
+          "D1": {
+            "iqr_cookie": 0.3558,
+            "max_other": 0.2842
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0143,
+            "api_range": 0.2198,
+            "min_adjacent_gap": 0.0013
+          },
+          "C2": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.0436,
+            "api_range": 0.2198,
+            "min_adjacent_gap": 0.0013
+          },
+          "S2": {
+            "share": 0.5451,
+            "raw_gap": 0.0494,
+            "residual_gap": 0.0225
+          }
+        }
+      },
+      {
+        "dim": "id",
+        "alpha": 0.8,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": true,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7241,
+            "b": 0.6794
+          },
+          "O2": {
+            "a": 0.6971,
+            "b": 0.6182
+          },
+          "O3": {
+            "a": 0.6794,
+            "b": 0.6082
+          },
+          "O4": {
+            "a": 0.6182,
+            "b": 0.6172
+          },
+          "O5": {
+            "a": 0.6082,
+            "b": 0.4319
+          },
+          "O6": {
+            "a": 0.6172,
+            "b": 0.4779
+          },
+          "D1": {
+            "iqr_cookie": 0.3558,
+            "max_other": 0.2842
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0143,
+            "api_range": 0.2192,
+            "min_adjacent_gap": 0.001
+          },
+          "C2": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.0435,
+            "api_range": 0.2192,
+            "min_adjacent_gap": 0.001
+          },
+          "S2": {
+            "share": 0.5451,
+            "raw_gap": 0.0493,
+            "residual_gap": 0.0224
+          }
+        }
+      },
+      {
+        "dim": "id",
+        "alpha": 0.9,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": true,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7241,
+            "b": 0.6794
+          },
+          "O2": {
+            "a": 0.6971,
+            "b": 0.6183
+          },
+          "O3": {
+            "a": 0.6794,
+            "b": 0.6082
+          },
+          "O4": {
+            "a": 0.6183,
+            "b": 0.6176
+          },
+          "O5": {
+            "a": 0.6082,
+            "b": 0.4319
+          },
+          "O6": {
+            "a": 0.6176,
+            "b": 0.4786
+          },
+          "D1": {
+            "iqr_cookie": 0.3558,
+            "max_other": 0.2842
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0142,
+            "api_range": 0.2185,
+            "min_adjacent_gap": 0.0007
+          },
+          "C2": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.0434,
+            "api_range": 0.2185,
+            "min_adjacent_gap": 0.0007
+          },
+          "S2": {
+            "share": 0.5451,
+            "raw_gap": 0.0492,
+            "residual_gap": 0.0224
+          }
+        }
+      },
+      {
+        "dim": "id",
+        "alpha": 1.0,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": true,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7241,
+            "b": 0.6794
+          },
+          "O2": {
+            "a": 0.6971,
+            "b": 0.6185
+          },
+          "O3": {
+            "a": 0.6794,
+            "b": 0.6082
+          },
+          "O4": {
+            "a": 0.6185,
+            "b": 0.6181
+          },
+          "O5": {
+            "a": 0.6082,
+            "b": 0.4319
+          },
+          "O6": {
+            "a": 0.6181,
+            "b": 0.4792
+          },
+          "D1": {
+            "iqr_cookie": 0.3558,
+            "max_other": 0.2842
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0142,
+            "api_range": 0.2179,
+            "min_adjacent_gap": 0.0004
+          },
+          "C2": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.0433,
+            "api_range": 0.2179,
+            "min_adjacent_gap": 0.0004
+          },
+          "S2": {
+            "share": 0.545,
+            "raw_gap": 0.0491,
+            "residual_gap": 0.0223
+          }
+        }
+      },
+      {
+        "dim": "ato",
+        "alpha": 0.1,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": false,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": false,
+        "C3": false,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7241,
+            "b": 0.6794
+          },
+          "O2": {
+            "a": 0.6947,
+            "b": 0.602
+          },
+          "O3": {
+            "a": 0.6794,
+            "b": 0.6082
+          },
+          "O4": {
+            "a": 0.602,
+            "b": 0.6083
+          },
+          "O5": {
+            "a": 0.6082,
+            "b": 0.4225
+          },
+          "O6": {
+            "a": 0.6083,
+            "b": 0.4669
+          },
+          "D1": {
+            "iqr_cookie": 0.3777,
+            "max_other": 0.2842
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.016,
+            "api_range": 0.2278,
+            "min_adjacent_gap": 0.0063
+          },
+          "C2": {
+            "cookie": 0.0248,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.02
+          },
+          "S1": {
+            "max_mode_gap": 0.0445,
+            "api_range": 0.2278,
+            "min_adjacent_gap": 0.0063
+          },
+          "S2": {
+            "share": 0.5434,
+            "raw_gap": 0.0548,
+            "residual_gap": 0.025
+          }
+        }
+      },
+      {
+        "dim": "ato",
+        "alpha": 0.2,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": false,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": false,
+        "C3": false,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7241,
+            "b": 0.6794
+          },
+          "O2": {
+            "a": 0.695,
+            "b": 0.6039
+          },
+          "O3": {
+            "a": 0.6794,
+            "b": 0.6082
+          },
+          "O4": {
+            "a": 0.6039,
+            "b": 0.6094
+          },
+          "O5": {
+            "a": 0.6082,
+            "b": 0.4225
+          },
+          "O6": {
+            "a": 0.6094,
+            "b": 0.4683
+          },
+          "D1": {
+            "iqr_cookie": 0.3777,
+            "max_other": 0.2842
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0158,
+            "api_range": 0.2267,
+            "min_adjacent_gap": 0.0054
+          },
+          "C2": {
+            "cookie": 0.0248,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.02
+          },
+          "S1": {
+            "max_mode_gap": 0.0443,
+            "api_range": 0.2267,
+            "min_adjacent_gap": 0.0054
+          },
+          "S2": {
+            "share": 0.5436,
+            "raw_gap": 0.0541,
+            "residual_gap": 0.0247
+          }
+        }
+      },
+      {
+        "dim": "ato",
+        "alpha": 0.3,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": false,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": false,
+        "C3": false,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7241,
+            "b": 0.6794
+          },
+          "O2": {
+            "a": 0.6953,
+            "b": 0.6059
+          },
+          "O3": {
+            "a": 0.6794,
+            "b": 0.6082
+          },
+          "O4": {
+            "a": 0.6059,
+            "b": 0.6105
+          },
+          "O5": {
+            "a": 0.6082,
+            "b": 0.4225
+          },
+          "O6": {
+            "a": 0.6105,
+            "b": 0.4696
+          },
+          "D1": {
+            "iqr_cookie": 0.3722,
+            "max_other": 0.2842
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0156,
+            "api_range": 0.2256,
+            "min_adjacent_gap": 0.0046
+          },
+          "C2": {
+            "cookie": 0.0248,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0171
+          },
+          "S1": {
+            "max_mode_gap": 0.0442,
+            "api_range": 0.2256,
+            "min_adjacent_gap": 0.0046
+          },
+          "S2": {
+            "share": 0.5438,
+            "raw_gap": 0.0535,
+            "residual_gap": 0.0244
+          }
+        }
+      },
+      {
+        "dim": "ato",
+        "alpha": 0.4,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": false,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": false,
+        "C3": false,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7241,
+            "b": 0.6794
+          },
+          "O2": {
+            "a": 0.6956,
+            "b": 0.6078
+          },
+          "O3": {
+            "a": 0.6794,
+            "b": 0.6082
+          },
+          "O4": {
+            "a": 0.6078,
+            "b": 0.6116
+          },
+          "O5": {
+            "a": 0.6082,
+            "b": 0.4225
+          },
+          "O6": {
+            "a": 0.6116,
+            "b": 0.471
+          },
+          "D1": {
+            "iqr_cookie": 0.3722,
+            "max_other": 0.2842
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0154,
+            "api_range": 0.2246,
+            "min_adjacent_gap": 0.0038
+          },
+          "C2": {
+            "cookie": 0.0248,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0171
+          },
+          "S1": {
+            "max_mode_gap": 0.0441,
+            "api_range": 0.2246,
+            "min_adjacent_gap": 0.0038
+          },
+          "S2": {
+            "share": 0.544,
+            "raw_gap": 0.0528,
+            "residual_gap": 0.0241
+          }
+        }
+      },
+      {
+        "dim": "ato",
+        "alpha": 0.5,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": false,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": false,
+        "C3": false,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7241,
+            "b": 0.6794
+          },
+          "O2": {
+            "a": 0.6958,
+            "b": 0.6097
+          },
+          "O3": {
+            "a": 0.6794,
+            "b": 0.6082
+          },
+          "O4": {
+            "a": 0.6097,
+            "b": 0.6127
+          },
+          "O5": {
+            "a": 0.6082,
+            "b": 0.4225
+          },
+          "O6": {
+            "a": 0.6127,
+            "b": 0.4724
+          },
+          "D1": {
+            "iqr_cookie": 0.3722,
+            "max_other": 0.2842
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0152,
+            "api_range": 0.2235,
+            "min_adjacent_gap": 0.003
+          },
+          "C2": {
+            "cookie": 0.0248,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0171
+          },
+          "S1": {
+            "max_mode_gap": 0.044,
+            "api_range": 0.2235,
+            "min_adjacent_gap": 0.003
+          },
+          "S2": {
+            "share": 0.5442,
+            "raw_gap": 0.0522,
+            "residual_gap": 0.0238
+          }
+        }
+      },
+      {
+        "dim": "ato",
+        "alpha": 0.6,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": false,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": false,
+        "C3": false,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7241,
+            "b": 0.6794
+          },
+          "O2": {
+            "a": 0.6961,
+            "b": 0.6116
+          },
+          "O3": {
+            "a": 0.6794,
+            "b": 0.6082
+          },
+          "O4": {
+            "a": 0.6116,
+            "b": 0.6138
+          },
+          "O5": {
+            "a": 0.6082,
+            "b": 0.4225
+          },
+          "O6": {
+            "a": 0.6138,
+            "b": 0.4738
+          },
+          "D1": {
+            "iqr_cookie": 0.3722,
+            "max_other": 0.2842
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.015,
+            "api_range": 0.2224,
+            "min_adjacent_gap": 0.0022
+          },
+          "C2": {
+            "cookie": 0.0035,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0171
+          },
+          "S1": {
+            "max_mode_gap": 0.0438,
+            "api_range": 0.2224,
+            "min_adjacent_gap": 0.0022
+          },
+          "S2": {
+            "share": 0.5443,
+            "raw_gap": 0.0515,
+            "residual_gap": 0.0235
+          }
+        }
+      },
+      {
+        "dim": "ato",
+        "alpha": 0.7,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": false,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": false,
+        "C3": false,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7241,
+            "b": 0.6794
+          },
+          "O2": {
+            "a": 0.6964,
+            "b": 0.6135
+          },
+          "O3": {
+            "a": 0.6794,
+            "b": 0.6082
+          },
+          "O4": {
+            "a": 0.6135,
+            "b": 0.6149
+          },
+          "O5": {
+            "a": 0.6082,
+            "b": 0.4225
+          },
+          "O6": {
+            "a": 0.6149,
+            "b": 0.4751
+          },
+          "D1": {
+            "iqr_cookie": 0.3722,
+            "max_other": 0.2842
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0147,
+            "api_range": 0.2213,
+            "min_adjacent_gap": 0.0013
+          },
+          "C2": {
+            "cookie": 0.0035,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0171
+          },
+          "S1": {
+            "max_mode_gap": 0.0437,
+            "api_range": 0.2213,
+            "min_adjacent_gap": 0.0013
+          },
+          "S2": {
+            "share": 0.5445,
+            "raw_gap": 0.0508,
+            "residual_gap": 0.0232
+          }
+        }
+      },
+      {
+        "dim": "ato",
+        "alpha": 0.8,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": false,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": false,
+        "C3": true,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7241,
+            "b": 0.6794
+          },
+          "O2": {
+            "a": 0.6967,
+            "b": 0.6155
+          },
+          "O3": {
+            "a": 0.6794,
+            "b": 0.6082
+          },
+          "O4": {
+            "a": 0.6155,
+            "b": 0.616
+          },
+          "O5": {
+            "a": 0.6082,
+            "b": 0.4225
+          },
+          "O6": {
+            "a": 0.616,
+            "b": 0.4765
+          },
+          "D1": {
+            "iqr_cookie": 0.3722,
+            "max_other": 0.2842
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0145,
+            "api_range": 0.2202,
+            "min_adjacent_gap": 0.0005
+          },
+          "C2": {
+            "cookie": 0.0035,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.0436,
+            "api_range": 0.2202,
+            "min_adjacent_gap": 0.0005
+          },
+          "S2": {
+            "share": 0.5448,
+            "raw_gap": 0.0502,
+            "residual_gap": 0.0228
+          }
+        }
+      },
+      {
+        "dim": "ato",
+        "alpha": 0.9,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": true,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7241,
+            "b": 0.6794
+          },
+          "O2": {
+            "a": 0.697,
+            "b": 0.6174
+          },
+          "O3": {
+            "a": 0.6794,
+            "b": 0.6082
+          },
+          "O4": {
+            "a": 0.6174,
+            "b": 0.6171
+          },
+          "O5": {
+            "a": 0.6082,
+            "b": 0.4319
+          },
+          "O6": {
+            "a": 0.6171,
+            "b": 0.4779
+          },
+          "D1": {
+            "iqr_cookie": 0.3695,
+            "max_other": 0.2842
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0143,
+            "api_range": 0.2191,
+            "min_adjacent_gap": 0.0003
+          },
+          "C2": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.0434,
+            "api_range": 0.2191,
+            "min_adjacent_gap": 0.0003
+          },
+          "S2": {
+            "share": 0.545,
+            "raw_gap": 0.0495,
+            "residual_gap": 0.0225
+          }
+        }
+      },
+      {
+        "dim": "ato",
+        "alpha": 1.0,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": true,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7241,
+            "b": 0.6794
+          },
+          "O2": {
+            "a": 0.6972,
+            "b": 0.6193
+          },
+          "O3": {
+            "a": 0.6794,
+            "b": 0.6082
+          },
+          "O4": {
+            "a": 0.6193,
+            "b": 0.6182
+          },
+          "O5": {
+            "a": 0.6082,
+            "b": 0.4319
+          },
+          "O6": {
+            "a": 0.6182,
+            "b": 0.4793
+          },
+          "D1": {
+            "iqr_cookie": 0.3512,
+            "max_other": 0.2842
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0141,
+            "api_range": 0.218,
+            "min_adjacent_gap": 0.0011
+          },
+          "C2": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.0433,
+            "api_range": 0.218,
+            "min_adjacent_gap": 0.0011
+          },
+          "S2": {
+            "share": 0.5452,
+            "raw_gap": 0.0489,
+            "residual_gap": 0.0222
+          }
+        }
+      },
+      {
+        "dim": "link",
+        "alpha": 0.1,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": false,
+        "O5": true,
+        "O6": true,
+        "D1": false,
+        "D2": false,
+        "C1": true,
+        "C2": true,
+        "C3": false,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.6257,
+            "b": 0.3641
+          },
+          "O2": {
+            "a": 0.5747,
+            "b": 0.3358
+          },
+          "O3": {
+            "a": 0.3641,
+            "b": 0.3632
+          },
+          "O4": {
+            "a": 0.3358,
+            "b": 0.4023
+          },
+          "O5": {
+            "a": 0.3632,
+            "b": 0.3347
+          },
+          "O6": {
+            "a": 0.4023,
+            "b": 0.3432
+          },
+          "D1": {
+            "iqr_cookie": 0.1337,
+            "max_other": 0.1518
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.1439,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.015,
+            "api_range": 0.2389,
+            "min_adjacent_gap": 0.0074
+          },
+          "C2": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0178
+          },
+          "S1": {
+            "max_mode_gap": 0.0444,
+            "api_range": 0.2389,
+            "min_adjacent_gap": 0.0074
+          },
+          "S2": {
+            "share": 0.7774,
+            "raw_gap": 0.084,
+            "residual_gap": 0.0187
+          }
+        }
+      },
+      {
+        "dim": "link",
+        "alpha": 0.2,
+        "O1": true,
+        "O2": true,
+        "O3": false,
+        "O4": false,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": false,
+        "C1": true,
+        "C2": true,
+        "C3": false,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.6388,
+            "b": 0.4133
+          },
+          "O2": {
+            "a": 0.591,
+            "b": 0.3735
+          },
+          "O3": {
+            "a": 0.4133,
+            "b": 0.42
+          },
+          "O4": {
+            "a": 0.3735,
+            "b": 0.431
+          },
+          "O5": {
+            "a": 0.42,
+            "b": 0.3417
+          },
+          "O6": {
+            "a": 0.431,
+            "b": 0.3612
+          },
+          "D1": {
+            "iqr_cookie": 0.1842,
+            "max_other": 0.148
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.1469,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0122,
+            "api_range": 0.2298,
+            "min_adjacent_gap": 0.0123
+          },
+          "C2": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0102
+          },
+          "S1": {
+            "max_mode_gap": 0.0443,
+            "api_range": 0.2298,
+            "min_adjacent_gap": 0.0123
+          },
+          "S2": {
+            "share": 0.7582,
+            "raw_gap": 0.0794,
+            "residual_gap": 0.0192
+          }
+        }
+      },
+      {
+        "dim": "link",
+        "alpha": 0.3,
+        "O1": true,
+        "O2": true,
+        "O3": false,
+        "O4": false,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": false,
+        "C1": true,
+        "C2": false,
+        "C3": false,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.6519,
+            "b": 0.4683
+          },
+          "O2": {
+            "a": 0.6073,
+            "b": 0.4112
+          },
+          "O3": {
+            "a": 0.4683,
+            "b": 0.4769
+          },
+          "O4": {
+            "a": 0.4112,
+            "b": 0.4597
+          },
+          "O5": {
+            "a": 0.4769,
+            "b": 0.3563
+          },
+          "O6": {
+            "a": 0.4597,
+            "b": 0.3793
+          },
+          "D1": {
+            "iqr_cookie": 0.2061,
+            "max_other": 0.137
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.1499,
+            "NONE": 0.0067
+          },
+          "C1": {
+            "max_consent_gap": 0.0112,
+            "api_range": 0.228,
+            "min_adjacent_gap": 0.0319
+          },
+          "C2": {
+            "cookie": 0.0233,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0024
+          },
+          "S1": {
+            "max_mode_gap": 0.0441,
+            "api_range": 0.228,
+            "min_adjacent_gap": 0.0319
+          },
+          "S2": {
+            "share": 0.7366,
+            "raw_gap": 0.0747,
+            "residual_gap": 0.0197
+          }
+        }
+      },
+      {
+        "dim": "link",
+        "alpha": 0.4,
+        "O1": true,
+        "O2": true,
+        "O3": false,
+        "O4": false,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": false,
+        "C1": true,
+        "C2": false,
+        "C3": true,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.6651,
+            "b": 0.4775
+          },
+          "O2": {
+            "a": 0.6236,
+            "b": 0.4488
+          },
+          "O3": {
+            "a": 0.4775,
+            "b": 0.5122
+          },
+          "O4": {
+            "a": 0.4488,
+            "b": 0.4884
+          },
+          "O5": {
+            "a": 0.5122,
+            "b": 0.3723
+          },
+          "O6": {
+            "a": 0.4884,
+            "b": 0.3973
+          },
+          "D1": {
+            "iqr_cookie": 0.2155,
+            "max_other": 0.1558
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.1313,
+            "NONE": 0.0181
+          },
+          "C1": {
+            "max_consent_gap": 0.0113,
+            "api_range": 0.2263,
+            "min_adjacent_gap": 0.0396
+          },
+          "C2": {
+            "cookie": 0.0182,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.044,
+            "api_range": 0.2263,
+            "min_adjacent_gap": 0.0396
+          },
+          "S2": {
+            "share": 0.7122,
+            "raw_gap": 0.0701,
+            "residual_gap": 0.0202
+          }
+        }
+      },
+      {
+        "dim": "link",
+        "alpha": 0.5,
+        "O1": true,
+        "O2": true,
+        "O3": false,
+        "O4": false,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": false,
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.6782,
+            "b": 0.5081
+          },
+          "O2": {
+            "a": 0.64,
+            "b": 0.4865
+          },
+          "O3": {
+            "a": 0.5081,
+            "b": 0.5223
+          },
+          "O4": {
+            "a": 0.4865,
+            "b": 0.5171
+          },
+          "O5": {
+            "a": 0.5223,
+            "b": 0.3882
+          },
+          "O6": {
+            "a": 0.5171,
+            "b": 0.4154
+          },
+          "D1": {
+            "iqr_cookie": 0.2503,
+            "max_other": 0.1895
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0875,
+            "NONE": 0.0296
+          },
+          "C1": {
+            "max_consent_gap": 0.0114,
+            "api_range": 0.2246,
+            "min_adjacent_gap": 0.0306
+          },
+          "C2": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.0439,
+            "api_range": 0.2246,
+            "min_adjacent_gap": 0.0306
+          },
+          "S2": {
+            "share": 0.6843,
+            "raw_gap": 0.0654,
+            "residual_gap": 0.0207
+          }
+        }
+      },
+      {
+        "dim": "link",
+        "alpha": 0.6,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": false,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": false,
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.6913,
+            "b": 0.5571
+          },
+          "O2": {
+            "a": 0.6563,
+            "b": 0.5242
+          },
+          "O3": {
+            "a": 0.5571,
+            "b": 0.5324
+          },
+          "O4": {
+            "a": 0.5242,
+            "b": 0.5459
+          },
+          "O5": {
+            "a": 0.5324,
+            "b": 0.4058
+          },
+          "O6": {
+            "a": 0.5459,
+            "b": 0.4334
+          },
+          "D1": {
+            "iqr_cookie": 0.2841,
+            "max_other": 0.2078
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0438,
+            "NONE": 0.0345
+          },
+          "C1": {
+            "max_consent_gap": 0.0115,
+            "api_range": 0.2228,
+            "min_adjacent_gap": 0.0217
+          },
+          "C2": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.0437,
+            "api_range": 0.2228,
+            "min_adjacent_gap": 0.0217
+          },
+          "S2": {
+            "share": 0.6521,
+            "raw_gap": 0.0608,
+            "residual_gap": 0.0212
+          }
+        }
+      },
+      {
+        "dim": "link",
+        "alpha": 0.7,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": false,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7045,
+            "b": 0.606
+          },
+          "O2": {
+            "a": 0.6726,
+            "b": 0.5618
+          },
+          "O3": {
+            "a": 0.606,
+            "b": 0.5425
+          },
+          "O4": {
+            "a": 0.5618,
+            "b": 0.5746
+          },
+          "O5": {
+            "a": 0.5425,
+            "b": 0.4202
+          },
+          "O6": {
+            "a": 0.5746,
+            "b": 0.4515
+          },
+          "D1": {
+            "iqr_cookie": 0.309,
+            "max_other": 0.226
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0116,
+            "api_range": 0.2211,
+            "min_adjacent_gap": 0.0127
+          },
+          "C2": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.0436,
+            "api_range": 0.2211,
+            "min_adjacent_gap": 0.0127
+          },
+          "S2": {
+            "share": 0.6146,
+            "raw_gap": 0.0562,
+            "residual_gap": 0.0216
+          }
+        }
+      },
+      {
+        "dim": "link",
+        "alpha": 0.8,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": false,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7176,
+            "b": 0.6549
+          },
+          "O2": {
+            "a": 0.6889,
+            "b": 0.5995
+          },
+          "O3": {
+            "a": 0.6549,
+            "b": 0.5863
+          },
+          "O4": {
+            "a": 0.5995,
+            "b": 0.6033
+          },
+          "O5": {
+            "a": 0.5863,
+            "b": 0.4281
+          },
+          "O6": {
+            "a": 0.6033,
+            "b": 0.4695
+          },
+          "D1": {
+            "iqr_cookie": 0.3406,
+            "max_other": 0.2677
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0134,
+            "api_range": 0.2194,
+            "min_adjacent_gap": 0.0038
+          },
+          "C2": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.0435,
+            "api_range": 0.2194,
+            "min_adjacent_gap": 0.0038
+          },
+          "S2": {
+            "share": 0.5703,
+            "raw_gap": 0.0515,
+            "residual_gap": 0.0221
+          }
+        }
+      },
+      {
+        "dim": "link",
+        "alpha": 0.9,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": true,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7307,
+            "b": 0.7039
+          },
+          "O2": {
+            "a": 0.7053,
+            "b": 0.6372
+          },
+          "O3": {
+            "a": 0.7039,
+            "b": 0.6301
+          },
+          "O4": {
+            "a": 0.6372,
+            "b": 0.632
+          },
+          "O5": {
+            "a": 0.6301,
+            "b": 0.4377
+          },
+          "O6": {
+            "a": 0.632,
+            "b": 0.4876
+          },
+          "D1": {
+            "iqr_cookie": 0.3791,
+            "max_other": 0.2874
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0151,
+            "api_range": 0.2177,
+            "min_adjacent_gap": 0.0052
+          },
+          "C2": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.0433,
+            "api_range": 0.2177,
+            "min_adjacent_gap": 0.0052
+          },
+          "S2": {
+            "share": 0.5173,
+            "raw_gap": 0.0469,
+            "residual_gap": 0.0226
+          }
+        }
+      },
+      {
+        "dim": "link",
+        "alpha": 1.0,
+        "O1": false,
+        "O2": true,
+        "O3": true,
+        "O4": true,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": false,
+        "C3": false,
+        "S1": true,
+        "S2": false,
+        "_raw": {
+          "O1": {
+            "a": 0.7438,
+            "b": 0.7528
+          },
+          "O2": {
+            "a": 0.7216,
+            "b": 0.6748
+          },
+          "O3": {
+            "a": 0.7528,
+            "b": 0.6739
+          },
+          "O4": {
+            "a": 0.6748,
+            "b": 0.6607
+          },
+          "O5": {
+            "a": 0.6739,
+            "b": 0.4681
+          },
+          "O6": {
+            "a": 0.6607,
+            "b": 0.5057
+          },
+          "D1": {
+            "iqr_cookie": 0.3995,
+            "max_other": 0.3023
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0169,
+            "api_range": 0.2159,
+            "min_adjacent_gap": 0.0141
+          },
+          "C2": {
+            "cookie": 0.0071,
+            "localStorage": 0.0045,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0106
+          },
+          "S1": {
+            "max_mode_gap": 0.0432,
+            "api_range": 0.2159,
+            "min_adjacent_gap": 0.0141
+          },
+          "S2": {
+            "share": 0.4526,
+            "raw_gap": 0.0422,
+            "residual_gap": 0.0231
+          }
+        }
+      },
+      {
+        "dim": "loc",
+        "alpha": 0.1,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": true,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7241,
+            "b": 0.6794
+          },
+          "O2": {
+            "a": 0.6968,
+            "b": 0.618
+          },
+          "O3": {
+            "a": 0.6794,
+            "b": 0.6082
+          },
+          "O4": {
+            "a": 0.618,
+            "b": 0.6168
+          },
+          "O5": {
+            "a": 0.6082,
+            "b": 0.4319
+          },
+          "O6": {
+            "a": 0.6168,
+            "b": 0.4778
+          },
+          "D1": {
+            "iqr_cookie": 0.3558,
+            "max_other": 0.2842
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0143,
+            "api_range": 0.219,
+            "min_adjacent_gap": 0.0011
+          },
+          "C2": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.0441,
+            "api_range": 0.219,
+            "min_adjacent_gap": 0.0011
+          },
+          "S2": {
+            "share": 0.5427,
+            "raw_gap": 0.0496,
+            "residual_gap": 0.0227
+          }
+        }
+      },
+      {
+        "dim": "loc",
+        "alpha": 0.2,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": true,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7241,
+            "b": 0.6794
+          },
+          "O2": {
+            "a": 0.6968,
+            "b": 0.618
+          },
+          "O3": {
+            "a": 0.6794,
+            "b": 0.6082
+          },
+          "O4": {
+            "a": 0.618,
+            "b": 0.617
+          },
+          "O5": {
+            "a": 0.6082,
+            "b": 0.4319
+          },
+          "O6": {
+            "a": 0.617,
+            "b": 0.4779
+          },
+          "D1": {
+            "iqr_cookie": 0.3558,
+            "max_other": 0.2842
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0143,
+            "api_range": 0.2189,
+            "min_adjacent_gap": 0.0011
+          },
+          "C2": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.044,
+            "api_range": 0.2189,
+            "min_adjacent_gap": 0.0011
+          },
+          "S2": {
+            "share": 0.5431,
+            "raw_gap": 0.0495,
+            "residual_gap": 0.0226
+          }
+        }
+      },
+      {
+        "dim": "loc",
+        "alpha": 0.3,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": true,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7241,
+            "b": 0.6794
+          },
+          "O2": {
+            "a": 0.6969,
+            "b": 0.6181
+          },
+          "O3": {
+            "a": 0.6794,
+            "b": 0.6082
+          },
+          "O4": {
+            "a": 0.6181,
+            "b": 0.6171
+          },
+          "O5": {
+            "a": 0.6082,
+            "b": 0.4319
+          },
+          "O6": {
+            "a": 0.6171,
+            "b": 0.478
+          },
+          "D1": {
+            "iqr_cookie": 0.3558,
+            "max_other": 0.2842
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0143,
+            "api_range": 0.2188,
+            "min_adjacent_gap": 0.001
+          },
+          "C2": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.0438,
+            "api_range": 0.2188,
+            "min_adjacent_gap": 0.001
+          },
+          "S2": {
+            "share": 0.5434,
+            "raw_gap": 0.0494,
+            "residual_gap": 0.0226
+          }
+        }
+      },
+      {
+        "dim": "loc",
+        "alpha": 0.4,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": true,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7241,
+            "b": 0.6794
+          },
+          "O2": {
+            "a": 0.6969,
+            "b": 0.6181
+          },
+          "O3": {
+            "a": 0.6794,
+            "b": 0.6082
+          },
+          "O4": {
+            "a": 0.6181,
+            "b": 0.6172
+          },
+          "O5": {
+            "a": 0.6082,
+            "b": 0.4319
+          },
+          "O6": {
+            "a": 0.6172,
+            "b": 0.4781
+          },
+          "D1": {
+            "iqr_cookie": 0.3558,
+            "max_other": 0.2842
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0142,
+            "api_range": 0.2188,
+            "min_adjacent_gap": 0.0009
+          },
+          "C2": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.0437,
+            "api_range": 0.2188,
+            "min_adjacent_gap": 0.0009
+          },
+          "S2": {
+            "share": 0.5438,
+            "raw_gap": 0.0494,
+            "residual_gap": 0.0225
+          }
+        }
+      },
+      {
+        "dim": "loc",
+        "alpha": 0.5,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": true,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7241,
+            "b": 0.6794
+          },
+          "O2": {
+            "a": 0.697,
+            "b": 0.6182
+          },
+          "O3": {
+            "a": 0.6794,
+            "b": 0.6082
+          },
+          "O4": {
+            "a": 0.6182,
+            "b": 0.6173
+          },
+          "O5": {
+            "a": 0.6082,
+            "b": 0.4319
+          },
+          "O6": {
+            "a": 0.6173,
+            "b": 0.4783
+          },
+          "D1": {
+            "iqr_cookie": 0.3558,
+            "max_other": 0.2842
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0142,
+            "api_range": 0.2187,
+            "min_adjacent_gap": 0.0009
+          },
+          "C2": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.0436,
+            "api_range": 0.2187,
+            "min_adjacent_gap": 0.0009
+          },
+          "S2": {
+            "share": 0.5442,
+            "raw_gap": 0.0493,
+            "residual_gap": 0.0225
+          }
+        }
+      },
+      {
+        "dim": "loc",
+        "alpha": 0.6,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": true,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7241,
+            "b": 0.6794
+          },
+          "O2": {
+            "a": 0.697,
+            "b": 0.6182
+          },
+          "O3": {
+            "a": 0.6794,
+            "b": 0.6082
+          },
+          "O4": {
+            "a": 0.6182,
+            "b": 0.6174
+          },
+          "O5": {
+            "a": 0.6082,
+            "b": 0.4319
+          },
+          "O6": {
+            "a": 0.6174,
+            "b": 0.4784
+          },
+          "D1": {
+            "iqr_cookie": 0.3558,
+            "max_other": 0.2842
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0142,
+            "api_range": 0.2186,
+            "min_adjacent_gap": 0.0008
+          },
+          "C2": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.0435,
+            "api_range": 0.2186,
+            "min_adjacent_gap": 0.0008
+          },
+          "S2": {
+            "share": 0.5445,
+            "raw_gap": 0.0493,
+            "residual_gap": 0.0224
+          }
+        }
+      },
+      {
+        "dim": "loc",
+        "alpha": 0.7,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": true,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7241,
+            "b": 0.6794
+          },
+          "O2": {
+            "a": 0.6971,
+            "b": 0.6183
+          },
+          "O3": {
+            "a": 0.6794,
+            "b": 0.6082
+          },
+          "O4": {
+            "a": 0.6183,
+            "b": 0.6176
+          },
+          "O5": {
+            "a": 0.6082,
+            "b": 0.4319
+          },
+          "O6": {
+            "a": 0.6176,
+            "b": 0.4785
+          },
+          "D1": {
+            "iqr_cookie": 0.3558,
+            "max_other": 0.2842
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0142,
+            "api_range": 0.2186,
+            "min_adjacent_gap": 0.0007
+          },
+          "C2": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.0434,
+            "api_range": 0.2186,
+            "min_adjacent_gap": 0.0007
+          },
+          "S2": {
+            "share": 0.5449,
+            "raw_gap": 0.0492,
+            "residual_gap": 0.0224
+          }
+        }
+      },
+      {
+        "dim": "loc",
+        "alpha": 0.8,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": true,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7241,
+            "b": 0.6794
+          },
+          "O2": {
+            "a": 0.6971,
+            "b": 0.6184
+          },
+          "O3": {
+            "a": 0.6794,
+            "b": 0.6082
+          },
+          "O4": {
+            "a": 0.6184,
+            "b": 0.6177
+          },
+          "O5": {
+            "a": 0.6082,
+            "b": 0.4319
+          },
+          "O6": {
+            "a": 0.6177,
+            "b": 0.4786
+          },
+          "D1": {
+            "iqr_cookie": 0.3558,
+            "max_other": 0.2842
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0142,
+            "api_range": 0.2185,
+            "min_adjacent_gap": 0.0007
+          },
+          "C2": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.0433,
+            "api_range": 0.2185,
+            "min_adjacent_gap": 0.0007
+          },
+          "S2": {
+            "share": 0.5453,
+            "raw_gap": 0.0492,
+            "residual_gap": 0.0224
+          }
+        }
+      },
+      {
+        "dim": "loc",
+        "alpha": 0.9,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": true,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7241,
+            "b": 0.6794
+          },
+          "O2": {
+            "a": 0.6972,
+            "b": 0.6184
+          },
+          "O3": {
+            "a": 0.6794,
+            "b": 0.6082
+          },
+          "O4": {
+            "a": 0.6184,
+            "b": 0.6178
+          },
+          "O5": {
+            "a": 0.6082,
+            "b": 0.4319
+          },
+          "O6": {
+            "a": 0.6178,
+            "b": 0.4788
+          },
+          "D1": {
+            "iqr_cookie": 0.3558,
+            "max_other": 0.2842
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0142,
+            "api_range": 0.2184,
+            "min_adjacent_gap": 0.0006
+          },
+          "C2": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.0432,
+            "api_range": 0.2184,
+            "min_adjacent_gap": 0.0006
+          },
+          "S2": {
+            "share": 0.5456,
+            "raw_gap": 0.0491,
+            "residual_gap": 0.0223
+          }
+        }
+      },
+      {
+        "dim": "loc",
+        "alpha": 1.0,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": true,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7241,
+            "b": 0.6794
+          },
+          "O2": {
+            "a": 0.6972,
+            "b": 0.6185
+          },
+          "O3": {
+            "a": 0.6794,
+            "b": 0.6082
+          },
+          "O4": {
+            "a": 0.6185,
+            "b": 0.6179
+          },
+          "O5": {
+            "a": 0.6082,
+            "b": 0.4319
+          },
+          "O6": {
+            "a": 0.6179,
+            "b": 0.4789
+          },
+          "D1": {
+            "iqr_cookie": 0.3558,
+            "max_other": 0.2842
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0142,
+            "api_range": 0.2183,
+            "min_adjacent_gap": 0.0005
+          },
+          "C2": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.0431,
+            "api_range": 0.2183,
+            "min_adjacent_gap": 0.0005
+          },
+          "S2": {
+            "share": 0.546,
+            "raw_gap": 0.049,
+            "residual_gap": 0.0223
+          }
+        }
+      },
+      {
+        "dim": "prof",
+        "alpha": 0.1,
+        "O1": false,
+        "O2": false,
+        "O3": true,
+        "O4": true,
+        "O5": true,
+        "O6": true,
+        "D1": false,
+        "D2": true,
+        "C1": true,
+        "C2": false,
+        "C3": true,
+        "S1": true,
+        "S2": false,
+        "_raw": {
+          "O1": {
+            "a": 0.4222,
+            "b": 0.6422
+          },
+          "O2": {
+            "a": 0.4353,
+            "b": 0.5513
+          },
+          "O3": {
+            "a": 0.6422,
+            "b": 0.5779
+          },
+          "O4": {
+            "a": 0.5513,
+            "b": 0.511
+          },
+          "O5": {
+            "a": 0.5779,
+            "b": 0.4014
+          },
+          "O6": {
+            "a": 0.511,
+            "b": 0.3884
+          },
+          "D1": {
+            "iqr_cookie": 0.4081,
+            "max_other": 0.4252
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0178,
+            "api_range": 0.1629,
+            "min_adjacent_gap": 0.0403
+          },
+          "C2": {
+            "cookie": 0.0362,
+            "localStorage": 0.0377,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.0213,
+            "api_range": 0.1629,
+            "min_adjacent_gap": 0.0403
+          },
+          "S2": {
+            "share": 0.0785,
+            "raw_gap": 0.0136,
+            "residual_gap": 0.0126
+          }
+        }
+      },
+      {
+        "dim": "prof",
+        "alpha": 0.2,
+        "O1": false,
+        "O2": false,
+        "O3": true,
+        "O4": true,
+        "O5": true,
+        "O6": true,
+        "D1": false,
+        "D2": true,
+        "C1": true,
+        "C2": false,
+        "C3": true,
+        "S1": true,
+        "S2": false,
+        "_raw": {
+          "O1": {
+            "a": 0.4726,
+            "b": 0.6478
+          },
+          "O2": {
+            "a": 0.4789,
+            "b": 0.5625
+          },
+          "O3": {
+            "a": 0.6478,
+            "b": 0.5829
+          },
+          "O4": {
+            "a": 0.5625,
+            "b": 0.5287
+          },
+          "O5": {
+            "a": 0.5829,
+            "b": 0.4049
+          },
+          "O6": {
+            "a": 0.5287,
+            "b": 0.4035
+          },
+          "D1": {
+            "iqr_cookie": 0.3732,
+            "max_other": 0.3931
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0158,
+            "api_range": 0.159,
+            "min_adjacent_gap": 0.0337
+          },
+          "C2": {
+            "cookie": 0.0365,
+            "localStorage": 0.04,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.025,
+            "api_range": 0.159,
+            "min_adjacent_gap": 0.0337
+          },
+          "S2": {
+            "share": -3.5009,
+            "raw_gap": 0.0032,
+            "residual_gap": 0.0142
+          }
+        }
+      },
+      {
+        "dim": "prof",
+        "alpha": 0.3,
+        "O1": false,
+        "O2": false,
+        "O3": true,
+        "O4": true,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": false,
+        "C3": true,
+        "S1": true,
+        "S2": false,
+        "_raw": {
+          "O1": {
+            "a": 0.5229,
+            "b": 0.6534
+          },
+          "O2": {
+            "a": 0.5225,
+            "b": 0.5737
+          },
+          "O3": {
+            "a": 0.6534,
+            "b": 0.5872
+          },
+          "O4": {
+            "a": 0.5737,
+            "b": 0.5465
+          },
+          "O5": {
+            "a": 0.5872,
+            "b": 0.4084
+          },
+          "O6": {
+            "a": 0.5465,
+            "b": 0.4185
+          },
+          "D1": {
+            "iqr_cookie": 0.3764,
+            "max_other": 0.3609
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0154,
+            "api_range": 0.1552,
+            "min_adjacent_gap": 0.024
+          },
+          "C2": {
+            "cookie": 0.0368,
+            "localStorage": 0.0416,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.0287,
+            "api_range": 0.1552,
+            "min_adjacent_gap": 0.024
+          },
+          "S2": {
+            "share": -1.1634,
+            "raw_gap": 0.0073,
+            "residual_gap": 0.0158
+          }
+        }
+      },
+      {
+        "dim": "prof",
+        "alpha": 0.4,
+        "O1": false,
+        "O2": false,
+        "O3": true,
+        "O4": true,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": false,
+        "C3": true,
+        "S1": true,
+        "S2": false,
+        "_raw": {
+          "O1": {
+            "a": 0.5732,
+            "b": 0.659
+          },
+          "O2": {
+            "a": 0.5662,
+            "b": 0.5848
+          },
+          "O3": {
+            "a": 0.659,
+            "b": 0.592
+          },
+          "O4": {
+            "a": 0.5848,
+            "b": 0.5643
+          },
+          "O5": {
+            "a": 0.592,
+            "b": 0.4119
+          },
+          "O6": {
+            "a": 0.5643,
+            "b": 0.4335
+          },
+          "D1": {
+            "iqr_cookie": 0.3796,
+            "max_other": 0.3331
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0151,
+            "api_range": 0.1513,
+            "min_adjacent_gap": 0.0019
+          },
+          "C2": {
+            "cookie": 0.0371,
+            "localStorage": 0.0188,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.0323,
+            "api_range": 0.1513,
+            "min_adjacent_gap": 0.0019
+          },
+          "S2": {
+            "share": 0.018,
+            "raw_gap": 0.0178,
+            "residual_gap": 0.0175
+          }
+        }
+      },
+      {
+        "dim": "prof",
+        "alpha": 0.5,
+        "O1": false,
+        "O2": true,
+        "O3": true,
+        "O4": true,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": false,
+        "C3": true,
+        "S1": true,
+        "S2": false,
+        "_raw": {
+          "O1": {
+            "a": 0.6235,
+            "b": 0.6681
+          },
+          "O2": {
+            "a": 0.6098,
+            "b": 0.596
+          },
+          "O3": {
+            "a": 0.6681,
+            "b": 0.5981
+          },
+          "O4": {
+            "a": 0.596,
+            "b": 0.5821
+          },
+          "O5": {
+            "a": 0.5981,
+            "b": 0.4154
+          },
+          "O6": {
+            "a": 0.5821,
+            "b": 0.4485
+          },
+          "D1": {
+            "iqr_cookie": 0.3785,
+            "max_other": 0.3168
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0148,
+            "api_range": 0.1613,
+            "min_adjacent_gap": 0.0138
+          },
+          "C2": {
+            "cookie": 0.0244,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.036,
+            "api_range": 0.1613,
+            "min_adjacent_gap": 0.0138
+          },
+          "S2": {
+            "share": 0.3239,
+            "raw_gap": 0.0283,
+            "residual_gap": 0.0191
+          }
+        }
+      },
+      {
+        "dim": "prof",
+        "alpha": 0.6,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": true,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "S1": true,
+        "S2": false,
+        "_raw": {
+          "O1": {
+            "a": 0.6738,
+            "b": 0.6738
+          },
+          "O2": {
+            "a": 0.6535,
+            "b": 0.6072
+          },
+          "O3": {
+            "a": 0.6738,
+            "b": 0.6031
+          },
+          "O4": {
+            "a": 0.6072,
+            "b": 0.5999
+          },
+          "O5": {
+            "a": 0.6031,
+            "b": 0.4189
+          },
+          "O6": {
+            "a": 0.5999,
+            "b": 0.4635
+          },
+          "D1": {
+            "iqr_cookie": 0.3573,
+            "max_other": 0.3005
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0145,
+            "api_range": 0.1899,
+            "min_adjacent_gap": 0.0073
+          },
+          "C2": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.0397,
+            "api_range": 0.1899,
+            "min_adjacent_gap": 0.0073
+          },
+          "S2": {
+            "share": 0.4644,
+            "raw_gap": 0.0387,
+            "residual_gap": 0.0207
+          }
+        }
+      },
+      {
+        "dim": "prof",
+        "alpha": 0.7,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": true,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7241,
+            "b": 0.6794
+          },
+          "O2": {
+            "a": 0.6971,
+            "b": 0.6183
+          },
+          "O3": {
+            "a": 0.6794,
+            "b": 0.6082
+          },
+          "O4": {
+            "a": 0.6183,
+            "b": 0.6176
+          },
+          "O5": {
+            "a": 0.6082,
+            "b": 0.4319
+          },
+          "O6": {
+            "a": 0.6176,
+            "b": 0.4786
+          },
+          "D1": {
+            "iqr_cookie": 0.3558,
+            "max_other": 0.2842
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0142,
+            "api_range": 0.2185,
+            "min_adjacent_gap": 0.0007
+          },
+          "C2": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.0434,
+            "api_range": 0.2185,
+            "min_adjacent_gap": 0.0007
+          },
+          "S2": {
+            "share": 0.5451,
+            "raw_gap": 0.0492,
+            "residual_gap": 0.0224
+          }
+        }
+      },
+      {
+        "dim": "prof",
+        "alpha": 0.8,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": false,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7745,
+            "b": 0.685
+          },
+          "O2": {
+            "a": 0.7407,
+            "b": 0.6295
+          },
+          "O3": {
+            "a": 0.685,
+            "b": 0.6132
+          },
+          "O4": {
+            "a": 0.6295,
+            "b": 0.6354
+          },
+          "O5": {
+            "a": 0.6132,
+            "b": 0.446
+          },
+          "O6": {
+            "a": 0.6354,
+            "b": 0.4936
+          },
+          "D1": {
+            "iqr_cookie": 0.3493,
+            "max_other": 0.2672
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.014,
+            "api_range": 0.2471,
+            "min_adjacent_gap": 0.0059
+          },
+          "C2": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.0471,
+            "api_range": 0.2471,
+            "min_adjacent_gap": 0.0059
+          },
+          "S2": {
+            "share": 0.5974,
+            "raw_gap": 0.0597,
+            "residual_gap": 0.024
+          }
+        }
+      },
+      {
+        "dim": "prof",
+        "alpha": 0.9,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": false,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": false,
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.8248,
+            "b": 0.6907
+          },
+          "O2": {
+            "a": 0.7844,
+            "b": 0.6407
+          },
+          "O3": {
+            "a": 0.6907,
+            "b": 0.6352
+          },
+          "O4": {
+            "a": 0.6407,
+            "b": 0.6532
+          },
+          "O5": {
+            "a": 0.6352,
+            "b": 0.4478
+          },
+          "O6": {
+            "a": 0.6532,
+            "b": 0.5086
+          },
+          "D1": {
+            "iqr_cookie": 0.3522,
+            "max_other": 0.2576
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0219,
+            "NONE": 0.0219
+          },
+          "C1": {
+            "max_consent_gap": 0.0138,
+            "api_range": 0.2757,
+            "min_adjacent_gap": 0.0125
+          },
+          "C2": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.0507,
+            "api_range": 0.2757,
+            "min_adjacent_gap": 0.0125
+          },
+          "S2": {
+            "share": 0.6342,
+            "raw_gap": 0.0701,
+            "residual_gap": 0.0257
+          }
+        }
+      },
+      {
+        "dim": "prof",
+        "alpha": 1.0,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": false,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": false,
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.8751,
+            "b": 0.6963
+          },
+          "O2": {
+            "a": 0.828,
+            "b": 0.6518
+          },
+          "O3": {
+            "a": 0.6963,
+            "b": 0.6739
+          },
+          "O4": {
+            "a": 0.6518,
+            "b": 0.671
+          },
+          "O5": {
+            "a": 0.6739,
+            "b": 0.4681
+          },
+          "O6": {
+            "a": 0.671,
+            "b": 0.5236
+          },
+          "D1": {
+            "iqr_cookie": 0.3551,
+            "max_other": 0.2597
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0656,
+            "NONE": 0.0656
+          },
+          "C1": {
+            "max_consent_gap": 0.0148,
+            "api_range": 0.3044,
+            "min_adjacent_gap": 0.0191
+          },
+          "C2": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.0544,
+            "api_range": 0.3044,
+            "min_adjacent_gap": 0.0191
+          },
+          "S2": {
+            "share": 0.6614,
+            "raw_gap": 0.0806,
+            "residual_gap": 0.0273
+          }
+        }
+      },
+      {
+        "dim": "env",
+        "alpha": 0.1,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": true,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": false,
+        "C3": true,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7241,
+            "b": 0.6794
+          },
+          "O2": {
+            "a": 0.6945,
+            "b": 0.6157
+          },
+          "O3": {
+            "a": 0.6794,
+            "b": 0.6082
+          },
+          "O4": {
+            "a": 0.6157,
+            "b": 0.6148
+          },
+          "O5": {
+            "a": 0.6082,
+            "b": 0.4319
+          },
+          "O6": {
+            "a": 0.6148,
+            "b": 0.4751
+          },
+          "D1": {
+            "iqr_cookie": 0.3558,
+            "max_other": 0.2324
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.015,
+            "api_range": 0.2194,
+            "min_adjacent_gap": 0.0009
+          },
+          "C2": {
+            "cookie": 0.024,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.0442,
+            "api_range": 0.2194,
+            "min_adjacent_gap": 0.0009
+          },
+          "S2": {
+            "share": 0.5445,
+            "raw_gap": 0.0495,
+            "residual_gap": 0.0225
+          }
+        }
+      },
+      {
+        "dim": "env",
+        "alpha": 0.2,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": true,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": false,
+        "C3": true,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7241,
+            "b": 0.6794
+          },
+          "O2": {
+            "a": 0.6951,
+            "b": 0.6164
+          },
+          "O3": {
+            "a": 0.6794,
+            "b": 0.6082
+          },
+          "O4": {
+            "a": 0.6164,
+            "b": 0.6155
+          },
+          "O5": {
+            "a": 0.6082,
+            "b": 0.4319
+          },
+          "O6": {
+            "a": 0.6155,
+            "b": 0.476
+          },
+          "D1": {
+            "iqr_cookie": 0.3558,
+            "max_other": 0.2378
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0148,
+            "api_range": 0.2191,
+            "min_adjacent_gap": 0.0009
+          },
+          "C2": {
+            "cookie": 0.0035,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.044,
+            "api_range": 0.2191,
+            "min_adjacent_gap": 0.0009
+          },
+          "S2": {
+            "share": 0.5446,
+            "raw_gap": 0.0494,
+            "residual_gap": 0.0225
+          }
+        }
+      },
+      {
+        "dim": "env",
+        "alpha": 0.3,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": true,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7241,
+            "b": 0.6794
+          },
+          "O2": {
+            "a": 0.6958,
+            "b": 0.617
+          },
+          "O3": {
+            "a": 0.6794,
+            "b": 0.6082
+          },
+          "O4": {
+            "a": 0.617,
+            "b": 0.6162
+          },
+          "O5": {
+            "a": 0.6082,
+            "b": 0.4319
+          },
+          "O6": {
+            "a": 0.6162,
+            "b": 0.4768
+          },
+          "D1": {
+            "iqr_cookie": 0.3558,
+            "max_other": 0.2533
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0146,
+            "api_range": 0.2189,
+            "min_adjacent_gap": 0.0008
+          },
+          "C2": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.0438,
+            "api_range": 0.2189,
+            "min_adjacent_gap": 0.0008
+          },
+          "S2": {
+            "share": 0.5448,
+            "raw_gap": 0.0493,
+            "residual_gap": 0.0225
+          }
+        }
+      },
+      {
+        "dim": "env",
+        "alpha": 0.4,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": true,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7241,
+            "b": 0.6794
+          },
+          "O2": {
+            "a": 0.6964,
+            "b": 0.6177
+          },
+          "O3": {
+            "a": 0.6794,
+            "b": 0.6082
+          },
+          "O4": {
+            "a": 0.6177,
+            "b": 0.6169
+          },
+          "O5": {
+            "a": 0.6082,
+            "b": 0.4319
+          },
+          "O6": {
+            "a": 0.6169,
+            "b": 0.4777
+          },
+          "D1": {
+            "iqr_cookie": 0.3558,
+            "max_other": 0.2687
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0144,
+            "api_range": 0.2187,
+            "min_adjacent_gap": 0.0008
+          },
+          "C2": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.0436,
+            "api_range": 0.2187,
+            "min_adjacent_gap": 0.0008
+          },
+          "S2": {
+            "share": 0.5449,
+            "raw_gap": 0.0493,
+            "residual_gap": 0.0224
+          }
+        }
+      },
+      {
+        "dim": "env",
+        "alpha": 0.5,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": true,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7241,
+            "b": 0.6794
+          },
+          "O2": {
+            "a": 0.6971,
+            "b": 0.6183
+          },
+          "O3": {
+            "a": 0.6794,
+            "b": 0.6082
+          },
+          "O4": {
+            "a": 0.6183,
+            "b": 0.6176
+          },
+          "O5": {
+            "a": 0.6082,
+            "b": 0.4319
+          },
+          "O6": {
+            "a": 0.6176,
+            "b": 0.4786
+          },
+          "D1": {
+            "iqr_cookie": 0.3558,
+            "max_other": 0.2842
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0142,
+            "api_range": 0.2185,
+            "min_adjacent_gap": 0.0007
+          },
+          "C2": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.0434,
+            "api_range": 0.2185,
+            "min_adjacent_gap": 0.0007
+          },
+          "S2": {
+            "share": 0.5451,
+            "raw_gap": 0.0492,
+            "residual_gap": 0.0224
+          }
+        }
+      },
+      {
+        "dim": "env",
+        "alpha": 0.6,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": true,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7241,
+            "b": 0.6794
+          },
+          "O2": {
+            "a": 0.6978,
+            "b": 0.619
+          },
+          "O3": {
+            "a": 0.6794,
+            "b": 0.6082
+          },
+          "O4": {
+            "a": 0.619,
+            "b": 0.6183
+          },
+          "O5": {
+            "a": 0.6082,
+            "b": 0.4319
+          },
+          "O6": {
+            "a": 0.6183,
+            "b": 0.4794
+          },
+          "D1": {
+            "iqr_cookie": 0.3558,
+            "max_other": 0.2885
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0141,
+            "api_range": 0.2183,
+            "min_adjacent_gap": 0.0007
+          },
+          "C2": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.0432,
+            "api_range": 0.2183,
+            "min_adjacent_gap": 0.0007
+          },
+          "S2": {
+            "share": 0.5452,
+            "raw_gap": 0.0491,
+            "residual_gap": 0.0223
+          }
+        }
+      },
+      {
+        "dim": "env",
+        "alpha": 0.7,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": true,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7241,
+            "b": 0.6794
+          },
+          "O2": {
+            "a": 0.6984,
+            "b": 0.6197
+          },
+          "O3": {
+            "a": 0.6794,
+            "b": 0.6082
+          },
+          "O4": {
+            "a": 0.6197,
+            "b": 0.6191
+          },
+          "O5": {
+            "a": 0.6082,
+            "b": 0.4319
+          },
+          "O6": {
+            "a": 0.6191,
+            "b": 0.4803
+          },
+          "D1": {
+            "iqr_cookie": 0.3501,
+            "max_other": 0.2885
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0139,
+            "api_range": 0.2181,
+            "min_adjacent_gap": 0.0006
+          },
+          "C2": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.043,
+            "api_range": 0.2181,
+            "min_adjacent_gap": 0.0006
+          },
+          "S2": {
+            "share": 0.5454,
+            "raw_gap": 0.049,
+            "residual_gap": 0.0223
+          }
+        }
+      },
+      {
+        "dim": "env",
+        "alpha": 0.8,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": true,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7241,
+            "b": 0.6794
+          },
+          "O2": {
+            "a": 0.6991,
+            "b": 0.6203
+          },
+          "O3": {
+            "a": 0.6794,
+            "b": 0.6082
+          },
+          "O4": {
+            "a": 0.6203,
+            "b": 0.6198
+          },
+          "O5": {
+            "a": 0.6082,
+            "b": 0.4319
+          },
+          "O6": {
+            "a": 0.6198,
+            "b": 0.4812
+          },
+          "D1": {
+            "iqr_cookie": 0.3465,
+            "max_other": 0.2885
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0137,
+            "api_range": 0.2179,
+            "min_adjacent_gap": 0.0005
+          },
+          "C2": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.0428,
+            "api_range": 0.2179,
+            "min_adjacent_gap": 0.0005
+          },
+          "S2": {
+            "share": 0.5455,
+            "raw_gap": 0.049,
+            "residual_gap": 0.0223
+          }
+        }
+      },
+      {
+        "dim": "env",
+        "alpha": 0.9,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": true,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7241,
+            "b": 0.6794
+          },
+          "O2": {
+            "a": 0.6997,
+            "b": 0.621
+          },
+          "O3": {
+            "a": 0.6794,
+            "b": 0.6082
+          },
+          "O4": {
+            "a": 0.621,
+            "b": 0.6205
+          },
+          "O5": {
+            "a": 0.6082,
+            "b": 0.4319
+          },
+          "O6": {
+            "a": 0.6205,
+            "b": 0.4821
+          },
+          "D1": {
+            "iqr_cookie": 0.3465,
+            "max_other": 0.2885
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0135,
+            "api_range": 0.2177,
+            "min_adjacent_gap": 0.0005
+          },
+          "C2": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.0426,
+            "api_range": 0.2177,
+            "min_adjacent_gap": 0.0005
+          },
+          "S2": {
+            "share": 0.5457,
+            "raw_gap": 0.0489,
+            "residual_gap": 0.0222
+          }
+        }
+      },
+      {
+        "dim": "env",
+        "alpha": 1.0,
+        "O1": true,
+        "O2": true,
+        "O3": true,
+        "O4": true,
+        "O5": true,
+        "O6": true,
+        "D1": true,
+        "D2": true,
+        "C1": true,
+        "C2": true,
+        "C3": true,
+        "S1": true,
+        "S2": true,
+        "_raw": {
+          "O1": {
+            "a": 0.7241,
+            "b": 0.6794
+          },
+          "O2": {
+            "a": 0.7004,
+            "b": 0.6216
+          },
+          "O3": {
+            "a": 0.6794,
+            "b": 0.6082
+          },
+          "O4": {
+            "a": 0.6216,
+            "b": 0.6212
+          },
+          "O5": {
+            "a": 0.6082,
+            "b": 0.4319
+          },
+          "O6": {
+            "a": 0.6212,
+            "b": 0.4829
+          },
+          "D1": {
+            "iqr_cookie": 0.3465,
+            "max_other": 0.2885
+          },
+          "D2": {
+            "ALL": 0.0,
+            "PARTIAL": 0.0,
+            "NONE": 0.0
+          },
+          "C1": {
+            "max_consent_gap": 0.0133,
+            "api_range": 0.2175,
+            "min_adjacent_gap": 0.0004
+          },
+          "C2": {
+            "cookie": 0.0,
+            "localStorage": 0.0,
+            "IndexedDB": 0.0
+          },
+          "C3": {
+            "delta_q3": 0.0
+          },
+          "S1": {
+            "max_mode_gap": 0.0424,
+            "api_range": 0.2175,
+            "min_adjacent_gap": 0.0004
+          },
+          "S2": {
+            "share": 0.5458,
+            "raw_gap": 0.0488,
+            "residual_gap": 0.0222
+          }
+        }
+      }
+    ]
+  },
+  "sobol": {
+    "global": {
+      "indices": {
+        "id": {
+          "S1": -0.0,
+          "S1_conf": 0.0005,
+          "ST": 0.0,
+          "ST_conf": 0.0
+        },
+        "ato": {
+          "S1": 0.0005,
+          "S1_conf": 0.0022,
+          "ST": 0.0006,
+          "ST_conf": 0.0001
+        },
+        "link": {
+          "S1": 0.341,
+          "S1_conf": 0.0459,
+          "ST": 0.3731,
+          "ST_conf": 0.0343
+        },
+        "loc": {
+          "S1": 0.0,
+          "S1_conf": 0.0002,
+          "ST": 0.0,
+          "ST_conf": 0.0
+        },
+        "prof": {
+          "S1": 0.6266,
+          "S1_conf": 0.0595,
+          "ST": 0.6578,
+          "ST_conf": 0.0517
+        },
+        "env": {
+          "S1": 0.0007,
+          "S1_conf": 0.0022,
+          "ST": 0.0006,
+          "ST_conf": 0.0001
+        }
+      },
+      "S2_link_prof": 0.0315,
+      "S2_link_prof_conf": 0.086,
+      "sum_S1": 0.9688,
+      "sum_S1_plus_S2_lp": 1.0003,
+      "other_interactions": {}
+    },
+    "cookie": {
+      "indices": {
+        "id": {
+          "S1": -0.0,
+          "S1_conf": 0.0005,
+          "ST": 0.0,
+          "ST_conf": 0.0
+        },
+        "ato": {
+          "S1": 0.0027,
+          "S1_conf": 0.005,
+          "ST": 0.0029,
+          "ST_conf": 0.0003
+        },
+        "link": {
+          "S1": 0.791,
+          "S1_conf": 0.0654,
+          "ST": 0.817,
+          "ST_conf": 0.0597
+        },
+        "loc": {
+          "S1": 0.0,
+          "S1_conf": 0.0002,
+          "ST": 0.0,
+          "ST_conf": 0.0
+        },
+        "prof": {
+          "S1": 0.1804,
+          "S1_conf": 0.0383,
+          "ST": 0.2055,
+          "ST_conf": 0.0197
+        },
+        "env": {
+          "S1": 0.0008,
+          "S1_conf": 0.0023,
+          "ST": 0.0007,
+          "ST_conf": 0.0001
+        }
+      },
+      "S2_link_prof": 0.0253,
+      "S2_link_prof_conf": 0.0893,
+      "sum_S1": 0.9749,
+      "sum_S1_plus_S2_lp": 1.0003,
+      "other_interactions": {}
+    },
+    "localStorage": {
+      "indices": {
+        "id": {
+          "S1": 0.0002,
+          "S1_conf": 0.0022,
+          "ST": 0.0006,
+          "ST_conf": 0.0001
+        },
+        "ato": {
+          "S1": 0.0016,
+          "S1_conf": 0.0038,
+          "ST": 0.0018,
+          "ST_conf": 0.0002
+        },
+        "link": {
+          "S1": 0.5926,
+          "S1_conf": 0.0571,
+          "ST": 0.624,
+          "ST_conf": 0.0508
+        },
+        "loc": {
+          "S1": 0.0,
+          "S1_conf": 0.0005,
+          "ST": 0.0,
+          "ST_conf": 0.0
+        },
+        "prof": {
+          "S1": 0.375,
+          "S1_conf": 0.0492,
+          "ST": 0.4041,
+          "ST_conf": 0.0352
+        },
+        "env": {
+          "S1": 0.0017,
+          "S1_conf": 0.0033,
+          "ST": 0.0014,
+          "ST_conf": 0.0001
+        }
+      },
+      "S2_link_prof": 0.0297,
+      "S2_link_prof_conf": 0.0937,
+      "sum_S1": 0.9712,
+      "sum_S1_plus_S2_lp": 1.0008,
+      "other_interactions": {}
+    },
+    "sessionStorage": {
+      "indices": {
+        "id": {
+          "S1": 0.0009,
+          "S1_conf": 0.0033,
+          "ST": 0.0014,
+          "ST_conf": 0.0001
+        },
+        "ato": {
+          "S1": 0.0053,
+          "S1_conf": 0.007,
+          "ST": 0.0062,
+          "ST_conf": 0.0006
+        },
+        "link": {
+          "S1": 0.453,
+          "S1_conf": 0.0514,
+          "ST": 0.486,
+          "ST_conf": 0.0426
+        },
+        "loc": {
+          "S1": 0.0001,
+          "S1_conf": 0.0008,
+          "ST": 0.0001,
+          "ST_conf": 0.0
+        },
+        "prof": {
+          "S1": 0.5077,
+          "S1_conf": 0.0543,
+          "ST": 0.5378,
+          "ST_conf": 0.0444
+        },
+        "env": {
+          "S1": 0.0027,
+          "S1_conf": 0.0044,
+          "ST": 0.0025,
+          "ST_conf": 0.0002
+        }
+      },
+      "S2_link_prof": 0.0305,
+      "S2_link_prof_conf": 0.0916,
+      "sum_S1": 0.9697,
+      "sum_S1_plus_S2_lp": 1.0002,
+      "other_interactions": {}
+    },
+    "IndexedDB": {
+      "indices": {
+        "id": {
+          "S1": -0.0,
+          "S1_conf": 0.0002,
+          "ST": 0.0,
+          "ST_conf": 0.0
+        },
+        "ato": {
+          "S1": 0.0,
+          "S1_conf": 0.0005,
+          "ST": 0.0,
+          "ST_conf": 0.0
+        },
+        "link": {
+          "S1": 0.1377,
+          "S1_conf": 0.0327,
+          "ST": 0.1673,
+          "ST_conf": 0.0174
+        },
+        "loc": {
+          "S1": 0.0,
+          "S1_conf": 0.0001,
+          "ST": 0.0,
+          "ST_conf": 0.0
+        },
+        "prof": {
+          "S1": 0.8328,
+          "S1_conf": 0.0668,
+          "ST": 0.8618,
+          "ST_conf": 0.0601
+        },
+        "env": {
+          "S1": 0.0004,
+          "S1_conf": 0.0018,
+          "ST": 0.0004,
+          "ST_conf": 0.0
+        }
+      },
+      "S2_link_prof": 0.0292,
+      "S2_link_prof_conf": 0.063,
+      "sum_S1": 0.971,
+      "sum_S1_plus_S2_lp": 1.0002,
+      "other_interactions": {}
+    },
+    "n_evaluations": 14336
+  }
+}

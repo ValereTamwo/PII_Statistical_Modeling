@@ -1,11 +1,11 @@
 {
-  "total_cookies": 1185,
+  "total_cookies": 1177,
   "direct_pii_count": 5,
-  "other_count": 1180,
+  "other_count": 1172,
   "lifetime_distribution": {
     "<6 months": 532,
     "6-18 months": 389,
-    "Session": 264
+    "Session": 256
   },
   "lifetime_by_pii": {
     "ip_address": {
@@ -57,7 +57,7 @@
       "Session": 4
     },
     "LOCATION_AND_DEMOGRAPHICS": {
-      "Session": 11,
+      "Session": 3,
       "6-18 months": 2,
       "<6 months": 1
     },
@@ -93,7 +93,7 @@
   },
   "httponly_distribution": {
     "False": 867,
-    "True": 318
+    "True": 310
   },
   "httponly_by_pii": {
     "ip_address": {
@@ -141,7 +141,7 @@
     },
     "LOCATION_AND_DEMOGRAPHICS": {
       "False": 5,
-      "True": 9
+      "True": 1
     },
     "NAVIGATION_HISTORY": {
       "False": 9,
@@ -170,7 +170,7 @@
   },
   "secure_distribution": {
     "False": 482,
-    "True": 703
+    "True": 695
   },
   "secure_by_pii": {
     "ip_address": {
@@ -220,7 +220,7 @@
     },
     "LOCATION_AND_DEMOGRAPHICS": {
       "False": 4,
-      "True": 10
+      "True": 2
     },
     "NAVIGATION_HISTORY": {
       "True": 6,
@@ -249,7 +249,7 @@
   },
   "samesite_distribution": {
     "Lax": 666,
-    "No Restriction": 484,
+    "No Restriction": 476,
     "Strict": 35
   },
   "samesite_by_pii": {
@@ -298,8 +298,7 @@
       "Lax": 4
     },
     "LOCATION_AND_DEMOGRAPHICS": {
-      "Lax": 6,
-      "No Restriction": 8
+      "Lax": 6
     },
     "NAVIGATION_HISTORY": {
       "No Restriction": 1,
@@ -333,7 +332,7 @@
   },
   "security_matrix": {
     "(False, False)": 453,
-    "(True, True)": 289,
+    "(True, True)": 281,
     "(False, True)": 414,
     "(True, False)": 29
   },
@@ -390,7 +389,7 @@
     },
     "LOCATION_AND_DEMOGRAPHICS": {
       "Lowly Secure": 4,
-      "Secure": 9,
+      "Secure": 1,
       "Partially Secure": 1
     },
     "NAVIGATION_HISTORY": {
@@ -426,7 +425,7 @@
   },
   "thirdparty_distribution": {
     "First-Party": 367,
-    "Third-Party": 818
+    "Third-Party": 810
   },
   "thirdparty_by_pii": {
     "ip_address": {
@@ -474,7 +473,7 @@
       "Third-Party": 4
     },
     "LOCATION_AND_DEMOGRAPHICS": {
-      "Third-Party": 13,
+      "Third-Party": 5,
       "First-Party": 1
     },
     "NAVIGATION_HISTORY": {
@@ -506,18 +505,18 @@
     "First-Party_False": 324,
     "First-Party_True": 43,
     "Third-Party_False": 543,
-    "Third-Party_True": 275
+    "Third-Party_True": 267
   },
   "thirdparty_secure": {
     "First-Party_False": 211,
     "First-Party_True": 156,
-    "Third-Party_True": 547,
+    "Third-Party_True": 539,
     "Third-Party_False": 271
   },
   "risk_levels": {
     "High Risk": 522,
     "Medium Risk": 496,
-    "Low Risk": 94,
+    "Low Risk": 86,
     "Critical Risk": 73
   },
   "risk_by_pii": {
@@ -571,7 +570,7 @@
     },
     "LOCATION_AND_DEMOGRAPHICS": {
       "Medium Risk": 5,
-      "Low Risk": 9
+      "Low Risk": 1
     },
     "NAVIGATION_HISTORY": {
       "High Risk": 1,
@@ -628,7 +627,7 @@
       "IDENTITY_TRACKING": 299,
       "ID_SOLUTIONS_AND_EXCHANGES": 31,
       "INFRASTRUCTURE": 9,
-      "LOCATION_AND_DEMOGRAPHICS": 9,
+      "LOCATION_AND_DEMOGRAPHICS": 1,
       "NAVIGATION_HISTORY": 9,
       "SECURITY_AND_BOT_MITIGATION": 78,
       "SESSION_MANAGEMENT": 11,
@@ -728,7 +727,7 @@
     }
   },
   "content_types": {
-    "complex_string": 600,
+    "complex_string": 592,
     "ip_address": 2,
     "json_structured": 88,
     "short_text": 136,
@@ -819,7 +818,7 @@
     "the-ozone-project.com": 1,
     "lngtd.com": 3,
     "faphouse.com": 9,
-    "liga.nu": 21,
+    "liga.nu": 13,
     "clixtell.com": 1,
     "gemini.google": 6,
     "disneylandparis.com": 1,
@@ -2285,11 +2284,6 @@
       "LOCATION_AND_DEMOGRAPHICS",
       "faphouse4k.com",
       1
-    ],
-    [
-      "LOCATION_AND_DEMOGRAPHICS",
-      "liga.nu",
-      8
     ],
     [
       "LOCATION_AND_DEMOGRAPHICS",
@@ -3994,16 +3988,8 @@
       2.321928094887362,
       1.0,
       1.0,
-      5.082092474931508,
-      5.114133446381868,
       2.321928094887362,
-      5.030439647917012,
-      5.064247561462958,
       5.228608994171022,
-      5.047861881500153,
-      5.082156091447761,
-      5.107825660898955,
-      5.078122115042689,
       2.321928094887362
     ],
     "NAVIGATION_HISTORY": [
@@ -4440,7 +4426,7 @@
   "advanced_risk_levels": {
     "High": 252,
     "Low": 649,
-    "Medium": 262,
+    "Medium": 254,
     "Critical": 22
   }
 }
