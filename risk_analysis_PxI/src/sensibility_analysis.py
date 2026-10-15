@@ -10,7 +10,7 @@ SENSITIVITY ANALYSIS FRAMEWORK — PxI risk model (robustness of RQ4)
   Stage 3: Robustness of the RQ4 claims over the 60 OAT configurations.
   Stage 4: Global sensitivity analysis (Sobol indices).
 
-Conventions (fixed BEFORE running, see the appendix):
+Conventions :
   - Ordinal / distributional claims are evaluated under the reference
     policy REF_POLICY = "ALL", Auth + UnAuth pooled
   - Equality claims use a purely numerical tolerance TOL = 1e-3
@@ -22,8 +22,7 @@ Conventions (fixed BEFORE running, see the appendix):
     That benchmark degenerates whenever two APIs have equal means
     (cookie vs localStorage: 0.6183 vs 0.6176 -> gap 0.0007), whatever the
     effect being measured, so it was replaced by the range. Both values
-    are still written to the JSON for transparency.
-  - Status: Invariant = 100 %, Robust >= 90 %, Conditional < 90 %.
+    are still written to the JSON for transparency.  - Status: Invariant = 100 %, Robust >= 90 %, Conditional < 90 %.
 """
 
 import json

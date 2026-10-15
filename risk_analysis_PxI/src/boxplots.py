@@ -149,6 +149,9 @@ def _render(
                 boxprops     = dict(facecolor=col, alpha=0.75, linewidth=0.6),
                 whiskerprops = dict(linewidth=0.8, linestyle='-'),  
                 capprops     = dict(linewidth=1.0),
+                showmeans=True,
+                meanprops=dict(marker="D", markerfacecolor="black",
+                          markeredgecolor="black", markersize=3)
             )
             for patch in bp['boxes']:
                 patch.set_hatch(htch)
@@ -198,9 +201,15 @@ def _render(
         markerfacecolor='white', markeredgecolor=COUNT_COLOR,
         markeredgewidth=0.8, label='$n$ items'
     )
+    mean_handle = plt.Line2D(
+        [0], [0], color='none', linestyle='None',
+        marker='D', markersize=3,
+        markerfacecolor='black', markeredgecolor='black',
+        label='mean'
+    )
     ax.legend(
-        handles=bp_handles + [count_handle],
-        loc='upper left', ncol=n_series + 1,
+        handles=bp_handles + [mean_handle, count_handle],
+        loc='upper left', ncol=n_series + 2,
         handlelength=1.2, handleheight=0.9,
         columnspacing=0.7, borderpad=0.4,
         bbox_to_anchor=(0, 1.05),

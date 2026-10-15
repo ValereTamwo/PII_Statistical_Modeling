@@ -1,10 +1,6 @@
 #!/usr/bin/env python3
 """
-derived_gaps.py — Reproduce every derived quantity (gaps, shares, ratios,
-replication counts) quoted in the RQ4 section and in the 13-country risk
-section, from the summary statistics in risk_statistics.json.
-
-
+Compute derived gaps and composition effects from the risk_statistics.json files.
 
 Usage
 -----
@@ -23,6 +19,7 @@ from pathlib import Path
 APIS = ["cookie", "localStorage", "sessionStorage", "IndexedDB"]
 SHORT = {"cookie": "cookie", "localStorage": "LS", "sessionStorage": "SS", "IndexedDB": "IDB"}
 EPS = 1e-9  # stats are rounded to 4 decimals in the json; ties are exact
+MIN_GAP = 0.01  # below this |mean gap|, the composition share is noise (ratio of two tiny numbers)
 
 
 # --------------------------------------------------------------------------
@@ -69,7 +66,7 @@ def api_spread(means):
     return m[hi] - m[lo], hi, lo
 
 
-def composition(per_api_A, per_api_U):
+def composition(per_api_A, per_api_U, min_gap=None):
     """
     Composition reweighting.
     per_api_X: {api: stats} for mode X (A = authenticated, U = unauthenticated).
@@ -86,7 +83,15 @@ def composition(per_api_A, per_api_U):
     cf = sum(wA[a] * per_api_U[a]["mean"] for a in apis)
     gap = mean_U - mean_A
     resid = cf - mean_A
-    share = None if abs(gap) < EPS else 1 - abs(resid) / abs(gap)
+    min_gap = MIN_GAP if min_gap is None else min_gap
+    raw = (1 - abs(resid) / abs(gap)) if abs(gap) > EPS else None
+    if abs(gap) < min_gap:
+        reliable, note = False, f"|gap| < {min_gap}: share not computed (ratio of two near-zero numbers)"
+    elif raw is None or not (0 <= raw <= 1):
+        reliable, note = False, "mix and within-API effects go in opposite directions: a 'share explained' is not defined"
+    else:
+        reliable, note = True, None
+    share = raw if reliable else None
     return {
         "mean_auth": r4(mean_A),
         "mean_unauth": r4(mean_U),
@@ -94,6 +99,9 @@ def composition(per_api_A, per_api_U):
         "counterfactual_unauth_with_auth_mix": r4(cf),
         "residual_gap": r4(resid),
         "share_explained_by_composition": r4(share),
+        "share_reliable": reliable,
+        "share_raw": r4(raw),
+        "share_note": note,
         "api_share_auth": {a: r4(wA[a]) for a in apis},
         "api_share_unauth": {a: r4(wU[a]) for a in apis},
         "formula": "cf = sum_s w_s^AUTH * mean_s^UNAUTH ; share = 1 - |cf - mean_AUTH| / |mean_UNAUTH - mean_AUTH|",
@@ -306,6 +314,7 @@ def analyze_countries(d):
         "worst_ratio_country": worst_ratio,
         "worst_ratio_gap_over_spread": per_country[worst_ratio]["ratio_max_gap_over_spread"],
         "composition_share_by_country": {c: v["composition"]["share_explained_by_composition"] for c, v in per_country.items()},
+        "composition_share_note": f"per-country shares are reported only when |gap| >= {MIN_GAP}; cite the pooled share, and S1 for the per-country test",
     }
 
     # --- replication of RQ4 properties over the 26 country x mode cells
@@ -383,7 +392,10 @@ def main():
     ap.add_argument("--main", type=Path, help="risk_statistics.json of the main (RQ4) dataset")
     ap.add_argument("--countries", type=Path, help="risk_statistics.json of the 13-country dataset")
     ap.add_argument("--out", type=Path, default=Path("derived_gaps.json"))
+    ap.add_argument("--min-gap", type=float, default=MIN_GAP,
+                    help="minimum |Auth-UnAuth mean gap| to report a composition share (default 0.01)")
     args = ap.parse_args()
+    globals()["MIN_GAP"] = args.min_gap
     if not (args.main or args.countries):
         ap.error("give --main and/or --countries")
 
