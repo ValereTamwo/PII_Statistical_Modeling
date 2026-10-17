@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Compute derived gaps and composition effects from the risk_statistics.json files.
+
 
 Usage
 -----
@@ -234,6 +234,69 @@ def analyze_main(d):
 # --------------------------------------------------------------------------
 # 13 countries (single policy, two modes, per country)
 # --------------------------------------------------------------------------
+def country_ranking_standardized(cells):
+    """Is any country riskier at equal storage mix?
+
+    raw mean  = item-weighted mean R_i of the country (both modes pooled)
+    std. mean = sum_s w_s^POOLED * mean_s^COUNTRY, where w^POOLED is the API mix
+                of all 26 cells together and mean_s^COUNTRY the country's own
+                per-API mean (both modes pooled). Same reweighting as the
+                session-mode composition check, applied across countries.
+    """
+    by_c = {}
+    for c, _lab, cm, _m, _s in cells:
+        for a in APIS:
+            if cm[a]:
+                n_sum, w_sum = by_c.setdefault(c, {}).get(a, (0, 0.0))
+                by_c[c][a] = (n_sum + cm[a]["n"], w_sum + cm[a]["n"] * cm[a]["mean"])
+    n_api = {a: sum(v[a][0] for v in by_c.values() if a in v) for a in APIS}
+    n_all = sum(n_api.values())
+    w_pool = {a: n_api[a] / n_all for a in APIS}
+
+    rows = {}
+    for c, v in by_c.items():
+        n = sum(x[0] for x in v.values())
+        raw = sum(x[1] for x in v.values()) / n
+        api_mean = {a: v[a][1] / v[a][0] for a in v}
+        # an API absent from a country gets the pooled weight redistributed over present APIs
+        wsum = sum(w_pool[a] for a in api_mean)
+        std = sum(w_pool[a] / wsum * api_mean[a] for a in api_mean)
+        rows[c] = {"n": n, "raw_mean": raw, "std_mean": std,
+                   "idb_share": v.get("IndexedDB", (0, 0))[0] / n,
+                   "api_mean": api_mean}
+    rank = lambda key: {c: i + 1 for i, c in enumerate(sorted(rows, key=lambda k: -rows[k][key]))}
+    r_raw, r_std = rank("raw_mean"), rank("std_mean")
+
+    def sd(xs):
+        m = sum(xs) / len(xs)
+        return (sum((x - m) ** 2 for x in xs) / len(xs)) ** 0.5  # population SD over countries
+
+    raw = [r["raw_mean"] for r in rows.values()]
+    std = [r["std_mean"] for r in rows.values()]
+    lowest = min(rows, key=lambda k: rows[k]["std_mean"])
+    others = [rows[c]["std_mean"] for c in rows if c != lowest]
+    sd_raw, sd_std = sd(raw), sd(std)
+    return {
+        "pooled_api_mix": {a: r4(w) for a, w in w_pool.items()},
+        "per_country": {c: {
+            "n": r["n"], "idb_share": r4(r["idb_share"]),
+            "raw_mean": r4(r["raw_mean"]), "raw_rank": r_raw[c],
+            "std_mean": r4(r["std_mean"]), "std_rank": r_std[c],
+            "api_mean_modes_pooled": {a: r4(m) for a, m in r["api_mean"].items()},
+        } for c, r in sorted(rows.items(), key=lambda kv: r_raw[kv[0]])},
+        "raw_range": [r4(min(raw)), r4(max(raw))],
+        "raw_argmin": min(rows, key=lambda k: rows[k]["raw_mean"]),
+        "raw_argmax": max(rows, key=lambda k: rows[k]["raw_mean"]),
+        "std_range": [r4(min(std)), r4(max(std))],
+        "std_argmin": lowest,
+        "std_argmax": max(rows, key=lambda k: rows[k]["std_mean"]),
+        "sd_raw": r4(sd_raw), "sd_std": r4(sd_std),
+        "variance_share_removed_by_mix": r4(1 - sd_std ** 2 / sd_raw ** 2),
+        "std_range_without_lowest": r4(max(others) - min(others)),
+        "note": "population SD over the 13 countries; no significance test (items are clustered by site)",
+    }
+
+
 def analyze_countries(d):
     A, U = mode_labels(d)
     policy = next(iter(d["by_policy_mode"]))
@@ -297,8 +360,9 @@ def analyze_countries(d):
             "composition": comp,
         }
     res["per_country"] = per_country
+    res["country_ranking_standardized"] = country_ranking_standardized(cells)
 
-    gaps = [v["max_within_api_mean_gap"] for v in per_country.values()]
+    gaps =[v["max_within_api_mean_gap"] for v in per_country.values()]
     spreads = [v["api_spread_of_means"] for v in per_country.values()]
     tight = min(per_country, key=lambda k: per_country[k]["api_spread_of_means"] - per_country[k]["max_within_api_mean_gap"])
     worst_ratio = max(per_country, key=lambda k: per_country[k]["ratio_max_gap_over_spread"])
