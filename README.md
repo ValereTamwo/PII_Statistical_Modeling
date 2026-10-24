@@ -27,7 +27,7 @@ The repository ships with a pre-computed `data.tar.xz` archive at the root, cont
 ### Step 1 — Extract the pre-computed data
 
 ```bash
-tar -xf data.tar.xz
+tar -xf data2.tar.xz
 ```
 
 This populates the root `data/` directory with all categorized JSON files produced by Phase 1.
@@ -100,9 +100,12 @@ Generates high-level reports on PII density stratified by profile category.
 python risk_analysis_PxI/run_all.py
 ```
 Computes technical Exposure scores (Pᵢ), Impact scores (Iᵢ), and composite Risk scores (Rᵢ) per storage container and user profile, following the PxI methodology.  
-**Output:** Boxplot visualizations in `risk_analysis_PxI/src/outputs/figures/` and full risk statistics in `risk_analysis_PxI/src/reports/risk_statistics.json`.
+**Output:** Boxplot visualizations in `risk_analysis_PxI/src/outputs/figures/` and full risk statistics in `risk_analysis_PxI/src/reports/risk_statistics.json`and `derive_gaps.py`.
 
 ---
+## Country-Level Analysis
+
+The same analysis pipeline is also applied at the country level to examine cross-country patterns in browser storage practices and PII privacy risks. The preprocessing, statistical modeling, GDPR profile analysis, and PxI risk assessment steps follow the same methodology described above, adapted to country-level datasets and aggregation. Therefore, the pipeline documentation provided in this README also applies to the country-level analysis, and the same workflow should be followed using the corresponding country-level data and configuration.
 
 ## Prerequisites
 
